@@ -1,0 +1,16 @@
+{
+  "fps": 30,
+  "totalFrames": 2070,
+  "scenes": [
+    {"id": 1, "from": 0, "to": 180, "title": "Hook"},
+    {"id": 2, "from": 180, "to": 390, "title": "Leitungsschutz"},
+    {"id": 3, "from": 390, "to": 630, "title": "Überlast"},
+    {"id": 4, "from": 630, "to": 870, "title": "Bimetall"},
+    {"id": 5, "from": 870, "to": 1080, "title": "Kurzschluss"},
+    {"id": 6, "from": 1080, "to": 1290, "title": "Magnetauslösung"},
+    {"id": 7, "from": 1290, "to": 1500, "title": "Vergleich"},
+    {"id": 8, "from": 1500, "to": 1710, "title": "Richtig reagieren"},
+    {"id": 9, "from": 1710, "to": 1890, "title": "Erneutes Auslösen"},
+    {"id": 10, "from": 1890, "to": 2070, "title": "LSS ist nicht FI"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "script": true,
+  "imagePrompts": 11,
+  "caption": true,
+  "pdfContent": true,
+  "animationPlan": true,
+  "finalVoice": false,
+  "finalVideo": false
+}

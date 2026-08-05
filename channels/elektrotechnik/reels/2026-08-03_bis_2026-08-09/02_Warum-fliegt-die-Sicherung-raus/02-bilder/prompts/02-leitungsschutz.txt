@@ -1,0 +1,3 @@
+A technically plausible cross-section of an insulated copper cable running horizontally through the center, copper conductor clearly visible inside intact insulation, the left half cool with electric-blue energy flow and the right half gradually warming to orange without melting, a clean protective boundary shape behind the cable suggesting interruption before dangerous overheating, large open space around the cable for animated labels, educational cutaway view, no flames and no damaged building.
+
+Append the channel master style and negative prompt.

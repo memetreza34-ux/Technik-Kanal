@@ -1,0 +1,3 @@
+A clean vertical split educational composition with two equally sized technical panels: left panel shows a warm orange bimetal strip slowly bending with a subtle clock-like progression, right panel shows a blue electromagnetic coil pulling a metal armature instantly with a crisp red contact opening, both panels use matching camera angle and scale, clear visual comparison, no text, no arrows, no numbers.
+
+Append the channel master style and negative prompt.

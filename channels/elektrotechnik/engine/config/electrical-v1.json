@@ -1,0 +1,21 @@
+{
+  "id": "electrical-v1",
+  "channel": "elektrotechnik",
+  "format": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSecondsMin": 60,
+    "durationSecondsMax": 75
+  },
+  "colors": {
+    "normal": "#2ac7ff",
+    "explanation": "#ffc857",
+    "overload": "#ff8c42",
+    "fault": "#ff4d5e"
+  },
+  "safety": {
+    "noLiveWorkInstructions": true,
+    "noProtectionDeviceManipulation": true
+  }
+}

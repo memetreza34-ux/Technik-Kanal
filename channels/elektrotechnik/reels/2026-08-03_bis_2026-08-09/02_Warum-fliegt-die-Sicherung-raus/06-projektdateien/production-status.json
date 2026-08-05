@@ -1,0 +1,19 @@
+{
+  "status": "produktion",
+  "completed": [
+    "script",
+    "prompts",
+    "captions",
+    "animation-plan",
+    "learning-sheet-content",
+    "remotion-code"
+  ],
+  "open": [
+    "final-iro-audio",
+    "sfx-files",
+    "typecheck",
+    "control-stills",
+    "final-mp4",
+    "final-review"
+  ]
+}
