@@ -1,5 +1,20 @@
 {
   "name": "@elektrotechnik/core",
+  "version": "1.0.0",
   "private": true,
-  "version": "1.0.0"
+  "description": "Geteiltes Elektrotechnik-Grundgerüst: Remotion-Bausteine, Brand-System, Audio und Datenverträge",
+  "main": "brand-kit/index.ts",
+  "types": "brand-kit/index.ts",
+  "peerDependencies": {
+    "react": "^19.2.0",
+    "remotion": "^4.0.490"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "react": "19.2.4",
+    "remotion": "4.0.490",
+    "typescript": "5.9.3",
+    "vitest": "4.1.10",
+    "zod": "4.3.6"
+  }
 }
