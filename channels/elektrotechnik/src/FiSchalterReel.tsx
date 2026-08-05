@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
-import {AlertTriangle, Cable, PlugZap, ShieldCheck, Wrench, ZapOff} from 'lucide-react';
+import {AlertTriangle, Cable, Plug, ShieldCheck, Wrench, ZapOff} from 'lucide-react';
 import {BreakerTripAnimation, RcdContactTripAnimation, ResidualCurrentBalanceAnimation} from './animation-library';
 import {ElectricalProductionLayer} from './engine';
 import type {ElectricalReelRuntime, ElectricalRuntimeScene} from './engine';
@@ -17,7 +17,6 @@ const palette = {
   panel: 'rgba(6,27,49,.94)',
   panelLight: 'rgba(14,48,77,.94)',
   blue: '#2ac7ff',
-  cyan: '#72e6ff',
   gold: '#ffc857',
   red: '#ff4d5e',
   white: '#f4fbff',
@@ -69,7 +68,7 @@ const FiMechanism: React.FC<{scene: ElectricalRuntimeScene}> = ({scene}) => {
     return (
       <div style={{position: 'absolute', top: 520, left: 105, right: 105}}>
         <Panel style={{height: 650, position: 'relative'}}>
-          <div style={{position: 'absolute', left: 110, top: 110, width: 360, height: 340, borderRadius: 42, background: '#b6c4cc', border: '8px solid #78909f', display: 'grid', placeItems: 'center'}}><PlugZap size={150} color={palette.red} /></div>
+          <div style={{position: 'absolute', left: 110, top: 110, width: 360, height: 340, borderRadius: 42, background: '#b6c4cc', border: '8px solid #78909f', display: 'grid', placeItems: 'center'}}><Plug size={150} color={palette.red} /></div>
           <div style={{position: 'absolute', left: 430, top: 255, width: 280 * leak, height: 22, borderRadius: 12, background: palette.red, transform: 'rotate(24deg)', transformOrigin: 'left center', boxShadow: `0 0 ${35 * leak}px ${palette.red}`}} />
           <div style={{position: 'absolute', right: 70, bottom: 76, color: palette.red, fontFamily: 'Arial, sans-serif', fontSize: 48, fontWeight: 950}}>⏚ ERDE</div>
           <div style={{position: 'absolute', left: 80, right: 80, bottom: 35, textAlign: 'center', color: palette.muted, fontFamily: 'Arial, sans-serif', fontSize: 26, fontWeight: 900}}>Kein Mensch berührt spannungsführende Teile.</div>
