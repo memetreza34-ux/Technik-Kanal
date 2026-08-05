@@ -6,3 +6,9 @@ export type {ThermalBimetalTripAnimationProps} from './ThermalBimetalTripAnimati
 
 export {MagneticInstantTripAnimation} from './MagneticInstantTripAnimation';
 export type {MagneticInstantTripAnimationProps} from './MagneticInstantTripAnimation';
+
+export {ResidualCurrentBalanceAnimation} from './ResidualCurrentBalanceAnimation';
+export type {ResidualCurrentBalanceAnimationProps} from './ResidualCurrentBalanceAnimation';
+
+export {RcdContactTripAnimation} from './RcdContactTripAnimation';
+export type {RcdContactTripAnimationProps} from './RcdContactTripAnimation';

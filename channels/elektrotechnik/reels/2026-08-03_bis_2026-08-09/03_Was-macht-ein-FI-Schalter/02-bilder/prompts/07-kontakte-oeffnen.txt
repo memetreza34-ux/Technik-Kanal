@@ -1,0 +1,3 @@
+Show the internal release magnet pulling a latch so the RCD switching contacts open. The electric-blue current path is visibly interrupted at the contact gap, with a restrained gold mechanical motion trail and no explosion. The sequence must be understood at first glance: detected residual current releases the latch and disconnects the circuit.
+
+Premium stylized 3D electrical mechanism illustration, physically plausible contact geometry, dark navy seamless environment, crisp high contrast, vertical 9:16, large close subject, safe zones clear, no hands, no arc-flash spectacle, no logos, no watermark, no generated captions.

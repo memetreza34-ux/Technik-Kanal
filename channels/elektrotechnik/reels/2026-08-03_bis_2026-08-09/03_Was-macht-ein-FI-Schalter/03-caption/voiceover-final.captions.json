@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "language": "de",
+  "source": "pending-final-voiceover",
+  "voiceSpeed": 1.1,
+  "style": {
+    "color": "white",
+    "highlightColor": null,
+    "backgroundBox": false,
+    "maxLines": 2,
+    "verticalPositionPercent": 76
+  },
+  "captions": []
+}

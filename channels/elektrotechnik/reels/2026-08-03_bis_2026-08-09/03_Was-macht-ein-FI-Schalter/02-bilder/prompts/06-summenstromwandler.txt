@@ -1,0 +1,3 @@
+Create a close technical cutaway of the toroidal summation current transformer during a fault. A residual magnetic field glows warm gold inside the core, induces a signal in the secondary winding and sends it toward a small release magnet. Show the causal chain spatially from current difference to magnetic field to release signal.
+
+Premium stylized 3D electrical engineering illustration, physically plausible transformer and winding, dark navy seamless environment, blue normal current, gold induced signal, red only for fault, vertical 9:16, large dominant mechanism, clean overlay zones, no fantasy machinery, no text blocks, no people, no watermark.

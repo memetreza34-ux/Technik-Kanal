@@ -1,0 +1,35 @@
+{
+  "version": "electrical-v1",
+  "slug": "was-macht-ein-fi-schalter",
+  "status": "content-complete-media-pending",
+  "content": {
+    "research": true,
+    "sources": true,
+    "script": true,
+    "voiceoverText": true,
+    "imagePrompts": true,
+    "storyboard": true,
+    "motionDesign": true,
+    "socialCaption": true,
+    "learningSheet": true,
+    "remotionComposition": true,
+    "reusableAnimations": true
+  },
+  "media": {
+    "rawVoiceover": false,
+    "finalVoiceover": false,
+    "sceneImagesRequired": 10,
+    "sceneImagesPresent": 0,
+    "coverPresent": false,
+    "sfxOptional": true
+  },
+  "qa": {
+    "contentPackage": false,
+    "scriptQa": false,
+    "creativeQa": false,
+    "readiness": false,
+    "renderQa": false,
+    "visualReview": false
+  },
+  "publishReady": false
+}
