@@ -3,3 +3,8 @@ node_modules/
 outputs/
 .DS_Store
 *.log
+.tools/
+channels/elektrotechnik/public/reels/
+**/06-projektdateien/.work/
+**/06-projektdateien/render/
+**/05-export/*.mp4
