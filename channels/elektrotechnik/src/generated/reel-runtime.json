@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "slug": "warum-fliegt-die-sicherung-raus",
+  "compositionId": "SicherungsReel",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 1882,
+  "durationSeconds": 62.733,
+  "voiceoverPath": "",
+  "scenes": [
+    {"id":"01-hook","title":"Hook","fromFrame":0,"toFrame":164},
+    {"id":"02-leitungsschutz","title":"Leitungsschutz","fromFrame":164,"toFrame":355},
+    {"id":"03-ueberlast","title":"Überlast","fromFrame":355,"toFrame":573},
+    {"id":"04-bimetall","title":"Bimetall","fromFrame":573,"toFrame":791},
+    {"id":"05-kurzschluss","title":"Kurzschluss","fromFrame":791,"toFrame":982},
+    {"id":"06-magnetausloeser","title":"Magnetauslösung","fromFrame":982,"toFrame":1173},
+    {"id":"07-vergleich","title":"Vergleich","fromFrame":1173,"toFrame":1364},
+    {"id":"08-richtig-reagieren","title":"Richtig reagieren","fromFrame":1364,"toFrame":1555},
+    {"id":"09-erneutes-ausloesen","title":"Erneutes Auslösen","fromFrame":1555,"toFrame":1718},
+    {"id":"10-lss-vs-fi","title":"LSS ist nicht FI","fromFrame":1718,"toFrame":1882}
+  ],
+  "captions": [],
+  "sfx": []
+}
