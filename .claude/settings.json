@@ -1,10 +1,28 @@
 {
   "permissions": {
     "allow": [
+      "Bash(open *)",
       "Bash(npm install)",
-      "Bash(npm run check)",
-      "Bash(npm run studio)",
-      "Bash(npm run render)"
+      "Bash(npm test)",
+      "Bash(npm run typecheck *)",
+      "Bash(npm run smoke *)",
+      "Bash(npm run electrical:system-test *)",
+      "Bash(npm run electrical:new *)",
+      "Bash(npm run electrical:assets *)",
+      "Bash(npm run electrical:script-qa *)",
+      "Bash(npm run electrical:creative-qa *)",
+      "Bash(npm run electrical:content-ready *)",
+      "Bash(npm run electrical:ready *)",
+      "Bash(npm run electrical:validate *)",
+      "Bash(npm run electrical:render *)",
+      "Bash(npm run electrical:finish *)",
+      "Bash(ffmpeg *)",
+      "Bash(ffprobe *)",
+      "Bash(cmake *)",
+      "Bash(git *)",
+      "Bash(gh auth status)",
+      "Bash(gh pr view *)",
+      "Bash(gh repo view *)"
     ]
   }
 }

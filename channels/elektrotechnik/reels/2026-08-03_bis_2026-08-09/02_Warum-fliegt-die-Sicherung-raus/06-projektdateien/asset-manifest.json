@@ -1,17 +1,14 @@
 {
-  "audio": ["01-script-audio/audio/iro-sicherung-final.wav"],
-  "images": [
-    "01-hook-breaker-trip.png",
-    "02-cable-heating-protection.png",
-    "03-overload-appliances.png",
-    "04-bimetal-cutaway.png",
-    "05-short-circuit-contact.png",
-    "06-magnetic-instant-trip.png",
-    "07-overload-vs-short-circuit.png",
-    "08-safe-reset-sequence.png",
-    "09-retrip-warning.png",
-    "10-lss-vs-rcd.png",
-    "cover-warum-fliegt-die-sicherung.png"
-  ],
-  "requiredBeforePublish": ["voiceover", "sfx", "typecheck", "control-stills", "final-render"]
+  "version": "electrical-v1",
+  "slug": "warum-fliegt-die-sicherung-raus",
+  "generatedAt": "2026-08-05T17:16:00.000Z",
+  "status": "pre-production-awaiting-user-assets",
+  "assets": [],
+  "expected": {
+    "voiceoverRaw": "01-script-audio/audio/iro-sicherung-raw.wav",
+    "voiceoverFinal": "01-script-audio/audio/iro-sicherung-final.wav",
+    "sceneImages": 10,
+    "optionalSfx": true
+  },
+  "note": "Wird durch npm run electrical:assets beziehungsweise electrical:finish aus den echten lokalen Dateien neu erzeugt."
 }

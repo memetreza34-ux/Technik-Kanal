@@ -1,21 +1,176 @@
 {
-  "id": "electrical-v1",
-  "channel": "elektrotechnik",
+  "version": "electrical-v1",
   "format": {
     "width": 1080,
     "height": 1920,
     "fps": 30,
-    "durationSecondsMin": 60,
-    "durationSecondsMax": 75
+    "durationSeconds": {"min": 45, "ideal": 62, "max": 75}
   },
-  "colors": {
-    "normal": "#2ac7ff",
-    "explanation": "#ffc857",
-    "overload": "#ff8c42",
-    "fault": "#ff4d5e"
+  "script": {
+    "words": {"min": 110, "ideal": 155, "max": 200},
+    "mainIdeas": {"min": 3, "max": 6},
+    "oneCentralQuestion": true,
+    "onePayoff": true,
+    "hookConsequenceBySeconds": 1.5,
+    "technicalTermMustBeExplained": true,
+    "practicalMerksatzRequired": true
   },
-  "safety": {
+  "voice": {
+    "speed": 1.1,
+    "speedRange": {"min": 1.1, "max": 1.1},
+    "silenceThresholdMs": 400,
+    "keptPauseMs": 160,
+    "silenceThresholdDb": -45,
+    "loudness": {"integratedLufs": -16, "truePeakDb": -1.5, "loudnessRange": 11}
+  },
+  "visuals": {
+    "productionMode": "image-first-with-remotion-mechanisms",
+    "beats": {"min": 8, "max": 14},
+    "minimumLayoutTypes": 1,
+    "minimumImageLedScenes": 6,
+    "targetImageLedScenes": {"min": 8, "ideal": 10, "max": 12},
+    "recommendedVisiblePatterns": 1,
+    "maximumConsecutiveVisiblePatterns": 10,
+    "maximumConsecutiveFramedImages": 10,
+    "maximumSecondsWithoutSemanticChange": 9,
+    "maximumPhaseGapSeconds": 9,
+    "maximumTextOnlySceneSeconds": 4,
+    "maximumTextOnlyScenesPerReel": 1,
+    "frameZeroMustContainMainMotif": true,
+    "zoomAloneCountsAsAnimation": false,
+    "fillerIconsAllowed": false,
+    "sceneHeader": {"required": true, "iconRequired": false, "kickerWordsMax": 4},
+    "supportDetails": {"maximumPerScene": 2, "recommendedMinimumForImageScene": 0, "recommendFromSeconds": 99, "maximumWordsPerDetail": 6},
+    "minimalMotion": {
+      "transition": "cut-or-short-crossfade",
+      "imageScaleStart": 1,
+      "imageScaleEnd": 1.035,
+      "imagePanPixels": 12,
+      "headerAnimated": true,
+      "headerFadeFrames": 8,
+      "headerTranslatePixels": 10,
+      "sfxEnabled": true
+    },
+    "cta": {
+      "defaultEnabled": false,
+      "onlyWhenDeliverableExists": true,
+      "seconds": {"min": 2.5, "max": 5}
+    }
+  },
+  "textQuality": {
+    "headlineWordsMax": 9,
+    "bodyWordsMax": 22,
+    "duplicatePhraseMinimumWords": 4,
+    "vaguePhrases": [
+      "das musst du wissen",
+      "was bedeutet das konkret",
+      "die wichtige frage",
+      "der wichtigste punkt",
+      "so funktioniert es",
+      "hier ist die antwort",
+      "ganz einfach erklärt"
+    ]
+  },
+  "captions": {
+    "maximumStartDelayMs": 500,
+    "maximumEndDriftMs": 500,
+    "maximumGapMs": 1200,
+    "maximumOverlapMs": 80,
+    "perGroup": 4,
+    "fontSize": 56,
+    "bottom": 285,
+    "showOnCta": true,
+    "maximumLines": 2,
+    "color": "#ffffff",
+    "highlightColor": null,
+    "backgroundBox": false
+  },
+  "alignment": {"minimumWordMatchRatio": 0.82},
+  "sound": {
+    "musicBedAllowed": false,
+    "maximumCuesPerScene": 2,
+    "recommendedCuesPerReel": {"min": 3, "max": 10},
+    "defaultCueVolume": 0.16,
+    "maximumCueVolume": 0.3,
+    "allowedRoles": [
+      "sfx-switch",
+      "sfx-relay-click",
+      "sfx-warning",
+      "sfx-current-rise",
+      "sfx-mechanism",
+      "sfx-success",
+      "sfx-soft-whoosh"
+    ]
+  },
+  "imageAnalysis": {
+    "portraitAspectMin": 0.48,
+    "portraitAspectMax": 0.65,
+    "minimumWidth": 720,
+    "minimumHeight": 1280,
+    "lowBrightness": 0.16,
+    "highBrightness": 0.84,
+    "lowDensityEntropy": 3.6,
+    "highDensityEntropy": 6.6,
+    "safeZoneHeightRatio": 0.2,
+    "safeZoneMaximumStdDev": 48,
+    "nearDuplicateMaximumHammingDistance": 5
+  },
+  "render": {
+    "codec": "h264",
+    "crf": 18,
+    "pixelFormat": "yuv420p",
+    "audioCodec": "aac",
+    "audioBitrate": "192k",
+    "x264Preset": "medium"
+  },
+  "renderQa": {
+    "blackMinimumDurationSeconds": 0.35,
+    "freezeMinimumDurationSeconds": 2.5,
+    "maximumInitialSilenceSeconds": 0.7,
+    "maximumEndSilenceSeconds": 0.7,
+    "integratedLufsMin": -18,
+    "integratedLufsMax": -14,
+    "truePeakMaximumDb": -1,
+    "controlFrameCount": 10
+  },
+  "electricalSafety": {
     "noLiveWorkInstructions": true,
-    "noProtectionDeviceManipulation": true
+    "noProtectionDeviceManipulation": true,
+    "noBypassInstructions": true,
+    "noUnsafeResetLoop": true,
+    "professionalInspectionAfterRepeatedTrip": true,
+    "safetyDisclaimerRequiredForHazardousTopics": true,
+    "riskyPhrases": [
+      "unter spannung arbeiten",
+      "sicherung überbrücken",
+      "fi überbrücken",
+      "schutzleiter entfernen",
+      "einfach immer wieder einschalten",
+      "mit bloßen händen prüfen",
+      "spannung ist ungefährlich"
+    ],
+    "dateSensitiveTerms": [
+      "din vde",
+      "dguv",
+      "norm",
+      "gesetz",
+      "prüffrist",
+      "grenzwert",
+      "aktuell",
+      "heute"
+    ]
+  },
+  "textLimits": {
+    "kicker": 32,
+    "headline": 80,
+    "body": 180,
+    "formula": 120,
+    "outcome": 160,
+    "label": 30,
+    "step": 80,
+    "ctaKeyword": 18,
+    "ctaBenefit": 120,
+    "imagePrompt": 7000,
+    "voiceoverInstruction": 1200
   }
 }
