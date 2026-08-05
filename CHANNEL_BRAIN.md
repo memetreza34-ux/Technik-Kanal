@@ -29,9 +29,30 @@ Aktiv ist genau ein Reel:
 - Captions mindestens 260 px über der Unterkante und 150 px vom rechten Rand entfernt
 - CTA als eigener Abschluss
 
+## Verbindliche Animationsbibliothek
+
+Die wiederverwendbare Bibliothek liegt unter `src/animation-library/`.
+
+Vor jeder neuen Animation wird zuerst der Katalog geprüft. Existiert keine fachlich passende Komponente, wird die benötigte Animation passend zum aktuellen Erklärschritt neu erstellt. Danach wird sie:
+
+- allgemein wiederverwendbar parametrisiert
+- in der fachlich richtigen Kategorie gespeichert
+- eindeutig benannt
+- über die Index-Dateien exportiert
+- im Bibliothekskatalog mit Zweck, Props und Status dokumentiert
+- vor der Reel-Verwendung technisch und visuell geprüft
+
+Neue Animationen dürfen nicht nur deshalb vereinfacht oder durch ein unpassendes vorhandenes Element ersetzt werden, weil sie noch nicht in der Bibliothek existieren. Fehlt eine benötigte Darstellung, wird die richtige Darstellung neu gebaut.
+
 ## Qualitätsgate
 
 Keine finale Freigabe ohne fachlich geprüfte Quellen, finales Voice-over, TypeScript-Prüfung, Kontrollframes, vollständige Video- und Tonkontrolle sowie dokumentierte Nachanalyse.
+
+Bei neuen Bibliotheksanimationen kommen zusätzlich hinzu:
+
+- Start-, Mittel- und Endzustand geprüft
+- Props und Kategorie dokumentiert
+- Katalog und Exporte aktualisiert
 
 ## Sound
 

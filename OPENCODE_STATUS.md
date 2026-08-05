@@ -7,6 +7,17 @@
 - keine Abhängigkeit vom früheren gemeinsamen Root oder dessen Shared-Komponenten
 - alte verworfene Wochen, Bilder und Exporte nicht übernommen
 
+## Animationsbibliothek
+
+- verbindlicher Bibliotheksablauf eingeführt
+- Ablage: `src/animation-library/`
+- Kategorien und Namensregeln dokumentiert
+- Katalog unter `src/animation-library/CATALOG.md` angelegt
+- erste Komponente: `protection/BreakerTripAnimation`
+- Status der ersten Komponente: `in Prüfung`
+
+Ab jetzt gilt: Wird für einen Erklärschritt eine Animation benötigt und existiert keine fachlich passende Bibliothekskomponente, wird die richtige Animation neu erstellt, allgemein parametrisiert, korrekt kategorisiert, eindeutig benannt, exportiert und katalogisiert. Es wird keine unpassende Ersatzanimation verwendet.
+
 ## Aktiver Reel
 
 - Thema: `Warum fliegt die Sicherung raus?`
@@ -18,13 +29,15 @@
 
 ## Noch offen vor Veröffentlichung
 
-1. finale Iro-Voice-over-Datei aufnehmen
-2. Audio einfügen und Wort-Timings kalibrieren
-3. funktionale SFX ergänzen
-4. `npm run check` ausführen
-5. Kontrollframes aller zehn Beats prüfen
-6. finalen MP4-Export vollständig ansehen
-7. Nachanalyse anlegen
+1. lokale Breaker-Hilfskomponente im Sicherungs-Reel durch `BreakerTripAnimation` aus der Bibliothek ersetzen
+2. `BreakerTripAnimation` mit Start-, Mittel- und Endzustand prüfen und danach auf `bereit` setzen
+3. finale Iro-Voice-over-Datei aufnehmen
+4. Audio einfügen und Wort-Timings kalibrieren
+5. funktionale SFX ergänzen
+6. `npm run check` ausführen
+7. Kontrollframes aller zehn Beats prüfen
+8. finalen MP4-Export vollständig ansehen
+9. Nachanalyse anlegen
 
 ## Verbindliche Regel
 
