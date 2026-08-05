@@ -1,0 +1,3 @@
+Three recognizable high-power household appliances arranged in a clean technical display: an electric space heater, an electric kettle and an oven, each connected by an individual cable that visually converges toward one protected circuit path at the bottom center, all plugs and cables physically plausible, no overloaded multi-socket chaos, generous spacing between the appliances, dark premium educational stage, leave a wide empty horizontal zone below them for an animated current bar.
+
+Append the channel master style and negative prompt.
