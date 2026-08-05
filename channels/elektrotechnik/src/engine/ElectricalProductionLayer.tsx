@@ -32,7 +32,8 @@ export const ElectricalProductionLayer: React.FC<{
   mechanismLayer?: (scene: ElectricalRuntimeScene) => React.ReactNode;
 }> = ({runtime, mechanismLayer}) => {
   const frame = useCurrentFrame();
-  const scene = runtime.scenes.find((candidate) => frame >= candidate.fromFrame && frame < candidate.toFrame) ?? runtime.scenes.at(-1);
+  const fallback = runtime.scenes[runtime.scenes.length - 1];
+  const scene = runtime.scenes.find((candidate) => frame >= candidate.fromFrame && frame < candidate.toFrame) ?? fallback;
   if (!scene) return null;
 
   return (
