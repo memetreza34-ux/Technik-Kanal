@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "events": [
+    {"id":"fi-trip","sceneId":"01-hook","file":"fi-trip.wav","anchorText":"falschen Weg","offsetMs":0,"relativeMs":2700,"volume":0.17},
+    {"id":"current-leak","sceneId":"04-fehlerweg","file":"current-leak.wav","anchorText":"zur Erde","offsetMs":-250,"relativeMs":3200,"volume":0.12},
+    {"id":"transformer-pulse","sceneId":"06-summenstromwandler","file":"transformer-pulse.wav","anchorText":"erkennt","offsetMs":0,"relativeMs":1900,"volume":0.10},
+    {"id":"contact-open","sceneId":"07-kontakte-oeffnen","file":"contact-open.wav","anchorText":"Kontakte öffnen","offsetMs":0,"relativeMs":900,"volume":0.18},
+    {"id":"warning-soft","sceneId":"10-sicher-reagieren","file":"warning-soft.wav","anchorText":"niemals überbrücken","offsetMs":0,"relativeMs":1200,"volume":0.11}
+  ]
+}

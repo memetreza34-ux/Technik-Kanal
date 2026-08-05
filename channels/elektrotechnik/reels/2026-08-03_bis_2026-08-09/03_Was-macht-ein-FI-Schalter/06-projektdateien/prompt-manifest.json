@@ -1,0 +1,18 @@
+{
+  "version": "electrical-v1",
+  "slug": "was-macht-ein-fi-schalter",
+  "masterStyle": "channels/elektrotechnik/gehirn/MASTER-STYLE-PROMPT.md",
+  "cover": {"prompt":"02-bilder/prompts/00-cover.txt","imageDir":"02-bilder/images/00-cover","approved":false},
+  "scenes": [
+    {"id":"01-hook","prompt":"02-bilder/prompts/01-hook.txt","imageDir":"02-bilder/images/01-hook","approved":false},
+    {"id":"02-begriff","prompt":"02-bilder/prompts/02-begriff.txt","imageDir":"02-bilder/images/02-begriff","approved":false},
+    {"id":"03-normalzustand","prompt":"02-bilder/prompts/03-normalzustand.txt","imageDir":"02-bilder/images/03-normalzustand","approved":false},
+    {"id":"04-fehlerweg","prompt":"02-bilder/prompts/04-fehlerweg.txt","imageDir":"02-bilder/images/04-fehlerweg","approved":false},
+    {"id":"05-differenzstrom","prompt":"02-bilder/prompts/05-differenzstrom.txt","imageDir":"02-bilder/images/05-differenzstrom","approved":false},
+    {"id":"06-summenstromwandler","prompt":"02-bilder/prompts/06-summenstromwandler.txt","imageDir":"02-bilder/images/06-summenstromwandler","approved":false},
+    {"id":"07-kontakte-oeffnen","prompt":"02-bilder/prompts/07-kontakte-oeffnen.txt","imageDir":"02-bilder/images/07-kontakte-oeffnen","approved":false},
+    {"id":"08-30ma","prompt":"02-bilder/prompts/08-30ma.txt","imageDir":"02-bilder/images/08-30ma","approved":false},
+    {"id":"09-fi-vs-ls","prompt":"02-bilder/prompts/09-fi-vs-ls.txt","imageDir":"02-bilder/images/09-fi-vs-ls","approved":false},
+    {"id":"10-sicher-reagieren","prompt":"02-bilder/prompts/10-sicher-reagieren.txt","imageDir":"02-bilder/images/10-sicher-reagieren","approved":false}
+  ]
+}

@@ -2,9 +2,11 @@
 
 Deutschsprachiger Faceless-Lernkanal für Elektrotechnik, Elektronik, Mess- und Steuerungstechnik.
 
-## Aktiver Reel
+## Aktiver neuer Reel
 
-`reels/2026-08-03_bis_2026-08-09/02_Warum-fliegt-die-Sicherung-raus/`
+`reels/2026-08-03_bis_2026-08-09/03_Was-macht-ein-FI-Schalter/`
+
+Der vorherige Sicherungs-Reel bleibt unter Slot 02 erhalten.
 
 ## Kanalstruktur
 
@@ -14,4 +16,4 @@ Deutschsprachiger Faceless-Lernkanal für Elektrotechnik, Elektronik, Mess- und 
 - `public/` – wiederverwendbare Assets
 - `reels/` – Wochen und Produktionspakete
 - `skills/` – Arbeitsabläufe
-- `src/` – Remotion-Code und Animationsbibliothek
+- `src/` – Remotion-Code, Engine und Animationsbibliothek
