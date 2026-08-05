@@ -1,49 +1,49 @@
 1
-00:00:00,000 --> 00:00:06,000
+00:00:00,000 --> 00:00:05,455
 Warum fliegt die Sicherung raus?
 Überlast oder Kurzschluss.
 
 2
-00:00:06,000 --> 00:00:13,000
+00:00:05,455 --> 00:00:11,818
 Der Leitungsschutzschalter schützt
 vor allem die Leitung.
 
 3
-00:00:13,000 --> 00:00:21,000
+00:00:11,818 --> 00:00:19,091
 Bei Überlast laufen zu viele Geräte.
 Der Strom ist zu hoch.
 
 4
-00:00:21,000 --> 00:00:29,000
+00:00:19,091 --> 00:00:26,364
 Das Bimetall wird warm,
 verbiegt sich und löst verzögert aus.
 
 5
-00:00:29,000 --> 00:00:36,000
+00:00:26,364 --> 00:00:32,727
 Beim Kurzschluss steigt der Strom
 schlagartig an.
 
 6
-00:00:36,000 --> 00:00:43,000
+00:00:32,727 --> 00:00:39,091
 Der magnetische Schnellauslöser
 trennt den Stromkreis fast sofort.
 
 7
-00:00:43,000 --> 00:00:50,000
+00:00:39,091 --> 00:00:45,455
 Überlast: langsamer.
 Kurzschluss: sehr schnell.
 
 8
-00:00:50,000 --> 00:00:57,000
+00:00:45,455 --> 00:00:51,818
 Geräte ausschalten.
 Den Schalter nur einmal zurücksetzen.
 
 9
-00:00:57,000 --> 00:01:03,000
+00:00:51,818 --> 00:00:57,273
 Löst er erneut aus:
 nicht ständig zurücksetzen.
 
 10
-00:01:03,000 --> 00:01:09,000
+00:00:57,273 --> 00:01:02,727
 Leitungsschutz ist nicht FI.
 Kommentiere SICHERUNG.
