@@ -1,11 +1,11 @@
-# Finales Voice-over – Warum fliegt die Sicherung raus?
+# Sprechtext – Warum fliegt die Sicherung raus?
 
 **Zieldauer:** 69 Sekunden  
 **Stimme:** Iro, sachlich, klar und nicht hektisch  
 **Keyword:** `SICHERUNG`  
 **Stand:** aufnahmefertig
 
-## Finaler Sprechtext mit Zeitfenstern
+## Sprechtext mit Zeitfenstern
 
 | Zeit | Sprechtext | Betonung |
 |---|---|---|

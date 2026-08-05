@@ -1,4 +1,4 @@
-# Lernzettel – Warum fliegt die Sicherung raus?
+# Lernzettel und Quellen – Warum fliegt die Sicherung raus?
 
 ## Kernaussage
 
@@ -44,10 +44,22 @@ Der Leitungsschutzschalter, kurz **LSS**, schützt vor allem die Leitung vor zu 
 - **FI/RCD:** besitzt eine andere Schutzaufgabe und erkennt Fehlerströme.
 - Ein Leitungsschutzschalter ersetzt keinen FI/RCD.
 
-## Quellen
+## Primärquellen
 
-- Siemens – SENTRON Miniature Circuit Breakers
-- Siemens – Miniature Circuit Breakers Technology Primer
-- ABB – Miniature Circuit Breakers & Supplementary Protectors
+- Siemens – SENTRON Miniature Circuit Breakers: https://www.siemens.com/de-de/products/sentron/miniature-circuit-breakers/
+- Siemens – Miniature Circuit Breakers Technology Primer: https://cache.industry.siemens.com/dl/files/304/109482304/att_866617/v1/MiniatureCircuitBreakers_primer_EN_201601250852395217.pdf?download=true
+- ABB – Miniature Circuit Breakers & Supplementary Protectors: https://electrification.us.abb.com/products/circuit-breakers/miniature-circuit-breakers-supplementary-protectors
 
-Ausführliche Links stehen in `quellen.md`.
+## PDF
+
+Der Generator `scripts/create_lernzettel.py` erzeugt:
+
+```text
+outputs/lernzettel-sicherung.pdf
+```
+
+Befehl:
+
+```bash
+python scripts/create_lernzettel.py
+```

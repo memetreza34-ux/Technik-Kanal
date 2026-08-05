@@ -1,21 +1,23 @@
-# Plattform-Paket – Sicherungs-Reel
+# Caption und Veröffentlichung – Warum fliegt die Sicherung raus?
 
-## Instagram / TikTok Caption
+## Fertige Instagram-/TikTok-Caption
 
+```text
 Warum fliegt die Sicherung raus? ⚡
 
 Ein Leitungsschutzschalter reagiert auf zwei unterschiedliche Fehler:
 
-- Überlast: Das Bimetall erwärmt sich und löst zeitverzögert aus.
-- Kurzschluss: Der Magnetauslöser trennt den Stromkreis sehr schnell.
+• Überlast: Das Bimetall erwärmt sich und löst zeitverzögert aus.
+• Kurzschluss: Der Magnetauslöser trennt den Stromkreis sehr schnell.
 
 Wichtig: Der Leitungsschutzschalter schützt vor allem die Leitung. Er ersetzt keinen FI-Schalter.
 
 Löst der Schalter nach dem Ausschalten der Geräte erneut aus, nicht ständig zurücksetzen. Die Ursache muss fachgerecht geprüft werden.
 
-Kommentiere **SICHERUNG** für den kompakten Lernzettel.
+Kommentiere SICHERUNG für den kompakten Lernzettel.
 
 #Elektrotechnik #Elektronik #Sicherung #Leitungsschutzschalter #Ausbildung #Elektriker #Lernen
+```
 
 ## YouTube-Shorts-Titel
 
@@ -23,7 +25,7 @@ Kommentiere **SICHERUNG** für den kompakten Lernzettel.
 Warum fliegt die Sicherung raus? Überlast vs. Kurzschluss
 ```
 
-## Alternative kurze Titel
+## Alternative Titel
 
 ```text
 So erkennt die Sicherung Überlast und Kurzschluss
@@ -39,15 +41,13 @@ Bimetall oder Magnet: So löst der LSS aus
 Kommentiere SICHERUNG, dann bekommst du den Lernzettel mit Überlast, Kurzschluss und beiden Auslösearten. ⚡
 ```
 
-## Antwort auf Keyword-Kommentar
+## Antwort auf den Keyword-Kommentar
 
 ```text
 Hier ist dein Lernzettel zur Sicherung. Wichtig: Wenn ein Leitungsschutzschalter nach dem Ausschalten der Geräte erneut auslöst, nicht ständig zurücksetzen. Die Ursache muss fachgerecht geprüft werden.
 ```
 
 ## Cover-Text
-
-Hauptzeile:
 
 ```text
 WARUM FLIEGT DIE SICHERUNG?
