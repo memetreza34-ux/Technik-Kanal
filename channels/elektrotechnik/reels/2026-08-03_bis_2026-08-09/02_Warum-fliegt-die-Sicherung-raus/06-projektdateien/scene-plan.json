@@ -1,20 +1,91 @@
 {
+  "version": 2,
+  "slug": "warum-fliegt-die-sicherung-raus",
+  "compositionId": "SicherungsReel",
   "fps": 30,
-  "voiceSpeed": 1.10,
-  "baseTotalFrames": 2070,
-  "targetTotalFrames": 1882,
-  "targetDurationSeconds": 62.733,
-  "timingStatus": "target-plan-awaiting-final-audio-and-remotion-resync",
+  "width": 1080,
+  "height": 1920,
+  "minimumWordMatchRatio": 0.8,
   "scenes": [
-    {"id": 1, "baseFrom": 0, "baseTo": 180, "targetFrom": 0, "targetTo": 164, "title": "Hook"},
-    {"id": 2, "baseFrom": 180, "baseTo": 390, "targetFrom": 164, "targetTo": 355, "title": "Leitungsschutz"},
-    {"id": 3, "baseFrom": 390, "baseTo": 630, "targetFrom": 355, "targetTo": 573, "title": "Überlast"},
-    {"id": 4, "baseFrom": 630, "baseTo": 870, "targetFrom": 573, "targetTo": 791, "title": "Bimetall"},
-    {"id": 5, "baseFrom": 870, "baseTo": 1080, "targetFrom": 791, "targetTo": 982, "title": "Kurzschluss"},
-    {"id": 6, "baseFrom": 1080, "baseTo": 1290, "targetFrom": 982, "targetTo": 1173, "title": "Magnetauslösung"},
-    {"id": 7, "baseFrom": 1290, "baseTo": 1500, "targetFrom": 1173, "targetTo": 1364, "title": "Vergleich"},
-    {"id": 8, "baseFrom": 1500, "baseTo": 1710, "targetFrom": 1364, "targetTo": 1555, "title": "Richtig reagieren"},
-    {"id": 9, "baseFrom": 1710, "baseTo": 1890, "targetFrom": 1555, "targetTo": 1718, "title": "Erneutes Auslösen"},
-    {"id": 10, "baseFrom": 1890, "baseTo": 2070, "targetFrom": 1718, "targetTo": 1882, "title": "LSS ist nicht FI"}
+    {
+      "id": "01-hook",
+      "title": "Hook",
+      "baseFrom": 0,
+      "baseTo": 180,
+      "imageDir": "02-bilder/images/01-hook",
+      "voiceText": "Warum fliegt die Sicherung raus? Meistens gibt es zwei Ursachen: Überlast oder Kurzschluss."
+    },
+    {
+      "id": "02-leitungsschutz",
+      "title": "Leitungsschutz",
+      "baseFrom": 180,
+      "baseTo": 390,
+      "imageDir": "02-bilder/images/02-leitungsschutz",
+      "voiceText": "Der Leitungsschutzschalter schützt dabei vor allem die Leitung vor zu hoher Erwärmung."
+    },
+    {
+      "id": "03-ueberlast",
+      "title": "Überlast",
+      "baseFrom": 390,
+      "baseTo": 630,
+      "imageDir": "02-bilder/images/03-ueberlast",
+      "voiceText": "Bei einer Überlast laufen zu viele Geräte gleichzeitig. Der Strom ist zu hoch, aber nicht schlagartig extrem."
+    },
+    {
+      "id": "04-bimetall",
+      "title": "Bimetall",
+      "baseFrom": 630,
+      "baseTo": 870,
+      "imageDir": "02-bilder/images/04-bimetall",
+      "voiceText": "Im Schalter erwärmt sich ein Bimetall langsam, verbiegt sich und löst zeitverzögert aus."
+    },
+    {
+      "id": "05-kurzschluss",
+      "title": "Kurzschluss",
+      "baseFrom": 870,
+      "baseTo": 1080,
+      "imageDir": "02-bilder/images/05-kurzschluss",
+      "voiceText": "Beim Kurzschluss treffen zwei Leiter mit sehr kleinem Widerstand aufeinander. Der Strom steigt schlagartig."
+    },
+    {
+      "id": "06-magnetausloeser",
+      "title": "Magnetauslösung",
+      "baseFrom": 1080,
+      "baseTo": 1290,
+      "imageDir": "02-bilder/images/06-magnetausloeser",
+      "voiceText": "Dann reagiert der magnetische Schnellauslöser fast sofort und trennt den Stromkreis."
+    },
+    {
+      "id": "07-vergleich",
+      "title": "Vergleich",
+      "baseFrom": 1290,
+      "baseTo": 1500,
+      "imageDir": "02-bilder/images/07-vergleich",
+      "voiceText": "Merke: Überlast ist meist langsamer, Kurzschluss sehr schnell."
+    },
+    {
+      "id": "08-richtig-reagieren",
+      "title": "Richtig reagieren",
+      "baseFrom": 1500,
+      "baseTo": 1710,
+      "imageDir": "02-bilder/images/08-richtig-reagieren",
+      "voiceText": "Schalte zuerst Geräte aus oder ziehe Stecker. Danach darfst du den Schalter einmal wieder einschalten."
+    },
+    {
+      "id": "09-erneutes-ausloesen",
+      "title": "Erneutes Auslösen",
+      "baseFrom": 1710,
+      "baseTo": 1890,
+      "imageDir": "02-bilder/images/09-erneutes-ausloesen",
+      "voiceText": "Löst er erneut aus, nicht ständig zurücksetzen und niemals an spannungsführenden Teilen arbeiten. Dann muss die Ursache fachgerecht geprüft werden."
+    },
+    {
+      "id": "10-lss-vs-fi",
+      "title": "LSS ist nicht FI",
+      "baseFrom": 1890,
+      "baseTo": 2070,
+      "imageDir": "02-bilder/images/10-lss-vs-fi",
+      "voiceText": "Und wichtig: Der Leitungsschutzschalter ersetzt keinen FI-Schalter. Kommentiere SICHERUNG für den Lernzettel mit beiden Auslösearten."
+    }
   ]
 }

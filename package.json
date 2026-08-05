@@ -10,6 +10,12 @@
     "studio": "npm run studio --workspace @elektrotechnik/channel",
     "render": "npm run render --workspace @elektrotechnik/channel",
     "check": "npm run check --workspace @elektrotechnik/channel",
-    "voice:1.10": "node scripts/process_voiceover.mjs"
+    "voice:1.10": "node scripts/process_voiceover.mjs",
+    "elektro:setup-local": "node scripts/setup_local_transcription.mjs",
+    "elektro:transcribe": "node scripts/transcribe_electrical_voiceover.mjs",
+    "elektro:prepare": "node scripts/prepare_electrical_reel.mjs",
+    "elektro:render": "node scripts/render_electrical_reel.mjs",
+    "elektro:qa": "node scripts/qa_electrical_render.mjs",
+    "elektro:finish": "node scripts/finish_electrical_reel.mjs"
   }
 }
