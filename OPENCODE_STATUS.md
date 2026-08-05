@@ -1,22 +1,10 @@
 # Produktionsstatus – Elektrotechnik-Kanal
 
-## Migration
+## Repository
 
-- eigenständiges Repository am 04.08.2026 eingerichtet
-- aktiver neuer Elektro-Reel aus dem Faceless-Studio übernommen
-- keine Abhängigkeit vom früheren gemeinsamen Root oder dessen Shared-Komponenten
-- alte verworfene Wochen, Bilder und Exporte nicht übernommen
-
-## Animationsbibliothek
-
-- verbindlicher Bibliotheksablauf eingeführt
-- Ablage: `src/animation-library/`
-- Kategorien und Namensregeln dokumentiert
-- Katalog unter `src/animation-library/CATALOG.md` angelegt
-- erste Komponente: `protection/BreakerTripAnimation`
-- Status der ersten Komponente: `in Prüfung`
-
-Ab jetzt gilt: Wird für einen Erklärschritt eine Animation benötigt und existiert keine fachlich passende Bibliothekskomponente, wird die richtige Animation neu erstellt, allgemein parametrisiert, korrekt kategorisiert, eindeutig benannt, exportiert und katalogisiert. Es wird keine unpassende Ersatzanimation verwendet.
+- eigenständiges Elektrotechnik-Repository
+- keine Abhängigkeit von `Dinge erklärt`
+- verbindliche Ablage: Woche → Wochentag → Thema → Produktionsbereiche
 
 ## Aktiver Reel
 
@@ -24,21 +12,32 @@ Ab jetzt gilt: Wird für einen Erklärschritt eine Animation benötigt und exist
 - Composition: `SicherungsReel`
 - Dauer: 69 Sekunden
 - zehn visuelle Beats
-- Voice-over, Szenenplan, Caption, Quellen und Produktionsstatus vorhanden
-- Render-Befehl: `npm run render`
+- Pfad: `wochen/03.08.2026--09.08.2026/02-Dienstag/warum-fliegt-die-sicherung-raus/`
+
+## Vorhanden
+
+- finaler Sprechtext und Kopiertext
+- SRT-Untertitel
+- SFX-Plan
+- alle zehn Bildprompts plus Cover-Prompt
+- eigene Ablageordner für jedes Szenenbild
+- Animationsplan
+- Caption und Posting-Paket
+- Lernzettel und Quellen
+- Export- und QA-Anleitung
+- Remotion-Code und Animationsbibliothek
 
 ## Noch offen vor Veröffentlichung
 
-1. lokale Breaker-Hilfskomponente im Sicherungs-Reel durch `BreakerTripAnimation` aus der Bibliothek ersetzen
-2. `BreakerTripAnimation` mit Start-, Mittel- und Endzustand prüfen und danach auf `bereit` setzen
-3. finale Iro-Voice-over-Datei aufnehmen
-4. Audio einfügen und Wort-Timings kalibrieren
-5. funktionale SFX ergänzen
-6. `npm run check` ausführen
-7. Kontrollframes aller zehn Beats prüfen
-8. finalen MP4-Export vollständig ansehen
-9. Nachanalyse anlegen
+1. finale Iro-Sprachaufnahme ablegen
+2. echte SFX-Dateien ablegen
+3. gewünschte Szenenbilder generieren und in die passenden Bilderordner legen
+4. Audio, SFX und optional Bilder in Remotion einbauen
+5. `npm run check` ausführen
+6. Kontrollframes prüfen
+7. vollständigen MP4-Export mit Ton ansehen
+8. Nachanalyse dokumentieren
 
 ## Verbindliche Regel
 
-Kein zweites Reel vorbereiten, bevor der Sicherungs-Reel mit finalem Ton geprüft und abgenommen wurde.
+Kein zweites Reel vollständig beginnen, bevor der Sicherungs-Reel technisch und visuell abgenommen wurde.

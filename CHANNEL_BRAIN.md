@@ -4,15 +4,23 @@
 
 Deutschsprachiger Faceless-Lernkanal für verständliche Elektrotechnik, Elektronik, Messtechnik, Physik, Mathematik und technische Informatik.
 
-## Aktiver Neustart
+## Eigenständiges Repository
 
-Der Kanal wird seit dem 04.08.2026 als eigenständiges Repository geführt. Frühere, als nicht veröffentlichungsfähig bewertete Reel-Wochen wurden nicht übernommen.
+Der Kanal wird seit dem 04.08.2026 als eigenes Repository geführt. `Dinge erklärt` gehört nicht in dieses Repository.
 
-Aktiv ist genau ein Reel:
+## Aktiver Reel
 
-- `Warum fliegt die Sicherung raus?`
+- Thema: `Warum fliegt die Sicherung raus?`
 - Composition: `SicherungsReel`
-- Pfad: `reels/2026-08-04-sicherung/`
+- Pfad: `wochen/03.08.2026--09.08.2026/02-Dienstag/warum-fliegt-die-sicherung-raus/`
+
+## Verbindliche Produktionsablage
+
+```text
+wochen/<montag--sonntag>/<wochentag>/<thema>/
+```
+
+In jedem Themenordner liegen getrennte Bereiche für Skript und Audio, Bildprompts und Bilder, Animationen, Caption, PDF und Quellen sowie Export und QA.
 
 ## Produktionsstandard
 
@@ -33,26 +41,11 @@ Aktiv ist genau ein Reel:
 
 Die wiederverwendbare Bibliothek liegt unter `src/animation-library/`.
 
-Vor jeder neuen Animation wird zuerst der Katalog geprüft. Existiert keine fachlich passende Komponente, wird die benötigte Animation passend zum aktuellen Erklärschritt neu erstellt. Danach wird sie:
-
-- allgemein wiederverwendbar parametrisiert
-- in der fachlich richtigen Kategorie gespeichert
-- eindeutig benannt
-- über die Index-Dateien exportiert
-- im Bibliothekskatalog mit Zweck, Props und Status dokumentiert
-- vor der Reel-Verwendung technisch und visuell geprüft
-
-Neue Animationen dürfen nicht nur deshalb vereinfacht oder durch ein unpassendes vorhandenes Element ersetzt werden, weil sie noch nicht in der Bibliothek existieren. Fehlt eine benötigte Darstellung, wird die richtige Darstellung neu gebaut.
+Vor jeder neuen Animation wird zuerst der Katalog geprüft. Existiert keine fachlich passende Komponente, wird die benötigte Animation passend neu erstellt, parametrisiert, kategorisiert, benannt, exportiert, katalogisiert und geprüft.
 
 ## Qualitätsgate
 
 Keine finale Freigabe ohne fachlich geprüfte Quellen, finales Voice-over, TypeScript-Prüfung, Kontrollframes, vollständige Video- und Tonkontrolle sowie dokumentierte Nachanalyse.
-
-Bei neuen Bibliotheksanimationen kommen zusätzlich hinzu:
-
-- Start-, Mittel- und Endzustand geprüft
-- Props und Kategorie dokumentiert
-- Katalog und Exporte aktualisiert
 
 ## Sound
 
