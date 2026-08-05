@@ -58,7 +58,7 @@ for (const scene of plan.scenes) {
 }
 write('03-caption/00_CAPTION_INFO.md', '# Caption\n\nWortzeiten werden aus dem finalen Audio erzeugt.\n');
 write('03-caption/social-caption.md', `# Social Caption\n\n${title}\n`);
-write('04-pdf/lernzettel-inhalt.md', `# Lernzettel – ${title}\n\nNur erstellen, wenn der Reel einen echten Lernzettel verspricht.\n`);
+write('04-pdf/inhalt.md', `# Lernzettel – ${title}\n\nNur erstellen, wenn der Reel einen echten Lernzettel verspricht.\n`);
 write('05-export/README.md', '# Export\n\nFinale Dateien werden automatisch erzeugt.\n');
 write('05-export/video/README.md', '# Finales Video\n');
 write('06-projektdateien/motion-design.md', '# Motion Design\n\nMechanismen, Übergänge und Bibliothekskomponenten pro Szene dokumentieren.\n');
