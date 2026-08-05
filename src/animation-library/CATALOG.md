@@ -12,9 +12,9 @@ Vor jeder neuen Animation zuerst diesen Katalog prüfen.
 
 | Name | Kategorie | Zweck | Wichtige Props | Status | Datei |
 |---|---|---|---|---|---|
-| `BreakerTripAnimation` | `protection` | Darstellung eines Leitungsschutzschalters vom eingeschalteten bis zum ausgelösten Zustand | `progress`, `label`, `width`, `height`, `activeColor`, `tripColor`, `onText`, `trippedText` | `bereit` | `protection/BreakerTripAnimation.tsx` |
+| `BreakerTripAnimation` | `protection` | Darstellung eines Leitungsschutzschalters vom eingeschalteten bis zum ausgelösten Zustand | `progress`, `label`, `width`, `height`, `activeColor`, `tripColor`, `onText`, `trippedText` | `in Prüfung` | `protection/BreakerTripAnimation.tsx` |
 
-## Kategorien ohne Eintrag
+## Kategorien ohne freigegebenen Eintrag
 
 Für diese Kategorien existiert noch keine freigegebene Bibliotheksanimation. Wird eine passende Darstellung benötigt, muss sie neu erstellt, geprüft und hier eingetragen werden.
 
