@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "voice": "Iro",
+  "speed": 1.10,
+  "pitch": "preserve",
+  "processing": {
+    "engine": "ffmpeg",
+    "filter": "atempo=1.10",
+    "sampleRateHz": 48000
+  },
+  "timingPolicy": {
+    "sourceOfTruth": "processed-final-audio",
+    "regenerateCaptionsAfterProcessing": true,
+    "resyncVisuals": true,
+    "resyncSoundEffects": true,
+    "adjustTotalDuration": true
+  },
+  "subtitleStyle": {
+    "color": "white",
+    "highlightColor": null,
+    "backgroundBox": false,
+    "maxLines": 2,
+    "verticalPositionPercent": 76
+  }
+}
