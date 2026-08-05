@@ -6,25 +6,34 @@ Eigenständiges Repository für den deutschsprachigen Elektrotechnik-Faceless-Ka
 
 ## Aktiver Reel
 
-# Warum fliegt die Sicherung raus?
+**Warum fliegt die Sicherung raus?**
 
 Öffne zuerst:
 
 ```text
-reels/warum-fliegt-die-sicherung-raus/00-START-HIER.md
+wochen/03.08.2026--09.08.2026/02-Dienstag/warum-fliegt-die-sicherung-raus/00-START-HIER.md
 ```
 
-Direkte Hauptdateien:
+## Verbindliche Produktionsstruktur
 
 ```text
-01-SPRECHTEXT.md
-02-ALLE-BILDPROMPTS.md
-03-ANIMATIONEN.md
-04-CAPTION.md
-05-SFX.md
-06-LERNZETTEL-UND-QUELLEN.md
-07-PRODUKTION.md
-captions.srt
+wochen/
+└── 03.08.2026--09.08.2026/
+    └── 02-Dienstag/
+        └── warum-fliegt-die-sicherung-raus/
+            ├── 00-START-HIER.md
+            ├── 01-SKRIPT-UND-AUDIO/
+            ├── 02-BILDPROMPTS-UND-BILDER/
+            ├── 03-ANIMATIONEN/
+            ├── 04-CAPTION/
+            ├── 05-PDF-UND-QUELLEN/
+            └── 06-EXPORT/
+```
+
+Jeder neue Reel wird künftig nach demselben Prinzip gespeichert:
+
+```text
+wochen/<montag--sonntag>/<wochentag>/<thema>/
 ```
 
 ## Technische Daten
@@ -58,26 +67,26 @@ outputs/sicherungs-reel.mp4
 
 ## Richtiger lokaler Klon
 
-Der alte lokale Ordner `faceless-erklärkanal-clone/channels/elektrotechnik` ist nicht mehr das aktive Projekt. Für eine saubere lokale Struktur dieses Repository separat klonen:
+Der alte lokale Ordner `faceless-erklärkanal-clone/channels/elektrotechnik` ist nicht mehr das aktive Projekt.
 
 ```bash
 cd ~/Documents
-
 git clone https://github.com/memetreza34-ux/Elektrotechnik-Kanal.git
-
 cd Elektrotechnik-Kanal
+git switch main
+git pull origin main
 ```
 
 Danach in Codex ausschließlich den Ordner `Elektrotechnik-Kanal` öffnen.
 
 ## Repository-Struktur
 
-- `reels/` – einfache Produktionspakete pro Reel
+- `wochen/` – Woche → Wochentag → Thema → Produktionsordner
 - `src/` – Remotion-Code
 - `src/animation-library/` – wiederverwendbare Animationen
-- `scripts/` – Hilfsskripte wie PDF-Erzeugung
+- `scripts/` – Hilfsskripte
 - `outputs/` – lokale Render und Kontrollbilder
-- `public/` – Voice-over und SFX
+- `public/` – globale technische Medien, sofern benötigt
 
 ## Sicherheitsgrenze
 
