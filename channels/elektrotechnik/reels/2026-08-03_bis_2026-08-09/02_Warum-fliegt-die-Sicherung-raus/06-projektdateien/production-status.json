@@ -1,15 +1,24 @@
 {
   "status": "produktion",
+  "voiceSpeed": 1.10,
+  "voicePitch": "preserve",
+  "targetDurationSeconds": 62.727,
   "completed": [
     "script",
     "prompts",
-    "captions",
+    "captions-provisional-1.10x",
+    "sfx-plan-provisional-1.10x",
+    "voice-processing-command",
+    "voice-speed-config-1.10x",
     "animation-plan",
     "learning-sheet-content",
-    "remotion-code"
+    "remotion-code-base-version"
   ],
   "open": [
-    "final-iro-audio",
+    "final-iro-audio-raw",
+    "process-final-audio-atempo-1.10",
+    "regenerate-exact-word-timings-from-final-audio",
+    "resync-remotion-timeline-to-final-audio",
     "sfx-files",
     "typecheck",
     "control-stills",

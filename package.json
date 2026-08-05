@@ -9,6 +9,7 @@
   "scripts": {
     "studio": "npm run studio --workspace @elektrotechnik/channel",
     "render": "npm run render --workspace @elektrotechnik/channel",
-    "check": "npm run check --workspace @elektrotechnik/channel"
+    "check": "npm run check --workspace @elektrotechnik/channel",
+    "voice:1.10": "node scripts/process_voiceover.mjs"
   }
 }

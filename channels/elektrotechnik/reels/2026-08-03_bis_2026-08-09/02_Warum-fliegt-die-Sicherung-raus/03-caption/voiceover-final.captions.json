@@ -1,17 +1,20 @@
 {
   "version": 1,
   "language": "de",
-  "durationSeconds": 69,
+  "voiceSpeed": 1.10,
+  "pitchPreserved": true,
+  "durationSeconds": 62.727,
+  "timingStatus": "proportional-vorlaeufig-bis-finale-aufnahme",
   "segments": [
-    {"start": 0, "end": 6, "text": "Warum fliegt die Sicherung raus? Überlast oder Kurzschluss."},
-    {"start": 6, "end": 13, "text": "Der Leitungsschutzschalter schützt vor allem die Leitung."},
-    {"start": 13, "end": 21, "text": "Bei Überlast laufen zu viele Geräte. Der Strom ist zu hoch."},
-    {"start": 21, "end": 29, "text": "Das Bimetall wird warm, verbiegt sich und löst verzögert aus."},
-    {"start": 29, "end": 36, "text": "Beim Kurzschluss steigt der Strom schlagartig an."},
-    {"start": 36, "end": 43, "text": "Der magnetische Schnellauslöser trennt fast sofort."},
-    {"start": 43, "end": 50, "text": "Überlast ist langsamer. Kurzschluss ist sehr schnell."},
-    {"start": 50, "end": 57, "text": "Geräte ausschalten und den Schalter nur einmal zurücksetzen."},
-    {"start": 57, "end": 63, "text": "Löst er erneut aus, nicht ständig zurücksetzen."},
-    {"start": 63, "end": 69, "text": "Leitungsschutz ist nicht FI. Kommentiere SICHERUNG."}
+    {"start": 0, "end": 5.455, "text": "Warum fliegt die Sicherung raus? Überlast oder Kurzschluss."},
+    {"start": 5.455, "end": 11.818, "text": "Der Leitungsschutzschalter schützt vor allem die Leitung."},
+    {"start": 11.818, "end": 19.091, "text": "Bei Überlast laufen zu viele Geräte. Der Strom ist zu hoch."},
+    {"start": 19.091, "end": 26.364, "text": "Das Bimetall wird warm, verbiegt sich und löst verzögert aus."},
+    {"start": 26.364, "end": 32.727, "text": "Beim Kurzschluss steigt der Strom schlagartig an."},
+    {"start": 32.727, "end": 39.091, "text": "Der magnetische Schnellauslöser trennt fast sofort."},
+    {"start": 39.091, "end": 45.455, "text": "Überlast ist langsamer. Kurzschluss ist sehr schnell."},
+    {"start": 45.455, "end": 51.818, "text": "Geräte ausschalten und den Schalter nur einmal zurücksetzen."},
+    {"start": 51.818, "end": 57.273, "text": "Löst er erneut aus, nicht ständig zurücksetzen."},
+    {"start": 57.273, "end": 62.727, "text": "Leitungsschutz ist nicht FI. Kommentiere SICHERUNG."}
   ]
 }

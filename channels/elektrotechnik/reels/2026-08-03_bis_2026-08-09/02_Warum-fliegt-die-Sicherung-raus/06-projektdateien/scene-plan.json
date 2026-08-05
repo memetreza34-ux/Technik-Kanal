@@ -1,16 +1,20 @@
 {
   "fps": 30,
-  "totalFrames": 2070,
+  "voiceSpeed": 1.10,
+  "baseTotalFrames": 2070,
+  "targetTotalFrames": 1882,
+  "targetDurationSeconds": 62.733,
+  "timingStatus": "target-plan-awaiting-final-audio-and-remotion-resync",
   "scenes": [
-    {"id": 1, "from": 0, "to": 180, "title": "Hook"},
-    {"id": 2, "from": 180, "to": 390, "title": "Leitungsschutz"},
-    {"id": 3, "from": 390, "to": 630, "title": "Überlast"},
-    {"id": 4, "from": 630, "to": 870, "title": "Bimetall"},
-    {"id": 5, "from": 870, "to": 1080, "title": "Kurzschluss"},
-    {"id": 6, "from": 1080, "to": 1290, "title": "Magnetauslösung"},
-    {"id": 7, "from": 1290, "to": 1500, "title": "Vergleich"},
-    {"id": 8, "from": 1500, "to": 1710, "title": "Richtig reagieren"},
-    {"id": 9, "from": 1710, "to": 1890, "title": "Erneutes Auslösen"},
-    {"id": 10, "from": 1890, "to": 2070, "title": "LSS ist nicht FI"}
+    {"id": 1, "baseFrom": 0, "baseTo": 180, "targetFrom": 0, "targetTo": 164, "title": "Hook"},
+    {"id": 2, "baseFrom": 180, "baseTo": 390, "targetFrom": 164, "targetTo": 355, "title": "Leitungsschutz"},
+    {"id": 3, "baseFrom": 390, "baseTo": 630, "targetFrom": 355, "targetTo": 573, "title": "Überlast"},
+    {"id": 4, "baseFrom": 630, "baseTo": 870, "targetFrom": 573, "targetTo": 791, "title": "Bimetall"},
+    {"id": 5, "baseFrom": 870, "baseTo": 1080, "targetFrom": 791, "targetTo": 982, "title": "Kurzschluss"},
+    {"id": 6, "baseFrom": 1080, "baseTo": 1290, "targetFrom": 982, "targetTo": 1173, "title": "Magnetauslösung"},
+    {"id": 7, "baseFrom": 1290, "baseTo": 1500, "targetFrom": 1173, "targetTo": 1364, "title": "Vergleich"},
+    {"id": 8, "baseFrom": 1500, "baseTo": 1710, "targetFrom": 1364, "targetTo": 1555, "title": "Richtig reagieren"},
+    {"id": 9, "baseFrom": 1710, "baseTo": 1890, "targetFrom": 1555, "targetTo": 1718, "title": "Erneutes Auslösen"},
+    {"id": 10, "baseFrom": 1890, "baseTo": 2070, "targetFrom": 1718, "targetTo": 1882, "title": "LSS ist nicht FI"}
   ]
 }
