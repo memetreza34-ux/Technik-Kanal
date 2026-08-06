@@ -7,6 +7,7 @@ const required = [
   '.claude/settings.json',
   'channels/elektrotechnik/CLAUDE.md',
   'channels/elektrotechnik/brand/brand.ts',
+  'channels/elektrotechnik/engine/VISUAL-QUALITY-GATE.md',
   'channels/elektrotechnik/engine/config/electrical-v1.json',
   'channels/elektrotechnik/gehirn/BILDSTIL.md',
   'channels/elektrotechnik/gehirn/MASTER-STYLE-PROMPT.md',
@@ -24,6 +25,9 @@ const required = [
   'scripts/check-electrical-preproduction.mjs',
   'scripts/check-electrical-project-folder.mjs',
   'scripts/check-electrical-readiness.mjs',
+  'scripts/check-electrical-required-media.mjs',
+  'scripts/materialize-electrical-mechanism-canvases.mjs',
+  'scripts/cleanup-electrical-mechanism-canvases.mjs',
   'scripts/ingest-electrical-assets.mjs',
   'scripts/render_electrical_reel.mjs',
   'scripts/test-electrical-visual-policy.mjs'

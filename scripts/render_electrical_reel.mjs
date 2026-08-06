@@ -15,6 +15,7 @@ if (!args.includes('--preflight-passed')) {
   run(process.execPath, ['scripts/check-electrical-preproduction.mjs', paths.root], {cwd: repositoryRoot});
 }
 run(process.execPath, ['scripts/check-electrical-readiness.mjs', paths.root], {cwd: repositoryRoot});
+run(process.execPath, ['scripts/materialize-electrical-mechanism-canvases.mjs', paths.root], {cwd: repositoryRoot});
 
 const genericRuntimePath = path.join(channelRoot, 'src/generated/reel-runtime.json');
 const previousGenericRuntime = fs.existsSync(genericRuntimePath) ? fs.readFileSync(genericRuntimePath) : null;
@@ -56,4 +57,5 @@ try {
   if (restoreGenericRuntime && previousGenericRuntime) {
     fs.writeFileSync(genericRuntimePath, previousGenericRuntime);
   }
+  run(process.execPath, ['scripts/cleanup-electrical-mechanism-canvases.mjs', paths.root], {cwd: repositoryRoot});
 }

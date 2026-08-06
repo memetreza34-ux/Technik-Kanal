@@ -1,5 +1,5 @@
 {
-  "version": "electrical-v3",
+  "version": "electrical-v4",
   "slug": "was-macht-ein-fi-schalter",
   "status": "preflight-required-before-new-media",
   "rebuildReason": "Erster Render war visuell überladen, enthielt englische KI-Texte und zu viele konkurrierende Animationen.",
@@ -16,7 +16,8 @@
   "media": {
     "oldRenderRejected": true,
     "newRawVoiceoverRequired": true,
-    "newSceneImagesRequired": 10,
+    "visibleSceneImagesRequired": 7,
+    "mechanismOnlyScenesWithoutUserImages": 3,
     "newSceneImagesPresent": 0,
     "newCoverRequired": true,
     "sfxOptional": true
