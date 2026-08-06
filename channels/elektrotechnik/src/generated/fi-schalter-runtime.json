@@ -10,7 +10,7 @@
   "voiceoverPath": "",
   "coverText": "So erkennt der FI gefährlichen Fehlerstrom.",
   "scenes": [
-    {"id":"01-hook","title":"Warum fliegt der FI raus?","kicker":"FI gegen Sicherung","headline":"Der FI sucht keinen Überstrom","fromFrame":0,"toFrame":180,"layout":"warning","mechanism":"rcd-trip","accent":"fault"},
+    {"id":"01-hook","title":"Warum fliegt der FI raus?","kicker":"FI gegen Sicherung","headline":"So erkennt der FI gefährlichen Fehlerstrom.","fromFrame":0,"toFrame":180,"layout":"warning","mechanism":"rcd-trip","accent":"fault"},
     {"id":"02-begriff","title":"Was prüft der FI?","kicker":"Technisch: RCD","headline":"Kommt der ganze Strom zurück?","fromFrame":180,"toFrame":390,"layout":"image-mechanism","mechanism":"rcd-cutaway","accent":"current"},
     {"id":"03-normalzustand","title":"Hin und zurück gleich","kicker":"Normalzustand","headline":"Der FI bleibt eingeschaltet","fromFrame":390,"toFrame":600,"layout":"image-mechanism","mechanism":"residual-current-balance","accent":"current"},
     {"id":"04-fehlerweg","title":"Strom fließt zur Erde","kicker":"Isolationsfehler","headline":"Ein Teil nimmt einen anderen Weg","fromFrame":600,"toFrame":810,"layout":"warning","mechanism":"earth-leakage-path","accent":"fault"},
