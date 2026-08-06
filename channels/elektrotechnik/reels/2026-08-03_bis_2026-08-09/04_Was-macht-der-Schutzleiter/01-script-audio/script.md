@@ -14,7 +14,7 @@
 
 ## Szene 02 – Verbindung zum Gehäuse
 
-**Voice:** Bei Geräten mit Metallgehäuse, der sogenannten Schutzklasse eins, ist das Gehäuse deshalb mit dem grün-gelben Leiter verbunden.
+**Voice:** Bei Geräten der Schutzklasse eins, also Geräten mit Schutzleiteranschluss, ist das berührbare Metallgehäuse mit dem grün-gelben Leiter verbunden.
 
 ## Szene 03 – Normalbetrieb
 
