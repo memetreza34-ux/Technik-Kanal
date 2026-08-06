@@ -1,10 +1,21 @@
 import {z} from 'zod';
 
 const nonEmpty = z.string().trim().min(1);
+const normalizedCoordinate = z.number().min(0).max(1);
 
 export const WordTimestamp = z.object({text: nonEmpty, normalized: z.string().optional(), startMs: z.number().nonnegative(), endMs: z.number().positive(), confidence: z.number().min(0).max(1).optional()}).refine((value) => value.endMs > value.startMs, 'endMs must be greater than startMs');
 export const Caption = z.object({text: nonEmpty, startMs: z.number().nonnegative(), endMs: z.number().positive(), fromFrame: z.number().int().nonnegative().optional(), toFrame: z.number().int().positive().optional(), words: z.array(WordTimestamp.pick({text:true,startMs:true,endMs:true})).optional()}).refine((value) => value.endMs > value.startMs, 'caption end must follow start');
 export const Captions = z.array(Caption);
+
+export const ImageAnnotation = z.object({
+  text: nonEmpty,
+  labelX: normalizedCoordinate,
+  labelY: normalizedCoordinate,
+  targetX: normalizedCoordinate,
+  targetY: normalizedCoordinate,
+  accent: z.enum(['pe','neutral','fault','protection','warning','current']).optional(),
+  width: z.number().int().min(220).max(520).optional(),
+});
 
 export const ElectricalScene = z.object({
   id: nonEmpty,
@@ -12,6 +23,7 @@ export const ElectricalScene = z.object({
   voiceText: nonEmpty,
   imageDir: nonEmpty,
   imageLabel: z.string().optional(),
+  imageAnnotations: z.array(ImageAnnotation).max(4).optional(),
   backgroundFamily: z.string().optional(),
   shotType: z.string().optional(),
   referenceGroup: z.string().optional(),
@@ -41,7 +53,7 @@ export const ScenePlan = z.object({
   compositionId: nonEmpty,
   runtimeFile: z.string().optional(),
   visualPolicyVersion: z.string().optional(),
-  generatedImageTextPolicy: z.enum(['none','exact-german-short-labels','controlled-german-overlay']).optional(),
+  generatedImageTextPolicy: z.enum(['none','exact-german-short-labels','controlled-german-overlay','controlled-german-callouts']).optional(),
   coverText: z.string().optional(),
   language: z.string().optional(),
   fps: z.number().int().positive(),
