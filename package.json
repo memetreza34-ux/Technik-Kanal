@@ -25,6 +25,7 @@
     "electrical:assets": "node scripts/run-electrical-with-folder-check.mjs scripts/ingest-electrical-assets.mjs",
     "electrical:script-qa": "node scripts/run-electrical-script-qa.mjs",
     "electrical:creative-qa": "node scripts/run-electrical-creative-qa.mjs",
+    "electrical:callout-qa": "node scripts/check-electrical-callouts.mjs",
     "electrical:image-qa": "node scripts/check-electrical-image-appearance.mjs",
     "electrical:label-images": "node scripts/bake-electrical-image-labels.mjs",
     "electrical:content-package": "node scripts/run-electrical-with-folder-check.mjs scripts/check-electrical-content-package.mjs",
