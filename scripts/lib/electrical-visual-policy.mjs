@@ -15,11 +15,6 @@ export const resolveElectricalMotionLevel = (scene) => {
   return 'subtle';
 };
 
-const promptContainsSafeZone = (text, percent, area) => {
-  const normalized = lower(text);
-  return normalized.includes(`${area} ${percent} percent`) || normalized.includes(`${area} ${percent}%`);
-};
-
 const looksLikeOneClearSubject = (text, scene) => {
   const normalized = lower(text);
   if (scene.layout === 'comparison' || scene.imageRole === 'comparison') return /side by side|comparison|on the left.*on the right/.test(normalized);
@@ -42,8 +37,7 @@ const positiveToyStyle = (text) => [
 
 const containsExactLabel = (prompt, label) => {
   if (!label?.trim()) return false;
-  const labels = label.split('|').map((value) => value.trim()).filter(Boolean);
-  return labels.every((entry) => prompt.includes(`"${entry}"`) || prompt.includes(`“${entry}”`) || prompt.includes(entry));
+  return label.split('|').map((value) => value.trim()).filter(Boolean).every((entry) => prompt.includes(`"${entry}"`) || prompt.includes(`“${entry}”`) || prompt.includes(entry));
 };
 
 const hasFullBleedRules = (prompt) => {
@@ -61,7 +55,7 @@ export const evaluateElectricalVisualPolicy = ({plan, config, promptFiles = {}, 
   const scenes = plan.scenes ?? [];
   const firstScene = scenes[0];
 
-  if (!strict) warnings.push(`Szenenplan verwendet noch nicht ${config.visuals.policyVersion}; neue Reels müssen diese Version verwenden.`);
+  if (!strict) warnings.push(`Szenenplan verwendet noch nicht ${config.visuals.policyVersion}; die neuen Bildregeln gelten verbindlich für neue Reels.`);
   if (scenes.length < config.visuals.beats.min || scenes.length > config.visuals.beats.max) errors.push(`Szenenzahl ${scenes.length} liegt außerhalb ${config.visuals.beats.min}–${config.visuals.beats.max}.`);
 
   if (firstScene) {
@@ -95,8 +89,8 @@ export const evaluateElectricalVisualPolicy = ({plan, config, promptFiles = {}, 
     if (mode === 'image-only' && scene.mechanism) errors.push(`${scene.id}: image-only darf keinen Mechanismus rendern.`);
     if (mode === 'image-with-overlay' && budget.overlayRequiresJustification && wordCount(scene.overlayJustification) < 5) errors.push(`${scene.id}: Bild-plus-Mechanismus benötigt eine konkrete overlayJustification.`);
     if (mode === 'mechanism-only' && motion !== 'full') errors.push(`${scene.id}: mechanism-only muss motionLevel "full" verwenden.`);
-    if (!scene.imageLabel?.trim()) errors.push(`${scene.id}: imageLabel fehlt.`);
-    if (!scene.backgroundFamily?.trim()) errors.push(`${scene.id}: backgroundFamily fehlt.`);
+    if (strict && !scene.imageLabel?.trim()) errors.push(`${scene.id}: imageLabel fehlt.`);
+    if (strict && !scene.backgroundFamily?.trim()) errors.push(`${scene.id}: backgroundFamily fehlt.`);
   }
 
   if (plan.animationBudget) {
@@ -106,13 +100,14 @@ export const evaluateElectricalVisualPolicy = ({plan, config, promptFiles = {}, 
     if (JSON.stringify(actualIds) !== JSON.stringify(declaredIds)) errors.push('animationBudget.fullMechanismScenes stimmt nicht mit den Szenen überein.');
   } else if (strict) errors.push('animationBudget fehlt im Szenenplan.');
 
-  const requiredTextPolicy = config.visuals.generatedImageTextPolicy;
-  if (strict && plan.generatedImageTextPolicy !== requiredTextPolicy) errors.push(`generatedImageTextPolicy muss "${requiredTextPolicy}" sein.`);
-  if (promptManifest && promptManifest.generatedImageTextPolicy !== requiredTextPolicy) errors.push(`Prompt-Manifest muss generatedImageTextPolicy "${requiredTextPolicy}" setzen.`);
-
-  const visibleScenes = scenes.filter((scene) => resolveElectricalRenderMode(scene) !== 'mechanism-only');
-  const backgroundFamilies = new Set(visibleScenes.map((scene) => scene.backgroundFamily).filter(Boolean));
-  if (backgroundFamilies.size < config.visuals.minimumBackgroundFamilies) errors.push(`Nur ${backgroundFamilies.size} Hintergrundfamilien; mindestens ${config.visuals.minimumBackgroundFamilies}.`);
+  if (strict) {
+    const requiredTextPolicy = config.visuals.generatedImageTextPolicy;
+    if (plan.generatedImageTextPolicy !== requiredTextPolicy) errors.push(`generatedImageTextPolicy muss "${requiredTextPolicy}" sein.`);
+    if (promptManifest?.generatedImageTextPolicy !== requiredTextPolicy) errors.push(`Prompt-Manifest muss generatedImageTextPolicy "${requiredTextPolicy}" setzen.`);
+    const visibleScenes = scenes.filter((scene) => resolveElectricalRenderMode(scene) !== 'mechanism-only');
+    const backgroundFamilies = new Set(visibleScenes.map((scene) => scene.backgroundFamily).filter(Boolean));
+    if (backgroundFamilies.size < config.visuals.minimumBackgroundFamilies) errors.push(`Nur ${backgroundFamilies.size} Hintergrundfamilien; mindestens ${config.visuals.minimumBackgroundFamilies}.`);
+  }
 
   for (const scene of scenes) {
     const prompt = promptFiles[scene.id];
@@ -120,9 +115,10 @@ export const evaluateElectricalVisualPolicy = ({plan, config, promptFiles = {}, 
       errors.push(`${scene.id}: Einzelprompt fehlt.`);
       continue;
     }
+    if (!strict) continue;
     const normalized = lower(prompt);
     if (!looksLikeOneClearSubject(prompt, scene)) errors.push(`${scene.id}: Prompt braucht ein klares Hauptmotiv oder einen klaren Zweiervergleich.`);
-    if (!promptContainsSafeZone(prompt, config.visuals.imagePrompt.mustReserveBottomPercent, 'bottom')) errors.push(`${scene.id}: untere Sicherheitszone fehlt.`);
+    if (!normalized.includes(`bottom ${config.visuals.imagePrompt.mustReserveBottomPercent} percent`)) errors.push(`${scene.id}: untere Sicherheitszone fehlt.`);
     if (!containsExactLabel(prompt, scene.imageLabel)) errors.push(`${scene.id}: exakte deutsche Bildbeschriftung fehlt im Prompt: ${scene.imageLabel}`);
     if (!hasFullBleedRules(prompt)) errors.push(`${scene.id}: Full-bleed-Regeln gegen weiße Balken oder Letterboxing fehlen.`);
     if (!hasProfessionalRealism(prompt)) errors.push(`${scene.id}: Prompt muss semi-photorealistische technische CGI und reale Proportionen festlegen.`);

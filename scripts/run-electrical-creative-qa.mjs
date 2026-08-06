@@ -15,6 +15,7 @@ if (!projectArg) {
 const paths = electricalProjectPaths(path.resolve(projectArg));
 const config = loadElectricalConfig();
 const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')));
+const strict = plan.visualPolicyVersion === config.visuals.policyVersion;
 const errors = [];
 const warnings = [];
 const layouts = new Set();
@@ -55,11 +56,13 @@ let coverPrompt = '';
 if (!fs.existsSync(coverFile)) errors.push('Coverprompt fehlt.');
 else {
   coverPrompt = fs.readFileSync(coverFile, 'utf8');
-  const normalized = coverPrompt.toLowerCase();
-  if (!normalized.includes('semi-photorealistic technical cgi') || !normalized.includes('real-world proportions')) errors.push('Coverprompt muss realistische technische CGI und reale Proportionen verlangen.');
-  if (!normalized.includes('full-bleed') || !normalized.includes('edge-to-edge')) errors.push('Coverprompt muss den vollständigen 9:16-Rahmen füllen.');
-  if (!/no white or gray (?:bands|bars)/.test(normalized) || !normalized.includes('no letterboxing')) errors.push('Coverprompt muss weiße Balken, Rahmen und Letterboxing verbieten.');
-  if (!plan.coverText || !coverPrompt.includes(`"${plan.coverText}"`)) errors.push('Coverprompt enthält den exakten deutschen Hook nicht sichtbar im Bild.');
+  if (strict) {
+    const normalized = coverPrompt.toLowerCase();
+    if (!normalized.includes('semi-photorealistic technical cgi') || !normalized.includes('real-world proportions')) errors.push('Coverprompt muss realistische technische CGI und reale Proportionen verlangen.');
+    if (!normalized.includes('full-bleed') || !normalized.includes('edge-to-edge')) errors.push('Coverprompt muss den vollständigen 9:16-Rahmen füllen.');
+    if (!/no white or gray (?:bands|bars)/.test(normalized) || !normalized.includes('no letterboxing')) errors.push('Coverprompt muss weiße Balken, Rahmen und Letterboxing verbieten.');
+    if (!plan.coverText || !coverPrompt.includes(`"${plan.coverText}"`)) errors.push('Coverprompt enthält den exakten deutschen Hook nicht sichtbar im Bild.');
+  }
 }
 
 const firstHook = plan.scenes[0]?.headline ?? plan.scenes[0]?.title ?? '';
@@ -77,11 +80,11 @@ else {
     const prompt = promptFiles[scene.id];
     if (prompt && !normalizedCombined.includes(normalize(prompt))) errors.push(`${scene.id}: vollständiger Einzelprompt fehlt in ALLE-BILDPROMPTS-MIT-COVER.txt.`);
   }
-  if (!combined.includes(plan.coverText)) errors.push('Gesamtdatei enthält den deutschen Cover-Hook nicht.');
+  if (strict && !combined.includes(plan.coverText)) errors.push('Gesamtdatei enthält den deutschen Cover-Hook nicht.');
 }
 
 const report = {
-  version: 'electrical-v4-german-labels',
+  version: strict ? 'electrical-v4-german-labels' : 'electrical-legacy-compatible',
   generatedAt: new Date().toISOString(),
   passed: errors.length === 0,
   sceneCount: plan.scenes.length,
@@ -103,5 +106,5 @@ if (errors.length) {
   errors.forEach((error) => console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Creative-QA bestanden: deutsche Labels, Full-bleed-Bilder und ${report.backgroundFamilies.length} Hintergrundfamilien.`);
+console.log(strict ? `✓ Creative-QA bestanden: deutsche Labels, Full-bleed-Bilder und ${report.backgroundFamilies.length} Hintergrundfamilien.` : '✓ Creative-QA für älteren Reel-Vertrag bestanden.');
 warnings.forEach((warning) => console.warn(`⚠ ${warning}`));

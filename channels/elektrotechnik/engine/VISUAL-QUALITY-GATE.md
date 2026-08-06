@@ -1,86 +1,48 @@
-# Visual Quality Gate
+# Visual Quality Gate – Version 4
 
-## Grundsatz
-
-Hook, Skript, Bildstrategie, Realismus, Beschriftung und Animationsbudget müssen vor der Bild- und Audioerzeugung bestehen.
-
-## Verbindliche Reihenfolge
-
-1. direkte zentrale Frage formulieren
-2. Skript mit 115–165 Wörtern erstellen
-3. jede Szene als `image-only`, `mechanism-only`, `image-with-overlay` oder `static-overlay` klassifizieren
-4. normalerweise ein bis drei, höchstens vier Vollanimationen planen
-5. alle Szenenprompts inklusive Cover vollständig schreiben
-6. jeden sichtbaren Bildprompt als semi-fotorealistische technische CGI mit realen Bauteilen formulieren
-7. ausführen:
-
-```bash
-npm run electrical:preflight -- "<reel-ordner>"
-```
-
-8. erst bei `passed: true` Bilder und Audio erzeugen
-9. Medien einfügen, rendern und visuell prüfen
-
-## Realismus – harte Regel
-
-Verboten sind:
-
-- spielzeugartige oder kindliche 3D-Optik
-- `stylized 3D editorial`
-- Pixar-, Cartoon- oder Miniaturstil
-- vereinfachte Fantasiebauteile
-- futuristische Geräte ohne reales Vorbild
-- zufällige Haushaltsgegenstände, die den Mechanismus nicht erklären
-- übergroße Klemmen oder unrealistische Leiterquerschnitte
-- Neonleitungen als Ersatz für reale Kabel
-
-Gefordert sind:
+## Verbindlicher Bildstandard
 
 - semi-fotorealistische technische CGI
-- reale Proportionen
-- plausible Metall-, Kupfer- und Isoliermaterialien
-- erkennbare europäische Elektrobauteile
-- ein reales Hauptobjekt pro Szene
-- konsistente Kamera, Beleuchtung und Materialqualität
+- reale europäische Elektrobauteile und reale Proportionen
+- jedes sichtbare Bild erhält eine exakt vorgegebene kurze deutsche Beschriftung
+- kein englischer Text und keine zusätzlichen KI-Wörter
+- Cover enthält den exakten deutschen Hook
+- vollständiges 9:16 ohne weiße oder graue Balken, leere Rechtecke, Rahmen oder Letterboxing
+- keine pure weiße Hintergrundfläche
+- mindestens vier deutlich unterschiedliche Hintergrundfamilien pro Reel
+- keine Cartoon-, Spielzeug-, Pixar-, Miniatur- oder Fantasyoptik
 
-## Beschriftung
+## Hintergrundvariation
 
-- KI-Bilder bleiben vollständig textfrei.
-- Deutsche Beschriftungen kommen ausschließlich kontrolliert aus Remotion.
-- Fachkürzel und Leiterbezeichnungen werden korrekt gesetzt, zum Beispiel `Neutralleiter (N)` und `Schutzleiter (PE)`.
-- Der fertige Cover-Still enthält immer exakt den deutschen Hook.
-- Das rohe KI-Coverbild darf niemals ohne den Hook veröffentlicht werden.
+Ein Reel darf nicht aus neun fast identischen dunkelblauen Studioflächen bestehen. Geeignete wechselnde Umgebungen sind zum Beispiel:
 
-## Vollständigkeit der Prompts
+- warmer Graphit-Workshop
+- kühle blau-graue Werkstatt
+- warmer Metall-Klemmenkasten
+- matte Elektro-Laborfläche
+- Schaltgeräte-Verteilung
+- mittelgrauer Schaltschrank
+- gebürstetes Aluminium
+- beige-graue Werkbank mit Tageslicht
 
-`ALLE-BILDPROMPTS-MIT-COVER.txt` muss enthalten:
+Die Bilder bleiben als Serie erkennbar, aber Licht, Material, Helligkeit und Umgebung müssen sich sinnvoll unterscheiden.
 
-- den vollständigen Coverprompt
-- jeden einzelnen Szenenprompt
-- auch Referenzbriefings für `mechanism-only`-Szenen
-- die klare Kennzeichnung, welche Szenen kein Nutzerbild benötigen
+## Technische Bildprüfung
 
-Der Preflight vergleicht die Einzeldateien mit der Gesamtdatei und blockiert fehlende Einträge.
+`npm run electrical:image-qa -- "<reel-ordner>"` prüft:
 
-## Weitere harte Blocker
+- weiße oder hellgraue Balken oben und unten
+- große weiße Flächen
+- leere helle Titelkarten
+- Anzahl erkennbarer Hintergrund-Farbfamilien
 
-- Hook ohne direkte Frage
-- Hook länger als acht Wörter
-- künstliche Hook-Metapher
-- mehr als 165 Skriptwörter
-- mehr als vier Vollanimationen
-- Vollanimation im Hook
-- zwei Vollanimationen direkt hintereinander
-- Bild-plus-Mechanismus ohne Begründung
-- Prompt ohne klares Hauptmotiv
-- Prompt ohne obere oder untere Sicherheitszone
-- sichtbarer KI-Text
-- fehlender deutscher Cover-Hook
-- unvollständige Gesamt-Promptdatei
+Die korrekte deutsche Schreibweise wird anschließend visuell geprüft. Falsch geschriebene, englische oder zusätzliche Bildtexte müssen neu generiert werden.
 
-## Visueller Standard
+## Produktionsreihenfolge
 
-- starke realistische Bilder sind der Normalfall
-- Mechanismus-Animation nur für echte zeitliche Abläufe
-- `mechanism-only` verwendet eine ruhige Remotion-Fläche ohne zweites KI-Bild
-- alle deutschen Texte und Labels werden in Remotion fehlerfrei gesetzt
+1. Hook, Skript, Labels und Hintergrundfamilien festlegen.
+2. Alle Einzelprompts und die Gesamtdatei vervollständigen.
+3. `electrical:preflight` ausführen.
+4. Bilder und Voice erzeugen.
+5. `electrical:ready` ausführen; dabei läuft die Bilddarstellungs-QA automatisch.
+6. Erst danach rendern.
