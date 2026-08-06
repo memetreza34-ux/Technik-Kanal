@@ -1,41 +1,37 @@
-# Google-Flow-Editprompts für deutsche Beschriftungen
+# Google-Flow-Editprompts – nur technische Callouts
 
-Diese Prompts werden erst NACH der Erzeugung des sauberen Basisbildes verwendet.
+Diese Editprompts sind optional und werden erst NACH der Erzeugung des sauberen Basisbildes verwendet.
 
-Wichtig:
+## Verbindliche Regel
+
+- Niemals Cover-Hook oder Szenenüberschrift in das KI-Bild schreiben.
+- Cover-Hook, Kicker und Szenenheadline werden ausschließlich in Remotion gesetzt.
+- Im Bild dürfen nur kurze deutsche Callouts stehen, die auf ein konkretes Bauteil, einen Leiter, eine Fehlerstelle oder einen wichtigen Prozesspunkt zeigen.
+- Keine allgemeinen Aussagen, keine Zusammenfassungen und keine Werbeüberschriften im Bild.
+- Maximal drei Callouts pro Bild.
 - Bildaufbau, Motor, Leitungen, Farben, Perspektive und Beleuchtung nicht verändern.
-- Nur die angegebenen deutschen Beschriftungen, feine Pfeillinien und kleine Zielpunkte ergänzen.
 - Keine englischen Wörter.
-- Keine weiteren Texte.
 - Keine weißen Flächen, Infokarten oder großen Textboxen.
-- Schrift: klar, modern, weiß; dunkler halbtransparenter Hintergrund; Akzentfarbe passend zum Bauteil.
 
 ---
 
 ## 00 – Cover
 
-Edit the existing image only. Preserve the complete motor, protective conductor, workshop, lighting, crop and materials exactly as they are.
+Das Coverbild bleibt vollständig ohne Schrift und ohne Callouts.
 
-Add the exact German title at the top:
-
-„Was macht der Schutzleiter?“
-
-Use large, bold, clean white typography with a subtle dark shadow and one short green-yellow accent line. No other text. Do not cover the protective conductor connection.
+Der Hook „Was macht der Schutzleiter?“ wird später ausschließlich durch Remotion eingeblendet.
 
 ---
 
-## 01 – Hook
+## 01 – Hook-Bild
 
-Edit the existing image only. Do not change the motor or workshop.
+Edit the existing image only. Do not change the motor, protective conductor or workshop.
 
-Add the German headline:
-„Schutzleiter verbindet Metallgehäuse“
-
-Add two small German technical callouts with thin clean pointer lines:
+Add only these two compact German technical callouts with thin pointer lines:
 1. „Schutzleiter (PE)“ pointing exactly to the green-yellow conductor.
 2. „Metallgehäuse“ pointing exactly to the conductive metal housing.
 
-Use green-yellow for the PE pointer and mint-green for the housing pointer. No other text.
+Do not add a headline, title or general sentence. No other text.
 
 ---
 
@@ -43,15 +39,12 @@ Use green-yellow for the PE pointer and mint-green for the housing pointer. No o
 
 Edit the existing image only. Preserve the exact PE connection.
 
-Add the German headline:
-„Schutzleiter (PE)“
-
-Add three compact German callouts:
+Add only these three compact German component callouts:
 1. „Ringkabelschuh“ pointing exactly to the crimped ring lug.
 2. „Erdungsschraube“ pointing exactly to the dedicated screw and washer.
 3. „Direkter Metallkontakt“ pointing exactly to the contact surface between ring lug and housing.
 
-Use thin pointer lines, small target dots and dark translucent label backgrounds. No English and no additional text.
+Do not add a headline or title. No other text.
 
 ---
 
@@ -59,15 +52,12 @@ Use thin pointer lines, small target dots and dark translucent label backgrounds
 
 Edit the existing motor cutaway only. Preserve the motor, damaged brown conductor, green-yellow protective conductor, red fault glow and complete image composition.
 
-Add the German headline:
-„Isolationsfehler am Gehäuse“
-
-Add three clearly readable German callouts with precise pointer lines:
+Add only these three German technical callouts:
 1. „Beschädigte Isolation“ pointing exactly to the torn insulation of the brown conductor.
-2. „Kontakt zum Metallgehäuse“ pointing exactly to the red fault contact point between conductor and housing.
+2. „Kontakt zum Metallgehäuse“ pointing exactly to the fault contact point between conductor and housing.
 3. „Schutzleiter (PE)“ pointing exactly to the green-yellow conductor.
 
-Use red for the fault callouts and green-yellow for the PE callout. Keep all labels outside the motor so internal components remain visible. No English, no extra text and no changes to the technical image.
+Do not add the scene headline. Keep all labels outside the motor where possible. No other text.
 
 ---
 
@@ -75,14 +65,11 @@ Use red for the fault callouts and green-yellow for the PE callout. Keep all lab
 
 Edit the existing switchgear image only. Preserve cabinet, DIN rail, wiring and protective device.
 
-Add the German headline:
-„Schutzeinrichtung schaltet ab“
-
-Add two German callouts:
+Add only these two German callouts:
 1. „Schutzeinrichtung“ pointing to the installed protective device.
-2. „Schalter AUS“ pointing exactly to the visible OFF position of the lever.
+2. „Schalter AUS“ pointing exactly to the visible off position of the lever.
 
-Use mint-green for the device and red for the OFF-position pointer. No other text.
+Do not add a headline or title. No other text.
 
 ---
 
@@ -90,14 +77,11 @@ Use mint-green for the device and red for the OFF-position pointer. No other tex
 
 Edit the existing cabinet comparison only. Preserve all terminals and conductor routing.
 
-Add the German headline:
-„Neutralleiter ist nicht Schutzleiter“
-
-Add two German callouts:
+Add only these two German conductor callouts:
 1. „Neutralleiter (N)“ pointing exactly to the blue conductor and its terminal bar.
 2. „Schutzleiter (PE)“ pointing exactly to the green-yellow conductor and PE bar.
 
-Use blue for N and green-yellow for PE. No dividing line, no English and no additional text.
+Do not add the scene headline. No dividing line and no other text.
 
 ---
 
@@ -105,14 +89,11 @@ Use blue for N and green-yellow for PE. No dividing line, no English and no addi
 
 Edit the existing PE-terminal macro image only.
 
-Add the German headline:
-„Grün-Gelb = Schutzleiter“
-
-Add two German callouts:
+Add only these two German component callouts:
 1. „Grün-gelber Leiter“ pointing to the conductor insulation.
 2. „PE-Klemme“ pointing exactly to the terminal and clamping point.
 
-Use green-yellow accents. No other text.
+Do not add a headline or title. No other text.
 
 ---
 
@@ -120,21 +101,18 @@ Use green-yellow accents. No other text.
 
 Edit the existing safety image only. Preserve motor, disconnected plug, damaged cable and workbench.
 
-Add the German headline:
-„Ausstecken und prüfen lassen“
-
-Add two German callouts:
+Add only these two German state callouts:
 1. „Stecker getrennt“ pointing to the unplugged connector.
 2. „Beschädigtes Kabel“ pointing to the damaged cable section.
 
-Use mint-green for the disconnected plug and orange for the damaged cable. No English and no additional text.
+Do not add the scene headline. No other text.
 
 ---
 
-## Finale sichere Ausgabe
+## Verbindliche finale Ausgabe
 
-Google Flow kann Buchstaben trotz des Editprompts falsch schreiben. Für die veröffentlichte Version anschließend immer ausführen:
+Google Flow kann Buchstaben trotz Editprompt falsch schreiben. Für die veröffentlichte Version immer ausführen:
 
 npm run electrical:label-images -- "channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09/04_Was-macht-der-Schutzleiter"
 
-Dadurch werden dieselben deutschen Überschriften, Pfeile und Bauteil-Callouts fehlerfrei direkt in die finalen PNG-Dateien eingebrannt.
+Das Repository setzt ausschließlich die technischen Callouts fehlerfrei direkt in die Szenen-PNGs. Cover-Hook und Szenenüberschriften bleiben in Remotion.
