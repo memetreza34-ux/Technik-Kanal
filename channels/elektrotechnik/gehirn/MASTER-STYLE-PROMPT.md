@@ -1,21 +1,21 @@
-# Elektrotechnik Master Style Prompt
+# Elektrotechnik Master Style Prompt – Visual v5
 
-Diesen Block an jeden englischen Szenenprompt anhängen.
+Diesen Block an jeden Bildprompt anhängen.
 
 ```text
-Create a semi-photorealistic technical CGI image for a professional German electrical-engineering reel.
+Create a cinematic industrial editorial photograph or a physically accurate cinematic technical visualization for a professional German electrical-engineering reel.
 
-Use recognizable European electrical components with real-world proportions, correct conductor colors, believable fasteners and physically plausible metal, copper, rubber, PVC and industrial-polymer materials. The image must look like high-end technical product photography, not a cartoon, toy, miniature or fantasy device.
+The result must look like a frame from one premium documentary campaign, not like a product catalog, stock-photo collection or AI image gallery. Use real European electrical components, real-world proportions, believable wear, micro-scratches, correct conductor colors, physically plausible metal, copper, rubber, PVC and industrial-polymer materials.
 
-Every visible image receives exactly one short German label specified by the scene prompt. Render that German label exactly as written, with correct spelling, umlauts and capitalization. Do not add English words, fake type plates, random numbers, logos, watermarks or any additional text. The cover must contain the exact German hook specified in its prompt.
+Keep the whole reel inside one coherent series world. Use only three to four controlled set families: a warm graphite motor workshop, a dark mechanism laboratory, a cool steel switchgear cabinet and, when needed, a daylight safety workbench. Related scenes must reuse the same anchor object and visual reference. Do not invent a different motor, cabinet or appliance for every scene.
 
-Use a coherent but varied industrial visual world. Change the location and background family between scenes: for example a graphite workshop, blue-gray electrical laboratory, warm metal terminal box, slate control cabinet, brushed-aluminum enclosure or neutral beige-gray workbench. Do not use the same dark-blue background in every image. Never use a pure-white background.
+Vary the camera language instead of randomly changing the art style: low three-quarter hero shot, environmental medium shot, macro detail, controlled cutaway, symmetric comparison and wider safety shot. Use realistic 35 mm, 50 mm or 85 mm lens behavior, natural depth of field and a consistent teal-shadow / warm-highlight color grade.
 
-The complete 9:16 canvas must be full-bleed from edge to edge. No white or gray bars, no blank rectangles, no presentation panels, no frames, no letterboxing, no split-screen borders and no empty bands above or below the image. Keep the top area readable for the German label without turning it into a separate white title card. Keep the bottom 25 percent calm for subtitles.
+The AI-generated base image must contain no visible text, letters, labels, numbers, logos, type plates or watermarks. German labels are baked into the final PNG with the controlled repository typography using `npm run electrical:label-images -- "<reel-ordner>"`. The final labeled PNG therefore contains the text inside the image without relying on unreliable AI typography.
 
-Show one clear technical idea with one dominant real object and no more than one to three supporting elements. Prefer real industrial motors, metal housings, terminal boxes, DIN-rail devices, terminal bars and realistic cable connections. Avoid futuristic boxes, oversized terminals, neon fantasy cables, random household objects and overcrowded cutaways.
+Show one clear technical action or consequence. Do not create isolated floating products, centered catalog shots, blank studio cards, random tools, decorative sci-fi technology, oversized terminals, neon fantasy cables or overcrowded cutaways. The environment must support the explanation.
+
+Fill the complete vertical 9:16 frame edge to edge. No white or gray bars, no blank rectangles, no title cards, no borders, no letterboxing and no empty bands. Keep the top 20 percent compositionally calm for the controlled German label and the bottom 25 percent calm for subtitles.
 
 Never show unsafe work on energized parts, hands touching live conductors, bypassed protection devices, open live distribution boards, impossible terminals, wrong conductor colors, explosions or dramatic fireballs.
-
-The image is primarily static. Use Remotion animation only for a genuinely time-dependent electrical process.
 ```

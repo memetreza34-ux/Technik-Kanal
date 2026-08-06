@@ -1,89 +1,137 @@
-# Alle Bildprompts vollständig – Was macht der Schutzleiter?
+# Alle Bildprompts – Visual v5 – Was macht der Schutzleiter?
 
-## Feste Regeln
+## Wichtig
 
-- Cover und jedes sichtbare Szenenbild erhalten eine kurze, exakt vorgegebene deutsche Beschriftung.
-- Kein englischer Text und keine zusätzlichen KI-Beschriftungen.
-- Alle Bilder füllen 9:16 vollständig ohne weiße oder graue Balken, leere Rechtecke, Rahmen oder Letterboxing.
-- Die Hintergründe wechseln bewusst zwischen Werkstatt, Labor, Klemmenkasten, Verteilung, Schaltschrank und Werkbank.
-- Szene 03 und 05 bleiben Remotion-Mechanismus-Szenen; ihre vollständigen Referenzbriefings sind trotzdem enthalten.
+Die Basisbilder werden ohne Schrift erzeugt. Die deutsche Beschriftung wird danach fehlerfrei in das finale PNG eingebrannt:
+
+npm run electrical:label-images -- "channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09/04_Was-macht-der-Schutzleiter"
+
+Dadurch ist der Text im fertigen Bild enthalten, aber nicht von Google Flow geschrieben.
+
+## Serienreferenzen
+
+1. Cover zuerst erzeugen und als MOTOR-A-Referenz speichern.
+2. Szene 01, 02, 04 und 09 mit MOTOR-A als Bildreferenz erzeugen.
+3. Szene 06 erzeugen und als CABINET-B-Referenz speichern.
+4. Szene 07 und 08 mit CABINET-B als Bildreferenz erzeugen.
+5. Szene 03 und 05 brauchen kein Nutzerbild.
+
+---
 
 ## 00 – Cover
 
-Create a full-bleed semi-photorealistic technical CGI cover image of a real green-yellow protective conductor with a crimped ring lug firmly bolted to the earthing stud of a brushed stainless-steel industrial motor housing. The connection point is large and centered, while the motor body remains clearly recognizable behind it. Use a warm graphite industrial workshop background with restrained amber practical light and realistic metal reflections.
+Finale deutsche Beschriftung: Was macht der Schutzleiter?
 
-Render the exact German hook in the upper part of the image: "Was macht der Schutzleiter?" The spelling must be exact. Use clean bold white typography with a subtle dark shadow. Do not add any other text.
+Create a full-bleed cinematic industrial editorial photograph of one real compact European industrial motor on a worn graphite workbench. Use a low three-quarter 85 mm macro hero angle: the green-yellow protective conductor, crimped ring lug, earthing stud, washer and brushed-metal housing are sharp in the foreground, while the motor body remains clearly recognizable behind them. The workshop has restrained warm practical light, subtle dust and realistic micro-scratches. This image becomes the MOTOR-A series reference for later scenes.
 
-Real-world proportions, realistic copper, PVC, steel screw and washer, adult technical product-photography aesthetic. Full vertical 9:16 edge-to-edge composition. No pure-white background, no white or gray bars, no blank title panel, no border, no letterboxing, no cartoon, no toy render, no neon cable, no logo and no watermark. Bottom 25 percent calm for subtitles.
+Use a consistent teal-shadow and warm-highlight color grade, realistic lens depth, natural reflections and physically accurate copper, PVC, steel and cast-metal materials. The scene must feel like a premium documentary campaign, not a catalog shot, stock photo or isolated product render.
+
+No visible text, no labels, no letters, no numbers, no type plates, no logos and no watermark. The German hook will be baked into the final PNG later. Full-bleed vertical 9:16 edge-to-edge. No white or gray bars, no blank panel, no frame and no letterboxing. Keep the top 20 percent calm for the controlled title and the bottom 25 percent calm for subtitles.
+
+---
 
 ## 01 – Hook
 
-Create a full-bleed semi-photorealistic technical CGI image of one real compact industrial electric motor with a metal housing, shown large on a realistic workbench. A green-yellow protective conductor is correctly bonded to the motor housing with an earthing screw and ring terminal. Use a cool blue-gray workshop wall with soft daylight from one side; this background must differ clearly from the warm graphite cover.
+Finale deutsche Beschriftung: Schutzleiter verbindet Metallgehäuse
 
-Render exactly one German label near the upper safe area: "Schutzleiter verbindet Metallgehäuse". The spelling must be exact. No English text and no additional labels.
+Use the uploaded MOTOR-A series reference. Create a full-bleed cinematic industrial editorial photograph of the same compact industrial motor in the same warm graphite workshop. Use a 35 mm environmental medium shot from a slightly low side angle. The motor sits naturally on the workbench, the green-yellow protective conductor is visibly bonded to the housing, and the surrounding workshop context explains that this is a real installed protective connection. Do not repeat the cover macro composition.
 
-Real-world proportions and physically based metal, copper and PVC materials. Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no title card, no frame, no letterboxing, no cartoon, no toy render, no fantasy machine, no hand, no open energized parts, no logo and no watermark. Bottom 25 percent calm for subtitles.
+Use the same consistent teal-shadow and warm-highlight color grade, metal finish, cable geometry and realistic workshop lighting as the reference. One real motor is the dominant subject. This is not a catalog shot, not a floating product and not a blank studio image.
 
-## 02 – Verbindung zum Metallgehäuse
+No visible text, no labels, no letters, no numbers, no type plates, no logos and no watermark. Full-bleed vertical 9:16 edge-to-edge. No white or gray bars, no blank panel, no frame and no letterboxing. Keep the top 20 percent calm for the controlled German label and the bottom 25 percent calm for subtitles.
 
-Create a full-bleed semi-photorealistic technical CGI macro view inside the de-energized terminal box of a real industrial motor. Show one physically correct protective connection only: a green-yellow conductor with a crimped ring lug secured under a dedicated earthing screw directly to the metal housing. Show realistic copper strands, insulation, washer and steel surface. Use a warm neutral brushed-metal environment with a soft amber task light; do not repeat the blue-gray workshop background.
+---
 
-Render exactly one German label: "Schutzleiter (PE)". The spelling and brackets must be exact. No English text and no additional labels.
+## 02 – Verbindung
 
-Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no blank panel, no border, no letterboxing, no complete wiring diagram, no extra tools, no cartoon, no oversized terminal, no logo and no watermark. Bottom 25 percent calm for subtitles.
+Finale deutsche Beschriftung: Schutzleiter (PE)
+
+Use the uploaded MOTOR-A series reference. Create a full-bleed cinematic industrial editorial macro photograph inside the de-energized terminal area of the same motor. Use an 85 mm macro lens. Show one physically accurate protective connection only: green-yellow conductor, correct crimped ring lug, dedicated earthing screw, washer and direct metal contact to the housing. Copper strands, PVC insulation and cast metal must have real-world scale and believable wear.
+
+Keep the same consistent teal-shadow and warm-highlight color grade and the same motor materials as the reference. The connection must feel mechanically real and professionally installed. This is not a catalog shot, not a floating terminal and not an infographic.
+
+No visible text, no labels, no letters, no numbers, no type plates, no logos and no watermark. Full-bleed vertical 9:16 edge-to-edge. No white or gray bars, no blank panel, no frame and no letterboxing. Keep the top 20 percent calm for the controlled German label and the bottom 25 percent calm for subtitles.
+
+---
 
 ## 03 – Normalbetrieb – KEIN NUTZERBILD
 
-REFERENCE BRIEF ONLY — this scene is rendered mainly in Remotion. Design a full-bleed semi-photorealistic technical mechanism canvas concept with one real industrial motor silhouette and three physically plausible conductor routes. The phase and neutral routes remain separate from the green-yellow protective-conductor route. Use a matte charcoal electrical-laboratory background with muted cyan practical light, clearly different from the surrounding workshop images.
+Finale deutsche Beschriftung: Kein Betriebsstrom über PE
 
-The exact German scene label is: "Kein Betriebsstrom über PE". It will be rendered in Remotion and must not be replaced by English text.
+REFERENCE BRIEF ONLY for a Remotion mechanism canvas. Do not generate a user image for this scene. Use the MOTOR-A silhouette as the visual anchor inside a dark mechanism laboratory. The phase and neutral current paths will animate through the motor while the green-yellow protective conductor remains inactive.
 
-Full vertical 9:16 edge-to-edge composition. No pure-white background, no white or gray bands, no blank title panel, no frame, no letterboxing, no neon fantasy cables, no toy render, no second mechanism, no logo and no watermark. Keep the center open for the current-flow animation and the bottom 25 percent calm for subtitles.
+The canvas uses the same consistent teal-shadow and warm-highlight color grade as the photographic scenes, but with a controlled dark technical surface. This is not a catalog shot, not a second product image and not a decorative sci-fi interface.
+
+No visible text, no labels, no letters, no numbers, no logos and no watermark. Full-bleed vertical 9:16 edge-to-edge. No white or gray bars, no blank panel, no frame and no letterboxing. Keep the top 20 percent calm for the controlled German label and the bottom 25 percent calm for subtitles.
+
+---
 
 ## 04 – Isolationsfehler
 
-Create a full-bleed semi-photorealistic technical CGI cutaway of one real industrial motor with a metal housing. Reveal only one controlled fault point: damaged insulation on a brown phase conductor touching the inner metal housing. The green-yellow protective conductor remains correctly bonded nearby. Use a neutral slate-gray electrical test-laboratory background with a small warm practical light. Use restrained red only at the fault point.
+Finale deutsche Beschriftung: Isolationsfehler am Gehäuse
 
-Render exactly one German label: "Isolationsfehler am Gehäuse". The spelling must be exact. No English text and no additional labels.
+Use the uploaded MOTOR-A series reference. Create a full-bleed cinematic technical visualization of the same motor from a controlled cutaway angle. Reveal only one physically plausible fault point: damaged brown phase-conductor insulation touching the inner metal housing. The green-yellow protective conductor remains correctly bonded nearby. Use a restrained red glow only at the actual contact point; no sparks, explosion or fire.
 
-Real-world proportions and physically based steel, copper and PVC materials. Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no title panel, no frame, no letterboxing, no explosion, no person, no open live work, no cartoon, no logo and no watermark. Bottom 25 percent calm for subtitles.
+Preserve the same motor housing, materials and consistent teal-shadow and warm-highlight color grade from MOTOR-A. The cutaway must still feel like premium industrial documentary photography, not a fantasy machine, catalog shot or transparent plastic toy.
+
+No visible text, no labels, no letters, no numbers, no type plates, no logos and no watermark. Full-bleed vertical 9:16 edge-to-edge. No white or gray bars, no blank panel, no frame and no letterboxing. Keep the top 20 percent calm for the controlled German label and the bottom 25 percent calm for subtitles.
+
+---
 
 ## 05 – Fehlerstromweg – KEIN NUTZERBILD
 
-REFERENCE BRIEF ONLY — this scene is rendered mainly in Remotion. Design a full-bleed semi-photorealistic technical mechanism canvas concept using one real industrial motor geometry. A phase fault point exists inside the housing and one physically plausible return path continues through the green-yellow protective conductor toward the protective system. Use a dark graphite laboratory background with restrained green-yellow accents, different from the slate fault image.
+Finale deutsche Beschriftung: Fehlerstrom über Schutzleiter
 
-The exact German scene label is: "Fehlerstrom über Schutzleiter". It will be rendered in Remotion and must not be replaced by English text.
+REFERENCE BRIEF ONLY for a Remotion mechanism canvas. Do not generate a user image for this scene. Use the MOTOR-A silhouette in the same dark mechanism laboratory. One fault point exists at the metal housing and the controlled animation will show the error-current path returning through the green-yellow protective conductor toward the protective system.
 
-Full vertical 9:16 edge-to-edge composition. No pure-white background, no white or gray bands, no blank title panel, no border, no letterboxing, no neon fantasy cable, no toy render, no second mechanism, no logo and no watermark. Keep the mechanism centered and the bottom 25 percent calm for subtitles.
+Use the same consistent teal-shadow and warm-highlight color grade as the series. This is not a catalog shot, not a second motor render and not a neon fantasy cable animation.
+
+No visible text, no labels, no letters, no numbers, no logos and no watermark. Full-bleed vertical 9:16 edge-to-edge. No white or gray bars, no blank panel, no frame and no letterboxing. Keep the top 20 percent calm for the controlled German label and the bottom 25 percent calm for subtitles.
+
+---
 
 ## 06 – Abschaltung
 
-Create a full-bleed semi-photorealistic technical CGI image of one real DIN-rail protective device inside a closed modern European distribution board. The device is large and centered, with its operating lever clearly switched off. Use a blue-gray powder-coated enclosure with neutral daylight and a soft dark cabinet interior. A restrained red fault highlight fades below the device.
+Finale deutsche Beschriftung: Schutzeinrichtung schaltet ab
 
-Render exactly one German label: "Schutzeinrichtung schaltet ab". The spelling must be exact. No English text, no device brand and no additional labels.
+Create a full-bleed cinematic industrial editorial photograph inside one real modern European switchgear cabinet. Use a 50 mm three-quarter cabinet-medium shot. One DIN-rail protective device is clearly switched off, but the surrounding enclosure, DIN rail, cable ducts and restrained conductor routing remain visible so the device feels installed rather than isolated. This image becomes the CABINET-B series reference for the next cabinet scenes.
 
-Real-world proportions and realistic molded polymer, copper and steel. Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no white presentation card, no frame, no letterboxing, no exposed busbar, no hand, no sci-fi electronics, no toy breaker, no logo and no watermark. Bottom 25 percent calm for subtitles.
+Use cool steel cabinet surfaces, natural service lighting and the same consistent teal-shadow and warm-highlight color grade as the motor series. The device is the clear focal point, but this is not a catalog shot, not a floating breaker and not a blank presentation card.
+
+No visible text, no labels, no letters, no numbers, no fake type plate, no brand, no logos and no watermark. Full-bleed vertical 9:16 edge-to-edge. No white or gray bars, no blank panel, no frame and no letterboxing. Keep the top 20 percent calm for the controlled German label and the bottom 25 percent calm for subtitles.
+
+---
 
 ## 07 – Neutralleiter gegen Schutzleiter
 
-Create a full-bleed semi-photorealistic technical CGI comparison inside one realistic medium-gray control cabinet. On the left, one blue neutral conductor terminates correctly on a neutral terminal bar. On the right, one green-yellow protective conductor terminates correctly on a separate protective-earth terminal bar bonded to the cabinet. Both conductors have realistic thickness, ferrules and copper strands. Use neutral cabinet lighting with a slightly warmer right side. No split-screen border.
+Finale deutsche Beschriftungen: Neutralleiter (N) | Schutzleiter (PE)
 
-Render exactly two German labels: left "Neutralleiter (N)" and right "Schutzleiter (PE)". The spelling and brackets must be exact. No English text and no other labels.
+Use the uploaded CABINET-B series reference. Create a full-bleed cinematic industrial editorial comparison inside the same switchgear cabinet. Use a balanced but natural 50 mm composition, not a split screen. On the left, one blue neutral conductor terminates correctly on the neutral terminal bar. On the right, one green-yellow protective conductor terminates correctly on a separate protective-earth bar bonded to the cabinet. Both sides share the same enclosure, light and perspective.
 
-Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no blank cards, no frame, no letterboxing, no additional cables, no oversized terminals, no neon, no cartoon, no logo and no watermark. Bottom 25 percent calm for subtitles.
+Preserve the same cabinet, cable ducts, materials and consistent teal-shadow and warm-highlight color grade from CABINET-B. The technical difference must be visible through placement and conductor color, not through floating icons. This is not a catalog shot and not an infographic card.
+
+No visible text, no labels, no letters, no numbers, no type plates, no logos and no watermark. Full-bleed vertical 9:16 edge-to-edge. No white or gray bars, no blank cards, no frame and no letterboxing. Keep the top 20 percent calm for the controlled German labels and the bottom 25 percent calm for subtitles.
+
+---
 
 ## 08 – Grün-Gelb
 
-Create a full-bleed semi-photorealistic technical CGI macro image of one real green-yellow protective conductor correctly inserted into a protective-earth terminal block on a DIN rail inside a brushed-aluminum control cabinet. Show realistic copper strands, ferrule, clamping point and cabinet bonding. Use a brighter warm steel environment with soft industrial daylight; it must not look like the darker scenes.
+Finale deutsche Beschriftung: Grün-Gelb = Schutzleiter
 
-Render exactly one German label: "Grün-Gelb = Schutzleiter". The spelling, umlaut and hyphen must be exact. No English text and no additional labels.
+Use the uploaded CABINET-B series reference. Create a full-bleed cinematic industrial editorial 85 mm macro photograph inside the same cabinet. Show one real green-yellow protective conductor entering a protective-earth terminal on the DIN rail. The ferrule, clamping point, copper strands, terminal body and cabinet bonding are physically accurate and close enough to inspect, while a small part of the same cabinet remains recognizable in the background.
 
-Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no title card, no frame, no letterboxing, no oversized terminal block, no tool touching the connection, no cartoon, no logo and no watermark. Bottom 25 percent calm for subtitles.
+Preserve CABINET-B materials, geometry and the same consistent teal-shadow and warm-highlight color grade. This is not a catalog shot, not an oversized floating terminal and not a blank macro product card.
+
+No visible text, no labels, no letters, no numbers, no type plates, no logos and no watermark. Full-bleed vertical 9:16 edge-to-edge. No white or gray bars, no blank panel, no frame and no letterboxing. Keep the top 20 percent calm for the controlled German label and the bottom 25 percent calm for subtitles.
+
+---
 
 ## 09 – Sicher reagieren
 
-Create a full-bleed semi-photorealistic technical CGI safety image of one real metal-bodied electrical appliance with a visibly damaged power cable on a realistic beige-gray workshop bench. Its plug is completely disconnected from the wall socket. A closed electrician inspection case is softly visible in the background. Use natural window light and a warmer, brighter workshop mood than the technical cabinet scenes.
+Finale deutsche Beschriftung: Ausstecken und prüfen lassen
 
-Render exactly one German label: "Ausstecken und prüfen lassen". The spelling must be exact. No English text and no additional labels.
+Use the uploaded MOTOR-A series reference. Create a full-bleed cinematic industrial editorial wide safety photograph of the same motor on a daylight workbench. The power plug is clearly disconnected and rests away from the socket. A damaged section of the supply cable is visible but untouched. A closed inspection case and a simple out-of-service tag without readable text sit softly out of focus in the background. No person performs a repair.
 
-Real-world proportions and physically based metal, rubber, PVC and copper. Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no blank title panel, no frame, no letterboxing, no random screwdriver, no person, no live measurement, no repair action, no cartoon, no logo and no watermark. Bottom 25 percent calm for subtitles.
+Use natural window light while keeping the same consistent teal-shadow and warm-highlight color grade and the same motor identity as MOTOR-A. The image must tell a safety action, not show a random drill, loose screwdriver or unrelated appliance. This is not a catalog shot or stock photo.
+
+No visible text, no labels, no letters, no numbers, no type plates, no logos and no watermark. Full-bleed vertical 9:16 edge-to-edge. No white or gray bars, no blank panel, no frame and no letterboxing. Keep the top 20 percent calm for the controlled German label and the bottom 25 percent calm for subtitles.

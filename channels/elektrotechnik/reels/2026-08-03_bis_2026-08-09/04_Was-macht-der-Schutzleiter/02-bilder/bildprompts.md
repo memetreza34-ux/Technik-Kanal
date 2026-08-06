@@ -1,24 +1,18 @@
-# Bildprompts – Was macht der Schutzleiter?
+# Bildstrategie – Was macht der Schutzleiter?
 
-Die vollständige kopierfertige Sammlung befindet sich in `ALLE-BILDPROMPTS-MIT-COVER.txt` und enthält Cover sowie alle neun Szenen.
+Die vollständige kopierfertige Sammlung liegt in `ALLE-BILDPROMPTS-MIT-COVER.txt`.
 
-## Beschriftung
+## Neue Methode
 
-- Cover: `Was macht der Schutzleiter?`
-- Szene 01: `Schutzleiter verbindet Metallgehäuse`
-- Szene 02: `Schutzleiter (PE)`
-- Szene 03: `Kein Betriebsstrom über PE` – Remotion
-- Szene 04: `Isolationsfehler am Gehäuse`
-- Szene 05: `Fehlerstrom über Schutzleiter` – Remotion
-- Szene 06: `Schutzeinrichtung schaltet ab`
-- Szene 07: `Neutralleiter (N)` und `Schutzleiter (PE)`
-- Szene 08: `Grün-Gelb = Schutzleiter`
-- Szene 09: `Ausstecken und prüfen lassen`
+- keine unabhängige Bildsammlung mehr
+- MOTOR-A als Referenz für Cover, Szene 01, 02, 04 und 09
+- CABINET-B als Referenz für Szene 06, 07 und 08
+- Szene 03 und 05 ausschließlich Remotion
+- AI-Basisbilder vollständig textfrei
+- deutsche Beschriftungen anschließend kontrolliert in das finale PNG einbrennen
 
-## Hintergrundvariation
+```bash
+npm run electrical:label-images -- "channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09/04_Was-macht-der-Schutzleiter"
+```
 
-Die Motive wechseln bewusst zwischen warmem Graphit-Workshop, kühler Werkstatt, Klemmenkasten, Labor, Verteilung, Schaltschrank, gebürstetem Aluminium und heller Werkbank. Pure weiße Hintergründe, weiße Balken, leere Rechtecke, Rahmen und Letterboxing sind verboten.
-
-## Medienbedarf
-
-Cover und sieben sichtbare Szenenbilder werden erzeugt. Szene 03 und 05 bleiben reine Remotion-Mechanismus-Szenen, sind aber vollständig in der Gesamtdatei dokumentiert.
+Der fertige beschriftete Bildsatz entsteht unter `02-bilder/final-labeled/`.
