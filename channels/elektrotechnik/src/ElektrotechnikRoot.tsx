@@ -7,6 +7,13 @@ import {
   FiSchalterReel,
 } from './FiSchalterReel';
 import {
+  SCHUTZLEITER_REEL_FPS,
+  SCHUTZLEITER_REEL_HEIGHT,
+  SCHUTZLEITER_REEL_TOTAL_FRAMES,
+  SCHUTZLEITER_REEL_WIDTH,
+  SchutzleiterReel,
+} from './SchutzleiterReel';
+import {
   SICHERUNGS_REEL_FPS,
   SICHERUNGS_REEL_HEIGHT,
   SICHERUNGS_REEL_TOTAL_FRAMES,
@@ -31,6 +38,14 @@ export const ElektrotechnikRoot = () => (
       fps={FI_REEL_FPS}
       width={FI_REEL_WIDTH}
       height={FI_REEL_HEIGHT}
+    />
+    <Composition
+      id="SchutzleiterReel"
+      component={SchutzleiterReel}
+      durationInFrames={SCHUTZLEITER_REEL_TOTAL_FRAMES}
+      fps={SCHUTZLEITER_REEL_FPS}
+      width={SCHUTZLEITER_REEL_WIDTH}
+      height={SCHUTZLEITER_REEL_HEIGHT}
     />
   </>
 );

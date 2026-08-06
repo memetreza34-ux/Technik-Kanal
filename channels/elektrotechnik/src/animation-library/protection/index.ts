@@ -12,3 +12,6 @@ export type {ResidualCurrentBalanceAnimationProps} from './ResidualCurrentBalanc
 
 export {RcdContactTripAnimation} from './RcdContactTripAnimation';
 export type {RcdContactTripAnimationProps} from './RcdContactTripAnimation';
+
+export {ProtectiveConductorPathAnimation} from './ProtectiveConductorPathAnimation';
+export type {ProtectiveConductorPathAnimationProps} from './ProtectiveConductorPathAnimation';
