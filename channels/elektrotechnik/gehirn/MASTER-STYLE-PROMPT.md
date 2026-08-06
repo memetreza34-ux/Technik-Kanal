@@ -3,21 +3,19 @@
 Diesen Block an jeden englischen Szenenprompt anhängen.
 
 ```text
-Create a semi-photorealistic technical CGI product visualization for a professional German electrical-engineering reel.
+Create a semi-photorealistic technical CGI image for a professional German electrical-engineering reel.
 
-Use real-world proportions and recognizable European electrical components. Materials must look physically plausible: brushed stainless steel, powder-coated metal, copper, brass, realistic PVC insulation, ceramic and industrial polymer. Use physically based rendering, natural reflections, realistic contact points, correct conductor thickness and believable fasteners. The result must look adult, professional and close to high-end technical product photography.
+Use recognizable European electrical components with real-world proportions, correct conductor colors, believable fasteners and physically plausible metal, copper, rubber, PVC and industrial-polymer materials. The image must look like high-end technical product photography, not a cartoon, toy, miniature or fantasy device.
 
-Show one clear technical idea with one dominant real object and no more than one to three supporting elements. Prefer a real industrial motor, metal appliance chassis, terminal box, DIN-rail protective device, terminal block or cable connection over a generic invented machine. Do not create futuristic boxes, fantasy appliances, toy-like components or decorative sci-fi technology.
+Every visible image receives exactly one short German label specified by the scene prompt. Render that German label exactly as written, with correct spelling, umlauts and capitalization. Do not add English words, fake type plates, random numbers, logos, watermarks or any additional text. The cover must contain the exact German hook specified in its prompt.
 
-Use a restrained real workshop, electrical laboratory or dark neutral studio environment. Lighting is natural and cinematic but not neon. Electric blue may be used only as a subtle explanatory current overlay, green-yellow only for the protective conductor, warm gold only for explanation and red only at a real fault point or warning. Do not turn cables into glowing fantasy tubes.
+Use a coherent but varied industrial visual world. Change the location and background family between scenes: for example a graphite workshop, blue-gray electrical laboratory, warm metal terminal box, slate control cabinet, brushed-aluminum enclosure or neutral beige-gray workbench. Do not use the same dark-blue background in every image. Never use a pure-white background.
 
-Do not generate visible text, letters, numbers, labels, units, type plates, warnings, logos or watermarks. All German headlines, component names, conductor labels and values are added later in Remotion. The final cover must always contain the exact German hook as a Remotion overlay; the AI-generated cover image is only the realistic text-free background.
+The complete 9:16 canvas must be full-bleed from edge to edge. No white or gray bars, no blank rectangles, no presentation panels, no frames, no letterboxing, no split-screen borders and no empty bands above or below the image. Keep the top area readable for the German label without turning it into a separate white title card. Keep the bottom 25 percent calm for subtitles.
 
-Do not create a cartoon, Pixar-like image, toy render, plastic miniature, UI dashboard, presentation slide, split screen, infographic grid, exploded fantasy machine, oversized terminal block, random household object, floating component or overcrowded cutaway. A cutaway is allowed only when it reveals one physically plausible connection or one fault point.
+Show one clear technical idea with one dominant real object and no more than one to three supporting elements. Prefer real industrial motors, metal housings, terminal boxes, DIN-rail devices, terminal bars and realistic cable connections. Avoid futuristic boxes, oversized terminals, neon fantasy cables, random household objects and overcrowded cutaways.
 
-Keep the top 18 percent clean for the exact German hook or scene headline. Keep the bottom 25 percent calm and free of important details for subtitles. Fill the complete vertical 9:16 frame without borders, white strips, seams or letterboxing.
+Never show unsafe work on energized parts, hands touching live conductors, bypassed protection devices, open live distribution boards, impossible terminals, wrong conductor colors, explosions or dramatic fireballs.
 
-Never show unsafe work on energized parts, a hand touching live conductors, a bypassed protection device, an opened live distribution board, impossible terminals, wrong conductor colors, explosions or dramatic fireballs.
-
-The image is primarily static. Use Remotion animation only when a time-dependent electrical process must be explained.
+The image is primarily static. Use Remotion animation only for a genuinely time-dependent electrical process.
 ```

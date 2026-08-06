@@ -1,80 +1,89 @@
 # Alle Bildprompts vollständig – Was macht der Schutzleiter?
 
-## Verbindlicher Covertext
+## Feste Regeln
 
-Was macht der Schutzleiter?
-
-Der KI-Coverhintergrund bleibt textfrei. Der finale Cover-Still muss den exakten deutschen Hook Was macht der Schutzleiter? sichtbar und fehlerfrei als Remotion-Overlay enthalten. Das rohe KI-Cover darf nie allein veröffentlicht werden.
-
-## Medienbedarf
-
-- Cover: Bild erzeugen
-- Szene 01: Bild erzeugen
-- Szene 02: Bild erzeugen
-- Szene 03: kein Nutzerbild; vollständiges Referenzbriefing trotzdem enthalten
-- Szene 04: Bild erzeugen
-- Szene 05: kein Nutzerbild; vollständiges Referenzbriefing trotzdem enthalten
-- Szene 06: Bild erzeugen
-- Szene 07: Bild erzeugen
-- Szene 08: Bild erzeugen
-- Szene 09: Bild erzeugen
+- Cover und jedes sichtbare Szenenbild erhalten eine kurze, exakt vorgegebene deutsche Beschriftung.
+- Kein englischer Text und keine zusätzlichen KI-Beschriftungen.
+- Alle Bilder füllen 9:16 vollständig ohne weiße oder graue Balken, leere Rechtecke, Rahmen oder Letterboxing.
+- Die Hintergründe wechseln bewusst zwischen Werkstatt, Labor, Klemmenkasten, Verteilung, Schaltschrank und Werkbank.
+- Szene 03 und 05 bleiben Remotion-Mechanismus-Szenen; ihre vollständigen Referenzbriefings sind trotzdem enthalten.
 
 ## 00 – Cover
 
-A semi-photorealistic technical CGI close-up of a real green-yellow protective conductor terminated with a crimped metal ring lug and firmly bolted to the earthing stud of a brushed stainless-steel industrial motor housing. The connection point is large, centered and mechanically believable, with the motor body softly visible behind it. One dominant subject, real-world proportions, physically plausible copper, PVC insulation, steel fastener and metal surface. Leave calm negative space above for the final German hook added in Remotion.
+Create a full-bleed semi-photorealistic technical CGI cover image of a real green-yellow protective conductor with a crimped ring lug firmly bolted to the earthing stud of a brushed stainless-steel industrial motor housing. The connection point is large and centered, while the motor body remains clearly recognizable behind it. Use a warm graphite industrial workshop background with restrained amber practical light and realistic metal reflections.
 
-Professional technical product photography aesthetic, realistic European electrical component, natural soft studio lighting, restrained dark workshop background, no neon cable glow, no cartoon, no toy render, no fantasy device, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Render the exact German hook in the upper part of the image: "Was macht der Schutzleiter?" The spelling must be exact. Use clean bold white typography with a subtle dark shadow. Do not add any other text.
+
+Real-world proportions, realistic copper, PVC, steel screw and washer, adult technical product-photography aesthetic. Full vertical 9:16 edge-to-edge composition. No pure-white background, no white or gray bars, no blank title panel, no border, no letterboxing, no cartoon, no toy render, no neon cable, no logo and no watermark. Bottom 25 percent calm for subtitles.
 
 ## 01 – Hook
 
-A semi-photorealistic technical CGI image of one real compact industrial electric motor with a metal housing, shown large and centered on a clean workbench. A green-yellow protective conductor is visibly and correctly bonded to the motor housing through a realistic earthing screw and ring terminal. No open energized parts, no hand and no repair action. The image immediately communicates that the protective conductor connects touchable metal to the protective system.
+Create a full-bleed semi-photorealistic technical CGI image of one real compact industrial electric motor with a metal housing, shown large on a realistic workbench. A green-yellow protective conductor is correctly bonded to the motor housing with an earthing screw and ring terminal. Use a cool blue-gray workshop wall with soft daylight from one side; this background must differ clearly from the warm graphite cover.
 
-Professional adult electrical-engineering product visualization, real-world proportions, physically based brushed metal, copper and PVC materials, realistic European component design, natural neutral studio lighting, restrained dark workshop background, no neon cable glow, no cartoon, no toy render, no fantasy device, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Render exactly one German label near the upper safe area: "Schutzleiter verbindet Metallgehäuse". The spelling must be exact. No English text and no additional labels.
+
+Real-world proportions and physically based metal, copper and PVC materials. Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no title card, no frame, no letterboxing, no cartoon, no toy render, no fantasy machine, no hand, no open energized parts, no logo and no watermark. Bottom 25 percent calm for subtitles.
 
 ## 02 – Verbindung zum Metallgehäuse
 
-A semi-photorealistic technical CGI macro view inside the de-energized terminal box of one real industrial motor. Show only one physically correct protective connection: a green-yellow conductor with a crimped ring lug secured under a dedicated earthing screw directly to the metal housing. The copper strands, insulation, screw, washer and metal surface must have real-world proportions. One dominant subject. Keep the view clean and focused on this single connection, without a full wiring diagram or extra tools.
+Create a full-bleed semi-photorealistic technical CGI macro view inside the de-energized terminal box of a real industrial motor. Show one physically correct protective connection only: a green-yellow conductor with a crimped ring lug secured under a dedicated earthing screw directly to the metal housing. Show realistic copper strands, insulation, washer and steel surface. Use a warm neutral brushed-metal environment with a soft amber task light; do not repeat the blue-gray workshop background.
 
-Professional technical product photography aesthetic, realistic European electrical construction, physically based metal, copper and PVC materials, natural neutral studio lighting, restrained dark workshop background, no neon, no cartoon, no toy render, no fantasy terminal, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Render exactly one German label: "Schutzleiter (PE)". The spelling and brackets must be exact. No English text and no additional labels.
+
+Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no blank panel, no border, no letterboxing, no complete wiring diagram, no extra tools, no cartoon, no oversized terminal, no logo and no watermark. Bottom 25 percent calm for subtitles.
 
 ## 03 – Normalbetrieb – KEIN NUTZERBILD
 
-REFERENCE BRIEF ONLY — DO NOT GENERATE A USER IMAGE FOR THIS SCENE. Create a semi-photorealistic technical CGI mechanism canvas concept with one dominant real industrial motor silhouette and three physically plausible conductor routes. The phase and neutral routes must remain visually separate from the green-yellow protective conductor route. Keep the central area open for Remotion current-flow animation and do not depict a second complete mechanism.
+REFERENCE BRIEF ONLY — this scene is rendered mainly in Remotion. Design a full-bleed semi-photorealistic technical mechanism canvas concept with one real industrial motor silhouette and three physically plausible conductor routes. The phase and neutral routes remain separate from the green-yellow protective-conductor route. Use a matte charcoal electrical-laboratory background with muted cyan practical light, clearly different from the surrounding workshop images.
 
-Professional technical visualization, real-world proportions, physically based metal and PVC materials, restrained dark neutral laboratory background, no neon fantasy cables, no cartoon, no toy render, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+The exact German scene label is: "Kein Betriebsstrom über PE". It will be rendered in Remotion and must not be replaced by English text.
+
+Full vertical 9:16 edge-to-edge composition. No pure-white background, no white or gray bands, no blank title panel, no frame, no letterboxing, no neon fantasy cables, no toy render, no second mechanism, no logo and no watermark. Keep the center open for the current-flow animation and the bottom 25 percent calm for subtitles.
 
 ## 04 – Isolationsfehler
 
-A semi-photorealistic technical CGI cutaway of one real industrial motor with a metal housing. Reveal only one controlled fault point: damaged insulation on a brown phase conductor touching the inner metal housing. Show the green-yellow protective conductor correctly bonded to the housing nearby. Use a small restrained red highlight only at the contact point. One dominant subject. The motor remains closed except for the precise educational cutaway. No person, no explosion and no open live work.
+Create a full-bleed semi-photorealistic technical CGI cutaway of one real industrial motor with a metal housing. Reveal only one controlled fault point: damaged insulation on a brown phase conductor touching the inner metal housing. The green-yellow protective conductor remains correctly bonded nearby. Use a neutral slate-gray electrical test-laboratory background with a small warm practical light. Use restrained red only at the fault point.
 
-Professional adult electrical-engineering visualization, real-world proportions, physically based steel, copper and PVC materials, realistic European conductor colors, natural neutral studio lighting, restrained dark workshop background, no neon fantasy glow, no cartoon, no toy render, no invented appliance, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Render exactly one German label: "Isolationsfehler am Gehäuse". The spelling must be exact. No English text and no additional labels.
+
+Real-world proportions and physically based steel, copper and PVC materials. Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no title panel, no frame, no letterboxing, no explosion, no person, no open live work, no cartoon, no logo and no watermark. Bottom 25 percent calm for subtitles.
 
 ## 05 – Fehlerstromweg – KEIN NUTZERBILD
 
-REFERENCE BRIEF ONLY — DO NOT GENERATE A USER IMAGE FOR THIS SCENE. Create a semi-photorealistic technical CGI mechanism canvas concept using one dominant real industrial motor geometry. The phase fault point is inside the housing and one physically plausible return path continues through the green-yellow protective conductor toward the protective system. Keep the mechanism simple, centered and open so Remotion can animate the fault-current path without competing image detail.
+REFERENCE BRIEF ONLY — this scene is rendered mainly in Remotion. Design a full-bleed semi-photorealistic technical mechanism canvas concept using one real industrial motor geometry. A phase fault point exists inside the housing and one physically plausible return path continues through the green-yellow protective conductor toward the protective system. Use a dark graphite laboratory background with restrained green-yellow accents, different from the slate fault image.
 
-Professional technical visualization, real-world proportions, physically based metal, copper and PVC materials, restrained dark neutral laboratory background, no neon fantasy cable, no cartoon, no toy render, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+The exact German scene label is: "Fehlerstrom über Schutzleiter". It will be rendered in Remotion and must not be replaced by English text.
+
+Full vertical 9:16 edge-to-edge composition. No pure-white background, no white or gray bands, no blank title panel, no border, no letterboxing, no neon fantasy cable, no toy render, no second mechanism, no logo and no watermark. Keep the mechanism centered and the bottom 25 percent calm for subtitles.
 
 ## 06 – Abschaltung
 
-A semi-photorealistic technical CGI image of one real DIN-rail protective device installed inside a closed modern European distribution board, shown large and centered with its operating lever clearly in the switched-off position. A single realistic circuit path ends at the device and a restrained red fault highlight fades away below it. The enclosure remains safe and closed; no hand, exposed busbar or repair action is visible.
+Create a full-bleed semi-photorealistic technical CGI image of one real DIN-rail protective device inside a closed modern European distribution board. The device is large and centered, with its operating lever clearly switched off. Use a blue-gray powder-coated enclosure with neutral daylight and a soft dark cabinet interior. A restrained red fault highlight fades below the device.
 
-Professional electrical product photography aesthetic, real-world proportions, realistic molded polymer, copper and steel materials, natural neutral studio lighting, restrained dark technical environment, no sci-fi electronics, no neon outline, no cartoon, no toy render, no fantasy breaker, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Render exactly one German label: "Schutzeinrichtung schaltet ab". The spelling must be exact. No English text, no device brand and no additional labels.
+
+Real-world proportions and realistic molded polymer, copper and steel. Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no white presentation card, no frame, no letterboxing, no exposed busbar, no hand, no sci-fi electronics, no toy breaker, no logo and no watermark. Bottom 25 percent calm for subtitles.
 
 ## 07 – Neutralleiter gegen Schutzleiter
 
-A semi-photorealistic technical CGI clear side by side comparison on the same realistic control-cabinet background. On the left, one blue neutral conductor terminates correctly on a neutral terminal bar. On the right, one green-yellow protective conductor terminates correctly on a separate protective-earth terminal bar bonded to the metal cabinet. Both conductors have realistic thickness, copper strands and ferrules. Leave clean space above each side for later German Remotion labels. No split-screen border and no additional cables.
+Create a full-bleed semi-photorealistic technical CGI comparison inside one realistic medium-gray control cabinet. On the left, one blue neutral conductor terminates correctly on a neutral terminal bar. On the right, one green-yellow protective conductor terminates correctly on a separate protective-earth terminal bar bonded to the cabinet. Both conductors have realistic thickness, ferrules and copper strands. Use neutral cabinet lighting with a slightly warmer right side. No split-screen border.
 
-Professional adult electrical-engineering product visualization, real-world proportions, physically based copper, PVC, steel and industrial polymer materials, natural neutral lighting, restrained dark cabinet environment, no neon, no cartoon, no toy render, no oversized terminal block, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Render exactly two German labels: left "Neutralleiter (N)" and right "Schutzleiter (PE)". The spelling and brackets must be exact. No English text and no other labels.
+
+Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no blank cards, no frame, no letterboxing, no additional cables, no oversized terminals, no neon, no cartoon, no logo and no watermark. Bottom 25 percent calm for subtitles.
 
 ## 08 – Grün-Gelb
 
-A semi-photorealistic technical CGI macro photograph of one real green-yellow protective conductor correctly inserted into a protective-earth terminal block mounted on a DIN rail inside a metal control cabinet. Show realistic copper strands, ferrule, clamping point, green-yellow insulation and cabinet bonding. The terminal block has normal industrial dimensions and is not oversized. One dominant subject and no tool touching the connection.
+Create a full-bleed semi-photorealistic technical CGI macro image of one real green-yellow protective conductor correctly inserted into a protective-earth terminal block on a DIN rail inside a brushed-aluminum control cabinet. Show realistic copper strands, ferrule, clamping point and cabinet bonding. Use a brighter warm steel environment with soft industrial daylight; it must not look like the darker scenes.
 
-Professional technical product photography aesthetic, real-world proportions, physically based copper, PVC, steel and industrial polymer materials, natural neutral lighting, restrained dark cabinet background, no neon, no cartoon, no toy render, no fantasy connector, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Render exactly one German label: "Grün-Gelb = Schutzleiter". The spelling, umlaut and hyphen must be exact. No English text and no additional labels.
+
+Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no title card, no frame, no letterboxing, no oversized terminal block, no tool touching the connection, no cartoon, no logo and no watermark. Bottom 25 percent calm for subtitles.
 
 ## 09 – Sicher reagieren
 
-A semi-photorealistic technical CGI safety image of one real metal-bodied electrical appliance with a visibly damaged power cable, placed on a clean workbench with its plug completely disconnected from the wall socket. The damaged section is visible but not being touched or repaired. A closed electrician inspection case sits softly in the background as a secondary element. One dominant subject and one clear safety idea, no person, no hand and no live measurement.
+Create a full-bleed semi-photorealistic technical CGI safety image of one real metal-bodied electrical appliance with a visibly damaged power cable on a realistic beige-gray workshop bench. Its plug is completely disconnected from the wall socket. A closed electrician inspection case is softly visible in the background. Use natural window light and a warmer, brighter workshop mood than the technical cabinet scenes.
 
-Professional adult technical product visualization, real-world proportions, physically based metal, rubber, PVC and copper materials, natural neutral studio lighting, restrained realistic workshop background, no random screwdriver, no neon, no cartoon, no toy render, no fantasy appliance, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Render exactly one German label: "Ausstecken und prüfen lassen". The spelling must be exact. No English text and no additional labels.
+
+Real-world proportions and physically based metal, rubber, PVC and copper. Full vertical 9:16 edge-to-edge image. No pure-white background, no white or gray bands, no blank title panel, no frame, no letterboxing, no random screwdriver, no person, no live measurement, no repair action, no cartoon, no logo and no watermark. Bottom 25 percent calm for subtitles.

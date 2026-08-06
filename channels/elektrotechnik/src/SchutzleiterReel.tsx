@@ -48,8 +48,12 @@ const GermanTechnicalLabels: React.FC = () => {
   const scene = runtime.scenes.find((candidate) => frame >= candidate.fromFrame && frame < candidate.toFrame);
   if (!scene) return null;
 
+  if (scene.id === '01-hook') return <Label right={74} top={900} accent="#d9e82e">Schutzleiter verbindet Metallgehäuse</Label>;
   if (scene.id === '02-verbindung') return <Label right={80} top={920} accent="#d9e82e">Schutzleiter (PE)</Label>;
-  if (scene.id === '06-abschaltung') return <Label right={80} top={930} accent="#ff4d5e">Schutzeinrichtung AUS</Label>;
+  if (scene.id === '03-normalbetrieb') return <Label right={72} top={960} accent="#2ac7ff">Kein Betriebsstrom über PE</Label>;
+  if (scene.id === '04-isolationsfehler') return <Label right={72} top={920} accent="#ff4d5e">Isolationsfehler am Gehäuse</Label>;
+  if (scene.id === '05-fehlerstromweg') return <Label right={72} top={960} accent="#d9e82e">Fehlerstrom über Schutzleiter</Label>;
+  if (scene.id === '06-abschaltung') return <Label right={80} top={930} accent="#ff4d5e">Schutzeinrichtung schaltet ab</Label>;
   if (scene.id === '07-pe-vs-n') {
     return (
       <>
@@ -58,7 +62,8 @@ const GermanTechnicalLabels: React.FC = () => {
       </>
     );
   }
-  if (scene.id === '08-gruen-gelb') return <Label right={70} top={900} accent="#d9e82e">Grün-Gelb = Schutzleiter (PE)</Label>;
+  if (scene.id === '08-gruen-gelb') return <Label right={70} top={900} accent="#d9e82e">Grün-Gelb = Schutzleiter</Label>;
+  if (scene.id === '09-sicher-reagieren') return <Label right={68} top={910} accent="#ffc857">Ausstecken und prüfen lassen</Label>;
   return null;
 };
 
