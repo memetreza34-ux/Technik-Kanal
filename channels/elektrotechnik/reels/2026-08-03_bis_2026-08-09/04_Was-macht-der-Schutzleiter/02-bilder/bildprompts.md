@@ -1,36 +1,24 @@
 # Bildprompts – Was macht der Schutzleiter?
 
-Die verbindliche vollständige Datei ist:
+Die vollständige kopierfertige Sammlung befindet sich in `ALLE-BILDPROMPTS-MIT-COVER.txt` und enthält Cover sowie alle neun Szenen.
 
-```text
-02-bilder/ALLE-BILDPROMPTS-MIT-COVER.txt
-```
+## Beschriftung
 
-Sie enthält jetzt ohne Ausnahme:
+- Cover: `Was macht der Schutzleiter?`
+- Szene 01: `Schutzleiter verbindet Metallgehäuse`
+- Szene 02: `Schutzleiter (PE)`
+- Szene 03: `Kein Betriebsstrom über PE` – Remotion
+- Szene 04: `Isolationsfehler am Gehäuse`
+- Szene 05: `Fehlerstrom über Schutzleiter` – Remotion
+- Szene 06: `Schutzeinrichtung schaltet ab`
+- Szene 07: `Neutralleiter (N)` und `Schutzleiter (PE)`
+- Szene 08: `Grün-Gelb = Schutzleiter`
+- Szene 09: `Ausstecken und prüfen lassen`
 
-1. Cover
-2. Szene 01 – Hook
-3. Szene 02 – Verbindung
-4. Szene 03 – Normalbetrieb, Referenzbriefing ohne Nutzerbild
-5. Szene 04 – Isolationsfehler
-6. Szene 05 – Fehlerstromweg, Referenzbriefing ohne Nutzerbild
-7. Szene 06 – Abschaltung
-8. Szene 07 – Neutralleiter gegen Schutzleiter
-9. Szene 08 – Grün-Gelb
-10. Szene 09 – Sicher reagieren
+## Hintergrundvariation
 
-## Neuer Stil
+Die Motive wechseln bewusst zwischen warmem Graphit-Workshop, kühler Werkstatt, Klemmenkasten, Labor, Verteilung, Schaltschrank, gebürstetem Aluminium und heller Werkbank. Pure weiße Hintergründe, weiße Balken, leere Rechtecke, Rahmen und Letterboxing sind verboten.
 
-- semi-fotorealistische technische CGI
-- reale europäische Elektrobauteile
-- reale Proportionen und Materialien
-- keine spielzeugartige oder kindliche 3D-Optik
-- keine Fantasiegeräte
-- keine Schrift im KI-Bild
-- deutsche Labels und Covertext ausschließlich in Remotion
+## Medienbedarf
 
-## Cover
-
-Das KI-Cover ist nur der textfreie Hintergrund. Der finale Cover-Still ist Frame 0 des Reels und enthält immer den exakten deutschen Hook:
-
-**Was macht der Schutzleiter?**
+Cover und sieben sichtbare Szenenbilder werden erzeugt. Szene 03 und 05 bleiben reine Remotion-Mechanismus-Szenen, sind aber vollständig in der Gesamtdatei dokumentiert.
