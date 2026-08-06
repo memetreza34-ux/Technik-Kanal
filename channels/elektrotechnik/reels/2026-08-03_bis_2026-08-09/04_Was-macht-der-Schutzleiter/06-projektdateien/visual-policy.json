@@ -1,10 +1,16 @@
 {
-  "version": "visual-v2",
-  "hook": "Was macht der Schutzleiter?",
-  "generatedImageTextPolicy": "none",
-  "maximumFullMechanismAnimations": 4,
-  "fullMechanismSceneIds": ["03-normalbetrieb", "05-fehlerstromweg"],
-  "requiredVisibleSceneImages": 7,
-  "mechanismOnlyScenesWithoutUserImages": ["03-normalbetrieb", "05-fehlerstromweg"],
-  "imagesBeforePreflightAllowed": false
+  "version":"visual-v5",
+  "hook":"Was macht der Schutzleiter?",
+  "generatedImageTextPolicy":"controlled-german-overlay",
+  "seriesMethod":"reference-led-cinematic-series",
+  "referenceGroups":["motor-a","cabinet-b","mechanism-reference"],
+  "backgroundFamilies":["warm-motor-workshop","dark-mechanism-lab","cool-switchgear-cabinet","daylight-safety-workbench"],
+  "minimumShotTypes":4,
+  "maximumFullMechanismAnimations":4,
+  "fullMechanismSceneIds":["03-normalbetrieb","05-fehlerstromweg"],
+  "requiredVisibleSceneImages":7,
+  "mechanismOnlyScenesWithoutUserImages":["03-normalbetrieb","05-fehlerstromweg"],
+  "aiBaseImagesContainText":false,
+  "finalLabelsBakedIntoPng":true,
+  "labelCommand":"npm run electrical:label-images -- <reel-ordner>"
 }

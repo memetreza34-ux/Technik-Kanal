@@ -1,5 +1,5 @@
-REFERENCE BRIEF ONLY — this scene is rendered mainly in Remotion. Design a full-bleed semi-photorealistic technical mechanism canvas concept using one real industrial motor geometry. A phase fault point exists inside the housing and one physically plausible return path continues through the green-yellow protective conductor toward the protective system. Use a dark graphite laboratory background with restrained green-yellow accents, different from the slate fault image.
+REFERENCE BRIEF ONLY for a Remotion mechanism canvas. Do not generate a user image for this scene. Use the MOTOR-A silhouette in the same dark mechanism laboratory. One fault point exists at the metal housing and the controlled animation will show the error-current path returning through the green-yellow protective conductor toward the protective system.
 
-The exact German scene label is: "Fehlerstrom über Schutzleiter". It will be rendered in Remotion and must not be replaced by English text.
+Use the same consistent teal-shadow and warm-highlight color grade as the series. This is not a catalog shot, not a second motor render and not a neon fantasy cable animation.
 
-Full vertical 9:16 edge-to-edge composition. No pure-white background, no white or gray bands, no blank title panel, no border, no letterboxing, no neon fantasy cable, no toy render, no second mechanism, no logo and no watermark. Keep the mechanism centered and the bottom 25 percent calm for subtitles.
+No visible text, no labels, no letters, no numbers, no logos and no watermark. Full-bleed vertical 9:16 edge-to-edge. No white or gray bars, no blank panel, no frame and no letterboxing. Keep the top 20 percent calm for the controlled German label and the bottom 25 percent calm for subtitles.

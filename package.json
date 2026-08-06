@@ -26,6 +26,7 @@
     "electrical:script-qa": "node scripts/run-electrical-script-qa.mjs",
     "electrical:creative-qa": "node scripts/run-electrical-creative-qa.mjs",
     "electrical:image-qa": "node scripts/check-electrical-image-appearance.mjs",
+    "electrical:label-images": "node scripts/bake-electrical-image-labels.mjs",
     "electrical:content-package": "node scripts/run-electrical-with-folder-check.mjs scripts/check-electrical-content-package.mjs",
     "electrical:preflight": "node scripts/check-electrical-preproduction.mjs",
     "electrical:content-ready": "node scripts/check-electrical-preproduction.mjs",
