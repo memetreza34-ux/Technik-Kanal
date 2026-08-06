@@ -1,56 +1,82 @@
 # Referenz-Workflow für hochwertige Bilder
 
-Die Bilder nicht mehr als zehn unabhängige Generierungen erzeugen.
+Die Bilder nicht als unabhängige Einzelgenerierungen erzeugen.
 
 ## 1. Referenz MOTOR-A
 
-Zuerst den Cover-Hintergrund erzeugen. Das beste Ergebnis als Referenzbild für Szene 01, 02, 04 und 09 verwenden. Der Motor, die Metallfarbe, die PE-Verbindung und das allgemeine Materialbild sollen erkennbar gleich bleiben.
+Zuerst den textfreien Cover-Hintergrund erzeugen. Das beste Ergebnis als Referenzbild für Szene 01, 02, 04 und 09 verwenden. Motor, Metallfarbe, PE-Verbindung und Materialbild müssen erkennbar gleich bleiben.
 
 ## 2. Referenz CABINET-B
 
-Danach Szene 06 erzeugen. Das beste Schaltschrankbild als Referenz für Szene 07 und 08 verwenden. Gehäusefarbe, DIN-Schiene, Klemmen und Licht sollen gleich bleiben.
+Danach Szene 06 erzeugen. Das beste Schaltschrankbild als Referenz für Szene 07 und 08 verwenden. Gehäusefarbe, DIN-Schiene, Klemmen und Licht müssen gleich bleiben.
 
 ## 3. Mechanismus-Szenen
 
-Szene 03 und 05 benötigen kein Google-Flow-Bild. Sie werden als ruhige, kontrollierte Remotion-Szenen gebaut und dort vollständig auf Deutsch beschriftet.
+Szene 03 und 05 benötigen kein Google-Flow-Bild. Sie werden als kontrollierte Remotion-Szenen gebaut und dort fachlich beschriftet.
 
-## 4. Deutsche Beschriftungen in Google Flow ansehen
+## 4. Klare Trennung der Texte
 
-Nach der Erzeugung eines Basisbildes den passenden Editprompt aus dieser Datei verwenden:
+### Ausschließlich Remotion
+
+- Cover-Hook
+- Kicker
+- Szenenüberschrift
+- allgemeine Aussage der Szene
+- Untertitel
+
+### Direkt im finalen Szenenbild erlaubt
+
+Nur kurze technische Callouts mit Pfeil zu einem konkreten Ziel:
+
+- Bauteilname
+- Leitername
+- Anschlussstelle
+- Fehlerstelle
+- Schalterzustand
+- wichtiger Prozesspunkt
+
+Beispiele:
+
+- `Ringkabelschuh`
+- `Erdungsschraube`
+- `Beschädigte Isolation`
+- `Kontakt zum Metallgehäuse`
+- `Neutralleiter (N)`
+- `Schutzleiter (PE)`
+
+Nicht jedes Bild braucht Callouts. Maximal drei pro Bild.
+
+## 5. Optionale Flow-Vorschau
+
+Für eine Vorschau in Google Flow kann der passende Editprompt aus dieser Datei verwendet werden:
 
 ```text
 02-bilder/FLOW-BESCHRIFTUNGS-EDITPROMPTS.txt
 ```
 
-Dadurch werden bereits in der Flow-Vorschau deutsche Überschriften und Bauteil-Callouts ergänzt, zum Beispiel:
+Dort werden ausschließlich technische Callouts verlangt, niemals Überschriften.
 
-- `Beschädigte Isolation`
-- `Kontakt zum Metallgehäuse`
-- `Schutzleiter (PE)`
+## 6. Verbindliche finale Callouts
 
-Google Flow darf dabei Bildaufbau und Bauteile nicht verändern.
-
-## 5. Verbindliche finale Beschriftung
-
-Google Flow kann einzelne Buchstaben trotz guter Anweisung falsch schreiben. Deshalb wird die veröffentlichte Version zusätzlich kontrolliert beschriftet:
+Für die veröffentlichte Version:
 
 ```bash
 npm run electrical:label-images -- "channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09/04_Was-macht-der-Schutzleiter"
 ```
 
-Die fertigen Dateien liegen anschließend unter:
+Ausgabe:
 
 ```text
 02-bilder/final-labeled/
 ```
 
-Das System setzt nicht nur eine Überschrift, sondern auch deutsche Bauteil-Callouts mit:
+Das System setzt ausschließlich technische Callouts mit:
 
-- dunklen kompakten Textfeldern
-- farbigen Pfeillinien
+- kompakten dunklen Textfeldern
+- farbigen Linien
 - Zielpunkten direkt am Bauteil
 - Grün-Gelb für PE
 - Blau für Neutralleiter
 - Rot oder Orange für Fehlerstellen
 
-Zusätzlich wird jedes beschriftete Bild als `generated-final-labeled.png` in den jeweiligen Szenenordner kopiert. Die Produktionspipeline bevorzugt diese Dateien automatisch, weil `final` im Dateinamen enthalten ist.
+Die Szenenüberschrift wird nicht in das Bild eingebrannt. Sie kommt beim Reel-Render aus Remotion.
