@@ -65,6 +65,7 @@ export const createElectricalPromptManifestTemplate = (scenePlan) => ({
   generatedAt: new Date().toISOString(),
   generatedImageTextPolicy: 'none',
   coverText: scenePlan.coverText,
+  requiredVisibleSceneImages: scenePlan.scenes.filter((scene) => scene.renderMode !== 'mechanism-only').length,
   animationBudget: {
     maximumFullMechanismAnimations: scenePlan.animationBudget.maximum,
     sceneIds: scenePlan.animationBudget.fullMechanismScenes,
@@ -72,12 +73,14 @@ export const createElectricalPromptManifestTemplate = (scenePlan) => ({
   cover: {
     prompt: '02-bilder/prompts/00-cover.txt',
     imageDir: '02-bilder/images/00-cover',
+    imageRequired: true,
     approved: false,
   },
   scenes: scenePlan.scenes.map((scene) => ({
     id: scene.id,
     prompt: `02-bilder/prompts/${scene.id}.txt`,
     imageDir: scene.imageDir,
+    imageRequired: scene.renderMode !== 'mechanism-only',
     renderMode: scene.renderMode,
     motionLevel: scene.motionLevel,
     fullAnimation: scene.motionLevel === 'full',
@@ -90,5 +93,7 @@ export const createElectricalStatusTemplate = (scenePlan) => ({
   slug: scenePlan.slug,
   completed: ['folder-structure', 'visual-v2-scene-plan-template'],
   open: ['research', 'script', 'prompts', 'sources', 'preflight', 'images', 'voiceover', 'captions', 'render', 'qa'],
+  requiredVisibleSceneImages: scenePlan.scenes.filter((scene) => scene.renderMode !== 'mechanism-only').length,
+  mechanismOnlyScenesWithoutUserImages: scenePlan.scenes.filter((scene) => scene.renderMode === 'mechanism-only').map((scene) => scene.id),
   nextCommand: `npm run electrical:preflight -- "<reel-ordner>"`,
 });
