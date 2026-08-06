@@ -1,0 +1,20 @@
+{
+  "version": "visual-v2",
+  "hook": "Was macht ein FI-Schalter?",
+  "generatedImageTextPolicy": "none",
+  "imagesBeforePreflightAllowed": false,
+  "maximumFullMechanismAnimations": 4,
+  "fullMechanismSceneIds": [
+    "03-normalzustand",
+    "05-differenzstrom",
+    "07-kontakte-oeffnen"
+  ],
+  "overlayMechanismSceneIds": [],
+  "rules": {
+    "hookIsDirectQuestion": true,
+    "hookHasFullAnimation": false,
+    "consecutiveFullAnimations": false,
+    "mechanismScenesHideGeneratedImage": true,
+    "allGeneratedImagesTextFree": true
+  }
+}
