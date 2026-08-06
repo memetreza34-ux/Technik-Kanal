@@ -1,5 +1,5 @@
 {
-  "version": "electrical-v5",
+  "version": "electrical-v6",
   "format": {"width":1080,"height":1920,"fps":30,"durationSeconds":{"min":42,"ideal":55,"max":62}},
   "script": {
     "words":{"min":115,"ideal":140,"max":165},
@@ -12,7 +12,7 @@
   },
   "voice":{"speed":1.1,"speedRange":{"min":1.1,"max":1.1},"silenceThresholdMs":400,"keptPauseMs":160,"silenceThresholdDb":-45,"loudness":{"integratedLufs":-16,"truePeakDb":-1.5,"loudnessRange":11}},
   "visuals": {
-    "policyVersion":"visual-v5",
+    "policyVersion":"visual-v6-callouts",
     "productionMode":"reference-led-cinematic-series",
     "beats":{"min":8,"ideal":9,"max":10},
     "minimumLayoutTypes":1,
@@ -26,11 +26,18 @@
     "frameZeroMustContainMainMotif":true,
     "zoomAloneCountsAsAnimation":false,
     "fillerIconsAllowed":false,
-    "generatedImageTextPolicy":"controlled-german-overlay",
+    "generatedImageTextPolicy":"controlled-german-callouts",
+    "coverHookRenderedBy":"remotion",
+    "sceneHeadlinesRenderedBy":"remotion",
+    "subtitlesRenderedBy":"remotion",
+    "generalHeadlinesInsideImages":false,
+    "maximumTechnicalCalloutsPerImage":3,
+    "technicalCalloutTextMaxCharacters":42,
+    "allowedTechnicalCalloutTargets":["component","conductor","connection","fault-location","switch-state","process-point"],
     "maximumSupportingElementsPerImage":3,
     "mechanismAnimations":{"recommended":{"min":1,"ideal":2,"max":3},"maximum":4,"maximumConsecutive":1,"maximumOverlayMechanisms":1,"firstSceneAllowed":false,"preferMechanismOnlyCanvas":true,"overlayRequiresJustification":true},
-    "imagePrompt":{"mustStateOneClearIdea":true,"mustStateNoVisibleText":true,"mustStateFullBleed":true,"mustForbidWhiteBands":true,"mustStateSeriesColorGrade":true,"mustForbidCatalogShot":true,"mustReserveBottomPercent":25},
-    "sceneHeader":{"required":true,"iconRequired":false,"kickerWordsMax":4},
+    "imagePrompt":{"mustStateOneClearIdea":true,"mustStateNoVisibleText":true,"mustStateFullBleed":true,"mustForbidWhiteBands":true,"mustStateSeriesColorGrade":true,"mustForbidCatalogShot":true,"mustReserveTopPercentForRemotionHeadline":20,"mustReserveBottomPercent":25},
+    "sceneHeader":{"required":true,"renderedBy":"remotion","iconRequired":false,"kickerWordsMax":4},
     "minimalMotion":{"transition":"cut-or-short-crossfade","imageScaleStart":1,"imageScaleEnd":1.025,"imagePanPixels":8,"headerAnimated":true,"headerFadeFrames":8,"headerTranslatePixels":10,"sfxEnabled":true},
     "cta":{"defaultEnabled":false,"onlyWhenDeliverableExists":true,"seconds":{"min":2.5,"max":5}}
   },

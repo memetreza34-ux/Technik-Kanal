@@ -16,6 +16,7 @@ const paths = electricalProjectPaths(root);
 const checks = [
   ['script-qa', 'scripts/run-electrical-script-qa.mjs'],
   ['creative-qa', 'scripts/run-electrical-creative-qa.mjs'],
+  ['callout-qa', 'scripts/check-electrical-callouts.mjs'],
   ['content-package', 'scripts/check-electrical-content-package.mjs'],
 ];
 const results = [];
@@ -27,12 +28,12 @@ for (const [id, script] of checks) {
 
 const passed = results.every((result) => result.passed);
 const report = {
-  version: 'electrical-v2',
+  version: 'electrical-v3',
   generatedAt: new Date().toISOString(),
   passed,
   phase: passed ? 'assets-may-be-created' : 'blocked-before-assets',
   results,
-  rule: 'Keine Bilder, Audioaufnahme oder Remotion-Vollproduktion beginnen, bevor dieses Gate bestanden ist.',
+  rule: 'Keine Bilder, Audioaufnahme oder Remotion-Vollproduktion beginnen, bevor Skript, Visuals, technische Callouts und Inhalt geprüft sind.',
 };
 fs.writeFileSync(path.join(paths.projectDir, 'preproduction-report.json'), `${JSON.stringify(report, null, 2)}\n`);
 

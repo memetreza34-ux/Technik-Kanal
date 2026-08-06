@@ -8,50 +8,132 @@ import {findMedia, imageExtensions} from './lib/electrical-project.mjs';
 
 const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
 if (!projectArg) throw new Error('Nutzung: node scripts/bake-electrical-image-labels.mjs <reel-ordner>');
+
 const root = path.resolve(projectArg);
 const paths = electricalProjectPaths(root);
-const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan,'utf8')));
-const outputDir = path.join(paths.imageDir,'final-labeled');
-fs.rmSync(outputDir,{recursive:true,force:true});
-fs.mkdirSync(outputDir,{recursive:true});
+const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')));
+const outputDir = path.join(paths.imageDir, 'final-labeled');
+fs.rmSync(outputDir, {recursive: true, force: true});
+fs.mkdirSync(outputDir, {recursive: true});
 
+const generatedNames = new Set(['generated-final-labeled.png', 'generated-final-callouts.png']);
 const selectImage = (dir) => {
-  const images = findMedia(dir,imageExtensions).filter((file)=>!path.basename(file).startsWith('.generated-'));
-  return images.find((file)=>/(?:final|approved|freigabe)/i.test(path.basename(file))) ?? images[0];
+  const images = findMedia(dir, imageExtensions).filter((file) => !generatedNames.has(path.basename(file)));
+  return images.find((file) => /(?:approved|freigabe)/i.test(path.basename(file)))
+    ?? images.find((file) => /(?:final)/i.test(path.basename(file)))
+    ?? images[0];
 };
-const escapeXml = (value) => String(value).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');
-const wrap = (text,max=26) => {
-  const forced = String(text).split('|').map((part)=>part.trim()).filter(Boolean);
-  if (forced.length > 1) return forced;
+
+const escapeXml = (value) => String(value)
+  .replace(/&/g, '&amp;')
+  .replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;')
+  .replace(/"/g, '&quot;')
+  .replace(/'/g, '&apos;');
+
+const wrap = (text, max = 27, maximumLines = 2) => {
+  const forced = String(text).split('|').map((part) => part.trim()).filter(Boolean);
+  if (forced.length > 1) return forced.slice(0, maximumLines);
   const words = String(text).split(/\s+/).filter(Boolean);
-  const lines=[];let current='';
+  const lines = [];
+  let current = '';
   for (const word of words) {
-    const candidate=current?`${current} ${word}`:word;
-    if (candidate.length>max && current) {lines.push(current);current=word;} else current=candidate;
+    const candidate = current ? `${current} ${word}` : word;
+    if (candidate.length > max && current) {
+      lines.push(current);
+      current = word;
+    } else {
+      current = candidate;
+    }
   }
   if (current) lines.push(current);
-  return lines.slice(0,3);
-};
-const accentFor = (id) => id.includes('fehler')||id.includes('abschaltung')?'#ff5a67':id.includes('pe-vs-n')?'#43c8ff':'#d9e82e';
-const svgFor = ({label,cover=false,id=''}) => {
-  const lines=wrap(label,cover?23:30);
-  const fontSize=cover?84:48;
-  const lineHeight=fontSize*1.08;
-  const y=cover?205:235;
-  const accent=cover?'#d9e82e':accentFor(id);
-  const text=lines.map((line,index)=>`<text x="${cover?540:92}" y="${y+index*lineHeight}" text-anchor="${cover?'middle':'start'}" font-family="Arial,Helvetica,sans-serif" font-size="${fontSize}" font-weight="900" fill="#ffffff">${escapeXml(line)}</text>`).join('');
-  return Buffer.from(`<svg width="1080" height="1920" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#020914" stop-opacity="0.82"/><stop offset="1" stop-color="#020914" stop-opacity="0"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.9"/></filter></defs><rect x="0" y="0" width="1080" height="520" fill="url(#g)"/>${cover?`<rect x="360" y="86" width="360" height="8" rx="4" fill="${accent}"/>`:`<rect x="72" y="142" width="8" height="${Math.max(76,lines.length*lineHeight)}" rx="4" fill="${accent}"/>`}<g filter="url(#s)">${text}</g></svg>`);
+  return lines.slice(0, maximumLines);
 };
 
-const items=[{id:'00-cover',label:plan.coverText,dir:path.join(paths.imageDir,'00-cover'),cover:true},...plan.scenes.filter((scene)=>scene.renderMode!=='mechanism-only').map((scene)=>({id:scene.id,label:scene.imageLabel??scene.headline??scene.title,dir:path.resolve(root,scene.imageDir),cover:false}))];
-const manifest=[];
+const accentColors = {
+  pe: '#d9e82e',
+  neutral: '#43c8ff',
+  fault: '#ff5a67',
+  protection: '#63e6be',
+  warning: '#ffb347',
+  current: '#8edcff',
+};
+
+const renderCallout = (annotation, index) => {
+  const accent = accentColors[annotation.accent ?? 'protection'] ?? accentColors.protection;
+  const x = Math.round(annotation.labelX * 1080);
+  const y = Math.round(annotation.labelY * 1920);
+  const targetX = Math.round(annotation.targetX * 1080);
+  const targetY = Math.round(annotation.targetY * 1920);
+  const width = annotation.width ?? 330;
+  const lines = wrap(annotation.text, Math.max(18, Math.floor(width / 15)), 2);
+  const fontSize = 32;
+  const lineHeight = 37;
+  const boxHeight = 30 + lines.length * lineHeight;
+  const boxCenterX = x + width / 2;
+  const startX = targetX >= boxCenterX ? x + width : x;
+  const startY = Math.max(y + 20, Math.min(y + boxHeight - 20, targetY));
+  const elbowX = Math.round(startX + (targetX - startX) * 0.48);
+  const textElements = lines.map((line, lineIndex) => (
+    `<text x="${x + 22}" y="${y + 44 + lineIndex * lineHeight}" font-family="Arial,Helvetica,sans-serif" font-size="${fontSize}" font-weight="800" fill="#ffffff">${escapeXml(line)}</text>`
+  )).join('');
+  return `
+    <g id="callout-${index}">
+      <path d="M ${startX} ${startY} L ${elbowX} ${startY} L ${targetX} ${targetY}" fill="none" stroke="${accent}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="${targetX}" cy="${targetY}" r="13" fill="#06121f" stroke="${accent}" stroke-width="6"/>
+      <rect x="${x}" y="${y}" width="${width}" height="${boxHeight}" rx="18" fill="#06121f" fill-opacity="0.90" stroke="${accent}" stroke-width="3"/>
+      <rect x="${x}" y="${y}" width="9" height="${boxHeight}" rx="4.5" fill="${accent}"/>
+      <g filter="url(#shadow)">${textElements}</g>
+    </g>`;
+};
+
+const svgFor = (annotations) => Buffer.from(`
+  <svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.92"/></filter>
+    </defs>
+    ${annotations.map(renderCallout).join('')}
+  </svg>
+`);
+
+const items = plan.scenes
+  .filter((scene) => scene.renderMode !== 'mechanism-only')
+  .map((scene) => ({
+    id: scene.id,
+    dir: path.resolve(root, scene.imageDir),
+    annotations: scene.imageAnnotations ?? [],
+  }));
+
+const manifest = [];
 for (const item of items) {
-  const source=selectImage(item.dir);
+  const source = selectImage(item.dir);
   if (!source) throw new Error(`Basisbild fehlt für ${item.id}: ${item.dir}`);
-  const output=path.join(outputDir,`${item.id}.png`);
-  await sharp(source).resize(1080,1920,{fit:'cover',position:'centre'}).composite([{input:svgFor(item),top:0,left:0}]).png({quality:96}).toFile(output);
-  manifest.push({id:item.id,label:item.label,source:path.relative(root,source).split(path.sep).join('/'),output:path.relative(root,output).split(path.sep).join('/')});
-  console.log(`✓ ${item.id}: ${output}`);
+  const output = path.join(outputDir, `${item.id}.png`);
+  const sceneGenerated = path.join(item.dir, 'generated-final-callouts.png');
+  const pipeline = sharp(source).resize(1080, 1920, {fit: 'cover', position: 'centre'});
+  if (item.annotations.length > 0) {
+    pipeline.composite([{input: svgFor(item.annotations), top: 0, left: 0}]);
+  }
+  await pipeline.png({quality: 96}).toFile(output);
+  fs.copyFileSync(output, sceneGenerated);
+  manifest.push({
+    id: item.id,
+    annotations: item.annotations.map((annotation) => annotation.text),
+    source: path.relative(root, source).split(path.sep).join('/'),
+    output: path.relative(root, output).split(path.sep).join('/'),
+    sceneCopy: path.relative(root, sceneGenerated).split(path.sep).join('/'),
+  });
+  console.log(`✓ ${item.id}: ${item.annotations.length} technische Callout(s), keine Szenenüberschrift im Bild.`);
 }
-fs.writeFileSync(path.join(outputDir,'manifest.json'),`${JSON.stringify({version:'visual-v5',generatedAt:new Date().toISOString(),items:manifest},null,2)}\n`);
-console.log(`✓ ${manifest.length} final beschriftete PNGs erstellt. Die deutsche Schrift ist jetzt im Bild eingebrannt.`);
+
+fs.writeFileSync(
+  path.join(outputDir, 'manifest.json'),
+  `${JSON.stringify({
+    version: 'visual-v6-technical-callouts',
+    generatedAt: new Date().toISOString(),
+    policy: 'Nur konkrete Bauteile, Leiter, Fehlerstellen oder Prozesspunkte werden im Bild markiert. Cover-Hook und Szenenüberschriften kommen aus Remotion.',
+    items: manifest,
+  }, null, 2)}\n`,
+);
+console.log(`✓ ${manifest.length} finale Szenen-PNGs erstellt.`);
+console.log('✓ Cover-Hook und Szenenüberschriften bleiben ausschließlich Remotion-Texte.');
