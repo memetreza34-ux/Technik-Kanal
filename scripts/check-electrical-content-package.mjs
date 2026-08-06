@@ -41,8 +41,8 @@ if (plan) {
   const promptFiles = fs.existsSync(paths.promptDir)
     ? fs.readdirSync(paths.promptDir).filter((name) => name.endsWith('.txt'))
     : [];
-  if (promptFiles.length < plan.scenes.length) {
-    errors.push(`Zu wenige Einzelprompts: ${promptFiles.length}; erwartet mindestens ${plan.scenes.length}.`);
+  if (promptFiles.length < plan.scenes.length + 1) {
+    errors.push(`Zu wenige Einzelprompts: ${promptFiles.length}; erwartet Cover plus ${plan.scenes.length} Szenen.`);
   }
   const sourceText = read(paths.sources).toLowerCase();
   for (const scene of plan.scenes) {
@@ -53,10 +53,17 @@ if (plan) {
       if (!sourceText.includes(sourceId.toLowerCase())) warnings.push(`Quellen-ID ${sourceId} aus Szene ${scene.id} steht nicht sichtbar in sources.md.`);
     }
   }
+  if (plan.visualPolicyVersion === 'visual-v2') {
+    if (!fs.existsSync(paths.visualPolicy)) errors.push('visual-policy.json fehlt für visual-v2.');
+    if (plan.generatedImageTextPolicy !== 'none') errors.push('Szenenplan erlaubt sichtbaren KI-Text; erforderlich ist "none".');
+    const manifest = read(paths.promptManifest) ? JSON.parse(read(paths.promptManifest)) : null;
+    if (!manifest) errors.push('Prompt-Manifest fehlt.');
+    else if (manifest.generatedImageTextPolicy !== 'none') errors.push('Prompt-Manifest muss generierte Bildtexte verbieten.');
+  }
 }
 
 const report = {
-  version: 'electrical-v1',
+  version: 'electrical-v2',
   generatedAt: new Date().toISOString(),
   passed: errors.length === 0,
   errors,

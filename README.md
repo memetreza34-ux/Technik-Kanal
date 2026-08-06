@@ -1,8 +1,6 @@
 # Elektrotechnik-Kanal
 
-Eigenständiges Produktionssystem für den deutschsprachigen Elektrotechnik-Faceless-Kanal.
-
-Die Struktur folgt dem aktuellen FinanzNeo-System, ist aber fachlich und visuell auf Elektrotechnik angepasst.
+Eigenständiges Produktionssystem für den deutschsprachigen Elektrotechnik-Faceless-Kanal. Die Struktur folgt FinanzNeo, die Qualitäts-Gates sind auf Elektrotechnik und bildgeführte Reels angepasst.
 
 ## Root-Struktur
 
@@ -18,56 +16,62 @@ tsconfig.base.json
 vitest.config.ts
 ```
 
-## Kanal-Struktur
+## Verbindlicher Produktionsablauf
 
-```text
-channels/elektrotechnik/
-├── brand/
-├── engine/
-├── gehirn/
-├── public/
-├── reels/
-├── skills/
-├── src/
-├── CLAUDE.md
-├── README.md
-├── package.json
-├── remotion.config.ts
-└── tsconfig.json
-```
-
-`core/` enthält gemeinsame Brand-, Caption-, Sound-, Theme- und Datenbausteine. `scripts/` enthält Projektverträge, Scaffolding, Asset-Analyse, Inhalts-QA, Readiness-Gates, Transkription, Render, Export und Systemtests.
-
-## Aktiver Reel
-
-```text
-channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09/02_Warum-fliegt-die-Sicherung-raus/
-```
-
-## Produktionsablauf
-
-Vorab werden Recherche, Quellen, Skript, Bildprompts, Szenenplan, Remotion-Code und fehlende Bibliotheksanimationen vorbereitet. Danach erzeugst du nur noch die Rohaufnahme und die Szenenbilder.
-
-Codex startet anschließend:
+### 1. Neuen Reel erzeugen
 
 ```bash
-npm run electrical:finish -- "channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09/02_Warum-fliegt-die-Sicherung-raus"
+npm run electrical:new -- \
+  --week=2026-08-10_bis_2026-08-16 \
+  --slot=01 \
+  --title="FI-Schalter" \
+  --hook="Was macht ein FI-Schalter?" \
+  --scenes=9
 ```
 
-Die Pipeline erledigt lokal:
+Der direkte Frage-Hook ist Pflicht. Neue Reels erhalten automatisch:
 
-- Voice-over exakt auf 1,10× verarbeiten
-- echtes Worttranskript mit `whisper.cpp`
-- Skript und Transkript semantisch abgleichen
-- Szenen, Bilder, Remotion-Animationen, Untertitel und SFX synchronisieren
-- Medienformat und Bildduplikate prüfen
-- TypeScript und Projektverträge prüfen
-- MP4 rendern
-- technische Render-QA durchführen
-- Szenen-Stills und Kontaktbogen erzeugen
-- erst nach bestandener QA das finale Exportpaket erstellen
+- `visual-v2`-Szenenvertrag
+- textfreie Prompt-Regel
+- maximal vier Vollanimationen
+- standardmäßig drei getrennte Mechanismus-Szenen
+- eindeutige `renderMode`- und `motionLevel`-Felder
 
-Das Audio bleibt lokal. Kein Transkriptions-API-Key ist erforderlich.
+### 2. Preflight vor Bildern und Audio
+
+```bash
+npm run electrical:preflight -- "<reel-ordner>"
+```
+
+Vor `passed: true` dürfen keine Bilder oder Voice-Aufnahmen erzeugt werden. Das Gate blockiert schwache Hooks, zu lange Skripte, sichtbaren KI-Text, überladene Promptkonzepte, zu viele Animationen, doppelte Mechanismusdarstellungen und fehlende Quellen.
+
+### 3. Medien erstellen und einfügen
+
+- Voice-over deutsch und trocken aufnehmen
+- textfreie 9:16-Bilder erzeugen
+- optional wenige semantische SFX ergänzen
+
+### 4. Fertigstellen
+
+```bash
+npm run electrical:finish -- "<reel-ordner>"
+```
+
+Die Pipeline verarbeitet die Stimme auf 1,10×, erstellt lokale Wortzeiten, synchronisiert alle Szenen, rendert, prüft technisch und erzeugt Kontrollbilder.
+
+## Visuelles System
+
+- 8–10 Szenen
+- etwa 115–165 Wörter
+- Ziel ungefähr 42–62 Sekunden
+- ein klares Hauptmotiv pro Bild
+- keinerlei Schrift im KI-Bild
+- Bildszenen als Standard
+- normalerweise ein bis drei, maximal vier Vollanimationen
+- keine Vollanimation im Hook
+- keine zwei Vollanimationen direkt hintereinander
+- `mechanism-only` blendet das KI-Bild aus, damit keine doppelte Mechanismusdarstellung entsteht
+- alle deutschen Texte kommen aus Remotion
 
 ## Wichtige Befehle
 
@@ -76,23 +80,10 @@ npm install
 npm test
 npm run studio
 npm run gallery
-npm run electrical:new -- --week=2026-08-10_bis_2026-08-16 --slot=01 --title="Was macht ein FI?" --scenes=8
-npm run electrical:qa -- "<reel-ordner>"
+npm run electrical:preflight -- "<reel-ordner>"
 npm run electrical:ready -- "<reel-ordner>"
 npm run electrical:finish -- "<reel-ordner>"
 npm run electrical:system-test
 ```
 
-Die alten `elektro:*`-Befehle bleiben als kurze Aliasnamen erhalten.
-
-## Verbindliche Qualitätsregeln
-
-- ein klares technisches Thema pro Reel
-- normalerweise 8 bis 12 Bild-/Animationsbeats
-- sichere und belegte Elektrotechnik-Aussagen
-- keine Anleitung zu Arbeiten unter Spannung oder Schutzgeräte-Manipulation
-- weiße Untertitel ohne Box oder gelbe Wortmarkierung
-- CTA nur, wenn ein echtes Ergebnis vorhanden ist
-- kein finaler Export ohne bestandene Readiness- und Render-QA
-
-Das Repository enthält ausschließlich Elektrotechnik. Inhalte von `Dinge erklärt` gehören nicht hierher.
+Das Audio bleibt lokal; `whisper.cpp` benötigt keinen Transkriptions-API-Key.

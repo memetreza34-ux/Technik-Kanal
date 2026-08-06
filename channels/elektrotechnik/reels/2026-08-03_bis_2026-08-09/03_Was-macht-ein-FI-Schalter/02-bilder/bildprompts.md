@@ -1,63 +1,67 @@
-# Alle Bildprompts – Was macht ein FI-Schalter?
+# Bildprompts – Was macht ein FI-Schalter?
 
-## Neue Bildstrategie
+## Was tatsächlich erzeugt wird
 
-- Bilder sind die Hauptfläche.
-- Nur Szene 03, 05 und 07 erhalten eine vollständige Remotion-Mechanismus-Animation.
-- Alle anderen Szenen verwenden ein starkes ruhiges Bild mit subtiler Kamerabewegung.
-- Kein generiertes Bild enthält Text, Labels, Zahlen oder Gerätemarkierungen.
-- Alle deutschen Texte werden später in Remotion gesetzt.
+Benötigt werden **ein Cover und sieben sichtbare Szenenbilder**:
 
-## Covertext
+- 01 Hook
+- 02 Summenstromwandler
+- 04 Fehlerweg
+- 06 Erkennung
+- 08 30 mA
+- 09 FI und LS
+- 10 Sicher reagieren
 
-> **Was macht ein FI-Schalter?**
+Für Szene **03, 05 und 07 wird kein Bild erzeugt**. Diese Szenen sind reine Remotion-Mechanismus-Animationen. Die Dateien unter `prompts/03...`, `05...` und `07...` sind nur technische Referenz-Briefs.
 
-## Gemeinsamer Stil
+## Gemeinsame Bildregel
 
-Premium stylized 3D editorial electrical illustration, one clear technical idea, one dominant subject, simplified credible geometry, seamless dark navy environment, electric blue for normal current, warm gold for explanation, red only for fault, no visible text, letters, numbers, labels, units, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Jedes echte Bild zeigt eine technische Aussage und ein dominantes Hauptmotiv. Keine Schrift, Zahlen, Labels, Einheiten, Typenschilder, UI, Logos oder Wasserzeichen. Vertikal 9:16, obere 18 Prozent und untere 25 Prozent frei.
 
----
+## Cover
 
-## 00 – Cover
+A single clean modern FI/RCD device mounted on a short DIN rail, viewed close from a slightly low three-quarter angle. One simple electric-blue current loop passes through the device while one thin red leakage path branches toward earth. The device is the only dominant subject. Keep a large calm dark area above it for the later Remotion title. Do not generate the title inside the image.
 
-A clean modern residual-current device mounted on a short DIN rail, viewed close from a slightly low three-quarter angle. The device is intact and closed, not a cutaway. One simple electric-blue current loop passes through it while one thin red leakage path branches toward earth. The device is the only dominant subject. Keep a large calm dark area above it for the later German title “Was macht ein FI-Schalter?”. Do not generate the title inside the image.
+Premium stylized 3D editorial electrical illustration, one dominant subject, simplified credible geometry, calm seamless dark navy environment, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 01 – Hook
 
-A single clean FI/RCD device on a DIN rail. Show one blue current path entering and returning and one small red path escaping toward earth. No transparent housing, no internal detail and no labels.
+A single clean FI/RCD device on a DIN rail. Show one blue current path entering and returning and one small red path escaping toward earth. No transparent housing and no internal detail. The device is the only dominant subject and the visual answer must be immediate.
 
-## 02 – Aufbau
+Premium stylized 3D editorial electrical illustration, one dominant subject, calm seamless dark navy environment, simplified accurate geometry, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
-A clean close-up of an FI/RCD with one small transparent window revealing only a toroidal summation current transformer. Two simple conductors pass through the ring. No complete internal mechanism and no labels.
+## 02 – Summenstromwandler
 
-## 03 – Normalzustand · Remotion-Animation
+A clean close-up of one FI/RCD device with one small transparent window revealing only a toroidal summation current transformer. Two simple conductors pass through the ring. Do not show the complete internal mechanism, many wires or labels. The device remains the one dominant subject and visually calm.
 
-A large simple toroidal summation current transformer. One blue outgoing conductor and one cyan returning conductor are equal and balanced. Keep the center open for the current-flow animation.
+Premium stylized 3D editorial electrical illustration, one dominant subject, matte off-white device, calm seamless dark navy environment, electric-blue accents, no visible text, letters, numbers, labels, units, type plates, diagrams, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 04 – Fehlerweg
 
-A closed metal household appliance with one simplified insulation fault to the housing. One thin red path runs through the protective conductor toward earth. No person and no sparks.
+A single closed metal household appliance with one simplified insulation fault to the housing. One thin red fault-current path runs through the protective conductor toward earth. No person, no sparks and no open live parts. The appliance is the one dominant subject.
 
-## 05 – Fehlerstrom · Remotion-Animation
-
-A large simple toroidal core with a strong blue outgoing path, a slightly weaker cyan returning path and one thin red leakage branch. Keep the center open for the imbalance animation.
+Premium stylized 3D editorial electrical illustration, one dominant subject, simplified credible geometry, calm seamless dark navy environment, electric blue for normal current and red only for the fault path, no visible text, letters, numbers, labels, units, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 06 – Erkennung
 
-One toroidal summation current transformer, one secondary winding and one small release magnet. A restrained gold glow connects the core to the magnet. No full device cutaway.
+One large toroidal summation current transformer with one secondary winding and one small release magnet. A restrained warm-gold glow connects the core to the magnet. Do not show a complete device cutaway or many wires. The transformer remains the one dominant subject.
 
-## 07 – Kontakte öffnen · Remotion-Animation
-
-A clean close-up of one latch and two switching contacts with clear empty space around the mechanism. No full device cutaway and no sparks.
+Premium stylized 3D editorial electrical illustration, one dominant subject, simplified credible geometry, calm seamless dark navy environment, electric-blue and restrained warm-gold accents, no visible text, letters, numbers, labels, units, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 08 – 30 mA
 
-A clean FI/RCD device centered on a DIN rail with a subtle protective shield light. No readable marking; `30 mA` is added in Remotion.
+A clean modern FI/RCD device standing large and centered on a DIN rail, surrounded by a subtle protective shield-shaped light. The device has no readable markings because the value will be added later in Remotion. The device is the one dominant subject. No human figure and no danger scene.
+
+Premium stylized 3D editorial electrical illustration, one dominant subject, matte off-white device, calm seamless dark navy environment, electric-blue and restrained warm-gold accents, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 09 – FI und LS
 
-One FI/RCD and one miniature circuit breaker side by side on the same DIN rail. No split screen, no fault effects and no labels.
+One clean FI/RCD device and one clean miniature circuit breaker placed side by side on the same DIN rail. Both devices are equally large and easy to compare. No split-screen border, no fault effects and no labels.
+
+Premium stylized 3D editorial electrical illustration, two dominant subjects in one clear side-by-side comparison, simplified credible geometry, calm seamless dark navy environment, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 10 – Sicher reagieren
 
-A closed consumer unit with a visibly tripped FI/RCD, two disconnected appliance plugs and an electrician tool case. No open panel, exposed conductor, person or warning text.
+A single closed consumer unit with a visibly tripped FI/RCD, two disconnected appliance plugs and one electrician tool case nearby. No open panel, exposed conductor, person or warning text. The closed consumer unit remains the one dominant subject.
+
+Premium stylized 3D editorial electrical illustration, one dominant subject, simplified credible geometry, calm seamless dark navy environment, restrained red warning accent, no visible text, letters, numbers, labels, units, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.

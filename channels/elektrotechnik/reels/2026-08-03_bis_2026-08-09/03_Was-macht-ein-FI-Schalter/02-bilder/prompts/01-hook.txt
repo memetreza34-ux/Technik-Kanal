@@ -1,3 +1,3 @@
-A single clean FI/RCD device on a DIN rail in a dark technical environment. Show one blue current path entering and returning and one small red path escaping toward earth. No transparent housing and no internal detail. The image must answer one simple question visually: the FI watches whether current returns.
+A single clean FI/RCD device on a DIN rail. Show one blue current path entering and returning and one small red path escaping toward earth. No transparent housing and no internal detail. The device is the only dominant subject and the visual answer must be immediate.
 
-Premium stylized 3D editorial electrical illustration, one dominant subject, calm dark navy background, simplified accurate geometry, no visible text or labels, no UI, no extra panels, no floating icons, no people, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Premium stylized 3D editorial electrical illustration, one dominant subject, calm seamless dark navy environment, simplified accurate geometry, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.

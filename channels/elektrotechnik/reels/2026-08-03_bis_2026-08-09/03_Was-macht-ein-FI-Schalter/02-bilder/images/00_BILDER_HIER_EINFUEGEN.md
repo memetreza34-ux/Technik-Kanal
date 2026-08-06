@@ -1,5 +1,8 @@
-# Zehn neue Bilder erforderlich
+# Bilder hier einfügen
 
-Die Bilder des ersten Renders nicht wiederverwenden.
+Benötigt werden:
 
-Pro Szenenordner genau ein neues finales 9:16-Bild ablegen. Die Bilder müssen ruhig, textfrei und auf ein Hauptmotiv reduziert sein. Szene 03, 05 und 07 lassen zusätzlich Platz für eine Remotion-Mechanismus-Animation.
+- ein textfreies Coverbild in `00-cover/`
+- sieben textfreie Szenenbilder für Szene 01, 02, 04, 06, 08, 09 und 10
+
+Für Szene 03, 05 und 07 wird **kein Nutzerbild** benötigt. Diese Szenen bestehen vollständig aus Remotion-Mechanismus-Animationen. Die Pipeline erzeugt intern eine temporäre Fläche und entfernt sie nach dem Render wieder.

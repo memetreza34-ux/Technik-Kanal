@@ -20,7 +20,11 @@ export type ElectricalRuntimeScene = {
   toFrame: number;
   imagePath?: string;
   layout?: 'image-full' | 'image-mechanism' | 'comparison' | 'warning' | 'payoff';
+  renderMode?: 'image-only' | 'mechanism-only' | 'image-with-overlay' | 'static-overlay';
+  motionLevel?: 'none' | 'subtle' | 'full';
+  imageRole?: 'hero' | 'mechanism-plate' | 'comparison' | 'safety' | 'payoff';
   mechanism?: string;
+  overlayJustification?: string;
   accent?: 'current' | 'explanation' | 'overload' | 'fault' | 'success';
 };
 
@@ -34,6 +38,8 @@ export type ElectricalReelRuntime = {
   totalFrames: number;
   durationSeconds: number;
   voiceoverPath?: string;
+  coverText?: string;
+  visualPolicyVersion?: string;
   scenes: ElectricalRuntimeScene[];
   captions: ElectricalRuntimeCaption[];
   sfx: ElectricalRuntimeSfx[];
