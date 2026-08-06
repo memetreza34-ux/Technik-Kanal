@@ -1,3 +1,5 @@
-Place one RCD and one miniature circuit breaker next to each other on the same DIN rail in one continuous environment. Around the RCD show a small red leakage branch and balanced-current sensor motif. Around the circuit breaker show an orange overheated cable and a sharp red short-circuit current spike. Short correct labels `FI/RCD` and `LS` are allowed. The different tasks must be instantly obvious.
+Place one RCD and one miniature circuit breaker next to each other on the same DIN rail in one continuous environment. Around the RCD show a small red leakage branch and balanced-current sensor motif. Around the circuit breaker show an orange overheated cable and a sharp red short-circuit current spike. The different tasks must be instantly obvious.
 
-Premium stylized 3D electrical engineering illustration, dark navy seamless background, large close devices, vertical 9:16, clear overlay zones, no split-screen border, no brand logos, no watermark, no people, no impossible wiring.
+Any visible word or comparison label must be correct German. Use only the short labels “FI / RCD”, “FEHLERSTROM”, “LS”, “ÜBERLAST” and “KURZSCHLUSS”. Never use English words such as LEAKAGE, OVERLOAD or SHORT CIRCUIT.
+
+Premium stylized 3D electrical engineering illustration, dark navy seamless background, large close devices, vertical 9:16, top 15 percent and bottom 25 percent clear, no split-screen border, no brand logos, no watermark, no people, no impossible wiring.

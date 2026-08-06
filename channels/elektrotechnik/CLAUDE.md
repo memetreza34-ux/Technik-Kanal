@@ -37,6 +37,16 @@ Keine neue Einmalstruktur erfinden, wenn ein vorhandener Core-, Engine-, Script-
 - Standardmäßig 8 bis 12 klare Bild-/Animationsbeats verwenden.
 - Letzte Szene ist standardmäßig fachlicher Payoff; CTA nur bei echtem versprochenem Ergebnis.
 
+## Sprache – ausnahmslos Deutsch
+
+- Der Kanal ist vollständig deutschsprachig.
+- Voice-over, Szenentexte, Untertitel, Headlines, Covertexte, CTAs, Labels, Warnungen und sichtbare Gerätebeschriftungen müssen korrektes Deutsch sein.
+- Bildprompts dürfen Englisch geschrieben sein. Ihr dargestellter Inhalt und jeder sichtbare Text müssen trotzdem Deutsch sein.
+- Keine englischen Nutzertexte wie `ON`, `OFF`, `WARNING`, `CURRENT`, `RETURN`, `TRIPPED` oder englische Erklärlabels verwenden.
+- Zulässige technische Kürzel wie `FI`, `RCD`, `LS`, `PE`, `L`, `N`, `IΔn` und Einheiten bleiben erhalten.
+- Coverbilder erhalten immer einen kurzen deutschen Satz, der die zentrale Frage oder Erkenntnis des Reels erklärt.
+- Der Cover-Satz wird zuverlässig als Remotion-Overlay hinzugefügt und nicht von der Bild-KI geschrieben.
+
 ## Bildstil
 
 - Hauptmotiv groß, nah und sofort verständlich.

@@ -1,3 +1,5 @@
 Create a clean cutaway of a two-pole residual current device showing the external lever, test button, switching contacts, toroidal summation current transformer, secondary winding and release mechanism in one coherent spatial device. The cutaway must remain technically plausible and instantly readable, with the toroidal transformer as the visual focus.
 
-Premium stylized 3D electrical education illustration, dark navy seamless environment, electric-blue accents, gold explanation lighting, vertical 9:16, large close device, top and bottom safe zones clear, no dashboard, no exploded fantasy machine, no hands, no brand logo, no watermark, only the short labels `FI` and `RCD` when necessary.
+Any visible word, label, component name or switch state must be correct German. Allowed short labels include “FI”, “RCD”, “TEST”, “SUMMENSTROMWANDLER”, “AUSLÖSER” and “SCHALTKONTAKTE”. Never use English explanatory text.
+
+Premium stylized 3D electrical education illustration, dark navy seamless environment, electric-blue accents, gold explanation lighting, vertical 9:16, large close device, top 15 percent and bottom 25 percent clear, no dashboard, no exploded fantasy machine, no hands, no brand logo, no watermark.

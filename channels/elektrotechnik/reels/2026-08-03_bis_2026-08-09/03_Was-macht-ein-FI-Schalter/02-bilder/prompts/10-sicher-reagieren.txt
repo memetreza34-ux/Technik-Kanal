@@ -1,3 +1,5 @@
 Show a tripped RCD in a closed consumer-unit context, several appliance plugs safely disconnected in the foreground, a clear warning symbol and a professional electrician tool case waiting nearby. No open panel, no exposed conductors and no person working on live parts. The message must be immediate: do not bridge or repeatedly reset a fault; disconnect loads and have the cause checked professionally.
 
-Premium stylized 3D electrical safety illustration, dark navy seamless environment, electric-blue normal accents, restrained red warning, vertical 9:16, large clear objects, top and bottom safe zones clear, no unsafe action, no logos, no watermark, no long text.
+Any visible warning, instruction or state label must be correct German. Allowed short labels include “NICHT ÜBERBRÜCKEN”, “GERÄTE AUS”, “STECKER ZIEHEN” and “PRÜFEN LASSEN”. Never use English warning text.
+
+Premium stylized 3D electrical safety illustration, dark navy seamless environment, electric-blue normal accents, restrained red warning, vertical 9:16, large clear objects, top 15 percent and bottom 25 percent clear, no unsafe action, no logos, no watermark, no long text.
