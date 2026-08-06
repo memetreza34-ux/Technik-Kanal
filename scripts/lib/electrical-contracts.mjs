@@ -2,13 +2,14 @@ import {z} from 'zod';
 
 const nonEmpty = z.string().trim().min(1);
 const normalizedCoordinate = z.number().min(0).max(1);
+const calloutText = z.string().trim().min(1).max(42);
 
 export const WordTimestamp = z.object({text: nonEmpty, normalized: z.string().optional(), startMs: z.number().nonnegative(), endMs: z.number().positive(), confidence: z.number().min(0).max(1).optional()}).refine((value) => value.endMs > value.startMs, 'endMs must be greater than startMs');
 export const Caption = z.object({text: nonEmpty, startMs: z.number().nonnegative(), endMs: z.number().positive(), fromFrame: z.number().int().nonnegative().optional(), toFrame: z.number().int().positive().optional(), words: z.array(WordTimestamp.pick({text:true,startMs:true,endMs:true})).optional()}).refine((value) => value.endMs > value.startMs, 'caption end must follow start');
 export const Captions = z.array(Caption);
 
 export const ImageAnnotation = z.object({
-  text: nonEmpty,
+  text: calloutText,
   labelX: normalizedCoordinate,
   labelY: normalizedCoordinate,
   targetX: normalizedCoordinate,
@@ -23,7 +24,7 @@ export const ElectricalScene = z.object({
   voiceText: nonEmpty,
   imageDir: nonEmpty,
   imageLabel: z.string().optional(),
-  imageAnnotations: z.array(ImageAnnotation).max(4).optional(),
+  imageAnnotations: z.array(ImageAnnotation).max(3).optional(),
   backgroundFamily: z.string().optional(),
   shotType: z.string().optional(),
   referenceGroup: z.string().optional(),
