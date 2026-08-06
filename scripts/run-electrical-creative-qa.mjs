@@ -54,6 +54,19 @@ const policy = evaluateElectricalVisualPolicy({plan, config, promptFiles, prompt
 errors.push(...policy.errors);
 warnings.push(...policy.warnings);
 
+const coverRelative = promptManifest?.cover?.prompt ?? '02-bilder/prompts/00-cover.txt';
+const coverFile = path.join(paths.root, coverRelative);
+if (!fs.existsSync(coverFile)) {
+  errors.push('Coverprompt fehlt.');
+} else {
+  const cover = fs.readFileSync(coverFile, 'utf8');
+  const normalized = cover.toLowerCase();
+  if (!normalized.includes('no visible text')) errors.push('Coverprompt muss sichtbaren KI-Text ausdrücklich verbieten.');
+  if (!/(top 18 percent|top 18%)/.test(normalized)) errors.push('Coverprompt reserviert die oberen 18% nicht.');
+  if (!/(bottom 25 percent|bottom 25%)/.test(normalized)) errors.push('Coverprompt reserviert die unteren 25% nicht.');
+  if (/["“”][^"“”]{1,80}["“”]/.test(cover)) errors.push('Coverprompt enthält Anführungszeichen und könnte KI-Schrift erzeugen.');
+}
+
 const report = {
   version: 'electrical-v2',
   generatedAt: new Date().toISOString(),
@@ -65,6 +78,7 @@ const report = {
   visualPolicyVersion: plan.visualPolicyVersion ?? null,
   fullMechanismSceneIds: policy.fullMechanismSceneIds,
   overlaySceneIds: policy.overlaySceneIds,
+  coverPromptPassed: !errors.some((error) => error.startsWith('Coverprompt')),
   errors,
   warnings,
 };

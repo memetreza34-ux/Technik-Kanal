@@ -1,37 +1,30 @@
 # Was macht ein FI-Schalter?
 
-## Neuaufbau nach Analyse des ersten Renders
+## Aktueller Neuaufbau
 
-Der erste Render wurde verworfen. Hauptgründe: überladene KI-Bilder, englische Beschriftungen, konkurrierende Remotion-Overlays, zu viele Vollanimationen und ein unnötig komplizierter Hook.
+Der erste Render wurde verworfen. Er war überladen, zu lang, enthielt englische KI-Schrift und zeigte zu viele konkurrierende Animationen.
 
-## Neue Fassung
+Die neue Fassung verwendet:
 
-- Hook und Cover: **„Was macht ein FI-Schalter?“**
-- geplante Länge nach 1,10×: ungefähr 52 bis 58 Sekunden
-- 10 Bildbeats
-- nur 3 vollständige Mechanismus-Animationen
-- alle generierten Bilder ohne Text oder Labels
-- alle deutschen Texte ausschließlich als Remotion-Overlay
-- keine Musik
+- direkten Hook: **Was macht ein FI-Schalter?**
+- ungefähr 55 Sekunden Zielzeit
+- zehn ruhige textfreie Bilder
+- nur drei Vollanimationen
+- `mechanism-only` für Szene 03, 05 und 07, damit kein KI-Mechanismus hinter der Remotion-Animation sichtbar bleibt
+- deutsche Texte ausschließlich aus Remotion
 
-## Vollständige Animationen
+## Vor neuen Bildern und neuer Aufnahme
 
-1. Szene 03: ausgeglichener Hin- und Rückstrom
-2. Szene 05: Differenz- beziehungsweise Fehlerstrom
-3. Szene 07: Kontaktöffnung
+```bash
+npm run electrical:preflight -- "channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09/03_Was-macht-ein-FI-Schalter"
+```
 
-Die übrigen Szenen sind bildgeführt und verwenden nur den subtilen Kamera-Zoom der Engine. Szene 08 erhält lediglich einen statischen `30 mA`-Hinweis.
+Erst bei `passed: true` neue Bilder und die neue Voice-Aufnahme erzeugen.
 
-## Neue externe Medien erforderlich
-
-Die Bilder und das Audio des ersten Renders werden nicht wiederverwendet.
-
-1. neuen Sprechtext aufnehmen
-2. zehn neue Bilder mit den überarbeiteten minimalistischen Prompts erzeugen
-3. neues Coverbild erzeugen
-4. optionale drei SFX ablegen
-5. anschließend ausführen:
+## Danach
 
 ```bash
 npm run electrical:finish -- "channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09/03_Was-macht-ein-FI-Schalter"
 ```
+
+Noch offen sind neue Bilder, neue Iro-Aufnahme, optionale SFX, Render-QA und visuelle Freigabe.

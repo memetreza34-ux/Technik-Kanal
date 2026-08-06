@@ -34,6 +34,7 @@ const hookHeadline = firstScene.headline ?? firstScene.title;
 const hookVoiceWords = firstScene.voiceText.split(/\s+/).filter(Boolean).length;
 if (!hookHeadline.trim().endsWith('?')) errors.push('Hook-Headline muss eine direkte Frage sein.');
 if (!firstScene.voiceText.includes('?')) errors.push('Der gesprochene Hook muss die zentrale Frage stellen.');
+if (plan.coverText && plan.coverText.trim() !== hookHeadline.trim()) errors.push('Covertext und Hook-Headline müssen identisch sein.');
 if (hookVoiceWords > config.script.hook.voiceWordsMax) {
   errors.push(`Hook ist mit ${hookVoiceWords} Wörtern zu lang; maximal ${config.script.hook.voiceWordsMax}.`);
 }
