@@ -16,6 +16,8 @@ export type ElectricalRuntimeScene = {
   title: string;
   kicker?: string;
   headline?: string;
+  imageLabel?: string;
+  backgroundFamily?: string;
   fromFrame: number;
   toFrame: number;
   imagePath?: string;

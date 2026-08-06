@@ -11,5 +11,6 @@ if (!projectArg) {
 const project = path.resolve(projectArg);
 run(process.execPath, ['scripts/check-electrical-preproduction.mjs', project], {cwd: repositoryRoot});
 run(process.execPath, ['scripts/check-electrical-required-media.mjs', project], {cwd: repositoryRoot});
+run(process.execPath, ['scripts/check-electrical-image-appearance.mjs', project], {cwd: repositoryRoot});
 run(process.execPath, ['scripts/check-electrical-readiness.mjs', project], {cwd: repositoryRoot});
-console.log('✓ Preflight, Pflichtmedien und Readiness vollständig bestanden.');
+console.log('✓ Preflight, Pflichtmedien, Bilddarstellung und Readiness vollständig bestanden.');

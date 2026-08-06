@@ -19,11 +19,11 @@ const errors = [];
 const warnings = [];
 const layouts = new Set();
 let imageScenes = 0;
-let textOnlyScenes = 0;
+let mechanismOnlyScenes = 0;
 
 for (const scene of plan.scenes) {
   if (scene.layout) layouts.add(scene.layout);
-  if (scene.renderMode === 'mechanism-only') textOnlyScenes += 1;
+  if (scene.renderMode === 'mechanism-only') mechanismOnlyScenes += 1;
   else imageScenes += 1;
   const headline = scene.headline ?? scene.title;
   const headlineWords = headline.trim().split(/\s+/).filter(Boolean).length;
@@ -38,12 +38,12 @@ if (layouts.size < config.visuals.minimumLayoutTypes) errors.push('Zu wenig Layo
 const promptFiles = {};
 for (const scene of plan.scenes) {
   const direct = path.join(paths.promptDir, `${scene.id}.txt`);
-  if (fs.existsSync(direct)) {
-    const prompt = fs.readFileSync(direct, 'utf8');
-    promptFiles[scene.id] = prompt;
-    if (/\[GENAUE AUSSAGE|\[AUSSAGE|MASTER STYLE PROMPT ANHÄNGEN|PROMPT ERGÄNZEN/i.test(prompt)) errors.push(`${scene.id}: Einzelprompt enthält noch einen Platzhalter.`);
-  }
+  if (!fs.existsSync(direct)) continue;
+  const prompt = fs.readFileSync(direct, 'utf8');
+  promptFiles[scene.id] = prompt;
+  if (/\[GENAUE AUSSAGE|\[AUSSAGE|MASTER STYLE PROMPT ANHÄNGEN|PROMPT ERGÄNZEN|EXAKTE DEUTSCHE/i.test(prompt)) errors.push(`${scene.id}: Einzelprompt enthält noch einen Platzhalter.`);
 }
+
 const promptManifest = fs.existsSync(paths.promptManifest) ? JSON.parse(fs.readFileSync(paths.promptManifest, 'utf8')) : null;
 const policy = evaluateElectricalVisualPolicy({plan, config, promptFiles, promptManifest});
 errors.push(...policy.errors);
@@ -52,16 +52,14 @@ warnings.push(...policy.warnings);
 const coverRelative = promptManifest?.cover?.prompt ?? '02-bilder/prompts/00-cover.txt';
 const coverFile = path.join(paths.root, coverRelative);
 let coverPrompt = '';
-if (!fs.existsSync(coverFile)) {
-  errors.push('Coverprompt fehlt.');
-} else {
+if (!fs.existsSync(coverFile)) errors.push('Coverprompt fehlt.');
+else {
   coverPrompt = fs.readFileSync(coverFile, 'utf8');
   const normalized = coverPrompt.toLowerCase();
-  if (!normalized.includes('no visible text')) errors.push('Coverprompt muss sichtbaren KI-Text ausdrücklich verbieten.');
   if (!normalized.includes('semi-photorealistic technical cgi') || !normalized.includes('real-world proportions')) errors.push('Coverprompt muss realistische technische CGI und reale Proportionen verlangen.');
-  if (!/(top 18 percent|top 18%)/.test(normalized)) errors.push('Coverprompt reserviert die oberen 18% nicht.');
-  if (!/(bottom 25 percent|bottom 25%)/.test(normalized)) errors.push('Coverprompt reserviert die unteren 25% nicht.');
-  if (/["“”][^"“”]{1,80}["“”]/.test(coverPrompt)) errors.push('Coverprompt enthält Anführungszeichen und könnte KI-Schrift erzeugen.');
+  if (!normalized.includes('full-bleed') || !normalized.includes('edge-to-edge')) errors.push('Coverprompt muss den vollständigen 9:16-Rahmen füllen.');
+  if (!/no white or gray (?:bands|bars)/.test(normalized) || !normalized.includes('no letterboxing')) errors.push('Coverprompt muss weiße Balken, Rahmen und Letterboxing verbieten.');
+  if (!plan.coverText || !coverPrompt.includes(`"${plan.coverText}"`)) errors.push('Coverprompt enthält den exakten deutschen Hook nicht sichtbar im Bild.');
 }
 
 const firstHook = plan.scenes[0]?.headline ?? plan.scenes[0]?.title ?? '';
@@ -69,9 +67,8 @@ if (!plan.coverText?.trim()) errors.push('Deutscher Covertext fehlt im Szenenpla
 else if (plan.coverText.trim() !== firstHook.trim()) errors.push('Der deutsche Covertext muss exakt dem Hook entsprechen.');
 
 const combinedFile = path.join(paths.imageDir, 'ALLE-BILDPROMPTS-MIT-COVER.txt');
-if (!fs.existsSync(combinedFile)) {
-  errors.push('ALLE-BILDPROMPTS-MIT-COVER.txt fehlt.');
-} else {
+if (!fs.existsSync(combinedFile)) errors.push('ALLE-BILDPROMPTS-MIT-COVER.txt fehlt.');
+else {
   const combined = fs.readFileSync(combinedFile, 'utf8');
   const normalize = (value) => String(value).replace(/\s+/g, ' ').trim().toLowerCase();
   const normalizedCombined = normalize(combined);
@@ -80,23 +77,23 @@ if (!fs.existsSync(combinedFile)) {
     const prompt = promptFiles[scene.id];
     if (prompt && !normalizedCombined.includes(normalize(prompt))) errors.push(`${scene.id}: vollständiger Einzelprompt fehlt in ALLE-BILDPROMPTS-MIT-COVER.txt.`);
   }
-  if (!/final(?:e|er)? cover.*remotion.*hook|cover.*hook.*remotion/i.test(combined)) errors.push('Gesamtdatei erklärt nicht, dass der fertige Cover-Still den deutschen Hook per Remotion enthalten muss.');
+  if (!combined.includes(plan.coverText)) errors.push('Gesamtdatei enthält den deutschen Cover-Hook nicht.');
 }
 
 const report = {
-  version: 'electrical-v3-realistic',
+  version: 'electrical-v4-german-labels',
   generatedAt: new Date().toISOString(),
   passed: errors.length === 0,
   sceneCount: plan.scenes.length,
   imageScenes,
-  mechanismOnlyScenes: textOnlyScenes,
+  mechanismOnlyScenes,
   layouts: [...layouts],
+  backgroundFamilies: [...new Set(plan.scenes.map((scene) => scene.backgroundFamily).filter(Boolean))],
   visualPolicyVersion: plan.visualPolicyVersion ?? null,
+  generatedImageTextPolicy: plan.generatedImageTextPolicy ?? null,
   fullMechanismSceneIds: policy.fullMechanismSceneIds,
   overlaySceneIds: policy.overlaySceneIds,
   coverText: plan.coverText ?? null,
-  coverPromptPassed: !errors.some((error) => error.startsWith('Coverprompt')),
-  combinedPromptFileComplete: !errors.some((error) => error.includes('ALLE-BILDPROMPTS')),
   errors,
   warnings,
 };
@@ -106,5 +103,5 @@ if (errors.length) {
   errors.forEach((error) => console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Creative-QA bestanden: realistische Bildsprache, ${policy.fullMechanismSceneIds.length} Vollanimationen, ${imageScenes} sichtbare Bildszenen.`);
+console.log(`✓ Creative-QA bestanden: deutsche Labels, Full-bleed-Bilder und ${report.backgroundFamilies.length} Hintergrundfamilien.`);
 warnings.forEach((warning) => console.warn(`⚠ ${warning}`));
