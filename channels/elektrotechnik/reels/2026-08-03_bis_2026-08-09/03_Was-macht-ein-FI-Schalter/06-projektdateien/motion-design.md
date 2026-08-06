@@ -1,32 +1,31 @@
-# Motion Design – FI/RCD
+# Motion Design – FI/RCD, reduzierte Fassung
 
-## Grundprinzip
+## Ziel
 
-Bild-first, aber die eigentliche elektrische Funktion wird mit wiederverwendbaren Remotion-Mechanismen erklärt. Zoom allein zählt nicht als Mechanismus-Animation.
+Der Reel bleibt bildgeführt. Nur drei Szenen erhalten eine vollständige technische Animation.
 
-## Szenen
+## Vollständige Mechanismus-Animationen
 
-| Szene | Hauptbewegung | Bibliothek / Layer |
+| Szene | Animation | Warum notwendig |
 |---|---|---|
-| 01 | Fehlerstrom zweigt ab, FI-Hebel fällt | `ResidualCurrentBalanceAnimation`, `RcdContactTripAnimation` |
-| 02 | sanfter Cutaway-Reveal | Engine-Header + RCD-Gerätekarte |
-| 03 | gleich große Strompfeile, Felder löschen sich | `ResidualCurrentBalanceAnimation` balanced |
-| 04 | roter Fehlerweg entsteht zur Erde | eigener Earth-Leakage-Layer |
-| 05 | Rückstrom wird kleiner, Differenz wächst | `ResidualCurrentBalanceAnimation` fault |
-| 06 | Restmagnetfeld pulsiert und Sekundärsignal läuft | `ResidualCurrentBalanceAnimation` signal |
-| 07 | Auslöser entriegelt und Kontakte öffnen | `RcdContactTripAnimation` |
-| 08 | `30 mA` erscheint als Gerätekenngröße | Zahlen-Badge, kein Alarm-Countdown |
-| 09 | FI und LS werden funktional gegenübergestellt | zwei Geräte in einem kontinuierlichen Layout |
-| 10 | Überbrücken wird durchgestrichen, sichere Schritte erscheinen | Warning-/Payoff-Layer |
+| 03 | `ResidualCurrentBalanceAnimation` ohne Fehlerstrom | Gleich große Hin- und Rückströme müssen als Bewegung sichtbar werden |
+| 05 | `ResidualCurrentBalanceAnimation` mit Fehlerstrom | Die Differenz zwischen Hin- und Rückstrom ist ein dynamischer Vorgang |
+| 07 | `RcdContactTripAnimation` | Kontaktöffnung und Abschaltung sind eine mechanische Bewegung |
 
-## Bewegung
+## Bildgeführte Szenen
 
-- harte Schnitte oder maximal acht Frames Crossfade
-- pro Bild nur minimaler 1,00→1,035-Zoom
-- elektrische Pfade bewegen sich semantisch entlang der Leiter
-- Rot erscheint ausschließlich bei Fehlerstrom oder Warnung
-- keine unnötigen Partikel
+- 01: nur starkes Hookbild und Headline
+- 02: ruhiger Geräteaufbau ohne Overlay-Gerät
+- 04: Fehlerweg bereits klar im Bild; keine zweite Plug-Grafik
+- 06: Summenstromwandler und Auslöser als ruhiges Bild
+- 08: statisches `30 mA`-Textoverlay, keine Kreis- oder Pulsanimation
+- 09: zwei Geräte im Bild, nur deutsche Remotion-Labels
+- 10: statische sichere Schritte, keine technische Vollanimation
 
-## Caption-Safe-Zone
+## Verboten
 
-Unterhalb von 75 % Bildhöhe keine wichtigen Mechanismusteile platzieren.
+- großes Remotion-Gerät über einem bereits detaillierten Gerätebild
+- zwei verschiedene technische Zeichenstile in derselben Szene
+- Animation nur als Dekoration
+- dauernd pulsierende Glows, Partikel oder rotierende Elemente
+- englische Beschriftungen im Bild

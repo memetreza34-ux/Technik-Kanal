@@ -1,14 +1,14 @@
 # Storyboard – Was macht ein FI-Schalter?
 
-| Nr. | Kernaussage | Bild | Remotion-Mechanismus | Voice |
-|---:|---|---|---|---|
-| 01 | FI sucht einen falschen Stromweg | auslösender RCD mit Leckpfad | Leckpfad + Hebeltrip | Hook |
-| 02 | FI heißt technisch RCD | Geräte-Cutaway | Bauteile nacheinander hervorheben | Begriff und Vergleich |
-| 03 | Hin- und Rückstrom sind gleich | Summenstromwandler | Felder löschen sich | Normalzustand |
-| 04 | Strom kann zur Erde abfließen | Isolationsfehler am Gehäuse | roter Fehlerpfad | Fehlerfall |
-| 05 | Weniger Strom kommt zurück | ungleiche Stromströme | Differenz wächst | Fehlerstrom |
-| 06 | Wandler erkennt Restmagnetfeld | Toroid und Sekundärwicklung | Signal zum Auslöser | Messprinzip |
-| 07 | Kontakte öffnen | Auslösemechanik | Kontakttrennung | Abschaltung |
-| 08 | 30 mA als Gerätekenngröße | 30-mA-RCD | Schutz-Badge | zusätzlicher Personenschutz |
-| 09 | FI und LS ergänzen sich | beide Geräte auf DIN-Schiene | unterschiedliche Fehlerbilder | Vergleich |
-| 10 | Wiederholtes Auslösen prüfen lassen | tripped RCD, getrennte Geräte | Warning + sichere Schritte | Sicherheit und CTA |
+| Nr. | Aussage | Hauptbild | Remotion |
+|---:|---|---|---|
+| 01 | zentrale Frage | sauberer FI mit blauem Rückstrom und kleinem roten Fehlerpfad | nur Headline |
+| 02 | Summenstromwandler | FI mit einem einzigen ruhigen Sichtfenster | keine Vollanimation |
+| 03 | Hin- und Rückstrom gleich | einfacher Toroid | Balance-Animation |
+| 04 | Strom fließt zur Erde | geschlossenes Metallgerät mit einem roten Fehlerpfad | keine Vollanimation |
+| 05 | weniger Strom kommt zurück | einfacher Toroid mit Leckpfad | Differenz-Animation |
+| 06 | Wandler erzeugt Auslösesignal | Toroid, Sekundärwicklung und Auslöser | keine Vollanimation |
+| 07 | Kontakte öffnen | einfacher Kontaktmechanismus | Kontakt-Animation |
+| 08 | häufig 30 mA | sauberer FI mit Schutzlicht | statischer Wert in Remotion |
+| 09 | FI und LS ergänzen sich | beide Geräte auf derselben DIN-Schiene | nur deutsche Labels |
+| 10 | sicher reagieren | geschlossener Verteiler, gezogene Stecker, Werkzeugkoffer | statische Schritteliste |

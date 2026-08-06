@@ -1,26 +1,23 @@
 {
-  "version": "electrical-v1",
+  "version": "electrical-v2",
   "slug": "was-macht-ein-fi-schalter",
-  "status": "content-complete-media-pending",
+  "status": "rebuild-content-ready-new-media-required",
+  "rebuildReason": "Erster Render war visuell überladen, enthielt englische KI-Texte und zu viele konkurrierende Animationen.",
   "content": {
-    "research": true,
-    "sources": true,
-    "script": true,
-    "voiceoverText": true,
-    "imagePrompts": true,
-    "storyboard": true,
-    "motionDesign": true,
-    "socialCaption": true,
-    "learningSheet": true,
-    "remotionComposition": true,
-    "reusableAnimations": true
+    "directHook": true,
+    "shorterVoiceover": true,
+    "newMinimalImagePrompts": true,
+    "animationBudgetDefined": true,
+    "fullMechanismAnimations": 3,
+    "remotionCompositionRevised": true,
+    "sources": true
   },
   "media": {
-    "rawVoiceover": false,
-    "finalVoiceover": false,
-    "sceneImagesRequired": 10,
-    "sceneImagesPresent": 0,
-    "coverPresent": false,
+    "oldRenderRejected": true,
+    "newRawVoiceoverRequired": true,
+    "newSceneImagesRequired": 10,
+    "newSceneImagesPresent": 0,
+    "newCoverRequired": true,
     "sfxOptional": true
   },
   "qa": {

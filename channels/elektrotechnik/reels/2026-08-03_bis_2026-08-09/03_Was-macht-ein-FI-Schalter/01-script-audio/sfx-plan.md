@@ -1,11 +1,11 @@
-# SFX-Plan
+# Reduzierter SFX-Plan
+
+Keine Musik. Maximal drei funktionale Soundeffekte.
 
 | Szene | Datei | Einsatz | Lautstärke |
 |---|---|---|---:|
-| 01-hook | `fi-trip.wav` | beim sichtbaren Umlegen des FI-Hebels | 0,17 |
-| 04-fehlerweg | `current-leak.wav` | sobald der rote Fehlerstrompfad erscheint | 0,12 |
-| 06-summenstromwandler | `transformer-pulse.wav` | beim Aufbau des Restmagnetfelds | 0,10 |
-| 07-kontakte-oeffnen | `contact-open.wav` | exakt beim Kontaktöffnen | 0,18 |
-| 10-sicher-reagieren | `warning-soft.wav` | beim Hinweis „niemals überbrücken“ | 0,11 |
+| 04 | `current-leak.wav` | einmal beim Fehlerweg zur Erde | 0,10 |
+| 07 | `contact-open.wav` | exakt beim Öffnen der Kontakte | 0,16 |
+| 10 | `warning-soft.wav` | einmal beim Sicherheitshinweis | 0,09 |
 
-Keine Musik und höchstens zwei SFX pro Szene.
+Keine dauernden Pulse, UI-Sounds oder Sounds bei jedem Bildwechsel.

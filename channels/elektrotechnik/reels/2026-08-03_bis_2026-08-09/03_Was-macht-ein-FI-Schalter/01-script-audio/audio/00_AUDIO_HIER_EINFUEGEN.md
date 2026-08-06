@@ -1,6 +1,8 @@
-# Audio hier einfügen
+# Neue Audioaufnahme erforderlich
 
-Rohaufnahme bevorzugt als:
+Die Aufnahme des ersten Renders nicht wiederverwenden.
+
+Neue Rohaufnahme bevorzugt als:
 
 ```text
 voiceover-raw.wav
@@ -8,11 +10,8 @@ voiceover-raw.wav
 
 Vorgaben:
 
-- Mono
-- WAV
-- möglichst 48 kHz
-- keine Musik
-- kein Hall
-- keine bereits eingebaute Beschleunigung
-
-Die Pipeline erzeugt daraus automatisch die finale 1,10×-Datei und lokale Wort-Zeitstempel.
+- neuer Sprechtext aus `../voiceover.txt`
+- deutsche Stimme Iro
+- Mono, WAV, möglichst 48 kHz
+- keine Musik und kein Hall
+- normal sprechen; die Pipeline beschleunigt anschließend exakt auf 1,10×
