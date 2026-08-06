@@ -1,3 +1,5 @@
 Show the same outgoing and returning conductors through a toroidal core, but the outgoing electric-blue current stream is visibly larger than the returning stream because a small red branch has escaped toward earth. Highlight the remaining difference around the core with one warm-gold ring. The viewer must immediately understand: less current returns than left.
 
-Premium stylized 3D electrical engineering illustration, dark navy continuous background, precise simple current paths, large close main motif, vertical 9:16, top and bottom safe zones clear, no UI dashboard, no equations, no people, no logos, no watermark, no split or banded background.
+Any visible word or comparison label must be correct German. Allowed short labels include “HIN”, “ZURÜCK”, “DIFFERENZ” and “FEHLERSTROM”. Never use English text such as OUTGOING, RETURNING or DIFFERENCE.
+
+Premium stylized 3D electrical engineering illustration, dark navy continuous background, precise simple current paths, large close main motif, vertical 9:16, top 15 percent and bottom 25 percent clear, no UI dashboard, no equations, no people, no logos, no watermark, no split or banded background.

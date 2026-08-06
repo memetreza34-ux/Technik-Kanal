@@ -14,6 +14,7 @@ reels/YYYY-MM-DD_bis_YYYY-MM-DD/NN_Thema/
 │   └── voiceover.txt
 ├── 02-bilder/
 │   ├── bildprompts.md
+│   ├── COVER-TEXT.txt
 │   ├── prompts/
 │   └── images/
 ├── 03-caption/
@@ -26,6 +27,15 @@ reels/YYYY-MM-DD_bis_YYYY-MM-DD/NN_Thema/
 ```
 
 Die Nummer `NN` ist der Produktionsslot innerhalb der Woche. Es gibt keinen zusätzlichen Wochentagsordner.
+
+## Sprache
+
+- Jeder Reel ist vollständig deutschsprachig.
+- Gesprochener Text, Untertitel, Headlines, Covertexte, CTAs, Erklärlabels und sichtbare Warnungen sind korrektes Deutsch.
+- Bildprompts dürfen Englisch sein; jeder darin verlangte sichtbare Text muss Deutsch sein.
+- Englische Interfacewörter und Erklärlabels sind verboten, sofern sie nicht ein international übliches technisches Kürzel sind.
+- Jeder Coverordner erhält `COVER-TEXT.txt` mit einem kurzen deutschen Erklärungssatz.
+- Der Cover-Satz wird später sauber in Remotion gesetzt; die Bild-KI soll ihn nicht erzeugen.
 
 ## Inhaltlicher Aufbau
 
@@ -41,13 +51,14 @@ Die Nummer `NN` ist der Produktionsslot innerhalb der Woche. Es gibt keinen zus�
 
 1. Fachliche Recherche und Quellen-IDs
 2. Szenenplan mit `voiceText`, `imageDir`, Layout und Mechanismus
-3. fertiger Sprechtext
+3. fertiger deutscher Sprechtext
 4. Bildprompts und Remotion-Animationen
-5. Nutzer erzeugt Audio und Bilder
-6. `electrical:finish` verarbeitet und synchronisiert alles
-7. Inhalts-, Sicherheits-, Asset-, Readiness- und Render-QA
-8. Codex prüft Kontaktbogen, Einzelbilder und das vollständige MP4
-9. Nutzer gibt den finalen Reel frei
+5. deutscher Cover-Satz in `02-bilder/COVER-TEXT.txt`
+6. Nutzer erzeugt Audio und Bilder
+7. `electrical:finish` verarbeitet und synchronisiert alles
+8. Inhalts-, Sicherheits-, Asset-, Readiness- und Render-QA
+9. Codex prüft Kontaktbogen, Einzelbilder und das vollständige MP4
+10. Nutzer gibt den finalen Reel frei
 
 ## Verbindliche Projektdateien
 
@@ -71,6 +82,7 @@ Generierte Dateien dürfen vorhandene Planungsdateien ergänzen, aber nicht durc
 Nicht rendern bei:
 
 - fehlendem Audio oder Szenenbild
+- nicht deutschem Voice-over, Untertitel, Covertext oder sichtbarem Erklärtext
 - unzureichender Wortübereinstimmung
 - nicht belegter Norm-, Grenzwert- oder Sicherheitsbehauptung
 - unsicherer Handlungsanweisung

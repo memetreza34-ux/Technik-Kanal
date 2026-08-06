@@ -1,8 +1,17 @@
 {
   "version": "electrical-v1",
   "slug": "was-macht-ein-fi-schalter",
+  "language": "de",
+  "visibleTextLanguage": "de",
   "masterStyle": "channels/elektrotechnik/gehirn/MASTER-STYLE-PROMPT.md",
-  "cover": {"prompt":"02-bilder/prompts/00-cover.txt","imageDir":"02-bilder/images/00-cover","approved":false},
+  "cover": {
+    "prompt": "02-bilder/prompts/00-cover.txt",
+    "imageDir": "02-bilder/images/00-cover",
+    "coverTextFile": "02-bilder/COVER-TEXT.txt",
+    "coverText": "So erkennt der FI gefährlichen Fehlerstrom.",
+    "textRendering": "remotion-overlay-not-image-generation",
+    "approved": false
+  },
   "scenes": [
     {"id":"01-hook","prompt":"02-bilder/prompts/01-hook.txt","imageDir":"02-bilder/images/01-hook","approved":false},
     {"id":"02-begriff","prompt":"02-bilder/prompts/02-begriff.txt","imageDir":"02-bilder/images/02-begriff","approved":false},

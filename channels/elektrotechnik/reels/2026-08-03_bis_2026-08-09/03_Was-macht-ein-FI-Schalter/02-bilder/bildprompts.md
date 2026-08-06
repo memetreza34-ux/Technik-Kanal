@@ -1,13 +1,21 @@
 # Alle Bildprompts mit Cover – Was macht ein FI-Schalter?
 
-Hier stehen **Cover + alle 10 Szenenprompts vollständig in einer Datei**. Jeder Prompt ist einzeln kopierbar und entspricht dem neuen Elektrotechnik-Bildstil.
+Hier stehen **Cover + alle 10 Szenenprompts vollständig in einer Datei**.
+
+## Feste Sprachregel
+
+Die Prompts dürfen Englisch sein. **Jeder sichtbare Text im erzeugten Bild muss korrektes Deutsch sein.** Keine englischen Nutzertexte wie `ON`, `OFF`, `WARNING`, `CURRENT`, `RETURN` oder `TRIPPED`. Technische Kürzel wie `FI`, `RCD`, `LS`, `PE`, `L`, `N`, `IΔn` und Einheiten bleiben erlaubt.
+
+Der Cover-Satz wird später sauber in Remotion gesetzt und nicht von der Bild-KI erzeugt:
+
+> **So erkennt der FI gefährlichen Fehlerstrom.**
 
 ## Gemeinsame Regeln
 
 - vertikal `9:16`
 - Hauptmotiv groß, nah und sofort verständlich
-- obere 15 % für spätere Überschrift frei
-- untere 25 % für spätere Untertitel frei
+- obere 15 % frei; beim Cover obere 22 % frei
+- untere 25 % für deutsche Untertitel frei
 - ein durchgehender Hintergrund ohne Teilung oder weiße Balken
 - keine Logos oder Wasserzeichen
 - keine langen Texte im generierten Bild
@@ -22,29 +30,35 @@ Hier stehen **Cover + alle 10 Szenenprompts vollständig in einer Datei**. Jeder
 # 00 – Cover
 
 ```text
-A large modern residual current device on a DIN rail has just tripped, its lever moving to OFF while a bright electric-blue outgoing current and returning current are visible around a toroidal sensor; a small red leakage branch escapes toward earth and clearly explains why the device reacts. The RCD is the single dominant focal point, close and powerful, with clean negative space for later title and subtitle overlays.
+A large modern residual current device on a DIN rail has just tripped while bright electric-blue outgoing and returning current paths pass through a toroidal sensor. A small red leakage branch escapes toward earth and immediately explains why the device reacts. The RCD is the single dominant focal point, close and powerful. Reserve a large clean area in the upper part of the frame for a later German cover sentence.
 
-Premium stylized 3D educational electrical engineering illustration, physically plausible components, dark navy seamless technical environment, electric-blue normal-current accents, warm gold explanation accents, red only for fault current, vertical 9:16, top 15 percent and bottom 25 percent clear, edge-to-edge continuous background, no split panels, no white bars, no floating base, no people, no logos, no watermark, no generated captions, no impossible wiring.
+Do not generate any headline or sentence inside the image. The exact German cover text will be added later in Remotion: “So erkennt der FI gefährlichen Fehlerstrom.” Any small unavoidable device label or switch-state word must be correct German. Never use English viewer-facing words such as ON, OFF, WARNING, CURRENT, RETURN or TRIPPED.
+
+Premium stylized 3D educational electrical engineering illustration, physically plausible components, dark navy seamless technical environment, electric-blue normal-current accents, warm gold explanation accents, red only for fault current, vertical 9:16, top 22 percent and bottom 25 percent clear, edge-to-edge continuous background, no split panels, no white bars, no floating base, no people, no logos, no watermark, no generated captions, no impossible wiring.
 ```
 
 ---
 
-# 01 – Hook: Der FI sucht einen falschen Stromweg
+# 01 – Hook: Warum fliegt der FI raus?
 
 ```text
 Show one large RCD/FI device in the instant of tripping. Two electric-blue current streams enter and return through the device, but a clearly visible red branch leaves the normal circuit and travels toward an earth symbol. The viewer must immediately understand: the device reacts because current takes a wrong path, not because the normal load current is simply high.
 
-Premium stylized 3D educational electrical engineering illustration, physically plausible components, dark navy seamless environment, large close subject, vertical 9:16, top 15 percent and bottom 25 percent clear, no split background, no people touching live parts, no logos, no watermark, no text except a tiny correct RCD marking, no impossible terminals.
+Any visible word, label, warning or switch state must be correct German. Allowed short labels include “FI”, “RCD”, “FEHLERSTROM”, “ERDE”, “EIN”, “AUS” and “AUSGELÖST”. Never use English viewer-facing text.
+
+Premium stylized 3D educational electrical engineering illustration, physically plausible components, dark navy seamless environment, large close subject, vertical 9:16, top 15 percent and bottom 25 percent clear, no split background, no people touching live parts, no logos, no watermark, no impossible terminals.
 ```
 
 ---
 
-# 02 – Begriff und Aufbau: FI heißt technisch RCD
+# 02 – Was prüft der FI?
 
 ```text
 Create a clean cutaway of a two-pole residual current device showing the external lever, test button, switching contacts, toroidal summation current transformer, secondary winding and release mechanism in one coherent spatial device. The cutaway must remain technically plausible and instantly readable, with the toroidal transformer as the visual focus.
 
-Premium stylized 3D electrical education illustration, dark navy seamless environment, electric-blue accents, gold explanation lighting, vertical 9:16, large close device, top 15 percent and bottom 25 percent clear, no dashboard, no exploded fantasy machine, no hands, no brand logo, no watermark, only the short labels FI and RCD when necessary.
+Any visible word, label, component name or switch state must be correct German. Allowed short labels include “FI”, “RCD”, “TEST”, “SUMMENSTROMWANDLER”, “AUSLÖSER” and “SCHALTKONTAKTE”. Never use English explanatory text.
+
+Premium stylized 3D electrical education illustration, dark navy seamless environment, electric-blue accents, gold explanation lighting, vertical 9:16, large close device, top 15 percent and bottom 25 percent clear, no dashboard, no exploded fantasy machine, no hands, no brand logo, no watermark.
 ```
 
 ---
@@ -53,6 +67,8 @@ Premium stylized 3D electrical education illustration, dark navy seamless enviro
 
 ```text
 Show an enlarged toroidal summation current transformer with phase and neutral conductors passing through the core. Equal electric-blue arrows flow outward and back in opposite directions. Their magnetic fields visibly cancel inside the core, leaving the secondary winding inactive. The meaning must be immediate: equal current out and back means no residual current.
+
+Any visible word or directional label must be correct German. Allowed short labels include “HIN”, “ZURÜCK”, “GLEICH” and “SUMME = 0”. Never use English text such as CURRENT, OUT or RETURN.
 
 Premium stylized 3D electrical engineering illustration, physically plausible cable routing, dark navy seamless background, electric-blue normal state, subtle gold explanation accents, vertical 9:16, large dominant toroid, top 15 percent and bottom 25 percent clear, no split panels, no long text, no people, no logo, no watermark.
 ```
@@ -64,15 +80,19 @@ Premium stylized 3D electrical engineering illustration, physically plausible ca
 ```text
 Show a stylized household appliance with a believable insulation fault from an internal live conductor to the metal housing. A red fault-current path leaves the housing through the protective conductor toward earth while the normal blue circuit remains visible. No person touches the appliance. The image must explain a real fault path without showing unsafe work.
 
+Any visible label or warning must be correct German. Allowed short labels include “ISOLATIONSFEHLER”, “FEHLERSTROM”, “GEHÄUSE”, “SCHUTZLEITER” and “ERDE”. Never use English viewer-facing text.
+
 Premium stylized 3D electrical education illustration, technically plausible components, dark navy seamless environment, electric-blue normal current, red fault current only, large close scene, vertical 9:16, top 15 percent and bottom 25 percent clear, no exposed manual work, no sparks explosion, no logos, no watermark, no generated caption.
 ```
 
 ---
 
-# 05 – Differenzstrom: Weniger Strom kommt zurück
+# 05 – Fehlerstrom: Weniger Strom kommt zurück
 
 ```text
 Show the same outgoing and returning conductors through a toroidal core, but the outgoing electric-blue current stream is visibly larger than the returning stream because a small red branch has escaped toward earth. Highlight the remaining difference around the core with one warm-gold ring. The viewer must immediately understand: less current returns than left.
+
+Any visible word or comparison label must be correct German. Allowed short labels include “HIN”, “ZURÜCK”, “DIFFERENZ” and “FEHLERSTROM”. Never use English text such as OUTGOING, RETURNING or DIFFERENCE.
 
 Premium stylized 3D electrical engineering illustration, dark navy continuous background, precise simple current paths, large close main motif, vertical 9:16, top 15 percent and bottom 25 percent clear, no UI dashboard, no equations, no people, no logos, no watermark, no split or banded background.
 ```
@@ -84,15 +104,19 @@ Premium stylized 3D electrical engineering illustration, dark navy continuous ba
 ```text
 Create a close technical cutaway of the toroidal summation current transformer during a fault. A residual magnetic field glows warm gold inside the core, induces a signal in the secondary winding and sends it toward a small release magnet. Show the causal chain spatially from current difference to magnetic field to release signal.
 
+Any visible word, mechanism label or signal label must be correct German. Allowed short labels include “SUMMENSTROMWANDLER”, “RESTMAGNETFELD”, “SEKUNDÄRWICKLUNG”, “SIGNAL” and “AUSLÖSER”. Never use English explanatory text.
+
 Premium stylized 3D electrical engineering illustration, physically plausible transformer and winding, dark navy seamless environment, electric-blue normal current, gold induced signal, red only for fault current, vertical 9:16, large dominant mechanism, top 15 percent and bottom 25 percent clear, no fantasy machinery, no text blocks, no people, no logo, no watermark.
 ```
 
 ---
 
-# 07 – Auslösung: Die Kontakte öffnen
+# 07 – Abschaltung: Die Kontakte öffnen
 
 ```text
 Show the internal release magnet pulling a latch so the RCD switching contacts open. The electric-blue current path is visibly interrupted at the contact gap, with a restrained gold mechanical motion trail and no explosion. The sequence must be understood at first glance: detected residual current releases the latch and disconnects the circuit.
+
+Any visible word, state label or mechanism label must be correct German. Allowed short labels include “AUSLÖSER”, “SCHALTSCHLOSS”, “KONTAKTE OFFEN” and “STROMKREIS GETRENNT”. Never use English words such as OPEN, TRIPPED or DISCONNECTED.
 
 Premium stylized 3D electrical mechanism illustration, physically plausible contact geometry, dark navy seamless environment, crisp high contrast, vertical 9:16, large close subject, top 15 percent and bottom 25 percent clear, no hands, no arc-flash spectacle, no logos, no watermark, no generated captions.
 ```
@@ -102,17 +126,21 @@ Premium stylized 3D electrical mechanism illustration, physically plausible cont
 # 08 – 30 mA: Zusätzlicher Personenschutz
 
 ```text
-Show a modern RCD with the correct short marking IΔn 30 mA clearly visible, surrounded by a restrained protective shield motif and a small human silhouette safely separated from all live parts. The device remains the dominant object. The meaning is additional personal protection using a 30 mA rated residual operating current, not a guarantee against every electric shock.
+Show a modern RCD with the correct short marking “IΔn 30 mA” clearly visible, surrounded by a restrained protective shield motif and a small human silhouette safely separated from all live parts. The device remains the dominant object. The meaning is additional personal protection using a 30 mA rated residual operating current, not a guarantee against every electric shock.
+
+Any additional visible text must be correct German. Allowed short labels include “ZUSÄTZLICHER PERSONENSCHUTZ” and “30 mA”. Never use English explanatory text.
 
 Premium stylized 3D electrical education illustration, dark navy seamless environment, electric-blue and gold accents, vertical 9:16, large close device, top 15 percent and bottom 25 percent clear, no person touching equipment, no brand, no watermark, no long generated text.
 ```
 
 ---
 
-# 09 – Vergleich: FI/RCD versus LS
+# 09 – Vergleich: FI und Leitungsschutzschalter
 
 ```text
-Place one RCD and one miniature circuit breaker next to each other on the same DIN rail in one continuous environment. Around the RCD show a small red leakage branch and balanced-current sensor motif. Around the circuit breaker show an orange overheated cable and a sharp red short-circuit current spike. Short correct labels FI/RCD and LS are allowed. The different tasks must be instantly obvious.
+Place one RCD and one miniature circuit breaker next to each other on the same DIN rail in one continuous environment. Around the RCD show a small red leakage branch and balanced-current sensor motif. Around the circuit breaker show an orange overheated cable and a sharp red short-circuit current spike. The different tasks must be instantly obvious.
+
+Any visible word or comparison label must be correct German. Use only the short labels “FI / RCD”, “FEHLERSTROM”, “LS”, “ÜBERLAST” and “KURZSCHLUSS”. Never use English words such as LEAKAGE, OVERLOAD or SHORT CIRCUIT.
 
 Premium stylized 3D electrical engineering illustration, dark navy seamless background, large close devices, vertical 9:16, top 15 percent and bottom 25 percent clear, no split-screen border, no brand logos, no watermark, no people, no impossible wiring.
 ```
@@ -124,10 +152,10 @@ Premium stylized 3D electrical engineering illustration, dark navy seamless back
 ```text
 Show a tripped RCD in a closed consumer-unit context, several appliance plugs safely disconnected in the foreground, a clear warning symbol and a professional electrician tool case waiting nearby. No open panel, no exposed conductors and no person working on live parts. The message must be immediate: do not bridge or repeatedly reset a fault; disconnect loads and have the cause checked professionally.
 
+Any visible warning, instruction or state label must be correct German. Allowed short labels include “NICHT ÜBERBRÜCKEN”, “GERÄTE AUS”, “STECKER ZIEHEN” and “PRÜFEN LASSEN”. Never use English warning text.
+
 Premium stylized 3D electrical safety illustration, dark navy seamless environment, electric-blue normal accents, restrained red warning, vertical 9:16, large clear objects, top 15 percent and bottom 25 percent clear, no unsafe action, no logos, no watermark, no long text.
 ```
-
----
 
 ## Ablage der fertigen Bilder
 
