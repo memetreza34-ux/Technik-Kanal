@@ -20,10 +20,13 @@ const required = [
   'core/lib/schemas.ts',
   'scripts/lib/electrical-contracts.mjs',
   'scripts/lib/electrical-project-structure.mjs',
+  'scripts/lib/electrical-visual-policy.mjs',
+  'scripts/check-electrical-preproduction.mjs',
   'scripts/check-electrical-project-folder.mjs',
   'scripts/check-electrical-readiness.mjs',
   'scripts/ingest-electrical-assets.mjs',
   'scripts/render_electrical_reel.mjs',
+  'scripts/test-electrical-visual-policy.mjs'
 ];
 const missing = required.filter((relative) => !fs.existsSync(path.join(root, relative)));
 if (missing.length) {

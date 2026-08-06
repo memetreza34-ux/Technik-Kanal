@@ -11,6 +11,10 @@ if (!projectArg) {
 }
 
 const paths = projectPaths(projectArg);
+if (!args.includes('--preflight-passed')) {
+  run(process.execPath, ['scripts/check-electrical-preproduction.mjs', paths.root], {cwd: repositoryRoot});
+}
+
 const genericRuntimePath = path.join(channelRoot, 'src/generated/reel-runtime.json');
 const previousGenericRuntime = fs.existsSync(genericRuntimePath) ? fs.readFileSync(genericRuntimePath) : null;
 let restoreGenericRuntime = false;

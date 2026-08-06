@@ -6,10 +6,13 @@ import {projectPaths, repositoryRoot, run} from './lib/electrical-project.mjs';
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
 if (!projectArg) {
-  console.error('Nutzung: npm run elektro:finish -- <reel-ordner>');
+  console.error('Nutzung: npm run electrical:finish -- <reel-ordner>');
   process.exit(1);
 }
 const paths = projectPaths(projectArg);
+
+run(process.execPath, ['scripts/check-electrical-preproduction.mjs', paths.root], {cwd: repositoryRoot});
+
 const whisperCandidates = [
   process.env.WHISPER_CPP_BIN,
   path.join(repositoryRoot, '.tools/whisper.cpp/build/bin/whisper-cli'),
@@ -23,9 +26,9 @@ if (!whisperCandidates.some((candidate) => fs.existsSync(candidate)) || !fs.exis
   run(process.execPath, ['scripts/setup_local_transcription.mjs'], {cwd: repositoryRoot});
 }
 
-run(process.execPath, ['scripts/render_electrical_reel.mjs', paths.root, '--force-transcribe'], {cwd: repositoryRoot});
+run(process.execPath, ['scripts/render_electrical_reel.mjs', paths.root, '--force-transcribe', '--preflight-passed'], {cwd: repositoryRoot});
 
 console.log('\n=== PRODUKTION ABGESCHLOSSEN ===');
 console.log(`Reel-Ordner: ${paths.root}`);
-console.log('Codex muss jetzt den erzeugten Kontaktbogen, alle Szenen-Stills und das vollständige MP4 visuell prüfen.');
-console.log('Bei einem sichtbaren Fehler: Ursache im Remotion-Code oder Asset-Mapping beheben und denselben Befehl erneut ausführen.');
+console.log('Codex muss jetzt Kontaktbogen, Szenen-Stills und das vollständige MP4 visuell prüfen.');
+console.log('Bei einem sichtbaren Fehler: Ursache beheben und denselben Befehl erneut ausführen.');

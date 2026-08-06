@@ -12,6 +12,7 @@
     "validate:electrical-syntax": "node scripts/validate-electrical-syntax.mjs",
     "validate:electrical-system": "node scripts/validate-electrical-system.mjs",
     "validate:electrical-consistency": "node scripts/validate-electrical-consistency.mjs",
+    "validate:electrical-visual-policy": "node scripts/test-electrical-visual-policy.mjs",
     "typecheck": "node scripts/typecheck.mjs",
     "smoke": "cd channels/elektrotechnik && npx remotion still src/index.ts SicherungsReel /tmp/elektrotechnik-smoke.png --frame=0",
     "studio": "npm run studio --workspace @elektrotechnik/channel",
@@ -27,7 +28,9 @@
     "electrical:assets": "node scripts/run-electrical-with-folder-check.mjs scripts/ingest-electrical-assets.mjs",
     "electrical:script-qa": "node scripts/run-electrical-script-qa.mjs",
     "electrical:creative-qa": "node scripts/run-electrical-creative-qa.mjs",
-    "electrical:content-ready": "node scripts/run-electrical-with-folder-check.mjs scripts/check-electrical-content-package.mjs",
+    "electrical:content-package": "node scripts/run-electrical-with-folder-check.mjs scripts/check-electrical-content-package.mjs",
+    "electrical:preflight": "node scripts/check-electrical-preproduction.mjs",
+    "electrical:content-ready": "node scripts/check-electrical-preproduction.mjs",
     "electrical:qa": "node scripts/run-electrical-qa-from-project.mjs",
     "electrical:ready": "node scripts/run-electrical-with-folder-check.mjs scripts/check-electrical-readiness.mjs",
     "electrical:validate": "node scripts/run-electrical-with-folder-check.mjs scripts/validate-electrical-project.mjs",
@@ -44,7 +47,7 @@
     "elektro:render": "npm run electrical:render --",
     "elektro:qa": "npm run electrical:render-qa --",
     "elektro:finish": "npm run electrical:finish --",
-    "test": "npm run validate:electrical-syntax && npm run validate:electrical-template && npm run validate:electrical-system && npm run validate:electrical-consistency && npm run typecheck && vitest run"
+    "test": "npm run validate:electrical-syntax && npm run validate:electrical-template && npm run validate:electrical-system && npm run validate:electrical-consistency && npm run validate:electrical-visual-policy && npm run typecheck && vitest run"
   },
   "dependencies": {
     "@remotion/captions": "4.0.490",

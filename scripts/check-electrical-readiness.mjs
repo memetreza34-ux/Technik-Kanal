@@ -38,10 +38,6 @@ if (!voices.raw && !voices.final) errors.push('Voice-over fehlt.');
 if (!fs.existsSync(paths.wordTimestamps)) warnings.push('Wort-Zeitstempel fehlen noch und werden bei electrical:finish lokal erzeugt.');
 if (!fs.existsSync(paths.captionsFinal)) warnings.push('Finale Caption-JSON fehlt noch.');
 
-for (const file of [paths.contentReport, paths.manifest]) {
-  if (!fs.existsSync(file)) warnings.push(`${path.basename(file)} wurde noch nicht erzeugt.`);
-}
-
 if (plan) {
   if (plan.width !== config.format.width || plan.height !== config.format.height || plan.fps !== config.format.fps) {
     errors.push(`Format im Szenenplan muss ${config.format.width}×${config.format.height} bei ${config.format.fps} FPS sein.`);
@@ -58,20 +54,32 @@ if (plan) {
   }
 }
 
-const reports = [
+const requiredReports = [
+  'script-qa-report.json',
+  'creative-qa-report.json',
   'content-package-report.json',
-  'required-media-report.json',
-  'social-caption-report.json',
-].map((name) => path.join(paths.projectDir, name));
-for (const file of reports) {
+  'preproduction-report.json',
+];
+for (const name of requiredReports) {
+  const file = path.join(paths.projectDir, name);
+  if (!fs.existsSync(file)) {
+    errors.push(`${name} fehlt. Zuerst electrical:preflight ausführen.`);
+    continue;
+  }
+  const report = readJson(file);
+  if (report.passed === false) errors.push(`${name} meldet Fehler.`);
+}
+
+for (const name of ['required-media-report.json', 'social-caption-report.json']) {
+  const file = path.join(paths.projectDir, name);
   if (!fs.existsSync(file)) continue;
   const report = readJson(file);
-  if (report.passed === false) errors.push(`${path.basename(file)} meldet Fehler.`);
+  if (report.passed === false) errors.push(`${name} meldet Fehler.`);
 }
 
 const ready = errors.length === 0;
 const report = {
-  version: 'electrical-v1',
+  version: 'electrical-v2',
   generatedAt: new Date().toISOString(),
   ready,
   phase: ready ? 'ready-for-prepare-and-render' : 'blocked',
