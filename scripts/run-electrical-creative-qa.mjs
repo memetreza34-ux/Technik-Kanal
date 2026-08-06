@@ -45,7 +45,13 @@ if (layouts.size < config.visuals.minimumLayoutTypes) errors.push('Zu wenig Layo
 const promptFiles = {};
 for (const scene of plan.scenes) {
   const direct = path.join(paths.promptDir, `${scene.id}.txt`);
-  if (fs.existsSync(direct)) promptFiles[scene.id] = fs.readFileSync(direct, 'utf8');
+  if (fs.existsSync(direct)) {
+    const prompt = fs.readFileSync(direct, 'utf8');
+    promptFiles[scene.id] = prompt;
+    if (/\[GENAUE AUSSAGE|\[AUSSAGE|MASTER STYLE PROMPT ANHÄNGEN|PROMPT ERGÄNZEN/i.test(prompt)) {
+      errors.push(`${scene.id}: Einzelprompt enthält noch einen Platzhalter.`);
+    }
+  }
 }
 const promptManifest = fs.existsSync(paths.promptManifest)
   ? JSON.parse(fs.readFileSync(paths.promptManifest, 'utf8'))

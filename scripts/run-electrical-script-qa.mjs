@@ -28,6 +28,15 @@ for (const phrase of config.electricalSafety.riskyPhrases) {
 for (const phrase of config.textQuality.vaguePhrases) {
   if (lowerText.includes(phrase.toLowerCase())) warnings.push(`Vage Standardphrase vermeiden: "${phrase}".`);
 }
+for (const phrase of [
+  'sprechtext für diese szene ergänzen',
+  'direkte antwort in einem kurzen satz ergänzen',
+  'finalen durchgehenden sprechtext hier einfügen',
+  'fachliche kernaussage ergänzen',
+  '[platzhalter]',
+]) {
+  if (lowerText.includes(phrase)) errors.push(`Unbearbeiteter Skript-Platzhalter: "${phrase}".`);
+}
 
 const firstScene = plan.scenes[0];
 const hookHeadline = firstScene.headline ?? firstScene.title;
