@@ -39,8 +39,32 @@ const SchutzleiterMechanism: React.FC<{scene: ElectricalRuntimeScene}> = ({scene
   return null;
 };
 
+const Label: React.FC<{children: React.ReactNode; left?: number; right?: number; top: number; accent?: string}> = ({children, left, right, top, accent = '#2ac7ff'}) => (
+  <div style={{position: 'absolute', left, right, top, zIndex: 18, padding: '17px 24px', borderRadius: 18, background: 'rgba(3,16,31,.88)', border: `2px solid ${accent}`, color: '#ffffff', fontFamily: 'Arial, sans-serif', fontSize: 31, fontWeight: 950, textAlign: 'center', boxShadow: '0 10px 30px rgba(0,0,0,.4)'}}>{children}</div>
+);
+
+const GermanTechnicalLabels: React.FC = () => {
+  const frame = useCurrentFrame();
+  const scene = runtime.scenes.find((candidate) => frame >= candidate.fromFrame && frame < candidate.toFrame);
+  if (!scene) return null;
+
+  if (scene.id === '02-verbindung') return <Label right={80} top={920} accent="#d9e82e">Schutzleiter (PE)</Label>;
+  if (scene.id === '06-abschaltung') return <Label right={80} top={930} accent="#ff4d5e">Schutzeinrichtung AUS</Label>;
+  if (scene.id === '07-pe-vs-n') {
+    return (
+      <>
+        <Label left={78} top={820} accent="#2ac7ff">Neutralleiter (N)</Label>
+        <Label right={78} top={820} accent="#d9e82e">Schutzleiter (PE)</Label>
+      </>
+    );
+  }
+  if (scene.id === '08-gruen-gelb') return <Label right={70} top={900} accent="#d9e82e">Grün-Gelb = Schutzleiter (PE)</Label>;
+  return null;
+};
+
 export const SchutzleiterReel: React.FC = () => (
   <AbsoluteFill>
     <ElectricalProductionLayer runtime={runtime} mechanismLayer={(scene) => <SchutzleiterMechanism scene={scene} />} />
+    <GermanTechnicalLabels />
   </AbsoluteFill>
 );

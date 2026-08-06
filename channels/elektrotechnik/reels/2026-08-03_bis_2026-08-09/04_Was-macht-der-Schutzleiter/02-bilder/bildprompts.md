@@ -1,26 +1,36 @@
 # Bildprompts – Was macht der Schutzleiter?
 
-## Produktionsregel
+Die verbindliche vollständige Datei ist:
 
-- Bildprompt-Sprache: Englisch
-- sichtbare Inhalte und alle späteren Overlays: Deutsch
-- generierte Bilder vollständig textfrei
-- genau ein Hauptmotiv und eine technische Aussage
-- Szene 03 und 05 benötigen kein Nutzerbild
+```text
+02-bilder/ALLE-BILDPROMPTS-MIT-COVER.txt
+```
 
-Die kopierfertige Gesamtdatei liegt unter `ALLE-BILDPROMPTS-MIT-COVER.txt`. Die einzelnen Produktionsprompts liegen unter `prompts/`.
+Sie enthält jetzt ohne Ausnahme:
 
-## Benötigte Medien
+1. Cover
+2. Szene 01 – Hook
+3. Szene 02 – Verbindung
+4. Szene 03 – Normalbetrieb, Referenzbriefing ohne Nutzerbild
+5. Szene 04 – Isolationsfehler
+6. Szene 05 – Fehlerstromweg, Referenzbriefing ohne Nutzerbild
+7. Szene 06 – Abschaltung
+8. Szene 07 – Neutralleiter gegen Schutzleiter
+9. Szene 08 – Grün-Gelb
+10. Szene 09 – Sicher reagieren
 
-| Motiv | Ordner | erforderlich |
-|---|---|---|
-| Cover | `images/00-cover/` | ja |
-| Hook | `images/01-hook/` | ja |
-| Verbindung zum Gehäuse | `images/02-verbindung/` | ja |
-| Normalbetrieb | `images/03-normalbetrieb/` | nein, Remotion |
-| Isolationsfehler | `images/04-isolationsfehler/` | ja |
-| Fehlerstromweg | `images/05-fehlerstromweg/` | nein, Remotion |
-| Abschaltung | `images/06-abschaltung/` | ja |
-| PE gegen N | `images/07-pe-vs-n/` | ja |
-| Grün-Gelb | `images/08-gruen-gelb/` | ja |
-| Sicher reagieren | `images/09-sicher-reagieren/` | ja |
+## Neuer Stil
+
+- semi-fotorealistische technische CGI
+- reale europäische Elektrobauteile
+- reale Proportionen und Materialien
+- keine spielzeugartige oder kindliche 3D-Optik
+- keine Fantasiegeräte
+- keine Schrift im KI-Bild
+- deutsche Labels und Covertext ausschließlich in Remotion
+
+## Cover
+
+Das KI-Cover ist nur der textfreie Hintergrund. Der finale Cover-Still ist Frame 0 des Reels und enthält immer den exakten deutschen Hook:
+
+**Was macht der Schutzleiter?**

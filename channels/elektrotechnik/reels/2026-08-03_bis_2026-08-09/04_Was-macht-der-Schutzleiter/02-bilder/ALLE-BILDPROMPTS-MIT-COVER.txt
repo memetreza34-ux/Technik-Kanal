@@ -1,53 +1,80 @@
-# Alle benötigten Bildprompts – Was macht der Schutzleiter?
+# Alle Bildprompts vollständig – Was macht der Schutzleiter?
 
-Covertext für Remotion: Was macht der Schutzleiter?
+## Verbindlicher Covertext
 
-Wichtig: Die Bilder selbst enthalten keinerlei Schrift. Szene 03 und Szene 05 sind reine Remotion-Mechanismus-Szenen und benötigen kein Nutzerbild.
+Was macht der Schutzleiter?
+
+Der KI-Coverhintergrund bleibt textfrei. Der finale Cover-Still muss den exakten deutschen Hook Was macht der Schutzleiter? sichtbar und fehlerfrei als Remotion-Overlay enthalten. Das rohe KI-Cover darf nie allein veröffentlicht werden.
+
+## Medienbedarf
+
+- Cover: Bild erzeugen
+- Szene 01: Bild erzeugen
+- Szene 02: Bild erzeugen
+- Szene 03: kein Nutzerbild; vollständiges Referenzbriefing trotzdem enthalten
+- Szene 04: Bild erzeugen
+- Szene 05: kein Nutzerbild; vollständiges Referenzbriefing trotzdem enthalten
+- Szene 06: Bild erzeugen
+- Szene 07: Bild erzeugen
+- Szene 08: Bild erzeugen
+- Szene 09: Bild erzeugen
 
 ## 00 – Cover
 
-A large clean green-yellow protective conductor connected securely to the metal housing of a modern electrical appliance, with a subtle protective light path leading toward the electrical installation. One dominant subject, one clear technical idea, calm composition and immediate recognition on a phone screen. Leave clean space for a later German Remotion title.
+A semi-photorealistic technical CGI close-up of a real green-yellow protective conductor terminated with a crimped metal ring lug and firmly bolted to the earthing stud of a brushed stainless-steel industrial motor housing. The connection point is large, centered and mechanically believable, with the motor body softly visible behind it. One dominant subject, real-world proportions, physically plausible copper, PVC insulation, steel fastener and metal surface. Leave calm negative space above for the final German hook added in Remotion.
 
-Premium stylized 3D editorial electrical illustration, simplified credible geometry, seamless dark navy environment, restrained electric-blue and green-yellow accents, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Professional technical product photography aesthetic, realistic European electrical component, natural soft studio lighting, restrained dark workshop background, no neon cable glow, no cartoon, no toy render, no fantasy device, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 01 – Hook
 
-One dominant modern metal appliance shown large and close, with a single green-yellow protective conductor visibly connected to the outer metal housing and continuing toward a protected installation. The image communicates that the conductor links touchable metal parts to the protective system. No open live parts and no person.
+A semi-photorealistic technical CGI image of one real compact industrial electric motor with a metal housing, shown large and centered on a clean workbench. A green-yellow protective conductor is visibly and correctly bonded to the motor housing through a realistic earthing screw and ring terminal. No open energized parts, no hand and no repair action. The image immediately communicates that the protective conductor connects touchable metal to the protective system.
 
-Premium stylized 3D editorial electrical illustration, one clear technical idea, simplified credible geometry, calm seamless dark navy environment, electric-blue and restrained green-yellow accents, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Professional adult electrical-engineering product visualization, real-world proportions, physically based brushed metal, copper and PVC materials, realistic European component design, natural neutral studio lighting, restrained dark workshop background, no neon cable glow, no cartoon, no toy render, no fantasy device, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
-## 02 – Verbindung
+## 02 – Verbindung zum Metallgehäuse
 
-One dominant class-one electrical appliance with a simple partial cutaway showing only the green-yellow protective conductor securely bonded to the inside of the metal housing. Keep the internal view minimal: one connection point, one conductor and one housing. No complete wiring diagram and no exposed work scene.
+A semi-photorealistic technical CGI macro view inside the de-energized terminal box of one real industrial motor. Show only one physically correct protective connection: a green-yellow conductor with a crimped ring lug secured under a dedicated earthing screw directly to the metal housing. The copper strands, insulation, screw, washer and metal surface must have real-world proportions. One dominant subject. Keep the view clean and focused on this single connection, without a full wiring diagram or extra tools.
 
-Premium stylized 3D editorial electrical illustration, one clear technical idea, simplified credible geometry, calm seamless dark navy environment, electric-blue and restrained green-yellow accents, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Professional technical product photography aesthetic, realistic European electrical construction, physically based metal, copper and PVC materials, natural neutral studio lighting, restrained dark workshop background, no neon, no cartoon, no toy render, no fantasy terminal, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+
+## 03 – Normalbetrieb – KEIN NUTZERBILD
+
+REFERENCE BRIEF ONLY — DO NOT GENERATE A USER IMAGE FOR THIS SCENE. Create a semi-photorealistic technical CGI mechanism canvas concept with one dominant real industrial motor silhouette and three physically plausible conductor routes. The phase and neutral routes must remain visually separate from the green-yellow protective conductor route. Keep the central area open for Remotion current-flow animation and do not depict a second complete mechanism.
+
+Professional technical visualization, real-world proportions, physically based metal and PVC materials, restrained dark neutral laboratory background, no neon fantasy cables, no cartoon, no toy render, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 04 – Isolationsfehler
 
-One dominant closed metal appliance with a small controlled cutaway revealing a damaged phase conductor touching the inner metal housing. Use a restrained red glow only at the fault point. The rest of the image stays calm and simple. No person, no explosion and no open installation work.
+A semi-photorealistic technical CGI cutaway of one real industrial motor with a metal housing. Reveal only one controlled fault point: damaged insulation on a brown phase conductor touching the inner metal housing. Show the green-yellow protective conductor correctly bonded to the housing nearby. Use a small restrained red highlight only at the contact point. One dominant subject. The motor remains closed except for the precise educational cutaway. No person, no explosion and no open live work.
 
-Premium stylized 3D editorial electrical illustration, one clear technical idea, simplified credible geometry, calm seamless dark navy environment, electric-blue, green-yellow and restrained fault-red accents, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Professional adult electrical-engineering visualization, real-world proportions, physically based steel, copper and PVC materials, realistic European conductor colors, natural neutral studio lighting, restrained dark workshop background, no neon fantasy glow, no cartoon, no toy render, no invented appliance, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+
+## 05 – Fehlerstromweg – KEIN NUTZERBILD
+
+REFERENCE BRIEF ONLY — DO NOT GENERATE A USER IMAGE FOR THIS SCENE. Create a semi-photorealistic technical CGI mechanism canvas concept using one dominant real industrial motor geometry. The phase fault point is inside the housing and one physically plausible return path continues through the green-yellow protective conductor toward the protective system. Keep the mechanism simple, centered and open so Remotion can animate the fault-current path without competing image detail.
+
+Professional technical visualization, real-world proportions, physically based metal, copper and PVC materials, restrained dark neutral laboratory background, no neon fantasy cable, no cartoon, no toy render, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 06 – Abschaltung
 
-One dominant protective device in a clearly switched-off position beside a safely disconnected circuit path. Show a calm visual separation in the conductor and a fading fault-red glow, communicating that the electrical circuit has been shut down. No hands, no open distribution board and no repair action.
+A semi-photorealistic technical CGI image of one real DIN-rail protective device installed inside a closed modern European distribution board, shown large and centered with its operating lever clearly in the switched-off position. A single realistic circuit path ends at the device and a restrained red fault highlight fades away below it. The enclosure remains safe and closed; no hand, exposed busbar or repair action is visible.
 
-Premium stylized 3D editorial electrical illustration, one clear technical idea, simplified credible geometry, calm seamless dark navy environment, electric-blue, green-yellow and restrained fault-red accents, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Professional electrical product photography aesthetic, real-world proportions, realistic molded polymer, copper and steel materials, natural neutral studio lighting, restrained dark technical environment, no sci-fi electronics, no neon outline, no cartoon, no toy render, no fantasy breaker, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 07 – Neutralleiter gegen Schutzleiter
 
-A clear side by side comparison with only two dominant conductors on the same calm background: one blue neutral conductor carrying a visible normal current path and one green-yellow protective conductor connected to a metal housing without normal operating current. No split-screen border and no extra cables.
+A semi-photorealistic technical CGI clear side by side comparison on the same realistic control-cabinet background. On the left, one blue neutral conductor terminates correctly on a neutral terminal bar. On the right, one green-yellow protective conductor terminates correctly on a separate protective-earth terminal bar bonded to the metal cabinet. Both conductors have realistic thickness, copper strands and ferrules. Leave clean space above each side for later German Remotion labels. No split-screen border and no additional cables.
 
-Premium stylized 3D editorial electrical illustration, clear comparison, simplified credible geometry, seamless dark navy environment, restrained electric-blue and green-yellow accents, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Professional adult electrical-engineering product visualization, real-world proportions, physically based copper, PVC, steel and industrial polymer materials, natural neutral lighting, restrained dark cabinet environment, no neon, no cartoon, no toy render, no oversized terminal block, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 08 – Grün-Gelb
 
-One dominant green-yellow protective conductor and matching protective conductor terminal shown large and clean against a dark technical environment. The secure connection is the only technical idea. No other conductor colors compete for attention and no tool is touching the terminal.
+A semi-photorealistic technical CGI macro photograph of one real green-yellow protective conductor correctly inserted into a protective-earth terminal block mounted on a DIN rail inside a metal control cabinet. Show realistic copper strands, ferrule, clamping point, green-yellow insulation and cabinet bonding. The terminal block has normal industrial dimensions and is not oversized. One dominant subject and no tool touching the connection.
 
-Premium stylized 3D editorial electrical illustration, one clear technical idea, simplified credible geometry, calm seamless dark navy environment, restrained electric-blue and green-yellow accents, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Professional technical product photography aesthetic, real-world proportions, physically based copper, PVC, steel and industrial polymer materials, natural neutral lighting, restrained dark cabinet background, no neon, no cartoon, no toy render, no fantasy connector, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 09 – Sicher reagieren
 
-One dominant unplugged electrical appliance with a visibly damaged cable resting safely beside it, plus one simple inspection tool placed at a distance. The plug is clearly disconnected from the socket. No person, no hand, no live measurement and no repair in progress.
+A semi-photorealistic technical CGI safety image of one real metal-bodied electrical appliance with a visibly damaged power cable, placed on a clean workbench with its plug completely disconnected from the wall socket. The damaged section is visible but not being touched or repaired. A closed electrician inspection case sits softly in the background as a secondary element. One dominant subject and one clear safety idea, no person, no hand and no live measurement.
 
-Premium stylized 3D editorial electrical illustration, one clear safety idea, simplified credible geometry, calm seamless dark navy environment, restrained electric-blue, green-yellow and warm-gold accents, no visible text, letters, numbers, labels, units, type plates, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+Professional adult technical product visualization, real-world proportions, physically based metal, rubber, PVC and copper materials, natural neutral studio lighting, restrained realistic workshop background, no random screwdriver, no neon, no cartoon, no toy render, no fantasy appliance, no visible text, letters, numbers, labels, type plates, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.

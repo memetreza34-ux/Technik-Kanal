@@ -1,47 +1,86 @@
-# Visual Quality Gate – verhindert die Fehler des ersten FI-Renders
+# Visual Quality Gate
 
 ## Grundsatz
 
-Künftige Reels werden nicht mehr zuerst produziert und danach visuell repariert. Hook, Skript, Bildstrategie und Animationsbudget müssen **vor** der Bild- und Audioerzeugung bestehen.
+Hook, Skript, Bildstrategie, Realismus, Beschriftung und Animationsbudget müssen vor der Bild- und Audioerzeugung bestehen.
 
 ## Verbindliche Reihenfolge
 
 1. direkte zentrale Frage formulieren
 2. Skript mit 115–165 Wörtern erstellen
 3. jede Szene als `image-only`, `mechanism-only`, `image-with-overlay` oder `static-overlay` klassifizieren
-4. höchstens vier Vollanimationen planen; normalerweise ein bis drei
-5. textfreie Bildprompts schreiben
-6. ausführen:
+4. normalerweise ein bis drei, höchstens vier Vollanimationen planen
+5. alle Szenenprompts inklusive Cover vollständig schreiben
+6. jeden sichtbaren Bildprompt als semi-fotorealistische technische CGI mit realen Bauteilen formulieren
+7. ausführen:
 
 ```bash
 npm run electrical:preflight -- "<reel-ordner>"
 ```
 
-7. erst bei `passed: true` Bilder und Audio erzeugen
-8. Medien einfügen, Pipeline rendern und visuell prüfen
+8. erst bei `passed: true` Bilder und Audio erzeugen
+9. Medien einfügen, rendern und visuell prüfen
 
-## Harte Blocker
+## Realismus – harte Regel
 
-Der Preflight stoppt bei:
+Verboten sind:
+
+- spielzeugartige oder kindliche 3D-Optik
+- `stylized 3D editorial`
+- Pixar-, Cartoon- oder Miniaturstil
+- vereinfachte Fantasiebauteile
+- futuristische Geräte ohne reales Vorbild
+- zufällige Haushaltsgegenstände, die den Mechanismus nicht erklären
+- übergroße Klemmen oder unrealistische Leiterquerschnitte
+- Neonleitungen als Ersatz für reale Kabel
+
+Gefordert sind:
+
+- semi-fotorealistische technische CGI
+- reale Proportionen
+- plausible Metall-, Kupfer- und Isoliermaterialien
+- erkennbare europäische Elektrobauteile
+- ein reales Hauptobjekt pro Szene
+- konsistente Kamera, Beleuchtung und Materialqualität
+
+## Beschriftung
+
+- KI-Bilder bleiben vollständig textfrei.
+- Deutsche Beschriftungen kommen ausschließlich kontrolliert aus Remotion.
+- Fachkürzel und Leiterbezeichnungen werden korrekt gesetzt, zum Beispiel `Neutralleiter (N)` und `Schutzleiter (PE)`.
+- Der fertige Cover-Still enthält immer exakt den deutschen Hook.
+- Das rohe KI-Coverbild darf niemals ohne den Hook veröffentlicht werden.
+
+## Vollständigkeit der Prompts
+
+`ALLE-BILDPROMPTS-MIT-COVER.txt` muss enthalten:
+
+- den vollständigen Coverprompt
+- jeden einzelnen Szenenprompt
+- auch Referenzbriefings für `mechanism-only`-Szenen
+- die klare Kennzeichnung, welche Szenen kein Nutzerbild benötigen
+
+Der Preflight vergleicht die Einzeldateien mit der Gesamtdatei und blockiert fehlende Einträge.
+
+## Weitere harte Blocker
 
 - Hook ohne direkte Frage
 - Hook länger als acht Wörter
-- künstlicher Hook-Metapher
-- mehr als 165 Skriptwörtern
+- künstliche Hook-Metapher
+- mehr als 165 Skriptwörter
 - mehr als vier Vollanimationen
 - Vollanimation im Hook
 - zwei Vollanimationen direkt hintereinander
 - Bild-plus-Mechanismus ohne Begründung
-- Mechanismus auf einer `image-only`-Szene
 - Prompt ohne klares Hauptmotiv
 - Prompt ohne obere oder untere Sicherheitszone
-- Prompt, der sichtbaren Text, Labels oder Zahlen anfordert
-- nicht dokumentiertem Animationsbudget
+- sichtbarer KI-Text
+- fehlender deutscher Cover-Hook
+- unvollständige Gesamt-Promptdatei
 
 ## Visueller Standard
 
-- starke Bilder sind der Normalfall
+- starke realistische Bilder sind der Normalfall
 - Mechanismus-Animation nur für echte zeitliche Abläufe
-- `mechanism-only` blendet das KI-Bild aus und verwendet eine ruhige Remotion-Fläche
-- dadurch kann niemals eine zweite große Mechanismusgrafik über einem bereits komplizierten Bild liegen
-- alle sichtbaren Texte kommen aus Remotion und bleiben korrektes Deutsch
+- `mechanism-only` verwendet eine ruhige Remotion-Fläche ohne zweites KI-Bild
+- alle deutschen Texte und Labels werden in Remotion fehlerfrei gesetzt
