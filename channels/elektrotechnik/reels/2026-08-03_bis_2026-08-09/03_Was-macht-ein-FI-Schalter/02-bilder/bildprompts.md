@@ -1,18 +1,24 @@
-# Alle Bildprompts – Was macht ein FI-Schalter?
+# Bildprompts – Was macht ein FI-Schalter?
 
-## Verbindliche Bildstrategie
+## Was tatsächlich erzeugt wird
 
-- Cover und zehn Szenenbilder sind textfrei.
-- Alle deutschen Texte werden ausschließlich in Remotion gesetzt.
-- Ein Hauptmotiv und eine technische Aussage pro Bild.
-- Szene 03, 05 und 07 sind einfache Mechanismus-Flächen; ihr KI-Bild wird im finalen Reel ausgeblendet.
-- Keine große Remotion-Grafik liegt über einem zweiten detaillierten Mechanismusbild.
+Benötigt werden **ein Cover und sieben sichtbare Szenenbilder**:
 
-## Covertext
+- 01 Hook
+- 02 Summenstromwandler
+- 04 Fehlerweg
+- 06 Erkennung
+- 08 30 mA
+- 09 FI und LS
+- 10 Sicher reagieren
 
-> **Was macht ein FI-Schalter?**
+Für Szene **03, 05 und 07 wird kein Bild erzeugt**. Diese Szenen sind reine Remotion-Mechanismus-Animationen. Die Dateien unter `prompts/03...`, `05...` und `07...` sind nur technische Referenz-Briefs.
 
-## 00 – Cover
+## Gemeinsame Bildregel
+
+Jedes echte Bild zeigt eine technische Aussage und ein dominantes Hauptmotiv. Keine Schrift, Zahlen, Labels, Einheiten, Typenschilder, UI, Logos oder Wasserzeichen. Vertikal 9:16, obere 18 Prozent und untere 25 Prozent frei.
+
+## Cover
 
 A single clean modern FI/RCD device mounted on a short DIN rail, viewed close from a slightly low three-quarter angle. One simple electric-blue current loop passes through the device while one thin red leakage path branches toward earth. The device is the only dominant subject. Keep a large calm dark area above it for the later Remotion title. Do not generate the title inside the image.
 
@@ -30,35 +36,17 @@ A clean close-up of one FI/RCD device with one small transparent window revealin
 
 Premium stylized 3D editorial electrical illustration, one dominant subject, matte off-white device, calm seamless dark navy environment, electric-blue accents, no visible text, letters, numbers, labels, units, type plates, diagrams, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
-## 03 – Normalzustand · Mechanismus-Fläche
-
-A simple calm mechanism plate with one large toroidal summation current transformer. One blue outgoing conductor and one cyan returning conductor are equal and balanced. Keep the central area clear for a Remotion current-flow animation and do not depict a second complete moving mechanism.
-
-Premium stylized 3D editorial electrical illustration, one dominant subject, minimal supporting detail, calm seamless dark navy environment, no visible text, letters, numbers, labels, units, arrows with words, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
-
 ## 04 – Fehlerweg
 
 A single closed metal household appliance with one simplified insulation fault to the housing. One thin red fault-current path runs through the protective conductor toward earth. No person, no sparks and no open live parts. The appliance is the one dominant subject.
 
 Premium stylized 3D editorial electrical illustration, one dominant subject, simplified credible geometry, calm seamless dark navy environment, electric blue for normal current and red only for the fault path, no visible text, letters, numbers, labels, units, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
-## 05 – Fehlerstrom · Mechanismus-Fläche
-
-A simple calm mechanism plate with one large toroidal core, one blue outgoing path, one slightly weaker cyan returning path and one thin red leakage branch. Keep the central area clear for a Remotion imbalance animation and do not depict a second complete moving mechanism.
-
-Premium stylized 3D editorial electrical illustration, one dominant subject, minimal supporting detail, calm seamless dark navy environment, no visible text, letters, numbers, labels, units, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
-
 ## 06 – Erkennung
 
 One large toroidal summation current transformer with one secondary winding and one small release magnet. A restrained warm-gold glow connects the core to the magnet. Do not show a complete device cutaway or many wires. The transformer remains the one dominant subject.
 
 Premium stylized 3D editorial electrical illustration, one dominant subject, simplified credible geometry, calm seamless dark navy environment, electric-blue and restrained warm-gold accents, no visible text, letters, numbers, labels, units, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
-
-## 07 – Kontakte öffnen · Mechanismus-Fläche
-
-A simple calm mechanism plate with one latch and two switching contacts. Keep the central area clear for a Remotion contact-opening animation and do not depict a second complete moving mechanism. No full device cutaway and no sparks.
-
-Premium stylized 3D editorial electrical illustration, one dominant subject, minimal supporting detail, calm seamless dark navy environment, no visible text, letters, numbers, labels, units, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
 
 ## 08 – 30 mA
 

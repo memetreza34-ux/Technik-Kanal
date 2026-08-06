@@ -1,3 +1,3 @@
-A simple calm mechanism plate with one latch and two switching contacts. Keep the central area clear for a Remotion contact-opening animation and do not depict a second complete moving mechanism. No full device cutaway and no sparks.
+REFERENCE BRIEF ONLY — DO NOT GENERATE AN IMAGE FOR THIS SCENE. Remotion renders the complete contact-opening mechanism on an internal clean canvas. Intended geometry: one latch and two switching contacts with enough empty space for the motion, no full device cutaway and no second mechanism.
 
-Premium stylized 3D editorial electrical illustration, one dominant subject, minimal supporting detail, calm seamless dark navy environment, no visible text, letters, numbers, labels, units, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear.
+If a visual reference is nevertheless created for development, it must be a calm dark navy mechanism plate with one dominant subject, no visible text, letters, numbers, labels, units, UI, logos or watermark, vertical 9:16, top 18 percent and bottom 25 percent clear. It is not a required user asset and will not be visible in the final reel.
