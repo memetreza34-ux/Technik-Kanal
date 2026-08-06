@@ -1,11 +1,21 @@
 export type ElectricalRuntimeCaption = {fromFrame:number;toFrame:number;text:string};
 export type ElectricalRuntimeSfx = {id:string;path:string;fromFrame:number;volume:number};
+export type ElectricalImageAnnotation = {
+  text:string;
+  labelX:number;
+  labelY:number;
+  targetX:number;
+  targetY:number;
+  accent?:'pe'|'neutral'|'fault'|'protection'|'warning'|'current';
+  width?:number;
+};
 export type ElectricalRuntimeScene = {
   id:string;
   title:string;
   kicker?:string;
   headline?:string;
   imageLabel?:string;
+  imageAnnotations?:ElectricalImageAnnotation[];
   backgroundFamily?:string;
   shotType?:string;
   referenceGroup?:string;
