@@ -1,65 +1,58 @@
 # Skill: Reel vollständig fertigstellen
 
-## Ziel
+## Phase 1 – Konzept und Preflight
 
-Aus einem vorbereiteten Reel-Ordner mit Roh-Audio und Szenenbildern selbstständig ein synchronisiertes, geprüftes MP4 erzeugen.
+Vor Bildern und Audio:
 
-## Voraussetzung
-
-Im Reel-Ordner müssen vorhanden sein:
-
-- `01-script-audio/audio/` mit genau einer erkennbaren Rohaufnahme
-- `02-bilder/images/<szene>/` mit mindestens einem vertikalen Bild je Szene
-- `06-projektdateien/scene-plan.json` mit `voiceText` und `imageDir` je Szene
-- der vorher vorbereitete Remotion-Code und alle benötigten Bibliotheksanimationen
-
-SFX sind optional. Vorhandene SFX werden über `06-projektdateien/sfx-events.json` an Wörter oder Szenenpositionen gekoppelt.
-
-## Verbindlicher Befehl
+1. direkte Frage als Hook festlegen
+2. 8–10 Szenen mit je einer Aussage planen
+3. jede Szene mit `renderMode` und `motionLevel` klassifizieren
+4. maximal vier Vollanimationen festlegen
+5. textfreie Prompts erstellen
+6. ausführen:
 
 ```bash
-npm run elektro:finish -- "<reel-ordner>"
+npm run electrical:preflight -- "<reel-ordner>"
 ```
 
-## Automatischer Ablauf
+Bei Fehlern keine Medien erzeugen. Erst korrigieren und erneut prüfen.
 
-1. `ffmpeg`, `ffprobe`, `git` und `cmake` prüfen.
-2. `whisper.cpp` lokal unter `.tools/` einrichten, falls es noch fehlt.
-3. Rohaufnahme unverändert behalten und eine Finaldatei mit `atempo=1.10` erzeugen.
-4. Finaldatei lokal in 16-kHz-Mono-WAV umwandeln.
-5. Mit `whisper.cpp` echte Wort-Zeitstempel erzeugen.
-6. Wörter des Transkripts gegen alle `voiceText`-Abschnitte abgleichen.
-7. Bei weniger als 80 % sicheren Worttreffern abbrechen.
-8. Exakte Szenengrenzen aus dem Worttranskript berechnen.
-9. Pro Szene genau ein finales Bild auswählen; doppelte, zu kleine oder falsche Formate ablehnen.
-10. Bilder, Voice-over und vorhandene SFX in die lokale Remotion-Runtime übernehmen.
-11. SRT, VTT und Caption-JSON aus derselben Wort-Zeitbasis erzeugen.
-12. Remotion-Timing, Animationen und Gesamtdauer an die berechneten Szenengrenzen anpassen.
-13. TypeScript-Prüfung ausführen.
-14. MP4 rendern.
-15. Auflösung, FPS, Audiospur und Dauer technisch prüfen.
-16. Für jede Szene ein Kontrollbild sowie einen Kontaktbogen erzeugen.
+## Phase 2 – Nutzerassets
 
-## Visuelle Codex-Prüfung
+Nach bestandenem Preflight:
 
-Nach erfolgreicher technischer QA muss Codex:
+- Rohaufnahme nach `01-script-audio/audio/`
+- ein finales 9:16-Bild je Bildszene
+- einfache overlay-sichere Bilder für Mechanismus-Szenen
+- optionale SFX nach `01-script-audio/sfx/`
 
-- den Kontaktbogen öffnen,
-- alle Szenen-Stills einzeln prüfen,
-- das vollständige MP4 mit Ton prüfen,
-- Bildaussage, Lesbarkeit, Übergänge, Animationsstart, SFX-Lautstärke und fachliche Richtigkeit bewerten,
-- sichtbare Fehler im Remotion-Code oder Asset-Mapping beheben,
-- `elektro:finish` erneut ausführen.
+## Phase 3 – Ein-Befehl-Produktion
 
-Ein technisches `passed: true` ersetzt nicht die visuelle Endkontrolle.
+```bash
+npm run electrical:finish -- "<reel-ordner>"
+```
 
-## Abbruchregeln
+Die Pipeline:
 
-Nicht raten und nicht mit Platzhaltern rendern, wenn:
+1. führt den Preflight erneut aus
+2. verarbeitet Audio auf 1,10×
+3. erstellt lokale Wort-Zeitstempel
+4. gleicht Transkript und Szenenplan ab
+5. synchronisiert Szenen, Bilder, wenige Animationen, Untertitel und SFX
+6. rendert das MP4
+7. prüft Auflösung, FPS, Ton und Dauer
+8. erzeugt Szenen-Stills und Kontaktbogen
 
-- Audio oder ein Szenenbild fehlt,
-- Skript und Transkript nicht sicher zusammenpassen,
-- ein Bild doppelt verwendet wurde,
-- ein Bild kleiner als 720 × 1280 ist,
-- das Bildseitenverhältnis nicht reel-tauglich ist,
-- TypeScript oder Render-QA fehlschlägt.
+## Visuelle Endkontrolle
+
+Codex prüft:
+
+- versteht man jede Szene beim ersten Blick?
+- ist das Bild ruhig und phone-tauglich?
+- liegt keine große Animation über einer zweiten technischen Darstellung?
+- sind nur notwendige Mechanismen animiert?
+- sind alle Texte korrektes Deutsch?
+- sind Untertitel vollständig und ohne Wortfragmente?
+- ist der Reel für die eine Kernfrage kurz genug?
+
+Bei einem Fehler Code, Mapping, Prompt oder Timing korrigieren und erneut rendern.

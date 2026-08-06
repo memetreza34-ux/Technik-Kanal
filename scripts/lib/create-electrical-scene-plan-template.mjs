@@ -1,42 +1,94 @@
-export const createElectricalScenePlanTemplate = ({slug, compositionId = 'ElectricalReel', sceneCount = 8}) => ({
-  version: 'electrical-v1',
+const uniqueMechanismIndexes = (sceneCount) => {
+  const candidates = [
+    Math.max(1, Math.floor(sceneCount * 0.3)),
+    Math.max(2, Math.floor(sceneCount * 0.55)),
+    Math.max(3, Math.floor(sceneCount * 0.75)),
+  ];
+  return [...new Set(candidates)].filter((index) => index > 0 && index < sceneCount - 1).slice(0, 3);
+};
+
+export const createElectricalScenePlanTemplate = ({
   slug,
-  compositionId,
-  fps: 30,
-  width: 1080,
-  height: 1920,
-  minimumWordMatchRatio: 0.82,
-  scenes: Array.from({length: sceneCount}, (_, index) => {
+  title = 'Elektrotechnik-Thema',
+  hook = 'Was erklärt dieser Reel?',
+  compositionId = 'ElectricalReel',
+  sceneCount = 9,
+}) => {
+  const mechanismIndexes = uniqueMechanismIndexes(sceneCount);
+  const scenes = Array.from({length: sceneCount}, (_, index) => {
     const number = String(index + 1).padStart(2, '0');
-    const id = index === 0 ? `${number}-hook` : index === sceneCount - 1 ? `${number}-payoff` : `${number}-erklaerung`;
+    const isHook = index === 0;
+    const isPayoff = index === sceneCount - 1;
+    const isMechanism = mechanismIndexes.includes(index);
+    const id = isHook ? `${number}-hook` : isPayoff ? `${number}-payoff` : `${number}-erklaerung`;
     return {
       id,
-      title: index === 0 ? 'Hook' : index === sceneCount - 1 ? 'Payoff' : `Erklärung ${index}`,
-      kicker: index === 0 ? 'Elektrotechnik klar' : 'Erklärung',
-      headline: 'Überschrift ergänzen',
-      voiceText: 'Sprechtext für diese Szene ergänzen.',
+      title: isHook ? hook : isPayoff ? 'Fachlicher Payoff' : `Erklärung ${index}`,
+      kicker: isHook ? undefined : isPayoff ? 'Merksatz' : 'Erklärung',
+      headline: isHook ? hook : isPayoff ? 'Klarer Merksatz ergänzen' : 'Kurze deutsche Aussage ergänzen',
+      voiceText: isHook ? `${hook} Direkte Antwort in einem kurzen Satz ergänzen.` : 'Sprechtext für genau eine technische Aussage ergänzen.',
       imageDir: `02-bilder/images/${id}`,
-      layout: index === 0 ? 'image-full' : index === sceneCount - 1 ? 'payoff' : 'image-mechanism',
+      layout: isMechanism ? 'image-mechanism' : isPayoff ? 'payoff' : 'image-full',
+      renderMode: isMechanism ? 'mechanism-only' : 'image-only',
+      motionLevel: isMechanism ? 'full' : 'subtle',
+      imageRole: isMechanism ? 'mechanism-plate' : isPayoff ? 'payoff' : 'hero',
+      ...(isMechanism ? {mechanism: `mechanismus-${number}`} : {}),
+      factClaim: 'Fachliche Kernaussage ergänzen.',
       sourceIds: [],
     };
-  }),
-});
+  });
+
+  return {
+    version: 'electrical-v2',
+    visualPolicyVersion: 'visual-v2',
+    generatedImageTextPolicy: 'none',
+    slug,
+    title,
+    coverText: hook,
+    compositionId,
+    fps: 30,
+    width: 1080,
+    height: 1920,
+    minimumWordMatchRatio: 0.82,
+    animationBudget: {
+      maximum: 4,
+      fullMechanismScenes: scenes.filter((scene) => scene.motionLevel === 'full').map((scene) => scene.id),
+    },
+    scenes,
+  };
+};
 
 export const createElectricalPromptManifestTemplate = (scenePlan) => ({
-  version: 'electrical-v1',
+  version: 'electrical-v2',
+  visualPolicyVersion: 'visual-v2',
   slug: scenePlan.slug,
   generatedAt: new Date().toISOString(),
-  prompts: scenePlan.scenes.map((scene) => ({
+  generatedImageTextPolicy: 'none',
+  coverText: scenePlan.coverText,
+  animationBudget: {
+    maximumFullMechanismAnimations: scenePlan.animationBudget.maximum,
+    sceneIds: scenePlan.animationBudget.fullMechanismScenes,
+  },
+  cover: {
+    prompt: '02-bilder/prompts/00-cover.txt',
+    imageDir: '02-bilder/images/00-cover',
+    approved: false,
+  },
+  scenes: scenePlan.scenes.map((scene) => ({
     id: scene.id,
-    file: `02-bilder/prompts/${scene.id}.txt`,
+    prompt: `02-bilder/prompts/${scene.id}.txt`,
     imageDir: scene.imageDir,
-    status: 'offen',
+    renderMode: scene.renderMode,
+    motionLevel: scene.motionLevel,
+    fullAnimation: scene.motionLevel === 'full',
+    approved: false,
   })),
 });
 
 export const createElectricalStatusTemplate = (scenePlan) => ({
-  status: 'inhalt-vorbereiten',
+  status: 'preproduction-blocked-until-gates-pass',
   slug: scenePlan.slug,
-  completed: ['folder-structure', 'scene-plan-template'],
-  open: ['script', 'prompts', 'sources', 'images', 'voiceover', 'captions', 'render', 'qa'],
+  completed: ['folder-structure', 'visual-v2-scene-plan-template'],
+  open: ['research', 'script', 'prompts', 'sources', 'preflight', 'images', 'voiceover', 'captions', 'render', 'qa'],
+  nextCommand: `npm run electrical:preflight -- "<reel-ordner>"`,
 });
