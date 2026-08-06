@@ -1,5 +1,3 @@
-Show one large RCD/FI device in the instant of tripping. Two electric-blue current streams enter and return through the device, but a clearly visible red branch leaves the normal circuit and travels toward an earth symbol. The viewer must immediately understand: the device reacts because current takes a wrong path, not because the normal load current is simply high.
+A single clean FI/RCD device on a DIN rail in a dark technical environment. Show one blue current path entering and returning and one small red path escaping toward earth. No transparent housing and no internal detail. The image must answer one simple question visually: the FI watches whether current returns.
 
-Any visible word, label, warning or switch state must be correct German. Allowed short labels include “FI”, “RCD”, “FEHLERSTROM”, “ERDE”, “EIN”, “AUS” and “AUSGELÖST”. Never use English viewer-facing text.
-
-Premium stylized 3D educational electrical engineering illustration, physically plausible components, dark navy seamless environment, large close subject, vertical 9:16, top 15 percent and bottom 25 percent clear, no split background, no people touching live parts, no logos, no watermark, no impossible terminals.
+Premium stylized 3D editorial electrical illustration, one dominant subject, calm dark navy background, simplified accurate geometry, no visible text or labels, no UI, no extra panels, no floating icons, no people, vertical 9:16, top 18 percent and bottom 25 percent clear.

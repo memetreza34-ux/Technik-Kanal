@@ -1,54 +1,52 @@
 # Sprechtext – Was macht ein FI-Schalter?
 
-## Voice-Regeln
+## Ziel
 
-- deutsche Stimme Iro
-- natürlich, klar und neugierig sprechen
-- keine steife Lehrbuchsprache
-- exakt 1,10× nachbearbeiten
-- keine Musik
-- kurze natürliche Pausen zwischen den Szenen
-- die Wörter **Fehlerstrom**, **30 Milliampere**, **FI** und **Leitungsschutzschalter** klar betonen
-- ausschließlich deutsche Aussprache und deutsche Formulierungen
+Direkte, einfache Erklärung ohne künstlichen Hook. Geplante Länge nach 1,10×: ungefähr 52 bis 58 Sekunden.
 
 ## Szenen
 
 ### 01 – Hook
-**Text:** Warum fliegt der FI raus, obwohl die Sicherung drinbleibt? Weil der FI nicht nach zu viel Strom sucht.
+**Text:** Was macht ein FI-Schalter? Er prüft, ob der Strom vollständig zurückkommt.
 
-### 02 – Was prüft der FI?
-**Text:** Technisch heißt der FI auch RCD. Er prüft, ob der Strom auch vollständig zurückkommt. Der Strom fließt über den Außenleiter zum Gerät und über den Neutralleiter zurück.
+### 02 – Aufbau
+**Text:** Technisch heißt er RCD. Im Inneren sitzt ein Summenstromwandler, durch den Außenleiter und Neutralleiter geführt werden.
 
 ### 03 – Normalzustand
-**Text:** Solange beide Werte gleich sind, bleibt der FI eingeschaltet. Im Inneren vergleicht ein Summenstromwandler beide Ströme.
+**Text:** Im Normalfall fließt derselbe Strom hin und zurück. Die magnetischen Wirkungen heben sich auf.
 
 ### 04 – Fehlerweg
-**Text:** Entsteht ein Isolationsfehler, kann ein Teil des Stroms über das Gehäuse, den Schutzleiter oder einen anderen Weg zur Erde abfließen.
+**Text:** Bei einem Isolationsfehler kann ein Teil des Stroms über das Gehäuse und den Schutzleiter zur Erde abfließen.
 
 ### 05 – Fehlerstrom
-**Text:** Dann kommt weniger Strom zurück, als hingeflossen ist. Genau diese Differenz nennt man Fehlerstrom.
+**Text:** Dann kommt weniger Strom zurück. Diese Differenz nennt man Fehlerstrom.
 
 ### 06 – Erkennung
-**Text:** Der Summenstromwandler erkennt diesen Unterschied und gibt das Signal zum Auslösen.
+**Text:** Der Summenstromwandler erkennt die Differenz und gibt ein Signal an den Auslöser.
 
 ### 07 – Abschaltung
-**Text:** Dann öffnen die Kontakte und der Stromkreis wird sehr schnell abgeschaltet.
+**Text:** Das Schaltschloss löst aus, die Kontakte öffnen und der Stromkreis wird abgeschaltet.
 
-### 08 – 30 Milliampere
-**Text:** Für zusätzlichen Personenschutz werden häufig FI-Schalter mit höchstens 30 Milliampere verwendet.
+### 08 – 30 mA
+**Text:** Für zusätzlichen Personenschutz werden häufig FI-Schalter mit höchstens 30 Milliampere eingesetzt.
 
-### 09 – FI und Leitungsschutzschalter
-**Text:** Wichtig: Der FI ersetzt nicht die Sicherung. Der FI reagiert auf Fehlerstrom. Der Leitungsschutzschalter reagiert auf Überlast und Kurzschluss.
+### 09 – FI und LS
+**Text:** Der FI ersetzt keinen Leitungsschutzschalter. Der FI reagiert auf Fehlerstrom, der Leitungsschutzschalter auf Überlast und Kurzschluss.
 
-### 10 – Sicher reagieren und CTA
-**Text:** Löst der FI erneut aus, nicht überbrücken und nicht ständig einschalten. Geräte ausschalten, Stecker ziehen und die Ursache von einer Elektrofachkraft prüfen lassen. Kommentiere FI für den Lernzettel.
+### 10 – Sicher reagieren
+**Text:** Löst der FI erneut aus, nicht überbrücken oder ständig einschalten. Geräte ausschalten, Stecker ziehen und die Ursache fachgerecht prüfen lassen. Kommentiere FI für den Lernzettel.
 
-## Durchgehender deutscher Aufnahmetext
+## Voice-Regeln
 
-Warum fliegt der FI raus, obwohl die Sicherung drinbleibt? Weil der FI nicht nach zu viel Strom sucht. Technisch heißt der FI auch RCD. Er prüft, ob der Strom auch vollständig zurückkommt. Der Strom fließt über den Außenleiter zum Gerät und über den Neutralleiter zurück. Solange beide Werte gleich sind, bleibt der FI eingeschaltet. Im Inneren vergleicht ein Summenstromwandler beide Ströme. Entsteht ein Isolationsfehler, kann ein Teil des Stroms über das Gehäuse, den Schutzleiter oder einen anderen Weg zur Erde abfließen. Dann kommt weniger Strom zurück, als hingeflossen ist. Genau diese Differenz nennt man Fehlerstrom. Der Summenstromwandler erkennt diesen Unterschied und gibt das Signal zum Auslösen. Dann öffnen die Kontakte und der Stromkreis wird sehr schnell abgeschaltet. Für zusätzlichen Personenschutz werden häufig FI-Schalter mit höchstens 30 Milliampere verwendet. Wichtig: Der FI ersetzt nicht die Sicherung. Der FI reagiert auf Fehlerstrom. Der Leitungsschutzschalter reagiert auf Überlast und Kurzschluss. Löst der FI erneut aus, nicht überbrücken und nicht ständig einschalten. Geräte ausschalten, Stecker ziehen und die Ursache von einer Elektrofachkraft prüfen lassen. Kommentiere FI für den Lernzettel.
+- deutsche Stimme Iro
+- sachlich, ruhig und klar
+- exakt 1,10× nachbearbeiten
+- kurze Pause nach der Hook-Frage
+- keine dramatische Betonung
+- keine Musik
 
 ## Fachliche Grenzen
 
-- Nicht behaupten, ein FI schütze allein gegen jeden elektrischen Schlag.
-- `30 mA` als Bemessungsdifferenzstrom für zusätzlichen Personenschutz formulieren, nicht als garantierten exakten Auslösewert.
-- Keine Anleitung zum Öffnen eines Verteilers, Messen an Netzspannung oder Manipulieren des Schutzgeräts.
+- 30 mA als Bemessungsdifferenzstrom für zusätzlichen Personenschutz formulieren
+- nicht behaupten, der FI verhindere jeden Stromunfall
+- keine Anleitung zum Öffnen, Prüfen oder Manipulieren einer elektrischen Anlage

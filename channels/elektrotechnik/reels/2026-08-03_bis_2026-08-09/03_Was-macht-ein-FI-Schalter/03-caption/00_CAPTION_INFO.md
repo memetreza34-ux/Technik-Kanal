@@ -1,11 +1,13 @@
 # Caption-Information
 
-Die sichtbaren Untertitel werden erst aus der finalen 1,10×-Voice-Datei mit lokalen `whisper.cpp`-Wortzeiten erzeugt.
+Die Untertitel des ersten Renders werden nicht wiederverwendet, weil sichtbare Wortfragmente und Transkriptfehler vorhanden waren.
 
-Stil:
+Nach der neuen Aufnahme:
 
-- weiß
+- lokale Worttranskription aus der finalen 1,10×-Audiodatei
+- weißer Text
 - keine gelbe Wortmarkierung
 - keine Hintergrundbox
 - maximal zwei Zeilen
+- vollständige kurze Sinneinheiten statt einzelner Wortfragmente
 - ungefähr bei 76 % Bildhöhe

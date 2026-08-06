@@ -1,5 +1,3 @@
-Show a stylized household appliance with a believable insulation fault from an internal live conductor to the metal housing. A red fault-current path leaves the housing through the protective conductor toward earth while the normal blue circuit remains visible. No person touches the appliance. The image must explain a real fault path without showing unsafe work.
+A clean metal household appliance in a safe closed view. Inside, one simplified insulation fault connects a live conductor to the metal housing. A single thin red current path leaves the housing through the protective conductor toward earth. No person, no open electrical panel, no sparks and no explosion. The fault path is the only technical idea.
 
-Any visible label or warning must be correct German. Allowed short labels include “ISOLATIONSFEHLER”, “FEHLERSTROM”, “GEHÄUSE”, “SCHUTZLEITER” and “ERDE”. Never use English viewer-facing text.
-
-Premium stylized 3D electrical education illustration, technically plausible components, dark navy seamless environment, electric-blue normal current, red fault current only, large close scene, vertical 9:16, top 15 percent and bottom 25 percent clear, no exposed manual work, no sparks explosion, no logos, no watermark, no generated caption.
+Premium stylized 3D editorial electrical illustration, dark navy seamless room, realistic but simplified appliance, blue normal path and red fault path only, no visible text, labels, UI, icons or diagrams, vertical 9:16, top 18 percent and bottom 25 percent clear.

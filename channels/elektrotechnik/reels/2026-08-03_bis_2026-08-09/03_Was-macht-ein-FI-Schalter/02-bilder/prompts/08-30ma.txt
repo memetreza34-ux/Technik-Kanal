@@ -1,5 +1,3 @@
-Show a modern RCD with the correct short marking “IΔn 30 mA” clearly visible, surrounded by a restrained protective shield motif and a small human silhouette safely separated from all live parts. The device remains the dominant object. The meaning is additional personal protection using a 30 mA rated residual operating current, not a guarantee against every electric shock.
+A clean modern FI/RCD device standing large and centered on a DIN rail, surrounded by a subtle protective shield-shaped light. The device has no readable markings because the value 30 mA will be added later in Remotion. No human figure and no electrical danger scene.
 
-Any additional visible text must be correct German. Allowed short labels include “ZUSÄTZLICHER PERSONENSCHUTZ” and “30 mA”. Never use English explanatory text.
-
-Premium stylized 3D electrical education illustration, dark navy seamless environment, electric-blue and gold accents, vertical 9:16, large close device, top 15 percent and bottom 25 percent clear, no person touching equipment, no brand, no watermark, no long generated text.
+Premium stylized 3D editorial electrical illustration, matte off-white device, dark navy seamless environment, electric-blue and restrained warm-gold accents, no visible text, numbers, labels, type plate, UI or logo, vertical 9:16, top 18 percent and bottom 25 percent clear.

@@ -2,113 +2,80 @@
 
 ## Ziel
 
-Der Kanal verwendet eine konsistente, hochwertige 3D-Illustrationswelt für Elektrotechnik. Jedes Bild erklärt genau eine technische Aussage. Der Inhalt darf wechseln, der Stil nicht.
+Der Kanal verwendet eine konsistente, hochwertige 3D-Illustrationswelt. Jedes Bild erklärt genau **eine** technische Aussage. Das Bild ist die Hauptfläche; Remotion ergänzt nur dort Bewegung, wo Bewegung fachlich etwas erklärt.
 
 ## Kernstil
 
 - hochwertige stilisierte 3D-Lernillustration
-- technisch plausible, sofort erkennbare Bauteile
-- klar illustrativ, nicht fotorealistisch
+- technisch plausible, vereinfachte und sofort erkennbare Bauteile
 - modern, sachlich und verständlich, aber nicht kindlich
 - dunkle Navy- bis Blau-Schwarz-Umgebung
-- Elektroblau und Cyan für Normalzustand, Stromfluss und Orientierung
-- warmes Gold für Erklärung und Hervorhebung
-- Orange für Erwärmung und Überlast
-- Rot nur für Fehler, Gefahr oder ausgelösten Schutz
-- sanfte Studiobeleuchtung, klare Kanten, weiche Bodenschatten
+- Elektroblau und Cyan für normalen Stromfluss
+- warmes Gold für Erklärung
+- Orange für Wärme und Überlast
+- Rot nur für Fehler, Gefahr und Abschaltung
+- sanfte Studiobeleuchtung, klare Kanten, ruhige Bildhierarchie
 - vertikales Format 9:16
 
-## Motive
+## Wichtigste neue Regel: Bild zuerst
 
-Objekte und Mechanismen sind der Standard. Menschen sind nur zulässig, wenn eine sichere Alltagshandlung dadurch eindeutig verständlicher wird. Keine Hände oder Personen an offenen Netzspannungsanlagen.
+- Standard ist ein starkes, ruhiges Szenenbild mit subtiler Kamerabewegung.
+- Ein Reel mit 8 bis 12 Szenen verwendet normalerweise nur **zwei bis vier vollständige Mechanismus-Animationen**.
+- Nicht jede Szene bekommt eine eigene große Remotion-Animation.
+- Keine zweite große technische Darstellung über ein bereits detailliertes KI-Bild legen.
+- Animation wird nur eingesetzt, wenn der Zuschauer einen Ablauf sehen muss: Stromfluss, Differenz, Kontaktbewegung oder Auslösung.
+- Statische Fakten, Vergleiche, Gerätekenngrößen und Sicherheitshinweise werden mit einem guten Bild und sauberem Text erklärt.
 
-Bevorzugte Motive:
-
-- Leitungsschutzschalter, RCD/FI, Schütz, Relais, Motor, Transformator
-- Kabel, Leiter, Klemmen, Spulen, Kontakte, Bimetall, Magnetanker
-- Messgerät und Messpunkte in sicherem, geschlossenem Aufbau
-- vereinfachte Strompfade, Felder und Signalverläufe
-- klare Vorher-Nachher- oder Normal-Fehler-Gegenüberstellung
-- technische Schnittdarstellung nur, wenn sie fachlich plausibel bleibt
-
-Nicht erlaubt:
-
-- falsche Anschlüsse oder unmögliche Klemmen
-- offene Arbeiten unter Spannung
-- Schutzgeräte überbrücken oder manipulieren
-- Explosionen als Standardmetapher
-- beliebige Fantasy-Maschinen
-- unverbundene schwebende Icons als Hauptbild
-
-## Komposition
+## Bildkomposition
 
 - ein dominantes Hauptmotiv
 - genau eine technische Aussage pro Bild
-- höchstens drei bis fünf unterstützende Elemente
-- Hauptmotiv groß, nah und klar; es darf nicht klein in leerem Raum schwimmen
-- oberste 15 % vollständig als ruhige Fläche für die Remotion-Überschrift freihalten
-- unterste 25 % vollständig ruhig und frei von wichtigen Details für Untertitel halten
-- wichtige Kontakte, Labels und Mechanismen niemals in die Caption-Zone legen
-- keine weißen, grauen oder andersfarbigen Ränder oben oder unten
-- kein zweigeteilter, gebänderter oder sichtbar zusammengesetzter Hintergrund
+- höchstens ein bis drei unterstützende Elemente
+- keine kleinen Bauteile in einem überfüllten technischen Schaubild
+- keine zahlreichen Kabel, Pfeile, Labels oder Innenbauteile gleichzeitig
+- Hauptmotiv groß, nah und phone-tauglich
+- oberste 18 % als ruhige Fläche für die Remotion-Überschrift freihalten
+- unterste 25 % vollständig frei für Untertitel halten
 - ein durchgehender Hintergrund von Kante zu Kante
-- Sockel, Gehäuse und Plattformen müssen fest auf dem Untergrund sitzen; kein sichtbarer Spalt oder schwebender Schatten darunter
-
-## Verständlichkeit
-
-Die Bildaussage muss beim ersten Blick verständlich sein. Wer den gesprochenen Satz kennt, muss sofort erkennen, wie das Bild dazu passt. Keine mehrdeutigen Metaphern, keine Dekoration ohne Funktion und keine zweite konkurrierende Aussage.
-
-## Farbe und Zustand
-
-- Blau/Cyan: normaler Stromfluss, sichere Orientierung, Information
-- Gold: Erklärung, Merksatz, zentrale Erkenntnis
-- Orange: Wärme, steigende Belastung, Überlast
-- Rot: Kurzschluss, Fehlerzustand, Warnung, Abschaltung
-- Grün: erfolgreich geprüfter oder sicherer Endzustand
-
-Nicht das gesamte Bild blau oder rot einfärben. Zustandsfarben führen den Blick und markieren Bedeutung.
+- keine weißen Balken, geteilten Hintergründe oder sichtbaren Nähte
+- keine schwebenden Sockel oder Gehäuse
 
 ## Text im generierten Bild
 
-Bildtext ist optional und sehr sparsam.
+Generierte Bilder enthalten grundsätzlich **keinen Text**.
 
-Erlaubt:
+Nicht im KI-Bild erzeugen:
 
-- kurze deutsche Labels mit ein bis drei Wörtern
-- fachlich korrekte Bezeichnungen wie `LSS`, `FI`, `Bimetall`, `Spule`, `Überlast`
-- maximal drei bis fünf Labels
+- Überschriften
+- Labels
+- Warnungen
+- Einheiten
+- Zahlen
+- Gerätezustände
+- Typenschilder
+- englische oder deutsche Erklärtexte
 
-Nicht erlaubt:
+Alle sichtbaren Texte, darunter `FI`, `RCD`, `LS`, `30 mA`, `EIN`, `AUS`, Warnungen und Vergleiche, werden sauber in Remotion gesetzt. Dadurch entstehen keine falschen englischen Begriffe oder unlesbaren KI-Schriften.
 
-- Überschrift, Untertitel oder CTA im generierten Bild
-- lange Sätze
-- Logos, Marken oder Wasserzeichen
-- erfundene Typenschilder oder unlesbare KI-Schrift
+## Schnittdarstellungen
 
-Überschrift, Kicker, Untertitel, Messwerte und CTA werden grundsätzlich in Remotion gesetzt.
+- Schnittdarstellung nur, wenn sie für den Mechanismus zwingend notwendig ist
+- niemals ein komplettes Gerät mit allen Bauteilen, Kabeln, Beschriftungen und Strompfaden gleichzeitig zeigen
+- pro Schnittbild nur ein Mechanismus: Summenstromwandler, Fehlerweg oder Kontaktöffnung
 
-## Bildmenge
+## Menschen und Sicherheit
 
-- pro Reel normalerweise 8 bis 12 eigenständige Szenenbilder
-- mehr Bilder sind erlaubt, wenn jede zusätzliche Szene eine neue Aussage zeigt
-- dasselbe Bild nicht für mehrere inhaltlich unterschiedliche Szenen wiederverwenden
-- Zoom allein ersetzt keine erklärende Mechanismus-Animation
+Menschen sind nicht Standard. Keine Hände oder Personen an offenen Netzspannungsanlagen. Kein Überbrücken, Manipulieren oder wiederholtes blindes Rücksetzen von Schutzgeräten.
 
-## CTA-Regel
-
-Ein CTA ist nicht automatisch Teil jedes Reels. Die letzte Szene ist standardmäßig der fachliche Payoff oder Merksatz. Ein CTA wird nur ergänzt, wenn ein echter Lernzettel, Kommentar-Workflow oder anderes konkretes Ergebnis vorhanden ist.
-
-## Qualitätsprüfung
+## Freigabekriterien
 
 Ein Bild ist nur freigegeben, wenn:
 
-1. die technische Aussage sofort erkennbar ist,
-2. das Bauteil oder der Mechanismus plausibel wirkt,
-3. das Hauptmotiv groß und phone-tauglich ist,
-4. obere 15 % und untere 25 % frei bleiben,
-5. keine Ränder, Balken oder Hintergrundnähte sichtbar sind,
-6. keine Sockel oder Gehäuse schweben,
-7. Zustandsfarben korrekt eingesetzt sind,
-8. keine gefährliche Handlung dargestellt wird,
-9. das Bild zu den übrigen Szenen des Reels passt,
-10. Remotion-Animationen das Bild sinnvoll ergänzen können.
+1. die Aussage in weniger als einer Sekunde erkennbar ist,
+2. ein einziges Hauptmotiv dominiert,
+3. keine Schrift oder falschen Labels im Bild enthalten sind,
+4. keine unnötigen technischen Details ablenken,
+5. obere 18 % und untere 25 % frei sind,
+6. das Bild nicht mit einer zusätzlichen großen Remotion-Grafik konkurriert,
+7. die technische Darstellung plausibel und sicher ist,
+8. der Stil zu allen anderen Bildern des Reels passt.

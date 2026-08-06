@@ -1,5 +1,3 @@
-Show the internal release magnet pulling a latch so the RCD switching contacts open. The electric-blue current path is visibly interrupted at the contact gap, with a restrained gold mechanical motion trail and no explosion. The sequence must be understood at first glance: detected residual current releases the latch and disconnects the circuit.
+A clean simplified close-up of an RCD latch and two switching contacts. The contacts are still near each other, with a clear space around the mechanism so a Remotion contact-opening animation can be placed over the image. No full device cutaway, no sparks and no extra mechanisms.
 
-Any visible word, state label or mechanism label must be correct German. Allowed short labels include “AUSLÖSER”, “SCHALTSCHLOSS”, “KONTAKTE OFFEN” and “STROMKREIS GETRENNT”. Never use English words such as OPEN, TRIPPED or DISCONNECTED.
-
-Premium stylized 3D electrical mechanism illustration, physically plausible contact geometry, dark navy seamless environment, crisp high contrast, vertical 9:16, large close subject, top 15 percent and bottom 25 percent clear, no hands, no arc-flash spectacle, no logos, no watermark, no generated captions.
+Premium stylized 3D editorial electrical illustration, dark navy seamless environment, one mechanical action, crisp metal and polymer materials, no visible text, labels, UI, diagrams or floating icons, vertical 9:16, top 18 percent and bottom 25 percent clear.
