@@ -32,7 +32,7 @@
     "electrical:preflight": "node scripts/check-electrical-preproduction.mjs",
     "electrical:content-ready": "node scripts/check-electrical-preproduction.mjs",
     "electrical:qa": "node scripts/run-electrical-qa-from-project.mjs",
-    "electrical:ready": "node scripts/run-electrical-with-folder-check.mjs scripts/check-electrical-readiness.mjs",
+    "electrical:ready": "node scripts/check-electrical-production-readiness.mjs",
     "electrical:validate": "node scripts/run-electrical-with-folder-check.mjs scripts/validate-electrical-project.mjs",
     "electrical:prepare": "node scripts/prepare_electrical_reel.mjs",
     "electrical:render": "node scripts/render_electrical_reel.mjs",

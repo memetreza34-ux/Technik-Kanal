@@ -23,6 +23,7 @@ const required = [
   'scripts/lib/electrical-project-structure.mjs',
   'scripts/lib/electrical-visual-policy.mjs',
   'scripts/check-electrical-preproduction.mjs',
+  'scripts/check-electrical-production-readiness.mjs',
   'scripts/check-electrical-project-folder.mjs',
   'scripts/check-electrical-readiness.mjs',
   'scripts/check-electrical-required-media.mjs',

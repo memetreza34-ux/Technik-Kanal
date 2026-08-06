@@ -12,9 +12,11 @@ if (!projectArg) {
 
 const paths = projectPaths(projectArg);
 if (!args.includes('--preflight-passed')) {
-  run(process.execPath, ['scripts/check-electrical-preproduction.mjs', paths.root], {cwd: repositoryRoot});
+  run(process.execPath, ['scripts/check-electrical-production-readiness.mjs', paths.root], {cwd: repositoryRoot});
+} else {
+  run(process.execPath, ['scripts/check-electrical-required-media.mjs', paths.root], {cwd: repositoryRoot});
+  run(process.execPath, ['scripts/check-electrical-readiness.mjs', paths.root], {cwd: repositoryRoot});
 }
-run(process.execPath, ['scripts/check-electrical-readiness.mjs', paths.root], {cwd: repositoryRoot});
 run(process.execPath, ['scripts/materialize-electrical-mechanism-canvases.mjs', paths.root], {cwd: repositoryRoot});
 
 const genericRuntimePath = path.join(channelRoot, 'src/generated/reel-runtime.json');
