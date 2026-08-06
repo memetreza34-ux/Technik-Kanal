@@ -1,0 +1,30 @@
+{
+  "version": "electrical-v2",
+  "visualPolicyVersion": "visual-v2",
+  "generatedImageTextPolicy": "none",
+  "slug": "was-macht-der-schutzleiter",
+  "compositionId": "SchutzleiterReel",
+  "runtimeFile": "schutzleiter-runtime.json",
+  "coverText": "Was macht der Schutzleiter?",
+  "language": "de",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "minimumWordMatchRatio": 0.82,
+  "plannedFrames": 1650,
+  "animationBudget": {
+    "maximum": 4,
+    "fullMechanismScenes": ["03-normalbetrieb", "05-fehlerstromweg"]
+  },
+  "scenes": [
+    {"id":"01-hook","title":"Was macht der Schutzleiter?","headline":"Was macht der Schutzleiter?","voiceText":"Was macht der Schutzleiter? Er verbindet berührbare Metallteile mit dem Schutzsystem der elektrischen Anlage.","imageDir":"02-bilder/images/01-hook","layout":"image-full","renderMode":"image-only","motionLevel":"subtle","imageRole":"hero","baseFrom":0,"baseTo":150,"factClaim":"Der Schutzleiter verbindet berührbare leitfähige Teile mit dem Schutzsystem der Anlage.","sourceIds":["SRC-VDE-SCHUTZLEITER-ALTBAU","SRC-SCHNEIDER-EIG"]},
+    {"id":"02-verbindung","title":"Das Metallgehäuse ist verbunden","kicker":"Schutzklasse I","headline":"PE liegt am Metallgehäuse","voiceText":"Bei Geräten der Schutzklasse eins ist deshalb das Metallgehäuse mit dem grün-gelben Leiter verbunden.","imageDir":"02-bilder/images/02-verbindung","layout":"image-full","renderMode":"image-only","motionLevel":"subtle","imageRole":"hero","baseFrom":150,"baseTo":330,"factClaim":"Bei Geräten der Schutzklasse I werden berührbare Metallteile mit dem Schutzleiter verbunden.","sourceIds":["SRC-VDE-SCHUTZLEITER-ALTBAU"]},
+    {"id":"03-normalbetrieb","title":"Im Normalbetrieb bleibt PE frei","kicker":"Normalbetrieb","headline":"PE führt keinen Betriebsstrom","voiceText":"Im normalen Betrieb ist er nicht für Betriebsstrom vorgesehen. Der Strom fließt über Außenleiter und Neutralleiter.","imageDir":"02-bilder/images/03-normalbetrieb","layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"full","imageRole":"mechanism-plate","mechanism":"protective-conductor-normal","baseFrom":330,"baseTo":510,"factClaim":"Der Schutzleiter ist nicht für den normalen Betriebsstrom vorgesehen.","sourceIds":["SRC-SCHNEIDER-EIG"]},
+    {"id":"04-isolationsfehler","title":"Ein Leiter berührt das Gehäuse","kicker":"Isolationsfehler","headline":"Das Gehäuse kann Spannung führen","voiceText":"Berührt der Außenleiter durch einen Isolationsfehler das Gehäuse, kann dort eine gefährliche Spannung entstehen.","imageDir":"02-bilder/images/04-isolationsfehler","layout":"warning","renderMode":"image-only","motionLevel":"subtle","imageRole":"safety","baseFrom":510,"baseTo":690,"factClaim":"Ein Isolationsfehler kann ein Metallgehäuse mit gefährlicher Spannung verbinden.","sourceIds":["SRC-VDE-SCHUTZLEITER-ALTBAU","SRC-SCHNEIDER-ERDUNG"]},
+    {"id":"05-fehlerstromweg","title":"Der Fehlerstrom fließt über PE","kicker":"Fehlerstromweg","headline":"PE führt den Fehlerstrom zurück","voiceText":"Der Schutzleiter führt den Fehlerstrom über einen vorgesehenen leitfähigen Weg zurück.","imageDir":"02-bilder/images/05-fehlerstromweg","layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"full","imageRole":"mechanism-plate","mechanism":"protective-conductor-fault-path","baseFrom":690,"baseTo":870,"factClaim":"Der Schutzleiter stellt im Fehlerfall einen vorgesehenen leitfähigen Fehlerstromweg bereit.","sourceIds":["SRC-SCHNEIDER-EIG","SRC-SCHNEIDER-ERDUNG"]},
+    {"id":"06-abschaltung","title":"Die Schutzeinrichtung schaltet ab","kicker":"Abschaltung","headline":"Der Stromkreis wird getrennt","voiceText":"So kann eine geeignete Schutzeinrichtung den Fehler erkennen und den Stromkreis schnell abschalten.","imageDir":"02-bilder/images/06-abschaltung","layout":"image-full","renderMode":"image-only","motionLevel":"subtle","imageRole":"hero","baseFrom":870,"baseTo":1050,"factClaim":"Ein geeigneter Schutz durch automatische Abschaltung trennt den fehlerhaften Stromkreis.","sourceIds":["SRC-VDE-ALLTAG","SRC-SCHNEIDER-EIG"]},
+    {"id":"07-pe-vs-n","title":"PE und N haben andere Aufgaben","kicker":"Nicht verwechseln","headline":"Neutralleiter ist nicht Schutzleiter","voiceText":"Der Neutralleiter führt Betriebsstrom. Der Schutzleiter dient dem Schutz. Beide Leiter haben unterschiedliche Aufgaben.","imageDir":"02-bilder/images/07-pe-vs-n","layout":"comparison","renderMode":"image-only","motionLevel":"subtle","imageRole":"comparison","baseFrom":1050,"baseTo":1230,"factClaim":"Neutralleiter und Schutzleiter erfüllen unterschiedliche Funktionen.","sourceIds":["SRC-SCHNEIDER-EIG"]},
+    {"id":"08-gruen-gelb","title":"Grün-Gelb kennzeichnet PE","kicker":"Kennzeichnung","headline":"Grün-Gelb bleibt Schutzleiter","voiceText":"Grün-Gelb kennzeichnet den Schutzleiter. Diese Verbindung darf niemals entfernt, unterbrochen oder als normaler Leiter verwendet werden.","imageDir":"02-bilder/images/08-gruen-gelb","layout":"image-full","renderMode":"image-only","motionLevel":"subtle","imageRole":"safety","baseFrom":1230,"baseTo":1440,"factClaim":"Grün-Gelb kennzeichnet die Schutzleiterfunktion; die Schutzverbindung muss erhalten bleiben.","sourceIds":["SRC-PHOENIX-PE","SRC-SCHNEIDER-ERDUNG"]},
+    {"id":"09-sicher-reagieren","title":"Beschädigte Geräte nicht benutzen","kicker":"Sicher reagieren","headline":"Ausstecken und prüfen lassen","voiceText":"Ist ein Stecker, Kabel oder Metallgehäuse beschädigt, Gerät ausstecken und fachgerecht prüfen lassen. Merke: Der Schutzleiter macht Fehler abschaltbar.","imageDir":"02-bilder/images/09-sicher-reagieren","layout":"payoff","renderMode":"image-only","motionLevel":"subtle","imageRole":"payoff","baseFrom":1440,"baseTo":1650,"factClaim":"Beschädigte elektrische Geräte sollen außer Betrieb genommen und fachgerecht geprüft werden.","sourceIds":["SRC-VDE-ALLTAG","SRC-VDE-SCHUTZLEITER-ALTBAU"]}
+  ]
+}
