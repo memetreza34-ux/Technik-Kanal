@@ -1,45 +1,15 @@
 {
-  "version": 4,
-  "visualPolicyVersion": "remotion-first-v1",
-  "slug": "was-macht-der-schutzleiter",
-  "compositionId": "SchutzleiterReel",
-  "fps": 30,
-  "width": 1080,
-  "height": 1920,
-  "totalFrames": 1650,
-  "durationSeconds": 55,
-  "voiceoverPath": "",
-  "coverText": "Was macht der Schutzleiter?",
-  "scenes": [
+  "version":4,"visualPolicyVersion":"remotion-first-v1","slug":"was-macht-der-schutzleiter","compositionId":"SchutzleiterReel","fps":30,"width":1080,"height":1920,"totalFrames":1650,"durationSeconds":55,"voiceoverPath":"","coverText":"Was macht der Schutzleiter?",
+  "scenes":[
     {"id":"01-hook","title":"Was macht der Schutzleiter?","headline":"Was macht der Schutzleiter?","fromFrame":0,"toFrame":150,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"subtle","imageRole":"hero","mechanism":"pe-hero","accent":"current"},
     {"id":"02-verbindung","title":"Das Metallgehäuse ist verbunden","kicker":"Schutzklasse I","headline":"PE liegt am Metallgehäuse","fromFrame":150,"toFrame":330,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"subtle","imageRole":"hero","mechanism":"pe-connection","accent":"success"},
     {"id":"03-normalbetrieb","title":"Im Normalbetrieb bleibt PE frei","kicker":"Normalbetrieb","headline":"PE führt keinen Betriebsstrom","fromFrame":330,"toFrame":510,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"full","imageRole":"mechanism-plate","mechanism":"protective-conductor-normal","accent":"current"},
-    {"id":"04-isolationsfehler","title":"Ein Leiter berührt das Gehäuse","kicker":"Isolationsfehler","headline":"Das Gehäuse kann Spannung führen","fromFrame":510,"toFrame":690,"layout":"warning","renderMode":"mechanism-only","motionLevel":"full","imageRole":"safety","mechanism":"pe-insulation-fault","accent":"fault"},
+    {"id":"04-isolationsfehler","title":"Ein Leiter berührt das Gehäuse","kicker":"Isolationsfehler","headline":"Das Gehäuse kann Spannung führen","fromFrame":510,"toFrame":690,"layout":"warning","renderMode":"mechanism-only","motionLevel":"subtle","imageRole":"safety","mechanism":"pe-insulation-fault","accent":"fault"},
     {"id":"05-fehlerstromweg","title":"Der Fehlerstrom fließt über PE","kicker":"Fehlerstromweg","headline":"PE führt den Fehlerstrom zurück","fromFrame":690,"toFrame":870,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"full","imageRole":"mechanism-plate","mechanism":"protective-conductor-fault-path","accent":"success"},
     {"id":"06-abschaltung","title":"Die Schutzeinrichtung schaltet ab","kicker":"Abschaltung","headline":"Der Stromkreis wird getrennt","fromFrame":870,"toFrame":1050,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"full","imageRole":"hero","mechanism":"pe-protection-trip","accent":"fault"},
     {"id":"07-pe-vs-n","title":"PE und N haben andere Aufgaben","kicker":"Nicht verwechseln","headline":"Neutralleiter ist nicht Schutzleiter","fromFrame":1050,"toFrame":1230,"layout":"comparison","renderMode":"mechanism-only","motionLevel":"subtle","imageRole":"comparison","mechanism":"pe-vs-n","accent":"explanation"},
     {"id":"08-gruen-gelb","title":"Grün-Gelb kennzeichnet PE","kicker":"Kennzeichnung","headline":"Grün-Gelb bleibt Schutzleiter","fromFrame":1230,"toFrame":1440,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"subtle","imageRole":"safety","mechanism":"pe-marking","accent":"success"},
     {"id":"09-sicher-reagieren","title":"Beschädigte Geräte nicht benutzen","kicker":"Sicher reagieren","headline":"Ausstecken und prüfen lassen","fromFrame":1440,"toFrame":1650,"layout":"payoff","renderMode":"mechanism-only","motionLevel":"subtle","imageRole":"payoff","mechanism":"pe-safe-response","accent":"explanation"}
   ],
-  "captions": [
-    {"fromFrame":6,"toFrame":70,"text":"Was macht der Schutzleiter?"},
-    {"fromFrame":70,"toFrame":142,"text":"Er verbindet Metallteile mit dem Schutzsystem."},
-    {"fromFrame":158,"toFrame":240,"text":"Bei Geräten der Schutzklasse eins"},
-    {"fromFrame":240,"toFrame":322,"text":"ist das Metallgehäuse mit PE verbunden."},
-    {"fromFrame":338,"toFrame":418,"text":"Im Normalbetrieb ist PE nicht"},
-    {"fromFrame":418,"toFrame":502,"text":"für Betriebsstrom vorgesehen."},
-    {"fromFrame":518,"toFrame":602,"text":"Bei einem Isolationsfehler kann"},
-    {"fromFrame":602,"toFrame":682,"text":"das Gehäuse gefährliche Spannung führen."},
-    {"fromFrame":698,"toFrame":782,"text":"Der Schutzleiter führt den Fehlerstrom"},
-    {"fromFrame":782,"toFrame":862,"text":"über einen vorgesehenen Weg zurück."},
-    {"fromFrame":878,"toFrame":960,"text":"Eine geeignete Schutzeinrichtung erkennt den Fehler"},
-    {"fromFrame":960,"toFrame":1042,"text":"und trennt den Stromkreis."},
-    {"fromFrame":1058,"toFrame":1140,"text":"Der Neutralleiter führt Betriebsstrom."},
-    {"fromFrame":1140,"toFrame":1222,"text":"Der Schutzleiter dient dem Schutz."},
-    {"fromFrame":1238,"toFrame":1336,"text":"Grün-Gelb kennzeichnet den Schutzleiter."},
-    {"fromFrame":1336,"toFrame":1432,"text":"Diese Verbindung darf nicht verändert werden."},
-    {"fromFrame":1448,"toFrame":1542,"text":"Beschädigtes Gerät ausstecken"},
-    {"fromFrame":1542,"toFrame":1642,"text":"und fachgerecht prüfen lassen."}
-  ],
-  "sfx": []
+  "captions":[{"fromFrame":6,"toFrame":70,"text":"Was macht der Schutzleiter?"},{"fromFrame":70,"toFrame":142,"text":"Er verbindet Metallteile mit dem Schutzsystem."},{"fromFrame":158,"toFrame":240,"text":"Bei Geräten der Schutzklasse eins"},{"fromFrame":240,"toFrame":322,"text":"ist das Metallgehäuse mit PE verbunden."},{"fromFrame":338,"toFrame":418,"text":"Im Normalbetrieb ist PE nicht"},{"fromFrame":418,"toFrame":502,"text":"für Betriebsstrom vorgesehen."},{"fromFrame":518,"toFrame":602,"text":"Bei einem Isolationsfehler kann"},{"fromFrame":602,"toFrame":682,"text":"das Gehäuse gefährliche Spannung führen."},{"fromFrame":698,"toFrame":782,"text":"Der Schutzleiter führt den Fehlerstrom"},{"fromFrame":782,"toFrame":862,"text":"über einen vorgesehenen Weg zurück."},{"fromFrame":878,"toFrame":960,"text":"Eine geeignete Schutzeinrichtung erkennt den Fehler"},{"fromFrame":960,"toFrame":1042,"text":"und trennt den Stromkreis."},{"fromFrame":1058,"toFrame":1140,"text":"Der Neutralleiter führt Betriebsstrom."},{"fromFrame":1140,"toFrame":1222,"text":"Der Schutzleiter dient dem Schutz."},{"fromFrame":1238,"toFrame":1336,"text":"Grün-Gelb kennzeichnet den Schutzleiter."},{"fromFrame":1336,"toFrame":1432,"text":"Diese Verbindung darf nicht verändert werden."},{"fromFrame":1448,"toFrame":1542,"text":"Beschädigtes Gerät ausstecken"},{"fromFrame":1542,"toFrame":1642,"text":"und fachgerecht prüfen lassen."}],"sfx":[]
 }
