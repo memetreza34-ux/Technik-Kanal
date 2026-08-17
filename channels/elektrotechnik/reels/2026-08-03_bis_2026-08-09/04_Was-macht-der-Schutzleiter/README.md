@@ -10,7 +10,7 @@ Dieser Reel ist vollständig auf **Remotion-first** umgestellt.
 - 0 benötigte Nutzerbilder
 - 0 benötigte Coverbilder
 - deutsche technische Beschriftungen direkt in Remotion
-- 4 echte Prozessanimationen, die übrigen Szenen mit kontrollierter subtiler Bewegung
+- 3 echte Prozessanimationen, die übrigen Szenen mit kontrollierter subtiler Bewegung
 - öffentliche Bilder nur optional, wenn ein reales Motiv die Erklärung verbessert
 
 ## Du musst nur noch liefern
