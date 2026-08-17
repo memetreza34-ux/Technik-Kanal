@@ -1,0 +1,1 @@
+REMOTION ONLY. Comparison camera. Keep the breaker centered. Show the protected cable plus two clearly separated fault cards: Überlast and Kurzschluss. No full process animation yet; this scene establishes the two protection paths.

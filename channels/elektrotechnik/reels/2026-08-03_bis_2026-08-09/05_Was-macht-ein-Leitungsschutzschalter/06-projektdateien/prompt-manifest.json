@@ -1,0 +1,20 @@
+{
+  "version":"electrical-v8",
+  "visualPolicyVersion":"remotion-first-v2",
+  "slug":"was-macht-ein-leitungsschutzschalter",
+  "generatedImageTextPolicy":"none",
+  "coverText":"Was macht ein Leitungsschutzschalter?",
+  "requiredVisibleSceneImages":0,
+  "cover":{"imageRequired":false,"renderMode":"mechanism-only","visualSource":"remotion","prompt":"02-bilder/prompts/00-cover.txt"},
+  "scenes":[
+    {"id":"01-hook","imageRequired":false,"renderMode":"mechanism-only","visualSource":"remotion","mechanism":"ls-hero"},
+    {"id":"02-aufgabe","imageRequired":false,"renderMode":"mechanism-only","visualSource":"remotion","mechanism":"ls-two-faults"},
+    {"id":"03-normalbetrieb","imageRequired":false,"renderMode":"mechanism-only","visualSource":"remotion","mechanism":"normal-current-flow"},
+    {"id":"04-ueberlast","imageRequired":false,"renderMode":"mechanism-only","visualSource":"remotion","mechanism":"overload-heating"},
+    {"id":"05-bimetall","imageRequired":false,"renderMode":"mechanism-only","visualSource":"remotion","mechanism":"thermal-bimetal-trip"},
+    {"id":"06-kurzschluss","imageRequired":false,"renderMode":"mechanism-only","visualSource":"remotion","mechanism":"short-circuit-rise"},
+    {"id":"07-magnetausloesung","imageRequired":false,"renderMode":"mechanism-only","visualSource":"remotion","mechanism":"magnetic-instant-trip"},
+    {"id":"08-vergleich","imageRequired":false,"renderMode":"mechanism-only","visualSource":"remotion","mechanism":"thermal-vs-magnetic"},
+    {"id":"09-merksatz","imageRequired":false,"renderMode":"mechanism-only","visualSource":"remotion","mechanism":"safe-payoff"}
+  ]
+}

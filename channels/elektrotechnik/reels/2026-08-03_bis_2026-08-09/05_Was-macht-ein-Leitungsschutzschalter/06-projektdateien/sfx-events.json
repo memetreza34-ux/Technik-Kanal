@@ -1,0 +1,9 @@
+{
+  "version":1,
+  "events":[
+    {"id":"breaker-click","sceneId":"03-normalbetrieb","file":"breaker-click.wav","anchorText":"Schalter","relativeMs":1800,"volume":0.10},
+    {"id":"thermal-trip","sceneId":"05-bimetall","file":"thermal-trip.wav","anchorText":"aus","relativeMs":3600,"volume":0.12},
+    {"id":"short-circuit-pulse","sceneId":"06-kurzschluss","file":"short-circuit-pulse.wav","anchorText":"Kurzschluss","relativeMs":900,"volume":0.13},
+    {"id":"magnetic-trip","sceneId":"07-magnetausloesung","file":"magnetic-trip.wav","anchorText":"sofort","relativeMs":3600,"volume":0.14}
+  ]
+}

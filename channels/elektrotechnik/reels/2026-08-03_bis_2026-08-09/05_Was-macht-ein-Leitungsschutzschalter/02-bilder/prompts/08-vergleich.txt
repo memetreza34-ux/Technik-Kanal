@@ -1,0 +1,1 @@
+REMOTION ONLY. Comparison stage. Left: Überlast → thermisch → zeitverzögert. Right: Kurzschluss → magnetisch → nahezu sofort. Show the breaker contacts opening as the common result.
