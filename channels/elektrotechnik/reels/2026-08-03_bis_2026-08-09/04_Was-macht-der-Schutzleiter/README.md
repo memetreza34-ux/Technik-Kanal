@@ -1,8 +1,8 @@
 # Was macht der Schutzleiter?
 
-## Neue Produktionsmethode
+## Produktionsmethode
 
-Dieser Reel ist vollständig auf **Remotion-first** umgestellt.
+Dieser Reel ist vollständig auf **Remotion-first v2** umgestellt.
 
 - 9 Szenen
 - 9 Remotion-Grafiken
@@ -11,7 +11,7 @@ Dieser Reel ist vollständig auf **Remotion-first** umgestellt.
 - 0 benötigte Coverbilder
 - deutsche technische Beschriftungen direkt in Remotion
 - 3 echte Prozessanimationen, die übrigen Szenen mit kontrollierter subtiler Bewegung
-- öffentliche Bilder nur optional, wenn ein reales Motiv die Erklärung verbessert
+- öffentliche Bilder nur optional, wenn ein reales Motiv die Erklärung nachweisbar verbessert
 
 ## Du musst nur noch liefern
 
@@ -25,8 +25,18 @@ Danach:
 npm run electrical:finish -- "channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09/04_Was-macht-der-Schutzleiter"
 ```
 
-Die Pipeline verarbeitet die Voice auf 1,10×, transkribiert lokal, richtet die neun Remotion-Szenen an der echten Stimme aus, erzeugt Untertitel, rendert und prüft den Reel.
+## Optional: reales Bild einsetzen
 
-## Öffentliche Bilder
+Nur bei echtem Mehrwert:
 
-Der aktuelle Schutzleiter-Reel braucht keine. Für zukünftige Themen gibt es `02-public-media/`: Codex kann dort lizenzierte öffentliche Fotos dokumentieren und automatisch in eine Szene übernehmen.
+```bash
+npm run electrical:media-search -- "<reel-ordner>" --scene=06-abschaltung --query="European electrical switchgear cabinet"
+```
+
+Codex prüft danach den Kandidaten auf der Original-Source-Page und visuell. Erst dann:
+
+```bash
+npm run electrical:media-approve -- "<reel-ordner>" --scene=06-abschaltung --candidate=<ID> --source-verified --visual-reviewed --no-people --no-logos --no-artwork
+```
+
+Die Remotion-Erklärung bleibt dabei erhalten; das reale Foto dient nur als Hintergrund oder Kontext.
