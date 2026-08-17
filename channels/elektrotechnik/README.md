@@ -2,21 +2,21 @@
 
 Deutschsprachiger Faceless-Lernkanal für Elektrotechnik, Elektronik, Mess- und Steuerungstechnik.
 
-## Aktiver neuer Reel
+## Aktiver Reel
 
-`reels/2026-08-03_bis_2026-08-09/04_Was-macht-der-Schutzleiter/`
+`reels/2026-08-03_bis_2026-08-09/05_Was-macht-ein-Leitungsschutzschalter/`
 
-Vorherige Reels bleiben unter Slot 02 und Slot 03 erhalten.
+## Produktionsstandard
 
-## Neuer Produktionsstandard
-
+- Remotion-first-v2
 - direkter deutscher Frage-Hook
-- textfreie KI-Bilder
-- starke Bilder als Standard
-- nur notwendige Mechanismus-Animationen
-- Preflight vor Bild- und Audioerzeugung
-- Voice-over automatisch auf 1,10×
-- Worttranskript, Szenen und Untertitel auf derselben Zeitbasis
+- technische Visuals, Strompfade und Bauteil-Callouts primär aus Code
+- öffentliche Bilder nur bei echtem dokumentarischem Mehrwert und nach Lizenz-/Rechteprüfung
+- keine KI-Szenenbilder als Standard
+- 2–4 echte Prozessanimationen statt Dauerbewegung
+- deutsche Überschriften und Callouts kontrolliert in Remotion
+- Voice-over automatisch auf exakt 1,10×
+- lokales Worttranskript, Szenen und Untertitel auf derselben Zeitbasis
 
 ## Kanalstruktur
 
@@ -26,4 +26,4 @@ Vorherige Reels bleiben unter Slot 02 und Slot 03 erhalten.
 - `public/` – wiederverwendbare Assets
 - `reels/` – Wochen und Produktionspakete
 - `skills/` – Arbeitsabläufe
-- `src/` – Remotion-Code, Engine und Animationsbibliothek
+- `src/` – Remotion-Code, Visual-Kit, Engine und Animationsbibliothek

@@ -1,0 +1,1 @@
+REMOTION ONLY. Wide safety payoff. Show the protected cable and breaker with a clear shield around the cable. Add controlled German Remotion callouts: Leitungsschutz, Überstrom, Ursache prüfen lassen. Do not show any live-work action.

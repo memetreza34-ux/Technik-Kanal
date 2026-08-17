@@ -2,39 +2,37 @@
 
 ## Aktiver Reel
 
-- Thema: Warum fliegt die Sicherung raus?
-- Composition: `SicherungsReel`
+- Thema: Was macht ein Leitungsschutzschalter?
+- Composition: `LeitungsschutzschalterReel`
+- Modus: `remotion-first-v2`
 - Voice-Geschwindigkeit: 1,10×
-- Zielpfad: `reels/2026-08-03_bis_2026-08-09/02_Warum-fliegt-die-Sicherung-raus/`
+- Zielpfad: `reels/2026-08-03_bis_2026-08-09/05_Was-macht-ein-Leitungsschutzschalter/`
 
 ## Vorhanden
 
-- Voice-over-Text und Bildprompts
-- Caption-, SFX- und Animationsplanung
-- Remotion-Code und Bibliothekskomponenten
-- Lernzettel-Inhalt und Quellen
-- lokale Ein-Befehl-Pipeline
-- lokale Worttranskription mit `whisper.cpp`
-- semantische Szenenausrichtung am echten Worttranskript
-- automatische Bildprüfung und Runtime-Zuordnung
-- automatische SRT-/VTT-Erzeugung
-- Render-QA mit Szenen-Stills und Kontaktbogen
+- vollständiger deutscher Voice-Text
+- 9-Szenen-Vertrag
+- fachliche Quellen
+- vollständige Remotion-Composition
+- 9 konkrete Visual-Rezepte
+- 3 volle Prozessanimationen
+- 0 Pflichtbilder
+- lokale Worttranskription und Ein-Befehl-Pipeline
+- SFX-Plan, Storyboard und Lernzettel
 
 ## Nutzerablauf
 
-1. Roh-Audio in `01-script-audio/audio/` legen.
-2. Pro Szene ein Bild in den passenden Ordner unter `02-bilder/images/` legen.
-3. Optional SFX in `01-script-audio/sfx/` legen.
-4. Codex ausführen lassen:
+1. Nur `voiceover-raw.wav` in `01-script-audio/audio/` ablegen.
+2. Danach ausführen:
 
 ```bash
-npm run elektro:finish -- "channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09/02_Warum-fliegt-die-Sicherung-raus"
+npm run electrical:finish -- "channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09/05_Was-macht-ein-Leitungsschutzschalter"
 ```
 
-## Noch offen für den aktiven Reel
+## Noch offen
 
-- echte Iro-Rohaufnahme
-- echte Szenenbilder
-- optionale SFX-Dateien
-- erster vollständiger lokaler Pipeline-Lauf
-- visuelle Schlusskontrolle durch Codex und Nutzer
+- echte deutsche Rohaufnahme
+- exakte Wort-Zeitstempel aus dieser Aufnahme
+- finaler synchronisierter Render
+- technische Render-QA
+- visuelle Schlusskontrolle
