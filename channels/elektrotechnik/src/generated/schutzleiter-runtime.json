@@ -1,6 +1,6 @@
 {
-  "version": 3,
-  "visualPolicyVersion": "visual-v2",
+  "version": 4,
+  "visualPolicyVersion": "remotion-first-v1",
   "slug": "was-macht-der-schutzleiter",
   "compositionId": "SchutzleiterReel",
   "fps": 30,
@@ -11,15 +11,15 @@
   "voiceoverPath": "",
   "coverText": "Was macht der Schutzleiter?",
   "scenes": [
-    {"id":"01-hook","title":"Was macht der Schutzleiter?","headline":"Was macht der Schutzleiter?","fromFrame":0,"toFrame":150,"layout":"image-full","renderMode":"image-only","motionLevel":"subtle","imageRole":"hero","accent":"current"},
-    {"id":"02-verbindung","title":"Das Metallgehäuse ist verbunden","kicker":"Schutzklasse I","headline":"PE liegt am Metallgehäuse","fromFrame":150,"toFrame":330,"layout":"image-full","renderMode":"image-only","motionLevel":"subtle","imageRole":"hero","accent":"success"},
+    {"id":"01-hook","title":"Was macht der Schutzleiter?","headline":"Was macht der Schutzleiter?","fromFrame":0,"toFrame":150,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"subtle","imageRole":"hero","mechanism":"pe-hero","accent":"current"},
+    {"id":"02-verbindung","title":"Das Metallgehäuse ist verbunden","kicker":"Schutzklasse I","headline":"PE liegt am Metallgehäuse","fromFrame":150,"toFrame":330,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"subtle","imageRole":"hero","mechanism":"pe-connection","accent":"success"},
     {"id":"03-normalbetrieb","title":"Im Normalbetrieb bleibt PE frei","kicker":"Normalbetrieb","headline":"PE führt keinen Betriebsstrom","fromFrame":330,"toFrame":510,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"full","imageRole":"mechanism-plate","mechanism":"protective-conductor-normal","accent":"current"},
-    {"id":"04-isolationsfehler","title":"Ein Leiter berührt das Gehäuse","kicker":"Isolationsfehler","headline":"Das Gehäuse kann Spannung führen","fromFrame":510,"toFrame":690,"layout":"warning","renderMode":"image-only","motionLevel":"subtle","imageRole":"safety","accent":"fault"},
+    {"id":"04-isolationsfehler","title":"Ein Leiter berührt das Gehäuse","kicker":"Isolationsfehler","headline":"Das Gehäuse kann Spannung führen","fromFrame":510,"toFrame":690,"layout":"warning","renderMode":"mechanism-only","motionLevel":"full","imageRole":"safety","mechanism":"pe-insulation-fault","accent":"fault"},
     {"id":"05-fehlerstromweg","title":"Der Fehlerstrom fließt über PE","kicker":"Fehlerstromweg","headline":"PE führt den Fehlerstrom zurück","fromFrame":690,"toFrame":870,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"full","imageRole":"mechanism-plate","mechanism":"protective-conductor-fault-path","accent":"success"},
-    {"id":"06-abschaltung","title":"Die Schutzeinrichtung schaltet ab","kicker":"Abschaltung","headline":"Der Stromkreis wird getrennt","fromFrame":870,"toFrame":1050,"layout":"image-full","renderMode":"image-only","motionLevel":"subtle","imageRole":"hero","accent":"fault"},
-    {"id":"07-pe-vs-n","title":"PE und N haben andere Aufgaben","kicker":"Nicht verwechseln","headline":"Neutralleiter ist nicht Schutzleiter","fromFrame":1050,"toFrame":1230,"layout":"comparison","renderMode":"image-only","motionLevel":"subtle","imageRole":"comparison","accent":"explanation"},
-    {"id":"08-gruen-gelb","title":"Grün-Gelb kennzeichnet PE","kicker":"Kennzeichnung","headline":"Grün-Gelb bleibt Schutzleiter","fromFrame":1230,"toFrame":1440,"layout":"image-full","renderMode":"image-only","motionLevel":"subtle","imageRole":"safety","accent":"success"},
-    {"id":"09-sicher-reagieren","title":"Beschädigte Geräte nicht benutzen","kicker":"Sicher reagieren","headline":"Ausstecken und prüfen lassen","fromFrame":1440,"toFrame":1650,"layout":"payoff","renderMode":"image-only","motionLevel":"subtle","imageRole":"payoff","accent":"explanation"}
+    {"id":"06-abschaltung","title":"Die Schutzeinrichtung schaltet ab","kicker":"Abschaltung","headline":"Der Stromkreis wird getrennt","fromFrame":870,"toFrame":1050,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"full","imageRole":"hero","mechanism":"pe-protection-trip","accent":"fault"},
+    {"id":"07-pe-vs-n","title":"PE und N haben andere Aufgaben","kicker":"Nicht verwechseln","headline":"Neutralleiter ist nicht Schutzleiter","fromFrame":1050,"toFrame":1230,"layout":"comparison","renderMode":"mechanism-only","motionLevel":"subtle","imageRole":"comparison","mechanism":"pe-vs-n","accent":"explanation"},
+    {"id":"08-gruen-gelb","title":"Grün-Gelb kennzeichnet PE","kicker":"Kennzeichnung","headline":"Grün-Gelb bleibt Schutzleiter","fromFrame":1230,"toFrame":1440,"layout":"image-mechanism","renderMode":"mechanism-only","motionLevel":"subtle","imageRole":"safety","mechanism":"pe-marking","accent":"success"},
+    {"id":"09-sicher-reagieren","title":"Beschädigte Geräte nicht benutzen","kicker":"Sicher reagieren","headline":"Ausstecken und prüfen lassen","fromFrame":1440,"toFrame":1650,"layout":"payoff","renderMode":"mechanism-only","motionLevel":"subtle","imageRole":"payoff","mechanism":"pe-safe-response","accent":"explanation"}
   ],
   "captions": [
     {"fromFrame":6,"toFrame":70,"text":"Was macht der Schutzleiter?"},

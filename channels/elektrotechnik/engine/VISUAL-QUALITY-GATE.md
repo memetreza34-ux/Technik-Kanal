@@ -1,80 +1,48 @@
-# Visual Quality Gate – Version 6
+# Visual Quality Gate – Remotion First
+
+## Grundregel
+
+Elektrotechnik-Reels werden standardmäßig **ohne KI-Szenenbilder** gebaut. Remotion ist die primäre visuelle Engine.
 
 ## Ziel
 
-Die Bildserie muss wie eine hochwertige technische Dokumentation wirken. Texte werden klar nach ihrer Funktion getrennt.
+Ein Reel soll wie eine konsistente technische Motion-Design-Dokumentation wirken:
 
-## Verbindliche Texttrennung
+- reale elektrische Logik
+- klare deutsche Fachbegriffe
+- kontrollierte Farben und Materialien
+- wiederverwendbare technische Komponenten
+- nur dort volle Bewegung, wo ein Prozess erklärt wird
+- sonst subtile, ruhige Remotion-Bewegung
 
-### Ausschließlich Remotion
+## Standard
 
-- Cover-Hook
-- Kicker
-- Szenenüberschrift
-- allgemeine Kernaussage
-- CTA
-- Untertitel
+- 8–10 Szenen
+- mindestens 7 Remotion-Szenen
+- maximal 2 öffentliche Bildszenen
+- 2–4 volle Prozessanimationen
+- keine KI-generierten Szenenbilder
+- Cover vollständig in Remotion
+- Callouts, Überschriften und Untertitel vollständig in Remotion
 
-Diese Texte dürfen niemals in das Basisbild eingebrannt oder von der Bild-KI erzeugt werden.
+## Öffentliche Bilder
 
-### Technische Callouts im finalen Bild
+Nur verwenden, wenn das reale Motiv selbst relevant ist, zum Beispiel:
 
-Direkt im Bild sind nur kurze deutsche Markierungen erlaubt, wenn sie auf ein konkretes technisches Ziel zeigen:
+- Umspannwerk
+- Kraftwerk
+- historische Anlage
+- reale Bahn- oder Industriekomponente
 
-- Bauteil
-- Leiter
-- Klemme oder Anschluss
-- Fehlerstelle
-- Schalterzustand
-- wichtiger Prozesspunkt
-
-Callouts brauchen eine Linie oder einen Zielpunkt. Sie dürfen keine allgemeine Szenenüberschrift ersetzen. Nicht jedes Bild braucht Callouts; maximal drei pro Bild.
-
-## Verbindliche Produktionsmethode
-
-1. Serienreferenzen für wiederkehrende Objekte erzeugen.
-2. Verwandte Szenen mit derselben Referenz generieren.
-3. KI-Basisbilder vollständig textfrei halten.
-4. Nur notwendige technische Callouts kontrolliert einbrennen:
-
-```bash
-npm run electrical:label-images -- "<reel-ordner>"
-```
-
-5. Hook und Szenenüberschriften erst beim Remotion-Render ergänzen.
-
-## Bildsprache
-
-- cinematic industrial editorial photography
-- reale europäische Bauteile und reale Proportionen
-- konsistente wiederkehrende Objekte
-- konsistentes Serien-Grading
-- sichtbare Werkstatt- oder Anlagenumgebung statt leerer Produktfläche
-- unterschiedliche, bewusst gewählte Kameratypen
-- kontrollierte Set-Familien
-
-## Verboten
-
-- Covertext oder Szenenheadline im KI-Bild
-- allgemeine Textsätze als Bildbeschriftung
-- Callouts ohne konkretes Ziel
-- mehr als drei Callouts pro Bild
-- isolierte Katalog- oder Amazon-Produktfotos
-- schwebende Bauteile
-- zufällig wechselnde Geräte und Bildstile
-- KI-generierte Schrift
-- weiße Balken, Titelkarten oder Letterboxing
-- Cartoon-, Spielzeug-, Pixar-, Miniatur- oder Fantasyoptik
+Jedes öffentliche Bild benötigt dokumentierte Quelle, Lizenz und Attribution. Standardmäßig zulässig: Public Domain, CC0 1.0 und CC BY 4.0. NC-, ND- und SA-Lizenzen werden nicht automatisch verwendet.
 
 ## Qualitätsprüfung
 
-Der Preflight blockiert künftig:
+Die Produktion wird blockiert, wenn:
 
-- fehlende Serienreferenzen und Kameratypen
-- Prompts mit sichtbarer KI-Schrift
-- Prompts ohne Serienfarbgrading oder Full-bleed-Regeln
-- Katalog-, Floating- oder Stockfoto-Sprache
-- mehr als drei technische Callouts
-- zu lange Callout-Texte
-
-Die finale visuelle Prüfung kontrolliert zusätzlich Motivqualität, Kontinuität, Callout-Zielgenauigkeit und fachliche Plausibilität.
+- weniger als sieben Szenen aus Remotion kommen,
+- mehr als zwei öffentliche Bildszenen geplant sind,
+- eine Bildszene keine dokumentierte Quelle besitzt,
+- mehr als vier volle Prozessanimationen verwendet werden,
+- technische Callouts englisch sind,
+- eine Szene nur aus Text ohne technisches Motiv besteht.

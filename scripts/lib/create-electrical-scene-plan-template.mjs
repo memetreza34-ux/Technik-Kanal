@@ -1,96 +1,13 @@
-const uniqueMechanismIndexes = (sceneCount) => {
-  const candidates = [Math.max(1, Math.floor(sceneCount * 0.34)), Math.max(2, Math.floor(sceneCount * 0.58))];
-  return [...new Set(candidates)].filter((index) => index > 0 && index < sceneCount - 1).slice(0, 2);
-};
-
-const setFamilies = ['warm-motor-workshop','dark-mechanism-lab','cool-switchgear-cabinet','daylight-safety-workbench'];
-const shotTypes = ['hero-three-quarter','environmental-medium','macro-detail','mechanism-canvas','controlled-cutaway','cabinet-medium','symmetric-comparison','environmental-wide'];
-
-export const createElectricalScenePlanTemplate = ({slug,title='Elektrotechnik-Thema',hook='Was erklärt dieser Reel?',compositionId='ElectricalReel',sceneCount=9}) => {
-  const mechanismIndexes = uniqueMechanismIndexes(sceneCount);
-  const scenes = Array.from({length:sceneCount},(_,index) => {
-    const number = String(index+1).padStart(2,'0');
-    const isHook = index===0;
-    const isPayoff = index===sceneCount-1;
-    const isMechanism = mechanismIndexes.includes(index);
-    const id = isHook ? `${number}-hook` : isPayoff ? `${number}-payoff` : `${number}-erklaerung`;
-    const referenceGroup = isMechanism ? 'mechanism-reference' : index < Math.ceil(sceneCount/2) ? 'anchor-object-a' : 'anchor-object-b';
-    return {
-      id,
-      title:isHook?hook:isPayoff?'Fachlicher Payoff':`Erklärung ${index}`,
-      kicker:isHook?undefined:isPayoff?'Merksatz':'Erklärung',
-      headline:isHook?hook:isPayoff?'Klarer Merksatz ergänzen':'Kurze deutsche Remotion-Headline ergänzen',
-      imageLabel:isHook?hook:'Interne Szenenbezeichnung ergänzen',
-      imageAnnotations:[],
-      backgroundFamily:setFamilies[Math.min(setFamilies.length-1,Math.floor((index/sceneCount)*setFamilies.length))],
-      shotType:shotTypes[index%shotTypes.length],
-      referenceGroup,
-      voiceText:isHook?`${hook} Direkte Antwort in einem kurzen Satz ergänzen.`:'Sprechtext für genau eine technische Aussage ergänzen.',
-      imageDir:`02-bilder/images/${id}`,
-      layout:isMechanism?'image-mechanism':isPayoff?'payoff':'image-full',
-      renderMode:isMechanism?'mechanism-only':'image-only',
-      motionLevel:isMechanism?'full':'subtle',
-      imageRole:isMechanism?'mechanism-plate':isPayoff?'payoff':'hero',
-      ...(isMechanism?{mechanism:`mechanismus-${number}`} : {}),
-      factClaim:'Fachliche Kernaussage ergänzen.',
-      sourceIds:[],
-    };
+const fullAnimationIndexes = (sceneCount) => [...new Set([Math.max(2, Math.floor(sceneCount * .34)), Math.max(3, Math.floor(sceneCount * .55)), Math.max(4, Math.floor(sceneCount * .72))])].filter((index)=>index>0&&index<sceneCount-1).slice(0,3);
+const visualNames = ['hero-technical-object','connection-detail','normal-current-flow','fault-cutaway','fault-current-path','protection-trip','technical-comparison','component-marking','safe-response'];
+export const createElectricalScenePlanTemplate = ({slug,title='Elektrotechnik-Thema',hook='Was macht dieses Bauteil?',compositionId='ElectricalReel',sceneCount=9}) => {
+  const fullIndexes=fullAnimationIndexes(sceneCount);
+  const scenes=Array.from({length:sceneCount},(_,index)=>{
+    const number=String(index+1).padStart(2,'0');
+    const isHook=index===0;const isPayoff=index===sceneCount-1;const id=isHook?`${number}-hook`:isPayoff?`${number}-payoff`:`${number}-erklaerung`;
+    return {id,title:isHook?hook:isPayoff?'Fachlicher Payoff':`Erklärung ${index}`,kicker:isHook?undefined:isPayoff?'Merksatz':'Erklärung',headline:isHook?hook:isPayoff?'Klarer Merksatz ergänzen':'Kurze deutsche Aussage ergänzen',backgroundFamily:`remotion-${index%4}`,shotType:index%3===0?'hero-graphic':index%3===1?'detail-graphic':'flow-diagram',referenceGroup:'remotion-system',voiceText:isHook?`${hook} Direkte Antwort in einem kurzen Satz ergänzen.`:'Sprechtext für genau eine technische Aussage ergänzen.',imageDir:`02-bilder/images/${id}`,layout:'image-mechanism',renderMode:'mechanism-only',motionLevel:fullIndexes.includes(index)?'full':'subtle',imageRole:isPayoff?'payoff':'mechanism-plate',mechanism:visualNames[index]??`technical-scene-${number}`,factClaim:'Fachliche Kernaussage ergänzen.',sourceIds:[]};
   });
-  return {
-    version:'electrical-v6',
-    visualPolicyVersion:'visual-v6-callouts',
-    generatedImageTextPolicy:'controlled-german-callouts',
-    slug,
-    title,
-    coverText:hook,
-    compositionId,
-    fps:30,
-    width:1080,
-    height:1920,
-    minimumWordMatchRatio:0.82,
-    animationBudget:{maximum:4,fullMechanismScenes:scenes.filter((scene)=>scene.motionLevel==='full').map((scene)=>scene.id)},
-    scenes,
-  };
+  return {version:'electrical-v7',visualPolicyVersion:'remotion-first-v1',generatedImageTextPolicy:'none',slug,title,coverText:hook,compositionId,fps:30,width:1080,height:1920,minimumWordMatchRatio:0.82,animationBudget:{maximum:4,fullMechanismScenes:scenes.filter((scene)=>scene.motionLevel==='full').map((scene)=>scene.id)},scenes};
 };
-
-export const createElectricalPromptManifestTemplate = (scenePlan) => ({
-  version:'electrical-v6',
-  visualPolicyVersion:'visual-v6-callouts',
-  slug:scenePlan.slug,
-  generatedAt:new Date().toISOString(),
-  generatedImageTextPolicy:'controlled-german-callouts',
-  coverText:scenePlan.coverText,
-  coverTextRenderedBy:'remotion',
-  sceneHeadlinesRenderedBy:'remotion',
-  maximumTechnicalCalloutsPerImage:3,
-  minimumBackgroundFamilies:3,
-  maximumBackgroundFamilies:4,
-  minimumShotTypes:4,
-  requiredVisibleSceneImages:scenePlan.scenes.filter((scene)=>scene.renderMode!=='mechanism-only').length,
-  animationBudget:{maximumFullMechanismAnimations:scenePlan.animationBudget.maximum,sceneIds:scenePlan.animationBudget.fullMechanismScenes},
-  cover:{prompt:'02-bilder/prompts/00-cover.txt',imageDir:'02-bilder/images/00-cover',imageRequired:true,backgroundFamily:'warm-motor-workshop',shotType:'hero-three-quarter',referenceGroup:'anchor-object-a',approved:false},
-  scenes:scenePlan.scenes.map((scene)=>({
-    id:scene.id,
-    prompt:`02-bilder/prompts/${scene.id}.txt`,
-    imageDir:scene.imageDir,
-    imageRequired:scene.renderMode!=='mechanism-only',
-    imageAnnotations:scene.imageAnnotations,
-    backgroundFamily:scene.backgroundFamily,
-    shotType:scene.shotType,
-    referenceGroup:scene.referenceGroup,
-    renderMode:scene.renderMode,
-    motionLevel:scene.motionLevel,
-    fullAnimation:scene.motionLevel==='full',
-    approved:false,
-  })),
-});
-
-export const createElectricalStatusTemplate = (scenePlan) => ({
-  status:'preproduction-blocked-until-gates-pass',
-  slug:scenePlan.slug,
-  completed:['folder-structure','visual-v6-callout-template'],
-  open:['research','script','prompts','technical-callouts','series-references','sources','preflight','images','callout-bake','voiceover','captions','render','qa'],
-  requiredVisibleSceneImages:scenePlan.scenes.filter((scene)=>scene.renderMode!=='mechanism-only').length,
-  mechanismOnlyScenesWithoutUserImages:scenePlan.scenes.filter((scene)=>scene.renderMode==='mechanism-only').map((scene)=>scene.id),
-  nextCommand:'npm run electrical:preflight -- "<reel-ordner>"',
-});
+export const createElectricalPromptManifestTemplate=(scenePlan)=>({version:'electrical-v7',visualPolicyVersion:'remotion-first-v1',slug:scenePlan.slug,generatedAt:new Date().toISOString(),generatedImageTextPolicy:'none',coverText:scenePlan.coverText,requiredVisibleSceneImages:0,cover:{imageRequired:false,renderMode:'mechanism-only',visualSource:'remotion'},scenes:scenePlan.scenes.map((scene)=>({id:scene.id,imageRequired:false,renderMode:scene.renderMode,motionLevel:scene.motionLevel,visualSource:'remotion',mechanism:scene.mechanism,approved:false}))});
+export const createElectricalStatusTemplate=(scenePlan)=>({status:'preproduction-blocked-until-gates-pass',slug:scenePlan.slug,completed:['folder-structure','remotion-first-template'],open:['research','script','sources','preflight','remotion-visuals','voiceover','captions','render','qa'],requiredVisibleSceneImages:0,optionalPublicImageScenesMaximum:2,nextCommand:'npm run electrical:preflight -- "<reel-ordner>"'});
