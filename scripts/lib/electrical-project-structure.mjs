@@ -1,6 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
+// Interne ELECTRICAL_* Namen bleiben vorerst aus Rückwärtskompatibilität bestehen.
+// Der Vertrag selbst ist kanalweit und gilt für neue Science-Reels.
 export const ELECTRICAL_REEL_DIRECTORIES = [
   '01-script-audio',
   '01-script-audio/audio',
@@ -105,7 +107,7 @@ export const assertElectricalProjectStructure = (root, options) => {
   const report = checkElectricalProjectStructure(root, options);
   if (!report.ok) {
     throw new Error([
-      'Elektrotechnik-Reel-Struktur entspricht nicht dem FinanzNeo-Vertrag.',
+      'Science-Reel-Struktur entspricht nicht dem verbindlichen Produktionsvertrag.',
       ...report.missingDirectories.map((entry) => `Fehlender Ordner: ${entry}`),
       ...report.missingFiles.map((entry) => `Fehlende Datei: ${entry}`),
     ].join('\n'));
