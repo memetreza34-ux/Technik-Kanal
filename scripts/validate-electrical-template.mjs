@@ -18,4 +18,4 @@ for (const week of fs.readdirSync(reelsRoot, {withFileTypes: true}).filter((entr
   }
 }
 if (!count) throw new Error('Kein vollständiger Reel-Ordner gefunden.');
-console.log(`✓ ${count} Reel-Ordner entsprechen dem FinanzNeo-Wochenvertrag.`);
+console.log(`✓ ${count} Reel-Ordner entsprechen dem gemeinsamen Science-Reel-Ordnervertrag.`);
