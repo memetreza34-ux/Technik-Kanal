@@ -1,11 +1,89 @@
-const fullAnimationIndexes=(sceneCount)=>[...new Set([Math.max(2,Math.floor(sceneCount*.34)),Math.max(3,Math.floor(sceneCount*.55)),Math.max(4,Math.floor(sceneCount*.72))])].filter((index)=>index>0&&index<sceneCount-1).slice(0,3);
-const visualNames=['hero-technical-object','connection-detail','normal-current-flow','fault-cutaway','fault-current-path','protection-trip','technical-comparison','component-marking','safe-response'];
-const stages=['industrial-dark','workbench','diagram','warning','diagram','switchgear','comparison','workbench','warning'];
-const cameras=['hero','macro','side','cutaway','side','hero','comparison','macro','wide'];
-export const createElectricalScenePlanTemplate=({slug,title='Elektrotechnik-Thema',hook='Was macht dieses Bauteil?',compositionId='ElectricalReel',sceneCount=9})=>{
-  const fullIndexes=fullAnimationIndexes(sceneCount);
-  const scenes=Array.from({length:sceneCount},(_,index)=>{const number=String(index+1).padStart(2,'0');const isHook=index===0;const isPayoff=index===sceneCount-1;const id=isHook?`${number}-hook`:isPayoff?`${number}-payoff`:`${number}-erklaerung`;const subject=isHook?'Hauptbauteil groß und sofort verständlich':isPayoff?'sichere Endhandlung oder fachlicher Merksatz':`technischer Schwerpunkt der Szene ${index+1}`;return {id,title:isHook?hook:isPayoff?'Fachlicher Payoff':`Erklärung ${index}`,kicker:isHook?undefined:isPayoff?'Merksatz':'Erklärung',headline:isHook?hook:isPayoff?'Klarer Merksatz ergänzen':'Kurze deutsche Aussage ergänzen',backgroundFamily:`remotion-${stages[index]??'industrial-dark'}`,shotType:cameras[index]??'side',referenceGroup:'remotion-system',visualRecipe:{stage:stages[index]??'industrial-dark',camera:cameras[index]??'side',subject,focus:'eine technische Aussage ohne visuelles Beiwerk',motion:fullIndexes.includes(index)?'process':'subtle',callouts:[]},voiceText:isHook?`${hook} Direkte Antwort in einem kurzen Satz ergänzen.`:'Sprechtext für genau eine technische Aussage ergänzen.',imageDir:`02-bilder/images/${id}`,layout:'image-mechanism',renderMode:'mechanism-only',motionLevel:fullIndexes.includes(index)?'full':'subtle',imageRole:isPayoff?'payoff':'mechanism-plate',mechanism:visualNames[index]??`technical-scene-${number}`,factClaim:'Fachliche Kernaussage ergänzen.',sourceIds:[]};});
-  return {version:'electrical-v8',visualPolicyVersion:'remotion-first-v2',generatedImageTextPolicy:'none',slug,title,coverText:hook,compositionId,fps:30,width:1080,height:1920,minimumWordMatchRatio:.82,animationBudget:{maximum:4,fullMechanismScenes:scenes.filter((scene)=>scene.motionLevel==='full').map((scene)=>scene.id)},scenes};
+const stages=['scientific-dark','laboratory','micro','technical','comparison','material','space','diagram','scientific-dark','laboratory','micro','technical','space','material','comparison','scientific-dark'];
+const cameras=['hero','macro','micro','cutaway','comparison','wide','orbital','cross-section','side','top-down','micro','hero','wide','macro','comparison','hero'];
+
+export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema',hook='Warum passiert das?',compositionId='ScienceReel',sceneCount=10})=>{
+  const scenes=Array.from({length:sceneCount},(_,index)=>{
+    const number=String(index+1).padStart(2,'0');
+    const isHook=index===0;
+    const isPayoff=index===sceneCount-1;
+    const id=isHook?`${number}-hook`:isPayoff?`${number}-payoff`:`${number}-erklaerung`;
+    const stage=stages[index%stages.length];
+    const camera=cameras[index%cameras.length];
+    const subject=isHook?'starkes wissenschaftliches Hauptmotiv zur zentralen Frage':isPayoff?'visueller wissenschaftlicher Merksatz oder Erkenntnis':`wissenschaftliche Kernaussage der Szene ${index+1}`;
+    return {
+      id,
+      title:isHook?hook:isPayoff?'Fachlicher Payoff':`Erklärung ${index}`,
+      kicker:isHook?undefined:isPayoff?'Merksatz':'Wissen',
+      headline:isHook?hook:isPayoff?'Klaren Merksatz ergänzen':'Kurze deutsche Aussage ergänzen',
+      backgroundFamily:`science-${stage}`,
+      shotType:camera,
+      referenceGroup:'science-editorial-v1',
+      visualRecipe:{
+        stage,
+        camera,
+        subject,
+        focus:'genau eine wissenschaftliche Aussage, sofort auf dem Smartphone verständlich',
+        motion:'none',
+        callouts:[]
+      },
+      voiceText:isHook?`${hook} Direkte Antwort in einem kurzen Satz ergänzen.`:'Sprechtext für genau eine wissenschaftliche Aussage ergänzen.',
+      imageDir:`02-bilder/images/${id}`,
+      layout:'image-full',
+      renderMode:'image-only',
+      motionLevel:'none',
+      imageRole:isHook?'hero':isPayoff?'payoff':'concept',
+      factClaim:'Fachliche Kernaussage ergänzen.',
+      sourceIds:[]
+    };
+  });
+
+  return {
+    version:'science-v1',
+    visualPolicyVersion:'science-static-v1',
+    generatedImageTextPolicy:'none',
+    slug,
+    title,
+    coverText:hook,
+    compositionId,
+    fps:30,
+    width:1080,
+    height:1920,
+    minimumWordMatchRatio:.82,
+    scenes
+  };
 };
-export const createElectricalPromptManifestTemplate=(scenePlan)=>({version:'electrical-v8',visualPolicyVersion:'remotion-first-v2',slug:scenePlan.slug,generatedAt:new Date().toISOString(),generatedImageTextPolicy:'none',coverText:scenePlan.coverText,requiredVisibleSceneImages:0,cover:{imageRequired:false,renderMode:'mechanism-only',visualSource:'remotion'},scenes:scenePlan.scenes.map((scene)=>({id:scene.id,imageRequired:false,renderMode:scene.renderMode,motionLevel:scene.motionLevel,visualSource:'remotion',mechanism:scene.mechanism,approved:false}))});
-export const createElectricalStatusTemplate=(scenePlan)=>({status:'preproduction-blocked-until-gates-pass',slug:scenePlan.slug,completed:['folder-structure','remotion-first-v2-template'],open:['research','script','sources','preflight','remotion-visuals','voiceover','captions','render','qa'],requiredVisibleSceneImages:0,optionalPublicImageScenesMaximum:2,nextCommand:'npm run electrical:preflight -- "<reel-ordner>"'});
+
+export const createElectricalPromptManifestTemplate=(scenePlan)=>({
+  version:'science-v1',
+  visualPolicyVersion:'science-static-v1',
+  slug:scenePlan.slug,
+  generatedAt:new Date().toISOString(),
+  generatedImageTextPolicy:'none',
+  coverText:scenePlan.coverText,
+  requiredVisibleSceneImages:scenePlan.scenes.length,
+  cover:{
+    imageRequired:true,
+    sourceSceneId:scenePlan.scenes[0]?.id,
+    candidateCount:3,
+    separateThumbnailForbidden:true,
+    visualSource:'generated-science-image'
+  },
+  scenes:scenePlan.scenes.map((scene,index)=>({
+    id:scene.id,
+    imageRequired:true,
+    renderMode:'image-only',
+    motionLevel:'none',
+    visualSource:'generated-science-image',
+    coverSource:index===0,
+    approved:false
+  }))
+});
+
+export const createElectricalStatusTemplate=(scenePlan)=>({
+  status:'preproduction-blocked-until-gates-pass',
+  slug:scenePlan.slug,
+  completed:['folder-structure','science-static-v1-template'],
+  open:['research','script','sources','image-plan','preflight','images','voiceover','captions','render','qa'],
+  requiredVisibleSceneImages:scenePlan.scenes.length,
+  nextCommand:'npm run electrical:preflight -- "<reel-ordner>"'
+});
