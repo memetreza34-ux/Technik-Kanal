@@ -13,6 +13,7 @@ if (!projectArg) {
 const root = path.resolve(projectArg);
 const paths = electricalProjectPaths(root);
 const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')));
+const scienceStatic = plan.visualPolicyVersion === 'science-static-v1';
 const errors = [];
 const warnings = [];
 
@@ -21,24 +22,23 @@ const normalize = (value) => String(value ?? '')
   .replace(/[„“"'’]/g, '')
   .replace(/\s+/g, ' ')
   .trim();
-
 const wordCount = (value) => String(value ?? '').trim().split(/\s+/).filter(Boolean).length;
-const genericHeadlinePatterns = [
-  /was macht/,
-  /warum /,
-  /so funktioniert/,
-  /das musst du wissen/,
-  /wichtig:/,
-  /merke:/,
-  /einfach erklärt/,
-];
 
 for (const scene of plan.scenes) {
   const annotations = scene.imageAnnotations ?? [];
-  if (scene.renderMode === 'mechanism-only' && annotations.length > 0) {
-    errors.push(`${scene.id}: mechanism-only darf keine eingebrannten Bild-Callouts enthalten.`);
+
+  if (scienceStatic) {
+    if (scene.renderMode !== 'image-only') errors.push(`${scene.id}: Science Static erlaubt nur image-only.`);
+    if (scene.motionLevel !== 'none') errors.push(`${scene.id}: Science Static erlaubt keine Bewegung.`);
+    if (scene.visualRecipe?.motion && scene.visualRecipe.motion !== 'none') errors.push(`${scene.id}: Visual-Rezept verlangt Bewegung.`);
+    if (scene.mechanism) errors.push(`${scene.id}: Mechanismus-Animation ist in Science Static nicht erlaubt.`);
+    if (annotations.length && !scene.overlayJustification) {
+      errors.push(`${scene.id}: statische Textmarkierungen brauchen eine fachliche overlayJustification.`);
+    }
+    if (annotations.length > 2) errors.push(`${scene.id}: maximal zwei gezielte statische Markierungen erlaubt.`);
+  } else if (annotations.length > 3) {
+    errors.push(`${scene.id}: maximal drei Legacy-Callouts erlaubt.`);
   }
-  if (annotations.length > 3) errors.push(`${scene.id}: ${annotations.length} Callouts; maximal 3 erlaubt.`);
 
   const forbiddenSceneTexts = [scene.title, scene.headline, scene.imageLabel, plan.coverText]
     .map(normalize)
@@ -46,22 +46,23 @@ for (const scene of plan.scenes) {
 
   for (const annotation of annotations) {
     const text = normalize(annotation.text);
-    if (wordCount(annotation.text) > 5) errors.push(`${scene.id}: Callout zu lang: „${annotation.text}“`);
-    if (/[?!.]$/.test(String(annotation.text).trim())) errors.push(`${scene.id}: Callout darf kein vollständiger Satz sein: „${annotation.text}“`);
-    if (forbiddenSceneTexts.includes(text)) errors.push(`${scene.id}: Szenenüberschrift wurde als Bild-Callout verwendet: „${annotation.text}“`);
-    if (genericHeadlinePatterns.some((pattern) => pattern.test(text))) errors.push(`${scene.id}: allgemeine Überschrift statt technischer Markierung: „${annotation.text}“`);
+    if (wordCount(annotation.text) > 5) errors.push(`${scene.id}: Markierung zu lang: „${annotation.text}“`);
+    if (/[?!.]$/.test(String(annotation.text).trim())) errors.push(`${scene.id}: Markierung darf kein vollständiger Satz sein: „${annotation.text}“`);
+    if (forbiddenSceneTexts.includes(text)) errors.push(`${scene.id}: Überschrift wurde unnötig als Bildmarkierung wiederholt: „${annotation.text}“`);
   }
 
-  if (scene.renderMode !== 'mechanism-only' && annotations.length === 0) {
-    warnings.push(`${scene.id}: keine Callouts. Das ist erlaubt, wenn das Bild ohne Markierung eindeutig ist.`);
+  if (scienceStatic && annotations.length === 0) {
+    warnings.push(`${scene.id}: keine Markierungen – bevorzugter Standard, wenn das Bild allein verständlich ist.`);
   }
 }
 
 const report = {
-  version: 'visual-v6-callouts',
+  version: scienceStatic ? 'science-static-v1-callouts' : 'legacy-callouts',
   generatedAt: new Date().toISOString(),
   passed: errors.length === 0,
-  rule: 'Cover-Hook und Szenenüberschriften kommen aus Remotion. Im Bild sind nur kurze technische Callouts mit konkretem Ziel erlaubt.',
+  rule: scienceStatic
+    ? 'Das KI-Bild bleibt textfrei. Remotion darf nur kurze, statische und fachlich begründete Markierungen ergänzen; Animation bleibt verboten.'
+    : 'Legacy-Regeln für historische Elektro-Reels.',
   errors,
   warnings,
 };
@@ -73,5 +74,5 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log('✓ Callout-QA bestanden: keine Cover- oder Szenenüberschriften in Bildern.');
+console.log('✓ Science-Static-Callout-QA bestanden.');
 warnings.forEach((warning) => console.log(`Hinweis: ${warning}`));
