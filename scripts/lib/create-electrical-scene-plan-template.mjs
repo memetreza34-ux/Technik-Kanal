@@ -45,6 +45,7 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
     title,
     coverText:hook,
     compositionId,
+    runtimeFile:'science-runtime.json',
     fps:30,
     width:1080,
     height:1920,
