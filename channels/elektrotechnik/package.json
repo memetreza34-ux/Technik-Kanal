@@ -1,12 +1,12 @@
 {
   "name": "@elektrotechnik/channel",
   "private": true,
-  "version": "1.0.0",
-  "description": "Kanal: Elektrotechnik klar — Elektrotechnik verständlich erklärt",
+  "version": "1.1.0",
+  "description": "Faceless-Wissenskanal für Physik, Chemie, Elektrotechnik, Astronomie, Energie und weitere Wissenschaftsthemen",
   "scripts": {
     "studio": "remotion studio src/index.ts",
     "gallery": "remotion studio src/layout-gallery-index.ts",
-    "render": "remotion render src/index.ts SicherungsReel ../../outputs/sicherungs-reel.mp4",
+    "render": "remotion render src/index.ts ScienceReel ../../outputs/science-reel.mp4",
     "check": "tsc --noEmit"
   },
   "dependencies": {
