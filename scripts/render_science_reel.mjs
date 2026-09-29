@@ -17,11 +17,11 @@ if (sourcePlan.compositionId !== 'ScienceReel') throw new Error('Aktive Composit
 if (sourcePlan.runtimeFile !== 'science-runtime.json') throw new Error('Science-Reels müssen science-runtime.json verwenden.');
 
 if (!args.includes('--preflight-passed')) {
-  run(process.execPath, ['scripts/check-electrical-production-readiness.mjs', paths.root], {cwd: repositoryRoot});
+  run(process.execPath, ['scripts/science-readiness.mjs', paths.root], {cwd: repositoryRoot});
 } else {
-  run(process.execPath, ['scripts/check-electrical-required-media.mjs', paths.root], {cwd: repositoryRoot});
-  run(process.execPath, ['scripts/check-electrical-image-appearance.mjs', paths.root], {cwd: repositoryRoot});
-  run(process.execPath, ['scripts/check-electrical-readiness.mjs', paths.root], {cwd: repositoryRoot});
+  run(process.execPath, ['scripts/science-required-media.mjs', paths.root], {cwd: repositoryRoot});
+  run(process.execPath, ['scripts/science-image-qa.mjs', paths.root], {cwd: repositoryRoot});
+  run(process.execPath, ['scripts/science-runtime-readiness.mjs', paths.root], {cwd: repositoryRoot});
 }
 
 const prepareArgs = ['scripts/prepare_science_reel.mjs', paths.root, '--readiness-passed'];
@@ -37,18 +37,8 @@ run('npm', ['run', 'check'], {cwd: repositoryRoot});
 ensureDirectory(paths.exportDir);
 const output = path.join(paths.exportDir, `${runtime.slug}.mp4`);
 const npx = process.platform === 'win32' ? 'npx.cmd' : 'npx';
-run(npx, [
-  'remotion', 'render',
-  'src/index.ts',
-  'ScienceReel',
-  output,
-  '--codec=h264',
-  '--audio-codec=aac',
-  '--audio-bitrate=192k',
-  '--pixel-format=yuv420p',
-  '--crf=18',
-], {cwd: channelRoot});
+run(npx, ['remotion','render','src/index.ts','ScienceReel',output,'--codec=h264','--audio-codec=aac','--audio-bitrate=192k','--pixel-format=yuv420p','--crf=18'], {cwd: channelRoot});
 
 if (!fs.existsSync(output)) throw new Error(`Render wurde nicht erzeugt: ${output}`);
-run(process.execPath, ['scripts/qa_electrical_render.mjs', paths.root, `--video=${output}`], {cwd: repositoryRoot});
+run(process.execPath, ['scripts/qa_science_render.mjs', paths.root, `--video=${output}`], {cwd: repositoryRoot});
 console.log(`✓ Finaler Science-Static-Arbeitsrender: ${output}`);

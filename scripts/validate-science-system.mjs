@@ -16,8 +16,6 @@ const required = [
   'channels/science/gehirn/SCIENCE-VISUAL-GRAMMAR.md',
   'channels/science/gehirn/MASTER-STYLE-PROMPT.md',
   'channels/science/gehirn/IMAGE-PROMPT-TEMPLATE.md',
-  'channels/science/remotion.config.ts',
-  'channels/science/public/ASSETS.md',
   'channels/science/public/smoke/science-static-smoke.svg',
   'channels/science/src/index.ts',
   'channels/science/src/ScienceRoot.tsx',
@@ -31,19 +29,28 @@ const required = [
   'core/brand-kit/components/Sound.tsx',
   'scripts/new-science-reel.mjs',
   'scripts/safe-new-science-reel.mjs',
+  'scripts/science-preflight.mjs',
+  'scripts/science-readiness.mjs',
+  'scripts/science-runtime-readiness.mjs',
+  'scripts/science-required-media.mjs',
+  'scripts/science-image-qa.mjs',
+  'scripts/science-static-quality.mjs',
+  'scripts/science-overlay-qa.mjs',
+  'scripts/science-content-package.mjs',
+  'scripts/science-script-qa.mjs',
+  'scripts/science-creative-qa.mjs',
   'scripts/prepare_science_reel.mjs',
   'scripts/render_science_reel.mjs',
   'scripts/finish_science_reel.mjs',
-  'scripts/process_voiceover.mjs',
-  'scripts/check-electrical-preproduction.mjs',
-  'scripts/check-electrical-production-readiness.mjs',
-  'scripts/check-electrical-required-media.mjs',
-  'scripts/check-electrical-image-appearance.mjs',
-  'scripts/check-electrical-remotion-quality.mjs',
-  'scripts/check-electrical-callouts.mjs',
-  'scripts/qa_electrical_render.mjs',
-  'scripts/test-electrical-visual-policy.mjs',
-  'scripts/test-electrical-e2e.mjs'
+  'scripts/qa_science_render.mjs',
+  'scripts/validate-science-project.mjs',
+  'scripts/validate-science-syntax.mjs',
+  'scripts/validate-science-system.mjs',
+  'scripts/validate-science-template.mjs',
+  'scripts/validate-science-consistency.mjs',
+  'scripts/test-science-visual-policy.mjs',
+  'scripts/test-science-e2e.mjs',
+  'scripts/test-science-scaffold.mjs'
 ];
 
 const forbidden = [
@@ -61,12 +68,25 @@ const forbidden = [
   'scripts/safe-new-electrical-week-reel.mjs',
   'scripts/render_electrical_reel.mjs',
   'scripts/finish_electrical_reel.mjs',
-  'scripts/materialize-electrical-mechanism-canvases.mjs',
-  'scripts/cleanup-electrical-mechanism-canvases.mjs',
-  'scripts/bake-electrical-image-labels.mjs',
-  'scripts/search-electrical-public-media.mjs',
-  'scripts/fetch-electrical-public-media.mjs',
-  'scripts/approve-electrical-public-media.mjs'
+  'scripts/check-electrical-preproduction.mjs',
+  'scripts/check-electrical-production-readiness.mjs',
+  'scripts/check-electrical-required-media.mjs',
+  'scripts/check-electrical-image-appearance.mjs',
+  'scripts/check-electrical-remotion-quality.mjs',
+  'scripts/check-electrical-callouts.mjs',
+  'scripts/check-electrical-content-package.mjs',
+  'scripts/check-electrical-readiness.mjs',
+  'scripts/run-electrical-script-qa.mjs',
+  'scripts/run-electrical-creative-qa.mjs',
+  'scripts/qa_electrical_render.mjs',
+  'scripts/validate-electrical-project.mjs',
+  'scripts/validate-electrical-syntax.mjs',
+  'scripts/validate-electrical-system.mjs',
+  'scripts/validate-electrical-template.mjs',
+  'scripts/validate-electrical-consistency.mjs',
+  'scripts/test-electrical-visual-policy.mjs',
+  'scripts/test-electrical-e2e.mjs',
+  'scripts/test-electrical-scaffold-transaction.mjs'
 ];
 
 const missing = required.filter((relative) => !fs.existsSync(path.join(root, relative)));
@@ -77,7 +97,7 @@ if (missing.length || legacy.length) {
     missing.forEach((file) => console.error(`- fehlt: ${file}`));
   }
   if (legacy.length) {
-    console.error('Veralteter Bestand im aktiven Repo:');
+    console.error('Veralteter Einstiegspunkt im Repo:');
     legacy.forEach((file) => console.error(`- entfernen: ${file}`));
   }
   process.exit(1);

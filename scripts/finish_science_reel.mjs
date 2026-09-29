@@ -11,7 +11,7 @@ if (!projectArg) {
 }
 
 const paths = projectPaths(projectArg);
-run(process.execPath, ['scripts/check-electrical-production-readiness.mjs', paths.root], {cwd: repositoryRoot});
+run(process.execPath, ['scripts/science-readiness.mjs', paths.root], {cwd: repositoryRoot});
 
 const whisperCandidates = [
   process.env.WHISPER_CPP_BIN,
@@ -27,7 +27,6 @@ if (!whisperCandidates.some((candidate) => fs.existsSync(candidate)) || !fs.exis
 }
 
 run(process.execPath, ['scripts/render_science_reel.mjs', paths.root, '--force-transcribe', '--preflight-passed'], {cwd: repositoryRoot});
-
 console.log('\n=== SCIENCE-PRODUKTION ABGESCHLOSSEN ===');
 console.log(`Reel-Ordner: ${paths.root}`);
 console.log('Kontaktbogen, Szenen-Stills und vollständiges MP4 fachlich und visuell prüfen.');

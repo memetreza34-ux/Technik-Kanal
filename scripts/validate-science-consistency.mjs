@@ -11,7 +11,7 @@ const voice = JSON.parse(fs.readFileSync(path.join(root, 'channels/science/engin
 const scienceReel = fs.readFileSync(path.join(root, 'channels/science/src/ScienceReel.tsx'), 'utf8');
 const template = fs.readFileSync(path.join(root, 'scripts/lib/create-electrical-scene-plan-template.mjs'), 'utf8');
 const processVoice = fs.readFileSync(path.join(root, 'scripts/process_voiceover.mjs'), 'utf8');
-const renderQa = fs.readFileSync(path.join(root, 'scripts/qa_electrical_render.mjs'), 'utf8');
+const renderQa = fs.readFileSync(path.join(root, 'scripts/qa_science_render.mjs'), 'utf8');
 const errors = [];
 
 if (config.version !== 'science-v1') errors.push('Aktive Konfiguration muss science-v1 sein.');
