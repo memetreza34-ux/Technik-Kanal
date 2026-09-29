@@ -5,10 +5,11 @@ Vor Änderungen zuerst lesen:
 1. `gehirn/KANAL.md`
 2. `gehirn/REELS.md`
 3. `gehirn/BILDSTIL.md`
-4. `gehirn/MASTER-STYLE-PROMPT.md`
-5. `engine/config/science-v1.json`
-6. `skills/reel-fertigstellen.md`
-7. den aktuellen Reel-Ordner
+4. `gehirn/SCIENCE-VISUAL-GRAMMAR.md`
+5. `gehirn/MASTER-STYLE-PROMPT.md`
+6. `engine/config/science-v1.json`
+7. `skills/reel-fertigstellen.md`
+8. den aktuellen Reel-Ordner
 
 ## Kanalrichtung
 
@@ -50,6 +51,8 @@ Verbindlicher Stil: `Cinematic Scientific 3D Editorial`.
 - keine überladenen Schaubilder
 - keine KI-Schrift
 - gleiche visuelle DNA über Physik, Chemie, Elektrotechnik, Astronomie und weitere Wissenschaftsthemen
+- Fachgebiet-spezifische Darstellungsregeln aus `SCIENCE-VISUAL-GRAMMAR.md` sind verbindlich
+- wenn eine Aussage als statisches Bild nicht verständlich wird, muss die Bildplanung geändert oder die Aussage in mehrere Beats geteilt werden; Remotion darf das Problem nicht durch Bewegung lösen
 
 ## Remotion – harte Grenze
 
