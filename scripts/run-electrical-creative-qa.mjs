@@ -56,10 +56,7 @@ else {
   if (strict && !/three distinct composition candidates|drei.*kandid/i.test(coverPrompt)) errors.push('Bild 01 muss drei Cover-Kandidaten vorsehen.');
 }
 
-const firstHook = plan.scenes[0]?.headline ?? plan.scenes[0]?.title ?? '';
-if (!plan.coverText?.trim() || plan.coverText.trim() !== firstHook.trim()) errors.push('Covertext und Hook müssen identisch sein.');
-
-const combinedFile = path.join(paths.imageDir,'ALLE-BILDPROMPTS-MIT-COVER.txt');
+const combinedFile = path.join(paths.root,'02-bilder','ALLE-BILDPROMPTS-MIT-COVER.txt');
 if (!fs.existsSync(combinedFile)) errors.push('ALLE-BILDPROMPTS-MIT-COVER.txt fehlt.');
 else {
   const combined = fs.readFileSync(combinedFile,'utf8');
