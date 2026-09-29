@@ -4,7 +4,7 @@ import path from 'node:path';
 import {ScenePlan} from './lib/electrical-contracts.mjs';
 import {electricalProjectPaths} from './lib/electrical-project-structure.mjs';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
-import {evaluateElectricalVisualPolicy} from './lib/electrical-visual-policy.mjs';
+import {evaluateScienceVisualPolicy} from './lib/science-visual-policy.mjs';
 
 const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
 if (!projectArg) throw new Error('Nutzung: npm run science:creative-qa -- <reel-ordner>');
@@ -39,7 +39,7 @@ for (const scene of plan.scenes) {
 }
 
 const promptManifest = fs.existsSync(paths.promptManifest) ? JSON.parse(fs.readFileSync(paths.promptManifest,'utf8')) : null;
-const policy = evaluateElectricalVisualPolicy({plan,config,promptFiles,promptManifest});
+const policy = evaluateScienceVisualPolicy({plan,config,promptFiles,promptManifest});
 errors.push(...policy.errors);
 warnings.push(...policy.warnings);
 
