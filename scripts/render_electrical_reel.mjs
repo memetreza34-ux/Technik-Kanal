@@ -18,6 +18,7 @@ if (!args.includes('--preflight-passed')) {
   run(process.execPath, ['scripts/check-electrical-production-readiness.mjs', paths.root], {cwd: repositoryRoot});
 } else {
   run(process.execPath, ['scripts/check-electrical-required-media.mjs', paths.root], {cwd: repositoryRoot});
+  run(process.execPath, ['scripts/check-electrical-image-appearance.mjs', paths.root], {cwd: repositoryRoot});
   run(process.execPath, ['scripts/check-electrical-readiness.mjs', paths.root], {cwd: repositoryRoot});
 }
 
