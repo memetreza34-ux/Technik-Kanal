@@ -6,7 +6,7 @@ import {electricalProjectPaths} from './lib/electrical-project-structure.mjs';
 
 const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
 if (!projectArg) {
-  console.error('Nutzung: node scripts/check-electrical-content-package.mjs <reel-ordner>');
+  console.error('Nutzung: npm run science:preflight -- <reel-ordner>');
   process.exit(1);
 }
 
@@ -25,7 +25,7 @@ for (const [label, file] of [
   ['Lernzettel', paths.learningSheet],
   ['Quellen', paths.sources],
   ['Storyboard', paths.storyboard],
-  ['Motion Design', paths.motionDesign],
+  ['Static Edit Contract', paths.motionDesign],
 ]) {
   if (!read(file)) errors.push(`${label} fehlt oder ist leer: ${file}`);
 }
@@ -44,26 +44,42 @@ if (plan) {
   if (promptFiles.length < plan.scenes.length + 1) {
     errors.push(`Zu wenige Einzelprompts: ${promptFiles.length}; erwartet Cover plus ${plan.scenes.length} Szenen.`);
   }
+
   const sourceText = read(paths.sources).toLowerCase();
   for (const scene of plan.scenes) {
     if (scene.factClaim && (!scene.sourceIds || scene.sourceIds.length === 0)) {
       errors.push(`Szene ${scene.id} enthält eine Faktenaussage ohne sourceIds.`);
     }
     for (const sourceId of scene.sourceIds ?? []) {
-      if (!sourceText.includes(sourceId.toLowerCase())) warnings.push(`Quellen-ID ${sourceId} aus Szene ${scene.id} steht nicht sichtbar in sources.md.`);
+      if (!sourceText.includes(sourceId.toLowerCase())) {
+        errors.push(`Quellen-ID ${sourceId} aus Szene ${scene.id} fehlt in sources.md.`);
+      }
     }
   }
-  if (plan.visualPolicyVersion === 'visual-v2') {
-    if (!fs.existsSync(paths.visualPolicy)) errors.push('visual-policy.json fehlt für visual-v2.');
-    if (plan.generatedImageTextPolicy !== 'none') errors.push('Szenenplan erlaubt sichtbaren KI-Text; erforderlich ist "none".');
+
+  if (plan.visualPolicyVersion === 'science-static-v1') {
+    if (!fs.existsSync(paths.visualPolicy)) errors.push('visual-policy.json fehlt für science-static-v1.');
+    if (plan.generatedImageTextPolicy !== 'none') errors.push('Szenenplan muss sichtbaren KI-Text mit "none" verbieten.');
+    if (plan.compositionId !== 'ScienceReel') errors.push('Science Static muss die Composition ScienceReel verwenden.');
+    if (plan.scenes.some((scene) => scene.renderMode !== 'image-only')) errors.push('Science Static erlaubt nur image-only-Szenen.');
+    if (plan.scenes.some((scene) => scene.motionLevel !== 'none')) errors.push('Science Static erlaubt keine Szenenbewegung.');
+    if (plan.scenes.some((scene) => scene.visualRecipe?.motion !== 'none')) errors.push('Science Static erlaubt keine Motion-Anforderung im Visual-Rezept.');
+
     const manifest = read(paths.promptManifest) ? JSON.parse(read(paths.promptManifest)) : null;
     if (!manifest) errors.push('Prompt-Manifest fehlt.');
-    else if (manifest.generatedImageTextPolicy !== 'none') errors.push('Prompt-Manifest muss generierte Bildtexte verbieten.');
+    else {
+      if (manifest.generatedImageTextPolicy !== 'none') errors.push('Prompt-Manifest muss generierte Bildtexte verbieten.');
+      if (manifest.visualPolicyVersion !== 'science-static-v1') errors.push('Prompt-Manifest verwendet nicht science-static-v1.');
+      if (manifest.requiredVisibleSceneImages !== plan.scenes.length) errors.push('Prompt-Manifest muss für jede Szene ein sichtbares Bild verlangen.');
+      if (manifest.cover?.sourceSceneId !== plan.scenes[0]?.id) errors.push('Cover muss aus Bild 01 / Szene 01 stammen.');
+      if (manifest.cover?.candidateCount !== 3) errors.push('Für Bild 01 müssen drei Cover-Kandidaten vorgesehen sein.');
+      if (manifest.cover?.separateThumbnailForbidden !== true) errors.push('Separates Thumbnail-System muss verboten sein.');
+    }
   }
 }
 
 const report = {
-  version: 'electrical-v2',
+  version: 'science-v1',
   generatedAt: new Date().toISOString(),
   passed: errors.length === 0,
   errors,
@@ -72,9 +88,9 @@ const report = {
 fs.writeFileSync(paths.contentReport, `${JSON.stringify(report, null, 2)}\n`);
 
 if (errors.length) {
-  console.error('Content-Paket unvollständig:');
+  console.error('Science-Inhaltspaket unvollständig:');
   errors.forEach((error) => console.error(`- ${error}`));
   process.exit(1);
 }
-console.log('✓ Inhaltspaket vollständig.');
+console.log('✓ Science-Inhaltspaket vollständig.');
 warnings.forEach((warning) => console.warn(`⚠ ${warning}`));
