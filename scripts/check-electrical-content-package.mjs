@@ -61,6 +61,7 @@ if (plan) {
     if (!fs.existsSync(paths.visualPolicy)) errors.push('visual-policy.json fehlt für science-static-v1.');
     if (plan.generatedImageTextPolicy !== 'none') errors.push('Szenenplan muss sichtbaren KI-Text mit "none" verbieten.');
     if (plan.compositionId !== 'ScienceReel') errors.push('Science Static muss die Composition ScienceReel verwenden.');
+    if (plan.runtimeFile !== 'science-runtime.json') errors.push('Science Static muss die getrennte Runtime science-runtime.json verwenden.');
     if (plan.scenes.some((scene) => scene.renderMode !== 'image-only')) errors.push('Science Static erlaubt nur image-only-Szenen.');
     if (plan.scenes.some((scene) => scene.motionLevel !== 'none')) errors.push('Science Static erlaubt keine Szenenbewegung.');
     if (plan.scenes.some((scene) => scene.visualRecipe?.motion !== 'none')) errors.push('Science Static erlaubt keine Motion-Anforderung im Visual-Rezept.');
