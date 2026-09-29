@@ -11,8 +11,10 @@ Thema
 → Recherche + Quellen
 → deutsches Skript
 → Szenen-/Bildplanung
+→ Preflight
 → Cinematic Scientific 3D Editorial Bilder
 → Voice-over
+→ Asset-Readiness
 → lokale Wort-Zeitstempel
 → robuste Skript-/Voice-Ausrichtung
 → statische Bildmontage
@@ -74,21 +76,41 @@ npm run science:new -- \
 
 Die Szenenzahl ist ein Startwert und darf je nach Inhalt zwischen 6 und 16 visuellen Beats liegen.
 
-## Preflight
+## Preflight – vor Bildern und Voice
 
 ```bash
 npm run science:preflight -- "<reel-ordner>"
 ```
 
-Der Preflight blockiert unter anderem:
+Der Preflight prüft und blockiert unter anderem:
 
 - Platzhalter im Skript oder in Prompts
-- fehlende Quellen
-- sichtbaren KI-Text
-- fehlende Szenenbilder
-- unzulässige Animationen
-- Mechanismus-Szenen
+- fehlende oder nicht zugeordnete Quellen
+- widersprüchliche Bildplanung
+- sichtbaren KI-Text als geplante Bildanforderung
+- unzulässige Animations-/Mechanismusregeln
 - Motion-Level ungleich `none`
+- unvollständiges Inhaltspaket
+
+**Finale Szenenbilder und Voice sind beim Preflight noch nicht erforderlich.** Sie werden erst nach bestandenem Preflight produziert.
+
+## Asset-Readiness – nach Bildern und Voice
+
+```bash
+npm run science:ready -- "<reel-ordner>"
+```
+
+Readiness verlangt:
+
+- Roh- oder Final-Voice
+- genau ein freigegebenes Szenenbild pro Beat
+- Bild 01 als Coverquelle
+- passende Auflösung und 9:16-Format
+- keine doppelten Bilder
+- bestandene Bilddarstellungs-QA
+- alle zuvor bestandenen Preflight-Berichte
+
+Öffentliche Medien werden nicht automatisch als Ersatz für fehlende Szenenbilder geladen.
 
 ## Fertigstellen
 
@@ -96,8 +118,18 @@ Der Preflight blockiert unter anderem:
 npm run science:finish -- "<reel-ordner>"
 ```
 
-Die Pipeline verarbeitet die Voice auf 1,10×, erstellt lokale Wortzeiten, synchronisiert die statischen Bilder, erzeugt Untertitel, rendert das MP4 und erstellt technische Kontrollbilder.
+Die Pipeline verarbeitet die Voice auf exakt 1,10× und normalisiert die Lautheit, erstellt lokale Wortzeiten, synchronisiert die statischen Bilder, erzeugt Untertitel, rendert das MP4 und führt technische Render-QA inklusive Lautheit, Randstille, Schwarzbildprüfung und Szenen-Kontrollbildern aus.
 
-## Migration
+## Referenzprojekt
 
-Die bisherigen Elektrotechnik-Reels und spezialisierten Remotion-Animationen bleiben vorerst als Legacy-Referenz im Repository. Neue Produktionen verwenden `ScienceReel` und `science-static-v1`.
+Das erste Science-Static-Referenzprojekt liegt unter:
+
+`channels/elektrotechnik/reels/2026-09-28_bis_2026-10-04/01_Warum-ist-der-Himmel-blau/`
+
+Es zeigt den verbindlichen Aufbau für Recherche, Quellen-IDs, Script, 9 statische Bildbeats, Prompts, Scene-Plan und Prompt-Manifest.
+
+## Migration / Legacy
+
+Siehe `channels/elektrotechnik/LEGACY.md`.
+
+Die bisherigen Elektrotechnik-Reels und spezialisierten Remotion-Animationen bleiben vorerst nur zur Reproduzierbarkeit alter Produktionen erhalten. Neue Produktionen verwenden ausschließlich `ScienceReel`, `science-static-v1` und die `science:*`-Befehle.
