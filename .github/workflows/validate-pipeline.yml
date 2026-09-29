@@ -1,4 +1,4 @@
-name: Validate Elektrotechnik System
+name: Validate Science Channel
 
 on:
   pull_request:
@@ -7,31 +7,82 @@ on:
       - main
 
 jobs:
-  validate:
+  contracts:
+    name: Contracts and policy
     runs-on: ubuntu-latest
     timeout-minutes: 20
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-
       - name: Install dependencies
         run: npm install
+      - name: Node script syntax
+        run: npm run validate:electrical-syntax
+      - name: Reel folder contract
+        run: npm run validate:electrical-template
+      - name: System structure
+        run: npm run validate:electrical-system
+      - name: Science configuration consistency
+        run: npm run validate:electrical-consistency
+      - name: Science Static visual policy
+        run: npm run validate:electrical-visual-policy
 
-      - name: Full system validation
-        run: npm test
+  types-and-unit:
+    name: TypeScript and unit tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm install
+      - name: TypeScript
+        run: npm run typecheck
+      - name: Vitest
+        run: npx vitest run
 
+  pipeline-contracts:
+    name: Scaffold and E2E
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm install
       - name: Scaffold transaction
         run: npm run electrical:scaffold-test
-
       - name: E2E contracts
         run: npm run electrical:e2e
 
+  remotion-smoke:
+    name: Remotion smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm install
       - name: Remotion smoke still
         run: npm run smoke
