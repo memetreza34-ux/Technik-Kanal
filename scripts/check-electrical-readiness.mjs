@@ -41,6 +41,7 @@ if (!fs.existsSync(paths.captionsFinal)) warnings.push('Finale Caption-JSON fehl
 if (plan) {
   if (plan.visualPolicyVersion !== config.visuals.policyVersion) errors.push(`Aktiver Szenenplan muss ${config.visuals.policyVersion} verwenden.`);
   if (plan.compositionId !== 'ScienceReel') errors.push('Aktive Science-Produktion muss ScienceReel verwenden.');
+  if (plan.runtimeFile !== 'science-runtime.json') errors.push('Aktive Science-Produktion muss die getrennte science-runtime.json verwenden.');
   if (plan.width !== config.format.width || plan.height !== config.format.height || plan.fps !== config.format.fps) {
     errors.push(`Format im Szenenplan muss ${config.format.width}×${config.format.height} bei ${config.format.fps} FPS sein.`);
   }
