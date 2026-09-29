@@ -32,7 +32,8 @@ const previousGenericRuntime = fs.existsSync(genericRuntimePath) ? fs.readFileSy
 let restoreGenericRuntime = false;
 
 try {
-  const prepareArgs = ['scripts/prepare_electrical_reel.mjs', paths.root];
+  const prepareScript = scienceStatic ? 'scripts/prepare_science_reel.mjs' : 'scripts/prepare_electrical_reel.mjs';
+  const prepareArgs = [prepareScript, paths.root];
   if (args.includes('--force-transcribe')) prepareArgs.push('--force-transcribe');
   run(process.execPath, prepareArgs, {cwd: repositoryRoot});
 
