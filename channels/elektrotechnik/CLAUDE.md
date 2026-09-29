@@ -1,4 +1,4 @@
-# Elektrotechnik – Arbeitsregeln
+# Wissenschaftskanal – Arbeitsregeln
 
 Vor Änderungen zuerst lesen:
 
@@ -6,68 +6,85 @@ Vor Änderungen zuerst lesen:
 2. `gehirn/REELS.md`
 3. `gehirn/BILDSTIL.md`
 4. `gehirn/MASTER-STYLE-PROMPT.md`
-5. `engine/VISUAL-QUALITY-GATE.md`
-6. `engine/config/electrical-v1.json`
-7. `engine/config/voice-v1.json`
-8. `src/animation-library/CATALOG.md`
-9. `skills/reel-fertigstellen.md`
-10. den aktuellen Reel-Ordner
+5. `engine/config/electrical-v1.json` – Legacy-Pfad, während der Migration nur noch technische Pipeline-Quelle
+6. `skills/reel-fertigstellen.md`
+7. den aktuellen Reel-Ordner
 
-## Struktur
+## Kanalrichtung
 
-FinanzNeo-Struktur funktional beibehalten. Vorhandene Core-, Engine-, Script- und Bibliotheksbausteine erweitern statt Einmallösungen zu bauen.
+Dies ist kein reiner Elektrotechnik-Kanal mehr. Der Kanal behandelt allgemein verständliche Wissenschafts- und Bildungsthemen, insbesondere Physik, Chemie, Elektrotechnik, Astronomie, Energie und verwandte Technikthemen.
+
+Elektrotechnik-spezifische Regeln dürfen nur für Elektro-Themen gelten und niemals die globale Kanalidentität bestimmen.
 
 ## Inhalt und Sicherheit
 
-- Fachliche Aussagen mit stabilen Quellen-IDs dokumentieren.
-- Normen, Grenzwerte und Sicherheitsregeln nie ohne Quelle behaupten.
-- Keine Anleitung zum Arbeiten an Netzspannung.
-- Kein Überbrücken oder Manipulieren von Schutzgeräten.
-- Ein Reel vollständig abschließen, bevor der nächste produziert wird.
+- fachliche Aussagen mit stabilen Quellen-IDs dokumentieren
+- Normen, Grenzwerte und aktuelle Regeln nie ohne Quelle behaupten
+- keine gefährlichen Experimente oder riskanten Handlungsanweisungen
+- keine Anleitung zu Arbeiten an Netzspannung
+- keine Manipulation oder Überbrückung von Schutzgeräten
+- chemische, physikalische oder elektrische Gefahren nur erklärend und sicher darstellen
 
 ## Sprache
 
-- Voice-over, Untertitel, Headlines, Covertexte und CTAs sind Deutsch.
-- Bildprompts dürfen Englisch sein.
-- Generierte Bilder enthalten keinerlei sichtbaren Text, Labels, Zahlen oder Typenschilder.
-- Alle sichtbaren Informationen werden kontrolliert in Remotion gesetzt.
+- Voice-over, Untertitel, Headlines und kontrollierte Overlays sind Deutsch
+- Bildprompts dürfen Englisch sein
+- generierte Bilder enthalten keinerlei sichtbaren Text, Labels, Zahlen, Einheiten, Logos oder Typenschilder
+- alle notwendigen sichtbaren Informationen werden kontrolliert nach der Bildgenerierung gesetzt
 
 ## Hook
 
-- direkte zentrale Frage mit maximal acht Wörtern
+- direkte zentrale Frage
+- kurz und verständlich
 - keine künstliche Metapher
-- Frage auch im gesprochenen ersten Satz
-- erster Frame: starkes Bild und Headline, niemals Vollanimation
+- der erste gesprochene Satz stellt die Kernfrage
+- Bild 01 trägt gleichzeitig Hook-Szene und Cover-Hintergrund
 
-## Bilder und Animationen
+## Bildwelt
 
-- Bildqualität vor Animationsmenge.
-- Normalerweise ein bis drei, maximal vier Vollanimationen.
-- Keine zwei Vollanimationen direkt hintereinander.
-- Bildgeführte Szenen verwenden `image-only` und subtile Bewegung.
-- Vollanimationen verwenden bevorzugt `mechanism-only`; das KI-Bild wird dabei ausgeblendet.
-- `image-with-overlay` ist die Ausnahme und benötigt eine konkrete `overlayJustification`.
-- Eine Animation muss einen Ablauf erklären; Dekoration wird entfernt.
+Verbindlicher Stil: `Cinematic Scientific 3D Editorial`.
 
-## Preproduction – zwingend vor Bildern und Audio
+- ein Hauptmotiv pro Bild
+- eine zentrale Aussage pro Bild
+- adaptive Bildanzahl statt fester Szenenzahl
+- keine überladenen Schaubilder
+- keine KI-Schrift
+- gleiche visuelle DNA über Physik, Chemie, Elektrotechnik, Astronomie und weitere Wissenschaftsthemen
 
-```bash
-npm run electrical:preflight -- "<reel-ordner>"
-```
+## Remotion – harte Grenze
 
-Solange `06-projektdateien/preproduction-report.json` nicht `passed: true` enthält, dürfen keine Bilder, Voice-Aufnahmen oder Vollproduktionen erstellt werden.
+Remotion ist ausschließlich technische Montage- und Export-Schicht.
 
-## Produktion
+Remotion darf NICHT:
 
-- Voice-over exakt auf 1,10×, Tonhöhe erhalten.
-- Finales Audio ist die verbindliche Zeitquelle.
-- lokale Wortzeiten mit `whisper.cpp`.
-- Szenen, Bilder, Animationen, Untertitel und SFX verwenden dieselbe Zeitbasis.
-- Untertitel weiß, ohne Box, ohne gelbe Markierung, maximal zwei Zeilen.
+- zoomen
+- schwenken
+- rotieren
+- parallaxen
+- Ken-Burns-Bewegung erzeugen
+- Partikel erzeugen
+- Feldlinien, Strompfade, Moleküle oder Bauteile animieren
+- Diagramme animieren
+- neue technische Visualisierungen erzeugen
+- automatische Crossfades oder dekorative Übergänge erzeugen
 
-```bash
-npm run electrical:ready -- "<reel-ordner>"
-npm run electrical:finish -- "<reel-ordner>"
-```
+Remotion darf nur:
 
-Codex muss bei einem Gate-Fehler stoppen, die Ursache korrigieren und denselben Gate-Befehl erneut ausführen.
+- statische Bilder zeitlich anordnen
+- harte Schnitte setzen
+- Voice-over abspielen
+- Untertitel anzeigen
+- statische Overlays anzeigen
+- optionale SFX platzieren
+- rendern
+
+## Audio und Synchronisation
+
+- finale Voice ist die Zeitquelle
+- lokale Wortzeiten mit `whisper.cpp`
+- Skript und Transkript werden robust gegeneinander ausgerichtet
+- Bildwechsel, Untertitel und SFX verwenden dieselbe Zeitbasis
+
+## Produktionsregel
+
+Erst Recherche, Skript, Bildplan und Preflight abschließen. Danach Bilder und Voice erstellen. Keine Animationen als Ersatz für fehlende oder schwache Bildplanung verwenden.
