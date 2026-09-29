@@ -18,8 +18,6 @@ const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')
 const voice = findVoiceFiles(paths.audioDir);
 if (!voice.raw && !voice.final) errors.push(`Keine Roh- oder Finalaufnahme in ${paths.audioDir}.`);
 
-const scienceStatic = plan.visualPolicyVersion === config.visuals.policyVersion;
-const imageScenes = plan.scenes.filter((scene) => (scene.renderMode ?? 'image-only') === 'image-only');
 const seen = new Map();
 const selectedImages = [];
 const approvedPattern = /(?:final|approved|freigabe)/i;
@@ -34,7 +32,7 @@ const validateImage = (file, label) => {
   seen.set(digest, label);
 };
 
-for (const scene of imageScenes) {
+for (const scene of plan.scenes) {
   const dir = path.resolve(root, scene.imageDir);
   const images = findMedia(dir, imageExtensions).filter((file) => !path.basename(file).startsWith('.generated-'));
   if (!images.length) {
@@ -44,11 +42,9 @@ for (const scene of imageScenes) {
 
   const approved = images.filter((file) => approvedPattern.test(path.basename(file)));
   let selected;
-  if (images.length === 1) {
-    selected = images[0];
-  } else if (approved.length === 1) {
-    selected = approved[0];
-  } else if (approved.length === 0) {
+  if (images.length === 1) selected = images[0];
+  else if (approved.length === 1) selected = approved[0];
+  else if (approved.length === 0) {
     errors.push(`${scene.id}: ${images.length} Bildkandidaten vorhanden, aber keiner ist als final/approved/freigabe markiert.`);
     continue;
   } else {
@@ -60,35 +56,29 @@ for (const scene of imageScenes) {
   selectedImages.push({sceneId: scene.id, file: path.relative(root, selected).split(path.sep).join('/'), candidateCount: images.length});
 }
 
-if (scienceStatic) {
-  if (imageScenes.length !== plan.scenes.length) errors.push('Science Static benötigt für jede Szene genau ein sichtbares Szenenbild.');
-  if (plan.scenes[0] && !imageScenes.some((scene) => scene.id === plan.scenes[0].id)) errors.push('Bild 01 muss die erste Szene und gleichzeitig die Cover-Quelle sein.');
-  if (selectedImages.length !== plan.scenes.length && errors.length === 0) errors.push('Nicht für jede Science-Szene wurde genau ein finales Bild ausgewählt.');
-} else {
-  warnings.push(`Legacy-Projekt ${plan.visualPolicyVersion ?? 'unbekannt'}: Science-Static-Pflichtmedienregeln werden nicht vollständig angewendet.`);
-}
+if (selectedImages.length !== plan.scenes.length && errors.length === 0) errors.push('Nicht für jede Science-Szene wurde genau ein finales Bild ausgewählt.');
 
 const invalidSfx = findMedia(paths.sfxDir, new Set([...audioExtensions])).filter((file) => fs.statSync(file).size === 0);
 invalidSfx.forEach((file) => warnings.push(`Leere SFX-Datei: ${file}`));
 
 const report = {
-  version:'science-static-v1',
-  generatedAt:new Date().toISOString(),
-  passed:errors.length===0,
-  productionMode:scienceStatic?'science-static':'legacy',
-  requiredSceneImages:imageScenes.length,
+  version: 'science-static-v1',
+  generatedAt: new Date().toISOString(),
+  passed: errors.length === 0,
+  productionMode: 'science-static',
+  requiredSceneImages: plan.scenes.length,
   selectedImages,
-  separateCoverRequired:false,
-  coverSourceScene:plan.scenes[0]?.id ?? null,
+  separateCoverRequired: false,
+  coverSourceScene: plan.scenes[0]?.id ?? null,
   errors,
-  warnings
+  warnings,
 };
 fs.writeFileSync(path.join(paths.projectDir, 'required-media-report.json'), `${JSON.stringify(report, null, 2)}\n`);
 
 if (errors.length) {
-  console.error('Pflichtmedien nicht bereit:');
+  console.error('Science-Pflichtmedien nicht bereit:');
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Pflichtmedien vollständig: Voice-over + ${selectedImages.length} eindeutig ausgewählte statische Szenenbilder; Bild 01 ist Cover-Quelle.`);
+console.log(`✓ Science-Pflichtmedien vollständig: Voice-over + ${selectedImages.length} eindeutig ausgewählte statische Szenenbilder; Bild 01 ist Cover-Quelle.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
