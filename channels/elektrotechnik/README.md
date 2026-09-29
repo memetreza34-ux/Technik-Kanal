@@ -1,29 +1,59 @@
-# Elektrotechnik
+# Wissenschafts- und Bildungskanal
 
-Deutschsprachiger Faceless-Lernkanal für Elektrotechnik, Elektronik, Mess- und Steuerungstechnik.
+Deutschsprachiger Faceless-Kanal für verständlich erklärte Wissenschaft und Technik.
 
-## Aktiver Reel
+## Themen
 
-`reels/2026-08-03_bis_2026-08-09/05_Was-macht-ein-Leitungsschutzschalter/`
+- Physik
+- Chemie
+- Elektrotechnik und Elektronik
+- Astronomie
+- Energie
+- Materialwissenschaft
+- technische Alltagsphänomene
+- weitere naturwissenschaftliche Bildungsthemen
 
-## Produktionsstandard
+Elektrotechnik ist nur noch ein Themenbereich innerhalb des Kanals.
 
-- Remotion-first-v2
-- direkter deutscher Frage-Hook
-- technische Visuals, Strompfade und Bauteil-Callouts primär aus Code
-- öffentliche Bilder nur bei echtem dokumentarischem Mehrwert und nach Lizenz-/Rechteprüfung
-- keine KI-Szenenbilder als Standard
-- 2–4 echte Prozessanimationen statt Dauerbewegung
-- deutsche Überschriften und Callouts kontrolliert in Remotion
-- Voice-over automatisch auf exakt 1,10×
-- lokales Worttranskript, Szenen und Untertitel auf derselben Zeitbasis
+## Aktiver Produktionsstandard
 
-## Kanalstruktur
+- `science-static-v1`
+- Bildwelt: `Cinematic Scientific 3D Editorial`
+- direkte deutsche Frage als Hook
+- adaptive Anzahl visueller Beats
+- ein statisches 9:16-Bild pro Szene
+- Bild 01 ist zugleich Cover-Hintergrund und erster Shot
+- Bild 01 erhält drei Kandidaten, danach einen Gewinner
+- keine sichtbare KI-Schrift
+- keine Remotion-Animationen
+- keine Zooms, Pans, Ken-Burns-, Parallax- oder Mechanismusbewegungen
+- harte Schnitte zwischen den Bildern
+- deutsche Untertitel ohne Einblendanimation
+- Voice-over automatisch auf 1,10×
+- lokales Worttranskript und robuste Skript-/Voice-Ausrichtung
+- Quellen-IDs für fachliche Aussagen
 
-- `brand/` – Farben und Markenwerte
-- `engine/` – Produktionssystem und Status
-- `gehirn/` – Kanalwissen und Standards
-- `public/` – wiederverwendbare Assets
-- `reels/` – Wochen und Produktionspakete
-- `skills/` – Arbeitsabläufe
-- `src/` – Remotion-Code, Visual-Kit, Engine und Animationsbibliothek
+## Remotion-Rolle
+
+Remotion ist nur Montage- und Export-Schicht:
+
+- Bilder zeitlich anordnen
+- harte Schnitte
+- Voice-over
+- Untertitel
+- statische kontrollierte Overlays
+- optionale SFX
+- Render
+
+Es erzeugt keine eigene wissenschaftliche Visualisierung.
+
+## Neue Befehle
+
+```bash
+npm run science:new -- --week=YYYY-MM-DD_bis_YYYY-MM-DD --slot=01 --title="Warum ist der Himmel blau?" --hook="Warum ist der Himmel blau?" --scenes=10
+npm run science:preflight -- "<reel-ordner>"
+npm run science:ready -- "<reel-ordner>"
+npm run science:finish -- "<reel-ordner>"
+```
+
+Die bisherigen `electrical:*`-Befehle bleiben während der Migration als Legacy-Aliase vorhanden.
