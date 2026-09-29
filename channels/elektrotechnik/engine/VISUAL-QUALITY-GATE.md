@@ -1,48 +1,54 @@
-# Visual Quality Gate – Remotion First
+# Visual Quality Gate – Science Static v1
 
 ## Grundregel
 
-Elektrotechnik-Reels werden standardmäßig **ohne KI-Szenenbilder** gebaut. Remotion ist die primäre visuelle Engine.
+Der Wissenskanal wird standardmäßig mit **statischen wissenschaftlichen Szenenbildern** gebaut. Remotion montiert diese Bilder nur zeitlich und darf keine eigene Animation erzeugen.
 
 ## Ziel
 
-Ein Reel soll wie eine konsistente technische Motion-Design-Dokumentation wirken:
+Jeder Reel soll wie eine konsistente hochwertige wissenschaftliche Editorial-Serie wirken:
 
-- reale elektrische Logik
-- klare deutsche Fachbegriffe
-- kontrollierte Farben und Materialien
-- wiederverwendbare technische Komponenten
-- nur dort volle Bewegung, wo ein Prozess erklärt wird
-- sonst subtile, ruhige Remotion-Bewegung
+- fachlich plausible Darstellung
+- ein klares Hauptmotiv pro Bild
+- eine Aussage pro visueller Einheit
+- Cinematic Scientific 3D Editorial
+- keine sichtbare KI-Schrift
+- hohe mobile Lesbarkeit
+- keine unnötige visuelle Überladung
 
 ## Standard
 
-- 8–10 Szenen
-- mindestens 7 Remotion-Szenen
-- maximal 2 öffentliche Bildszenen
-- 2–4 volle Prozessanimationen
-- keine KI-generierten Szenenbilder
-- Cover vollständig in Remotion
-- Callouts, Überschriften und Untertitel vollständig in Remotion
+- adaptive Bildanzahl, normalerweise 6–16 visuelle Beats
+- jede Szene ist `image-only`
+- jede Szene hat `motionLevel: none`
+- jede Szene benötigt ein freigegebenes 9:16-Bild
+- Bild 01 ist gleichzeitig erste Szene und Cover-Hintergrund
+- für Bild 01 werden drei Kandidaten geplant, danach genau ein Gewinner ausgewählt
+- keine separate Thumbnail-Bildwelt
+- keine Mechanismus-Animationen
+- keine Remotion-generierten wissenschaftlichen Grafiken
+- keine Zooms, Pans, Parallaxen, Partikel oder Crossfades
+- Szenenwechsel als harter Schnitt
+
+## Text
+
+Generierte Bilder enthalten keinen Text. Notwendige deutsche Begriffe, Formeln oder Werte dürfen nur als kontrollierte statische Overlay-Ebene ergänzt werden.
 
 ## Öffentliche Bilder
 
-Nur verwenden, wenn das reale Motiv selbst relevant ist, zum Beispiel:
-
-- Umspannwerk
-- Kraftwerk
-- historische Anlage
-- reale Bahn- oder Industriekomponente
-
-Jedes öffentliche Bild benötigt dokumentierte Quelle, Lizenz und Attribution. Standardmäßig zulässig: Public Domain, CC0 1.0 und CC BY 4.0. NC-, ND- und SA-Lizenzen werden nicht automatisch verwendet.
+Öffentliche Fotos sind Ausnahmefälle und nur zulässig, wenn ein reales dokumentarisches Motiv einen klaren Mehrwert gegenüber der Scientific-3D-Bildwelt besitzt. Quelle, Lizenz und Rechteprüfung bleiben verpflichtend.
 
 ## Qualitätsprüfung
 
 Die Produktion wird blockiert, wenn:
 
-- weniger als sieben Szenen aus Remotion kommen,
-- mehr als zwei öffentliche Bildszenen geplant sind,
-- eine Bildszene keine dokumentierte Quelle besitzt,
-- mehr als vier volle Prozessanimationen verwendet werden,
-- technische Callouts englisch sind,
-- eine Szene nur aus Text ohne technisches Motiv besteht.
+- eine Science-Static-Szene kein Bild besitzt,
+- `renderMode` nicht `image-only` ist,
+- `motionLevel` nicht `none` ist,
+- ein Mechanismus-/Animations-Identifier gesetzt ist,
+- ein Prompt sichtbaren KI-Text erlaubt,
+- Bild 01 nicht Coverquelle ist,
+- ein separates Pflicht-Coverbild verlangt wird,
+- ein Bild mehrfach verwendet wird,
+- Bildformat oder Auflösung nicht reel-tauglich sind,
+- eine Szene mehr als eine konkurrierende Hauptaussage enthält.
