@@ -9,9 +9,8 @@ if (!projectArg) {
   console.error('Nutzung: npm run science:finish -- <reel-ordner>');
   process.exit(1);
 }
-const paths = projectPaths(projectArg);
 
-// Finish darf kein Asset- oder Bild-Gate umgehen.
+const paths = projectPaths(projectArg);
 run(process.execPath, ['scripts/check-electrical-production-readiness.mjs', paths.root], {cwd: repositoryRoot});
 
 const whisperCandidates = [
@@ -27,9 +26,8 @@ if (!whisperCandidates.some((candidate) => fs.existsSync(candidate)) || !fs.exis
   run(process.execPath, ['scripts/setup_local_transcription.mjs'], {cwd: repositoryRoot});
 }
 
-run(process.execPath, ['scripts/render_electrical_reel.mjs', paths.root, '--force-transcribe', '--preflight-passed'], {cwd: repositoryRoot});
+run(process.execPath, ['scripts/render_science_reel.mjs', paths.root, '--force-transcribe', '--preflight-passed'], {cwd: repositoryRoot});
 
 console.log('\n=== SCIENCE-PRODUKTION ABGESCHLOSSEN ===');
 console.log(`Reel-Ordner: ${paths.root}`);
-console.log('Jetzt Kontaktbogen, Szenen-Stills und das vollständige MP4 fachlich und visuell prüfen.');
-console.log('Bei einem sichtbaren oder fachlichen Fehler: Ursache beheben und denselben Befehl erneut ausführen.');
+console.log('Kontaktbogen, Szenen-Stills und vollständiges MP4 fachlich und visuell prüfen.');

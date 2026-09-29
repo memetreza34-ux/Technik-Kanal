@@ -34,6 +34,8 @@ const required = [
   'scripts/lib/electrical-visual-policy.mjs',
   'scripts/lib/create-electrical-scene-plan-template.mjs',
   'scripts/prepare_science_reel.mjs',
+  'scripts/render_science_reel.mjs',
+  'scripts/finish_science_reel.mjs',
   'scripts/process_voiceover.mjs',
   'scripts/check-electrical-preproduction.mjs',
   'scripts/check-electrical-production-readiness.mjs',
@@ -41,7 +43,6 @@ const required = [
   'scripts/check-electrical-image-appearance.mjs',
   'scripts/check-electrical-remotion-quality.mjs',
   'scripts/check-electrical-callouts.mjs',
-  'scripts/render_electrical_reel.mjs',
   'scripts/qa_electrical_render.mjs',
   'scripts/test-electrical-visual-policy.mjs',
   'scripts/test-electrical-e2e.mjs'
@@ -56,7 +57,15 @@ const forbiddenLegacyPaths = [
   'channels/elektrotechnik/src/SchutzleiterReel.tsx',
   'channels/elektrotechnik/src/LeitungsschutzschalterReel.tsx',
   'channels/elektrotechnik/engine/config/electrical-v1.json',
-  'channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09'
+  'channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09',
+  'scripts/render_electrical_reel.mjs',
+  'scripts/finish_electrical_reel.mjs',
+  'scripts/materialize-electrical-mechanism-canvases.mjs',
+  'scripts/cleanup-electrical-mechanism-canvases.mjs',
+  'scripts/bake-electrical-image-labels.mjs',
+  'scripts/search-electrical-public-media.mjs',
+  'scripts/fetch-electrical-public-media.mjs',
+  'scripts/approve-electrical-public-media.mjs'
 ];
 
 const missing = required.filter((relative) => !fs.existsSync(path.join(root, relative)));
@@ -74,4 +83,4 @@ if (missing.length || legacy.length) {
   process.exit(1);
 }
 
-console.log(`✓ Schlanke Science-Static-Systemstruktur vollständig (${required.length} Kernpfade, kein aktiver Elektro-Legacy-Bestand).`);
+console.log(`✓ Schlanke Science-Static-Systemstruktur vollständig (${required.length} Kernpfade, keine aktive Legacy-Pipeline).`);
