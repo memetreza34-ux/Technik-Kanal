@@ -1,8 +1,8 @@
-# Elektrotechnik Reels — Produktionsvertrag
+# Wissenschafts-Reels — Produktionsvertrag
 
-## Wochenstruktur
+## Ordnerstruktur
 
-Jeder Reel wird exakt so abgelegt:
+Jeder Reel bleibt in der bestehenden Wochenstruktur:
 
 ```text
 reels/YYYY-MM-DD_bis_YYYY-MM-DD/NN_Thema/
@@ -25,53 +25,101 @@ reels/YYYY-MM-DD_bis_YYYY-MM-DD/NN_Thema/
 └── README.md
 ```
 
-Die Nummer `NN` ist der Produktionsslot innerhalb der Woche. Es gibt keinen zusätzlichen Wochentagsordner.
+## Themenrahmen
 
-## Hook-Regel
+Erlaubt sind allgemeine Wissenschafts- und Bildungsthemen, insbesondere:
 
-- Der Hook stellt die zentrale Frage direkt und verständlich.
-- Keine künstlichen Metaphern wie „verlorener Strom“, wenn eine einfache Frage stärker ist.
-- Beispiel: **„Was macht ein FI-Schalter?“**
-- Die zentrale Frage muss in den ersten 1,5 Sekunden vollständig lesbar und gesprochen sein.
-- Der erste Frame bleibt visuell ruhig: ein starkes Bild, eine Headline, keine zweite große Animation.
+- Physik
+- Chemie
+- Elektrotechnik
+- Astronomie
+- Energie
+- Technik
+- Materialwissenschaft
+- wissenschaftlich erklärbare Alltagsphänomene
+
+## Hook
+
+- eine zentrale Frage
+- sofort verständlich
+- möglichst kurz
+- erster gesprochener Satz stellt dieselbe Kernfrage
+- keine künstlichen Metaphern
+- Bild 01 ist gleichzeitig Cover-Hintergrund und erster visueller Shot
 
 ## Inhaltlicher Aufbau
 
-- eine zentrale technische Frage
-- normalerweise 8 bis 12 klare Bildbeats
-- jede Szene erklärt eine neue Aussage
+- eine zentrale Frage pro Reel
+- jede Szene erklärt genau eine neue Aussage
+- adaptive Anzahl visueller Beats
 - keine Szene nur zur Dekoration
-- letzte Szene standardmäßig als fachlicher Payoff oder Sicherheitshinweis
-- CTA nur bei einem echten versprochenen Ergebnis
+- komplexere Aussagen dürfen auf mehrere Bilder aufgeteilt werden
+- lieber ein zusätzliches klares Bild als ein überladenes Bild
+- letzter Beat liefert Erkenntnis, Merksatz oder sauberen Abschluss
 
-## Animationsbudget
+## Bildplanung
 
-- pro Reel normalerweise **zwei bis vier vollständige Mechanismus-Animationen**
-- übrige Szenen: starkes Bild, dezenter 1,00→1,035-Zoom und sauberer Text
-- keine große Remotion-Animation über ein KI-Bild legen, das denselben Mechanismus bereits detailliert zeigt
-- Mechanismus-Animation nur für Abläufe wie Stromfluss, Differenzbildung, Magnetwirkung, Kontaktbewegung oder Auslösung
-- Zahlen, Gerätevergleiche, Definitionen und Sicherheitshinweise brauchen normalerweise keine technische Vollanimation
-- kleine Text- oder Signal-Einblendungen gelten nicht als vollständige Mechanismus-Animation
+Die Bilder tragen die komplette visuelle Erklärung.
 
-## Bildvertrag
+Verbindlich:
 
-- generierte Szenenbilder enthalten keinen Text und keine Labels
-- alle deutschen Begriffe, Werte und Warnungen werden in Remotion gesetzt
-- pro Bild eine Aussage, ein dominantes Motiv, höchstens drei unterstützende Elemente
-- keine überfüllten Cutaways, Mini-Beschriftungen, englischen Gerätetexte oder UI-Karten
+- `Cinematic Scientific 3D Editorial`
+- 9:16
+- ein Hauptmotiv pro Bild
+- keine sichtbare KI-Schrift
+- keine Logos oder Wasserzeichen
+- fachlich plausible Darstellung
+- obere und untere Text-Safe-Zone berücksichtigen
+- Bildanzahl nicht künstlich auf 8, 9 oder 10 begrenzen
+
+Bild 01 wird in drei Varianten geplant. Eine Gewinner-Version wird als erste Szene und Cover-Hintergrund verwendet.
+
+## Remotion-Vertrag
+
+Es gibt kein Animationsbudget mehr, weil Remotion keine kreativen Animationen erzeugt.
+
+Verboten:
+
+- Full-Animationen
+- Mechanismus-Animationen
+- Zoom
+- Pan
+- Ken Burns
+- Parallax
+- Rotation
+- Partikel
+- animierte Diagramme
+- animierte Strompfade
+- animierte Moleküle
+- animierte Feldlinien
+- automatische Übergangseffekte
+
+Zulässig:
+
+- statisches Szenenbild
+- harter Schnitt
+- Voice-over
+- Untertitel ohne Bewegungsanimation
+- statische kontrollierte Text-/Formel-Overlays
+- optionale SFX
 
 ## Produktionsreihenfolge
 
-1. Fachliche Recherche und Quellen-IDs
-2. direkter Hook und Szenenplan
-3. fertiger deutscher Sprechtext
-4. ruhige Bildprompts
-5. gezielte Auswahl der wenigen notwendigen Remotion-Animationen
-6. Nutzer erzeugt Audio und Bilder
-7. `electrical:finish` verarbeitet und synchronisiert alles
-8. Inhalts-, Sicherheits-, Asset-, Readiness- und Render-QA
-9. Codex prüft Kontaktbogen, Einzelbilder und vollständiges MP4
-10. Nutzer gibt den finalen Reel frei
+1. Thema und zentrale Frage
+2. fachliche Recherche und Quellen-IDs
+3. fertiges deutsches Skript
+4. Szenen- und Bildplanung
+5. Bildprompts
+6. Preflight
+7. Bilder erzeugen und Gewinner auswählen
+8. Nutzer erstellt Voice-over
+9. Voice auf finale Fassung verarbeiten
+10. lokale Wortzeiten erzeugen
+11. Szenen anhand des finalen Audios synchronisieren
+12. statische Bilder mit harten Schnitten montieren
+13. Untertitel und optionale SFX ergänzen
+14. Render-QA
+15. visuelle und fachliche Endkontrolle
 
 ## Verbindliche Projektdateien
 
@@ -84,10 +132,20 @@ Die Nummer `NN` ist der Produktionsslot innerhalb der Woche. Es gibt keinen zus�
 - `content-package-report.json`
 - `ready-report.json`
 - `qa-report.json`
-- `motion-design.md`
 - `sources.md`
 - `storyboard.md`
 
 ## Abbruchregeln
 
-Nicht rendern bei fehlendem Audio oder Szenenbild, unzureichender Wortübereinstimmung, unbelegter Sicherheitsbehauptung, unsicherer Handlung, falschem Bildformat, doppeltem Bild, TypeScript-, Readiness- oder QA-Fehler.
+Nicht rendern bei:
+
+- fehlender Voice
+- fehlendem Pflichtbild
+- unzureichender Wortübereinstimmung zwischen Skript und Voice
+- unbelegter sicherheits- oder normrelevanter Behauptung
+- gefährlicher Anleitung
+- falschem Bildformat
+- doppeltem Bild
+- sichtbarer KI-Schrift
+- unzulässiger Remotion-Animation
+- Readiness- oder QA-Fehler
