@@ -4,8 +4,7 @@ outputs/
 .DS_Store
 *.log
 .tools/
-channels/elektrotechnik/public/reels/
+channels/science/public/reels/
 **/06-projektdateien/.work/
 **/06-projektdateien/render/
 **/05-export/*.mp4
-**/02-bilder/final-labeled/

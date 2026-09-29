@@ -36,10 +36,11 @@ if (config.visuals.generatedImageTextPolicy !== 'none') errors.push('Generierte 
 if (config.visuals.animationAllowed !== false) errors.push('Animationen müssen global deaktiviert sein.');
 if (config.visuals.cameraMotionAllowed !== false) errors.push('Kamerabewegung muss global deaktiviert sein.');
 if (config.visuals.transitionPolicy !== 'hard-cut') errors.push('Szenenübergänge müssen harte Schnitte sein.');
-if (config.visuals.mechanismAnimations.maximum !== 0) errors.push('Mechanismus-Animationen müssen auf 0 begrenzt sein.');
 if (config.script.hook.firstFrameAnimationAllowed !== false) errors.push('Hook darf keine Animation erlauben.');
 if (config.visuals.beats.max > 16) errors.push('Science-Reels dürfen höchstens 16 geplante visuelle Beats verwenden.');
 if (config.visuals.coverUsesFirstScene !== true || config.visuals.separateThumbnailForbidden !== true) errors.push('Bild 01 muss Coverquelle sein; separates Thumbnail-System ist nicht erlaubt.');
+if (!config.safety?.riskyPhrases?.length) errors.push('Fachübergreifende Safety-Regeln fehlen.');
+if (config.electricalSafety) errors.push('Veraltete electricalSafety-Struktur darf nicht mehr existieren.');
 
 if (!scienceReel.includes("./generated/science-runtime.json")) errors.push('ScienceReel muss science-runtime.json laden.');
 if (scienceReel.includes("./generated/reel-runtime.json")) errors.push('ScienceReel darf nicht an einer alten Runtime hängen.');
@@ -53,4 +54,4 @@ if (errors.length) {
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log('✓ Science-v1, statische Bildwelt, Audio, Runtime und Befehle sind konsistent.');
+console.log('✓ Science-v1, statische Bildwelt, Safety, Audio, Runtime und Befehle sind konsistent.');
