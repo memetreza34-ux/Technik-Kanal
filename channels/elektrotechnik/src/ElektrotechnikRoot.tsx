@@ -27,9 +27,19 @@ import {
   SICHERUNGS_REEL_WIDTH,
   SicherungsReel,
 } from './SicherungsReel';
+import {
+  SCIENCE_REEL_FPS,
+  SCIENCE_REEL_HEIGHT,
+  SCIENCE_REEL_TOTAL_FRAMES,
+  SCIENCE_REEL_WIDTH,
+  ScienceReel,
+} from './ScienceReel';
 
 export const ElektrotechnikRoot = () => (
   <>
+    <Composition id="ScienceReel" component={ScienceReel} durationInFrames={SCIENCE_REEL_TOTAL_FRAMES} fps={SCIENCE_REEL_FPS} width={SCIENCE_REEL_WIDTH} height={SCIENCE_REEL_HEIGHT}/>
+
+    {/* Legacy-Kompositionen bleiben während der Migration als Referenz erhalten. Neue Wissenschafts-Reels verwenden ScienceReel. */}
     <Composition id="SicherungsReel" component={SicherungsReel} durationInFrames={SICHERUNGS_REEL_TOTAL_FRAMES} fps={SICHERUNGS_REEL_FPS} width={SICHERUNGS_REEL_WIDTH} height={SICHERUNGS_REEL_HEIGHT}/>
     <Composition id="FiSchalterReel" component={FiSchalterReel} durationInFrames={FI_REEL_TOTAL_FRAMES} fps={FI_REEL_FPS} width={FI_REEL_WIDTH} height={FI_REEL_HEIGHT}/>
     <Composition id="SchutzleiterReel" component={SchutzleiterReel} durationInFrames={SCHUTZLEITER_REEL_TOTAL_FRAMES} fps={SCHUTZLEITER_REEL_FPS} width={SCHUTZLEITER_REEL_WIDTH} height={SCHUTZLEITER_REEL_HEIGHT}/>
