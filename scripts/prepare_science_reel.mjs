@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
-import {findVoiceFiles, projectPaths, repositoryRoot, run} from './lib/electrical-project.mjs';
+import {channelRoot, findVoiceFiles, projectPaths, repositoryRoot, run} from './lib/electrical-project.mjs';
 
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
@@ -29,6 +29,23 @@ if (!finalVoice || rawIsNewer) {
   run(process.execPath, ['scripts/process_voiceover.mjs', voices.raw, finalVoice], {cwd: repositoryRoot});
 }
 
-const forward = ['scripts/prepare_electrical_reel.mjs', paths.root];
-if (args.includes('--force-transcribe')) forward.push('--force-transcribe');
-run(process.execPath, forward, {cwd: repositoryRoot});
+const legacyRuntimePath = path.join(channelRoot, 'src/generated/reel-runtime.json');
+const scienceRuntimePath = path.join(channelRoot, 'src/generated/science-runtime.json');
+const previousLegacyRuntime = fs.existsSync(legacyRuntimePath) ? fs.readFileSync(legacyRuntimePath) : null;
+
+try {
+  const forward = ['scripts/prepare_electrical_reel.mjs', paths.root];
+  if (args.includes('--force-transcribe')) forward.push('--force-transcribe');
+  run(process.execPath, forward, {cwd: repositoryRoot});
+
+  const projectRuntime = path.join(paths.projectFilesDir, 'reel-runtime.json');
+  if (!fs.existsSync(projectRuntime)) throw new Error(`Science-Runtime wurde nicht erzeugt: ${projectRuntime}`);
+  fs.mkdirSync(path.dirname(scienceRuntimePath), {recursive: true});
+  fs.copyFileSync(projectRuntime, scienceRuntimePath);
+  console.log(`✓ Science-Runtime aktualisiert: ${scienceRuntimePath}`);
+} finally {
+  // Der alte Prepare-Kern schreibt aus Kompatibilitätsgründen noch in reel-runtime.json.
+  // Science-Prepare stellt den Legacy-Zustand sofort wieder her.
+  if (previousLegacyRuntime) fs.writeFileSync(legacyRuntimePath, previousLegacyRuntime);
+  else fs.rmSync(legacyRuntimePath, {force: true});
+}
