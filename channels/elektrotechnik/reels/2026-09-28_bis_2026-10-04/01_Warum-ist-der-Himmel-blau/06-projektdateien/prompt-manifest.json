@@ -1,0 +1,20 @@
+{
+  "version":"science-v1",
+  "visualPolicyVersion":"science-static-v1",
+  "slug":"warum-ist-der-himmel-blau",
+  "generatedImageTextPolicy":"none",
+  "coverText":"Warum ist der Himmel blau?",
+  "requiredVisibleSceneImages":9,
+  "cover":{"imageRequired":true,"sourceSceneId":"01-hook","candidateCount":3,"separateThumbnailForbidden":true,"visualSource":"generated-science-image"},
+  "scenes":[
+    {"id":"01-hook","imageRequired":true,"renderMode":"image-only","motionLevel":"none","visualSource":"generated-science-image","coverSource":true,"approved":false},
+    {"id":"02-weisses-sonnenlicht","imageRequired":true,"renderMode":"image-only","motionLevel":"none","visualSource":"generated-science-image","coverSource":false,"approved":false},
+    {"id":"03-luftmolekuele-streuen","imageRequired":true,"renderMode":"image-only","motionLevel":"none","visualSource":"generated-science-image","coverSource":false,"approved":false},
+    {"id":"04-blau-streut-staerker","imageRequired":true,"renderMode":"image-only","motionLevel":"none","visualSource":"generated-science-image","coverSource":false,"approved":false},
+    {"id":"05-blau-aus-vielen-richtungen","imageRequired":true,"renderMode":"image-only","motionLevel":"none","visualSource":"generated-science-image","coverSource":false,"approved":false},
+    {"id":"06-violett-und-augen","imageRequired":true,"renderMode":"image-only","motionLevel":"none","visualSource":"generated-science-image","coverSource":false,"approved":false},
+    {"id":"07-horizont-heller","imageRequired":true,"renderMode":"image-only","motionLevel":"none","visualSource":"generated-science-image","coverSource":false,"approved":false},
+    {"id":"08-sonnenuntergang","imageRequired":true,"renderMode":"image-only","motionLevel":"none","visualSource":"generated-science-image","coverSource":false,"approved":false},
+    {"id":"09-merksatz","imageRequired":true,"renderMode":"image-only","motionLevel":"none","visualSource":"generated-science-image","coverSource":false,"approved":false}
+  ]
+}

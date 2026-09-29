@@ -1,0 +1,25 @@
+# Sprechtext – Warum ist der Himmel blau?
+
+## Hook
+
+Warum ist der Himmel blau? Die Antwort beginnt mit weißem Sonnenlicht und unserer Atmosphäre.
+
+## Hauptteil
+
+Sonnenlicht wirkt weiß, enthält aber viele sichtbare Farben mit unterschiedlichen Wellenlängen.
+
+Wenn dieses Licht auf Luftmoleküle trifft, wird ein Teil in verschiedene Richtungen gestreut.
+
+Kurzwelliges blaues Licht wird von den kleinen Molekülen deutlich stärker gestreut als langwelliges rotes Licht.
+
+Darum erreicht uns aus fast jeder Richtung besonders viel gestreutes blaues Licht, und der Himmel erscheint blau.
+
+Violettes Licht wird ebenfalls stark gestreut, aber unsere Augen reagieren darauf weniger empfindlich und ein Teil wird in der oberen Atmosphäre absorbiert.
+
+Nahe am Horizont sieht der Himmel oft heller aus, weil das Licht einen längeren Weg durch die Luft nimmt und mehrfach gestreut wird.
+
+Beim Sonnenuntergang ist dieser Weg noch länger. Viel Blau wird seitlich herausgestreut, während mehr Rot und Gelb direkt zu uns gelangen.
+
+## Merksatz
+
+Merke: Die Farbe des Himmels entsteht nicht, weil die Luft blau ist, sondern weil die Atmosphäre kurze Wellenlängen besonders effektiv streut.

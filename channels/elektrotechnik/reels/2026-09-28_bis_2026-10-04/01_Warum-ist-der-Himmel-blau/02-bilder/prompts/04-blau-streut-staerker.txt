@@ -1,0 +1,6 @@
+SCENE 04 — SHORT BLUE WAVELENGTHS SCATTER MORE STRONGLY
+
+Scientific statement: Shorter blue wavelengths are scattered much more efficiently by small atmospheric molecules than longer red wavelengths.
+Create one clear comparison inside a single coherent atmospheric volume: incoming mixed light meets identical small gas molecules; blue light is redistributed strongly in many directions while red light continues more directly. The comparison must be obvious without text and without a UI split-screen.
+
+Cinematic Scientific 3D Editorial. Scientifically plausible, adult editorial look, controlled color semantics, cyan-blue only for the more strongly scattered short wavelength and natural red for the longer wavelength, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI panels, decorative arrows, fantasy lightning, motion blur or animation cues.

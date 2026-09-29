@@ -1,0 +1,13 @@
+{
+  "version":"science-static-v1",
+  "styleId":"cinematic-scientific-3d-editorial-v1",
+  "generatedImageTextPolicy":"none",
+  "animationAllowed":false,
+  "cameraMotionAllowed":false,
+  "transitionPolicy":"hard-cut",
+  "coverUsesFirstScene":true,
+  "coverCandidateCount":3,
+  "separateThumbnailForbidden":true,
+  "adaptiveVisualBeatCount":true,
+  "requiredVisibleSceneImages":9
+}
