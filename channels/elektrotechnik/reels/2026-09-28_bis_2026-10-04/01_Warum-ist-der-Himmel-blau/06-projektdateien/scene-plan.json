@@ -6,6 +6,7 @@
   "title":"Warum ist der Himmel blau?",
   "coverText":"Warum ist der Himmel blau?",
   "compositionId":"ScienceReel",
+  "runtimeFile":"science-runtime.json",
   "fps":30,
   "width":1080,
   "height":1920,
