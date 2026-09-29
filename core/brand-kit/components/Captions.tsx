@@ -1,6 +1,6 @@
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
-import {ELECTRICAL_COLORS, ELECTRICAL_FORMAT, ELECTRICAL_SHADOWS, ELECTRICAL_TYPOGRAPHY} from '../tokens';
+import {SCIENCE_COLORS, SCIENCE_FORMAT, SCIENCE_SHADOWS, SCIENCE_TYPOGRAPHY} from '../tokens';
 
 export type TimedCaption = {
   fromFrame: number;
@@ -8,11 +8,11 @@ export type TimedCaption = {
   text: string;
 };
 
-export const ElectricalCaptions: React.FC<{
+export const ScienceCaptions: React.FC<{
   captions: TimedCaption[];
   bottom?: number;
   fontSize?: number;
-}> = ({captions, bottom = ELECTRICAL_FORMAT.captionBottom, fontSize = ELECTRICAL_TYPOGRAPHY.caption}) => {
+}> = ({captions, bottom = SCIENCE_FORMAT.captionBottom, fontSize = SCIENCE_TYPOGRAPHY.caption}) => {
   const frame = useCurrentFrame();
   const active = captions.find((caption) => frame >= caption.fromFrame && frame < caption.toFrame);
   if (!active) return null;
@@ -25,13 +25,13 @@ export const ElectricalCaptions: React.FC<{
         right: 90,
         bottom,
         zIndex: 100,
-        color: ELECTRICAL_COLORS.text,
-        fontFamily: 'Arial, Helvetica, sans-serif',
+        color: SCIENCE_COLORS.text,
+        fontFamily: SCIENCE_TYPOGRAPHY.family,
         fontSize,
         lineHeight: 1.08,
         fontWeight: 950,
         textAlign: 'center',
-        textShadow: ELECTRICAL_SHADOWS.text,
+        textShadow: SCIENCE_SHADOWS.text,
       }}
     >
       {active.text}

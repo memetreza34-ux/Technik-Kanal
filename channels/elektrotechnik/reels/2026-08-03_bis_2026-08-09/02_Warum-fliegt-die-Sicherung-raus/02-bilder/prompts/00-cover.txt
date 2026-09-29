@@ -1,3 +1,0 @@
-A dramatic but technically clean close-up of one unbranded miniature circuit breaker at the exact moment its toggle snaps to the tripped position, premium dark navy electrical engineering background, controlled red fault glow inside the breaker and electric-blue rim light outside, centered large object, strong visual contrast, generous clean space above and below for later German headline typography, no fire, no explosion, no text, no symbols, vertical 9:16 social media cover.
-
-Append the master style and negative prompt from `channels/elektrotechnik/gehirn/MASTER-STYLE-PROMPT.md` and `IMAGE-PROMPT-TEMPLATE.md`.

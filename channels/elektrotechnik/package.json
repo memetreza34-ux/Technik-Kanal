@@ -1,25 +1,18 @@
 {
-  "name": "@elektrotechnik/channel",
+  "name": "@science/channel",
   "private": true,
-  "version": "1.1.0",
-  "description": "Faceless-Wissenskanal für Physik, Chemie, Elektrotechnik, Astronomie, Energie und weitere Wissenschaftsthemen",
+  "version": "2.0.0",
+  "description": "Statischer Remotion-Renderer für den Wissenschaftskanal",
   "scripts": {
     "studio": "remotion studio src/index.ts",
-    "gallery": "remotion studio src/layout-gallery-index.ts",
     "render": "remotion render src/index.ts ScienceReel ../../outputs/science-reel.mp4",
     "check": "tsc --noEmit"
   },
   "dependencies": {
-    "@elektrotechnik/core": "*",
-    "@remotion/cli": "4.0.490",
-    "@remotion/captions": "4.0.490",
-    "@remotion/light-leaks": "4.0.490",
-    "@remotion/media-utils": "4.0.490",
-    "lucide-react": "^1.25.0",
+    "@science/core": "*",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "remotion": "4.0.490",
-    "zod": "4.3.6"
+    "remotion": "4.0.490"
   },
   "devDependencies": {
     "@types/react": "19.2.14",

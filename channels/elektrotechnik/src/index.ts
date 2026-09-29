@@ -1,4 +1,4 @@
 import {registerRoot} from 'remotion';
-import {ElektrotechnikRoot} from './ElektrotechnikRoot';
+import {ScienceRoot} from './ScienceRoot';
 
-registerRoot(ElektrotechnikRoot);
+registerRoot(ScienceRoot);

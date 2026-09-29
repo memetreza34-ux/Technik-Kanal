@@ -1,8 +1,8 @@
 {
-  "name": "@elektrotechnik/core",
-  "version": "1.0.0",
+  "name": "@science/core",
+  "version": "2.0.0",
   "private": true,
-  "description": "Geteiltes Elektrotechnik-Grundgerüst: Remotion-Bausteine, Brand-System, Audio und Datenverträge",
+  "description": "Minimaler Render-Core für statische Science-Reels: Farben, Captions und Audio",
   "main": "brand-kit/index.ts",
   "types": "brand-kit/index.ts",
   "peerDependencies": {

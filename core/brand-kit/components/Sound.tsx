@@ -1,16 +1,16 @@
 import React from 'react';
 import {Audio, Sequence, staticFile} from 'remotion';
 
-export type ElectricalSoundCue = {
+export type ScienceSoundCue = {
   id: string;
   path: string;
   fromFrame: number;
   volume?: number;
 };
 
-export const ElectricalSoundLayer: React.FC<{
+export const ScienceSoundLayer: React.FC<{
   voiceoverPath?: string;
-  cues?: ElectricalSoundCue[];
+  cues?: ScienceSoundCue[];
 }> = ({voiceoverPath, cues = []}) => (
   <>
     {voiceoverPath ? <Audio src={staticFile(voiceoverPath)} volume={1} /> : null}

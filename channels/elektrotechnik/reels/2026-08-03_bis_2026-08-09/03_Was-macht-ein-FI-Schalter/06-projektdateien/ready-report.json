@@ -1,7 +1,0 @@
-{
-  "version": "electrical-v1",
-  "slug": "was-macht-ein-fi-schalter",
-  "ready": false,
-  "status": "voice-und-bilder-fehlen",
-  "blocking": ["raw-voiceover", "10-scene-images", "content-qa", "render-qa"]
-}
