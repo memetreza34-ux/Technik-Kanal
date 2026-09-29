@@ -1,7 +1,6 @@
 const wordCount = (value) => String(value ?? '').trim().split(/\s+/).filter(Boolean).length;
-const lower = (value) => String(value ?? '').toLocaleLowerCase('de-DE');
-export const resolveElectricalRenderMode = (scene) => scene.renderMode ?? (scene.layout === 'image-mechanism' ? 'image-with-overlay' : scene.layout === 'payoff' ? 'static-overlay' : 'image-only');
-export const resolveElectricalMotionLevel = (scene) => scene.motionLevel ?? (resolveElectricalRenderMode(scene) === 'mechanism-only' ? 'subtle' : 'subtle');
+export const resolveElectricalRenderMode = (scene) => scene.renderMode ?? 'image-only';
+export const resolveElectricalMotionLevel = (scene) => scene.motionLevel ?? 'none';
 
 export const evaluateElectricalVisualPolicy = ({plan, config, promptFiles = {}, promptManifest = null}) => {
   const errors = [];
@@ -9,8 +8,12 @@ export const evaluateElectricalVisualPolicy = ({plan, config, promptFiles = {}, 
   const strict = plan.visualPolicyVersion === config.visuals.policyVersion;
   const scenes = plan.scenes ?? [];
   const firstScene = scenes[0];
+
   if (!strict) warnings.push(`Szenenplan verwendet noch nicht ${config.visuals.policyVersion}.`);
-  if (scenes.length < config.visuals.beats.min || scenes.length > config.visuals.beats.max) errors.push(`Szenenzahl ${scenes.length} liegt außerhalb ${config.visuals.beats.min}–${config.visuals.beats.max}.`);
+  if (scenes.length < config.visuals.beats.min || scenes.length > config.visuals.beats.max) {
+    errors.push(`Szenenzahl ${scenes.length} liegt außerhalb ${config.visuals.beats.min}–${config.visuals.beats.max}.`);
+  }
+
   if (firstScene) {
     const hook = firstScene.headline ?? firstScene.title;
     const hookVoice = firstScene.voiceText ?? '';
@@ -22,25 +25,42 @@ export const evaluateElectricalVisualPolicy = ({plan, config, promptFiles = {}, 
     if (!plan.coverText?.trim() || plan.coverText.trim() !== hook.trim()) errors.push('coverText muss exakt dem Hook entsprechen.');
   }
 
-  const remotionScenes = scenes.filter((scene) => resolveElectricalRenderMode(scene) === 'mechanism-only');
-  const externalScenes = scenes.filter((scene) => resolveElectricalRenderMode(scene) !== 'mechanism-only');
-  const fullScenes = scenes.filter((scene) => resolveElectricalMotionLevel(scene) === 'full');
+  const imageScenes = scenes.filter((scene) => resolveElectricalRenderMode(scene) === 'image-only');
+  const animatedScenes = scenes.filter((scene) => resolveElectricalMotionLevel(scene) !== 'none');
+  const mechanismScenes = scenes.filter((scene) => Boolean(scene.mechanism) || resolveElectricalRenderMode(scene) === 'mechanism-only');
+
   if (strict) {
-    if (remotionScenes.length < config.visuals.minimumRemotionScenes) errors.push(`Nur ${remotionScenes.length} Remotion-Szenen; mindestens ${config.visuals.minimumRemotionScenes} erforderlich.`);
-    if (externalScenes.length > config.visuals.maximumPublicImageScenes) errors.push(`${externalScenes.length} externe Bildszenen; maximal ${config.visuals.maximumPublicImageScenes} erlaubt.`);
-    if (plan.generatedImageTextPolicy !== 'none') errors.push('Remotion-first verwendet keine generierte Bildschrift.');
+    if (plan.generatedImageTextPolicy !== 'none') errors.push('Science Static erlaubt keine generierte Bildschrift.');
+    if (imageScenes.length !== scenes.length) errors.push('Jede Science-Static-Szene muss renderMode "image-only" verwenden.');
+    if (animatedScenes.length) errors.push(`Animation ist verboten: ${animatedScenes.map((scene) => scene.id).join(', ')}.`);
+    if (mechanismScenes.length) errors.push(`Mechanismus-Visuals sind im Science-Static-Modus verboten: ${mechanismScenes.map((scene) => scene.id).join(', ')}.`);
+
+    for (const scene of scenes) {
+      if (scene.visualRecipe?.motion && scene.visualRecipe.motion !== 'none') errors.push(`${scene.id}: visualRecipe.motion muss "none" sein.`);
+      if (!scene.imageDir?.trim()) errors.push(`${scene.id}: imageDir fehlt.`);
+    }
+
+    if (plan.animationBudget?.fullMechanismScenes?.length) errors.push('animationBudget darf keine Vollanimationen enthalten.');
+    if (promptManifest?.requiredVisibleSceneImages !== undefined && promptManifest.requiredVisibleSceneImages !== scenes.length) {
+      errors.push(`Prompt-Manifest fordert ${promptManifest.requiredVisibleSceneImages} Bilder; erwartet ${scenes.length}.`);
+    }
+    if (promptManifest?.cover?.sourceSceneId && promptManifest.cover.sourceSceneId !== firstScene?.id) {
+      errors.push('Cover muss aus Bild 01 / der ersten Szene stammen.');
+    }
   }
-  if (fullScenes.length > config.visuals.mechanismAnimations.maximum) errors.push(`${fullScenes.length} volle Prozessanimationen; maximal ${config.visuals.mechanismAnimations.maximum}.`);
-  for (const scene of remotionScenes) if (!scene.mechanism?.trim()) errors.push(`${scene.id}: Remotion-Szene benötigt einen visual/mechanism-Identifier.`);
-  for (const scene of externalScenes) {
-    const prompt = promptFiles[scene.id];
-    if (!prompt && strict) warnings.push(`${scene.id}: externe Bildszene ohne Prompt. Bei öffentlichen Bildern ist das erlaubt, wenn Quelle und Lizenz dokumentiert sind.`);
+
+  for (const scene of scenes) {
+    if (!promptFiles[scene.id] && strict) warnings.push(`${scene.id}: Einzelprompt fehlt noch.`);
   }
-  for (let index = 1; index < fullScenes.length; index += 1) {
-    const previousIndex = scenes.findIndex((scene)=>scene.id===fullScenes[index-1].id);
-    const currentIndex = scenes.findIndex((scene)=>scene.id===fullScenes[index].id);
-    if (currentIndex - previousIndex === 1 && config.visuals.mechanismAnimations.maximumConsecutive < 2) errors.push(`Volle Prozessanimationen direkt hintereinander: ${fullScenes[index-1].id} → ${fullScenes[index].id}.`);
-  }
-  if (strict && promptManifest?.requiredVisibleSceneImages > config.visuals.maximumPublicImageScenes) errors.push('Prompt-Manifest fordert zu viele externe Bilder für Remotion-first.');
-  return {passed:errors.length===0,strict,productionMode:strict?'remotion-first':'legacy',remotionSceneIds:remotionScenes.map((scene)=>scene.id),externalSceneIds:externalScenes.map((scene)=>scene.id),fullMechanismSceneIds:fullScenes.map((scene)=>scene.id),errors,warnings};
+
+  return {
+    passed: errors.length === 0,
+    strict,
+    productionMode: strict ? 'science-static' : 'legacy',
+    imageSceneIds: imageScenes.map((scene) => scene.id),
+    animatedSceneIds: animatedScenes.map((scene) => scene.id),
+    mechanismSceneIds: mechanismScenes.map((scene) => scene.id),
+    errors,
+    warnings,
+  };
 };
