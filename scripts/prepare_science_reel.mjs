@@ -11,6 +11,10 @@ if (!projectArg) {
 }
 
 const paths = projectPaths(projectArg);
+if (!args.includes('--readiness-passed')) {
+  run(process.execPath, ['scripts/check-electrical-production-readiness.mjs', paths.root], {cwd: repositoryRoot});
+}
+
 const voices = findVoiceFiles(paths.audioDir);
 let finalVoice = voices.final;
 const rawIsNewer = Boolean(
@@ -44,8 +48,6 @@ try {
   fs.copyFileSync(projectRuntime, scienceRuntimePath);
   console.log(`✓ Science-Runtime aktualisiert: ${scienceRuntimePath}`);
 } finally {
-  // Der alte Prepare-Kern schreibt aus Kompatibilitätsgründen noch in reel-runtime.json.
-  // Science-Prepare stellt den Legacy-Zustand sofort wieder her.
   if (previousLegacyRuntime) fs.writeFileSync(legacyRuntimePath, previousLegacyRuntime);
   else fs.rmSync(legacyRuntimePath, {force: true});
 }
