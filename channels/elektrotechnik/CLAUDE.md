@@ -6,7 +6,7 @@ Vor Änderungen zuerst lesen:
 2. `gehirn/REELS.md`
 3. `gehirn/BILDSTIL.md`
 4. `gehirn/MASTER-STYLE-PROMPT.md`
-5. `engine/config/electrical-v1.json` – Legacy-Pfad, während der Migration nur noch technische Pipeline-Quelle
+5. `engine/config/science-v1.json`
 6. `skills/reel-fertigstellen.md`
 7. den aktuellen Reel-Ordner
 
@@ -80,7 +80,8 @@ Remotion darf nur:
 
 ## Audio und Synchronisation
 
-- finale Voice ist die Zeitquelle
+- Roh-Voice wird auf exakt **1,10×** verarbeitet; Tonhöhe bleibt erhalten
+- finale Voice ist die verbindliche Zeitquelle
 - lokale Wortzeiten mit `whisper.cpp`
 - Skript und Transkript werden robust gegeneinander ausgerichtet
 - Bildwechsel, Untertitel und SFX verwenden dieselbe Zeitbasis
