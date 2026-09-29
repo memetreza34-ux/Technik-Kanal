@@ -22,8 +22,6 @@ if (!args.includes('--preflight-passed')) {
   run(process.execPath, ['scripts/check-electrical-readiness.mjs', paths.root], {cwd: repositoryRoot});
 }
 
-// Nur historische Elektro-Reels brauchen noch die alten Dummy-Mechanismus-Canvases.
-// Science Static verwendet ausschließlich echte freigegebene Szenenbilder.
 if (!scienceStatic) {
   run(process.execPath, ['scripts/materialize-electrical-mechanism-canvases.mjs', paths.root], {cwd: repositoryRoot});
 }
@@ -35,6 +33,7 @@ let restoreGenericRuntime = false;
 try {
   const prepareScript = scienceStatic ? 'scripts/prepare_science_reel.mjs' : 'scripts/prepare_electrical_reel.mjs';
   const prepareArgs = [prepareScript, paths.root];
+  if (scienceStatic) prepareArgs.push('--readiness-passed');
   if (args.includes('--force-transcribe')) prepareArgs.push('--force-transcribe');
   run(process.execPath, prepareArgs, {cwd: repositoryRoot});
 
