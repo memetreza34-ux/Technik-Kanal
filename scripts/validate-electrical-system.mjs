@@ -5,34 +5,32 @@ import path from 'node:path';
 const root = process.cwd();
 const required = [
   '.claude/settings.json',
-  'channels/elektrotechnik/CLAUDE.md',
-  'channels/elektrotechnik/engine/VISUAL-QUALITY-GATE.md',
-  'channels/elektrotechnik/engine/config/science-v1.json',
-  'channels/elektrotechnik/engine/config/voice-v1.json',
-  'channels/elektrotechnik/engine/topic-history.json',
-  'channels/elektrotechnik/gehirn/KANAL.md',
-  'channels/elektrotechnik/gehirn/REELS.md',
-  'channels/elektrotechnik/gehirn/BILDSTIL.md',
-  'channels/elektrotechnik/gehirn/SCIENCE-VISUAL-GRAMMAR.md',
-  'channels/elektrotechnik/gehirn/MASTER-STYLE-PROMPT.md',
-  'channels/elektrotechnik/gehirn/IMAGE-PROMPT-TEMPLATE.md',
-  'channels/elektrotechnik/remotion.config.ts',
-  'channels/elektrotechnik/public/ASSETS.md',
-  'channels/elektrotechnik/public/smoke/science-static-smoke.svg',
-  'channels/elektrotechnik/src/index.ts',
-  'channels/elektrotechnik/src/ScienceRoot.tsx',
-  'channels/elektrotechnik/src/ScienceReel.tsx',
-  'channels/elektrotechnik/src/generated/science-runtime.json',
-  'channels/elektrotechnik/src/engine/ScienceSceneHeader.tsx',
-  'channels/elektrotechnik/src/engine/science-contracts.ts',
+  'channels/science/CLAUDE.md',
+  'channels/science/engine/VISUAL-QUALITY-GATE.md',
+  'channels/science/engine/config/science-v1.json',
+  'channels/science/engine/config/voice-v1.json',
+  'channels/science/engine/topic-history.json',
+  'channels/science/gehirn/KANAL.md',
+  'channels/science/gehirn/REELS.md',
+  'channels/science/gehirn/BILDSTIL.md',
+  'channels/science/gehirn/SCIENCE-VISUAL-GRAMMAR.md',
+  'channels/science/gehirn/MASTER-STYLE-PROMPT.md',
+  'channels/science/gehirn/IMAGE-PROMPT-TEMPLATE.md',
+  'channels/science/remotion.config.ts',
+  'channels/science/public/ASSETS.md',
+  'channels/science/public/smoke/science-static-smoke.svg',
+  'channels/science/src/index.ts',
+  'channels/science/src/ScienceRoot.tsx',
+  'channels/science/src/ScienceReel.tsx',
+  'channels/science/src/generated/science-runtime.json',
+  'channels/science/src/engine/ScienceSceneHeader.tsx',
+  'channels/science/src/engine/science-contracts.ts',
   'core/brand-kit/index.ts',
   'core/brand-kit/tokens.ts',
   'core/brand-kit/components/Captions.tsx',
   'core/brand-kit/components/Sound.tsx',
-  'scripts/lib/electrical-contracts.mjs',
-  'scripts/lib/electrical-project-structure.mjs',
-  'scripts/lib/electrical-visual-policy.mjs',
-  'scripts/lib/create-electrical-scene-plan-template.mjs',
+  'scripts/new-science-reel.mjs',
+  'scripts/safe-new-science-reel.mjs',
   'scripts/prepare_science_reel.mjs',
   'scripts/render_science_reel.mjs',
   'scripts/finish_science_reel.mjs',
@@ -48,16 +46,19 @@ const required = [
   'scripts/test-electrical-e2e.mjs'
 ];
 
-const forbiddenLegacyPaths = [
-  'channels/elektrotechnik/src/animation-library',
-  'channels/elektrotechnik/src/visual-kit',
-  'channels/elektrotechnik/src/visuals',
-  'channels/elektrotechnik/src/SicherungsReel.tsx',
-  'channels/elektrotechnik/src/FiSchalterReel.tsx',
-  'channels/elektrotechnik/src/SchutzleiterReel.tsx',
-  'channels/elektrotechnik/src/LeitungsschutzschalterReel.tsx',
-  'channels/elektrotechnik/engine/config/electrical-v1.json',
-  'channels/elektrotechnik/reels/2026-08-03_bis_2026-08-09',
+const forbidden = [
+  'channels/elektrotechnik',
+  'channels/science/src/animation-library',
+  'channels/science/src/visual-kit',
+  'channels/science/src/visuals',
+  'channels/science/src/SicherungsReel.tsx',
+  'channels/science/src/FiSchalterReel.tsx',
+  'channels/science/src/SchutzleiterReel.tsx',
+  'channels/science/src/LeitungsschutzschalterReel.tsx',
+  'channels/science/engine/config/electrical-v1.json',
+  'channels/science/reels/2026-08-03_bis_2026-08-09',
+  'scripts/new-electrical-week-reel.mjs',
+  'scripts/safe-new-electrical-week-reel.mjs',
   'scripts/render_electrical_reel.mjs',
   'scripts/finish_electrical_reel.mjs',
   'scripts/materialize-electrical-mechanism-canvases.mjs',
@@ -69,18 +70,16 @@ const forbiddenLegacyPaths = [
 ];
 
 const missing = required.filter((relative) => !fs.existsSync(path.join(root, relative)));
-const legacy = forbiddenLegacyPaths.filter((relative) => fs.existsSync(path.join(root, relative)));
-
+const legacy = forbidden.filter((relative) => fs.existsSync(path.join(root, relative)));
 if (missing.length || legacy.length) {
   if (missing.length) {
     console.error('Science-System unvollständig:');
     missing.forEach((file) => console.error(`- fehlt: ${file}`));
   }
   if (legacy.length) {
-    console.error('Legacy-Bestand ist wieder im aktiven Repo aufgetaucht:');
+    console.error('Veralteter Bestand im aktiven Repo:');
     legacy.forEach((file) => console.error(`- entfernen: ${file}`));
   }
   process.exit(1);
 }
-
-console.log(`✓ Schlanke Science-Static-Systemstruktur vollständig (${required.length} Kernpfade, keine aktive Legacy-Pipeline).`);
+console.log(`✓ Science-only-Systemstruktur vollständig (${required.length} Kernpfade).`);

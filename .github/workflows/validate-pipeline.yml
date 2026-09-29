@@ -18,19 +18,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
       - name: Install dependencies
         run: npm install
       - name: Node script syntax
-        run: npm run validate:electrical-syntax
+        run: npm run validate:science-syntax
       - name: Reel folder contract
-        run: npm run validate:electrical-template
+        run: npm run validate:science-template
       - name: System structure
-        run: npm run validate:electrical-system
+        run: npm run validate:science-system
       - name: Science configuration consistency
-        run: npm run validate:electrical-consistency
+        run: npm run validate:science-consistency
       - name: Science Static visual policy
-        run: npm run validate:electrical-visual-policy
+        run: npm run validate:science-visual-policy
 
   types-and-unit:
     name: TypeScript and unit tests
@@ -43,7 +42,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
       - name: Install dependencies
         run: npm install
       - name: TypeScript
@@ -62,7 +60,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
       - name: Install dependencies
         run: npm install
       - name: Science scaffold transaction
@@ -81,7 +78,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
       - name: Install dependencies
         run: npm install
       - name: Static ScienceReel smoke still

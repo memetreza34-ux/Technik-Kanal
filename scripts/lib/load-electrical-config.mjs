@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '../..');
-const configFile = path.join(root, 'channels/elektrotechnik/engine/config/science-v1.json');
+const configFile = path.join(root, 'channels/science/engine/config/science-v1.json');
 
 export const loadElectricalConfig = () => {
   if (!fs.existsSync(configFile)) throw new Error(`Science-Konfiguration fehlt: ${configFile}`);

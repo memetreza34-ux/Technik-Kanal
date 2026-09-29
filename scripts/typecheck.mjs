@@ -5,7 +5,7 @@ import {runCommand} from './lib/run-command.mjs';
 const root = process.cwd();
 const npx = process.platform === 'win32' ? 'npx.cmd' : 'npx';
 
-runCommand(npx, ['tsc', '--noEmit', '-p', path.join(root, 'channels/elektrotechnik/tsconfig.json')], {cwd: root});
+runCommand(npx, ['tsc', '--noEmit', '-p', path.join(root, 'channels/science/tsconfig.json')], {cwd: root});
 runCommand(npx, [
   'tsc', '--noEmit',
   '--target', 'ES2020',

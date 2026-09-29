@@ -5,7 +5,7 @@ export default defineConfig({
     include: [
       'core/**/*.test.ts',
       'scripts/**/*.test.ts',
-      'channels/elektrotechnik/**/*.test.ts',
+      'channels/science/**/*.test.ts',
     ],
     testTimeout: 30_000,
   },

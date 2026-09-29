@@ -5,19 +5,17 @@ import {fileURLToPath} from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const repositoryRoot = path.resolve(__dirname, '../..');
-export const channelRoot = path.join(repositoryRoot, 'channels/elektrotechnik');
+export const channelRoot = path.join(repositoryRoot, 'channels/science');
 
 export const imageExtensions = new Set(['.png', '.jpg', '.jpeg', '.webp', '.avif']);
 export const audioExtensions = new Set(['.wav', '.mp3', '.m4a', '.aac', '.flac', '.ogg']);
 
 export const normalizePath = (value) => value.split(path.sep).join('/');
-
 export const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 export const writeJson = (file, value) => {
   fs.mkdirSync(path.dirname(file), {recursive: true});
   fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`);
 };
-
 export const ensureDirectory = (dir) => fs.mkdirSync(dir, {recursive: true});
 
 export const run = (command, args, options = {}) => {
@@ -27,9 +25,7 @@ export const run = (command, args, options = {}) => {
     encoding: 'utf8',
     env: {...process.env, ...options.env},
   });
-  if (result.error?.code === 'ENOENT') {
-    throw new Error(`Benötigtes Programm fehlt: ${command}`);
-  }
+  if (result.error?.code === 'ENOENT') throw new Error(`Benötigtes Programm fehlt: ${command}`);
   if (result.status !== 0) {
     const details = options.capture ? `\n${result.stderr || result.stdout || ''}` : '';
     throw new Error(`Befehl fehlgeschlagen (${command} ${args.join(' ')}).${details}`);
@@ -44,9 +40,7 @@ export const commandExists = (command) => {
 
 export const requireCommands = (commands) => {
   const missing = commands.filter((command) => !commandExists(command));
-  if (missing.length) {
-    throw new Error(`Fehlende lokale Programme: ${missing.join(', ')}`);
-  }
+  if (missing.length) throw new Error(`Fehlende lokale Programme: ${missing.join(', ')}`);
 };
 
 export const projectPaths = (projectArg) => {
@@ -75,18 +69,9 @@ export const projectPaths = (projectArg) => {
 };
 
 export const validateProjectStructure = (paths) => {
-  const requiredDirectories = [
-    paths.scriptAudio,
-    paths.audioDir,
-    paths.imagesDir,
-    paths.captionsDir,
-    paths.exportDir,
-    paths.projectFilesDir,
-  ];
+  const requiredDirectories = [paths.scriptAudio, paths.audioDir, paths.imagesDir, paths.captionsDir, paths.exportDir, paths.projectFilesDir];
   const missing = requiredDirectories.filter((dir) => !fs.existsSync(dir) || !fs.statSync(dir).isDirectory());
-  if (missing.length) {
-    throw new Error(`Projektstruktur unvollständig:\n${missing.map((file) => `- ${file}`).join('\n')}`);
-  }
+  if (missing.length) throw new Error(`Projektstruktur unvollständig:\n${missing.map((file) => `- ${file}`).join('\n')}`);
   if (!fs.existsSync(paths.scenePlan)) throw new Error(`Szenenplan fehlt: ${paths.scenePlan}`);
 };
 
@@ -112,13 +97,7 @@ export const findVoiceFiles = (audioDir) => {
 };
 
 export const ffprobe = (file) => {
-  const raw = execFileSync('ffprobe', [
-    '-v', 'error',
-    '-show_streams',
-    '-show_format',
-    '-of', 'json',
-    file,
-  ], {encoding: 'utf8'});
+  const raw = execFileSync('ffprobe', ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', file], {encoding: 'utf8'});
   return JSON.parse(raw);
 };
 
@@ -144,10 +123,7 @@ export const normalizeWord = (value) => String(value)
   .replace(/[^a-z0-9äöü]+/gi, '')
   .trim();
 
-export const normalizeWords = (value) => String(value)
-  .split(/\s+/)
-  .map(normalizeWord)
-  .filter(Boolean);
+export const normalizeWords = (value) => String(value).split(/\s+/).map(normalizeWord).filter(Boolean);
 
 export const parseTimestampMs = (value) => {
   if (typeof value === 'number' && Number.isFinite(value)) return value;
