@@ -24,7 +24,7 @@
     "science:e2e":"node scripts/test-electrical-e2e.mjs",
     "science:preflight":"node scripts/check-electrical-preproduction.mjs",
     "science:ready":"node scripts/check-electrical-production-readiness.mjs",
-    "science:prepare":"node scripts/prepare_electrical_reel.mjs",
+    "science:prepare":"node scripts/prepare_science_reel.mjs",
     "science:render":"node scripts/render_electrical_reel.mjs",
     "science:render-qa":"node scripts/qa_electrical_render.mjs",
     "science:finish":"node scripts/finish_electrical_reel.mjs",
