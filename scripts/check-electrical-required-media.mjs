@@ -8,7 +8,7 @@ import {findMedia, findVoiceFiles, imageExtensions, audioExtensions, imageMetada
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
 
 const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
-if (!projectArg) throw new Error('Nutzung: node scripts/check-electrical-required-media.mjs <reel-ordner>');
+if (!projectArg) throw new Error('Nutzung: npm run science:ready -- <reel-ordner>');
 const root = path.resolve(projectArg);
 const paths = electricalProjectPaths(root);
 const config = loadElectricalConfig();
@@ -21,6 +21,8 @@ if (!voice.raw && !voice.final) errors.push(`Keine Roh- oder Finalaufnahme in ${
 const scienceStatic = plan.visualPolicyVersion === config.visuals.policyVersion;
 const imageScenes = plan.scenes.filter((scene) => (scene.renderMode ?? 'image-only') === 'image-only');
 const seen = new Map();
+const selectedImages = [];
+const approvedPattern = /(?:final|approved|freigabe)/i;
 
 const validateImage = (file, label) => {
   const metadata = imageMetadata(file);
@@ -39,16 +41,29 @@ for (const scene of imageScenes) {
     errors.push(`Szenenbild fehlt: ${scene.id} (${scene.imageDir})`);
     continue;
   }
-  const selected = images.find((file) => /(?:final|approved|freigabe)/i.test(path.basename(file))) ?? images[0];
-  validateImage(selected, scene.id);
-  if (images.length > 1 && !images.some((file) => /(?:final|approved|freigabe)/i.test(path.basename(file)))) {
-    warnings.push(`${scene.id}: mehrere Bilder vorhanden, aber keines als final/approved/freigabe markiert.`);
+
+  const approved = images.filter((file) => approvedPattern.test(path.basename(file)));
+  let selected;
+  if (images.length === 1) {
+    selected = images[0];
+  } else if (approved.length === 1) {
+    selected = approved[0];
+  } else if (approved.length === 0) {
+    errors.push(`${scene.id}: ${images.length} Bildkandidaten vorhanden, aber keiner ist als final/approved/freigabe markiert.`);
+    continue;
+  } else {
+    errors.push(`${scene.id}: ${approved.length} Bilder sind als final/approved/freigabe markiert; genau eines ist erlaubt.`);
+    continue;
   }
+
+  validateImage(selected, scene.id);
+  selectedImages.push({sceneId: scene.id, file: path.relative(root, selected).split(path.sep).join('/'), candidateCount: images.length});
 }
 
 if (scienceStatic) {
   if (imageScenes.length !== plan.scenes.length) errors.push('Science Static benötigt für jede Szene genau ein sichtbares Szenenbild.');
   if (plan.scenes[0] && !imageScenes.some((scene) => scene.id === plan.scenes[0].id)) errors.push('Bild 01 muss die erste Szene und gleichzeitig die Cover-Quelle sein.');
+  if (selectedImages.length !== plan.scenes.length && errors.length === 0) errors.push('Nicht für jede Science-Szene wurde genau ein finales Bild ausgewählt.');
 } else {
   warnings.push(`Legacy-Projekt ${plan.visualPolicyVersion ?? 'unbekannt'}: Science-Static-Pflichtmedienregeln werden nicht vollständig angewendet.`);
 }
@@ -62,6 +77,7 @@ const report = {
   passed:errors.length===0,
   productionMode:scienceStatic?'science-static':'legacy',
   requiredSceneImages:imageScenes.length,
+  selectedImages,
   separateCoverRequired:false,
   coverSourceScene:plan.scenes[0]?.id ?? null,
   errors,
@@ -74,5 +90,5 @@ if (errors.length) {
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Pflichtmedien vollständig: Voice-over + ${imageScenes.length} statische Szenenbilder; Bild 01 ist Cover-Quelle.`);
+console.log(`✓ Pflichtmedien vollständig: Voice-over + ${selectedImages.length} eindeutig ausgewählte statische Szenenbilder; Bild 01 ist Cover-Quelle.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
