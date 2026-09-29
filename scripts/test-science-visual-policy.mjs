@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import assert from 'node:assert/strict';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
-import {evaluateElectricalVisualPolicy} from './lib/electrical-visual-policy.mjs';
+import {evaluateScienceVisualPolicy} from './lib/science-visual-policy.mjs';
 
 const config=loadElectricalConfig();
 const stages=['scientific-dark','laboratory','micro','technical','comparison','material','space','diagram'];
@@ -28,13 +28,13 @@ const plan={
   coverText:'Warum passiert das?',
   scenes
 };
-const manifest={requiredVisibleSceneImages:8,cover:{sourceSceneId:'01-scene'}};
-const good=evaluateElectricalVisualPolicy({plan,config,promptFiles:Object.fromEntries(scenes.map((scene)=>[scene.id,'Cinematic Scientific 3D Editorial. No visible text.'])),promptManifest:manifest});
+const manifest={generatedImageTextPolicy:'none',requiredVisibleSceneImages:8,cover:{sourceSceneId:'01-scene',candidateCount:3}};
+const prompts=Object.fromEntries(scenes.map((scene)=>[scene.id,'Cinematic Scientific 3D Editorial. No visible text.']));
+const good=evaluateScienceVisualPolicy({plan,config,promptFiles:prompts,promptManifest:manifest});
 assert.equal(good.passed,true,good.errors.join('\n'));
 
-const badScenes=scenes.map((scene,index)=>index===3?{...scene,motionLevel:'full',renderMode:'mechanism-only',mechanism:'forbidden-animation'}:scene);
-const bad=evaluateElectricalVisualPolicy({plan:{...plan,scenes:badScenes},config,promptFiles:{},promptManifest:manifest});
+const bad=evaluateScienceVisualPolicy({plan,config,promptFiles:{...prompts,'04-scene':undefined},promptManifest:{...manifest,requiredVisibleSceneImages:7}});
 assert.equal(bad.passed,false);
-assert.ok(bad.errors.some((error)=>error.includes('Animation')||error.includes('Mechanismus')||error.includes('image-only')));
+assert.ok(bad.errors.some((error)=>error.includes('Einzelprompt')||error.includes('erwartet 8')));
 
-console.log('✓ Science Static erzwingt statische Bildszenen, Bild 01 als Coverquelle und null Animation.');
+console.log('✓ Science Visual Policy erzwingt vollständige statische Bildplanung und Bild 01 als Coverquelle.');
