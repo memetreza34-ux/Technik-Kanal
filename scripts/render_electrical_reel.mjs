@@ -6,18 +6,26 @@ import {channelRoot, ensureDirectory, projectPaths, readJson, repositoryRoot, ru
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
 if (!projectArg) {
-  console.error('Nutzung: npm run electrical:render -- <reel-ordner> [--force-transcribe]');
+  console.error('Nutzung: npm run science:render -- <reel-ordner> [--force-transcribe]');
   process.exit(1);
 }
 
 const paths = projectPaths(projectArg);
+const sourcePlan = readJson(paths.scenePlan);
+const scienceStatic = sourcePlan.visualPolicyVersion === 'science-static-v1';
+
 if (!args.includes('--preflight-passed')) {
   run(process.execPath, ['scripts/check-electrical-production-readiness.mjs', paths.root], {cwd: repositoryRoot});
 } else {
   run(process.execPath, ['scripts/check-electrical-required-media.mjs', paths.root], {cwd: repositoryRoot});
   run(process.execPath, ['scripts/check-electrical-readiness.mjs', paths.root], {cwd: repositoryRoot});
 }
-run(process.execPath, ['scripts/materialize-electrical-mechanism-canvases.mjs', paths.root], {cwd: repositoryRoot});
+
+// Nur historische Elektro-Reels brauchen noch die alten Dummy-Mechanismus-Canvases.
+// Science Static verwendet ausschließlich echte freigegebene Szenenbilder.
+if (!scienceStatic) {
+  run(process.execPath, ['scripts/materialize-electrical-mechanism-canvases.mjs', paths.root], {cwd: repositoryRoot});
+}
 
 const genericRuntimePath = path.join(channelRoot, 'src/generated/reel-runtime.json');
 const previousGenericRuntime = fs.existsSync(genericRuntimePath) ? fs.readFileSync(genericRuntimePath) : null;
@@ -59,5 +67,7 @@ try {
   if (restoreGenericRuntime && previousGenericRuntime) {
     fs.writeFileSync(genericRuntimePath, previousGenericRuntime);
   }
-  run(process.execPath, ['scripts/cleanup-electrical-mechanism-canvases.mjs', paths.root], {cwd: repositoryRoot});
+  if (!scienceStatic) {
+    run(process.execPath, ['scripts/cleanup-electrical-mechanism-canvases.mjs', paths.root], {cwd: repositoryRoot});
+  }
 }
