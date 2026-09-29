@@ -9,7 +9,7 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
     const id=isHook?`${number}-hook`:isPayoff?`${number}-payoff`:`${number}-erklaerung`;
     const stage=stages[index%stages.length];
     const camera=cameras[index%cameras.length];
-    const subject=isHook?'starkes wissenschaftliches Hauptmotiv zur zentralen Frage':isPayoff?'visueller wissenschaftlicher Merksatz oder Erkenntnis':`wissenschaftliche Kernaussage der Szene ${index+1}`;
+    const subject=isHook?'starkes wissenschaftliches Hauptmotiv zur zentralen Frage':isPayoff?'visuelle wissenschaftliche Kernerkenntnis':`wissenschaftliche Kernaussage der Szene ${index+1}`;
     return {
       id,
       title:isHook?hook:isPayoff?'Fachlicher Payoff':`Erklärung ${index}`,
@@ -85,5 +85,5 @@ export const createElectricalStatusTemplate=(scenePlan)=>({
   completed:['folder-structure','science-static-v1-template'],
   open:['research','script','sources','image-plan','preflight','images','voiceover','captions','render','qa'],
   requiredVisibleSceneImages:scenePlan.scenes.length,
-  nextCommand:'npm run electrical:preflight -- "<reel-ordner>"'
+  nextCommand:'npm run science:preflight -- "<reel-ordner>"'
 });
