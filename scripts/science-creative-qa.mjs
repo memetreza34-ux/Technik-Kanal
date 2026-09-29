@@ -12,7 +12,6 @@ if (!projectArg) throw new Error('Nutzung: npm run science:creative-qa -- <reel-
 const paths = electricalProjectPaths(path.resolve(projectArg));
 const config = loadElectricalConfig();
 const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan,'utf8')));
-const strict = plan.visualPolicyVersion === config.visuals.policyVersion;
 const errors = [];
 const warnings = [];
 const layouts = new Set();
@@ -50,10 +49,10 @@ if (!fs.existsSync(coverFile)) errors.push('Cover-/Bild-01-Prompt fehlt.');
 else {
   coverPrompt = fs.readFileSync(coverFile,'utf8');
   const normalized = coverPrompt.toLowerCase();
-  if (strict && !normalized.includes('cinematic scientific 3d editorial')) errors.push('Coverprompt verwendet nicht die verbindliche Scientific-3D-Bildwelt.');
-  if (strict && !normalized.includes('no visible text')) errors.push('Coverprompt muss sichtbaren KI-Text verbieten.');
-  if (strict && !normalized.includes('edge-to-edge')) errors.push('Coverprompt muss 9:16 edge-to-edge verlangen.');
-  if (strict && !/three distinct composition candidates|drei.*kandid/i.test(coverPrompt)) errors.push('Bild 01 muss drei Cover-Kandidaten vorsehen.');
+  if (!normalized.includes('cinematic scientific 3d editorial')) errors.push('Coverprompt verwendet nicht die verbindliche Scientific-3D-Bildwelt.');
+  if (!normalized.includes('no visible text')) errors.push('Coverprompt muss sichtbaren KI-Text verbieten.');
+  if (!normalized.includes('edge-to-edge')) errors.push('Coverprompt muss 9:16 edge-to-edge verlangen.');
+  if (!/three distinct composition candidates|drei.*kandid/i.test(coverPrompt)) errors.push('Bild 01 muss drei Cover-Kandidaten vorsehen.');
 }
 
 const combinedFile = path.join(paths.root,'02-bilder','ALLE-BILDPROMPTS-MIT-COVER.txt');
@@ -73,7 +72,7 @@ const report = {
   generatedAt:new Date().toISOString(),
   passed:errors.length===0,
   sceneCount:plan.scenes.length,
-  imageScenes:plan.scenes.filter((scene)=>(scene.renderMode??'image-only')==='image-only').length,
+  imageScenes:plan.scenes.length,
   layouts:[...layouts],
   backgroundFamilies:[...new Set(plan.scenes.map((scene)=>scene.backgroundFamily).filter(Boolean))],
   shotTypes:[...new Set(plan.scenes.map((scene)=>scene.shotType).filter(Boolean))],
@@ -85,9 +84,9 @@ const report = {
 fs.writeFileSync(path.join(paths.projectDir,'creative-qa-report.json'),`${JSON.stringify(report,null,2)}\n`);
 
 if (errors.length) {
-  console.error('Creative-QA fehlgeschlagen:');
+  console.error('Science-Creative-QA fehlgeschlagen:');
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} statische Scientific-3D-Bildszenen.`);
+console.log(`✓ Science-Creative-QA bestanden: ${plan.scenes.length} statische Scientific-3D-Bildszenen.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
