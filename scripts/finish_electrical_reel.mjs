@@ -6,12 +6,13 @@ import {projectPaths, repositoryRoot, run} from './lib/electrical-project.mjs';
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
 if (!projectArg) {
-  console.error('Nutzung: npm run electrical:finish -- <reel-ordner>');
+  console.error('Nutzung: npm run science:finish -- <reel-ordner>');
   process.exit(1);
 }
 const paths = projectPaths(projectArg);
 
-run(process.execPath, ['scripts/check-electrical-preproduction.mjs', paths.root], {cwd: repositoryRoot});
+// Finish darf kein Asset- oder Bild-Gate umgehen.
+run(process.execPath, ['scripts/check-electrical-production-readiness.mjs', paths.root], {cwd: repositoryRoot});
 
 const whisperCandidates = [
   process.env.WHISPER_CPP_BIN,
@@ -28,7 +29,7 @@ if (!whisperCandidates.some((candidate) => fs.existsSync(candidate)) || !fs.exis
 
 run(process.execPath, ['scripts/render_electrical_reel.mjs', paths.root, '--force-transcribe', '--preflight-passed'], {cwd: repositoryRoot});
 
-console.log('\n=== PRODUKTION ABGESCHLOSSEN ===');
+console.log('\n=== SCIENCE-PRODUKTION ABGESCHLOSSEN ===');
 console.log(`Reel-Ordner: ${paths.root}`);
-console.log('Codex muss jetzt Kontaktbogen, Szenen-Stills und das vollständige MP4 visuell prüfen.');
-console.log('Bei einem sichtbaren Fehler: Ursache beheben und denselben Befehl erneut ausführen.');
+console.log('Jetzt Kontaktbogen, Szenen-Stills und das vollständige MP4 fachlich und visuell prüfen.');
+console.log('Bei einem sichtbaren oder fachlichen Fehler: Ursache beheben und denselben Befehl erneut ausführen.');
