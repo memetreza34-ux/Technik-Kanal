@@ -1,5 +1,5 @@
 import React from 'react';
-import {interpolate, useCurrentFrame} from 'remotion';
+import {useCurrentFrame} from 'remotion';
 import {ELECTRICAL_COLORS, ELECTRICAL_FORMAT, ELECTRICAL_SHADOWS, ELECTRICAL_TYPOGRAPHY} from '../tokens';
 
 export type TimedCaption = {
@@ -17,13 +17,6 @@ export const ElectricalCaptions: React.FC<{
   const active = captions.find((caption) => frame >= caption.fromFrame && frame < caption.toFrame);
   if (!active) return null;
 
-  const opacity = interpolate(
-    frame,
-    [active.fromFrame, active.fromFrame + 4, active.toFrame - 4, active.toFrame],
-    [0, 1, 1, 0],
-    {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'},
-  );
-
   return (
     <div
       style={{
@@ -39,7 +32,6 @@ export const ElectricalCaptions: React.FC<{
         fontWeight: 950,
         textAlign: 'center',
         textShadow: ELECTRICAL_SHADOWS.text,
-        opacity,
       }}
     >
       {active.text}
