@@ -32,7 +32,7 @@
   "visuals": {
     "policyVersion": "science-static-v1",
     "productionMode": "image-first-static",
-    "styleId": "cinematic-scientific-3d-editorial-v1",
+    "styleId": "scientific-cutaway-3d-explainer-v1",
     "beats": {"min": 6, "ideal": 10, "max": 16},
     "minimumShotTypes": 3,
     "minimumStageFamilies": 3,
@@ -41,6 +41,16 @@
     "frameZeroMustContainMainMotif": true,
     "fillerIconsAllowed": false,
     "generatedImageTextPolicy": "none",
+    "controlledLabels": {
+      "allowed": true,
+      "minimumPerScene": 0,
+      "maximumPerScene": 3,
+      "maximumWordsPerLabel": 3,
+      "language": "de",
+      "leaderLinesAllowed": true,
+      "animated": false,
+      "onlyWhenExplanatory": true
+    },
     "coverUsesFirstScene": true,
     "coverCandidateCount": 3,
     "separateThumbnailForbidden": true,
