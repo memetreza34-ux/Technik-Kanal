@@ -12,6 +12,9 @@ describe('science config regression', () => {
     expect(config.visuals.policyVersion).toBe('science-static-v1');
     expect(config.visuals.animationAllowed).toBe(false);
     expect(config.visuals.cameraMotionAllowed).toBe(false);
+    expect(config.visuals.brandVisualStyleDefined).toBe(false);
+    expect(config.visuals.styleId).toBeUndefined();
+    expect(config.visuals.controlledLabels).toBeUndefined();
     expect(config.alignment.minimumWordMatchRatio).toBeGreaterThanOrEqual(0.8);
     expect(config.safety.hazardousTopicDisclaimerRequired).toBe(true);
     expect(config.electricalSafety).toBeUndefined();
