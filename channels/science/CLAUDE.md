@@ -4,18 +4,13 @@ Vor Änderungen zuerst lesen:
 
 1. `gehirn/KANAL.md`
 2. `gehirn/REELS.md`
-3. `gehirn/BILDSTIL.md`
-4. `gehirn/SCIENCE-VISUAL-GRAMMAR.md`
-5. `gehirn/MASTER-STYLE-PROMPT.md`
-6. `engine/config/science-v1.json`
-7. `skills/reel-fertigstellen.md`
-8. den aktuellen Reel-Ordner
+3. `engine/config/science-v1.json`
+4. `skills/reel-fertigstellen.md`
+5. den aktuellen Reel-Ordner
 
 ## Kanalrichtung
 
-Dies ist kein reiner Elektrotechnik-Kanal mehr. Der Kanal behandelt allgemein verständliche Wissenschafts- und Bildungsthemen, insbesondere Physik, Chemie, Elektrotechnik, Astronomie, Energie und verwandte Technikthemen.
-
-Elektrotechnik-spezifische Regeln dürfen nur für Elektro-Themen gelten und niemals die globale Kanalidentität bestimmen.
+Dies ist ein allgemeiner deutschsprachiger Wissenschafts- und Bildungskanal. Elektrotechnik ist nur ein Themenbereich neben Physik, Chemie, Astronomie, Energie, Materialien und weiteren Wissenschaftsthemen.
 
 ## Inhalt und Sicherheit
 
@@ -28,10 +23,9 @@ Elektrotechnik-spezifische Regeln dürfen nur für Elektro-Themen gelten und nie
 
 ## Sprache
 
-- Voice-over, Untertitel, Headlines und kontrollierte Overlays sind Deutsch
+- Voice-over, Untertitel und kontrollierte Overlays sind Deutsch
 - Bildprompts dürfen Englisch sein
-- generierte Bilder enthalten keinerlei sichtbaren Text, Labels, Zahlen, Einheiten, Logos oder Typenschilder
-- alle notwendigen sichtbaren Informationen werden kontrolliert nach der Bildgenerierung gesetzt
+- generierte Bilder dürfen keine zufällige KI-Schrift, Logos oder Wasserzeichen enthalten
 
 ## Hook
 
@@ -39,66 +33,28 @@ Elektrotechnik-spezifische Regeln dürfen nur für Elektro-Themen gelten und nie
 - kurz und verständlich
 - keine künstliche Metapher
 - der erste gesprochene Satz stellt die Kernfrage
-- Bild 01 trägt gleichzeitig Hook-Szene und Cover-Hintergrund
+- Bild 01 ist zugleich erster visueller Shot und Coverquelle
 
 ## Bildwelt
 
-Verbindlicher Stil: `Scientific Cutaway 3D Explainer`.
+Aktuell ist **keine feste Bildwelt definiert**.
 
-Grundregel: **Verständlichkeit schlägt Spektakel.**
+Bis eine neue Bildwelt ausdrücklich beschlossen und im Repo verankert wird:
 
-- ein Hauptmotiv pro Bild
-- eine zentrale Aussage pro Bild
-- reale Objekte, Cutaways, Querschnitte, Makro-/Mikroansichten oder klare Versuchsanordnungen bevorzugen
-- Ursache/Wirkung oder innerer Aufbau müssen räumlich verständlich sein
-- weniger Nebel, Bloom, Partikel und dekoratives Glow
-- keine abstrakte Sci-Fi-Kunst als Ersatz für Erklärung
-- adaptive Bildanzahl statt fester Szenenzahl
-- keine überladenen Schaubilder
-- keine KI-Schrift
-- gleiche visuelle DNA über Physik, Chemie, Elektrotechnik, Astronomie und weitere Wissenschaftsthemen
-- Fachgebiet-spezifische Darstellungsregeln aus `SCIENCE-VISUAL-GRAMMAR.md` sind verbindlich
-- wenn eine Aussage als statisches Bild nicht verständlich wird, muss die Bildplanung geändert oder die Aussage in mehrere Beats geteilt werden; Remotion darf das Problem nicht durch Bewegung lösen
+- keinen Markenstil erfinden
+- keinen früheren Scientific-3D-Stil wiederverwenden
+- keine alten Style-Prompts rekonstruieren
+- keine festen Farb-, Material-, Kamera- oder Labelregeln als Kanalstandard annehmen
 
-## Kontrollierte Labels
-
-Wichtige Dinge dürfen beschriftet werden, wenn das Verständnis dadurch klarer wird.
-
-- Basisbild bleibt textfrei
-- maximal 1–3 Labels pro Szene
-- kurze deutsche Begriffe, ideal 1–3 Wörter
-- dünne Leader-Line zum eindeutigen Zielobjekt
-- keine vollständigen Sätze
-- keine Wiederholung des Untertitels
-- keine Label-Animation
-- Labels bereits bei der Bildkomposition mitdenken und freien Platz reservieren
+Technisch bleiben nur neutrale Produktionsregeln bestehen: 9:16, statische Szenenbilder, ein Bild pro Beat und keine Remotion-Kamerabewegung.
 
 ## Remotion – harte Grenze
 
 Remotion ist ausschließlich technische Montage- und Export-Schicht.
 
-Remotion darf NICHT:
+Remotion darf NICHT zoomen, schwenken, rotieren, parallaxen, Ken-Burns-Bewegung erzeugen, Partikel erzeugen, wissenschaftliche Prozesse animieren oder neue visuelle Aussagen erfinden.
 
-- zoomen
-- schwenken
-- rotieren
-- parallaxen
-- Ken-Burns-Bewegung erzeugen
-- Partikel erzeugen
-- Feldlinien, Strompfade, Moleküle oder Bauteile animieren
-- Diagramme animieren
-- neue technische Visualisierungen erzeugen
-- automatische Crossfades oder dekorative Übergänge erzeugen
-
-Remotion darf nur:
-
-- statische Bilder zeitlich anordnen
-- harte Schnitte setzen
-- Voice-over abspielen
-- Untertitel anzeigen
-- statische kontrollierte Labels, Leader-Lines, Werte oder Formeln anzeigen
-- optionale SFX platzieren
-- rendern
+Remotion darf nur statische Bilder zeitlich anordnen, harte Schnitte setzen, Voice-over abspielen, Untertitel und statische Overlays anzeigen, optionale SFX platzieren und rendern.
 
 ## Audio und Synchronisation
 
@@ -110,4 +66,4 @@ Remotion darf nur:
 
 ## Produktionsregel
 
-Erst Recherche, Skript, Bildplan und Preflight abschließen. Danach Bilder und Voice erstellen. Keine Animationen als Ersatz für fehlende oder schwache Bildplanung verwenden.
+Erst Recherche, Skript und Szenenplanung abschließen. Die visuelle Produktion bleibt blockiert, bis eine neue Bildwelt festgelegt wurde. Keine Animationen als Ersatz für fehlende Bildplanung verwenden.
