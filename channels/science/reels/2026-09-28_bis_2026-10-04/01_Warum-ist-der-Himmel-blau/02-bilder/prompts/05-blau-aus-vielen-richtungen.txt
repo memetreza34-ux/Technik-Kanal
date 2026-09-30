@@ -1,6 +1,18 @@
-SCENE 05 — BLUE LIGHT REACHES THE VIEWER FROM MANY DIRECTIONS
+SCENE 05
 
-Scientific statement: Scattered blue light reaches an observer from many parts of the sky.
-Show a small grounded observer silhouette at the bottom only as scale reference, looking into a large atmospheric dome. Soft blue scattered light arrives toward the viewing point from many regions of the sky while the direct Sun remains off-axis. The sky is the dominant subject; do not make the person the story.
+Scientific statement: Scattered blue light reaches the observer from many different directions, so the whole sky appears blue.
 
-Cinematic Scientific 3D Editorial. Premium scientific visualization, adult editorial look, realistic atmosphere and lighting, strong spatial depth, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI, decorative icons, motion blur or animation cues.
+Explanatory mode: SPATIAL PROCESS WITH OBSERVER.
+
+Scientific Cutaway 3D Explainer. Show an observer near the lower part of the scene looking upward through the atmosphere. Blue light should arrive at the observer from multiple different directions after being scattered by air molecules distributed through the sky, while the direct sunlight comes from one main direction.
+
+The spatial relationship must be obvious: many scattered blue paths converge toward the observer from across the atmosphere.
+
+Keep the scene clean, scientifically plausible and easy to read. Use a simplified observer silhouette or realistic eye-view target without unnecessary facial detail. Avoid clutter, particle overload, neon haze or fantasy glow.
+
+Label targets to keep visually distinct for later controlled overlays: observer, scattered blue light.
+Do not render the labels inside the generated image.
+
+Vertical 9:16, edge-to-edge, strong upward composition, clean side space for labels and lower subtitle zone.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
