@@ -1,6 +1,6 @@
 # Skill: Science-Reel vollständig fertigstellen
 
-## Phase 1 – Konzept und Preflight
+## Phase 1 – Konzept
 
 Vor Bildern und Audio:
 
@@ -8,9 +8,19 @@ Vor Bildern und Audio:
 2. fachlich recherchieren und Quellen-IDs dokumentieren
 3. Szenen nach Aussagen planen; Bildanzahl adaptiv wählen
 4. jede Szene als `image-only` und `motionLevel: none` definieren
-5. textfreie Scientific-3D-Prompts erstellen
-6. Bild 01 als Coverquelle planen und drei Kandidaten vorsehen
-7. ausführen:
+5. Bildwelt nur verwenden, wenn sie ausdrücklich im Repo definiert ist
+6. Bild 01 als Coverquelle planen
+
+Aktuell ist keine feste Bildwelt definiert. Deshalb dürfen keine früheren Scientific-3D-/Cutaway-Regeln oder alten Referenzprompts wiederverwendet werden.
+
+## Phase 2 – Bildwelt und Preflight
+
+Erst nachdem eine neue Bildwelt beschlossen wurde:
+
+- passende Bildprompts erstellen
+- Bild 01 als Coverquelle planen
+- alle visuellen Regeln dokumentieren
+- anschließend ausführen:
 
 ```bash
 npm run science:preflight -- "<reel-ordner>"
@@ -18,75 +28,30 @@ npm run science:preflight -- "<reel-ordner>"
 
 Bei Fehlern keine Medien erzeugen. Erst korrigieren und erneut prüfen.
 
-## Phase 2 – Nutzerassets
+## Phase 3 – Nutzerassets
 
 Nach bestandenem Preflight:
 
 - Rohaufnahme nach `01-script-audio/audio/`
 - genau ein finales 9:16-Bild je Szene
-- für Bild 01 aus drei Kandidaten einen Gewinner auswählen
 - optionale SFX nach `01-script-audio/sfx/`
 
 Alle Bilder bleiben statisch. Es werden keine späteren Remotion-Animationen eingeplant.
 
-## Phase 3 – Ein-Befehl-Produktion
+## Phase 4 – Ein-Befehl-Produktion
 
 ```bash
 npm run science:finish -- "<reel-ordner>"
 ```
 
-Die Pipeline:
-
-1. führt den Preflight erneut aus
-2. verarbeitet Audio auf 1,10×
-3. erstellt lokale Wort-Zeitstempel
-4. gleicht Transkript und Szenenplan robust ab
-5. synchronisiert statische Bilder, Untertitel und optionale SFX
-6. setzt ausschließlich harte Schnitte
-7. rendert das MP4
-8. prüft Auflösung, FPS, Ton und Dauer
-9. erzeugt Szenen-Stills und Kontaktbogen
+Die Pipeline verarbeitet Audio auf 1,10×, erstellt lokale Wort-Zeitstempel, gleicht Transkript und Szenenplan ab, synchronisiert Bilder/Untertitel/SFX, setzt harte Schnitte, rendert das MP4 und erzeugt Render-QA sowie Kontrollbilder.
 
 ## Harte Remotion-Grenze
 
-Remotion darf keine visuelle Kreativarbeit leisten.
+Remotion darf keine visuelle Kreativarbeit leisten. Verboten sind Zoom, Pan, Ken Burns, Parallax, Rotation, animierte Diagramme, Moleküle, Feldlinien, Strompfade, Partikel, Mechanismus-Animationen und Crossfades als Standard.
 
-Verboten:
+Zulässig sind statische Bilder, harte Schnitte, Voice-over, statische Titel/Overlays, Untertitel ohne Animation, optionale SFX und Export.
 
-- Zoom
-- Pan
-- Ken Burns
-- Parallax
-- Rotation
-- animierte Diagramme
-- animierte Moleküle
-- animierte Feldlinien
-- animierte Strompfade
-- Partikel
-- Mechanismus-Animationen
-- Crossfades als Standard
+## Endkontrolle
 
-Zulässig:
-
-- statisches Bild
-- harter Schnitt
-- Voice-over
-- statischer Titel/Overlay
-- Untertitel ohne Animation
-- optionale SFX
-- Export
-
-## Visuelle Endkontrolle
-
-Prüfen:
-
-- versteht man jede Szene beim ersten Blick?
-- ist genau eine Aussage dominant?
-- ist die Scientific-3D-Bildwelt konsistent?
-- enthält kein Bild KI-Schrift?
-- bleiben alle Bilder vollständig statisch?
-- sind Untertitel lesbar und vollständig?
-- ist Bild 01 zugleich starker erster Shot und geeigneter Cover-Hintergrund?
-- sind fachliche Aussagen durch die dokumentierten Quellen gedeckt?
-
-Bei einem Fehler Prompt, Bild, Mapping oder Timing korrigieren und erneut rendern.
+Prüfen: ist jede Szene sofort verständlich, enthält kein Bild zufällige KI-Schrift/Logos/Wasserzeichen, bleiben alle Bilder statisch, sind Untertitel vollständig, ist Bild 01 als erster Shot und Coverquelle geeignet und sind fachliche Aussagen durch Quellen gedeckt.
