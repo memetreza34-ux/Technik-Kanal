@@ -2,62 +2,60 @@
 
 ## Ziel
 
-Der Kanal verwendet eine konsistente, hochwertige wissenschaftliche 3D-Illustrationswelt. Sie muss Elektrotechnik, Physik, Chemie, Astronomie, Energie und weitere Bildungsthemen tragen können, ohne wie ein Schulbuch, Kinderkanal oder generische KI-Grafik auszusehen.
+Der Kanal verwendet eine konsistente wissenschaftliche 3D-Erklärwelt, die nicht primär "cinematisch schön", sondern **sofort verständlich** sein muss. Physik, Chemie, Elektrotechnik, Astronomie, Energie, Materialien und weitere Wissenschaftsthemen sollen wie hochwertige visuelle Erklärstücke wirken.
 
-Arbeitstitel der Bildwelt: **Cinematic Scientific 3D Editorial**.
+Verbindlicher Name der Bildwelt: **Scientific Cutaway 3D Explainer**.
 
 ## Kernstil
 
-- hochwertige stilisierte 3D-Wissenschaftsillustration
-- technisch und naturwissenschaftlich plausibel
+- hochwertige stilisierte 3D-Erklärillustration
+- wissenschaftlich und technisch plausibel
+- reale Objekte, Querschnitte, Schnittmodelle, Makro-/Mikroansichten und klare Versuchsanordnungen bevorzugen
 - realistische Materialien und glaubwürdige Proportionen
-- klar vereinfacht, damit die Aussage auf dem Smartphone sofort verständlich bleibt
-- modern, erwachsen und sachlich
-- nicht kindlich, nicht Pixar, nicht Clay, nicht Comic
+- klare Ursache-Wirkung-Darstellung
+- modern, erwachsen und hochwertig
+- didaktisch klarer als ein Filmstill
+- weniger Atmosphäre, Nebel, Bloom und dekoratives Glow
+- keine abstrakte Sci-Fi-Kunst als Ersatz für Erklärung
+- kein Pixar-, Clay-, Comic- oder Kinderlernlook
+- keine sterile 2D-Schulbuchgrafik
 - nicht vollständig fotorealistisch
-- keine sterile Schulbuchgrafik
-- räumliche Tiefe, saubere Lichtführung und hochwertige Oberflächen
 - ein dominantes Hauptmotiv pro Bild
+
+## Wichtigster Grundsatz
+
+**Verständlichkeit schlägt Spektakel.**
+
+Ein Bild darf nur dann dramatisch sein, wenn die Dramatik die wissenschaftliche Aussage unterstützt. Ein Bild ist abzulehnen, wenn es zwar schön aussieht, aber die Voice-Aussage nicht erklärt.
+
+## Bevorzugte Darstellungsformen
+
+Je nach Thema zuerst prüfen, ob sich die Aussage als eine dieser Formen zeigen lässt:
+
+1. reales Objekt mit sichtbarer Ursache/Wirkung
+2. Cutaway / Schnittansicht
+3. Exploded View mit wenigen klar getrennten Bauteilen
+4. Makroansicht
+5. Mikro-/Molekülebene
+6. Vorher-Nachher-Vergleich
+7. klarer räumlicher Prozess mit Start, Wechselwirkung und Ergebnis
+8. vereinfachte Versuchsanordnung
+9. kosmischer Maßstab mit eindeutiger räumlicher Beziehung
+
+Abstrakte leuchtende Kugeln, Energieexplosionen oder dekorative Partikel sind keine Standarddarstellung.
 
 ## Farbwelt
 
-Die Kanalidentität entsteht nicht durch eine starre Einzelfarbe, sondern durch kontrollierte wissenschaftliche Farbsemantik.
+Die Farben dienen der Erklärung und nicht der Dekoration.
 
-Grundstimmung:
-
-- Navy
-- Blau-Schwarz
-- Anthrazit
-- dunkle neutrale Studioumgebungen
-
-Akzentfarben nach Bedeutung:
-
-- Cyan/Elektroblau: Energie, Strom, Signal, kalte technische Prozesse
-- Gold: Erklärung, Fokus, hervorgehobener Zusammenhang
+- Cyan/Blau: Energie, Strom, Signal, kalte technische Vorgänge
+- Gold/Gelb: Fokus, erklärter Zusammenhang, relevante Energieabgabe
 - Orange: Wärme, Reibung, hohe Temperatur
-- Rot: Fehler, Gefahr, kritischer Zustand
-- Violett: Felder, Plasma, kosmische oder quantenartige Visualisierungen, wenn fachlich passend
-- natürliche Stofffarben: Chemie, Materialien, Planeten, Flüssigkeiten und reale Objekte
+- Rot: Gefahr, Fehler, kritischer Zustand
+- Violett: nur wenn Plasma, Felder oder kosmische Vorgänge es fachlich rechtfertigen
+- natürliche Stofffarben: Materialien, Chemie, Planeten, Flüssigkeiten und reale Objekte
 
-Nicht jedes Bild muss dunkel sein. Helle wissenschaftliche Szenen sind erlaubt, wenn Thema und Lesbarkeit davon profitieren. Die Serie muss trotzdem hochwertig und konsistent wirken.
-
-## Themenübergreifende Darstellungsformen
-
-Die Bildwelt muss unter anderem funktionieren für:
-
-- Atome und Moleküle
-- chemische Reaktionen
-- Elektronen und Stromfluss
-- Magnetfelder
-- Motoren, Transformatoren und Schutzgeräte
-- Wärme und Teilchenbewegung
-- Licht und Optik
-- Kräfte und Bewegung
-- Flüssigkeiten und Gase
-- Planeten, Sterne und schwarze Löcher
-- Energieumwandlung
-- Materialien und mikroskopische Strukturen
-- technische Geräte und reale Alltagsobjekte
+Neonfarben, starke Bloom-Effekte und mehrfarbige Sci-Fi-Glows nur verwenden, wenn sie fachlich zwingend sind.
 
 ## Bildvertrag
 
@@ -68,18 +66,48 @@ Verbindlich:
 - ein dominantes Hauptmotiv
 - maximal ein bis drei unterstützende Elemente
 - klare Blickführung
-- keine visuelle Überladung
+- Ursache und Wirkung räumlich nachvollziehbar
 - Motiv groß und phone-tauglich
+- relevante Bauteile/Objekte voneinander visuell unterscheidbar
+- keine visuelle Überladung
 - kein unnötiges UI-Design
-- keine dekorativen Icons ohne Erklärwert
-- keine zufälligen Pfeile oder Diagramme
-- keine zweite konkurrierende technische Hauptdarstellung
+- keine dekorativen Icons
+- keine zufälligen Pfeile
+- keine zweite konkurrierende Hauptaussage
+
+## Beschriftungen
+
+Wichtige Dinge **dürfen und sollen beschriftet werden**, wenn die Voice sonst schwerer zu verstehen wäre.
+
+Die KI-generierte Basis bleibt trotzdem textfrei, weil generierter Text unzuverlässig ist. Beschriftungen werden danach kontrolliert als statische Overlay-Ebene gesetzt.
+
+Regeln:
+
+- maximal 1–3 Labels pro Bild
+- kurze deutsche Begriffe, ideal 1–3 Wörter
+- nur fachlich wichtige Elemente beschriften
+- keine vollständigen Sätze
+- keine Wiederholung des gesamten Untertitels
+- dünne ruhige Leader-Line zum Zielobjekt
+- klarer Endpunkt am bezeichneten Bauteil/Objekt
+- Beschriftung darf die Hauptvisualisierung nicht verdecken
+- keine Animation der Labels
+
+Gute Beispiele:
+
+- `Primärspule`
+- `Eisenkern`
+- `Sekundärspule`
+- `Luftmoleküle`
+- `blaues Licht`
+- `Rostschicht`
+- `Ereignishorizont`
 
 ## Text im generierten Bild
 
-Generierte Bilder enthalten grundsätzlich keinen sichtbaren Text.
+Generierte Bilder enthalten weiterhin keinen sichtbaren Text.
 
-Verboten:
+Verboten in der Bildgenerierung:
 
 - Überschriften
 - Labels
@@ -92,46 +120,59 @@ Verboten:
 - Wasserzeichen
 - pseudo-wissenschaftliche KI-Schrift
 
-Alle notwendigen Begriffe, Werte oder Formeln werden später kontrolliert gesetzt.
+Notwendige Begriffe, Werte und Formeln werden kontrolliert nachträglich gesetzt.
 
 ## Visualisierung unsichtbarer Prozesse
 
-Unsichtbare Vorgänge dürfen wissenschaftlich verständlich visualisiert werden, aber nicht als beliebige Fantasieeffekte.
+Unsichtbare Vorgänge müssen wie eine Erklärung aussehen, nicht wie Fantasy.
 
-Beispiele:
-
-- Stromfluss: kontrollierte Energie-/Ladungsspur
-- Magnetfeld: geordnete Feldlinien oder Feldvolumen
-- Wärme: Farbverlauf und erhöhte Teilchenbewegung
+- Stromfluss: sparsame kontrollierte Ladungs-/Energiespur entlang eines realen Leiterwegs
+- Magnetfeld: geordnete Feldlinien oder ruhiges Feldvolumen
+- Wärme: Materialfarbe, Temperaturgradient oder Teilchenverteilung
 - Gas: räumliche Teilchenverteilung
-- chemische Reaktion: klare Ausgangsstoffe, Übergang und Produkt
-- Licht: nachvollziehbare Strahlen oder Wellenfronten
-- Atom-/Molekülebene: didaktisch vereinfachte, konsistente Darstellung
+- chemische Reaktion: klar erkennbare Ausgangsstoffe und Ergebnis
+- Licht: sichtbare Strahlen/Wellenfronten mit nachvollziehbarer Richtung
+- Atom-/Molekülebene: didaktisch vereinfachtes, konsistentes Modell
 
 ## Komposition für Video
 
 - 9:16 Hochformat
 - edge-to-edge
-- keine weißen oder grauen Balken
+- keine weißen/grauen Balken
 - keine Letterbox-Flächen
-- keine sichtbaren Nähte oder Split-Hintergründe
-- obere ca. 16–18 % möglichst ruhig für optionalen kontrollierten Titel
-- untere ca. 24–26 % ruhig genug für Untertitel
-- Hauptmotiv darf diese Zonen optisch berühren, aber keine unverzichtbare Information darf dort liegen
+- keine Split-Hintergründe ohne fachlichen Grund
+- Hauptmotiv groß und sofort erkennbar
+- obere ca. 16–18 % möglichst ruhig für optionalen Titel
+- untere ca. 24–26 % ausreichend ruhig für Untertitel
+- seitlich bei Bedarf Platz für 1–3 kontrollierte Labels einplanen
+- unverzichtbare Information nicht hinter Untertitel- oder Titelzone platzieren
 
 ## Cover
 
-Das erste Szenenbild ist gleichzeitig der visuelle Cover-Hintergrund.
+Bild 01 ist zugleich erster Szenenshot und Cover-Hintergrund.
 
-Für Bild 01 werden standardmäßig drei Varianten erzeugt. Danach wird genau eine Gewinner-Variante für Cover und erste Szene verwendet.
+Für Bild 01 werden drei unterschiedliche Varianten erzeugt. Die Gewinner-Version muss:
 
-Kein separates künstlich anders aussehendes Thumbnail-System.
+- die zentrale Frage ohne Text visuell neugierig machen
+- ein eindeutiges Hauptmotiv haben
+- auch als kleines Thumbnail funktionieren
+- denselben Scientific-Cutaway-Stil wie das restliche Video behalten
 
 ## Remotion-Regel
 
 Remotion verändert die Bildwelt nicht.
 
-Verboten sind:
+Erlaubt:
+
+- statische Szenenbilder
+- harte Schnitte
+- Voice-over
+- Untertitel
+- fachlich notwendige statische Labels/Leader-Lines
+- optionale statische Werte/Formeln
+- optionale SFX
+
+Verboten:
 
 - Zoom
 - Pan
@@ -139,25 +180,25 @@ Verboten sind:
 - Parallax
 - Rotation
 - Kamerafahrt
-- Partikel
-- Glows als Bewegungseffekt
+- animierte Partikel
+- animierte Glows
 - Morphing
 - animierte Diagramme
 - animierte technische Bauteile
 - Prozessanimationen
 - Crossfade als Standard
 
-Zwischen Szenen wird hart geschnitten. Bilder bleiben während ihrer gesamten Standzeit statisch.
-
 ## Freigabekriterien
 
 Ein Bild ist nur freigegeben, wenn:
 
-1. die zentrale Aussage in weniger als einer Sekunde erfassbar ist,
-2. genau ein Hauptmotiv dominiert,
-3. kein sichtbarer KI-Text enthalten ist,
-4. die Darstellung fachlich plausibel ist,
-5. keine unnötigen Elemente ablenken,
-6. das Bild zur gemeinsamen Scientific-3D-Welt passt,
-7. Untertitel- und Titelzone verwendbar bleiben,
-8. das Bild ohne nachträgliche Remotion-Animation funktioniert.
+1. die zentrale Aussage in weniger als einer Sekunde erkennbar ist,
+2. das Bild die Aussage erklärt und nicht nur illustriert,
+3. genau ein Hauptmotiv dominiert,
+4. Ursache/Wirkung oder Aufbau räumlich nachvollziehbar sind,
+5. kein sichtbarer KI-Text enthalten ist,
+6. die Darstellung fachlich plausibel ist,
+7. keine unnötigen Glow-/Nebel-/Sci-Fi-Effekte ablenken,
+8. notwendige Label-Ziele klar erkennbar sind,
+9. Untertitel-/Titelzone verwendbar bleibt,
+10. das Bild ohne nachträgliche Bewegung funktioniert.
