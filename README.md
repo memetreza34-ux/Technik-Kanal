@@ -10,9 +10,11 @@ Das Repository ist **Science-only**. Frühere Elektro-Testreels, Remotion-Animat
 Thema
 → Recherche + Quellen
 → deutsches Skript
-→ Szenen-/Bildplanung
+→ Szenenplanung
+→ neue Bildwelt festlegen
+→ Bildprompts erstellen
 → Preflight
-→ Cinematic Scientific 3D Editorial Bilder
+→ Bilder
 → Voice-over
 → Asset-Readiness
 → lokale Wort-Zeitstempel
@@ -23,15 +25,11 @@ Thema
 → QA
 ```
 
-## Bild- und Remotion-Regeln
+## Aktueller Bildstatus
 
-- 9:16, ein Hauptmotiv und eine Aussage pro Bild
-- generierte Bilder ohne sichtbare Schrift
-- Bild 01 ist erste Szene und Coverquelle
-- adaptive 6–16 visuelle Beats
-- Remotion erzeugt keine Animationen, Zooms, Pans, Ken Burns, Parallax, Partikel oder Prozessvisualisierungen
-- zwischen Bildern werden harte Schnitte verwendet
-- Remotion übernimmt nur Bildmontage, Voice, Captions, optionale SFX und Export
+Im Repo ist aktuell **keine feste Bildwelt definiert**. Frühere Scientific-3D-/Cutaway-Stilregeln und die dazugehörigen Referenzprompts wurden entfernt. Bis eine neue Bildwelt beschlossen ist, darf kein Agent eigenständig einen Markenstil ableiten oder alte Style-Prompts wiederherstellen.
+
+Die neutralen technischen Bildregeln bleiben: 9:16, ein statisches Bild pro Beat, Bild 01 als erster Shot und Coverquelle, keine zufällige KI-Schrift/Logos/Wasserzeichen und keine Remotion-Kamerabewegung.
 
 ## Neuer Reel
 
@@ -50,7 +48,7 @@ npm run science:new -- \
 npm run science:preflight -- "<reel-ordner>"
 ```
 
-Preflight läuft **vor** Bilder und Voice produziert werden und prüft Skript, Quellen, Bildplanung, Prompts und `science-static-v1`.
+Der Preflight prüft Skript, Quellen, Szenenplanung und die benötigten Produktionsdateien. Solange für ein Projekt noch keine neuen Bildprompts angelegt wurden, bleibt die visuelle Produktion absichtlich unvollständig.
 
 ## Asset-Readiness
 
@@ -72,13 +70,13 @@ Die Pipeline verarbeitet die Voice auf exakt 1,10×, normalisiert die Lautheit, 
 
 `channels/science/reels/2026-09-28_bis_2026-10-04/01_Warum-ist-der-Himmel-blau/`
 
-Dieses Projekt ist die aktuelle Referenz für Recherche, Quellen-IDs, Skript, statische Bildbeats, Prompts, Scene-Plan und Prompt-Manifest.
+Das Projekt bleibt Referenz für Recherche, Quellen, Skript und Szenenplan. Die frühere Bildwelt und ihre Bildprompts sind bewusst entfernt.
 
 ## Aktive Architektur
 
 - Kanal: `channels/science/`
 - Renderer: `ScienceReel`
 - Runtime: `science-runtime.json`
-- Visual Policy: `science-static-v1`
-- Bildwelt: `Cinematic Scientific 3D Editorial`
+- technische Visual Policy: `science-static-v1`
+- Bildwelt: aktuell nicht definiert
 - Befehle: ausschließlich `science:*`
