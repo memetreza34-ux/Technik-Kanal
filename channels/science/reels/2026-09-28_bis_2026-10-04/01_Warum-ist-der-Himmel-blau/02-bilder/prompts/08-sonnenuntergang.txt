@@ -1,6 +1,18 @@
-SCENE 08 — WHY SUNSETS TURN RED AND YELLOW
+SCENE 08
 
-Scientific statement: At sunset sunlight travels through a longer atmospheric path; much of the blue light is scattered away, leaving more red and yellow direct light.
-Show the Sun very low at the horizon, with a long warm beam crossing a visibly deep atmospheric layer toward the viewer. Blue light is dispersed away through the atmosphere while the remaining direct path is dominated by natural red-orange and yellow. Keep it scientifically restrained, not fantasy sunset art.
+Scientific statement: At sunset, sunlight travels through much more atmosphere; much of the blue light is scattered away, while more red and yellow light continues toward the observer.
 
-Cinematic Scientific 3D Editorial. Scientifically plausible light scattering, adult editorial look, realistic warm horizon, strong spatial depth, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI, decorative icons, lens flare overload, motion blur or animation cues.
+Explanatory mode: LONG-PATH EARTH-ATMOSPHERE CUTAWAY.
+
+Scientific Cutaway 3D Explainer. Show the Sun low near the horizon, the curved edge of Earth, a thin atmospheric layer, and an observer on the surface. A long sunlight path should travel through the atmosphere toward the observer. Along that path, blue light is visibly scattered sideways out of the direct beam, while the remaining direct beam becomes increasingly warm red-orange before reaching the observer.
+
+The cause-and-effect must be obvious without text: longer atmospheric path removes more blue from the direct sunlight and leaves warmer colors.
+
+Use realistic sunset geometry and natural warm colors. Avoid dramatic fantasy skies, excessive bloom, neon gradients or decorative particles.
+
+Label targets to keep visually distinct for later controlled overlays: scattered blue light, direct red-yellow light, long atmospheric path.
+Do not render the labels inside the generated image.
+
+Vertical 9:16, edge-to-edge, large clean geometry, side space for labels, lower subtitle zone clear.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
