@@ -1,6 +1,18 @@
-SCENE 04 — SHORT BLUE WAVELENGTHS SCATTER MORE STRONGLY
+SCENE 04
 
-Scientific statement: Shorter blue wavelengths are scattered much more efficiently by small atmospheric molecules than longer red wavelengths.
-Create one clear comparison inside a single coherent atmospheric volume: incoming mixed light meets identical small gas molecules; blue light is redistributed strongly in many directions while red light continues more directly. The comparison must be obvious without text and without a UI split-screen.
+Scientific statement: Short-wavelength blue light is scattered much more strongly by small air molecules than long-wavelength red light.
 
-Cinematic Scientific 3D Editorial. Scientifically plausible, adult editorial look, controlled color semantics, cyan-blue only for the more strongly scattered short wavelength and natural red for the longer wavelength, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI panels, decorative arrows, fantasy lightning, motion blur or animation cues.
+Explanatory mode: CONTROLLED COMPARISON.
+
+Scientific Cutaway 3D Explainer. Show one shared atmospheric interaction zone with the same small air molecules. A blue light path should visibly scatter strongly in several directions around the molecules, while a red-orange light path remains much straighter and is scattered far less.
+
+Keep the comparison spatially simple and fair: same molecules, same interaction region, two clearly distinguishable wavelength colors. The image must make the difference in scattering strength obvious without relying on text.
+
+Use restrained lighting, realistic optical behavior, clean dark-neutral background and minimal decorative effects. No neon haze, no fantasy energy bursts, no random arrows.
+
+Label targets to keep visually distinct for later controlled overlays: blue light, red light, air molecules.
+Do not render the labels inside the generated image.
+
+Vertical 9:16, edge-to-edge, large comparison area, clean side margins for later labels, lower subtitle zone kept clear.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
