@@ -22,27 +22,21 @@ for (const scene of plan.scenes) {
   if (headlineWords > config.textQuality.headlineWordsMax) errors.push(`${scene.id}: Headline zu lang.`);
   if (!scene.voiceText.trim()) errors.push(`${scene.id}: Voice-Text fehlt.`);
   if (!scene.imageDir.trim()) errors.push(`${scene.id}: Bildzuordnung fehlt.`);
-  const labels = scene.imageAnnotations ?? [];
-  if (labels.length > config.visuals.controlledLabels.maximumPerScene) errors.push(`${scene.id}: zu viele kontrollierte Labels.`);
-  for (const label of labels) {
-    const words = String(label.text ?? '').trim().split(/\s+/).filter(Boolean).length;
-    if (words > config.visuals.controlledLabels.maximumWordsPerLabel) errors.push(`${scene.id}: Label "${label.text}" ist zu lang.`);
-  }
 }
 
 const promptFiles = {};
 for (const scene of plan.scenes) {
   const file = path.join(paths.promptDir,`${scene.id}.txt`);
   if (!fs.existsSync(file)) {
-    errors.push(`${scene.id}: Einzelprompt fehlt.`);
+    errors.push(`${scene.id}: Einzelprompt fehlt. Neue Bildwelt zuerst festlegen.`);
     continue;
   }
   const prompt = fs.readFileSync(file,'utf8');
   promptFiles[scene.id] = prompt;
-  if (/\[GENAUE|\[AUSSAGE|ERGÄNZEN|PLACEHOLDER/i.test(prompt)) errors.push(`${scene.id}: Prompt enthält noch Platzhalter.`);
-  if (!/scientific cutaway 3d explainer/i.test(prompt)) errors.push(`${scene.id}: verbindliche Scientific-Cutaway-Bildwelt fehlt im Prompt.`);
-  if (!/no visible text/i.test(prompt)) errors.push(`${scene.id}: textfreie Basisbildregel fehlt im Prompt.`);
-  if (!/cause-and-effect|internal structure|cutaway|cross-section|macro|micro|real object/i.test(prompt)) warnings.push(`${scene.id}: Prompt beschreibt die Erklärdarstellung noch zu schwach.`);
+  if (/\[GENAUE|\[AUSSAGE|ERGÄNZEN|PLACEHOLDER|NEUE BILDWELT/i.test(prompt)) {
+    errors.push(`${scene.id}: Prompt ist noch nicht final.`);
+  }
+  if (!/no (random )?visible text/i.test(prompt)) warnings.push(`${scene.id}: Zufällige KI-Schrift sollte ausdrücklich ausgeschlossen werden.`);
 }
 
 const promptManifest = fs.existsSync(paths.promptManifest) ? JSON.parse(fs.readFileSync(paths.promptManifest,'utf8')) : null;
@@ -52,40 +46,32 @@ warnings.push(...policy.warnings);
 
 const coverFile = path.join(paths.promptDir,'00-cover.txt');
 let coverPrompt = '';
-if (!fs.existsSync(coverFile)) errors.push('Cover-/Bild-01-Prompt fehlt.');
+if (!fs.existsSync(coverFile)) errors.push('Cover-/Bild-01-Prompt fehlt. Neue Bildwelt zuerst festlegen.');
 else {
   coverPrompt = fs.readFileSync(coverFile,'utf8');
-  const normalized = coverPrompt.toLowerCase();
-  if (!normalized.includes('scientific cutaway 3d explainer')) errors.push('Coverprompt verwendet nicht die verbindliche Scientific-Cutaway-Bildwelt.');
-  if (!normalized.includes('no visible text')) errors.push('Coverprompt muss sichtbaren KI-Text verbieten.');
-  if (!normalized.includes('edge-to-edge')) errors.push('Coverprompt muss 9:16 edge-to-edge verlangen.');
-  if (!/three distinct composition candidates|drei.*kandid/i.test(coverPrompt)) errors.push('Bild 01 muss drei Cover-Kandidaten vorsehen.');
+  if (/neue bildwelt/i.test(coverPrompt)) errors.push('Coverprompt ist noch nicht final.');
+  if (!/9:16/i.test(coverPrompt)) warnings.push('Coverprompt sollte 9:16 ausdrücklich verlangen.');
 }
 
 const combinedFile = path.join(paths.root,'02-bilder','ALLE-BILDPROMPTS-MIT-COVER.txt');
-if (!fs.existsSync(combinedFile)) errors.push('ALLE-BILDPROMPTS-MIT-COVER.txt fehlt.');
+if (!fs.existsSync(combinedFile)) errors.push('Gesamt-Promptdatei fehlt. Neue Bildwelt zuerst festlegen.');
 else {
   const combined = fs.readFileSync(combinedFile,'utf8');
   const normalize = (value) => String(value).replace(/\s+/g,' ').trim().toLowerCase();
-  if (coverPrompt && !normalize(combined).includes(normalize(coverPrompt))) errors.push('Vollständiger Coverprompt fehlt in der Gesamtdatei.');
+  if (coverPrompt && !normalize(combined).includes(normalize(coverPrompt))) errors.push('Coverprompt fehlt in der Gesamtdatei.');
   for (const scene of plan.scenes) {
     if (promptFiles[scene.id] && !normalize(combined).includes(normalize(promptFiles[scene.id]))) errors.push(`${scene.id}: Prompt fehlt in der Gesamtdatei.`);
   }
-  if (!combined.includes(plan.coverText)) errors.push('Gesamtdatei nennt den kontrollierten deutschen Covertext nicht.');
 }
 
 const report = {
   version:'science-static-v1',
-  styleId:config.visuals.styleId,
+  brandVisualStyleDefined:config.visuals.brandVisualStyleDefined === true,
   generatedAt:new Date().toISOString(),
   passed:errors.length===0,
   sceneCount:plan.scenes.length,
-  imageScenes:plan.scenes.length,
   layouts:[...layouts],
-  backgroundFamilies:[...new Set(plan.scenes.map((scene)=>scene.backgroundFamily).filter(Boolean))],
-  shotTypes:[...new Set(plan.scenes.map((scene)=>scene.shotType).filter(Boolean))],
   visualPolicyVersion:plan.visualPolicyVersion,
-  generatedImageTextPolicy:plan.generatedImageTextPolicy,
   errors,
   warnings
 };
@@ -96,5 +82,5 @@ if (errors.length) {
   errors.forEach((error) => console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Science-Creative-QA bestanden: ${plan.scenes.length} statische Scientific-Cutaway-3D-Erklärszenen.`);
+console.log(`✓ Science-Creative-QA bestanden: ${plan.scenes.length} statische Bildszenen.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
