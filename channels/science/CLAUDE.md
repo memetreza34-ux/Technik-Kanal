@@ -43,16 +43,35 @@ Elektrotechnik-spezifische Regeln dürfen nur für Elektro-Themen gelten und nie
 
 ## Bildwelt
 
-Verbindlicher Stil: `Cinematic Scientific 3D Editorial`.
+Verbindlicher Stil: `Scientific Cutaway 3D Explainer`.
+
+Grundregel: **Verständlichkeit schlägt Spektakel.**
 
 - ein Hauptmotiv pro Bild
 - eine zentrale Aussage pro Bild
+- reale Objekte, Cutaways, Querschnitte, Makro-/Mikroansichten oder klare Versuchsanordnungen bevorzugen
+- Ursache/Wirkung oder innerer Aufbau müssen räumlich verständlich sein
+- weniger Nebel, Bloom, Partikel und dekoratives Glow
+- keine abstrakte Sci-Fi-Kunst als Ersatz für Erklärung
 - adaptive Bildanzahl statt fester Szenenzahl
 - keine überladenen Schaubilder
 - keine KI-Schrift
 - gleiche visuelle DNA über Physik, Chemie, Elektrotechnik, Astronomie und weitere Wissenschaftsthemen
 - Fachgebiet-spezifische Darstellungsregeln aus `SCIENCE-VISUAL-GRAMMAR.md` sind verbindlich
 - wenn eine Aussage als statisches Bild nicht verständlich wird, muss die Bildplanung geändert oder die Aussage in mehrere Beats geteilt werden; Remotion darf das Problem nicht durch Bewegung lösen
+
+## Kontrollierte Labels
+
+Wichtige Dinge dürfen beschriftet werden, wenn das Verständnis dadurch klarer wird.
+
+- Basisbild bleibt textfrei
+- maximal 1–3 Labels pro Szene
+- kurze deutsche Begriffe, ideal 1–3 Wörter
+- dünne Leader-Line zum eindeutigen Zielobjekt
+- keine vollständigen Sätze
+- keine Wiederholung des Untertitels
+- keine Label-Animation
+- Labels bereits bei der Bildkomposition mitdenken und freien Platz reservieren
 
 ## Remotion – harte Grenze
 
@@ -77,7 +96,7 @@ Remotion darf nur:
 - harte Schnitte setzen
 - Voice-over abspielen
 - Untertitel anzeigen
-- statische Overlays anzeigen
+- statische kontrollierte Labels, Leader-Lines, Werte oder Formeln anzeigen
 - optionale SFX platzieren
 - rendern
 
