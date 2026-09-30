@@ -18,18 +18,21 @@ Elektrotechnik ist ein Themenbereich unter mehreren.
 ## Verbindlicher Produktionsstandard
 
 - `science-static-v1`
-- Bildwelt: `Cinematic Scientific 3D Editorial`
 - direkte deutsche Frage als Hook
 - adaptive 6–16 visuelle Beats
 - ein statisches 9:16-Bild pro Szene
 - Bild 01 = Coverquelle + erster Shot
-- keine sichtbare KI-Schrift
+- keine zufällige KI-Schrift, Logos oder Wasserzeichen
 - keine Remotion-Animationen, Zooms, Pans, Ken Burns, Parallax oder Mechanismusbewegungen
 - harte Schnitte
 - deutsche Untertitel ohne Animation
 - Voice auf 1,10× mit Loudness-Normalisierung
 - lokale Wortzeiten und robuste Skript-/Voice-Ausrichtung
 - Quellen-IDs für fachliche Aussagen
+
+## Bildwelt
+
+Aktuell ist keine feste Bildwelt definiert. Frühere Scientific-3D-/Cutaway-Stilregeln wurden entfernt. Bis eine neue Bildwelt ausdrücklich beschlossen wird, darf kein fester visueller Markenstil angenommen oder rekonstruiert werden.
 
 ## Remotion-Rolle
 
