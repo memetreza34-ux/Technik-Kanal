@@ -1,6 +1,20 @@
-SCENE 01 / COVER SOURCE — THREE DISTINCT COMPOSITION CANDIDATES
+SCENE 01 / COVER SOURCE
 
-Central question: Why does Earth's sky look blue?
-Create three distinct composition candidates for the same scientific idea. The selected winner will be both the first video image and the cover background. Show Earth atmosphere from a grounded human-eye perspective with warm white sunlight entering from one side and clean blue scattered light filling the sky. The cause-and-effect relationship must be visually readable without labels. One dominant atmospheric-light motif, strong silhouette, minimal secondary elements.
+Create THREE DISTINCT COMPOSITION CANDIDATES for the question: Why is the sky blue?
 
-Cinematic Scientific 3D Editorial. High-end stylized scientific 3D illustration, scientifically plausible, adult editorial look, realistic materials and believable light behavior, strong spatial depth, controlled cinematic lighting, premium but not photorealistic, vertical 9:16 edge-to-edge. Keep the upper 18 percent and lower 25 percent visually calm. No visible text, labels, letters, numbers, formulas, logos, watermark, UI cards, decorative icons, split panels, borders, arrows, fantasy energy effects, excessive neon, motion blur or animation cues.
+Scientific Cutaway 3D Explainer. The image must feel like a premium science explanation, not cinematic sci-fi art.
+
+All three candidates must use the same scientific idea: show the curved edge of Earth with a clearly visible thin atmosphere, bright white sunlight entering from one side, and blue light visibly scattering through the atmosphere toward the viewing side. Keep the relationship simple enough to understand at thumbnail size.
+
+Candidate A: strong Earth-horizon cutaway with the atmosphere as a thin transparent layer.
+Candidate B: closer atmospheric cross-section with sunlight entering and blue scattering emphasized.
+Candidate C: wider Earth-and-atmosphere composition with a clear white incoming beam and blue scattering around the observer side.
+
+One dominant explanatory subject, realistic Earth and atmosphere, physically plausible light direction, restrained lighting, realistic materials, clean depth, no decorative fog, no excessive bloom, no fantasy particles, no abstract glowing orb.
+
+Label targets to keep visually distinct for later controlled overlays: atmosphere, sunlight.
+Do not render these words inside the generated image.
+
+Vertical 9:16, full-bleed edge-to-edge. Keep upper 18% reasonably calm for optional title text and lower 25% calm for subtitles. Leave clean side space for later labels.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark, HUD, UI cards or fake scientific markings.
