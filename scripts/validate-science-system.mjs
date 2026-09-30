@@ -6,16 +6,11 @@ const root = process.cwd();
 const required = [
   '.claude/settings.json',
   'channels/science/CLAUDE.md',
-  'channels/science/engine/VISUAL-QUALITY-GATE.md',
   'channels/science/engine/config/science-v1.json',
   'channels/science/engine/config/voice-v1.json',
   'channels/science/engine/topic-history.json',
   'channels/science/gehirn/KANAL.md',
   'channels/science/gehirn/REELS.md',
-  'channels/science/gehirn/BILDSTIL.md',
-  'channels/science/gehirn/SCIENCE-VISUAL-GRAMMAR.md',
-  'channels/science/gehirn/MASTER-STYLE-PROMPT.md',
-  'channels/science/gehirn/IMAGE-PROMPT-TEMPLATE.md',
   'channels/science/public/smoke/science-static-smoke.svg',
   'channels/science/src/index.ts',
   'channels/science/src/ScienceRoot.tsx',
@@ -66,6 +61,12 @@ const forbidden = [
   'channels/science/src/LeitungsschutzschalterReel.tsx',
   'channels/science/engine/config/electrical-v1.json',
   'channels/science/reels/2026-08-03_bis_2026-08-09',
+  'channels/science/engine/VISUAL-QUALITY-GATE.md',
+  'channels/science/gehirn/BILDSTIL.md',
+  'channels/science/gehirn/SCIENCE-VISUAL-GRAMMAR.md',
+  'channels/science/gehirn/MASTER-STYLE-PROMPT.md',
+  'channels/science/gehirn/IMAGE-PROMPT-TEMPLATE.md',
+  'channels/science/skills/bildprompts.md',
   'scripts/lib/electrical-visual-policy.mjs',
   'scripts/lib/electrical-contracts.test.ts',
   'scripts/new-electrical-week-reel.mjs',
@@ -101,9 +102,9 @@ if (missing.length || legacy.length) {
     missing.forEach((file) => console.error(`- fehlt: ${file}`));
   }
   if (legacy.length) {
-    console.error('Veralteter Einstiegspunkt im Repo:');
+    console.error('Veralteter oder gelöschter Einstiegspunkt im Repo:');
     legacy.forEach((file) => console.error(`- entfernen: ${file}`));
   }
   process.exit(1);
 }
-console.log(`✓ Science-only-Systemstruktur vollständig (${required.length} Kernpfade).`);
+console.log(`✓ Science-only-Systemstruktur vollständig (${required.length} Kernpfade); Bildwelt bewusst nicht definiert.`);
