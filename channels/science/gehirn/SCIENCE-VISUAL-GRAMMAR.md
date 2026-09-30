@@ -1,171 +1,217 @@
-# Science Visual Grammar v1
+# Science Visual Grammar v2
 
-Diese Datei konkretisiert `BILDSTIL.md`. Ziel ist eine wiedererkennbare Bildwelt über unterschiedliche Wissenschaftsgebiete hinweg, ohne dass jede Szene gleich aussieht.
+Diese Datei konkretisiert `BILDSTIL.md`. Ziel ist eine wiedererkennbare, erwachsene Wissenschaftsbildwelt, die **erklärt statt nur beeindruckt**.
 
 ## Unveränderliche Marken-DNA
 
 Jede Szene nutzt dieselbe Grundsprache:
 
-- hochwertige stilisierte 3D-Editorial-Illustration
+- Scientific Cutaway 3D Explainer
+- hochwertige stilisierte 3D-Erklärillustration
+- wissenschaftlich plausibel
 - erwachsene, sachliche Anmutung
 - ein dominantes Hauptmotiv
-- klare räumliche Tiefe
-- kontrollierte Studio-/Umgebungsbeleuchtung
-- glaubwürdige Materialien
-- starke Silhouette und mobile Lesbarkeit
-- keine sichtbare KI-Schrift
-- keine UI-Karten, Sticker, dekorativen Icons oder Infografik-Rahmen
+- reale Materiallogik
+- klare Ursache-Wirkung-Beziehung
+- Cutaway, Cross-section, Macro oder Micro bevorzugen, wenn innere Zusammenhänge wichtig sind
+- starke mobile Lesbarkeit
+- Basisbild ohne KI-Schrift
+- kontrollierte statische Labels nur nachträglich
+- keine UI-Karten, Sticker oder dekorativen Icons
 - kein Pixar-, Clay-, Comic- oder Kinderlernlook
-- keine übertriebene Sci-Fi-Ästhetik
-- keine Bewegung im finalen Video; jedes Bild muss als Standbild vollständig funktionieren
+- keine abstrakte Sci-Fi-Kunst als Standard
+- keine Bewegung im finalen Video
+
+## Erklärlogik vor Stil
+
+Vor jeder Szene wird zuerst bestimmt, **was sichtbar bewiesen oder erklärt werden soll**.
+
+Bevorzugte Hierarchie:
+
+1. reale Ursache und Wirkung sichtbar machen
+2. inneren Aufbau als Cutaway zeigen
+3. Material-/Mikrostruktur zeigen
+4. räumliche Beziehung zeigen
+5. Vorher/Nachher zeigen
+6. erst danach abstraktere Modelle einsetzen
+
+Ein schönes abstraktes Bild ist abzulehnen, wenn ein verständlicher Cutaway, Querschnitt oder Versuchsaufbau möglich wäre.
 
 ## Physik
 
-Bevorzugte Motive:
+Bevorzugt:
 
 - reale oder idealisierte Versuchsanordnung
-- Körper, Kräfte, Licht, Wellen, Felder oder Energiezustände
-- klare Ursache-Wirkung-Komposition
+- Lichtstrahlen/Wellenfronten
+- Körper und Kräfte
+- klarer Vorher-Nachher-Zustand
+- Cutaway, wenn ein innerer Prozess relevant ist
 
 Regeln:
 
-- Vektoren, Strahlen und Feldlinien nur, wenn sie die Aussage wirklich erklären
-- keine Fantasie-Energieblitze als Ersatz für einen physikalischen Prozess
-- Größenverhältnisse nicht ohne didaktischen Grund verfälschen
-- bei abstrakten Vorgängen eine reale räumliche Referenz behalten
+- Kräfte, Strahlen und Feldlinien sparsam und eindeutig
+- reale räumliche Referenz behalten
+- keine Fantasie-Energieblitze
+- keine dekorative Partikelwolke als Erklärung
+- bei komplexen Vorgängen lieber in zwei Bilder teilen
 
 ## Chemie
 
-Bevorzugte Motive:
+Bevorzugt:
 
-- Stoffe mit glaubwürdiger Materialität
-- Labor- oder Materialkontext, wenn er Erkenntniswert hat
-- Molekül-/Teilchenebene nur dann, wenn die Aussage dort stattfindet
+- glaubwürdige Stoffe und Gefäße
+- Makroansicht der realen Reaktion
+- Molekül-/Teilchenebene nur wenn fachlich notwendig
+- Materialquerschnitt bei Korrosion, Schichten oder Diffusion
 
 Regeln:
 
-- Stofffarben nicht frei erfinden, wenn reale Farbe fachlich relevant ist
-- Reaktionsprodukte nicht als zufällige Explosion oder farbigen Rauch darstellen
-- Molekülmodelle innerhalb eines Reels konsistent halten
-- makroskopische und molekulare Ebene nicht ungekennzeichnet zu einer unmöglichen Szene vermischen
-- gefährliche Experimente nicht als nachmachbare Schritt-für-Schritt-Anleitung inszenieren
+- Stofffarben fachlich plausibel
+- Molekülmodell innerhalb eines Reels konsistent
+- Makro- und Molekülebene nur dann kombinieren, wenn der Übergang visuell eindeutig ist
+- keine zufälligen farbigen Explosionen oder Rauchwolken
 
 ## Elektrotechnik und Technik
 
-Bevorzugte Motive:
+Bevorzugt:
 
-- klar vereinfachter technischer Aufbau
-- Schnittansicht, wenn innere Funktion zentral ist
-- reale Materiallogik bei Leitern, Kontakten, Spulen, Kernen und Gehäusen
+- Cutaway / Schnittansicht
+- Exploded View mit wenigen Bauteilen
+- realistische Leiter, Kontakte, Wicklungen und Kerne
+- eindeutiger Signal-/Energiepfad
 
 Regeln:
 
-- Strom oder Energie nur als kontrollierte didaktische Spur darstellen
-- Schutzleiter, Leiterfarben, Anschlüsse und Bauteile nicht dekorativ vertauschen
-- keine erfundenen Klemmen, Leiterwege oder unrealistischen Gerätegeometrien, wenn sie die Erklärung verfälschen
-- keine Live-Arbeit oder gefährliche Manipulation als Handlungsvorbild zeigen
+- Leiterwege plausibel
+- keine erfundenen Anschlüsse
+- Strom/Energie nur als sparsame didaktische Spur
+- relevante Teile dürfen später beschriftet werden
+- technische Funktion muss ohne Bewegung verständlich sein
 
 ## Astronomie und Weltraum
 
-Bevorzugte Motive:
+Bevorzugt:
 
-- ein dominantes Himmelsobjekt oder ein klarer räumlicher Zusammenhang
-- realistische Lichtquelle und Schattenlogik
-- starke Tiefenwirkung ohne überladene Sternenfelder
+- ein dominantes Objekt
+- klare räumliche Beziehung
+- Querschnitt bei Planet/Stern, wenn innerer Aufbau erklärt wird
+- Lichtwege oder Größenvergleiche, wenn sie die Aussage tragen
 
 Regeln:
 
-- Größen und Entfernungen dürfen didaktisch komprimiert werden, aber die Aussage darf dadurch nicht falsch werden
-- schwarze Löcher, Nebel, Planeten und Sterne nicht mit beliebigen Fantasy-Farben überladen
-- keine Raumschiffe oder Menschen hinzufügen, wenn sie fachlich keine Rolle spielen
+- keine Fantasy-Portale
+- kein Neon-Nebel ohne fachlichen Grund
+- Akkretionsscheiben, Sterne, Planeten und Felder plausibel vereinfachen
+- starke Tiefe, aber keine dekorative Überladung
 
 ## Materialien, Geologie und Energie
 
-Bevorzugte Motive:
+Bevorzugt:
 
 - Materialquerschnitt
-- Mikrostruktur
 - Schichtaufbau
-- Energieumwandlung an einem klaren System
+- Bruchfläche
+- Mikrostruktur
+- Wärme-/Energiepfad in einem klaren System
 
 Regeln:
 
-- Oberflächen und Bruchstrukturen materialtypisch halten
-- Wärme, Druck, Ladung oder Phasenwechsel semantisch und sparsam visualisieren
-- keine dekorativen Diagramme oder HUD-Elemente
+- reale Materialfarben und Oberflächen
+- Druck, Wärme und Ladung sparsam visualisieren
+- Querschnitte klar voneinander trennen
 
 ## Mikro- und Teilchenebene
 
-Die Teilchenebene ist eine didaktische Darstellung, kein Fotorealismus.
+- didaktische Darstellung, kein falscher Fotorealismus
+- innerhalb eines Videos dieselbe Modelllogik
+- keine vermenschlichten Teilchen
+- keine dekorativen Orbitlinien, wenn fachlich irreführend
+- Teilchenverteilung, Richtung und räumliche Beziehung statt Motion Blur
+
+## Kontrollierte Beschriftungen
+
+Beschriftungen gehören zur **Erklärungsebene**, nicht zur Bildgenerierung.
 
 Verbindlich:
 
-- innerhalb eines Videos dieselbe Modelllogik beibehalten
-- Teilchen nicht vermenschlichen
-- Bewegung nicht durch Motion Blur simulieren; Zustand durch räumliche Verteilung, Richtung oder kontrollierte Spuren erklären
-- Atome nicht automatisch als klassische Planetensysteme zeigen, wenn das Modell für die Aussage irreführend wäre
+- maximal 1–3 Labels pro Szene
+- nur wenn sie einen fachlichen Mehrwert bringen
+- deutsche Kurzbegriffe, ideal 1–3 Wörter
+- dünne Leader-Line
+- eindeutiger Zielpunkt
+- keine Textbox-Wand
+- keine vollständigen Sätze
+- keine Wiederholung der Voice
+- statisch, niemals animiert
+
+Labels werden bereits bei der Bildkomposition mitgedacht: Das Bild muss freie Bereiche und eindeutige Zielobjekte bieten.
 
 ## Kamera-Grammatik
 
-Zulässige statische Perspektiven:
+Bevorzugte statische Perspektiven:
 
-- Hero: starkes zentrales Hauptmotiv
-- Macro: Detail eines realen Objekts oder Materials
-- Micro: didaktische Mikro-/Teilchenebene
-- Cutaway: technische oder materielle Schnittansicht
-- Cross-section: klarer Schicht-/Innenaufbau
+- Hero: einzelnes starkes Hauptmotiv
+- Macro: reales Detail
+- Micro: didaktische Teilchen-/Mikroebene
+- Cutaway: innere Funktion
+- Cross-section: Schichten oder Innenaufbau
+- Exploded: wenige funktional getrennte Teile
+- Top-down: Versuch oder geometrische Beziehung
+- Side: klarer Prozessweg
 - Wide: räumlicher Zusammenhang
-- Top-down: Versuchsanordnung oder geometrisch klare Beziehung
-- Comparison: nur wenn genau ein Vergleich die Kernaussage ist
+- Comparison: genau ein direkter Vergleich
 
-Innerhalb eines Reels mindestens drei Perspektivfamilien nutzen, wenn der Inhalt es sinnvoll zulässt. Perspektivwechsel dienen der Erklärung, nicht der Abwechslung um jeden Preis.
+Perspektive wird nach Erklärung gewählt, nicht nach Abwechslung.
 
-## Helligkeit
+## Licht und Helligkeit
 
-Der Kanal ist nicht "immer dunkel".
+Der Stil ist nicht permanent dunkel.
 
-Dunkel bevorzugen bei:
-
-- Weltraum
-- Energie-/Feldthemen
-- technischen Innenansichten
-- dramatischen Zustandsvergleichen
-
-Heller oder neutral bevorzugen bei:
+Bevorzugt neutral/hell bei:
 
 - Labor
-- Materialien
-- Flüssigkeiten
-- Alltagsobjekten
-- Szenen, in denen dunkler Hintergrund die Stofffarbe verfälschen würde
+- Glas, Flüssigkeiten, Materialien
+- reale Alltagsobjekte
+- medizinisch/biologische oder stoffliche Themen
 
-Die Wiedererkennbarkeit entsteht über Materialqualität, Lichtführung, Komposition und Farbsemantik, nicht über einen permanent schwarzen Hintergrund.
+Bevorzugt dunkel bei:
+
+- Weltraum
+- technische Innenansichten
+- Feld-/Energiethemen
+
+Auch dunkle Bilder müssen klar lesbar bleiben. Schwarz + Neon ist **keine Markenregel**.
 
 ## Anti-KI-Look
 
 Ablehnen bei:
 
-- sinnlosen Kabeln, Rohren oder Bauteilen
+- abstrakten leuchtenden Kugeln ohne erklärbare Funktion
+- sinnlosen Kabeln/Rohren/Bauteilen
 - deformierten Laborgeräten
 - unlogischen Spiegelungen
-- zufälligen leuchtenden Linien
+- zufälligen Glows
 - pseudo-wissenschaftlichen Symbolen
 - übermäßigem Neon
-- überfüllten Partikelfeldern
-- künstlichen Rahmen oder UI-Panels
+- Partikelteppichen
+- Lens-Flare als Hauptwirkung
+- künstlichen HUDs/UI-Panels
 - Textfragmenten
+- zu viel Nebel/Bloom
 - mehreren konkurrierenden Hauptmotiven
-- "cinematic" nur durch Nebel, Bloom und Lens Flare ohne fachlichen Grund
+- Bildästhetik, die mehr nach Sci-Fi-Art als nach Erklärung aussieht
 
 ## Szenenentscheidung
 
-Vor jedem Bild genau diese Reihenfolge:
+Vor jedem Bild:
 
-1. Welche eine Aussage spricht die Voice hier aus?
-2. Welche Ebene erklärt sie am besten: real, technisch, makro, mikro, molekular oder kosmisch?
-3. Welches einzelne Hauptmotiv beweist oder erklärt diese Aussage visuell?
-4. Welche maximal ein bis drei Nebenelemente sind wirklich nötig?
-5. Welche statische Perspektive macht den Zusammenhang sofort lesbar?
-6. Ist das Ergebnis auch ohne Animation verständlich?
+1. Welche eine Aussage spricht die Voice?
+2. Welche Ebene erklärt sie am besten: real, Cutaway, Makro, Mikro, molekular oder kosmisch?
+3. Was ist das eine Hauptmotiv?
+4. Welche 0–3 Nebenelemente sind wirklich nötig?
+5. Ist Ursache/Wirkung oder Aufbau räumlich erkennbar?
+6. Müssen 1–3 Dinge später beschriftet werden?
+7. Ist dafür im Bild sauberer Platz vorhanden?
+8. Funktioniert das Standbild ohne Bewegung?
 
-Wenn Punkt 6 mit Nein beantwortet wird, muss die Szene neu geplant oder in zwei Bilder geteilt werden. Remotion darf das Verständnis nicht durch Animation retten.
+Wenn Punkt 5 oder 8 mit Nein beantwortet wird, Szene neu planen oder aufteilen.
