@@ -1,6 +1,18 @@
-SCENE 02 — WHITE SUNLIGHT CONTAINS MANY VISIBLE COLORS
+SCENE 02
 
-Scientific statement: Sunlight looks white but contains the visible spectrum with different wavelengths.
-Show one clean beam of white sunlight entering a minimal optical glass prism and separating into a physically ordered visible spectrum. The prism and beam are the only major subjects. Keep the composition premium and scientific, not like a school worksheet.
+Scientific statement: White sunlight contains many visible colors with different wavelengths.
 
-Cinematic Scientific 3D Editorial. High-end stylized scientific 3D illustration, scientifically plausible optics, adult editorial look, realistic glass and light, controlled studio environment, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI cards, decorative icons, arrows, motion blur or animation cues.
+Explanatory mode: CONTROLLED OPTICS SETUP.
+
+Scientific Cutaway 3D Explainer. Show one clean white beam of sunlight entering a transparent triangular prism and separating into a clear visible spectrum on the other side. The prism and light path must dominate the frame. Keep the optical setup simple, physically plausible and easy to read on a phone.
+
+The visual message must be obvious: the incoming light looks white, but it contains multiple visible colors.
+
+Use realistic transparent glass, clean refraction, restrained neutral lighting and a simple dark-to-neutral studio environment. No fantasy glow, no decorative rainbow fog, no excessive reflections, no random particles.
+
+Label targets to keep visually distinct for later controlled overlays: white sunlight, visible colors.
+Do not render the labels inside the generated image.
+
+Vertical 9:16, full-bleed edge-to-edge, large prism and beam, clean lower subtitle zone and side space for labels.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
