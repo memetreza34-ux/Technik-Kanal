@@ -1,19 +1,12 @@
 {
-  "version":"science-static-v1",
-  "styleId":"scientific-cutaway-3d-explainer-v1",
-  "generatedImageTextPolicy":"none",
-  "controlledLabels":{
-    "allowed":true,
-    "maximumPerScene":3,
-    "maximumWordsPerLabel":3,
-    "animated":false
-  },
-  "animationAllowed":false,
-  "cameraMotionAllowed":false,
-  "transitionPolicy":"hard-cut",
-  "coverUsesFirstScene":true,
-  "coverCandidateCount":3,
-  "separateThumbnailForbidden":true,
-  "adaptiveVisualBeatCount":true,
-  "requiredVisibleSceneImages":9
+  "version": "science-static-v1",
+  "brandVisualStyleDefined": false,
+  "generatedImageTextPolicy": "none",
+  "animationAllowed": false,
+  "cameraMotionAllowed": false,
+  "transitionPolicy": "hard-cut",
+  "coverUsesFirstScene": true,
+  "separateThumbnailForbidden": true,
+  "adaptiveVisualBeatCount": true,
+  "requiredVisibleSceneImages": 9
 }
