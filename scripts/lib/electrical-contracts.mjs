@@ -33,8 +33,8 @@ export const ImageAnnotation = z.object({
 });
 
 export const VisualRecipe = z.object({
-  stage: z.enum(['scientific-dark','laboratory','micro','molecular','space','technical','material','real-context','comparison','diagram']),
-  camera: z.enum(['hero','macro','micro','cutaway','top-down','side','comparison','wide','orbital','cross-section']),
+  stage: nonEmpty,
+  camera: nonEmpty,
   subject: nonEmpty,
   focus: nonEmpty,
   motion: z.literal('none'),
