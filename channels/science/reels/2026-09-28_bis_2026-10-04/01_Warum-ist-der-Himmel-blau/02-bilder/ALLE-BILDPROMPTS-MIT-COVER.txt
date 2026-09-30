@@ -4,90 +4,212 @@ Finaler Covertext: Warum ist der Himmel blau?
 
 ## Cover / Bild 01 – drei Kandidaten
 
-SCENE 01 / COVER SOURCE — THREE DISTINCT COMPOSITION CANDIDATES
+SCENE 01 / COVER SOURCE
 
-Central question: Why does Earth's sky look blue?
-Create three distinct composition candidates for the same scientific idea. The selected winner will be both the first video image and the cover background. Show Earth atmosphere from a grounded human-eye perspective with warm white sunlight entering from one side and clean blue scattered light filling the sky. The cause-and-effect relationship must be visually readable without labels. One dominant atmospheric-light motif, strong silhouette, minimal secondary elements.
+Create THREE DISTINCT COMPOSITION CANDIDATES for the question: Why is the sky blue?
 
-Cinematic Scientific 3D Editorial. High-end stylized scientific 3D illustration, scientifically plausible, adult editorial look, realistic materials and believable light behavior, strong spatial depth, controlled cinematic lighting, premium but not photorealistic, vertical 9:16 edge-to-edge. Keep the upper 18 percent and lower 25 percent visually calm. No visible text, labels, letters, numbers, formulas, logos, watermark, UI cards, decorative icons, split panels, borders, arrows, fantasy energy effects, excessive neon, motion blur or animation cues.
+Scientific Cutaway 3D Explainer. The image must feel like a premium science explanation, not cinematic sci-fi art.
+
+All three candidates must use the same scientific idea: show the curved edge of Earth with a clearly visible thin atmosphere, bright white sunlight entering from one side, and blue light visibly scattering through the atmosphere toward the viewing side. Keep the relationship simple enough to understand at thumbnail size.
+
+Candidate A: strong Earth-horizon cutaway with the atmosphere as a thin transparent layer.
+Candidate B: closer atmospheric cross-section with sunlight entering and blue scattering emphasized.
+Candidate C: wider Earth-and-atmosphere composition with a clear white incoming beam and blue scattering around the observer side.
+
+One dominant explanatory subject, realistic Earth and atmosphere, physically plausible light direction, restrained lighting, realistic materials, clean depth, no decorative fog, no excessive bloom, no fantasy particles, no abstract glowing orb.
+
+Label targets to keep visually distinct for later controlled overlays: atmosphere, sunlight.
+Do not render these words inside the generated image.
+
+Vertical 9:16, full-bleed edge-to-edge. Keep upper 18% reasonably calm for optional title text and lower 25% calm for subtitles. Leave clean side space for later labels.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark, HUD, UI cards or fake scientific markings.
 
 ## 01-hook
 
-SCENE 01 — BLUE SKY HOOK
+SCENE 01
 
-Scientific statement: Earth's sky appears blue because sunlight is selectively scattered in the atmosphere.
-Show a powerful, simple view upward through Earth's atmosphere: bright white sunlight enters from one side, while a broad clean blue glow is visibly redistributed across the sky around the viewer. The atmosphere itself should not look like blue paint; the blue should read as scattered light. One dominant atmospheric-light motif.
+Scientific statement: The blue appearance of the daytime sky is caused by sunlight interacting with Earth's atmosphere.
 
-Cinematic Scientific 3D Editorial. High-end stylized scientific 3D illustration, scientifically plausible, adult editorial look, realistic light behavior, strong depth, controlled lighting, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI, arrows, decorative icons, fantasy particles, motion blur or animation cues.
+Explanatory mode: EARTH / ATMOSPHERE CUTAWAY.
+
+Scientific Cutaway 3D Explainer. Show the curved edge of Earth in the lower part of the frame, a thin transparent atmospheric layer above it, and a clean white sunlight beam entering from one side. Inside the atmosphere, blue light is visibly scattered through the layer while the incoming sunlight remains clearly identifiable.
+
+The cause-and-effect relationship must be obvious at first glance: white sunlight enters the atmosphere, blue light spreads through it.
+
+Keep the scene clean and diagram-like in spatial logic while still using premium realistic 3D materials and lighting. No heavy fog, no cinematic bloom, no random particles, no sci-fi energy effects.
+
+Label targets to keep visually distinct for later controlled overlays: sunlight, atmosphere.
+Do not render the label text inside the image.
+
+Vertical 9:16, full-bleed edge-to-edge, large phone-readable subject, clean side space for later labels, lower 25% calm for subtitles.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
 
 ## 02-weisses-sonnenlicht
 
-SCENE 02 — WHITE SUNLIGHT CONTAINS MANY VISIBLE COLORS
+SCENE 02
 
-Scientific statement: Sunlight looks white but contains the visible spectrum with different wavelengths.
-Show one clean beam of white sunlight entering a minimal optical glass prism and separating into a physically ordered visible spectrum. The prism and beam are the only major subjects. Keep the composition premium and scientific, not like a school worksheet.
+Scientific statement: White sunlight contains many visible colors with different wavelengths.
 
-Cinematic Scientific 3D Editorial. High-end stylized scientific 3D illustration, scientifically plausible optics, adult editorial look, realistic glass and light, controlled studio environment, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI cards, decorative icons, arrows, motion blur or animation cues.
+Explanatory mode: CONTROLLED OPTICS SETUP.
+
+Scientific Cutaway 3D Explainer. Show one clean white beam of sunlight entering a transparent triangular prism and separating into a clear visible spectrum on the other side. The prism and light path must dominate the frame. Keep the optical setup simple, physically plausible and easy to read on a phone.
+
+The visual message must be obvious: the incoming light looks white, but it contains multiple visible colors.
+
+Use realistic transparent glass, clean refraction, restrained neutral lighting and a simple dark-to-neutral studio environment. No fantasy glow, no decorative rainbow fog, no excessive reflections, no random particles.
+
+Label targets to keep visually distinct for later controlled overlays: white sunlight, visible colors.
+Do not render the labels inside the generated image.
+
+Vertical 9:16, full-bleed edge-to-edge, large prism and beam, clean lower subtitle zone and side space for labels.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
 
 ## 03-luftmolekuele-streuen
 
-SCENE 03 — AIR MOLECULES SCATTER LIGHT
+SCENE 03
 
-Scientific statement: Light changes direction when it interacts with tiny molecules in the atmosphere.
-Show a sparse microscopic atmospheric volume with a few consistent simplified gas molecules. A narrow incoming white light beam reaches the molecules and a small portion is redistributed into several directions. Keep the molecular model consistent and didactic, with no humanized atoms and no fantasy sparks.
+Scientific statement: When sunlight hits tiny air molecules, part of the light is scattered in different directions.
 
-Cinematic Scientific 3D Editorial. High-end stylized scientific 3D illustration, scientifically plausible educational micro-scale visualization, adult editorial look, dark neutral scientific environment, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI, decorative icons, excessive particles, motion blur or animation cues.
+Explanatory mode: MICRO / SPATIAL PROCESS.
+
+Scientific Cutaway 3D Explainer. Show a clean white light beam traveling through a sparse field of small air molecules. At several clearly visible molecule positions, a small portion of the light changes direction and spreads away from the original beam. Keep the molecules sparse and ordered enough that the interaction is easy to understand.
+
+The central message must be immediate: incoming light meets air molecules and is redirected in multiple directions.
+
+Use a restrained scientific micro-scale visualization, subtle depth, realistic light behavior and neutral dark background. Avoid particle overload, neon effects, fantasy sparks or chaotic glowing lines.
+
+Label targets to keep visually distinct for later controlled overlays: air molecules, incoming sunlight.
+Do not render the label text inside the generated image.
+
+Vertical 9:16, edge-to-edge, large interaction region, clean side space for labels and lower subtitle zone.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
 
 ## 04-blau-streut-staerker
 
-SCENE 04 — SHORT BLUE WAVELENGTHS SCATTER MORE STRONGLY
+SCENE 04
 
-Scientific statement: Shorter blue wavelengths are scattered much more efficiently by small atmospheric molecules than longer red wavelengths.
-Create one clear comparison inside a single coherent atmospheric volume: incoming mixed light meets identical small gas molecules; blue light is redistributed strongly in many directions while red light continues more directly. The comparison must be obvious without text and without a UI split-screen.
+Scientific statement: Short-wavelength blue light is scattered much more strongly by small air molecules than long-wavelength red light.
 
-Cinematic Scientific 3D Editorial. Scientifically plausible, adult editorial look, controlled color semantics, cyan-blue only for the more strongly scattered short wavelength and natural red for the longer wavelength, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI panels, decorative arrows, fantasy lightning, motion blur or animation cues.
+Explanatory mode: CONTROLLED COMPARISON.
+
+Scientific Cutaway 3D Explainer. Show one shared atmospheric interaction zone with the same small air molecules. A blue light path should visibly scatter strongly in several directions around the molecules, while a red-orange light path remains much straighter and is scattered far less.
+
+Keep the comparison spatially simple and fair: same molecules, same interaction region, two clearly distinguishable wavelength colors. The image must make the difference in scattering strength obvious without relying on text.
+
+Use restrained lighting, realistic optical behavior, clean dark-neutral background and minimal decorative effects. No neon haze, no fantasy energy bursts, no random arrows.
+
+Label targets to keep visually distinct for later controlled overlays: blue light, red light, air molecules.
+Do not render the labels inside the generated image.
+
+Vertical 9:16, edge-to-edge, large comparison area, clean side margins for later labels, lower subtitle zone kept clear.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
 
 ## 05-blau-aus-vielen-richtungen
 
-SCENE 05 — BLUE LIGHT REACHES THE VIEWER FROM MANY DIRECTIONS
+SCENE 05
 
-Scientific statement: Scattered blue light reaches an observer from many parts of the sky.
-Show a small grounded observer silhouette at the bottom only as scale reference, looking into a large atmospheric dome. Soft blue scattered light arrives toward the viewing point from many regions of the sky while the direct Sun remains off-axis. The sky is the dominant subject; do not make the person the story.
+Scientific statement: Scattered blue light reaches the observer from many different directions, so the whole sky appears blue.
 
-Cinematic Scientific 3D Editorial. Premium scientific visualization, adult editorial look, realistic atmosphere and lighting, strong spatial depth, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI, decorative icons, motion blur or animation cues.
+Explanatory mode: SPATIAL PROCESS WITH OBSERVER.
+
+Scientific Cutaway 3D Explainer. Show an observer near the lower part of the scene looking upward through the atmosphere. Blue light should arrive at the observer from multiple different directions after being scattered by air molecules distributed through the sky, while the direct sunlight comes from one main direction.
+
+The spatial relationship must be obvious: many scattered blue paths converge toward the observer from across the atmosphere.
+
+Keep the scene clean, scientifically plausible and easy to read. Use a simplified observer silhouette or realistic eye-view target without unnecessary facial detail. Avoid clutter, particle overload, neon haze or fantasy glow.
+
+Label targets to keep visually distinct for later controlled overlays: observer, scattered blue light.
+Do not render the labels inside the generated image.
+
+Vertical 9:16, edge-to-edge, strong upward composition, clean side space for labels and lower subtitle zone.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
 
 ## 06-violett-und-augen
 
-SCENE 06 — WHY THE SKY DOES NOT LOOK VIOLET
+SCENE 06
 
-Scientific statement: Violet light is strongly scattered too, but human vision is less sensitive to it and some violet is absorbed in the upper atmosphere.
-Show a scientifically clean atmospheric cross-section with blue and violet short-wavelength light both scattered, while the final light reaching a simplified human-eye viewing point is visually dominated by blue. Keep the eye small and anatomical detail minimal; the atmospheric light balance is the main subject.
+Scientific statement: Violet light is scattered strongly too, but humans are less sensitive to violet and some violet light is absorbed higher in the atmosphere.
 
-Cinematic Scientific 3D Editorial. Adult scientific editorial look, controlled blue-violet color semantics, plausible atmospheric depth, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI panels, decorative icons, fantasy glow, motion blur or animation cues.
+Explanatory mode: ATMOSPHERE CROSS-SECTION WITH EYE RESPONSE.
+
+Scientific Cutaway 3D Explainer. Show a simplified vertical cross-section of the upper atmosphere and an observer eye at the lower side of the frame. Blue and violet light both scatter in the atmosphere, but part of the violet light should visibly diminish in the upper atmospheric path before reaching the observer. The blue path remains more prominent at the eye.
+
+The image should communicate two linked reasons without clutter: violet is strongly scattered, yet less violet effectively contributes to what the observer perceives.
+
+Keep the atmosphere layers subtle and clean. Use restrained violet and blue, no fantasy plasma, no neon fog, no decorative particles.
+
+Label targets to keep visually distinct for later controlled overlays: violet light, blue light, human eye.
+Do not render the labels inside the generated image.
+
+Vertical 9:16, edge-to-edge, clear upper-atmosphere-to-eye composition, clean side space for labels, lower subtitle zone kept clear.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
 
 ## 07-horizont-heller
 
-SCENE 07 — THE HORIZON OFTEN LOOKS PALER
+SCENE 07
 
-Scientific statement: Light from near the horizon travels through more atmosphere and is repeatedly scattered, so the sky often appears paler there.
-Show a wide atmospheric perspective from ground level with the zenith above rendered deeper blue and the distant horizon naturally fading toward pale blue-white. Emphasize the much longer line of sight through the lower atmosphere using spatial depth only, not labels or diagram arrows.
+Scientific statement: Near the horizon, light travels through a longer path in the atmosphere and is scattered multiple times, making the sky look brighter and paler.
 
-Cinematic Scientific 3D Editorial. Scientifically plausible atmosphere, adult editorial look, subtle natural gradient, realistic haze without excessive fog, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI, decorative icons, motion blur or animation cues.
+Explanatory mode: EARTH-ATMOSPHERE GEOMETRY CROSS-SECTION.
+
+Scientific Cutaway 3D Explainer. Show a curved Earth horizon with a thin atmosphere and one observer near the surface. Compare two light paths within the same scene: a short path from high overhead through less atmosphere and a much longer shallow path near the horizon through more atmosphere. The long horizon path should show more scattering events and a paler, brighter blue appearance.
+
+The geometry must be the main explanation. Keep the paths clean and easy to trace, with no unnecessary arrows or diagram clutter.
+
+Use realistic Earth curvature, subtle atmosphere, restrained blue tones and neutral daylight. No fantasy glow, no excessive haze, no decorative particles.
+
+Label targets to keep visually distinct for later controlled overlays: short path, long path, horizon.
+Do not render the labels inside the generated image.
+
+Vertical 9:16, edge-to-edge, strong side-view geometry, clean side space for labels, lower subtitle zone clear.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
 
 ## 08-sonnenuntergang
 
-SCENE 08 — WHY SUNSETS TURN RED AND YELLOW
+SCENE 08
 
-Scientific statement: At sunset sunlight travels through a longer atmospheric path; much of the blue light is scattered away, leaving more red and yellow direct light.
-Show the Sun very low at the horizon, with a long warm beam crossing a visibly deep atmospheric layer toward the viewer. Blue light is dispersed away through the atmosphere while the remaining direct path is dominated by natural red-orange and yellow. Keep it scientifically restrained, not fantasy sunset art.
+Scientific statement: At sunset, sunlight travels through much more atmosphere; much of the blue light is scattered away, while more red and yellow light continues toward the observer.
 
-Cinematic Scientific 3D Editorial. Scientifically plausible light scattering, adult editorial look, realistic warm horizon, strong spatial depth, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI, decorative icons, lens flare overload, motion blur or animation cues.
+Explanatory mode: LONG-PATH EARTH-ATMOSPHERE CUTAWAY.
+
+Scientific Cutaway 3D Explainer. Show the Sun low near the horizon, the curved edge of Earth, a thin atmospheric layer, and an observer on the surface. A long sunlight path should travel through the atmosphere toward the observer. Along that path, blue light is visibly scattered sideways out of the direct beam, while the remaining direct beam becomes increasingly warm red-orange before reaching the observer.
+
+The cause-and-effect must be obvious without text: longer atmospheric path removes more blue from the direct sunlight and leaves warmer colors.
+
+Use realistic sunset geometry and natural warm colors. Avoid dramatic fantasy skies, excessive bloom, neon gradients or decorative particles.
+
+Label targets to keep visually distinct for later controlled overlays: scattered blue light, direct red-yellow light, long atmospheric path.
+Do not render the labels inside the generated image.
+
+Vertical 9:16, edge-to-edge, large clean geometry, side space for labels, lower subtitle zone clear.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
 
 ## 09-merksatz
 
-SCENE 09 — FINAL SCIENTIFIC PAYOFF
+SCENE 09
 
-Scientific statement: The atmosphere is not blue material; the blue appearance comes from preferential scattering of shorter visible wavelengths.
-Create one elegant final cutaway of Earth with a thin transparent atmosphere illuminated by white sunlight. The atmosphere remains materially transparent while blue scattered light is visible around the illuminated shell. Make the distinction between transparent air and blue scattered light immediately clear without text.
+Scientific statement: The sky is not blue because the air itself is blue; it appears blue because the atmosphere scatters short wavelengths especially strongly.
 
-Cinematic Scientific 3D Editorial. High-end adult scientific illustration, realistic Earth and atmospheric scale treatment, premium controlled lighting, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI cards, decorative icons, fantasy energy effects, motion blur or animation cues.
+Explanatory mode: SUMMARY EARTH-ATMOSPHERE CUTAWAY.
+
+Scientific Cutaway 3D Explainer. Show a clean summary view of the curved Earth, its thin atmosphere, one incoming white sunlight beam, and blue light scattering throughout the atmospheric layer toward the viewing side. Keep red-orange light comparatively more direct.
+
+The image must function as a visual recap: the atmosphere itself remains transparent, while the scattered blue light creates the blue appearance.
+
+Use premium realistic 3D materials, restrained daylight, clean atmosphere geometry and minimal effects. No sci-fi glow, no fantasy particles, no decorative fog.
+
+Label targets to keep visually distinct for later controlled overlays: transparent atmosphere, scattered blue light.
+Do not render the labels inside the generated image.
+
+Vertical 9:16, edge-to-edge, one dominant explanatory composition, clean side space for labels, lower subtitle zone clear.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
