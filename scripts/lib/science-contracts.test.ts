@@ -7,8 +7,8 @@ const scene = (id: string) => ({
   voiceText: 'Eine klare wissenschaftliche Aussage.',
   imageDir: `02-bilder/images/${id}`,
   visualRecipe: {
-    stage: 'scientific-dark' as const,
-    camera: 'hero' as const,
+    stage: 'unspecified',
+    camera: 'unspecified',
     subject: 'wissenschaftliches Hauptmotiv',
     focus: 'eine Aussage',
     motion: 'none' as const,
