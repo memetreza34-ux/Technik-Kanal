@@ -19,6 +19,7 @@ if (config.voice.speed !== 1.1 || voice.speed !== 1.1) errors.push('Voice-Geschw
 if (voice.processing?.loudness?.targetIntegratedLufs !== -16 || voice.processing?.loudness?.targetTruePeakDb !== -1.5) errors.push('Voice-Konfiguration muss -16 LUFS und -1.5 dBTP dokumentieren.');
 if (!/1[,.]10[×x]/i.test(claude)) errors.push('CLAUDE.md enthält die verbindliche 1,10×-Regel nicht.');
 if (!claude.includes('whisper.cpp')) errors.push('CLAUDE.md enthält die lokale Transkriptionsregel nicht.');
+if (!claude.includes('Scientific Cutaway 3D Explainer')) errors.push('CLAUDE.md enthält die verbindliche neue Bildwelt nicht.');
 
 for (const command of ['science:new', 'science:preflight', 'science:ready', 'science:prepare', 'science:render', 'science:finish', 'science:system-test']) {
   if (!pkg.scripts?.[command]) errors.push(`package.json fehlt Befehl ${command}.`);
@@ -32,7 +33,12 @@ if (config.captions.highlightColor !== null || config.captions.backgroundBox !==
 if (config.captions.animated !== false) errors.push('Untertitel dürfen nicht animiert werden.');
 if (config.visuals.policyVersion !== 'science-static-v1') errors.push('Visual-Policy muss science-static-v1 sein.');
 if (config.visuals.productionMode !== 'image-first-static') errors.push('Produktionsmodus muss image-first-static sein.');
+if (config.visuals.styleId !== 'scientific-cutaway-3d-explainer-v1') errors.push('Aktive Bildwelt muss scientific-cutaway-3d-explainer-v1 sein.');
 if (config.visuals.generatedImageTextPolicy !== 'none') errors.push('Generierte Bilder müssen textfrei bleiben.');
+if (config.visuals.controlledLabels?.allowed !== true) errors.push('Kontrollierte statische Labels müssen erlaubt sein.');
+if (config.visuals.controlledLabels?.maximumPerScene !== 3) errors.push('Maximal drei kontrollierte Labels pro Szene erlaubt.');
+if (config.visuals.controlledLabels?.maximumWordsPerLabel !== 3) errors.push('Ein Label darf maximal drei Wörter enthalten.');
+if (config.visuals.controlledLabels?.animated !== false) errors.push('Labels dürfen nicht animiert werden.');
 if (config.visuals.animationAllowed !== false) errors.push('Animationen müssen global deaktiviert sein.');
 if (config.visuals.cameraMotionAllowed !== false) errors.push('Kamerabewegung muss global deaktiviert sein.');
 if (config.visuals.transitionPolicy !== 'hard-cut') errors.push('Szenenübergänge müssen harte Schnitte sein.');
@@ -54,4 +60,4 @@ if (errors.length) {
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log('✓ Science-v1, statische Bildwelt, Safety, Audio, Runtime und Befehle sind konsistent.');
+console.log('✓ Science-v1, Scientific Cutaway 3D Explainer, Labels, Safety, Audio, Runtime und Befehle sind konsistent.');
