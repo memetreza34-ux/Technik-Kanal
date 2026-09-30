@@ -7,13 +7,7 @@ Jeder Reel bleibt in der bestehenden Wochenstruktur:
 ```text
 reels/YYYY-MM-DD_bis_YYYY-MM-DD/NN_Thema/
 ├── 01-script-audio/
-│   ├── audio/
-│   ├── sfx/
-│   ├── script.md
-│   ├── script-fliesstext.txt
-│   └── voiceover.txt
 ├── 02-bilder/
-│   ├── bildprompts.md
 │   ├── prompts/
 │   └── images/
 ├── 03-caption/
@@ -27,16 +21,7 @@ reels/YYYY-MM-DD_bis_YYYY-MM-DD/NN_Thema/
 
 ## Themenrahmen
 
-Erlaubt sind allgemeine Wissenschafts- und Bildungsthemen, insbesondere:
-
-- Physik
-- Chemie
-- Elektrotechnik
-- Astronomie
-- Energie
-- Technik
-- Materialwissenschaft
-- wissenschaftlich erklärbare Alltagsphänomene
+Erlaubt sind allgemeine Wissenschafts- und Bildungsthemen, insbesondere Physik, Chemie, Elektrotechnik, Astronomie, Energie, Technik, Materialwissenschaft und wissenschaftlich erklärbare Alltagsphänomene.
 
 ## Hook
 
@@ -45,7 +30,7 @@ Erlaubt sind allgemeine Wissenschafts- und Bildungsthemen, insbesondere:
 - möglichst kurz
 - erster gesprochener Satz stellt dieselbe Kernfrage
 - keine künstlichen Metaphern
-- Bild 01 ist gleichzeitig Cover-Hintergrund und erster visueller Shot
+- Bild 01 ist gleichzeitig Coverquelle und erster visueller Shot
 
 ## Inhaltlicher Aufbau
 
@@ -54,98 +39,50 @@ Erlaubt sind allgemeine Wissenschafts- und Bildungsthemen, insbesondere:
 - adaptive Anzahl visueller Beats
 - keine Szene nur zur Dekoration
 - komplexere Aussagen dürfen auf mehrere Bilder aufgeteilt werden
-- lieber ein zusätzliches klares Bild als ein überladenes Bild
 - letzter Beat liefert Erkenntnis, Merksatz oder sauberen Abschluss
 
 ## Bildplanung
 
-Die Bilder tragen die komplette visuelle Erklärung.
+Aktuell ist keine feste Bildwelt definiert. Deshalb gibt es keinen verbindlichen Markenstil, keine feste Farbwelt und keine feste Prompt-Sprache.
 
-Verbindlich:
+Bis eine neue Bildwelt beschlossen ist, gelten nur neutrale technische Anforderungen:
 
-- `Cinematic Scientific 3D Editorial`
 - 9:16
-- ein Hauptmotiv pro Bild
-- keine sichtbare KI-Schrift
-- keine Logos oder Wasserzeichen
+- ein statisches Bild pro Beat
+- keine zufällige KI-Schrift, Logos oder Wasserzeichen
 - fachlich plausible Darstellung
-- obere und untere Text-Safe-Zone berücksichtigen
-- Bildanzahl nicht künstlich auf 8, 9 oder 10 begrenzen
+- Bild 01 ist zugleich erster Shot und Coverquelle
+- keine Remotion-Kamerabewegung
 
-Bild 01 wird in drei Varianten geplant. Eine Gewinner-Version wird als erste Szene und Cover-Hintergrund verwendet.
+Bildprompts werden erst finalisiert, nachdem die neue Bildwelt festgelegt wurde.
 
 ## Remotion-Vertrag
 
-Es gibt kein Animationsbudget mehr, weil Remotion keine kreativen Animationen erzeugt.
+Remotion erzeugt keine kreative Bildbewegung. Verboten sind Zoom, Pan, Ken Burns, Parallax, Rotation, Partikel, animierte Diagramme, animierte technische Prozesse und automatische Übergangseffekte.
 
-Verboten:
-
-- Full-Animationen
-- Mechanismus-Animationen
-- Zoom
-- Pan
-- Ken Burns
-- Parallax
-- Rotation
-- Partikel
-- animierte Diagramme
-- animierte Strompfade
-- animierte Moleküle
-- animierte Feldlinien
-- automatische Übergangseffekte
-
-Zulässig:
-
-- statisches Szenenbild
-- harter Schnitt
-- Voice-over
-- Untertitel ohne Bewegungsanimation
-- statische kontrollierte Text-/Formel-Overlays
-- optionale SFX
+Zulässig sind statische Szenenbilder, harte Schnitte, Voice-over, Untertitel ohne Bewegungsanimation, statische kontrollierte Overlays, optionale SFX und Export.
 
 ## Produktionsreihenfolge
 
 1. Thema und zentrale Frage
 2. fachliche Recherche und Quellen-IDs
 3. fertiges deutsches Skript
-4. Szenen- und Bildplanung
-5. Bildprompts
-6. Preflight
-7. Bilder erzeugen und Gewinner auswählen
-8. Nutzer erstellt Voice-over
-9. Voice auf finale Fassung verarbeiten
-10. lokale Wortzeiten erzeugen
-11. Szenen anhand des finalen Audios synchronisieren
-12. statische Bilder mit harten Schnitten montieren
-13. Untertitel und optionale SFX ergänzen
-14. Render-QA
-15. visuelle und fachliche Endkontrolle
+4. Szenenplanung
+5. neue Bildwelt festlegen
+6. Bildprompts erstellen
+7. Preflight
+8. Bilder erzeugen und Gewinner auswählen
+9. Voice-over
+10. lokale Wortzeiten und Synchronisation
+11. statische Montage
+12. Untertitel und optionale SFX
+13. Render-QA
+14. visuelle und fachliche Endkontrolle
 
 ## Verbindliche Projektdateien
 
-`06-projektdateien/` enthält mindestens:
-
-- `scene-plan.json`
-- `production-status.json`
-- `prompt-manifest.json`
-- `asset-manifest.json`
-- `content-package-report.json`
-- `ready-report.json`
-- `qa-report.json`
-- `sources.md`
-- `storyboard.md`
+`06-projektdateien/` enthält mindestens `scene-plan.json`, `production-status.json`, `asset-manifest.json`, `content-package-report.json`, `ready-report.json`, `qa-report.json`, `sources.md` und `storyboard.md`. Prompt- und Visual-Policy-Dateien werden erst wieder verbindlich, wenn die neue Bildwelt definiert ist.
 
 ## Abbruchregeln
 
-Nicht rendern bei:
-
-- fehlender Voice
-- fehlendem Pflichtbild
-- unzureichender Wortübereinstimmung zwischen Skript und Voice
-- unbelegter sicherheits- oder normrelevanter Behauptung
-- gefährlicher Anleitung
-- falschem Bildformat
-- doppeltem Bild
-- sichtbarer KI-Schrift
-- unzulässiger Remotion-Animation
-- Readiness- oder QA-Fehler
+Nicht rendern bei fehlender Voice, fehlendem Pflichtbild, unzureichender Wortübereinstimmung, unbelegten sicherheitsrelevanten Behauptungen, gefährlichen Anleitungen, falschem Bildformat, doppeltem Bild, sichtbarer KI-Schrift oder unzulässiger Remotion-Animation.
