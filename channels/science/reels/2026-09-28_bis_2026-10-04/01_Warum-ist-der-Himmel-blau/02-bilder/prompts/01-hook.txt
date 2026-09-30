@@ -1,6 +1,18 @@
-SCENE 01 — BLUE SKY HOOK
+SCENE 01
 
-Scientific statement: Earth's sky appears blue because sunlight is selectively scattered in the atmosphere.
-Show a powerful, simple view upward through Earth's atmosphere: bright white sunlight enters from one side, while a broad clean blue glow is visibly redistributed across the sky around the viewer. The atmosphere itself should not look like blue paint; the blue should read as scattered light. One dominant atmospheric-light motif.
+Scientific statement: The blue appearance of the daytime sky is caused by sunlight interacting with Earth's atmosphere.
 
-Cinematic Scientific 3D Editorial. High-end stylized scientific 3D illustration, scientifically plausible, adult editorial look, realistic light behavior, strong depth, controlled lighting, vertical 9:16 edge-to-edge. No visible text, labels, letters, numbers, formulas, logos, watermark, UI, arrows, decorative icons, fantasy particles, motion blur or animation cues.
+Explanatory mode: EARTH / ATMOSPHERE CUTAWAY.
+
+Scientific Cutaway 3D Explainer. Show the curved edge of Earth in the lower part of the frame, a thin transparent atmospheric layer above it, and a clean white sunlight beam entering from one side. Inside the atmosphere, blue light is visibly scattered through the layer while the incoming sunlight remains clearly identifiable.
+
+The cause-and-effect relationship must be obvious at first glance: white sunlight enters the atmosphere, blue light spreads through it.
+
+Keep the scene clean and diagram-like in spatial logic while still using premium realistic 3D materials and lighting. No heavy fog, no cinematic bloom, no random particles, no sci-fi energy effects.
+
+Label targets to keep visually distinct for later controlled overlays: sunlight, atmosphere.
+Do not render the label text inside the image.
+
+Vertical 9:16, full-bleed edge-to-edge, large phone-readable subject, clean side space for later labels, lower 25% calm for subtitles.
+
+No visible text, labels, letters, numbers, formulas, units, logos, watermark or UI.
