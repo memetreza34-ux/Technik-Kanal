@@ -1,19 +1,27 @@
-# Wissenschafts- und Bildungskanal
+# Alltagswissenschaft & Technik
 
-Deutschsprachiger Faceless-Kanal für verständlich erklärte Wissenschaft und Technik.
+Deutschsprachiger Faceless-Kanal für verständlich erklärte Alltagswissenschaft und Technik – vor allem für Jugendliche und junge Erwachsene.
 
 ## Themen
 
-- Physik
-- Chemie
-- Elektrotechnik und Elektronik
-- Astronomie
-- Energie
-- Materialwissenschaft
-- technische Alltagsphänomene
-- weitere naturwissenschaftliche Bildungsthemen
+Schwerpunkt sind greifbare, visuell erklärbare Themen aus:
 
-Elektrotechnik ist ein Themenbereich unter mehreren.
+- Physik im Alltag
+- Elektrotechnik und Elektronik
+- Energie
+- Maschinen und technische Systeme
+- Verkehr, Bahn, Autos und Mobilität
+- Gebäude, Infrastruktur und Versorgung
+- Materialien und Werkstoffe
+- einfacher Chemie mit sichtbarem Alltagsbezug
+- Wetter und verständlichen Naturphänomenen
+- greifbarer Astronomie
+
+Biologie, Medizin, Anatomie, Krankheiten, Zellbiologie, DNA/Genetik und Biochemie gehören nicht zur regulären Kanalrichtung. Stark abstrakte Themen wie schwere Quantenphysik, abstrakte Teilchenphysik, komplizierte Relativitätstheorie oder hochtheoretische Astrophysik sind ebenfalls nicht vorgesehen.
+
+Leitfrage für neue Themen:
+
+> Kann ein Jugendlicher ohne großes Vorwissen nach einem kurzen Reel etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
 
 ## Verbindlicher Produktionsstandard
 
