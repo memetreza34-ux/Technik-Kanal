@@ -8,18 +8,32 @@ Vor Bildern und Audio:
 2. fachlich recherchieren und Quellen-IDs dokumentieren
 3. Szenen nach Aussagen planen; Bildanzahl adaptiv wählen
 4. jede Szene als `image-only` und `motionLevel: none` definieren
-5. Bildwelt nur verwenden, wenn sie ausdrücklich im Repo definiert ist
+5. pro Beat `gehirn/BILDWELT.md` anwenden
 6. Bild 01 als Coverquelle planen
 
-Aktuell ist keine feste Bildwelt definiert. Deshalb dürfen keine früheren Scientific-3D-/Cutaway-Regeln oder alten Referenzprompts wiederverwendet werden.
+Aktive Bildwelt: **Scientific Scene Explainer v1**.
 
-## Phase 2 – Bildwelt und Preflight
+Kernregel: Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die genau den gesprochenen Satz erklärt.
 
-Erst nachdem eine neue Bildwelt beschlossen wurde:
+Dabei je Szene neu entscheiden:
+- volle Umgebung/Ort oder reine Illustration?
+- technische Cutaway-/Mikro-/Vergleichsansicht sinnvoll?
+- hilft eine stilisierte erwachsene Person?
+- braucht das Bild überhaupt Text?
+- wenn Text: nur Deutsch, kurz und fachlich relevant
+- Hintergrund/Farben passend zum Inhalt statt immer gleich
+- so wenig Information wie möglich, so viel wie nötig
 
-- passende Bildprompts erstellen
+## Phase 2 – Bildprompts und Preflight
+
+Für jeden Beat einen eigenen Bildprompt aus dem konkreten Skriptsatz entwickeln.
+
+- visuelle Hauptidee festlegen
+- passende Umgebung oder Darstellungsform wählen
+- nur notwendige Labels, Titel, Merksätze, Zahlen oder Pfeile vorsehen
+- sichtbaren Bildtext ausschließlich auf Deutsch anfordern
+- unnötige Dekoration, Sci-Fi-HUDs, Neon-Überladung, generische KI-Kunst und Informationsüberladung ausschließen
 - Bild 01 als Coverquelle planen
-- alle visuellen Regeln dokumentieren
 - anschließend ausführen:
 
 ```bash
@@ -33,7 +47,8 @@ Bei Fehlern keine Medien erzeugen. Erst korrigieren und erneut prüfen.
 Nach bestandenem Preflight:
 
 - Rohaufnahme nach `01-script-audio/audio/`
-- genau ein finales 9:16-Bild je Szene
+- genau ein finales statisches Bild je Szene
+- optional sichtbarer deutscher Bildtext gemäß Bildwelt
 - optionale SFX nach `01-script-audio/sfx/`
 
 Alle Bilder bleiben statisch. Es werden keine späteren Remotion-Animationen eingeplant.
@@ -54,4 +69,14 @@ Zulässig sind statische Bilder, harte Schnitte, Voice-over, statische Titel/Ove
 
 ## Endkontrolle
 
-Prüfen: ist jede Szene sofort verständlich, enthält kein Bild zufällige KI-Schrift/Logos/Wasserzeichen, bleiben alle Bilder statisch, sind Untertitel vollständig, ist Bild 01 als erster Shot und Coverquelle geeignet und sind fachliche Aussagen durch Quellen gedeckt.
+Prüfen:
+- erklärt jede Szene genau ihren Skriptsatz?
+- nutzt sie bei Bedarf den ganzen Bildraum sinnvoll?
+- ist die Darstellungsform fachlich passend?
+- sind sichtbare Bildtexte ausschließlich Deutsch und korrekt geschrieben?
+- sind Labels/Infos wirklich notwendig und nicht überladen?
+- gibt es keine Logos/Wasserzeichen oder fehlerhafte KI-Schrift?
+- bleiben alle Bilder statisch?
+- sind Untertitel vollständig?
+- ist Bild 01 als erster Shot und Coverquelle geeignet?
+- sind fachliche Aussagen durch Quellen gedeckt?
