@@ -28,7 +28,7 @@ const promptFiles = {};
 for (const scene of plan.scenes) {
   const file = path.join(paths.promptDir,`${scene.id}.txt`);
   if (!fs.existsSync(file)) {
-    errors.push(`${scene.id}: Einzelprompt fehlt. Neue Bildwelt zuerst festlegen.`);
+    errors.push(`${scene.id}: Einzelprompt fehlt.`);
     continue;
   }
   const prompt = fs.readFileSync(file,'utf8');
@@ -36,7 +36,12 @@ for (const scene of plan.scenes) {
   if (/\[GENAUE|\[AUSSAGE|ERGÄNZEN|PLACEHOLDER|NEUE BILDWELT/i.test(prompt)) {
     errors.push(`${scene.id}: Prompt ist noch nicht final.`);
   }
-  if (!/no (random )?visible text/i.test(prompt)) warnings.push(`${scene.id}: Zufällige KI-Schrift sollte ausdrücklich ausgeschlossen werden.`);
+  if (!/(Deutsch|German|deutsche Beschrift|deutscher Text|kein englischer Text|no English text)/i.test(prompt)) {
+    warnings.push(`${scene.id}: Bei sichtbarem Bildtext Deutsch-only ausdrücklich festlegen.`);
+  }
+  if (!/(eine Hauptaussage|one main idea|one scientific statement|genau.*Satz|exact idea|exact statement)/i.test(prompt)) {
+    warnings.push(`${scene.id}: Prompt sollte die eine Kernaussage der Szene klar priorisieren.`);
+  }
 }
 
 const promptManifest = fs.existsSync(paths.promptManifest) ? JSON.parse(fs.readFileSync(paths.promptManifest,'utf8')) : null;
@@ -46,7 +51,7 @@ warnings.push(...policy.warnings);
 
 const coverFile = path.join(paths.promptDir,'00-cover.txt');
 let coverPrompt = '';
-if (!fs.existsSync(coverFile)) errors.push('Cover-/Bild-01-Prompt fehlt. Neue Bildwelt zuerst festlegen.');
+if (!fs.existsSync(coverFile)) errors.push('Cover-/Bild-01-Prompt fehlt.');
 else {
   coverPrompt = fs.readFileSync(coverFile,'utf8');
   if (/neue bildwelt/i.test(coverPrompt)) errors.push('Coverprompt ist noch nicht final.');
@@ -54,7 +59,7 @@ else {
 }
 
 const combinedFile = path.join(paths.root,'02-bilder','ALLE-BILDPROMPTS-MIT-COVER.txt');
-if (!fs.existsSync(combinedFile)) errors.push('Gesamt-Promptdatei fehlt. Neue Bildwelt zuerst festlegen.');
+if (!fs.existsSync(combinedFile)) errors.push('Gesamt-Promptdatei fehlt.');
 else {
   const combined = fs.readFileSync(combinedFile,'utf8');
   const normalize = (value) => String(value).replace(/\s+/g,' ').trim().toLowerCase();
@@ -66,7 +71,9 @@ else {
 
 const report = {
   version:'science-static-v1',
+  styleId:config.visuals.styleId,
   brandVisualStyleDefined:config.visuals.brandVisualStyleDefined === true,
+  generatedImageTextPolicy:config.visuals.generatedImageTextPolicy,
   generatedAt:new Date().toISOString(),
   passed:errors.length===0,
   sceneCount:plan.scenes.length,
