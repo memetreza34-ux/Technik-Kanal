@@ -75,7 +75,7 @@ export const ScenePlan = z.object({
   compositionId: z.literal('ScienceReel'),
   runtimeFile: z.literal('science-runtime.json'),
   visualPolicyVersion: z.literal('science-static-v1'),
-  generatedImageTextPolicy: z.literal('none'),
+  generatedImageTextPolicy: z.enum(['none','controlled-german-only']),
   coverText: z.string().optional(),
   language: z.string().optional(),
   fps: z.literal(30),
