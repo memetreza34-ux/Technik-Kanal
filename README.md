@@ -1,13 +1,21 @@
-# Wissenschaftskanal
+# Alltagswissenschaft & Technik
 
-Produktionssystem für einen deutschsprachigen Faceless-Wissens- und Bildungskanal über Physik, Chemie, Elektrotechnik, Astronomie, Energie, Materialwissenschaft und weitere wissenschaftliche Themen.
+Produktionssystem für einen deutschsprachigen Faceless-Wissenskanal über **greifbare Alltagswissenschaft und Technik** für Jugendliche und junge Erwachsene.
+
+Der Kanal ist bewusst kein allgemeines Wissenschaftslexikon. Bevorzugt werden konkrete, visuell erklärbare Themen aus Alltagsphysik, Elektrotechnik, Energie, Maschinen, Verkehr, Infrastruktur, Materialien, einfacher Alltagschemie, Wetter und greifbarer Astronomie.
+
+Biologie, Medizin, Anatomie, Krankheiten, Zellbiologie, DNA/Genetik und Biochemie gehören nicht zur regulären Kanalrichtung. Stark abstrakte Wissenschaftsthemen mit hohem Vorwissen-Bedarf sind ebenfalls nicht vorgesehen.
+
+Leitfrage für neue Themen:
+
+> Kann ein Jugendlicher ohne großes Vorwissen nach einem kurzen Reel etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
 
 Das Repository ist **Science-only**. Frühere Elektro-Testreels, Remotion-Animationen, Mechanismus-Canvases, Layout-Gallery und sonstige Legacy-Bestände sind aus dem aktiven Branch entfernt.
 
 ## Produktionsfluss
 
 ```text
-Thema
+Thema gegen Kanalrahmen prüfen
 → Recherche + Quellen
 → deutsches Skript
 → Szenenplanung pro Aussage
@@ -88,11 +96,13 @@ Die Pipeline verarbeitet die Voice auf exakt 1,10×, normalisiert die Lautheit, 
 
 `channels/science/reels/2026-09-28_bis_2026-10-04/01_Warum-ist-der-Himmel-blau/`
 
-Das Projekt bleibt Referenz für Recherche, Quellen, Skript und Szenenplan. Die frühere Bildwelt und ihre alten Bildprompts bleiben entfernt. Neue Visuals für dieses Referenzprojekt müssen künftig nach `Scientific Scene Explainer v1` neu geplant werden.
+Das Projekt bleibt Referenz für Recherche, Quellen, Skript und Szenenplan. Die frühere Bildwelt und ihre alten Bildprompts bleiben entfernt. Neue Visuals für dieses Referenzprojekt müssen nach `Scientific Scene Explainer v1` neu geplant werden.
 
 ## Aktive Architektur
 
 - Kanal: `channels/science/`
+- Zielgruppe: Jugendliche und junge Erwachsene
+- Themenprofil: Alltagswissenschaft & Technik
 - Renderer: `ScienceReel`
 - Runtime: `science-runtime.json`
 - technische Visual Policy: `science-static-v1`
