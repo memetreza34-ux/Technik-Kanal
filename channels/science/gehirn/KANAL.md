@@ -1,26 +1,72 @@
 # Kanal
 
-Deutschsprachiger Faceless-Wissens- und Bildungskanal für Naturwissenschaft, Technik und verständlich erklärte Alltagsphänomene.
+Deutschsprachiger Faceless-Wissens- und Bildungskanal für **Alltagswissenschaft und Technik**. Zielgruppe sind vor allem Jugendliche und junge Erwachsene, die verständlich lernen sollen, wie Dinge aus ihrer Umgebung, Technik und Natur funktionieren.
 
-## Themenfelder
+## Kanalidentität
 
-Der Kanal ist ausdrücklich nicht auf Elektrotechnik beschränkt. Er darf unter anderem behandeln:
+Der Kanal ist kein allgemeines Wissenschaftslexikon. Er konzentriert sich auf **greifbare, visuell erklärbare und lebensnahe Themen**.
 
-- Physik
-- Chemie
+Leitfrage für jedes neue Thema:
+
+> Kann ein Jugendlicher ohne großes Vorwissen nach einem kurzen Reel etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
+
+Wenn die Antwort nein ist oder erst viele abstrakte Grundlagen nötig wären, ist das Thema für den Kanal normalerweise ungeeignet.
+
+## Bevorzugte Themenfelder
+
+Besonders passend sind:
+
+- Physik im Alltag
 - Elektrotechnik und Elektronik
-- Astronomie
-- Energie
-- Materialwissenschaft
-- Mess- und Steuerungstechnik
-- technische Alltagsphänomene
-- weitere naturwissenschaftliche Bildungsthemen
+- Energie und Energieumwandlung
+- Maschinen und technische Systeme
+- Verkehr, Bahn, Autos und Mobilität
+- Gebäude, Infrastruktur und Versorgung
+- Materialien und Werkstoffe
+- einfache, sichtbare Chemie mit Alltagsbezug
+- Wetter und verständliche Naturphänomene
+- technische Alltagsgegenstände und ihre Funktionsweise
+- greifbare Astronomie, wenn das Thema ohne starke Abstraktion verständlich bleibt
 
-Elektrotechnik ist ein Themenbereich unter mehreren und keine globale Kanalidentität mehr.
+Beispiele für passende Fragen:
+
+- Warum fliegt ein Flugzeug?
+- Warum schwimmt ein Stahlschiff?
+- Wie funktioniert ein Transformator?
+- Wie funktioniert ABS?
+- Warum rostet Eisen?
+- Wie funktioniert eine Wärmepumpe?
+- Warum beschlägt eine Scheibe?
+- Wie funktioniert ein Aufzug?
+- Warum dehnt sich Metall bei Wärme aus?
+- Wie entsteht ein Blitz?
+- Wie funktioniert ein Akku?
+- Warum löst eine Sicherung aus?
+
+## Nicht Teil der Kanalrichtung
+
+Biologie und medizinische Inhalte gehören **nicht** zur regulären Kanalidentität. Dazu zählen insbesondere:
+
+- Anatomie
+- Medizin
+- Krankheiten
+- Zellen und Zellbiologie
+- DNA und Genetik
+- Biochemie
+- detaillierte Körperprozesse
+
+Ebenfalls nicht als Schwerpunkt geeignet sind stark abstrakte Wissenschaftsthemen, die ohne umfangreiche Vorkenntnisse kaum greifbar sind, zum Beispiel:
+
+- mathematisch schwere Quantenphysik
+- abstrakte Teilchenphysik
+- komplizierte Relativitätstheorie
+- hochtheoretische Astrophysik
+
+Astronomie ist erlaubt, wenn die Frage konkret, anschaulich und ohne lange theoretische Vorarbeit erklärbar ist.
 
 ## Ziel
 
-Komplexe wissenschaftliche Zusammenhänge fachlich korrekt, visuell sofort verständlich und unterhaltsam erklären. Jeder Reel beantwortet eine zentrale Frage und führt zu einem klaren Erkenntnisgewinn.
+Wissenschaft und Technik so erklären, dass Jugendliche und junge Erwachsene nach dem Reel einen klaren Erkenntnisgewinn haben. Die Erklärung soll fachlich korrekt, visuell sofort verständlich und nicht unnötig akademisch sein.
 
 ## Formatstandard
 
@@ -32,6 +78,8 @@ Komplexe wissenschaftliche Zusammenhänge fachlich korrekt, visuell sofort verst
 - Quellen für fachliche Tatsachen dokumentieren
 - keine gefährlichen Experimente oder riskanten Handlungsanweisungen
 - Fachbegriffe kurz und verständlich erklären
+- kein unnötiger Fachjargon
+- konkrete Beispiele und sichtbare Ursache-Wirkung bevorzugen
 
 ## Produktionsprinzip
 
