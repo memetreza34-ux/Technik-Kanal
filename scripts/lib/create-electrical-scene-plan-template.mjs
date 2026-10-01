@@ -10,12 +10,12 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
       title:isHook?hook:isPayoff?'Fachlicher Payoff':`Erklärung ${index}`,
       kicker:isHook?undefined:isPayoff?'Merksatz':'Wissen',
       headline:isHook?hook:isPayoff?'Klaren Merksatz ergänzen':'Kurze deutsche Aussage ergänzen',
-      backgroundFamily:'unassigned',
-      shotType:'unspecified',
-      referenceGroup:'visual-style-unset',
+      backgroundFamily:'content-driven',
+      shotType:'sentence-driven',
+      referenceGroup:'scientific-scene-explainer',
       visualRecipe:{
-        stage:'unspecified',
-        camera:'unspecified',
+        stage:'passend zum konkreten Skriptsatz wählen',
+        camera:'passend zur verständlichsten Darstellung wählen',
         subject,
         focus:'genau eine wissenschaftliche Aussage',
         motion:'none',
@@ -35,7 +35,7 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
   return {
     version:'science-v1',
     visualPolicyVersion:'science-static-v1',
-    generatedImageTextPolicy:'none',
+    generatedImageTextPolicy:'controlled-german-only',
     slug,
     title,
     coverText:hook,
@@ -52,9 +52,11 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
 export const createElectricalPromptManifestTemplate=(scenePlan)=>({
   version:'science-v1',
   visualPolicyVersion:'science-static-v1',
+  styleId:'scientific-scene-explainer-v1',
   slug:scenePlan.slug,
   generatedAt:new Date().toISOString(),
-  generatedImageTextPolicy:'none',
+  generatedImageTextPolicy:'controlled-german-only',
+  visibleImageLanguage:'de',
   coverText:scenePlan.coverText,
   requiredVisibleSceneImages:scenePlan.scenes.length,
   cover:{
@@ -78,8 +80,8 @@ export const createElectricalPromptManifestTemplate=(scenePlan)=>({
 export const createElectricalStatusTemplate=(scenePlan)=>({
   status:'preproduction-blocked-until-gates-pass',
   slug:scenePlan.slug,
-  completed:['folder-structure','science-static-v1-template'],
-  open:['research','script','sources','visual-style','image-plan','preflight','images','voiceover','captions','render','qa'],
+  completed:['folder-structure','science-static-v1-template','scientific-scene-explainer-v1'],
+  open:['research','script','sources','image-plan','preflight','images','voiceover','captions','render','qa'],
   requiredVisibleSceneImages:scenePlan.scenes.length,
   nextCommand:'npm run science:preflight -- "<reel-ordner>"'
 });
