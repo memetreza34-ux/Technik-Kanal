@@ -7,8 +7,8 @@ const scene = (id: string) => ({
   voiceText: 'Eine klare wissenschaftliche Aussage.',
   imageDir: `02-bilder/images/${id}`,
   visualRecipe: {
-    stage: 'unspecified',
-    camera: 'unspecified',
+    stage: 'passend zum konkreten Skriptsatz wählen',
+    camera: 'passend zur verständlichsten Darstellung wählen',
     subject: 'wissenschaftliches Hauptmotiv',
     focus: 'eine Aussage',
     motion: 'none' as const,
@@ -26,13 +26,14 @@ describe('science contracts', () => {
       compositionId: 'ScienceReel',
       runtimeFile: 'science-runtime.json',
       visualPolicyVersion: 'science-static-v1',
-      generatedImageTextPolicy: 'none',
+      generatedImageTextPolicy: 'controlled-german-only',
       fps: 30,
       width: 1080,
       height: 1920,
       scenes: [scene('01-hook'), scene('02-payoff')],
     });
     expect(plan.minimumWordMatchRatio).toBe(0.82);
+    expect(plan.generatedImageTextPolicy).toBe('controlled-german-only');
     expect(plan.scenes.every((entry) => entry.renderMode === 'image-only' && entry.motionLevel === 'none')).toBe(true);
   });
 
@@ -43,7 +44,7 @@ describe('science contracts', () => {
       compositionId: 'ScienceReel',
       runtimeFile: 'science-runtime.json',
       visualPolicyVersion: 'science-static-v1',
-      generatedImageTextPolicy: 'none',
+      generatedImageTextPolicy: 'controlled-german-only',
       fps: 30,
       width: 1080,
       height: 1920,
