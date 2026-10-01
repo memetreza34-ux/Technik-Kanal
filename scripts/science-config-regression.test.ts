@@ -7,6 +7,17 @@ describe('science config regression', () => {
     expect(config.version).toBe('science-v1');
     expect(config.voice.speed).toBe(1.1);
     expect(config.format).toMatchObject({width: 1080, height: 1920, fps: 30});
+    expect(config.topicScope.identity).toBe('alltagswissenschaft-und-technik');
+    expect(config.topicScope.audience).toBe('jugendliche-und-junge-erwachsene');
+    expect(config.topicScope.concreteAndVisualPreferred).toBe(true);
+    expect(config.topicScope.largePrerequisiteBurdenForbidden).toBe(true);
+    expect(config.topicScope.biologyAllowed).toBe(false);
+    expect(config.topicScope.medicineAllowed).toBe(false);
+    expect(config.topicScope.highlyAbstractScienceAllowed).toBe(false);
+    expect(config.topicScope.preferredDomains).toContain('alltagsphysik');
+    expect(config.topicScope.preferredDomains).toContain('elektrotechnik-elektronik');
+    expect(config.topicScope.excludedDomains).toContain('biologie');
+    expect(config.topicScope.excludedDomains).toContain('dna-genetik');
     expect(config.captions.backgroundBox).toBe(false);
     expect(config.captions.highlightColor).toBeNull();
     expect(config.visuals.policyVersion).toBe('science-static-v1');
