@@ -26,6 +26,10 @@ export const evaluateScienceVisualPolicy = ({plan, config, promptFiles = {}, pro
     if (!promptFiles[scene.id]) errors.push(`${scene.id}: Einzelprompt fehlt.`);
   }
 
+  if (plan.generatedImageTextPolicy !== config.visuals.generatedImageTextPolicy) {
+    errors.push(`Scene-Plan nutzt ${plan.generatedImageTextPolicy}; erwartet ${config.visuals.generatedImageTextPolicy}.`);
+  }
+
   if (!promptManifest) errors.push('Prompt-Manifest fehlt.');
   else {
     if (promptManifest.requiredVisibleSceneImages !== scenes.length) {
@@ -33,7 +37,15 @@ export const evaluateScienceVisualPolicy = ({plan, config, promptFiles = {}, pro
     }
     if (promptManifest.cover?.sourceSceneId !== firstScene?.id) errors.push('Cover muss aus Bild 01 / der ersten Szene stammen.');
     if (promptManifest.cover?.candidateCount !== 3) errors.push('Bild 01 muss drei Cover-Kandidaten vorsehen.');
-    if (promptManifest.generatedImageTextPolicy !== 'none') errors.push('Prompt-Manifest muss sichtbaren KI-Text verbieten.');
+    if (promptManifest.generatedImageTextPolicy !== config.visuals.generatedImageTextPolicy) {
+      errors.push(`Prompt-Manifest muss ${config.visuals.generatedImageTextPolicy} verwenden.`);
+    }
+    if (config.visuals.generatedImageTextPolicy === 'controlled-german-only' && promptManifest.visibleImageLanguage !== 'de') {
+      errors.push('Prompt-Manifest muss sichtbaren Bildtext auf Deutsch festlegen.');
+    }
+    if (config.visuals.brandVisualStyleDefined === true && promptManifest.styleId !== config.visuals.styleId) {
+      errors.push(`Prompt-Manifest muss styleId ${config.visuals.styleId} verwenden.`);
+    }
   }
 
   return {
