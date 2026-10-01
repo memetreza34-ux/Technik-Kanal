@@ -35,13 +35,19 @@
     "beats": {"min": 6, "ideal": 10, "max": 16},
     "maximumTextOnlyScenesPerReel": 0,
     "frameZeroMustContainMainMotif": true,
-    "generatedImageTextPolicy": "none",
+    "generatedImageTextPolicy": "controlled-german-only",
     "coverUsesFirstScene": true,
     "separateThumbnailForbidden": true,
     "transitionPolicy": "hard-cut",
     "animationAllowed": false,
     "cameraMotionAllowed": false,
-    "brandVisualStyleDefined": false
+    "brandVisualStyleDefined": true,
+    "styleId": "scientific-scene-explainer-v1",
+    "fullFrameContextPreferredWhenUseful": true,
+    "fixedBackgroundForbidden": true,
+    "humanFiguresAllowedWhenExplanatory": true,
+    "informationDensityPolicy": "minimum-necessary",
+    "visibleImageLanguage": "de"
   },
   "textQuality": {
     "headlineWordsMax": 10,
