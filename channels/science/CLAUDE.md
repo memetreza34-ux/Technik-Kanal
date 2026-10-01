@@ -11,7 +11,42 @@ Vor Änderungen zuerst lesen:
 
 ## Kanalrichtung
 
-Dies ist ein allgemeiner deutschsprachiger Wissenschafts- und Bildungskanal. Elektrotechnik ist nur ein Themenbereich neben Physik, Chemie, Astronomie, Energie, Materialien und weiteren Wissenschaftsthemen.
+Dies ist ein deutschsprachiger Kanal für **Alltagswissenschaft und Technik**. Zielgruppe sind vor allem Jugendliche und junge Erwachsene.
+
+Der Kanal ist bewusst **kein allgemeines Wissenschaftslexikon**. Themen sollen greifbar, visuell erklärbar und ohne umfangreiche Vorkenntnisse verständlich sein.
+
+Bevorzugte Bereiche:
+
+- Physik im Alltag
+- Elektrotechnik und Elektronik
+- Energie
+- Maschinen und technische Systeme
+- Verkehr, Bahn, Autos und Mobilität
+- Gebäude, Infrastruktur und Versorgung
+- Materialien und Werkstoffe
+- einfache Chemie mit sichtbarem Alltagsbezug
+- Wetter und verständliche Naturphänomene
+- greifbare Astronomie
+
+Nicht als reguläre Kanalthemen verwenden:
+
+- Biologie
+- Medizin
+- Anatomie
+- Krankheiten
+- Zellen und Zellbiologie
+- DNA und Genetik
+- Biochemie
+- stark abstrakte Quantenphysik
+- abstrakte Teilchenphysik
+- komplizierte Relativitätstheorie
+- hochtheoretische Astrophysik
+
+Leitfrage bei der Themenwahl:
+
+> Kann ein Jugendlicher ohne großes Vorwissen nach einem kurzen Reel etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
+
+Wenn nicht, Thema verwerfen oder auf eine einfachere, konkrete Frage zuschneiden.
 
 ## Inhalt und Sicherheit
 
@@ -21,6 +56,9 @@ Dies ist ein allgemeiner deutschsprachiger Wissenschafts- und Bildungskanal. Ele
 - keine Anleitung zu Arbeiten an Netzspannung
 - keine Manipulation oder Überbrückung von Schutzgeräten
 - chemische, physikalische oder elektrische Gefahren nur erklärend und sicher darstellen
+- unnötigen Fachjargon vermeiden
+- Fachbegriffe unmittelbar erklären
+- konkrete Ursache-Wirkung und sichtbare Beispiele bevorzugen
 
 ## Sprache
 
@@ -79,4 +117,4 @@ Remotion darf nur statische Bilder zeitlich anordnen, harte Schnitte setzen, Voi
 
 ## Produktionsregel
 
-Erst Recherche, Skript und Szenenplanung abschließen. Danach jeden Beat anhand des konkreten Skriptsatzes visuell planen und `gehirn/BILDWELT.md` anwenden. Keine Animationen als Ersatz für fehlende Bildplanung verwenden.
+Erst Thema gegen `gehirn/KANAL.md` prüfen. Danach Recherche, Skript und Szenenplanung abschließen. Anschließend jeden Beat anhand des konkreten Skriptsatzes visuell planen und `gehirn/BILDWELT.md` anwenden. Keine Animationen als Ersatz für fehlende Bildplanung verwenden.
