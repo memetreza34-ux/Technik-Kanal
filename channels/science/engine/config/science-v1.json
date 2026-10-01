@@ -6,6 +6,42 @@
     "fps": 30,
     "durationSeconds": {"min": 35, "ideal": 55, "max": 75}
   },
+  "topicScope": {
+    "identity": "alltagswissenschaft-und-technik",
+    "audience": "jugendliche-und-junge-erwachsene",
+    "concreteAndVisualPreferred": true,
+    "largePrerequisiteBurdenForbidden": true,
+    "biologyAllowed": false,
+    "medicineAllowed": false,
+    "highlyAbstractScienceAllowed": false,
+    "astronomyPolicy": "nur-konkrete-anschauliche-themen",
+    "preferredDomains": [
+      "alltagsphysik",
+      "elektrotechnik-elektronik",
+      "energie",
+      "maschinen-technische-systeme",
+      "verkehr-bahn-autos-mobilitaet",
+      "gebaeude-infrastruktur-versorgung",
+      "materialien-werkstoffe",
+      "einfache-alltagschemie",
+      "wetter-naturphaenomene",
+      "greifbare-astronomie"
+    ],
+    "excludedDomains": [
+      "biologie",
+      "medizin",
+      "anatomie",
+      "krankheiten",
+      "zellbiologie",
+      "dna-genetik",
+      "biochemie",
+      "stark-abstrakte-quantenphysik",
+      "abstrakte-teilchenphysik",
+      "komplizierte-relativitaetstheorie",
+      "hochtheoretische-astrophysik"
+    ],
+    "selectionRule": "Ein Jugendlicher soll ohne grosses Vorwissen nach einem kurzen Reel etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann."
+  },
   "script": {
     "words": {"min": 90, "ideal": 140, "max": 190},
     "mainIdeas": {"min": 3, "max": 8},
