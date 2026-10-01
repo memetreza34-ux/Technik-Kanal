@@ -24,13 +24,13 @@ Nicht einfach ein Bild vom Thema erzeugen. Eine Szene bauen, die die Aussage erk
 
 Die Darstellungsform wird pro Skriptsatz gewählt. Erlaubt und ausdrücklich erwünscht sind unter anderem:
 
-1. **volle Umgebung / Ort** — Wald, Straße, Labor, Landschaft, Meer, Werkstatt, Raum, Weltraum, Fabrik usw., wenn Kontext hilft
+1. **volle Umgebung / Ort** — Straße, Labor, Landschaft, Meer, Werkstatt, Raum, Weltraum, Fabrik, Bahnhof, Technikraum usw., wenn Kontext hilft
 2. **integrierte Wissenschaftsszene** — reale/stilisierte Umgebung plus wissenschaftliche Erklärung direkt in der Szene
 3. **technische Illustration / Cutaway** — wenn innerer Aufbau erklärt wird
-4. **Mikro-/Molekül-/Zellansicht** — wenn der relevante Prozess unsichtbar oder sehr klein ist
+4. **Mikro-/Molekül-/Materialansicht** — wenn ein relevanter Prozess unsichtbar oder sehr klein ist
 5. **Vergleich / Vorher-Nachher / Größenvergleich** — wenn der Satz einen Unterschied erklärt
 6. **reine wissenschaftliche Illustration** — wenn ein echter Ort keinen Mehrwert bietet
-7. **Mensch in Situation** — wenn Körperwirkung, Größenvergleich, Alltag, Experiment oder Handlung relevant ist
+7. **Mensch in Situation** — wenn Alltag, Größenvergleich, Experiment, Nutzung oder Handlung relevant ist
 
 Nicht jede Szene braucht denselben Aufbau.
 
@@ -40,9 +40,10 @@ Wenn ein Ort fachlich hilft, soll das Bild **nicht** wie ein isoliertes Schulbuc
 
 Beispiele:
 - Schall: Lautsprecher und Person in einem echten Raum; Druckwelle in die Szene integriert
-- Photosynthese: Pflanze in natürlicher Umgebung; Licht, Wasser und CO₂ direkt in die Szene eingebaut
 - Gewitter: vollständige Landschaft und Gewitterwolke; Ladungen und Entladung in den Himmel integriert
-- Atmung: Person beim Joggen; Lunge und Alveolen als integrierter wissenschaftlicher Cutaway
+- Wärmepumpe: Haus oder Technikraum als ganze Szene; Energiefluss direkt in die Umgebung integriert
+- Induktion: Werkbank oder Versuchsaufbau; Magnet, Spule und Messgerät in einer nachvollziehbaren Situation
+- Bahn/Verkehr: Fahrzeug oder Infrastruktur im realen Kontext; technische Erklärung dort integrieren, wo sie tatsächlich stattfindet
 
 Die Umgebung darf atmosphärisch und räumlich wirken, darf aber die fachliche Aussage nie verdecken.
 
@@ -62,11 +63,11 @@ Die Umgebung darf atmosphärisch und räumlich wirken, darf aber die fachliche A
 Menschen sind erlaubt, aber nur wenn sie die Aussage verbessern.
 
 Nutzen bei:
-- Körper und Medizin
 - Alltagssituationen
 - Größenvergleich
 - Experimenten
-- Wirkung eines Phänomens auf Menschen
+- Bedienung oder Nutzung von Technik
+- Wirkung eines physikalischen oder technischen Phänomens im Alltag
 - Handlung oder Perspektive
 
 Regeln:
@@ -81,14 +82,13 @@ Regeln:
 Es gibt **keinen festen Navy-Hintergrund für jedes Bild**.
 
 Die Farbwelt richtet sich nach Inhalt und Umgebung:
-- Natur/Biologie: Grün-, Erd- und helle Naturtöne
-- Medizin/Körper: helle neutrale oder sanfte warme/kühle Töne
 - Technik/Elektronik: Navy, Anthrazit, Grau, Metalltöne
 - Wärme/Energie: kontrollierte Orange-/Rottöne
 - Wasser/Klima: Blau-/Türkistöne
-- Geologie: Stein-, Braun- und Erdtöne
+- Geologie/Materialien: Stein-, Braun- und Erdtöne
+- Wetter/Naturphänomene: natürliche Himmel-, Erd- und Umgebungsfarben
 - Weltraum: dunkles Blau/Schwarz
-- Alltag: natürliche Umgebungsfarben
+- Alltag/Verkehr/Infrastruktur: natürliche Umgebungsfarben
 
 Wiedererkennung entsteht durch Illustrationsqualität, Informationshierarchie, Labelstil und Klarheit — nicht durch denselben Hintergrund in jedem Bild.
 
@@ -180,7 +180,7 @@ Ein Bild ist nur gut, wenn diese Fragen mit Ja beantwortet werden können:
 3. Ist die gewählte Umgebung oder Illustration fachlich passend?
 4. Sind Text und Labels wirklich notwendig und korrekt?
 5. Gibt es keine unnötigen Informationen?
-6. Passt die Darstellung stilistisch zum erwachsenen Wissenschaftskanal?
+6. Passt die Darstellung stilistisch zum erwachsenen Wissenschafts- und Technikkanal?
 7. Enthält das Bild ausschließlich deutschen sichtbaren Text?
 
 Wenn nicht, Prompt oder Bild überarbeiten.
