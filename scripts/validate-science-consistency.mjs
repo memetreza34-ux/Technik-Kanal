@@ -8,6 +8,7 @@ const config = loadElectricalConfig();
 const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
 const claude = fs.readFileSync(path.join(root, 'channels/science/CLAUDE.md'), 'utf8');
 const imageWorld = fs.readFileSync(path.join(root, 'channels/science/gehirn/BILDWELT.md'), 'utf8');
+const channel = fs.readFileSync(path.join(root, 'channels/science/gehirn/KANAL.md'), 'utf8');
 const voice = JSON.parse(fs.readFileSync(path.join(root, 'channels/science/engine/config/voice-v1.json'), 'utf8'));
 const scienceReel = fs.readFileSync(path.join(root, 'channels/science/src/ScienceReel.tsx'), 'utf8');
 const template = fs.readFileSync(path.join(root, 'scripts/lib/create-electrical-scene-plan-template.mjs'), 'utf8');
@@ -16,6 +17,14 @@ const renderQa = fs.readFileSync(path.join(root, 'scripts/qa_science_render.mjs'
 const errors = [];
 
 if (config.version !== 'science-v1') errors.push('Aktive Konfiguration muss science-v1 sein.');
+if (config.topicScope?.identity !== 'alltagswissenschaft-und-technik') errors.push('Themenprofil muss Alltagswissenschaft und Technik sein.');
+if (config.topicScope?.audience !== 'jugendliche-und-junge-erwachsene') errors.push('Zielgruppe muss Jugendliche und junge Erwachsene sein.');
+if (config.topicScope?.biologyAllowed !== false || config.topicScope?.medicineAllowed !== false) errors.push('Biologie und Medizin duerfen nicht Teil des regulaeren Themenprofils sein.');
+if (config.topicScope?.highlyAbstractScienceAllowed !== false) errors.push('Stark abstrakte Wissenschaftsthemen duerfen nicht regulaer freigegeben sein.');
+if (!config.topicScope?.preferredDomains?.includes('alltagsphysik')) errors.push('Alltagsphysik fehlt im bevorzugten Themenprofil.');
+if (!config.topicScope?.preferredDomains?.includes('elektrotechnik-elektronik')) errors.push('Elektrotechnik/Elektronik fehlt im bevorzugten Themenprofil.');
+if (!config.topicScope?.excludedDomains?.includes('biologie')) errors.push('Biologie fehlt in excludedDomains.');
+if (!/Alltagswissenschaft und Technik/i.test(channel)) errors.push('KANAL.md dokumentiert den fokussierten Themenrahmen nicht.');
 if (config.voice.speed !== 1.1 || voice.speed !== 1.1) errors.push('Voice-Geschwindigkeit muss exakt 1.10 sein.');
 if (voice.processing?.loudness?.targetIntegratedLufs !== -16 || voice.processing?.loudness?.targetTruePeakDb !== -1.5) errors.push('Voice-Konfiguration muss -16 LUFS und -1.5 dBTP dokumentieren.');
 if (!/1[,.]10[×x]/i.test(claude)) errors.push('CLAUDE.md enthält die verbindliche 1,10×-Regel nicht.');
@@ -65,4 +74,4 @@ if (errors.length) {
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log('✓ Science-v1, statische Pipeline, Audio und Scientific Scene Explainer sind konsistent.');
+console.log('✓ Themenprofil, Science-v1, statische Pipeline, Audio und Scientific Scene Explainer sind konsistent.');
