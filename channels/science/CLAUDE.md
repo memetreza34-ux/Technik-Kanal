@@ -4,9 +4,10 @@ Vor Änderungen zuerst lesen:
 
 1. `gehirn/KANAL.md`
 2. `gehirn/REELS.md`
-3. `engine/config/science-v1.json`
-4. `skills/reel-fertigstellen.md`
-5. den aktuellen Reel-Ordner
+3. `gehirn/BILDWELT.md`
+4. `engine/config/science-v1.json`
+5. `skills/reel-fertigstellen.md`
+6. den aktuellen Reel-Ordner
 
 ## Kanalrichtung
 
@@ -24,8 +25,10 @@ Dies ist ein allgemeiner deutschsprachiger Wissenschafts- und Bildungskanal. Ele
 ## Sprache
 
 - Voice-over, Untertitel und kontrollierte Overlays sind Deutsch
-- Bildprompts dürfen Englisch sein
-- generierte Bilder dürfen keine zufällige KI-Schrift, Logos oder Wasserzeichen enthalten
+- Bildprompts dürfen Englisch oder Deutsch sein
+- sichtbarer Text innerhalb generierter Wissenschaftsbilder ist ausschließlich Deutsch
+- englische Labels oder englische Infotexte im Bild sind nicht zulässig
+- zufällige KI-Schrift, Logos oder Wasserzeichen sind nicht zulässig
 
 ## Hook
 
@@ -37,16 +40,26 @@ Dies ist ein allgemeiner deutschsprachiger Wissenschafts- und Bildungskanal. Ele
 
 ## Bildwelt
 
-Aktuell ist **keine feste Bildwelt definiert**.
+Die verbindliche Bildwelt ist in `gehirn/BILDWELT.md` definiert.
 
-Bis eine neue Bildwelt ausdrücklich beschlossen und im Repo verankert wird:
+Kernprinzip:
 
-- keinen Markenstil erfinden
-- keinen früheren Scientific-3D-Stil wiederverwenden
-- keine alten Style-Prompts rekonstruieren
-- keine festen Farb-, Material-, Kamera- oder Labelregeln als Kanalstandard annehmen
+> Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die den konkreten gesprochenen Satz erklärt.
 
-Technisch bleiben nur neutrale Produktionsregeln bestehen: 9:16, statische Szenenbilder, ein Bild pro Beat und keine Remotion-Kamerabewegung.
+Dabei gilt:
+
+- eine Hauptaussage pro Bild
+- volle Umgebungen und Orte nutzen, wenn sie beim Erklären helfen
+- wissenschaftliche Information direkt in die Szene integrieren
+- reine Illustrationen, Cutaways, Mikroansichten, Vergleiche oder Personen nur dann einsetzen, wenn sie für den Satz die beste Darstellungsform sind
+- Menschen sind erlaubt, aber stilisiert, erwachsen und nur mit fachlicher Funktion
+- Hintergründe und Farben dürfen je nach Thema wechseln; kein fixer Navy-Hintergrund
+- Titel, Labels, Merksätze, Zahlen und Pfeile sind optional, nicht verpflichtend
+- sichtbarer Text im Bild nur auf Deutsch
+- so wenig Information wie möglich, so viel wie nötig
+- keine Informationsüberladung und keine dekorativen Elemente ohne Erklärfunktion
+
+Technisch bleiben die Produktionsregeln bestehen: statische Szenenbilder, ein Bild pro Beat und keine Remotion-Kamerabewegung.
 
 ## Remotion – harte Grenze
 
@@ -66,4 +79,4 @@ Remotion darf nur statische Bilder zeitlich anordnen, harte Schnitte setzen, Voi
 
 ## Produktionsregel
 
-Erst Recherche, Skript und Szenenplanung abschließen. Die visuelle Produktion bleibt blockiert, bis eine neue Bildwelt festgelegt wurde. Keine Animationen als Ersatz für fehlende Bildplanung verwenden.
+Erst Recherche, Skript und Szenenplanung abschließen. Danach jeden Beat anhand des konkreten Skriptsatzes visuell planen und `gehirn/BILDWELT.md` anwenden. Keine Animationen als Ersatz für fehlende Bildplanung verwenden.
