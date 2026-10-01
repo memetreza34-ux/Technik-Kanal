@@ -10,8 +10,8 @@ Das Repository ist **Science-only**. Frühere Elektro-Testreels, Remotion-Animat
 Thema
 → Recherche + Quellen
 → deutsches Skript
-→ Szenenplanung
-→ neue Bildwelt festlegen
+→ Szenenplanung pro Aussage
+→ Scientific Scene Explainer anwenden
 → Bildprompts erstellen
 → Preflight
 → Bilder
@@ -25,11 +25,27 @@ Thema
 → QA
 ```
 
-## Aktueller Bildstatus
+## Aktive Bildwelt
 
-Im Repo ist aktuell **keine feste Bildwelt definiert**. Frühere Scientific-3D-/Cutaway-Stilregeln und die dazugehörigen Referenzprompts wurden entfernt. Bis eine neue Bildwelt beschlossen ist, darf kein Agent eigenständig einen Markenstil ableiten oder alte Style-Prompts wiederherstellen.
+Die verbindliche Bildwelt ist **Scientific Scene Explainer v1** (`scientific-scene-explainer-v1`). Die Detailregeln stehen in `channels/science/gehirn/BILDWELT.md`.
 
-Die neutralen technischen Bildregeln bleiben: 9:16, ein statisches Bild pro Beat, Bild 01 als erster Shot und Coverquelle, keine zufällige KI-Schrift/Logos/Wasserzeichen und keine Remotion-Kamerabewegung.
+Kernprinzip:
+
+> Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die genau den gesprochenen Satz erklärt.
+
+Wichtige Regeln:
+
+- eine Hauptaussage pro Bild
+- ganze Orte/Umgebungen nutzen, wenn sie das Verständnis verbessern
+- wissenschaftliche Erklärung direkt in die Szene integrieren, wenn sinnvoll
+- Illustration, Cutaway, Mikroansicht, Vergleich oder stilisierte erwachsene Menschen nur nach inhaltlichem Bedarf einsetzen
+- Hintergründe und Farben passend zum Thema wählen; kein fixer Navy-Hintergrund
+- Titel, Labels, Merksatz, Zahlen, Pfeile und Infotext sind optional
+- sichtbarer Bildtext ausschließlich auf Deutsch
+- so wenig Information wie möglich, so viel wie nötig
+- keine generische KI-Kunst, Sci-Fi-HUDs, Neon-Überladung, Logos oder Wasserzeichen
+
+Die technischen Bildregeln bleiben: 9:16, ein statisches Bild pro Beat, Bild 01 als erster Shot und Coverquelle und keine Remotion-Kamerabewegung.
 
 ## Neuer Reel
 
@@ -42,13 +58,15 @@ npm run science:new -- \
   --scenes=10
 ```
 
+Neue Reels werden bereits mit `scientific-scene-explainer-v1` angelegt.
+
 ## Preflight
 
 ```bash
 npm run science:preflight -- "<reel-ordner>"
 ```
 
-Der Preflight prüft Skript, Quellen, Szenenplanung und die benötigten Produktionsdateien. Solange für ein Projekt noch keine neuen Bildprompts angelegt wurden, bleibt die visuelle Produktion absichtlich unvollständig.
+Der Preflight prüft Skript, Quellen, Szenenplanung, Bildprompt-Dateien und die benötigten Produktionsdateien. Sichtbarer Bildtext muss der aktiven Deutsch-only-Regel entsprechen.
 
 ## Asset-Readiness
 
@@ -70,7 +88,7 @@ Die Pipeline verarbeitet die Voice auf exakt 1,10×, normalisiert die Lautheit, 
 
 `channels/science/reels/2026-09-28_bis_2026-10-04/01_Warum-ist-der-Himmel-blau/`
 
-Das Projekt bleibt Referenz für Recherche, Quellen, Skript und Szenenplan. Die frühere Bildwelt und ihre Bildprompts sind bewusst entfernt.
+Das Projekt bleibt Referenz für Recherche, Quellen, Skript und Szenenplan. Die frühere Bildwelt und ihre alten Bildprompts bleiben entfernt. Neue Visuals für dieses Referenzprojekt müssen künftig nach `Scientific Scene Explainer v1` neu geplant werden.
 
 ## Aktive Architektur
 
@@ -78,5 +96,5 @@ Das Projekt bleibt Referenz für Recherche, Quellen, Skript und Szenenplan. Die 
 - Renderer: `ScienceReel`
 - Runtime: `science-runtime.json`
 - technische Visual Policy: `science-static-v1`
-- Bildwelt: aktuell nicht definiert
+- Bildwelt: `scientific-scene-explainer-v1`
 - Befehle: ausschließlich `science:*`
