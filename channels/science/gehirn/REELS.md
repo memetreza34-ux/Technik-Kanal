@@ -43,18 +43,27 @@ Erlaubt sind allgemeine Wissenschafts- und Bildungsthemen, insbesondere Physik, 
 
 ## Bildplanung
 
-Aktuell ist keine feste Bildwelt definiert. Deshalb gibt es keinen verbindlichen Markenstil, keine feste Farbwelt und keine feste Prompt-Sprache.
+Die verbindliche Bildwelt steht in `BILDWELT.md`.
 
-Bis eine neue Bildwelt beschlossen ist, gelten nur neutrale technische Anforderungen:
+Jeder Bildbeat wird aus dem konkreten Skriptsatz entwickelt. Nicht einfach ein Bild vom Thema erzeugen, sondern die passende visuelle Szene für genau diese Aussage bauen.
 
-- 9:16
-- ein statisches Bild pro Beat
+Dabei gilt:
+
+- eine Hauptaussage pro Bild
+- volle Umgebung/Ort nutzen, wenn das Verständnis dadurch besser wird
+- wissenschaftliche Erklärung direkt in eine Szene integrieren, wenn sinnvoll
+- technische Illustration, Cutaway, Mikroansicht, Vergleich oder reine Illustration verwenden, wenn diese Form besser erklärt
+- stilisierte erwachsene Menschen sind erlaubt, wenn Körper, Alltag, Experiment, Größenvergleich oder Handlung relevant sind
+- Hintergrund und Farben passend zum Inhalt wählen; kein fixer Hintergrund für alle Bilder
+- Titel, Labels, Merksatz, Zahl, Fakt, Vergleich, Pfeile oder kurze Definition nur einsetzen, wenn sie wirklich helfen
+- sichtbarer Bildtext ausschließlich auf Deutsch
+- Text kurz halten; keine Informationswand
+- bei KI-generiertem Text Rechtschreibung und fachliche Richtigkeit prüfen
 - keine zufällige KI-Schrift, Logos oder Wasserzeichen
-- fachlich plausible Darstellung
 - Bild 01 ist zugleich erster Shot und Coverquelle
 - keine Remotion-Kamerabewegung
 
-Bildprompts werden erst finalisiert, nachdem die neue Bildwelt festgelegt wurde.
+Leitregel: **so wenig Information wie möglich, so viel wie nötig**.
 
 ## Remotion-Vertrag
 
@@ -67,22 +76,23 @@ Zulässig sind statische Szenenbilder, harte Schnitte, Voice-over, Untertitel oh
 1. Thema und zentrale Frage
 2. fachliche Recherche und Quellen-IDs
 3. fertiges deutsches Skript
-4. Szenenplanung
-5. neue Bildwelt festlegen
+4. Szenenplanung pro Skriptsatz
+5. passende Darstellungsform nach `BILDWELT.md` wählen
 6. Bildprompts erstellen
 7. Preflight
 8. Bilder erzeugen und Gewinner auswählen
-9. Voice-over
-10. lokale Wortzeiten und Synchronisation
-11. statische Montage
-12. Untertitel und optionale SFX
-13. Render-QA
-14. visuelle und fachliche Endkontrolle
+9. Bildtext/Labels auf Deutsch prüfen
+10. Voice-over
+11. lokale Wortzeiten und Synchronisation
+12. statische Montage
+13. Untertitel und optionale SFX
+14. Render-QA
+15. visuelle und fachliche Endkontrolle
 
 ## Verbindliche Projektdateien
 
-`06-projektdateien/` enthält mindestens `scene-plan.json`, `production-status.json`, `asset-manifest.json`, `content-package-report.json`, `ready-report.json`, `qa-report.json`, `sources.md` und `storyboard.md`. Prompt- und Visual-Policy-Dateien werden erst wieder verbindlich, wenn die neue Bildwelt definiert ist.
+`06-projektdateien/` enthält mindestens `scene-plan.json`, `production-status.json`, `asset-manifest.json`, `content-package-report.json`, `ready-report.json`, `qa-report.json`, `sources.md` und `storyboard.md`.
 
 ## Abbruchregeln
 
-Nicht rendern bei fehlender Voice, fehlendem Pflichtbild, unzureichender Wortübereinstimmung, unbelegten sicherheitsrelevanten Behauptungen, gefährlichen Anleitungen, falschem Bildformat, doppeltem Bild, sichtbarer KI-Schrift oder unzulässiger Remotion-Animation.
+Nicht rendern bei fehlender Voice, fehlendem Pflichtbild, unzureichender Wortübereinstimmung, unbelegten sicherheitsrelevanten Behauptungen, gefährlichen Anleitungen, falschem Bildformat, doppeltem Bild, falschem/englischem sichtbarem Bildtext, sichtbarer fehlerhafter KI-Schrift oder unzulässiger Remotion-Animation.
