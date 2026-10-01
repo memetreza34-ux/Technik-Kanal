@@ -12,9 +12,14 @@ describe('science config regression', () => {
     expect(config.visuals.policyVersion).toBe('science-static-v1');
     expect(config.visuals.animationAllowed).toBe(false);
     expect(config.visuals.cameraMotionAllowed).toBe(false);
-    expect(config.visuals.brandVisualStyleDefined).toBe(false);
-    expect(config.visuals.styleId).toBeUndefined();
-    expect(config.visuals.controlledLabels).toBeUndefined();
+    expect(config.visuals.brandVisualStyleDefined).toBe(true);
+    expect(config.visuals.styleId).toBe('scientific-scene-explainer-v1');
+    expect(config.visuals.generatedImageTextPolicy).toBe('controlled-german-only');
+    expect(config.visuals.visibleImageLanguage).toBe('de');
+    expect(config.visuals.fullFrameContextPreferredWhenUseful).toBe(true);
+    expect(config.visuals.fixedBackgroundForbidden).toBe(true);
+    expect(config.visuals.humanFiguresAllowedWhenExplanatory).toBe(true);
+    expect(config.visuals.informationDensityPolicy).toBe('minimum-necessary');
     expect(config.alignment.minimumWordMatchRatio).toBeGreaterThanOrEqual(0.8);
     expect(config.safety.hazardousTopicDisclaimerRequired).toBe(true);
     expect(config.electricalSafety).toBeUndefined();
