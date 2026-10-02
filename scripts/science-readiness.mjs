@@ -13,4 +13,4 @@ run(process.execPath, ['scripts/science-preflight.mjs', project], {cwd: reposito
 run(process.execPath, ['scripts/science-required-media.mjs', project], {cwd: repositoryRoot});
 run(process.execPath, ['scripts/science-image-qa.mjs', project], {cwd: repositoryRoot});
 run(process.execPath, ['scripts/science-runtime-readiness.mjs', project], {cwd: repositoryRoot});
-console.log('✓ Science-Readiness bestanden: Flow-Masterprompt, Flow-Plan, Voice, alle finalen 16:9-Ausgangsbilder, geplante KI-Clips, separates Thumbnail und Bild-QA sind bereit.');
+console.log('✓ Science-Readiness bestanden: Preflight, Voice, alle finalen 16:9-Szenenbilder, separates Thumbnail und Bild-QA sind bereit.');

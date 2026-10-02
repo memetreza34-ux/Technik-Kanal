@@ -2,14 +2,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {electricalProjectPaths} from './lib/electrical-project-structure.mjs';
-import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
 
 const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
 if (!projectArg) throw new Error('Nutzung: npm run science:flow-master -- <video-ordner>');
 
 const root = path.resolve(projectArg);
 const paths = electricalProjectPaths(root);
-const config = loadElectricalConfig();
 const read = (file) => fs.readFileSync(file, 'utf8').trim();
 const readJson = (file) => JSON.parse(read(file));
 
@@ -23,53 +21,40 @@ const flowPlan = readJson(paths.flowPlan);
 const scenes = Array.isArray(plan.scenes) ? plan.scenes : [];
 const flowScenes = Array.isArray(flowPlan.scenes) ? flowPlan.scenes : [];
 if (!scenes.length) throw new Error('Szenenplan enthält keine Beats.');
+if (flowPlan.imageOnly !== true) throw new Error('flow-plan.json muss imageOnly=true setzen.');
 if (flowScenes.length !== scenes.length) throw new Error(`flow-plan.json muss ${scenes.length} Beat-Einträge enthalten.`);
 
 const byId = new Map(flowScenes.map((entry) => [entry.id, entry]));
-const videoEntries = [];
 for (const scene of scenes) {
   const entry = byId.get(scene.id);
   if (!entry) throw new Error(`Flow-Plan fehlt für ${scene.id}.`);
-  if (!['image', 'image-to-video'].includes(entry.output)) throw new Error(`${scene.id}: output muss image oder image-to-video sein.`);
+  if (entry.output !== 'image') throw new Error(`${scene.id}: Nur output=image ist erlaubt. KI-Videoclips sind deaktiviert.`);
+  if (entry.clipSeconds != null || String(entry.motionPrompt ?? '').trim() || String(entry.videoDir ?? '').trim()) {
+    throw new Error(`${scene.id}: Video-/Motion-Felder sind im Bild-Workflow nicht erlaubt.`);
+  }
   const promptFile = path.join(paths.promptDir, `${scene.id}.txt`);
   if (!fs.existsSync(promptFile)) throw new Error(`${scene.id}: Einzelprompt fehlt.`);
-  if (entry.output === 'image-to-video') {
-    if (!String(entry.motionPrompt ?? '').trim()) throw new Error(`${scene.id}: motionPrompt fehlt für image-to-video.`);
-    const seconds = Number(entry.clipSeconds ?? 0);
-    if (!Number.isFinite(seconds) || seconds <= 0 || seconds > config.visuals.flow.clipSecondsMax) {
-      throw new Error(`${scene.id}: clipSeconds muss 1–${config.visuals.flow.clipSecondsMax} sein.`);
-    }
-    videoEntries.push(entry);
-  }
 }
 
-const ratio = videoEntries.length / scenes.length;
-const range = config.visuals.flow.targetVideoRatio;
-const ratioWarning = ratio < range.min || ratio > range.max
-  ? `WARNUNG: KI-Video-Anteil ${(ratio * 100).toFixed(0)} % liegt außerhalb des Richtwerts ${(range.min * 100).toFixed(0)}–${(range.max * 100).toFixed(0)} %. Inhaltliche Klarheit ist wichtiger als die Quote.`
-  : `KI-Video-Anteil: ${(ratio * 100).toFixed(0)} % (${videoEntries.length}/${scenes.length}), im Richtwert.`;
-
 const lines = [];
-lines.push('GOOGLE FLOW MASTER PROMPT');
-lines.push('=========================');
+lines.push('GOOGLE FLOW MASTER PROMPT – NUR BILDER');
+lines.push('======================================');
 lines.push('');
 lines.push(`Video: ${plan.title ?? plan.slug}`);
 lines.push(`Format: ${plan.width}×${plan.height}, 16:9`);
-lines.push(`Bildwelt: Scientific Scene Explainer v1`);
-lines.push(ratioWarning);
+lines.push('Bildwelt: Scientific Scene Explainer v1');
 lines.push('');
 lines.push('VERBINDLICHER ABLAUF');
 lines.push('---------------------');
-lines.push('1. Zuerst NUR die drei Thumbnail-/Cover-Kandidaten erzeugen.');
-lines.push('2. Danach STOPPEN und auf die ausdrückliche Auswahl des Nutzers warten. Noch keine Szenen erzeugen.');
-lines.push('3. Den gewählten Thumbnail-Kandidaten anschließend als visuelle Referenz für Qualitätsniveau und Illustrationssprache verwenden, ohne alle Szenen gleich aussehen zu lassen.');
-lines.push('4. Danach Beat für Beat streng nacheinander arbeiten: 01 fertigstellen, dann 02, dann 03 usw. Niemals alle Assets gleichzeitig erzeugen.');
-lines.push('5. Für JEDEN Beat zuerst das finale 16:9-Ausgangsbild erzeugen und auswählen.');
-lines.push('6. Nur bei output=image-to-video genau dieses ausgewählte Ausgangsbild in Google Flow animieren.');
-lines.push(`7. KI-Clips maximal ${config.visuals.flow.clipSecondsMax} Sekunden, kein gesprochenes Dialog-Audio, keine Lippen-Synchronisation, keine neu erfundenen Texte während der Animation.`);
-lines.push('8. Sichtbarer Text ausschließlich Deutsch. Keine Logos oder Wasserzeichen.');
-lines.push('9. Statische Beats bleiben statisch. Nicht aus Gewohnheit alles animieren.');
-lines.push('10. Nach jedem fertigen Beat sauber speichern/benennen, erst dann zum nächsten Beat wechseln.');
+lines.push('1. Zuerst NUR die drei Thumbnail-Kandidaten erzeugen.');
+lines.push('2. Danach STOPPEN und auf die ausdrückliche Auswahl des Nutzers warten. Noch keine Szenenbilder erzeugen.');
+lines.push('3. Den gewählten Thumbnail-Kandidaten als lockere visuelle Referenz für Qualitätsniveau und Illustrationssprache verwenden. Szenen dürfen trotzdem andere Orte, Farben und Kompositionen haben.');
+lines.push('4. Danach Beat für Beat streng nacheinander arbeiten: 01 vollständig fertigstellen, dann 02, dann 03 usw. Niemals mehrere Beats gleichzeitig erzeugen.');
+lines.push('5. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen und auswählen.');
+lines.push('6. KEINE KI-Videoclips, KEINE Image-to-Video-Ausgabe und KEINE Animationen erzeugen.');
+lines.push('7. Wenn ein Vorgang Bewegung bräuchte, ihn als verständliches Standbild oder als zusätzlichen statischen Beat erklären.');
+lines.push('8. Sichtbarer Text ausschließlich Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.');
+lines.push('9. Nach jedem finalen Bild sauber speichern/benennen und erst dann zum nächsten Beat wechseln.');
 lines.push('');
 lines.push('THUMBNAIL – PHASE 1');
 lines.push('-------------------');
@@ -77,27 +62,19 @@ lines.push(read(thumbnailFile));
 lines.push('');
 lines.push('STOPP NACH DEN DREI THUMBNAILS. AUF AUSWAHL DES NUTZERS WARTEN.');
 lines.push('');
-lines.push('SZENEN – PHASE 2');
-lines.push('----------------');
+lines.push('SZENENBILDER – PHASE 2');
+lines.push('----------------------');
 
 for (const scene of scenes) {
-  const entry = byId.get(scene.id);
   const promptFile = path.join(paths.promptDir, `${scene.id}.txt`);
   lines.push('');
-  lines.push(`${scene.id.toUpperCase()} · OUTPUT=${entry.output}`);
-  lines.push('='.repeat(Math.min(80, scene.id.length + entry.output.length + 11)));
-  lines.push('AUSGANGSBILD-PROMPT:');
+  lines.push(`${scene.id.toUpperCase()} · OUTPUT=IMAGE`);
+  lines.push('='.repeat(Math.min(80, scene.id.length + 16)));
   lines.push(read(promptFile));
   lines.push('');
-  if (entry.output === 'image-to-video') {
-    lines.push(`IMAGE-TO-VIDEO · ${entry.clipSeconds}s:`);
-    lines.push(String(entry.motionPrompt).trim());
-    lines.push('Verwende exakt das zuvor ausgewählte Ausgangsbild als Startbild. Keine neue Komposition erfinden. Kein gesprochenes Dialog-Audio. Keine neuen Texte erzeugen.');
-  } else {
-    lines.push('KEINE ANIMATION: Dieses finale Ausgangsbild bleibt der verwendete Szenen-Asset.');
-  }
+  lines.push(`Nur ein finales statisches Bild für ${scene.id} erzeugen. Keine Animation und keinen Videoclip erzeugen.`);
 }
 
 fs.writeFileSync(paths.flowMaster, `${lines.join('\n')}\n`);
 console.log(`✓ Google-Flow-Masterprompt gebaut: ${paths.flowMaster}`);
-console.log(`  ${videoEntries.length} KI-Video-Beats / ${scenes.length} Beats.`);
+console.log(`  ${scenes.length} statische Bild-Beats, 0 KI-Videoclips.`);

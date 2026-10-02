@@ -1,74 +1,22 @@
-GOOGLE FLOW MASTER PROMPT
-=========================
+GOOGLE FLOW MASTER PROMPT – NUR BILDER
+======================================
 
 VIDEO: Warum fühlt sich Metall kälter an als Holz?
 FORMAT: 16:9 · 1920×1080
 BILDWELT: Scientific Scene Explainer v1
 SPRACHE IM BILD: ausschließlich Deutsch
 
-WICHTIG – ARBEITE PHASENWEISE UND NIEMALS ALLES AUF EINMAL.
-
-PHASE 1 – NUR THUMBNAILS
--------------------------
-1. Erzeuge zuerst ausschließlich die drei Thumbnail-Kandidaten aus dem Thumbnail-Prompt unten.
-2. Danach SOFORT STOPPEN.
-3. Noch keine Szenenbilder und keine Videos erzeugen.
-4. Warte auf die ausdrückliche Auswahl des Nutzers.
-5. Erst nach der Auswahl wird der gewählte Thumbnail-Kandidat als lockere visuelle Referenz für Qualitätsniveau und Illustrationssprache verwendet. Die Szenen bleiben individuell und dürfen andere Orte, Farben und Kompositionen nutzen.
-
-PHASE 2 – SZENEN STRENG NACHEINANDER
--------------------------------------
-Nach der Thumbnail-Auswahl Beat 01 vollständig fertigstellen, dann Beat 02, dann Beat 03 usw. Niemals mehrere Beats gleichzeitig erzeugen.
-
-Für JEDEN Beat gilt:
-A. Zuerst das finale 16:9-Ausgangsbild mit dem jeweiligen Bildprompt erzeugen.
-B. Ergebnis prüfen und das beste Bild auswählen.
-C. Bild sauber nach Beat-ID speichern, z. B. 03-context-final.png.
-D. Nur wenn unten für den Beat IMAGE-TO-VIDEO steht, genau dieses ausgewählte Ausgangsbild als Startbild für den KI-Clip verwenden.
-E. Erst wenn Bild und gegebenenfalls Clip fertig sind, zum nächsten Beat wechseln.
-
-ALLGEMEINE FLOW-REGELN
------------------------
-- Sichtbarer Text ausschließlich Deutsch.
-- Keine Logos, keine Wasserzeichen, keine zufällige KI-Schrift.
-- Keine Sprecher und kein gesprochenes Dialog-Audio in den KI-Clips.
-- Keine Lippen-Synchronisation.
-- Keine neuen Texte während einer Animation erzeugen.
-- KI-Clips maximal 10 Sekunden.
-- Keine unnötige Kamerafahrt, kein Zoom nur damit sich etwas bewegt.
-- Bei Image-to-Video soll vor allem der wissenschaftliche Vorgang animiert werden.
-- Das Ausgangsbild bleibt visuell und kompositorisch die Grundlage des Clips.
-- Statische Beats bleiben statisch.
-- Remotion übernimmt später nur Schnitt, Voice-over, Captions, SFX und Export.
-
-ANIMATIONSMAP
--------------
-IMAGE-TO-VIDEO: 03-context, 05-mechanism, 06-mechanism, 08-mechanism, 09-mechanism, 12-mechanism, 14-deepening, 17-payoff.
-Alle anderen Beats bleiben statische Bilder.
-
-IMAGE-TO-VIDEO 03-context · 10 s
-Die Hand bleibt stabil. Nur der wissenschaftliche Vorgang bewegt sich: Wärme fließt sichtbar von der wärmeren Hand in Metall und Holz. Wenige klare Wärmefluss-Pfeile entstehen an den Kontaktstellen und bewegen sich in die Materialien. Keine Kamerafahrt, kein Zoom, keine neuen Texte, keine neue Komposition.
-
-IMAGE-TO-VIDEO 05-mechanism · 10 s
-Das ausgewählte Metall-Cutaway als Startbild verwenden. Die zugeführte Wärme breitet sich von der Kontaktstelle deutlich und schnell durch die Metallplatte aus. Die orangefarbene Wärmezone wandert kontrolliert weiter in das Metall. Hand und Kamera bleiben ruhig. Keine neuen Labels oder Objekte erzeugen.
-
-IMAGE-TO-VIDEO 06-mechanism · 10 s
-Das Ausgangsbild unverändert als Komposition behalten. Wärme fließt kontinuierlich vom Finger in die Metallplatte und anschließend seitlich weg von der Kontaktstelle. Die Kontaktzone bleibt vergleichsweise kühl. Nur Wärmefluss und leichte Farbänderung animieren; keine Kamerabewegung, keine neuen Texte.
-
-IMAGE-TO-VIDEO 08-mechanism · 10 s
-Das ausgewählte Holz-Cutaway als Startbild verwenden. Wärme gelangt nur langsam von der Hand in einen kleinen Bereich des Holzes. Die warme Zone wächst deutlich langsamer und bleibt nahe an der Kontaktstelle. Keine Kamerafahrt, kein Zoom, keine neuen Texte oder zusätzlichen Objekte.
-
-IMAGE-TO-VIDEO 09-mechanism · 10 s
-Die Komposition des Ausgangsbilds beibehalten. Die Holz-Kontaktstelle erwärmt sich lokal sichtbar, während der Wärmefluss aus der Hand nach und nach schwächer wird. Pfeile dürfen dezent kleiner werden. Keine neue Beschriftung, keine Kamerabewegung, kein Szenenumbau.
-
-IMAGE-TO-VIDEO 12-mechanism · 10 s
-Das Vergleichsbild als Startbild nutzen. Links beim Metall einen deutlich stärkeren kontinuierlichen Wärmefluss aus dem Finger zeigen, rechts beim Holz einen deutlich schwächeren. Die Metall-Kontaktstelle der Haut kühlt sichtbar stärker ab. Kamera und Hände bleiben stabil. Keine neuen Texte.
-
-IMAGE-TO-VIDEO 14-deepening · 10 s
-Das ausgewählte Vergleichsbild der beiden gleich warmen Materialien als Startbild verwenden. Wärme vom Metall und vom Holz zur Hand fließen lassen; beim Metall klar schneller und stärker. Temperaturanzeigen und deutsche Beschriftungen unverändert lassen. Keine riskante Berührung ergänzen, keine Kamerabewegung, keine neuen Texte.
-
-IMAGE-TO-VIDEO 17-payoff · 10 s
-Die Payoff-Komposition beibehalten. Wärmefluss von der Hand in beide Materialien zeigen: auf der Metallseite mehrere deutlich schnellere und weiter wandernde Pfeile, auf der Holzseite nur wenige kurze und langsame. Keine neue Kameraaktion, keine neuen Texte, keine zusätzliche Dekoration.
+VERBINDLICHER ABLAUF
+---------------------
+1. Zuerst ausschließlich die drei Thumbnail-Kandidaten aus dem Thumbnail-Prompt erzeugen.
+2. Danach SOFORT STOPPEN und auf die ausdrückliche Auswahl des Nutzers warten. Noch keine Szenenbilder erzeugen.
+3. Den gewählten Thumbnail-Kandidaten anschließend als lockere visuelle Referenz für Qualitätsniveau und Illustrationssprache verwenden. Die Szenen dürfen trotzdem andere Orte, Farben und Kompositionen haben.
+4. Danach Beat für Beat streng einzeln nacheinander arbeiten: Bild 01 vollständig erzeugen, prüfen, auswählen und speichern. Erst danach Bild 02, dann Bild 03 usw. Niemals mehrere Beats gleichzeitig erzeugen.
+5. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen.
+6. KEINE KI-Videoclips, KEIN Image-to-Video und KEINE Animationen erzeugen.
+7. Wenn eine Aussage in einem Standbild nicht klar genug ist, die Szene besser gestalten oder in mehrere statische Beats aufteilen. Bewegung ist kein Ersatz für gute Bildplanung.
+8. Sichtbarer Text ausschließlich auf Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.
+9. Jedes finale Bild eindeutig nach seiner Beat-ID benennen und erst danach fortfahren.
 
 THUMBNAIL
 =========

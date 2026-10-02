@@ -4,7 +4,7 @@
   "productionProfile": "youtube-2min-v1",
   "completed": [
     "folder-structure",
-    "science-static-v1-remotion-boundary",
+    "science-static-v1",
     "scientific-scene-explainer-v1",
     "research",
     "story-structure",
@@ -12,22 +12,21 @@
     "sources",
     "image-plan",
     "thumbnail-plan",
-    "flow-plan",
+    "flow-image-plan",
     "google-flow-master-prompt"
   ],
   "open": [
     "preflight",
     "thumbnail-3-candidates",
     "thumbnail-user-selection",
-    "18-base-images",
-    "8-flow-ai-video-clips",
+    "18-final-scene-images",
     "voiceover",
     "captions",
     "render",
     "qa"
   ],
   "requiredVisibleSceneImages": 18,
-  "plannedFlowVideoClips": 8,
-  "plannedStaticImageBeats": 10,
+  "plannedFlowVideoClips": 0,
+  "plannedStaticImageBeats": 18,
   "nextCommand": "npm run science:preflight -- \"channels/science/reels/2026-09-28_bis_2026-10-04/02_Warum-fuhlt-sich-Metall-kalter-an-als-Holz\""
 }

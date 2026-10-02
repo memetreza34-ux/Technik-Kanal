@@ -35,7 +35,8 @@ Leitfrage:
 - 230–370 Wörter, 300 ideal
 - 12–28 visuelle Beats, 20 ideal
 - separates 1280×720-Thumbnail mit drei Kandidaten
-- visuelle Medien als Mix aus statischen Bildern und Google-Flow-Image-to-Video-Clips
+- **Google Flow erzeugt ausschließlich statische Bilder**
+- keine KI-Videoclips und kein Image-to-Video
 
 Interne Namen wie `ScienceReel` oder der Ordner `reels/` bleiben nur vorübergehend aus Rückwärtskompatibilität bestehen. Sie dürfen nicht als Produktdefinition interpretiert werden.
 
@@ -66,7 +67,7 @@ Ein komplizierter Satz kann mehrere Bilder brauchen. Mehrere Sätze dürfen dass
 
 `gehirn/FLOW-WORKFLOW.md` ist verbindlich.
 
-Für jedes aktive Video müssen vor Medienproduktion vorhanden und final sein:
+Für jedes aktive Video müssen vor Bildproduktion vorhanden und final sein:
 
 - `06-projektdateien/flow-plan.json`
 - `02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt`
@@ -74,15 +75,14 @@ Für jedes aktive Video müssen vor Medienproduktion vorhanden und final sein:
 
 Ablauf:
 
-1. zuerst drei Thumbnail-/Cover-Kandidaten erzeugen
-2. danach stoppen und auf die Nutzerauswahl warten
+1. zuerst drei Thumbnail-Kandidaten erzeugen
+2. danach **STOPP** und auf die Nutzerauswahl warten
 3. gewählten Kandidaten als lockere visuelle Referenz verwenden
 4. danach Beat 01, Beat 02, Beat 03 usw. **streng einzeln nacheinander** erzeugen
-5. für jeden Beat zuerst ein finales Ausgangsbild erzeugen
-6. nur bei `image-to-video` genau dieses freigegebene Bild in Google Flow animieren
-7. KI-Clips maximal 10 Sekunden, ohne gesprochenes Dialog-Audio und ohne neue erfundene Texte
+5. jeder Beat erhält genau ein finales statisches 16:9-Bild
+6. keine KI-Videoclips, keine Animationen und kein Image-to-Video erzeugen
 
-Richtwert ist ein ausgewogener Mix aus Bildern und KI-Clips, ungefähr 50/50. Inhaltliche Verständlichkeit hat Vorrang vor einer starren Quote.
+Wenn ein Vorgang als einzelnes Standbild nicht klar genug ist, den visuellen Beat verbessern oder in mehrere statische Bilder aufteilen.
 
 ## Inhalt und Sicherheit
 
@@ -140,19 +140,9 @@ Thumbnail ist nicht Bild 01.
 
 Remotion ist ausschließlich technische Montage- und Export-Schicht.
 
-Remotion darf:
+Remotion darf nur finale statische Bilder zeitlich anordnen, harte Schnitte setzen, Voice-over abspielen, Untertitel und statische Overlays anzeigen, optionale SFX platzieren und rendern.
 
-- finale statische Bilder anzeigen
-- fertige Google-Flow-KI-Clips abspielen
-- harte Schnitte setzen
-- Voice-over abspielen
-- Untertitel und statische Overlays anzeigen
-- optionale SFX platzieren
-- rendern
-
-Remotion darf NICHT selbst zoomen, schwenken, rotieren, parallaxen, Ken-Burns-Bewegung erzeugen, Partikel erzeugen, wissenschaftliche Prozesse erfinden oder aus Standbildern künstliche Erkläranimationen bauen.
-
-Wichtig: **Google-Flow-KI-Clips sind keine verbotene Remotion-Animation.** Ein fachlich geplantes Image-to-Video darf einen Prozess sichtbar bewegen. Remotion spielt diesen fertigen Clip nur ab.
+Remotion darf NICHT zoomen, schwenken, rotieren, parallaxen, Ken-Burns-Bewegung erzeugen, Partikel erzeugen, wissenschaftliche Prozesse animieren oder Videoclips als Szenenquelle erwarten.
 
 ## Audio und Synchronisation
 
@@ -160,8 +150,8 @@ Wichtig: **Google-Flow-KI-Clips sind keine verbotene Remotion-Animation.** Ein f
 - finale Voice ist die verbindliche Zeitquelle
 - lokale Wortzeiten mit `whisper.cpp`
 - Skript und Transkript werden robust gegeneinander ausgerichtet
-- Bild-/Clipwechsel, Untertitel und SFX verwenden dieselbe Zeitbasis
+- Bildwechsel, Untertitel und SFX verwenden dieselbe Zeitbasis
 
 ## Produktionsregel
 
-Erst Thema, Recherche, Story-Struktur und vollständiges Skript abschließen. Danach visuelle Aussagen planen, Bildwelt anwenden, Einzelprompts und Flow-Plan festlegen und den Google-Flow-Masterprompt bauen. Erst anschließend Medien erzeugen. Eine Flow-Animation darf nur eingesetzt werden, wenn sie im Flow-Plan vorgesehen ist und die Erklärung verbessert.
+Erst Thema, Recherche, Story-Struktur und vollständiges Skript abschließen. Danach visuelle Aussagen planen, Bildwelt anwenden, Einzelprompts und Flow-Plan festlegen und den Google-Flow-Masterprompt bauen. Erst anschließend Bilder erzeugen. **Keine Video- oder Animationsplanung als Ersatz für gute statische Bilddramaturgie.**

@@ -34,7 +34,7 @@ export const evaluateScienceVisualPolicy = ({plan, config, promptFiles = {}, pro
   if (!promptManifest) errors.push('Prompt-Manifest fehlt.');
   else {
     if (promptManifest.requiredVisibleSceneImages !== scenes.length) {
-      errors.push(`Prompt-Manifest fordert ${promptManifest.requiredVisibleSceneImages} Ausgangsbilder; erwartet ${scenes.length}.`);
+      errors.push(`Prompt-Manifest fordert ${promptManifest.requiredVisibleSceneImages} Bilder; erwartet ${scenes.length}.`);
     }
     if (promptManifest.generatedImageTextPolicy !== config.visuals.generatedImageTextPolicy) errors.push(`Prompt-Manifest muss ${config.visuals.generatedImageTextPolicy} verwenden.`);
     if (promptManifest.visibleImageLanguage !== 'de') errors.push('Prompt-Manifest muss Deutsch als sichtbare Bildsprache setzen.');
@@ -48,10 +48,9 @@ export const evaluateScienceVisualPolicy = ({plan, config, promptFiles = {}, pro
 
   return {
     passed: errors.length === 0,
-    productionMode: config.visuals.productionMode,
+    productionMode: 'youtube-static-longform',
     productionProfile: config.productionProfile,
-    baseImageSceneIds: scenes.map((scene) => scene.id),
-    flowAiVideoAllowed: config.visuals.flow?.aiVideoAllowed === true,
+    imageSceneIds: scenes.map((scene) => scene.id),
     errors,
     warnings,
   };

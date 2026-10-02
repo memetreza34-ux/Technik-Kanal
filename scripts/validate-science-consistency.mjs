@@ -57,12 +57,12 @@ if (!pkg.devDependencies?.vitest) errors.push('vitest fehlt für Systemtests.');
 
 if (config.captions.highlightColor !== null || config.captions.backgroundBox !== false) errors.push('Untertitel müssen weiß ohne Hervorhebung und ohne Box bleiben.');
 if (config.captions.animated !== false) errors.push('Untertitel dürfen nicht animiert werden.');
-if (config.visuals.policyVersion !== 'science-static-v1') errors.push('Remotion-Static-Policy muss science-static-v1 bleiben.');
-if (config.visuals.productionMode !== 'flow-mixed-assets') errors.push('Produktionsmodus muss flow-mixed-assets sein.');
+if (config.visuals.policyVersion !== 'science-static-v1') errors.push('Visual-Policy muss science-static-v1 sein.');
+if (config.visuals.productionMode !== 'flow-image-only') errors.push('Produktionsmodus muss flow-image-only sein.');
 if (config.visuals.generatedImageTextPolicy !== 'controlled-german-only') errors.push('Generierter Bildtext muss kontrolliert und ausschließlich deutsch sein.');
 if (config.visuals.visibleImageLanguage !== 'de') errors.push('Sichtbare Bildsprache muss Deutsch sein.');
-if (config.visuals.animationAllowed !== false) errors.push('Remotion-eigene Animationen müssen deaktiviert bleiben.');
-if (config.visuals.cameraMotionAllowed !== false) errors.push('Remotion-Kamerabewegung muss deaktiviert bleiben.');
+if (config.visuals.animationAllowed !== false) errors.push('Animationen müssen global deaktiviert sein.');
+if (config.visuals.cameraMotionAllowed !== false) errors.push('Kamerabewegung muss global deaktiviert sein.');
 if (config.visuals.transitionPolicy !== 'hard-cut') errors.push('Szenenübergänge müssen harte Schnitte sein.');
 if (config.visuals.brandVisualStyleDefined !== true) errors.push('Scientific Scene Explainer muss als aktive Bildwelt markiert sein.');
 if (config.visuals.styleId !== 'scientific-scene-explainer-v1') errors.push('Aktive styleId muss scientific-scene-explainer-v1 sein.');
@@ -70,44 +70,42 @@ if (config.visuals.fullFrameContextPreferredWhenUseful !== true) errors.push('Vo
 if (config.visuals.fixedBackgroundForbidden !== true) errors.push('Ein fixer Hintergrund für alle Szenen darf nicht erzwungen werden.');
 if (config.visuals.humanFiguresAllowedWhenExplanatory !== true) errors.push('Erklärende stilisierte Menschen müssen erlaubt sein.');
 if (config.visuals.informationDensityPolicy !== 'minimum-necessary') errors.push('Informationsdichte muss minimum-necessary sein.');
-if (config.script.hook.firstFrameAnimationAllowed !== false) errors.push('Hook startet als statisches Hauptmotiv; Flow-Animation darf nicht Voraussetzung für Frame 0 sein.');
+if (config.script.hook.firstFrameAnimationAllowed !== false) errors.push('Hook darf keine Animation voraussetzen.');
 if (!config.safety?.riskyPhrases?.length) errors.push('Fachübergreifende Safety-Regeln fehlen.');
 if (config.electricalSafety) errors.push('Veraltete electricalSafety-Struktur darf nicht mehr existieren.');
 
 const flow = config.visuals.flow;
 if (!flow?.masterPromptRequired || !flow?.planRequired) errors.push('Flow-Plan und Masterprompt müssen verpflichtend sein.');
 if (!flow?.thumbnailFirst || !flow?.pauseAfterThumbnailCandidates) errors.push('Flow muss mit drei Thumbnails starten und danach auf die Nutzerauswahl warten.');
-if (!flow?.sequentialSceneGenerationRequired) errors.push('Flow-Szenen müssen strikt nacheinander erzeugt werden.');
-if (!flow?.baseStillRequiredForEveryBeat) errors.push('Jeder Beat muss zuerst ein Ausgangsbild erhalten.');
-if (!flow?.aiVideoAllowed || flow?.aiVideoMethod !== 'image-to-video') errors.push('Google-Flow-Image-to-Video muss erlaubt sein.');
-if (flow?.clipSecondsMax !== 10) errors.push('Flow-Clips müssen auf maximal 10 Sekunden begrenzt sein.');
-if (flow?.spokenDialogueAllowed !== false || flow?.lipSyncAllowed !== false) errors.push('Flow-Clips dürfen keine Sprecher/Lip-Sync enthalten.');
-if (flow?.remotionMayPlayFlowClips !== true || flow?.remotionMayGenerateMotion !== false) errors.push('Remotion muss Flow-Clips abspielen dürfen, aber keine eigene Motion erzeugen.');
-if (flow?.targetVideoRatio?.ideal !== 0.5) errors.push('Richtwert für den KI-Video-Anteil muss ungefähr 50 % sein.');
+if (!flow?.sequentialSceneGenerationRequired) errors.push('Flow-Szenenbilder müssen streng nacheinander erzeugt werden.');
+if (!flow?.oneImagePerBeatRequired || !flow?.baseStillRequiredForEveryBeat) errors.push('Jeder Beat muss genau ein finales Ausgangsbild erhalten.');
+if (flow?.imageOnly !== true || flow?.aiVideoAllowed !== false || flow?.clipsAllowed !== false) errors.push('Google Flow muss strikt auf statische Bilder begrenzt sein.');
+if (flow?.remotionMayPlayFlowClips !== false || flow?.remotionMayGenerateMotion !== false) errors.push('Remotion darf weder Flow-Clips abspielen noch Motion erzeugen.');
 
-if (!/(drei|3).*thumbnail/is.test(flowWorkflow) || !/(STOPPEN|STOPP)/i.test(flowWorkflow) || !/(auswahl|ausgewählt|warten)/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die Thumbnail-Stop-Regel nicht.');
-if (!/streng nacheinander/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die sequentielle Beat-Regel nicht.');
-if (!/image-to-video/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md dokumentiert Image-to-Video nicht.');
+if (!/(drei|3).*thumbnail/is.test(flowWorkflow) || !/(STOPPEN|STOPP)/.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die Thumbnail-Stop-Regel nicht.');
+if (!/streng einzeln nacheinander/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die sequentielle Bildregel nicht.');
+if (!/ausschließlich statische Bilder/i.test(flowWorkflow) || !/keine KI-Videoclips/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md dokumentiert den reinen Bild-Workflow nicht eindeutig.');
 if (!/GOOGLE-FLOW-MASTER-PROMPT\.txt/i.test(claude)) errors.push('CLAUDE.md verlangt den Flow-Masterprompt nicht.');
 if (!/flow-plan\.json/i.test(claude)) errors.push('CLAUDE.md verlangt flow-plan.json nicht.');
-if (!flowBuilder.includes('STOPP') || !flowBuilder.includes('image-to-video')) errors.push('Flow-Master-Builder enthält die zentralen Workflowregeln nicht.');
+if (!flowBuilder.includes('NUR BILDER')) errors.push('Flow-Master-Builder enthält die Nur-Bilder-Regel nicht.');
+if (flowBuilder.includes('image-to-video')) errors.push('Flow-Master-Builder darf keine Image-to-Video-Logik enthalten.');
 
 if (!scienceReel.includes("./generated/science-runtime.json")) errors.push('ScienceReel muss science-runtime.json laden.');
 if (scienceReel.includes("./generated/reel-runtime.json")) errors.push('ScienceReel darf nicht an einer alten Runtime hängen.');
-if (!scienceReel.includes('OffthreadVideo')) errors.push('ScienceReel muss fertige Google-Flow-Clips abspielen können.');
-if (!scienceReel.includes('muted')) errors.push('Google-Flow-Clips müssen ohne eigenes Dialog-Audio abgespielt werden.');
+if (scienceReel.includes('OffthreadVideo') || scienceReel.includes('videoPath')) errors.push('ScienceReel darf keine Video-Szenen unterstützen.');
 if (!template.includes("runtimeFile:'science-runtime.json'")) errors.push('Neue Science-Scaffolds müssen science-runtime.json verwenden.');
 if (!template.includes("productionProfile:'youtube-2min-v1'")) errors.push('Scene-Template muss das 2-Minuten-Profil referenzieren.');
 if (!template.includes("width:1920") || !template.includes("height:1080")) errors.push('Scene-Template muss 1920×1080 erzeugen.');
 if (!template.includes("referenceGroup:'scientific-scene-explainer'")) errors.push('Scene-Template muss die aktive Bildwelt referenzieren.');
 if (!newVideo.includes('flow-plan.json') || !newVideo.includes('GOOGLE-FLOW-MASTER-PROMPT.txt')) errors.push('Neue Video-Scaffolds müssen Flow-Plan und Masterprompt anlegen.');
+if (newVideo.includes('02-bilder/videos') || newVideo.includes('image-to-video')) errors.push('Neue Video-Scaffolds dürfen keine KI-Video-Struktur anlegen.');
 if (!processVoice.includes('loudnorm=I=')) errors.push('Voice-Verarbeitung enthält keine Loudness-Normalisierung.');
 if (!renderQa.includes('blackdetect') || !renderQa.includes('silencedetect')) errors.push('Render-QA muss Schwarzbild- und Randstille-Prüfung enthalten.');
-if (!renderQa.includes('freezeDetectionEnabled: false')) errors.push('Freeze Detection bleibt deaktiviert, da statische Bilder im Medienmix erlaubt sind.');
+if (!renderQa.includes('freezeDetectionEnabled: false')) errors.push('Freeze Detection bleibt deaktiviert, weil statische Bilder absichtlich verwendet werden.');
 
 if (errors.length) {
   console.error('Konsistenzprüfung fehlgeschlagen:');
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log('✓ youtube-2min-v1, Google-Flow-Mischpipeline, 16:9, Audio und Scientific Scene Explainer sind konsistent.');
+console.log('✓ youtube-2min-v1, Google-Flow-Bildpipeline, 16:9, Audio und Scientific Scene Explainer sind konsistent.');

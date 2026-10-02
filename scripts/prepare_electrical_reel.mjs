@@ -22,8 +22,6 @@ import {
   toSrtTimestamp,
   toVttTimestamp,
   validateProjectStructure,
-  videoExtensions,
-  videoMetadata,
   writeJson,
 } from './lib/electrical-project.mjs';
 
@@ -79,17 +77,10 @@ if (Number(plan.width) !== 1920 || Number(plan.height) !== 1080) throw new Error
 const slug = String(plan.slug ?? path.basename(paths.root)).trim();
 if (!slug) throw new Error('Szenenplan benötigt einen slug.');
 
-const flowPlan = fs.existsSync(paths.flowPlan)
-  ? readJson(paths.flowPlan)
-  : {version:'legacy-image-only',clipSecondsMax:10,scenes:plan.scenes.map((scene)=>({id:scene.id,output:'image'}))};
-const flowById = new Map((flowPlan.scenes ?? []).map((entry) => [entry.id, entry]));
 for (const scene of plan.scenes) {
   if (!scene.id || !scene.title || !scene.voiceText || !scene.imageDir) {
     throw new Error(`Szene unvollständig: ${JSON.stringify(scene)}`);
   }
-  const entry = flowById.get(scene.id);
-  if (!entry) throw new Error(`Flow-Plan fehlt für Szene ${scene.id}.`);
-  if (!['image','image-to-video'].includes(entry.output)) throw new Error(`${scene.id}: Flow-output muss image oder image-to-video sein.`);
 }
 
 const transcript = readJson(paths.wordTimestamps);
@@ -221,7 +212,6 @@ boundariesMs.push(durationMs);
 const publicReelDir = path.join(channelRoot, 'public/reels', slug);
 fs.rmSync(publicReelDir, {recursive: true, force: true});
 ensureDirectory(path.join(publicReelDir, 'images'));
-ensureDirectory(path.join(publicReelDir, 'videos'));
 ensureDirectory(path.join(publicReelDir, 'audio'));
 ensureDirectory(path.join(publicReelDir, 'sfx'));
 
@@ -230,7 +220,6 @@ const usedImageHashes = new Map();
 const warnings = [];
 const assets = [];
 const alignedScenes = [];
-let stagedVideoCount = 0;
 
 for (let index = 0; index < plan.scenes.length; index += 1) {
   const scene = plan.scenes[index];
@@ -261,7 +250,7 @@ for (let index = 0; index < plan.scenes.length; index += 1) {
   assets.push({
     id: `image-${scene.id}`,
     kind: 'image',
-    role: 'scene-base-image',
+    role: 'scene-image',
     source: normalizePath(path.relative(paths.root, selected)),
     runtimePath: `reels/${slug}/images/${stagedName}`,
     width: metadata.width,
@@ -275,63 +264,14 @@ for (let index = 0; index < plan.scenes.length; index += 1) {
   const toFrame = index === plan.scenes.length - 1
     ? Math.ceil(durationSeconds * fps)
     : Math.max(fromFrame + 1, Math.round((toMs / 1000) * fps));
-  const sceneDurationSeconds = (toMs - fromMs) / 1000;
-
-  const flowEntry = flowById.get(scene.id);
-  let mediaType = 'image';
-  let videoPath;
-  let videoDurationSeconds;
-  if (flowEntry.output === 'image-to-video') {
-    const videoDirectory = path.resolve(paths.root, flowEntry.videoDir ?? `02-bilder/videos/${scene.id}`);
-    const videos = findMedia(videoDirectory, videoExtensions);
-    if (!videos.length) throw new Error(`Google-Flow-Clip fehlt für Szene ${scene.id}: ${videoDirectory}`);
-    const approvedVideos = videos.filter((file) => /(?:final|approved|freigabe)/i.test(path.basename(file)));
-    if (videos.length > 1 && approvedVideos.length !== 1) {
-      throw new Error(`${scene.id}: Bei mehreren KI-Clip-Kandidaten muss genau einer final/approved/freigabe heißen.`);
-    }
-    const selectedVideo = approvedVideos[0] ?? videos[0];
-    const video = videoMetadata(selectedVideo);
-    const videoAspect = video.width / video.height;
-    if (video.width < 1280 || video.height < 720 || videoAspect < 1.70 || videoAspect > 1.85) {
-      throw new Error(`${scene.id}: Flow-Clip muss 16:9 und mindestens 1280×720 sein; gefunden ${video.width}×${video.height}.`);
-    }
-    const maxClipSeconds = Number(flowPlan.clipSecondsMax ?? 10);
-    if (video.durationSeconds > maxClipSeconds + 0.15) {
-      throw new Error(`${scene.id}: Flow-Clip ist ${video.durationSeconds.toFixed(2)} s lang; maximal ${maxClipSeconds} s.`);
-    }
-    if (video.durationSeconds + 0.25 < sceneDurationSeconds) {
-      throw new Error(`${scene.id}: Flow-Clip ist ${video.durationSeconds.toFixed(2)} s lang, der Voice-Beat aber ${sceneDurationSeconds.toFixed(2)} s. Beat teilen oder längeren Clip bis maximal ${maxClipSeconds} s erzeugen.`);
-    }
-    const videoExt = path.extname(selectedVideo).toLowerCase();
-    const videoName = `${String(index + 1).padStart(2, '0')}-${scene.id}${videoExt}`;
-    copyFile(selectedVideo, path.join(publicReelDir, 'videos', videoName));
-    videoPath = `reels/${slug}/videos/${videoName}`;
-    videoDurationSeconds = Number(video.durationSeconds.toFixed(3));
-    mediaType = 'video';
-    stagedVideoCount += 1;
-    assets.push({
-      id: `video-${scene.id}`,
-      kind: 'video',
-      role: 'flow-scene-video',
-      source: normalizePath(path.relative(paths.root, selectedVideo)),
-      runtimePath: videoPath,
-      width: video.width,
-      height: video.height,
-      durationSeconds: videoDurationSeconds,
-      sha256: hash(selectedVideo),
-    });
-  }
-
   alignedScenes.push({
     ...scene,
     fromMs,
     toMs,
     fromFrame,
     toFrame,
-    durationSeconds: Number(sceneDurationSeconds.toFixed(3)),
+    durationSeconds: Number(((toMs - fromMs) / 1000).toFixed(3)),
     imagePath: `reels/${slug}/images/${stagedName}`,
-    mediaType,
-    ...(videoPath ? {videoPath, videoDurationSeconds} : {}),
   });
 }
 
@@ -467,8 +407,7 @@ writeJson(paths.readinessReport, {
     localWordTranscript: true,
     wordMatchRatio: Number(matchRatio.toFixed(4)),
     sceneCount: alignedScenes.length,
-    baseImageCount: alignedScenes.length,
-    flowVideoCount: stagedVideoCount,
+    imageCount: alignedScenes.length,
     captions: captions.length,
     stagedSfx: stagedSfx.length,
   },
@@ -479,8 +418,7 @@ console.log('✓ YouTube-Science-Video vollständig vorbereitet.');
 console.log(`  Voice: ${durationSeconds.toFixed(3)} s bei 1,10×`);
 console.log(`  Worttreffer: ${(matchRatio * 100).toFixed(1)} %`);
 console.log(`  Visuelle Beats: ${alignedScenes.length}`);
-console.log(`  Ausgangsbilder: ${alignedScenes.length}`);
-console.log(`  Google-Flow-Clips: ${stagedVideoCount}`);
+console.log(`  Bilder: ${alignedScenes.length}`);
 console.log(`  Caption-Blöcke: ${captions.length}`);
 console.log(`  Runtime: ${generatedRuntime}`);
 if (warnings.length) {

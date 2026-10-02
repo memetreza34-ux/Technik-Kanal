@@ -1,7 +1,7 @@
 {
   "version": "science-static-v1",
   "productionProfile": "youtube-2min-v1",
-  "productionMode": "flow-mixed-assets",
+  "productionMode": "flow-image-only",
   "brandVisualStyleDefined": true,
   "styleId": "scientific-scene-explainer-v1",
   "generatedImageTextPolicy": "controlled-german-only",
@@ -10,13 +10,11 @@
   "height": 1080,
   "thumbnailRequired": true,
   "thumbnailCandidateCount": 3,
-  "flowAiVideoAllowed": true,
-  "flowVideoMethod": "image-to-video",
-  "flowClipSecondsMax": 10,
-  "plannedFlowVideoBeats": 8,
-  "plannedStaticImageBeats": 10,
+  "imageOnly": true,
+  "flowAiVideoAllowed": false,
+  "requiredStaticImageBeats": 18,
   "remotionAnimationAllowed": false,
   "remotionCameraMotionAllowed": false,
-  "remotionMayPlayFlowClips": true,
+  "remotionMayPlayFlowClips": false,
   "transitionPolicy": "hard-cut"
 }
