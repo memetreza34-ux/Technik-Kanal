@@ -26,6 +26,7 @@ describe('science config regression', () => {
     expect(config.captions.backgroundBox).toBe(false);
     expect(config.captions.highlightColor).toBeNull();
     expect(config.visuals.policyVersion).toBe('science-static-v1');
+    expect(config.visuals.productionMode).toBe('flow-mixed-assets');
     expect(config.visuals.animationAllowed).toBe(false);
     expect(config.visuals.cameraMotionAllowed).toBe(false);
     expect(config.visuals.brandVisualStyleDefined).toBe(true);
@@ -39,6 +40,22 @@ describe('science config regression', () => {
     expect(config.visuals.fixedBackgroundForbidden).toBe(true);
     expect(config.visuals.humanFiguresAllowedWhenExplanatory).toBe(true);
     expect(config.visuals.informationDensityPolicy).toBe('minimum-necessary');
+    expect(config.visuals.flow).toMatchObject({
+      masterPromptRequired:true,
+      planRequired:true,
+      thumbnailFirst:true,
+      pauseAfterThumbnailCandidates:true,
+      sequentialSceneGenerationRequired:true,
+      baseStillRequiredForEveryBeat:true,
+      aiVideoAllowed:true,
+      aiVideoMethod:'image-to-video',
+      clipSecondsMax:10,
+      spokenDialogueAllowed:false,
+      lipSyncAllowed:false,
+      remotionMayPlayFlowClips:true,
+      remotionMayGenerateMotion:false,
+    });
+    expect(config.visuals.flow.targetVideoRatio).toEqual({min:0.4,ideal:0.5,max:0.6});
     expect(config.alignment.minimumWordMatchRatio).toBeGreaterThanOrEqual(0.8);
     expect(config.safety.hazardousTopicDisclaimerRequired).toBe(true);
     expect(config.electricalSafety).toBeUndefined();
