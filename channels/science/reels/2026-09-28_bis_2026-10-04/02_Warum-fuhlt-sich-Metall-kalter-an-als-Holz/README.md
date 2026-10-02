@@ -22,9 +22,16 @@ Ablauf:
 
 1. zuerst drei Thumbnail-Kandidaten erzeugen
 2. danach STOPP und Nutzerauswahl abwarten
-3. danach Beat 01 bis Beat 18 strikt einzeln nacheinander
-4. jeder Beat bekommt genau ein finales statisches 16:9-Bild
-5. **keine KI-Videoclips, kein Image-to-Video und keine Animationen**
+3. nach der Cover-Auswahl alle 18 Szenenbilder in **genau 5 Bildschritten** erzeugen
+4. Bildschritt 1: Bilder 01–04
+5. Bildschritt 2: Bilder 05–08
+6. Bildschritt 3: Bilder 09–12
+7. Bildschritt 4: Bilder 13–15
+8. Bildschritt 5: Bilder 16–18
+9. innerhalb jedes Bildschritts jedes Bild strikt einzeln erzeugen, prüfen, auswählen und speichern
+10. nach jedem Bildschritt STOPP und auf die Freigabe für den nächsten Schritt warten
+11. jeder Beat bekommt genau ein finales statisches 16:9-Bild
+12. **keine KI-Videoclips, kein Image-to-Video und keine Animationen**
 
 Geplante Medien: **18 statische Szenenbilder + 1 separates Thumbnail aus 3 Kandidaten**.
 
