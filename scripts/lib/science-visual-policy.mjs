@@ -6,6 +6,8 @@ export const evaluateScienceVisualPolicy = ({plan, config, promptFiles = {}, pro
   const scenes = plan.scenes ?? [];
   const firstScene = scenes[0];
 
+  if (plan.productionProfile !== config.productionProfile) errors.push(`Produktionsprofil muss ${config.productionProfile} sein.`);
+  if (plan.width !== config.format.width || plan.height !== config.format.height) errors.push(`Video muss ${config.format.width}×${config.format.height} sein.`);
   if (scenes.length < config.visuals.beats.min || scenes.length > config.visuals.beats.max) {
     errors.push(`Szenenzahl ${scenes.length} liegt außerhalb ${config.visuals.beats.min}–${config.visuals.beats.max}.`);
   }
@@ -18,7 +20,6 @@ export const evaluateScienceVisualPolicy = ({plan, config, promptFiles = {}, pro
     if (wordCount(hook) > hookConfig.headlineWordsMax) errors.push(`Hook-Headline hat ${wordCount(hook)} Wörter.`);
     if (wordCount(hookVoice) > hookConfig.voiceWordsMax) errors.push(`Erste Voice-Szene hat ${wordCount(hookVoice)} Wörter.`);
     if (!hookVoice.includes('?')) errors.push('Der gesprochene Hook muss die Frage stellen.');
-    if (!plan.coverText?.trim() || plan.coverText.trim() !== hook.trim()) errors.push('coverText muss exakt dem Hook entsprechen.');
   }
 
   for (const scene of scenes) {
@@ -35,22 +36,20 @@ export const evaluateScienceVisualPolicy = ({plan, config, promptFiles = {}, pro
     if (promptManifest.requiredVisibleSceneImages !== scenes.length) {
       errors.push(`Prompt-Manifest fordert ${promptManifest.requiredVisibleSceneImages} Bilder; erwartet ${scenes.length}.`);
     }
-    if (promptManifest.cover?.sourceSceneId !== firstScene?.id) errors.push('Cover muss aus Bild 01 / der ersten Szene stammen.');
-    if (promptManifest.cover?.candidateCount !== 3) errors.push('Bild 01 muss drei Cover-Kandidaten vorsehen.');
-    if (promptManifest.generatedImageTextPolicy !== config.visuals.generatedImageTextPolicy) {
-      errors.push(`Prompt-Manifest muss ${config.visuals.generatedImageTextPolicy} verwenden.`);
-    }
-    if (config.visuals.generatedImageTextPolicy === 'controlled-german-only' && promptManifest.visibleImageLanguage !== 'de') {
-      errors.push('Prompt-Manifest muss sichtbaren Bildtext auf Deutsch festlegen.');
-    }
-    if (config.visuals.brandVisualStyleDefined === true && promptManifest.styleId !== config.visuals.styleId) {
-      errors.push(`Prompt-Manifest muss styleId ${config.visuals.styleId} verwenden.`);
-    }
+    if (promptManifest.generatedImageTextPolicy !== config.visuals.generatedImageTextPolicy) errors.push(`Prompt-Manifest muss ${config.visuals.generatedImageTextPolicy} verwenden.`);
+    if (promptManifest.visibleImageLanguage !== 'de') errors.push('Prompt-Manifest muss Deutsch als sichtbare Bildsprache setzen.');
+    if (promptManifest.styleId !== config.visuals.styleId) errors.push(`Prompt-Manifest muss styleId ${config.visuals.styleId} verwenden.`);
+    if (promptManifest.cover?.imageRequired !== false) errors.push('Bild 01 darf nicht mehr als verpflichtendes Cover/Thumbnail verwendet werden.');
+    if (promptManifest.cover?.separateThumbnailForbidden !== false) errors.push('Separates Thumbnail muss erlaubt sein.');
+    if (promptManifest.thumbnail?.required !== true) errors.push('Separates YouTube-Thumbnail fehlt im Manifest.');
+    if (promptManifest.thumbnail?.candidateCount !== config.visuals.thumbnail.candidateCount) errors.push(`Thumbnail muss ${config.visuals.thumbnail.candidateCount} Kandidaten vorsehen.`);
+    if (promptManifest.thumbnail?.width !== config.visuals.thumbnail.width || promptManifest.thumbnail?.height !== config.visuals.thumbnail.height) errors.push('Thumbnail-Abmessungen stimmen nicht mit der Config überein.');
   }
 
   return {
     passed: errors.length === 0,
-    productionMode: 'science-static',
+    productionMode: 'youtube-static-longform',
+    productionProfile: config.productionProfile,
     imageSceneIds: scenes.map((scene) => scene.id),
     errors,
     warnings,
