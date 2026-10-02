@@ -6,7 +6,7 @@ import {projectPaths, repositoryRoot, run} from './lib/electrical-project.mjs';
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
 if (!projectArg) {
-  console.error('Nutzung: npm run science:finish -- <reel-ordner>');
+  console.error('Nutzung: npm run science:finish -- <video-ordner>');
   process.exit(1);
 }
 
@@ -27,6 +27,6 @@ if (!whisperCandidates.some((candidate) => fs.existsSync(candidate)) || !fs.exis
 }
 
 run(process.execPath, ['scripts/render_science_reel.mjs', paths.root, '--force-transcribe', '--preflight-passed'], {cwd: repositoryRoot});
-console.log('\n=== SCIENCE-PRODUKTION ABGESCHLOSSEN ===');
-console.log(`Reel-Ordner: ${paths.root}`);
-console.log('Kontaktbogen, Szenen-Stills und vollständiges MP4 fachlich und visuell prüfen.');
+console.log('\n=== SCIENCE-YOUTUBE-PRODUKTION ABGESCHLOSSEN ===');
+console.log(`Video-Ordner: ${paths.root}`);
+console.log('Kontaktbogen, Szenen-Stills, finales Thumbnail und vollständiges MP4 fachlich und visuell prüfen.');
