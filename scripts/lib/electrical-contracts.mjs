@@ -4,13 +4,24 @@ const nonEmpty = z.string().trim().min(1);
 const normalizedCoordinate = z.number().min(0).max(1);
 const calloutText = z.string().trim().min(1).max(42);
 
-export const WordTimestamp = z.object({
+const WordTimestampFields = z.object({
   text: nonEmpty,
   normalized: z.string().optional(),
   startMs: z.number().nonnegative(),
   endMs: z.number().positive(),
   confidence: z.number().min(0).max(1).optional(),
-}).refine((value) => value.endMs > value.startMs, 'endMs must be greater than startMs');
+});
+
+export const WordTimestamp = WordTimestampFields.refine(
+  (value) => value.endMs > value.startMs,
+  'endMs must be greater than startMs',
+);
+
+const CaptionWord = z.object({
+  text: nonEmpty,
+  startMs: z.number().nonnegative(),
+  endMs: z.number().positive(),
+}).refine((value) => value.endMs > value.startMs, 'caption word end must follow start');
 
 export const Caption = z.object({
   text: nonEmpty,
@@ -18,7 +29,7 @@ export const Caption = z.object({
   endMs: z.number().positive(),
   fromFrame: z.number().int().nonnegative().optional(),
   toFrame: z.number().int().positive().optional(),
-  words: z.array(WordTimestamp.pick({text:true,startMs:true,endMs:true})).optional(),
+  words: z.array(CaptionWord).optional(),
 }).refine((value) => value.endMs > value.startMs, 'caption end must follow start');
 export const Captions = z.array(Caption);
 
