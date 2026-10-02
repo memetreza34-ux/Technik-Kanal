@@ -1,27 +1,39 @@
-export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema',hook='Warum passiert das?',compositionId='ScienceReel',sceneCount=10})=>{
+const sectionForIndex=(index,sceneCount)=>{
+  if(index===0) return 'hook';
+  if(index===sceneCount-1) return 'payoff';
+  const progress=index/(sceneCount-1);
+  if(progress<0.16) return 'context';
+  if(progress<0.32) return 'foundation';
+  if(progress<0.72) return 'mechanism';
+  return 'deepening';
+};
+
+export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema',hook='Warum passiert das?',compositionId='ScienceReel',sceneCount=20})=>{
   const scenes=Array.from({length:sceneCount},(_,index)=>{
     const number=String(index+1).padStart(2,'0');
-    const isHook=index===0;
-    const isPayoff=index===sceneCount-1;
-    const id=isHook?`${number}-hook`:isPayoff?`${number}-payoff`:`${number}-erklaerung`;
-    const subject=isHook?'Hauptmotiv zur zentralen Frage':isPayoff?'visuelle Kernerkenntnis':`fachliche Kernaussage der Szene ${index+1}`;
+    const section=sectionForIndex(index,sceneCount);
+    const isHook=section==='hook';
+    const isPayoff=section==='payoff';
+    const id=isHook?`${number}-hook`:isPayoff?`${number}-payoff`:`${number}-${section}`;
+    const subject=isHook?'Hauptmotiv zur zentralen Frage':isPayoff?'visuelle Kernerkenntnis':`fachliche Kernaussage des Beats ${index+1}`;
     return {
       id,
-      title:isHook?hook:isPayoff?'Fachlicher Payoff':`Erklärung ${index}`,
-      kicker:isHook?undefined:isPayoff?'Merksatz':'Wissen',
-      headline:isHook?hook:isPayoff?'Klaren Merksatz ergänzen':'Kurze deutsche Aussage ergänzen',
+      section,
+      title:isHook?hook:isPayoff?'Fachlicher Payoff':`${section} ${index+1}`,
+      kicker:isHook?undefined:isPayoff?'Merksatz':undefined,
+      headline:isHook?hook:isPayoff?'Klaren Payoff ergänzen':'Kurze deutsche Aussage ergänzen',
       backgroundFamily:'content-driven',
-      shotType:'sentence-driven',
+      shotType:'beat-driven',
       referenceGroup:'scientific-scene-explainer',
       visualRecipe:{
-        stage:'passend zum konkreten Skriptsatz wählen',
+        stage:'passend zur konkreten visuellen Aussage wählen',
         camera:'passend zur verständlichsten Darstellung wählen',
         subject,
-        focus:'genau eine wissenschaftliche Aussage',
+        focus:'genau eine visuelle Hauptaussage',
         motion:'none',
         callouts:[]
       },
-      voiceText:isHook?`${hook} Direkte Antwort in einem kurzen Satz ergänzen.`:'Sprechtext für genau eine wissenschaftliche Aussage ergänzen.',
+      voiceText:isHook?`${hook} Direkte Einordnung ohne langes Intro ergänzen.`:'Voice-Text für diesen inhaltlichen Abschnitt ergänzen; ein Beat kann mehrere Sätze tragen.',
       imageDir:`02-bilder/images/${id}`,
       layout:'image-full',
       renderMode:'image-only',
@@ -34,6 +46,7 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
 
   return {
     version:'science-v1',
+    productionProfile:'youtube-2min-v1',
     visualPolicyVersion:'science-static-v1',
     generatedImageTextPolicy:'controlled-german-only',
     slug,
@@ -42,8 +55,8 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
     compositionId,
     runtimeFile:'science-runtime.json',
     fps:30,
-    width:1080,
-    height:1920,
+    width:1920,
+    height:1080,
     minimumWordMatchRatio:.82,
     scenes
   };
@@ -51,28 +64,34 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
 
 export const createElectricalPromptManifestTemplate=(scenePlan)=>({
   version:'science-v1',
+  productionProfile:'youtube-2min-v1',
   visualPolicyVersion:'science-static-v1',
   styleId:'scientific-scene-explainer-v1',
   slug:scenePlan.slug,
   generatedAt:new Date().toISOString(),
   generatedImageTextPolicy:'controlled-german-only',
   visibleImageLanguage:'de',
-  coverText:scenePlan.coverText,
   requiredVisibleSceneImages:scenePlan.scenes.length,
   cover:{
-    imageRequired:true,
-    sourceSceneId:scenePlan.scenes[0]?.id,
-    candidateCount:3,
-    separateThumbnailForbidden:true,
-    visualSource:'generated-image'
+    imageRequired:false,
+    sourceSceneId:null,
+    candidateCount:0,
+    separateThumbnailForbidden:false
   },
-  scenes:scenePlan.scenes.map((scene,index)=>({
+  thumbnail:{
+    required:true,
+    separateFromVideoScenes:true,
+    width:1280,
+    height:720,
+    candidateCount:3,
+    approved:false
+  },
+  scenes:scenePlan.scenes.map((scene)=>({
     id:scene.id,
     imageRequired:true,
     renderMode:'image-only',
     motionLevel:'none',
     visualSource:'generated-image',
-    coverSource:index===0,
     approved:false
   }))
 });
@@ -80,8 +99,9 @@ export const createElectricalPromptManifestTemplate=(scenePlan)=>({
 export const createElectricalStatusTemplate=(scenePlan)=>({
   status:'preproduction-blocked-until-gates-pass',
   slug:scenePlan.slug,
+  productionProfile:'youtube-2min-v1',
   completed:['folder-structure','science-static-v1-template','scientific-scene-explainer-v1'],
-  open:['research','script','sources','image-plan','preflight','images','voiceover','captions','render','qa'],
+  open:['research','story-structure','script','sources','image-plan','thumbnail-plan','preflight','images','thumbnail','voiceover','captions','render','qa'],
   requiredVisibleSceneImages:scenePlan.scenes.length,
-  nextCommand:'npm run science:preflight -- "<reel-ordner>"'
+  nextCommand:'npm run science:preflight -- "<video-ordner>"'
 });
