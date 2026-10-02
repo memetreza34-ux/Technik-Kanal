@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, Img, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {ScienceCaptions, ScienceSoundLayer, SCIENCE_COLORS} from '@science/core';
 import {ScienceSceneHeader} from './engine/ScienceSceneHeader';
 import type {ScienceReelRuntime} from './engine/science-contracts';
@@ -18,6 +18,8 @@ export const ScienceReel: React.FC = () => {
   const scene = runtime.scenes.find((candidate) => frame >= candidate.fromFrame && frame < candidate.toFrame) ?? fallback;
   if (!scene) return null;
 
+  const sceneDuration = Math.max(1, scene.toFrame - scene.fromFrame);
+
   return (
     <AbsoluteFill style={{backgroundColor: SCIENCE_COLORS.background}}>
       <ScienceSoundLayer voiceoverPath={runtime.voiceoverPath} cues={runtime.sfx}/>
@@ -25,6 +27,17 @@ export const ScienceReel: React.FC = () => {
         <AbsoluteFill>
           <Img src={staticFile(scene.imagePath)} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
         </AbsoluteFill>
+      ) : null}
+      {scene.mediaType === 'video' && scene.videoPath ? (
+        <Sequence from={scene.fromFrame} durationInFrames={sceneDuration} layout="none">
+          <AbsoluteFill>
+            <OffthreadVideo
+              src={staticFile(scene.videoPath)}
+              muted
+              style={{width: '100%', height: '100%', objectFit: 'cover'}}
+            />
+          </AbsoluteFill>
+        </Sequence>
       ) : null}
       {scene.headline ? <ScienceSceneHeader kicker={scene.kicker} headline={scene.headline}/> : null}
       <ScienceCaptions captions={runtime.captions}/>
