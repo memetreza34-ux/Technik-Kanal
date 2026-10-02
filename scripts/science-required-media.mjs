@@ -4,7 +4,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {ScenePlan} from './lib/electrical-contracts.mjs';
 import {electricalProjectPaths} from './lib/electrical-project-structure.mjs';
-import {findMedia, findVoiceFiles, imageExtensions, audioExtensions, imageMetadata} from './lib/electrical-project.mjs';
+import {findMedia, findVoiceFiles, imageExtensions, videoExtensions, audioExtensions, imageMetadata, videoMetadata} from './lib/electrical-project.mjs';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
 
 const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
@@ -15,14 +15,17 @@ const config = loadElectricalConfig();
 const errors = [];
 const warnings = [];
 const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')));
+const flowPlan = fs.existsSync(paths.flowPlan) ? JSON.parse(fs.readFileSync(paths.flowPlan,'utf8')) : null;
 const voice = findVoiceFiles(paths.audioDir);
 if (!voice.raw && !voice.final) errors.push(`Keine Roh- oder Finalaufnahme in ${paths.audioDir}.`);
+if (!flowPlan) errors.push('flow-plan.json fehlt.');
 
 const seen = new Map();
 const selectedImages = [];
+const selectedVideos = [];
 const approvedPattern = /(?:final|approved|freigabe)/i;
-
 const digestFor=(file)=>createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+
 const validateSceneImage = (file, label) => {
   const metadata = imageMetadata(file);
   if (metadata.width < config.imageAnalysis.minimumWidth || metadata.height < config.imageAnalysis.minimumHeight) errors.push(`${label}: Bild zu klein (${metadata.width}×${metadata.height}).`);
@@ -37,7 +40,7 @@ for (const scene of plan.scenes) {
   const dir = path.resolve(root, scene.imageDir);
   const images = findMedia(dir, imageExtensions).filter((file) => !path.basename(file).startsWith('.generated-'));
   if (!images.length) {
-    errors.push(`Szenenbild fehlt: ${scene.id} (${scene.imageDir})`);
+    errors.push(`Ausgangsbild fehlt: ${scene.id} (${scene.imageDir})`);
     continue;
   }
 
@@ -57,7 +60,36 @@ for (const scene of plan.scenes) {
   selectedImages.push({sceneId: scene.id, file: path.relative(root, selected).split(path.sep).join('/'), candidateCount: images.length});
 }
 
-if (selectedImages.length !== plan.scenes.length && errors.length === 0) errors.push('Nicht für jeden visuellen Beat wurde genau ein finales Bild ausgewählt.');
+if (selectedImages.length !== plan.scenes.length && errors.length === 0) errors.push('Nicht für jeden visuellen Beat wurde genau ein finales Ausgangsbild ausgewählt.');
+
+const flowEntries = Array.isArray(flowPlan?.scenes) ? flowPlan.scenes : [];
+const flowById = new Map(flowEntries.map((entry)=>[entry.id,entry]));
+for (const scene of plan.scenes) {
+  const entry = flowById.get(scene.id);
+  if (!entry) { errors.push(`${scene.id}: Flow-Plan-Eintrag fehlt.`); continue; }
+  if (entry.output === 'image') continue;
+  if (entry.output !== 'image-to-video') { errors.push(`${scene.id}: Flow-output ist nicht final.`); continue; }
+
+  const videoDir = path.resolve(root, entry.videoDir ?? `02-bilder/videos/${scene.id}`);
+  const videos = findMedia(videoDir, videoExtensions).filter((file)=>!path.basename(file).startsWith('.generated-'));
+  if (!videos.length) { errors.push(`Google-Flow-Clip fehlt: ${scene.id} (${path.relative(root,videoDir)})`); continue; }
+  const approved = videos.filter((file)=>approvedPattern.test(path.basename(file)));
+  let selected;
+  if (videos.length === 1) selected = videos[0];
+  else if (approved.length === 1) selected = approved[0];
+  else if (approved.length === 0) { errors.push(`${scene.id}: ${videos.length} Clip-Kandidaten vorhanden, aber keiner ist final/approved/freigabe.`); continue; }
+  else { errors.push(`${scene.id}: ${approved.length} Clips sind final/approved/freigabe; genau einer ist erlaubt.`); continue; }
+
+  const meta = videoMetadata(selected);
+  const aspect = meta.width/meta.height;
+  if(meta.width<config.imageAnalysis.minimumWidth||meta.height<config.imageAnalysis.minimumHeight) errors.push(`${scene.id}: Flow-Clip zu klein (${meta.width}×${meta.height}).`);
+  if(aspect<config.imageAnalysis.landscapeAspectMin||aspect>config.imageAnalysis.landscapeAspectMax) errors.push(`${scene.id}: Flow-Clip ist nicht 16:9-tauglich (${aspect.toFixed(3)}).`);
+  if(meta.durationSeconds>config.visuals.flow.clipSecondsMax+0.15) errors.push(`${scene.id}: Flow-Clip ${meta.durationSeconds.toFixed(2)} s; maximal ${config.visuals.flow.clipSecondsMax} s.`);
+  selectedVideos.push({sceneId:scene.id,file:path.relative(root,selected).split(path.sep).join('/'),candidateCount:videos.length,durationSeconds:Number(meta.durationSeconds.toFixed(3)),width:meta.width,height:meta.height});
+}
+
+const plannedVideoCount = flowEntries.filter((entry)=>entry.output==='image-to-video').length;
+if (selectedVideos.length !== plannedVideoCount && errors.length === 0) errors.push('Nicht für jeden geplanten Image-to-Video-Beat wurde genau ein finaler Clip ausgewählt.');
 
 const thumbnailImages=findMedia(paths.thumbnailDir,imageExtensions).filter((file)=>!path.basename(file).startsWith('.generated-'));
 const thumbnailApproved=thumbnailImages.filter((file)=>approvedPattern.test(path.basename(file)));
@@ -79,13 +111,15 @@ const invalidSfx = findMedia(paths.sfxDir, new Set([...audioExtensions])).filter
 invalidSfx.forEach((file) => warnings.push(`Leere SFX-Datei: ${file}`));
 
 const report = {
-  version: 'youtube-2min-media-v1',
+  version: 'youtube-2min-media-v2',
   productionProfile: config.productionProfile,
   generatedAt: new Date().toISOString(),
   passed: errors.length === 0,
-  productionMode: 'youtube-static-longform',
-  requiredSceneImages: plan.scenes.length,
+  productionMode: config.visuals.productionMode,
+  requiredBaseImages: plan.scenes.length,
   selectedImages,
+  plannedFlowVideos: plannedVideoCount,
+  selectedVideos,
   separateThumbnailRequired: true,
   selectedThumbnail,
   errors,
@@ -98,5 +132,5 @@ if (errors.length) {
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Pflichtmedien vollständig: Voice-over + ${selectedImages.length} 16:9-Szenenbilder + separates Thumbnail.`);
+console.log(`✓ Pflichtmedien vollständig: Voice-over + ${selectedImages.length} Ausgangsbilder + ${selectedVideos.length} Google-Flow-Clips + separates Thumbnail.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
