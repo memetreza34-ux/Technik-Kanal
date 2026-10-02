@@ -13,6 +13,7 @@ const required = [
   'channels/science/gehirn/LONGFORM.md',
   'channels/science/gehirn/REELS.md',
   'channels/science/gehirn/BILDWELT.md',
+  'channels/science/gehirn/FLOW-WORKFLOW.md',
   'channels/science/public/smoke/science-static-smoke.svg',
   'channels/science/src/index.ts',
   'channels/science/src/ScienceRoot.tsx',
@@ -27,6 +28,7 @@ const required = [
   'scripts/lib/science-visual-policy.mjs',
   'scripts/lib/science-contracts.test.ts',
   'scripts/new-science-reel.mjs',
+  'scripts/build-google-flow-master-prompt.mjs',
   'scripts/safe-new-science-reel.mjs',
   'scripts/science-preflight.mjs',
   'scripts/science-readiness.mjs',
@@ -109,4 +111,4 @@ if (missing.length || legacy.length) {
   }
   process.exit(1);
 }
-console.log(`✓ Science-only-Systemstruktur vollständig (${required.length} Kernpfade); youtube-2min-v1 und Scientific Scene Explainer sind dokumentiert.`);
+console.log(`✓ Science-only-Systemstruktur vollständig (${required.length} Kernpfade); youtube-2min-v1, Scientific Scene Explainer und Google-Flow-Mischpipeline sind dokumentiert.`);
