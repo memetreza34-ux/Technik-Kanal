@@ -7,7 +7,7 @@ import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
 import {evaluateScienceVisualPolicy} from './lib/science-visual-policy.mjs';
 
 const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
-if (!projectArg) throw new Error('Nutzung: npm run science:creative-qa -- <reel-ordner>');
+if (!projectArg) throw new Error('Nutzung: npm run science:creative-qa -- <video-ordner>');
 
 const paths = electricalProjectPaths(path.resolve(projectArg));
 const config = loadElectricalConfig();
@@ -22,6 +22,7 @@ for (const scene of plan.scenes) {
   if (headlineWords > config.textQuality.headlineWordsMax) errors.push(`${scene.id}: Headline zu lang.`);
   if (!scene.voiceText.trim()) errors.push(`${scene.id}: Voice-Text fehlt.`);
   if (!scene.imageDir.trim()) errors.push(`${scene.id}: Bildzuordnung fehlt.`);
+  if (!scene.section) errors.push(`${scene.id}: Dramaturgie-Abschnitt fehlt.`);
 }
 
 const promptFiles = {};
@@ -33,15 +34,10 @@ for (const scene of plan.scenes) {
   }
   const prompt = fs.readFileSync(file,'utf8');
   promptFiles[scene.id] = prompt;
-  if (/\[GENAUE|\[AUSSAGE|ERGÄNZEN|PLACEHOLDER|NEUE BILDWELT/i.test(prompt)) {
-    errors.push(`${scene.id}: Prompt ist noch nicht final.`);
-  }
-  if (!/(Deutsch|German|deutsche Beschrift|deutscher Text|kein englischer Text|no English text)/i.test(prompt)) {
-    warnings.push(`${scene.id}: Bei sichtbarem Bildtext Deutsch-only ausdrücklich festlegen.`);
-  }
-  if (!/(eine Hauptaussage|one main idea|one scientific statement|genau.*Satz|exact idea|exact statement)/i.test(prompt)) {
-    warnings.push(`${scene.id}: Prompt sollte die eine Kernaussage der Szene klar priorisieren.`);
-  }
+  if (/\[GENAUE|\[AUSSAGE|ERGÄNZEN|PLACEHOLDER|NEUE BILDWELT/i.test(prompt)) errors.push(`${scene.id}: Prompt ist noch nicht final.`);
+  if (!/(16:9|1920.?1080|landscape)/i.test(prompt)) warnings.push(`${scene.id}: 16:9 sollte im Prompt ausdrücklich festgelegt sein.`);
+  if (!/(Deutsch|German|deutsche Beschrift|deutscher Text|kein englischer Text|no English text)/i.test(prompt)) warnings.push(`${scene.id}: Bei sichtbarem Bildtext Deutsch-only ausdrücklich festlegen.`);
+  if (!/(eine Hauptaussage|one main idea|one scientific statement|genau.*Aussage|exact idea|exact statement|visuelle Hauptidee)/i.test(prompt)) warnings.push(`${scene.id}: Prompt sollte die eine visuelle Kernaussage des Beats klar priorisieren.`);
 }
 
 const promptManifest = fs.existsSync(paths.promptManifest) ? JSON.parse(fs.readFileSync(paths.promptManifest,'utf8')) : null;
@@ -49,21 +45,22 @@ const policy = evaluateScienceVisualPolicy({plan,config,promptFiles,promptManife
 errors.push(...policy.errors);
 warnings.push(...policy.warnings);
 
-const coverFile = path.join(paths.promptDir,'00-cover.txt');
-let coverPrompt = '';
-if (!fs.existsSync(coverFile)) errors.push('Cover-/Bild-01-Prompt fehlt.');
+const thumbnailFile = path.join(paths.promptDir,'00-thumbnail.txt');
+let thumbnailPrompt = '';
+if (!fs.existsSync(thumbnailFile)) errors.push('Separater Thumbnail-Prompt 00-thumbnail.txt fehlt.');
 else {
-  coverPrompt = fs.readFileSync(coverFile,'utf8');
-  if (/neue bildwelt/i.test(coverPrompt)) errors.push('Coverprompt ist noch nicht final.');
-  if (!/9:16/i.test(coverPrompt)) warnings.push('Coverprompt sollte 9:16 ausdrücklich verlangen.');
+  thumbnailPrompt = fs.readFileSync(thumbnailFile,'utf8');
+  if (/platzhalter|ergänzen/i.test(thumbnailPrompt)) errors.push('Thumbnail-Prompt ist noch nicht final.');
+  if (!/(16:9|1280.?720)/i.test(thumbnailPrompt)) warnings.push('Thumbnail-Prompt sollte 16:9 / 1280×720 ausdrücklich verlangen.');
+  if (!/(3|drei).*(Kandidat|Variante)|candidate/i.test(thumbnailPrompt)) warnings.push('Thumbnail-Prompt sollte drei Kandidaten/Varianten vorsehen.');
 }
 
-const combinedFile = path.join(paths.root,'02-bilder','ALLE-BILDPROMPTS-MIT-COVER.txt');
-if (!fs.existsSync(combinedFile)) errors.push('Gesamt-Promptdatei fehlt.');
+const combinedFile = path.join(paths.root,'02-bilder','ALLE-BILDPROMPTS-MIT-THUMBNAIL.txt');
+if (!fs.existsSync(combinedFile)) errors.push('Gesamt-Promptdatei ALLE-BILDPROMPTS-MIT-THUMBNAIL.txt fehlt.');
 else {
   const combined = fs.readFileSync(combinedFile,'utf8');
   const normalize = (value) => String(value).replace(/\s+/g,' ').trim().toLowerCase();
-  if (coverPrompt && !normalize(combined).includes(normalize(coverPrompt))) errors.push('Coverprompt fehlt in der Gesamtdatei.');
+  if (thumbnailPrompt && !normalize(combined).includes(normalize(thumbnailPrompt))) errors.push('Thumbnail-Prompt fehlt in der Gesamtdatei.');
   for (const scene of plan.scenes) {
     if (promptFiles[scene.id] && !normalize(combined).includes(normalize(promptFiles[scene.id]))) errors.push(`${scene.id}: Prompt fehlt in der Gesamtdatei.`);
   }
@@ -71,6 +68,7 @@ else {
 
 const report = {
   version:'science-static-v1',
+  productionProfile:config.productionProfile,
   styleId:config.visuals.styleId,
   brandVisualStyleDefined:config.visuals.brandVisualStyleDefined === true,
   generatedImageTextPolicy:config.visuals.generatedImageTextPolicy,
@@ -89,5 +87,5 @@ if (errors.length) {
   errors.forEach((error) => console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Science-Creative-QA bestanden: ${plan.scenes.length} statische Bildszenen.`);
+console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} statische 16:9-Beats plus separates Thumbnail.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
