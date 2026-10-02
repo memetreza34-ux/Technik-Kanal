@@ -4,25 +4,15 @@ const nonEmpty = z.string().trim().min(1);
 const normalizedCoordinate = z.number().min(0).max(1);
 const calloutText = z.string().trim().min(1).max(42);
 
-const WordTimestampFields = z.object({
+export const WordTimestamp = z.object({
   text: nonEmpty,
   normalized: z.string().optional(),
   startMs: z.number().nonnegative(),
   endMs: z.number().positive(),
   confidence: z.number().min(0).max(1).optional(),
-});
+}).refine((value) => value.endMs > value.startMs, 'endMs must be greater than startMs');
 
-export const WordTimestamp = WordTimestampFields.refine(
-  (value) => value.endMs > value.startMs,
-  'endMs must be greater than startMs',
-);
-
-const CaptionWord = z.object({
-  text: nonEmpty,
-  startMs: z.number().nonnegative(),
-  endMs: z.number().positive(),
-}).refine((value) => value.endMs > value.startMs, 'caption word end must follow start');
-
+const CaptionWord = z.object({text:nonEmpty,startMs:z.number().nonnegative(),endMs:z.number().positive()});
 export const Caption = z.object({
   text: nonEmpty,
   startMs: z.number().nonnegative(),
@@ -69,6 +59,9 @@ export const ScienceScene = z.object({
   toFrame: z.number().int().positive().optional(),
   durationSeconds: z.number().positive().optional(),
   imagePath: z.string().optional(),
+  videoPath: z.string().optional(),
+  mediaType: z.enum(['image','video']).optional(),
+  videoDurationSeconds: z.number().positive().optional(),
   layout: z.enum(['image-full','comparison','warning','payoff','science-image']).optional(),
   renderMode: z.literal('image-only'),
   motionLevel: z.literal('none'),
@@ -104,7 +97,7 @@ export const ScenePlan = z.object({
 
 export const Asset = z.object({
   id: nonEmpty,
-  kind: z.enum(['image','audio','captions','data','other']),
+  kind: z.enum(['image','video','audio','captions','data','other']),
   role: nonEmpty,
   file: z.string().optional(),
   source: z.string().optional(),
