@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 // Interne ELECTRICAL_* Namen bleiben vorerst aus Rückwärtskompatibilität bestehen.
-// Der Vertrag selbst ist kanalweit und gilt für neue Science-Reels.
+// Der Vertrag selbst ist kanalweit und gilt für neue Science-Videos.
 export const ELECTRICAL_REEL_DIRECTORIES = [
   '01-script-audio',
   '01-script-audio/audio',
@@ -10,6 +10,7 @@ export const ELECTRICAL_REEL_DIRECTORIES = [
   '02-bilder',
   '02-bilder/images',
   '02-bilder/prompts',
+  '02-bilder/thumbnail',
   '03-caption',
   '04-pdf',
   '05-export',
@@ -23,6 +24,7 @@ export const ELECTRICAL_REQUIRED_CONTENT_FILES = [
   '01-script-audio/script.md',
   '01-script-audio/script-fliesstext.txt',
   '01-script-audio/voiceover.txt',
+  '02-bilder/thumbnail/README.md',
   '03-caption/social-caption.md',
   '04-pdf/inhalt.md',
   '06-projektdateien/motion-design.md',
@@ -44,7 +46,7 @@ export const ELECTRICAL_GENERATED_FILES = [
   '06-projektdateien/preproduction-report.json',
   '06-projektdateien/qa-report.json',
   '06-projektdateien/ready-report.json',
-  '06-projektdateien/reel-runtime.json',
+  '06-projektdateien/science-runtime.json',
 ];
 
 export const electricalProjectPaths = (root) => ({
@@ -58,6 +60,7 @@ export const electricalProjectPaths = (root) => ({
   voiceoverText: path.join(root, '01-script-audio/voiceover.txt'),
   imageDir: path.join(root, '02-bilder/images'),
   promptDir: path.join(root, '02-bilder/prompts'),
+  thumbnailDir: path.join(root, '02-bilder/thumbnail'),
   prompts: path.join(root, '02-bilder/bildprompts.md'),
   captionsDir: path.join(root, '03-caption'),
   socialCaption: path.join(root, '03-caption/social-caption.md'),
@@ -81,7 +84,7 @@ export const electricalProjectPaths = (root) => ({
   preproductionReport: path.join(root, '06-projektdateien/preproduction-report.json'),
   readyReport: path.join(root, '06-projektdateien/ready-report.json'),
   qaReport: path.join(root, '06-projektdateien/qa-report.json'),
-  runtime: path.join(root, '06-projektdateien/reel-runtime.json'),
+  runtime: path.join(root, '06-projektdateien/science-runtime.json'),
   sources: path.join(root, '06-projektdateien/sources.md'),
   storyboard: path.join(root, '06-projektdateien/storyboard.md'),
   motionDesign: path.join(root, '06-projektdateien/motion-design.md'),
@@ -105,7 +108,7 @@ export const assertElectricalProjectStructure = (root, options) => {
   const report = checkElectricalProjectStructure(root, options);
   if (!report.ok) {
     throw new Error([
-      'Science-Reel-Struktur entspricht nicht dem verbindlichen Produktionsvertrag.',
+      'Science-Video-Struktur entspricht nicht dem verbindlichen Produktionsvertrag.',
       ...report.missingDirectories.map((entry) => `Fehlender Ordner: ${entry}`),
       ...report.missingFiles.map((entry) => `Fehlende Datei: ${entry}`),
     ].join('\n'));
