@@ -11,6 +11,8 @@
   "thumbnailRequired": true,
   "thumbnailCandidateCount": 3,
   "imageOnly": true,
+  "imageProductionSteps": 5,
+  "pauseAfterEachImageStep": true,
   "flowAiVideoAllowed": false,
   "requiredStaticImageBeats": 18,
   "remotionAnimationAllowed": false,
