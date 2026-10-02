@@ -1,10 +1,12 @@
 {
   "version": "science-v1",
+  "productionProfile": "youtube-2min-v1",
   "format": {
-    "width": 1080,
-    "height": 1920,
+    "width": 1920,
+    "height": 1080,
     "fps": 30,
-    "durationSeconds": {"min": 35, "ideal": 55, "max": 75}
+    "aspectRatio": "16:9",
+    "durationSeconds": {"min": 90, "ideal": 120, "max": 150}
   },
   "topicScope": {
     "identity": "alltagswissenschaft-und-technik",
@@ -40,18 +42,20 @@
       "komplizierte-relativitaetstheorie",
       "hochtheoretische-astrophysik"
     ],
-    "selectionRule": "Ein Jugendlicher soll ohne grosses Vorwissen nach einem kurzen Reel etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann."
+    "selectionRule": "Ein Jugendlicher soll ohne grosses Vorwissen nach dem Video etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann."
   },
   "script": {
-    "words": {"min": 90, "ideal": 140, "max": 190},
-    "mainIdeas": {"min": 3, "max": 8},
+    "words": {"min": 230, "ideal": 300, "max": 370},
+    "mainIdeas": {"min": 5, "max": 12},
     "oneCentralQuestion": true,
     "onePayoff": true,
     "technicalTermMustBeExplained": true,
+    "narrativeStructure": ["hook", "context", "foundation", "mechanism", "deepening", "payoff"],
+    "visualBeatRule": "Eine visuelle Aussage entspricht einem Beat; nicht automatisch ein Satz pro Bild.",
     "hook": {
       "type": "direct-question",
       "headlineWordsMax": 10,
-      "voiceWordsMax": 22,
+      "voiceWordsMax": 24,
       "mustContainQuestionMark": true,
       "firstFrameAnimationAllowed": false,
       "forbiddenMetaphors": ["unsichtbarer held", "geheime kraft"]
@@ -68,12 +72,13 @@
   "visuals": {
     "policyVersion": "science-static-v1",
     "productionMode": "image-first-static",
-    "beats": {"min": 6, "ideal": 10, "max": 16},
-    "maximumTextOnlyScenesPerReel": 0,
+    "beats": {"min": 12, "ideal": 20, "max": 28},
+    "maximumTextOnlyScenesPerVideo": 0,
     "frameZeroMustContainMainMotif": true,
     "generatedImageTextPolicy": "controlled-german-only",
-    "coverUsesFirstScene": true,
-    "separateThumbnailForbidden": true,
+    "coverUsesFirstScene": false,
+    "separateThumbnailForbidden": false,
+    "thumbnail": {"required": true, "width": 1280, "height": 720, "candidateCount": 3},
     "transitionPolicy": "hard-cut",
     "animationAllowed": false,
     "cameraMotionAllowed": false,
@@ -96,9 +101,9 @@
     "maximumEndDriftMs": 500,
     "maximumGapMs": 1200,
     "maximumOverlapMs": 80,
-    "perGroup": 4,
-    "fontSize": 56,
-    "bottom": 285,
+    "perGroup": 5,
+    "fontSize": 48,
+    "bottom": 72,
     "maximumLines": 2,
     "color": "#ffffff",
     "highlightColor": null,
@@ -109,16 +114,16 @@
   "sound": {
     "musicBedAllowed": false,
     "maximumCuesPerScene": 1,
-    "recommendedCuesPerReel": {"min": 0, "max": 5},
+    "recommendedCuesPerVideo": {"min": 0, "max": 8},
     "defaultCueVolume": 0.16,
     "maximumCueVolume": 0.3,
     "allowedRoles": ["sfx-accent", "sfx-warning", "sfx-reveal", "sfx-success", "sfx-soft-whoosh", "sfx-environment", "sfx-science"]
   },
   "imageAnalysis": {
-    "portraitAspectMin": 0.48,
-    "portraitAspectMax": 0.65,
-    "minimumWidth": 720,
-    "minimumHeight": 1280,
+    "landscapeAspectMin": 1.7,
+    "landscapeAspectMax": 1.85,
+    "minimumWidth": 1280,
+    "minimumHeight": 720,
     "whiteBandMaximumRatio": 0.34,
     "fullImageWhiteMaximumRatio": 0.16,
     "backgroundClusterDistance": 28,
@@ -139,7 +144,7 @@
     "integratedLufsMin": -18,
     "integratedLufsMax": -14,
     "truePeakMaximumDb": -1,
-    "controlFrameCount": 10
+    "controlFrameCount": 12
   },
   "safety": {
     "hazardousTopicDisclaimerRequired": true,
