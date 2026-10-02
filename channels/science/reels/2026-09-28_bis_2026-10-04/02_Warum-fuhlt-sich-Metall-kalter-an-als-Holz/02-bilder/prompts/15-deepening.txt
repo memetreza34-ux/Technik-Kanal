@@ -1,0 +1,4 @@
+Beat 15-deepening
+Sprechaussage: „Darum wirken zum Beispiel eine Metallbank und eine Holzbank im Winter unterschiedlich kalt, obwohl beide lange draußen standen.“
+Bildidee: Nutze den gesamten 16:9-Raum für einen winterlichen Park. Links eine Metallbank, rechts eine Holzbank, beide nebeneinander und mit leichtem Reif in derselben Umgebung. Eine stilisierte erwachsene Person berührt mit je einer Hand kurz beide Lehnen. Am Metall ist stärkerer Wärmeabfluss aus der Hand visualisiert. Keine Infobox, keine Zahlen. Optional kleine deutsche Labels: „Metall“ und „Holz“.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.

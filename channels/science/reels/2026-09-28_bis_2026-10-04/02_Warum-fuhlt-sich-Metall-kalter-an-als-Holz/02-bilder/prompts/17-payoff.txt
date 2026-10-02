@@ -1,0 +1,4 @@
+Beat 17-payoff
+Sprechaussage: „Metall fühlt sich deshalb kälter an, weil es Wärme viel schneller aus deiner Hand abführt als Holz.“
+Bildidee: Erstelle eine starke 16:9-Payoff-Szene mit einer Hand, die gleichzeitig Metall links und Holz rechts berührt. Vom Finger zur Metallseite verlaufen mehrere klare Wärmefluss-Pfeile; zur Holzseite nur wenige kleine. Die beiden Materialien füllen den Frame fast vollständig. Zwei kurze deutsche Labels: „schneller Wärmeabfluss“ bei Metall und „langsamer Wärmeabfluss“ bei Holz. Kein zusätzlicher Text.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.

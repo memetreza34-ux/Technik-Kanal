@@ -1,0 +1,4 @@
+Beat 18-payoff
+Sprechaussage: „Gleiche Temperatur bedeutet also nicht automatisch gleiches Gefühl – entscheidend ist der Wärmefluss.“
+Bildidee: Finale 16:9-Szene: Metall und Holz nebeneinander, beide mit kleiner Anzeige „21 °C“. Darüber eine Hand, die beide berührt. Die Wärmefluss-Pfeile unterscheiden sich klar. Integriere einen einzigen deutschen Merksatz groß und sauber: „Gleiche Temperatur ≠ gleiches Gefühl“. Darunter klein: „Entscheidend ist der Wärmefluss.“ Keine weiteren Labels, kein Wasserzeichen.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.

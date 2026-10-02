@@ -1,0 +1,4 @@
+Beat 02-context
+Sprechaussage: „Legst du ein Stück Metall und ein Stück Holz lange genug nebeneinander, haben beide ungefähr dieselbe Raumtemperatur.“
+Bildidee: Nutze die gesamte 16:9-Fläche für denselben Tisch im Raum. Metallplatte und Holzbrett liegen direkt nebeneinander. Auf beiden liegt jeweils ein kleines digitales Kontaktthermometer, beide zeigen deutlich „21 °C“. Die Umgebung soll glaubwürdig und ruhig sein, damit klar wird: gleicher Raum, gleiche Ausgangstemperatur. Keine Hand im Bild. Keine zusätzlichen Daten. Sichtbarer Text ausschließlich Deutsch.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.

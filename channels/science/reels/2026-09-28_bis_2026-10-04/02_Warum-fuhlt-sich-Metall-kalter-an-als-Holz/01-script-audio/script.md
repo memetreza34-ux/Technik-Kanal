@@ -1,0 +1,49 @@
+# Sprechtext
+
+## Hook
+
+Warum fühlt sich Metall kälter an als Holz, obwohl beide im selben Raum liegen?
+
+## Kontext
+
+Legst du ein Stück Metall und ein Stück Holz lange genug nebeneinander, haben beide ungefähr dieselbe Raumtemperatur.
+
+Deine Hand ist aber wärmer als diese beiden Oberflächen. Sobald du sie berührst, beginnt Wärme aus deiner Haut in das Material zu fließen.
+
+## Grundlage
+
+Wärme wandert immer vom wärmeren zum kälteren Bereich. Entscheidend ist jetzt, wie schnell ein Material diese Wärme weitertransportiert.
+
+## Mechanismus
+
+Metall kann Wärme sehr gut leiten. Die Energie, die deine Hand an die Oberfläche abgibt, wird schnell in das restliche Metall weitergeleitet.
+
+Dadurch bleibt die Kontaktstelle vergleichsweise kühl und deine Hand verliert dort weiterhin schnell Wärme.
+
+Deine Haut kühlt deshalb in kurzer Zeit stärker ab. Genau diese schnelle Abkühlung nimmst du als besonders kalt wahr.
+
+Holz verhält sich anders. Es leitet Wärme deutlich schlechter und transportiert die Energie deiner Hand nur langsam weiter.
+
+Direkt an der Berührungsstelle erwärmt sich das Holz deshalb schneller. Der Wärmefluss aus deiner Hand wird kleiner.
+
+Das Verrückte daran: Ein Thermometer kann auf Metall und Holz denselben Wert anzeigen, während deine Finger trotzdem zwei verschiedene Temperaturen zu fühlen scheinen.
+
+Der Grund ist, dass dein Tastsinn kein eingebautes Oberflächenthermometer ist. Temperaturrezeptoren melden vor allem, wie sich die Temperatur deiner Haut verändert.
+
+Bei Raumtemperatur kühlt Metall deine Haut schneller ab als Holz. Deshalb meldet dein Nervensystem beim Metall ein stärkeres Kältegefühl.
+
+## Vertiefung
+
+Wie groß der Unterschied sein kann, zeigt die Wärmeleitfähigkeit: Aluminium leitet Wärme grob über tausendmal besser als Holz.
+
+Das Prinzip funktioniert auch umgekehrt. Ist Metall deutlich wärmer als deine Hand, fühlt es sich schneller heiß an als gleich warmes Holz.
+
+Darum wirken zum Beispiel eine Metallbank und eine Holzbank im Winter unterschiedlich kalt, obwohl beide lange draußen standen.
+
+Es geht also nicht nur darum, welche Temperatur ein Gegenstand hat, sondern auch darum, wie schnell Wärme zwischen ihm und deiner Haut übertragen wird.
+
+## Payoff
+
+Metall fühlt sich deshalb kälter an, weil es Wärme viel schneller aus deiner Hand abführt als Holz.
+
+Gleiche Temperatur bedeutet also nicht automatisch gleiches Gefühl – entscheidend ist der Wärmefluss.

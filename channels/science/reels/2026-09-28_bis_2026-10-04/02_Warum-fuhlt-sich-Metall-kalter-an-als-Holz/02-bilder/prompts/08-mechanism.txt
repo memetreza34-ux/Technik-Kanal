@@ -1,0 +1,4 @@
+Beat 08-mechanism
+Sprechaussage: „Holz verhält sich anders. Es leitet Wärme deutlich schlechter und transportiert die Energie deiner Hand nur langsam weiter.“
+Bildidee: Zeige jetzt eine große Holzoberfläche über die gesamte 16:9-Breite mit derselben Hand links. Wärme gelangt von der Hand nur in einen kleinen Bereich direkt unter den Fingern und breitet sich deutlich langsamer und kürzer aus als zuvor beim Metall. Nutze ein warmes, natürliches Holzbild mit klarer 2D/2.5D-Erklärschicht. Deutsches Label: „langsame Wärmeleitung“. Kein Metall in dieser Szene, keine Zahlen.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
