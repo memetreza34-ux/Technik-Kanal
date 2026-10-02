@@ -1,54 +1,59 @@
 # Alltagswissenschaft & Technik
 
-Deutschsprachiger Faceless-Kanal für verständlich erklärte Alltagswissenschaft und Technik – vor allem für Jugendliche und junge Erwachsene.
+Deutschsprachiger Faceless-Kanal für verständlich erklärte Physik, Technik, Energie, Materialien, Infrastruktur und greifbare Naturphänomene für Jugendliche und junge Erwachsene.
+
+## Aktives Format
+
+Das aktive Profil ist **`youtube-2min-v1`**:
+
+- normales YouTube-Video, kein Reel
+- 1920×1080 / 16:9 / 30 fps
+- 90–150 Sekunden, 120 Sekunden ideal
+- 230–370 Wörter, 300 ideal
+- 12–28 visuelle Beats, 20 ideal
+- separates 1280×720-Thumbnail mit drei Kandidaten
+- statische Szenenbilder + harte Schnitte
+- Voice 1,10× mit Loudness-Normalisierung
+
+Der spätere Ausbau auf etwa 8–12 Minuten bekommt ein eigenes Profil.
 
 ## Themen
 
-Schwerpunkt sind greifbare, visuell erklärbare Themen aus:
+Schwerpunkt sind greifbare, visuell erklärbare Themen aus Alltagsphysik, Elektrotechnik/Elektronik, Energie, Maschinen, Verkehr/Mobilität, Gebäude/Infrastruktur, Materialien/Werkstoffen, einfacher Alltagschemie, Wetter/Naturphänomenen und greifbarer Astronomie.
 
-- Physik im Alltag
-- Elektrotechnik und Elektronik
-- Energie
-- Maschinen und technische Systeme
-- Verkehr, Bahn, Autos und Mobilität
-- Gebäude, Infrastruktur und Versorgung
-- Materialien und Werkstoffe
-- einfacher Chemie mit sichtbarem Alltagsbezug
-- Wetter und verständlichen Naturphänomenen
-- greifbarer Astronomie
+Biologie, Medizin, Anatomie, Krankheiten, Zellbiologie, DNA/Genetik und Biochemie gehören nicht zur regulären Kanalrichtung. Stark abstrakte Themen ohne greifbaren Zugang sind ebenfalls nicht vorgesehen.
 
-Biologie, Medizin, Anatomie, Krankheiten, Zellbiologie, DNA/Genetik und Biochemie gehören nicht zur regulären Kanalrichtung. Stark abstrakte Themen wie schwere Quantenphysik, abstrakte Teilchenphysik, komplizierte Relativitätstheorie oder hochtheoretische Astrophysik sind ebenfalls nicht vorgesehen.
+Leitfrage:
 
-Leitfrage für neue Themen:
+> Kann ein Jugendlicher ohne großes Vorwissen nach dem Video etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
 
-> Kann ein Jugendlicher ohne großes Vorwissen nach einem kurzen Reel etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
+## Story
 
-## Verbindlicher Produktionsstandard
+Verbindliche Dramaturgie steht in `gehirn/LONGFORM.md`:
 
-- `science-static-v1`
-- aktive Bildwelt: `scientific-scene-explainer-v1`
-- direkte deutsche Frage als Hook
-- adaptive 6–16 visuelle Beats
-- ein statisches 9:16-Bild pro Szene
-- Bild 01 = Coverquelle + erster Shot
-- sichtbarer Bildtext ausschließlich Deutsch und nur wenn er die Szene verbessert
-- keine Logos oder Wasserzeichen
-- keine Remotion-Animationen, Zooms, Pans, Ken Burns, Parallax oder Mechanismusbewegungen
-- harte Schnitte
-- deutsche Untertitel ohne Animation
-- Voice auf 1,10× mit Loudness-Normalisierung
-- lokale Wortzeiten und robuste Skript-/Voice-Ausrichtung
-- Quellen-IDs für fachliche Aussagen
+**Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff**
+
+Nicht automatisch ein Satz pro Bild. Eine verständliche visuelle Aussage entspricht einem Beat.
 
 ## Bildwelt
 
-Die aktive Bildwelt ist **Scientific Scene Explainer v1** und vollständig in `gehirn/BILDWELT.md` beschrieben.
+Aktive Bildwelt: **Scientific Scene Explainer v1**.
 
-Kernprinzip: Nicht einfach ein Bild vom Thema erzeugen, sondern eine visuelle Szene bauen, die genau den gesprochenen Satz erklärt.
+Kernprinzip:
 
-Dazu dürfen je nach Aussage volle Orte/Umgebungen, integrierte Wissenschaftsszenen, technische Illustrationen, Cutaways, Mikroansichten, Vergleiche oder stilisierte erwachsene Menschen eingesetzt werden. Hintergründe und Farben richten sich nach Inhalt und Umgebung; ein fixer Navy-Hintergrund ist ausdrücklich nicht vorgesehen.
+> Nicht einfach ein Bild vom Thema erzeugen, sondern eine visuelle Szene bauen, die die konkrete Aussage des Beats erklärt.
 
-Titel, Labels, Merksätze, Zahlen, Vergleiche und Pfeile sind optional. Leitregel: **so wenig Information wie möglich, so viel wie nötig**. Sichtbarer Bildtext ist ausschließlich Deutsch und muss vor Freigabe auf Rechtschreibung und fachliche Richtigkeit geprüft werden.
+Je nach Aussage dürfen volle Orte/Umgebungen, integrierte Wissenschaftsszenen, technische Illustrationen, Cutaways, Detailansichten, Vergleiche oder stilisierte erwachsene Menschen eingesetzt werden. Hintergründe und Farben richten sich nach Inhalt und Umgebung.
+
+Titel, Labels, Merksätze, Zahlen, Vergleiche und Pfeile sind optional. Leitregel: **so wenig Information wie möglich, so viel wie nötig**. Sichtbarer Bildtext ist ausschließlich Deutsch und muss vor Freigabe geprüft werden.
+
+## Thumbnail
+
+Thumbnail ist separat von Bild 01:
+- 1280×720
+- drei Kandidaten
+- ein Gewinner
+- muss dasselbe Versprechen wie Titel und Hook geben
 
 ## Remotion-Rolle
 
@@ -57,10 +62,10 @@ Remotion darf nur Bilder zeitlich anordnen, harte Schnitte setzen, Voice/Caption
 ## Befehle
 
 ```bash
-npm run science:new -- --week=YYYY-MM-DD_bis_YYYY-MM-DD --slot=01 --title="Warum ist der Himmel blau?" --hook="Warum ist der Himmel blau?" --scenes=10
-npm run science:preflight -- "<reel-ordner>"
-npm run science:ready -- "<reel-ordner>"
-npm run science:finish -- "<reel-ordner>"
+npm run science:new -- --week=YYYY-MM-DD_bis_YYYY-MM-DD --slot=01 --title="Wie funktioniert ein Induktionsherd?" --hook="Wie funktioniert ein Induktionsherd?" --scenes=20
+npm run science:preflight -- "<video-ordner>"
+npm run science:ready -- "<video-ordner>"
+npm run science:finish -- "<video-ordner>"
 ```
 
-Es gibt keine `electrical:*`- oder `elektro:*`-Produktionsaliase mehr.
+Interne Namen wie `ScienceReel`, `reels/` und einzelne `electrical-*`-Dateinamen bleiben vorerst nur aus Rückwärtskompatibilität bestehen; neue Produktionsbefehle sind ausschließlich `science:*`.
