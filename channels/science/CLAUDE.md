@@ -3,11 +3,12 @@
 Vor Änderungen zuerst lesen:
 
 1. `gehirn/KANAL.md`
-2. `gehirn/REELS.md`
-3. `gehirn/BILDWELT.md`
-4. `engine/config/science-v1.json`
-5. `skills/reel-fertigstellen.md`
-6. den aktuellen Reel-Ordner
+2. `gehirn/LONGFORM.md`
+3. `gehirn/REELS.md`
+4. `gehirn/BILDWELT.md`
+5. `engine/config/science-v1.json`
+6. `skills/reel-fertigstellen.md`
+7. den aktuellen Video-Ordner
 
 ## Kanalrichtung
 
@@ -15,38 +16,49 @@ Dies ist ein deutschsprachiger Kanal für **Alltagswissenschaft und Technik**. Z
 
 Der Kanal ist bewusst **kein allgemeines Wissenschaftslexikon**. Themen sollen greifbar, visuell erklärbar und ohne umfangreiche Vorkenntnisse verständlich sein.
 
-Bevorzugte Bereiche:
+Bevorzugte Bereiche: Physik im Alltag, Elektrotechnik/Elektronik, Energie, Maschinen, Verkehr/Mobilität, Gebäude/Infrastruktur, Materialien/Werkstoffe, einfache Alltagschemie, Wetter/Naturphänomene und greifbare Astronomie.
 
-- Physik im Alltag
-- Elektrotechnik und Elektronik
-- Energie
-- Maschinen und technische Systeme
-- Verkehr, Bahn, Autos und Mobilität
-- Gebäude, Infrastruktur und Versorgung
-- Materialien und Werkstoffe
-- einfache Chemie mit sichtbarem Alltagsbezug
-- Wetter und verständliche Naturphänomene
-- greifbare Astronomie
+Nicht als reguläre Kanalthemen verwenden: Biologie, Medizin, Anatomie, Krankheiten, Zellbiologie, DNA/Genetik, Biochemie sowie stark abstrakte Quanten-, Teilchen-, Relativitäts- oder Astrophysik ohne greifbaren Zugang.
 
-Nicht als reguläre Kanalthemen verwenden:
+Leitfrage:
 
-- Biologie
-- Medizin
-- Anatomie
-- Krankheiten
-- Zellen und Zellbiologie
-- DNA und Genetik
-- Biochemie
-- stark abstrakte Quantenphysik
-- abstrakte Teilchenphysik
-- komplizierte Relativitätstheorie
-- hochtheoretische Astrophysik
+> Kann ein Jugendlicher ohne großes Vorwissen nach dem Video etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
 
-Leitfrage bei der Themenwahl:
+## Aktives Produktionsprofil
 
-> Kann ein Jugendlicher ohne großes Vorwissen nach einem kurzen Reel etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
+`youtube-2min-v1` ist verbindlich:
 
-Wenn nicht, Thema verwerfen oder auf eine einfachere, konkrete Frage zuschneiden.
+- normales YouTube-Video, kein Reel
+- 1920×1080 / 16:9 / 30 fps
+- 90–150 Sekunden, 120 Sekunden ideal
+- 230–370 Wörter, 300 ideal
+- 12–28 visuelle Beats, 20 ideal
+- separates 1280×720-Thumbnail mit drei Kandidaten
+
+Interne Namen wie `ScienceReel` oder der Ordner `reels/` bleiben nur vorübergehend aus Rückwärtskompatibilität bestehen.
+
+## Story
+
+Verbindliche Dramaturgie nach `gehirn/LONGFORM.md`:
+
+**Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff**
+
+- keine Begrüßung oder lange Einleitung
+- zentrale Frage sofort öffnen
+- Erklärung spätestens innerhalb der ersten 30 Sekunden beginnen
+- Ursache → Vorgang → Ergebnis bevorzugen
+- keine lose Faktenliste
+- Vertiefungen müssen die Hauptfrage unterstützen
+- Payoff beantwortet die Ausgangsfrage klar
+- Titel, Thumbnail und Hook müssen dasselbe Versprechen geben
+
+## Visuelle Beats
+
+Nicht automatisch einen Satz pro Bild erzeugen.
+
+> Eine verständliche visuelle Aussage = ein Beat.
+
+Ein komplizierter Satz kann mehrere Bilder brauchen. Mehrere Sätze dürfen dasselbe Bild verwenden, solange dieselbe Sache erklärt wird.
 
 ## Inhalt und Sicherheit
 
@@ -68,36 +80,36 @@ Wenn nicht, Thema verwerfen oder auf eine einfachere, konkrete Frage zuschneiden
 - englische Labels oder englische Infotexte im Bild sind nicht zulässig
 - zufällige KI-Schrift, Logos oder Wasserzeichen sind nicht zulässig
 
-## Hook
-
-- direkte zentrale Frage
-- kurz und verständlich
-- keine künstliche Metapher
-- der erste gesprochene Satz stellt die Kernfrage
-- Bild 01 ist zugleich erster visueller Shot und Coverquelle
-
 ## Bildwelt
 
 Die verbindliche Bildwelt ist in `gehirn/BILDWELT.md` definiert.
 
 Kernprinzip:
 
-> Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die den konkreten gesprochenen Satz erklärt.
+> Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die die konkrete Aussage dieses Beats erklärt.
 
 Dabei gilt:
-
 - eine Hauptaussage pro Bild
 - volle Umgebungen und Orte nutzen, wenn sie beim Erklären helfen
 - wissenschaftliche Information direkt in die Szene integrieren
-- reine Illustrationen, Cutaways, Mikroansichten, Vergleiche oder Personen nur dann einsetzen, wenn sie für den Satz die beste Darstellungsform sind
+- reine Illustrationen, Cutaways, Detailansichten, Vergleiche oder Personen nur einsetzen, wenn sie die beste Darstellungsform sind
 - Menschen sind erlaubt, aber stilisiert, erwachsen und nur mit fachlicher Funktion
-- Hintergründe und Farben dürfen je nach Thema wechseln; kein fixer Navy-Hintergrund
-- Titel, Labels, Merksätze, Zahlen und Pfeile sind optional, nicht verpflichtend
+- Hintergründe und Farben dürfen je nach Thema wechseln
+- Titel, Labels, Merksätze, Zahlen und Pfeile sind optional
 - sichtbarer Text im Bild nur auf Deutsch
 - so wenig Information wie möglich, so viel wie nötig
 - keine Informationsüberladung und keine dekorativen Elemente ohne Erklärfunktion
 
-Technisch bleiben die Produktionsregeln bestehen: statische Szenenbilder, ein Bild pro Beat und keine Remotion-Kamerabewegung.
+## Thumbnail
+
+Thumbnail ist nicht Bild 01.
+
+- separat planen
+- 1280×720
+- drei Kandidaten
+- fachlich korrekt
+- dasselbe Versprechen wie Titel und Hook
+- keine irreführende Zuspitzung
 
 ## Remotion – harte Grenze
 
@@ -117,4 +129,4 @@ Remotion darf nur statische Bilder zeitlich anordnen, harte Schnitte setzen, Voi
 
 ## Produktionsregel
 
-Erst Thema gegen `gehirn/KANAL.md` prüfen. Danach Recherche, Skript und Szenenplanung abschließen. Anschließend jeden Beat anhand des konkreten Skriptsatzes visuell planen und `gehirn/BILDWELT.md` anwenden. Keine Animationen als Ersatz für fehlende Bildplanung verwenden.
+Erst Thema, Recherche, Story-Struktur und vollständiges Skript abschließen. Danach in visuelle Aussagen zerlegen, Bildwelt anwenden, Prompts und separates Thumbnail planen und erst anschließend Medien erzeugen. Keine Animationen als Ersatz für fehlende Bildplanung verwenden.
