@@ -8,7 +8,7 @@ import {findMedia, findVoiceFiles, imageExtensions, audioExtensions, imageMetada
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
 
 const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
-if (!projectArg) throw new Error('Nutzung: npm run science:ready -- <reel-ordner>');
+if (!projectArg) throw new Error('Nutzung: npm run science:ready -- <video-ordner>');
 const root = path.resolve(projectArg);
 const paths = electricalProjectPaths(root);
 const config = loadElectricalConfig();
@@ -22,12 +22,13 @@ const seen = new Map();
 const selectedImages = [];
 const approvedPattern = /(?:final|approved|freigabe)/i;
 
-const validateImage = (file, label) => {
+const digestFor=(file)=>createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+const validateSceneImage = (file, label) => {
   const metadata = imageMetadata(file);
   if (metadata.width < config.imageAnalysis.minimumWidth || metadata.height < config.imageAnalysis.minimumHeight) errors.push(`${label}: Bild zu klein (${metadata.width}×${metadata.height}).`);
   const aspect = metadata.width / metadata.height;
-  if (aspect < config.imageAnalysis.portraitAspectMin || aspect > config.imageAnalysis.portraitAspectMax) errors.push(`${label}: Seitenverhältnis ${aspect.toFixed(3)} ist nicht reel-tauglich.`);
-  const digest = createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+  if (aspect < config.imageAnalysis.landscapeAspectMin || aspect > config.imageAnalysis.landscapeAspectMax) errors.push(`${label}: Seitenverhältnis ${aspect.toFixed(3)} ist nicht 16:9-tauglich.`);
+  const digest = digestFor(file);
   if (seen.has(digest)) errors.push(`Doppeltes Bild in ${label} und ${seen.get(digest)}.`);
   seen.set(digest, label);
 };
@@ -52,24 +53,41 @@ for (const scene of plan.scenes) {
     continue;
   }
 
-  validateImage(selected, scene.id);
+  validateSceneImage(selected, scene.id);
   selectedImages.push({sceneId: scene.id, file: path.relative(root, selected).split(path.sep).join('/'), candidateCount: images.length});
 }
 
-if (selectedImages.length !== plan.scenes.length && errors.length === 0) errors.push('Nicht für jede Science-Szene wurde genau ein finales Bild ausgewählt.');
+if (selectedImages.length !== plan.scenes.length && errors.length === 0) errors.push('Nicht für jeden visuellen Beat wurde genau ein finales Bild ausgewählt.');
+
+const thumbnailImages=findMedia(paths.thumbnailDir,imageExtensions).filter((file)=>!path.basename(file).startsWith('.generated-'));
+const thumbnailApproved=thumbnailImages.filter((file)=>approvedPattern.test(path.basename(file)));
+let selectedThumbnail=null;
+if(thumbnailImages.length<config.visuals.thumbnail.candidateCount) errors.push(`Thumbnail: mindestens ${config.visuals.thumbnail.candidateCount} Kandidaten erforderlich; gefunden ${thumbnailImages.length}.`);
+if(thumbnailApproved.length!==1) errors.push(`Thumbnail: genau ein Kandidat muss als final/approved/freigabe markiert sein; gefunden ${thumbnailApproved.length}.`);
+else {
+  const file=thumbnailApproved[0];
+  const metadata=imageMetadata(file);
+  const aspect=metadata.width/metadata.height;
+  if(metadata.width<config.visuals.thumbnail.width||metadata.height<config.visuals.thumbnail.height) errors.push(`Thumbnail zu klein (${metadata.width}×${metadata.height}); mindestens ${config.visuals.thumbnail.width}×${config.visuals.thumbnail.height}.`);
+  if(aspect<1.7||aspect>1.85) errors.push(`Thumbnail-Seitenverhältnis ${aspect.toFixed(3)} ist nicht 16:9-tauglich.`);
+  const digest=digestFor(file);
+  if(seen.has(digest)) errors.push(`Thumbnail darf nicht identisch mit Szenenbild ${seen.get(digest)} sein.`);
+  selectedThumbnail={file:path.relative(root,file).split(path.sep).join('/'),candidateCount:thumbnailImages.length,width:metadata.width,height:metadata.height};
+}
 
 const invalidSfx = findMedia(paths.sfxDir, new Set([...audioExtensions])).filter((file) => fs.statSync(file).size === 0);
 invalidSfx.forEach((file) => warnings.push(`Leere SFX-Datei: ${file}`));
 
 const report = {
-  version: 'science-static-v1',
+  version: 'youtube-2min-media-v1',
+  productionProfile: config.productionProfile,
   generatedAt: new Date().toISOString(),
   passed: errors.length === 0,
-  productionMode: 'science-static',
+  productionMode: 'youtube-static-longform',
   requiredSceneImages: plan.scenes.length,
   selectedImages,
-  separateCoverRequired: false,
-  coverSourceScene: plan.scenes[0]?.id ?? null,
+  separateThumbnailRequired: true,
+  selectedThumbnail,
   errors,
   warnings,
 };
@@ -80,5 +98,5 @@ if (errors.length) {
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Science-Pflichtmedien vollständig: Voice-over + ${selectedImages.length} eindeutig ausgewählte statische Szenenbilder; Bild 01 ist Cover-Quelle.`);
+console.log(`✓ Pflichtmedien vollständig: Voice-over + ${selectedImages.length} 16:9-Szenenbilder + separates Thumbnail.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
