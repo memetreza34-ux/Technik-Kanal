@@ -20,8 +20,7 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
       id,
       section,
       title:isHook?hook:isPayoff?'Fachlicher Payoff':`${section} ${index+1}`,
-      kicker:isHook?undefined:isPayoff?'Merksatz':undefined,
-      headline:isHook?hook:isPayoff?'Klaren Payoff ergänzen':'Kurze deutsche Aussage ergänzen',
+      // headline/kicker absichtlich nicht vorbelegen: Text im Bild oder als Remotion-Overlay ist optional.
       backgroundFamily:'content-driven',
       shotType:'beat-driven',
       referenceGroup:'scientific-scene-explainer',
@@ -51,7 +50,6 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
     generatedImageTextPolicy:'controlled-german-only',
     slug,
     title,
-    coverText:hook,
     compositionId,
     runtimeFile:'science-runtime.json',
     fps:30,
