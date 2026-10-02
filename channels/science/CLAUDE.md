@@ -78,9 +78,20 @@ Ablauf:
 1. zuerst drei Thumbnail-Kandidaten erzeugen
 2. danach **STOPP** und auf die Nutzerauswahl warten
 3. gewählten Kandidaten als lockere visuelle Referenz verwenden
-4. danach Beat 01, Beat 02, Beat 03 usw. **streng einzeln nacheinander** erzeugen
-5. jeder Beat erhält genau ein finales statisches 16:9-Bild
-6. keine KI-Videoclips, keine Animationen und kein Image-to-Video erzeugen
+4. danach die komplette Szenenbild-Produktion in **genau 5 Bildschritte** aufteilen
+5. die Beats möglichst gleichmäßig und in Reihenfolge auf diese fünf Schritte verteilen
+6. innerhalb jedes Bildschritts jedes Bild **streng einzeln nacheinander** erzeugen, prüfen, auswählen und speichern
+7. nach jedem Bildschritt **STOPPEN** und auf die Freigabe des Nutzers für den nächsten Bildschritt warten
+8. jeder Beat erhält genau ein finales statisches 16:9-Bild
+9. keine KI-Videoclips, keine Animationen und kein Image-to-Video erzeugen
+
+Beispiel bei 18 Bildern:
+
+- Bildschritt 1: 01–04
+- Bildschritt 2: 05–08
+- Bildschritt 3: 09–12
+- Bildschritt 4: 13–15
+- Bildschritt 5: 16–18
 
 Wenn ein Vorgang als einzelnes Standbild nicht klar genug ist, den visuellen Beat verbessern oder in mehrere statische Bilder aufteilen.
 
@@ -154,4 +165,4 @@ Remotion darf NICHT zoomen, schwenken, rotieren, parallaxen, Ken-Burns-Bewegung 
 
 ## Produktionsregel
 
-Erst Thema, Recherche, Story-Struktur und vollständiges Skript abschließen. Danach visuelle Aussagen planen, Bildwelt anwenden, Einzelprompts und Flow-Plan festlegen und den Google-Flow-Masterprompt bauen. Erst anschließend Bilder erzeugen. **Keine Video- oder Animationsplanung als Ersatz für gute statische Bilddramaturgie.**
+Erst Thema, Recherche, Story-Struktur und vollständiges Skript abschließen. Danach visuelle Aussagen planen, Bildwelt anwenden, Einzelprompts und Flow-Plan festlegen und den Google-Flow-Masterprompt bauen. Erst anschließend Bilder erzeugen. **Nach dem Cover immer fünf klar getrennte Bildschritte verwenden. Keine Video- oder Animationsplanung als Ersatz für gute statische Bilddramaturgie.**
