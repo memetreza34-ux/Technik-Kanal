@@ -8,11 +8,14 @@ const config = loadElectricalConfig();
 const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'));
 const claude = fs.readFileSync(path.join(root, 'channels/science/CLAUDE.md'), 'utf8');
 const imageWorld = fs.readFileSync(path.join(root, 'channels/science/gehirn/BILDWELT.md'), 'utf8');
+const flowWorkflow = fs.readFileSync(path.join(root, 'channels/science/gehirn/FLOW-WORKFLOW.md'), 'utf8');
 const channel = fs.readFileSync(path.join(root, 'channels/science/gehirn/KANAL.md'), 'utf8');
 const longform = fs.readFileSync(path.join(root, 'channels/science/gehirn/LONGFORM.md'), 'utf8');
 const voice = JSON.parse(fs.readFileSync(path.join(root, 'channels/science/engine/config/voice-v1.json'), 'utf8'));
 const scienceReel = fs.readFileSync(path.join(root, 'channels/science/src/ScienceReel.tsx'), 'utf8');
 const template = fs.readFileSync(path.join(root, 'scripts/lib/create-electrical-scene-plan-template.mjs'), 'utf8');
+const newVideo = fs.readFileSync(path.join(root, 'scripts/new-science-reel.mjs'), 'utf8');
+const flowBuilder = fs.readFileSync(path.join(root, 'scripts/build-google-flow-master-prompt.mjs'), 'utf8');
 const processVoice = fs.readFileSync(path.join(root, 'scripts/process_voiceover.mjs'), 'utf8');
 const renderQa = fs.readFileSync(path.join(root, 'scripts/qa_science_render.mjs'), 'utf8');
 const errors = [];
@@ -44,7 +47,7 @@ if (!claude.includes('whisper.cpp')) errors.push('CLAUDE.md enthält die lokale 
 if (!imageWorld.includes('Scientific Scene Explainer')) errors.push('BILDWELT.md enthält die aktive Bildwelt nicht.');
 if (!imageWorld.includes('so wenig Information wie möglich, so viel wie nötig')) errors.push('BILDWELT.md enthält die Informationsdichte-Regel nicht.');
 
-for (const command of ['science:new', 'science:preflight', 'science:ready', 'science:prepare', 'science:render', 'science:finish', 'science:system-test']) {
+for (const command of ['science:new', 'science:flow-master', 'science:preflight', 'science:ready', 'science:prepare', 'science:render', 'science:finish', 'science:system-test']) {
   if (!pkg.scripts?.[command]) errors.push(`package.json fehlt Befehl ${command}.`);
 }
 if (Object.keys(pkg.scripts ?? {}).some((name) => name.startsWith('electrical:') || name.startsWith('elektro:'))) errors.push('package.json enthält alte Elektro-Befehlsaliase.');
@@ -54,12 +57,12 @@ if (!pkg.devDependencies?.vitest) errors.push('vitest fehlt für Systemtests.');
 
 if (config.captions.highlightColor !== null || config.captions.backgroundBox !== false) errors.push('Untertitel müssen weiß ohne Hervorhebung und ohne Box bleiben.');
 if (config.captions.animated !== false) errors.push('Untertitel dürfen nicht animiert werden.');
-if (config.visuals.policyVersion !== 'science-static-v1') errors.push('Visual-Policy muss science-static-v1 sein.');
-if (config.visuals.productionMode !== 'image-first-static') errors.push('Produktionsmodus muss image-first-static sein.');
+if (config.visuals.policyVersion !== 'science-static-v1') errors.push('Remotion-Static-Policy muss science-static-v1 bleiben.');
+if (config.visuals.productionMode !== 'flow-mixed-assets') errors.push('Produktionsmodus muss flow-mixed-assets sein.');
 if (config.visuals.generatedImageTextPolicy !== 'controlled-german-only') errors.push('Generierter Bildtext muss kontrolliert und ausschließlich deutsch sein.');
 if (config.visuals.visibleImageLanguage !== 'de') errors.push('Sichtbare Bildsprache muss Deutsch sein.');
-if (config.visuals.animationAllowed !== false) errors.push('Animationen müssen global deaktiviert sein.');
-if (config.visuals.cameraMotionAllowed !== false) errors.push('Kamerabewegung muss global deaktiviert sein.');
+if (config.visuals.animationAllowed !== false) errors.push('Remotion-eigene Animationen müssen deaktiviert bleiben.');
+if (config.visuals.cameraMotionAllowed !== false) errors.push('Remotion-Kamerabewegung muss deaktiviert bleiben.');
 if (config.visuals.transitionPolicy !== 'hard-cut') errors.push('Szenenübergänge müssen harte Schnitte sein.');
 if (config.visuals.brandVisualStyleDefined !== true) errors.push('Scientific Scene Explainer muss als aktive Bildwelt markiert sein.');
 if (config.visuals.styleId !== 'scientific-scene-explainer-v1') errors.push('Aktive styleId muss scientific-scene-explainer-v1 sein.');
@@ -67,23 +70,44 @@ if (config.visuals.fullFrameContextPreferredWhenUseful !== true) errors.push('Vo
 if (config.visuals.fixedBackgroundForbidden !== true) errors.push('Ein fixer Hintergrund für alle Szenen darf nicht erzwungen werden.');
 if (config.visuals.humanFiguresAllowedWhenExplanatory !== true) errors.push('Erklärende stilisierte Menschen müssen erlaubt sein.');
 if (config.visuals.informationDensityPolicy !== 'minimum-necessary') errors.push('Informationsdichte muss minimum-necessary sein.');
-if (config.script.hook.firstFrameAnimationAllowed !== false) errors.push('Hook darf keine Animation erlauben.');
+if (config.script.hook.firstFrameAnimationAllowed !== false) errors.push('Hook startet als statisches Hauptmotiv; Flow-Animation darf nicht Voraussetzung für Frame 0 sein.');
 if (!config.safety?.riskyPhrases?.length) errors.push('Fachübergreifende Safety-Regeln fehlen.');
 if (config.electricalSafety) errors.push('Veraltete electricalSafety-Struktur darf nicht mehr existieren.');
 
+const flow = config.visuals.flow;
+if (!flow?.masterPromptRequired || !flow?.planRequired) errors.push('Flow-Plan und Masterprompt müssen verpflichtend sein.');
+if (!flow?.thumbnailFirst || !flow?.pauseAfterThumbnailCandidates) errors.push('Flow muss mit drei Thumbnails starten und danach auf die Nutzerauswahl warten.');
+if (!flow?.sequentialSceneGenerationRequired) errors.push('Flow-Szenen müssen strikt nacheinander erzeugt werden.');
+if (!flow?.baseStillRequiredForEveryBeat) errors.push('Jeder Beat muss zuerst ein Ausgangsbild erhalten.');
+if (!flow?.aiVideoAllowed || flow?.aiVideoMethod !== 'image-to-video') errors.push('Google-Flow-Image-to-Video muss erlaubt sein.');
+if (flow?.clipSecondsMax !== 10) errors.push('Flow-Clips müssen auf maximal 10 Sekunden begrenzt sein.');
+if (flow?.spokenDialogueAllowed !== false || flow?.lipSyncAllowed !== false) errors.push('Flow-Clips dürfen keine Sprecher/Lip-Sync enthalten.');
+if (flow?.remotionMayPlayFlowClips !== true || flow?.remotionMayGenerateMotion !== false) errors.push('Remotion muss Flow-Clips abspielen dürfen, aber keine eigene Motion erzeugen.');
+if (flow?.targetVideoRatio?.ideal !== 0.5) errors.push('Richtwert für den KI-Video-Anteil muss ungefähr 50 % sein.');
+
+if (!/drei.*thumbnail/is.test(flowWorkflow) || !/(STOPPEN|STOPP)/.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die Thumbnail-Stop-Regel nicht.');
+if (!/streng nacheinander/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die sequentielle Beat-Regel nicht.');
+if (!/image-to-video/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md dokumentiert Image-to-Video nicht.');
+if (!/GOOGLE-FLOW-MASTER-PROMPT\.txt/i.test(claude)) errors.push('CLAUDE.md verlangt den Flow-Masterprompt nicht.');
+if (!/flow-plan\.json/i.test(claude)) errors.push('CLAUDE.md verlangt flow-plan.json nicht.');
+if (!flowBuilder.includes('STOPP') || !flowBuilder.includes('image-to-video')) errors.push('Flow-Master-Builder enthält die zentralen Workflowregeln nicht.');
+
 if (!scienceReel.includes("./generated/science-runtime.json")) errors.push('ScienceReel muss science-runtime.json laden.');
 if (scienceReel.includes("./generated/reel-runtime.json")) errors.push('ScienceReel darf nicht an einer alten Runtime hängen.');
+if (!scienceReel.includes('OffthreadVideo')) errors.push('ScienceReel muss fertige Google-Flow-Clips abspielen können.');
+if (!scienceReel.includes('muted')) errors.push('Google-Flow-Clips müssen ohne eigenes Dialog-Audio abgespielt werden.');
 if (!template.includes("runtimeFile:'science-runtime.json'")) errors.push('Neue Science-Scaffolds müssen science-runtime.json verwenden.');
 if (!template.includes("productionProfile:'youtube-2min-v1'")) errors.push('Scene-Template muss das 2-Minuten-Profil referenzieren.');
 if (!template.includes("width:1920") || !template.includes("height:1080")) errors.push('Scene-Template muss 1920×1080 erzeugen.');
 if (!template.includes("referenceGroup:'scientific-scene-explainer'")) errors.push('Scene-Template muss die aktive Bildwelt referenzieren.');
+if (!newVideo.includes('flow-plan.json') || !newVideo.includes('GOOGLE-FLOW-MASTER-PROMPT.txt')) errors.push('Neue Video-Scaffolds müssen Flow-Plan und Masterprompt anlegen.');
 if (!processVoice.includes('loudnorm=I=')) errors.push('Voice-Verarbeitung enthält keine Loudness-Normalisierung.');
 if (!renderQa.includes('blackdetect') || !renderQa.includes('silencedetect')) errors.push('Render-QA muss Schwarzbild- und Randstille-Prüfung enthalten.');
-if (!renderQa.includes('freezeDetectionEnabled: false')) errors.push('Science Static muss Freeze Detection ausdrücklich deaktivieren.');
+if (!renderQa.includes('freezeDetectionEnabled: false')) errors.push('Freeze Detection bleibt deaktiviert, da statische Bilder im Medienmix erlaubt sind.');
 
 if (errors.length) {
   console.error('Konsistenzprüfung fehlgeschlagen:');
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log('✓ youtube-2min-v1, Themenprofil, 16:9-Longform, Audio und Scientific Scene Explainer sind konsistent.');
+console.log('✓ youtube-2min-v1, Google-Flow-Mischpipeline, 16:9, Audio und Scientific Scene Explainer sind konsistent.');
