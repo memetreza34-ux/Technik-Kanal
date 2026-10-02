@@ -71,7 +71,7 @@
   },
   "visuals": {
     "policyVersion": "science-static-v1",
-    "productionMode": "image-first-static",
+    "productionMode": "flow-mixed-assets",
     "beats": {"min": 12, "ideal": 20, "max": 28},
     "maximumTextOnlyScenesPerVideo": 0,
     "frameZeroMustContainMainMotif": true,
@@ -88,7 +88,25 @@
     "fixedBackgroundForbidden": true,
     "humanFiguresAllowedWhenExplanatory": true,
     "informationDensityPolicy": "minimum-necessary",
-    "visibleImageLanguage": "de"
+    "visibleImageLanguage": "de",
+    "flow": {
+      "masterPromptRequired": true,
+      "planRequired": true,
+      "thumbnailFirst": true,
+      "pauseAfterThumbnailCandidates": true,
+      "useSelectedThumbnailAsVisualReference": true,
+      "sequentialSceneGenerationRequired": true,
+      "baseStillRequiredForEveryBeat": true,
+      "aiVideoAllowed": true,
+      "aiVideoMethod": "image-to-video",
+      "clipSecondsMax": 10,
+      "spokenDialogueAllowed": false,
+      "lipSyncAllowed": false,
+      "newTextDuringAnimationAllowed": false,
+      "targetVideoRatio": {"min": 0.4, "ideal": 0.5, "max": 0.6},
+      "remotionMayPlayFlowClips": true,
+      "remotionMayGenerateMotion": false
+    }
   },
   "textQuality": {
     "headlineWordsMax": 10,
