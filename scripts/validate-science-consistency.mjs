@@ -85,7 +85,7 @@ if (flow?.spokenDialogueAllowed !== false || flow?.lipSyncAllowed !== false) err
 if (flow?.remotionMayPlayFlowClips !== true || flow?.remotionMayGenerateMotion !== false) errors.push('Remotion muss Flow-Clips abspielen dürfen, aber keine eigene Motion erzeugen.');
 if (flow?.targetVideoRatio?.ideal !== 0.5) errors.push('Richtwert für den KI-Video-Anteil muss ungefähr 50 % sein.');
 
-if (!/drei.*thumbnail/is.test(flowWorkflow) || !/(STOPPEN|STOPP)/.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die Thumbnail-Stop-Regel nicht.');
+if (!/(drei|3).*thumbnail/is.test(flowWorkflow) || !/(STOPPEN|STOPP)/i.test(flowWorkflow) || !/(auswahl|ausgewählt|warten)/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die Thumbnail-Stop-Regel nicht.');
 if (!/streng nacheinander/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die sequentielle Beat-Regel nicht.');
 if (!/image-to-video/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md dokumentiert Image-to-Video nicht.');
 if (!/GOOGLE-FLOW-MASTER-PROMPT\.txt/i.test(claude)) errors.push('CLAUDE.md verlangt den Flow-Masterprompt nicht.');
