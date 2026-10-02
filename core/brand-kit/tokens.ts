@@ -14,18 +14,18 @@ export const SCIENCE_COLORS = {
 
 export const SCIENCE_TYPOGRAPHY = {
   family: 'Arial, Helvetica, sans-serif',
-  kicker: 27,
-  headline: 68,
-  caption: 56,
+  kicker: 24,
+  headline: 72,
+  caption: 48,
 } as const;
 
 export const SCIENCE_FORMAT = {
-  width: 1080,
-  height: 1920,
+  width: 1920,
+  height: 1080,
   fps: 30,
-  headlineSafeTop: 90,
-  captionBottom: 285,
-  horizontalSafe: 72,
+  headlineSafeTop: 48,
+  captionBottom: 72,
+  horizontalSafe: 96,
 } as const;
 
 export const SCIENCE_SHADOWS = {
