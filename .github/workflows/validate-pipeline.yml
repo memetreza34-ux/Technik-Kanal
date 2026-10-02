@@ -19,10 +19,10 @@ jobs:
         with:
           node-version: 22
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
       - name: Node script syntax
         run: npm run validate:science-syntax
-      - name: Reel folder contract
+      - name: Video folder contract
         run: npm run validate:science-template
       - name: System structure
         run: npm run validate:science-system
@@ -43,7 +43,7 @@ jobs:
         with:
           node-version: 22
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
       - name: TypeScript
         run: npm run typecheck
       - name: Vitest
@@ -61,14 +61,14 @@ jobs:
         with:
           node-version: 22
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
       - name: Science scaffold transaction
         run: npm run science:scaffold-test
       - name: Science E2E contracts
         run: npm run science:e2e
 
   remotion-smoke:
-    name: ScienceReel smoke
+    name: Science 16:9 smoke
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -79,6 +79,6 @@ jobs:
         with:
           node-version: 22
       - name: Install dependencies
-        run: npm install
-      - name: Static ScienceReel smoke still
+        run: npm install --legacy-peer-deps
+      - name: Static 16:9 Science smoke still
         run: npm run smoke
