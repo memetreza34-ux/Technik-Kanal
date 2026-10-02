@@ -6,104 +6,129 @@ Der Kanal ist bewusst kein allgemeines Wissenschaftslexikon. Bevorzugt werden ko
 
 Biologie, Medizin, Anatomie, Krankheiten, Zellbiologie, DNA/Genetik und Biochemie gehören nicht zur regulären Kanalrichtung. Stark abstrakte Wissenschaftsthemen mit hohem Vorwissen-Bedarf sind ebenfalls nicht vorgesehen.
 
-Leitfrage für neue Themen:
+## Aktives Produktionsprofil
 
-> Kann ein Jugendlicher ohne großes Vorwissen nach einem kurzen Reel etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
+**`youtube-2min-v1`**
 
-Das Repository ist **Science-only**. Frühere Elektro-Testreels, Remotion-Animationen, Mechanismus-Canvases, Layout-Gallery und sonstige Legacy-Bestände sind aus dem aktiven Branch entfernt.
+- normales YouTube-Video, kein Reel
+- 1920×1080 / 16:9 / 30 fps
+- 90–150 Sekunden, 120 Sekunden ideal
+- 230–370 Wörter, 300 ideal
+- 12–28 visuelle Beats, 20 ideal
+- separates 1280×720-Thumbnail mit drei Kandidaten
+- statische Bilder + harte Schnitte
+
+Der spätere Ausbau auf etwa 8–12 Minuten bekommt ein eigenes Profil. Das aktuelle 2-Minuten-System wird zuerst vollständig getestet.
 
 ## Produktionsfluss
 
 ```text
 Thema gegen Kanalrahmen prüfen
+→ zentrale Frage
+→ Titel-/Thumbnail-Versprechen
 → Recherche + Quellen
-→ deutsches Skript
-→ Szenenplanung pro Aussage
-→ Scientific Scene Explainer anwenden
-→ Bildprompts erstellen
+→ Story-Struktur
+→ vollständiges deutsches Skript
+→ visuelle Aussagen/Beats
+→ Scientific Scene Explainer
+→ Bild- + Thumbnail-Prompts
 → Preflight
-→ Bilder
+→ Bilder + 3 Thumbnail-Kandidaten
 → Voice-over
 → Asset-Readiness
 → lokale Wort-Zeitstempel
 → Skript-/Voice-Ausrichtung
-→ statische Bildmontage
+→ statische 16:9-Montage
 → Untertitel + optionale SFX
 → Render
 → QA
 ```
 
+## Story-System
+
+Detailregeln: `channels/science/gehirn/LONGFORM.md`.
+
+Verbindliche Dramaturgie:
+
+**Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff**
+
+Nicht automatisch ein Satz pro Bild. **Eine verständliche visuelle Aussage = ein Beat.**
+
 ## Aktive Bildwelt
 
-Die verbindliche Bildwelt ist **Scientific Scene Explainer v1** (`scientific-scene-explainer-v1`). Die Detailregeln stehen in `channels/science/gehirn/BILDWELT.md`.
+Die verbindliche Bildwelt ist **Scientific Scene Explainer v1** (`scientific-scene-explainer-v1`). Detailregeln: `channels/science/gehirn/BILDWELT.md`.
 
 Kernprinzip:
 
-> Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die genau den gesprochenen Satz erklärt.
+> Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die die konkrete Aussage des Beats erklärt.
 
 Wichtige Regeln:
-
 - eine Hauptaussage pro Bild
 - ganze Orte/Umgebungen nutzen, wenn sie das Verständnis verbessern
 - wissenschaftliche Erklärung direkt in die Szene integrieren, wenn sinnvoll
-- Illustration, Cutaway, Mikroansicht, Vergleich oder stilisierte erwachsene Menschen nur nach inhaltlichem Bedarf einsetzen
-- Hintergründe und Farben passend zum Thema wählen; kein fixer Navy-Hintergrund
+- Illustration, Cutaway, Detailansicht, Vergleich oder stilisierte erwachsene Menschen nur nach inhaltlichem Bedarf einsetzen
+- Hintergründe und Farben passend zum Thema wählen
 - Titel, Labels, Merksatz, Zahlen, Pfeile und Infotext sind optional
 - sichtbarer Bildtext ausschließlich auf Deutsch
 - so wenig Information wie möglich, so viel wie nötig
 - keine generische KI-Kunst, Sci-Fi-HUDs, Neon-Überladung, Logos oder Wasserzeichen
 
-Die technischen Bildregeln bleiben: 9:16, ein statisches Bild pro Beat, Bild 01 als erster Shot und Coverquelle und keine Remotion-Kamerabewegung.
+## Thumbnail
 
-## Neuer Reel
+Bild 01 ist **nicht** mehr das Thumbnail.
+
+Für jedes Video werden drei separate 1280×720-Kandidaten geplant und ein Gewinner gewählt. Titel, Thumbnail und Hook müssen dasselbe inhaltliche Versprechen geben.
+
+## Neues Video
 
 ```bash
 npm run science:new -- \
   --week=2026-10-01_bis_2026-10-07 \
   --slot=01 \
-  --title="Warum ist der Himmel blau?" \
-  --hook="Warum ist der Himmel blau?" \
-  --scenes=10
+  --title="Wie funktioniert ein Induktionsherd?" \
+  --hook="Wie funktioniert ein Induktionsherd?" \
+  --scenes=20
 ```
 
-Neue Reels werden bereits mit `scientific-scene-explainer-v1` angelegt.
+Der Ordnername `reels/` und die Composition `ScienceReel` bleiben vorerst nur aus Rückwärtskompatibilität bestehen.
 
 ## Preflight
 
 ```bash
-npm run science:preflight -- "<reel-ordner>"
+npm run science:preflight -- "<video-ordner>"
 ```
 
-Der Preflight prüft Skript, Quellen, Szenenplanung, Bildprompt-Dateien und die benötigten Produktionsdateien. Sichtbarer Bildtext muss der aktiven Deutsch-only-Regel entsprechen.
+Der Preflight prüft Story-/Skriptstruktur, Quellen, Szenenplanung, Bildprompts, Thumbnail-Prompt und Produktionsdateien.
 
 ## Asset-Readiness
 
 ```bash
-npm run science:ready -- "<reel-ordner>"
+npm run science:ready -- "<video-ordner>"
 ```
 
-Danach müssen Voice und genau ein freigegebenes statisches Bild pro Beat vorhanden sein. Bei mehreren Bildkandidaten muss exakt eines als `final`, `approved` oder `freigabe` markiert sein.
+Danach müssen Voice, genau ein freigegebenes statisches 16:9-Bild pro Beat sowie mindestens drei Thumbnail-Kandidaten mit genau einem finalen Gewinner vorhanden sein.
 
 ## Fertigstellen
 
 ```bash
-npm run science:finish -- "<reel-ordner>"
+npm run science:finish -- "<video-ordner>"
 ```
 
-Die Pipeline verarbeitet die Voice auf exakt 1,10×, normalisiert die Lautheit, erstellt lokale Wortzeiten mit `whisper.cpp`, synchronisiert Bilder und Untertitel, rendert `ScienceReel` und führt Render-QA aus.
+Die Pipeline verarbeitet die Voice auf exakt 1,10×, normalisiert die Lautheit, erstellt lokale Wortzeiten mit `whisper.cpp`, synchronisiert Bilder und Untertitel, rendert 1920×1080 und führt Render-QA aus.
 
-## Referenzprojekt
+## Altes Referenzprojekt
 
 `channels/science/reels/2026-09-28_bis_2026-10-04/01_Warum-ist-der-Himmel-blau/`
 
-Das Projekt bleibt Referenz für Recherche, Quellen, Skript und Szenenplan. Die frühere Bildwelt und ihre alten Bildprompts bleiben entfernt. Neue Visuals für dieses Referenzprojekt müssen nach `Scientific Scene Explainer v1` neu geplant werden.
+Dieses Projekt bleibt nur als **Legacy-Referenz für Recherche/Quellen** erhalten. Es entspricht noch nicht dem neuen `youtube-2min-v1`-Produktionsvertrag und darf nicht als fertige Longform-Vorlage behandelt werden.
 
 ## Aktive Architektur
 
 - Kanal: `channels/science/`
 - Zielgruppe: Jugendliche und junge Erwachsene
 - Themenprofil: Alltagswissenschaft & Technik
-- Renderer: `ScienceReel`
+- Produktionsprofil: `youtube-2min-v1`
+- Renderer: intern weiterhin `ScienceReel`
 - Runtime: `science-runtime.json`
 - technische Visual Policy: `science-static-v1`
 - Bildwelt: `scientific-scene-explainer-v1`
