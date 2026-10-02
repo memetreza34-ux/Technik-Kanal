@@ -77,17 +77,25 @@ if (config.electricalSafety) errors.push('Veraltete electricalSafety-Struktur da
 const flow = config.visuals.flow;
 if (!flow?.masterPromptRequired || !flow?.planRequired) errors.push('Flow-Plan und Masterprompt müssen verpflichtend sein.');
 if (!flow?.thumbnailFirst || !flow?.pauseAfterThumbnailCandidates) errors.push('Flow muss mit drei Thumbnails starten und danach auf die Nutzerauswahl warten.');
-if (!flow?.sequentialSceneGenerationRequired) errors.push('Flow-Szenenbilder müssen streng nacheinander erzeugt werden.');
+if (flow?.imageProductionSteps !== 5) errors.push('Nach der Cover-Auswahl müssen genau fünf Bild-Produktionsschritte verwendet werden.');
+if (flow?.balancedImageStepGrouping !== true) errors.push('Die fünf Bildschritte müssen möglichst gleichmäßig verteilt werden.');
+if (flow?.pauseAfterEachImageProductionStep !== true) errors.push('Nach jedem Bildschritt muss auf die Freigabe des Nutzers gewartet werden.');
+if (!flow?.sequentialSceneGenerationRequired) errors.push('Innerhalb jedes Bildschritts müssen Bilder streng nacheinander erzeugt werden.');
 if (!flow?.oneImagePerBeatRequired || !flow?.baseStillRequiredForEveryBeat) errors.push('Jeder Beat muss genau ein finales Ausgangsbild erhalten.');
 if (flow?.imageOnly !== true || flow?.aiVideoAllowed !== false || flow?.clipsAllowed !== false) errors.push('Google Flow muss strikt auf statische Bilder begrenzt sein.');
 if (flow?.remotionMayPlayFlowClips !== false || flow?.remotionMayGenerateMotion !== false) errors.push('Remotion darf weder Flow-Clips abspielen noch Motion erzeugen.');
 
 if (!/(drei|3).*thumbnail/is.test(flowWorkflow) || !/(STOPPEN|STOPP)/.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die Thumbnail-Stop-Regel nicht.');
-if (!/streng einzeln nacheinander/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die sequentielle Bildregel nicht.');
+if (!/genau fünf Schritte|genau 5.*Schritt/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die verbindlichen fünf Bildschritte nicht.');
+if (!/streng einzeln nacheinander/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die sequentielle Bildregel innerhalb der Schritte nicht.');
+if (!/nach jedem.*Bildschritt.*STOPP|STOPP.*Bildschritt/is.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md enthält die Stop-Regel zwischen den fünf Bildschritten nicht.');
 if (!/ausschließlich statische Bilder/i.test(flowWorkflow) || !/keine KI-Videoclips/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW.md dokumentiert den reinen Bild-Workflow nicht eindeutig.');
 if (!/GOOGLE-FLOW-MASTER-PROMPT\.txt/i.test(claude)) errors.push('CLAUDE.md verlangt den Flow-Masterprompt nicht.');
 if (!/flow-plan\.json/i.test(claude)) errors.push('CLAUDE.md verlangt flow-plan.json nicht.');
+if (!/genau 5 Bildschritte/i.test(claude)) errors.push('CLAUDE.md dokumentiert die fünf Bildschritte nicht.');
 if (!flowBuilder.includes('NUR BILDER')) errors.push('Flow-Master-Builder enthält die Nur-Bilder-Regel nicht.');
+if (!flowBuilder.includes('imageProductionSteps')) errors.push('Flow-Master-Builder berücksichtigt die fünf Bildschritte nicht.');
+if (!flowBuilder.includes('STOPP NACH BILDSCHRITT')) errors.push('Flow-Master-Builder erzwingt keinen Stopp zwischen Bildschritten.');
 if (flowBuilder.includes('image-to-video')) errors.push('Flow-Master-Builder darf keine Image-to-Video-Logik enthalten.');
 
 if (!scienceReel.includes("./generated/science-runtime.json")) errors.push('ScienceReel muss science-runtime.json laden.');
@@ -98,6 +106,7 @@ if (!template.includes("productionProfile:'youtube-2min-v1'")) errors.push('Scen
 if (!template.includes("width:1920") || !template.includes("height:1080")) errors.push('Scene-Template muss 1920×1080 erzeugen.');
 if (!template.includes("referenceGroup:'scientific-scene-explainer'")) errors.push('Scene-Template muss die aktive Bildwelt referenzieren.');
 if (!newVideo.includes('flow-plan.json') || !newVideo.includes('GOOGLE-FLOW-MASTER-PROMPT.txt')) errors.push('Neue Video-Scaffolds müssen Flow-Plan und Masterprompt anlegen.');
+if (!newVideo.includes('imageProductionSteps=5') || !newVideo.includes('pauseAfterEachImageStep:true')) errors.push('Neue Video-Scaffolds müssen automatisch fünf Bildschritte mit Stopps anlegen.');
 if (newVideo.includes('02-bilder/videos') || newVideo.includes('image-to-video')) errors.push('Neue Video-Scaffolds dürfen keine KI-Video-Struktur anlegen.');
 if (!processVoice.includes('loudnorm=I=')) errors.push('Voice-Verarbeitung enthält keine Loudness-Normalisierung.');
 if (!renderQa.includes('blackdetect') || !renderQa.includes('silencedetect')) errors.push('Render-QA muss Schwarzbild- und Randstille-Prüfung enthalten.');
@@ -108,4 +117,4 @@ if (errors.length) {
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log('✓ youtube-2min-v1, Google-Flow-Bildpipeline, 16:9, Audio und Scientific Scene Explainer sind konsistent.');
+console.log('✓ youtube-2min-v1, fünfstufige Google-Flow-Bildpipeline, 16:9, Audio und Scientific Scene Explainer sind konsistent.');
