@@ -5,14 +5,14 @@ import path from 'node:path';
 import {electricalProjectPaths,assertElectricalProjectStructure} from './lib/electrical-project-structure.mjs';
 
 const [projectArg]=process.argv.slice(2).filter((arg)=>!arg.startsWith('--'));
-if(!projectArg){console.error('Nutzung: npm run science:preflight -- <reel-ordner>');process.exit(1);}
+if(!projectArg){console.error('Nutzung: npm run science:preflight -- <video-ordner>');process.exit(1);}
 const root=path.resolve(projectArg);
 assertElectricalProjectStructure(root);
 const paths=electricalProjectPaths(root);
 const checks=[
   ['script-qa','scripts/science-script-qa.mjs'],
   ['creative-qa','scripts/science-creative-qa.mjs'],
-  ['static-quality','scripts/science-static-quality.mjs'],
+  ['base-image-quality','scripts/science-static-quality.mjs'],
   ['overlay-qa','scripts/science-overlay-qa.mjs'],
   ['content-package','scripts/science-content-package.mjs']
 ];
@@ -22,7 +22,7 @@ for(const [id,script] of checks){
   results.push({id,passed:result.status===0,exitCode:result.status??1});
 }
 const passed=results.every((result)=>result.passed);
-const report={version:'science-v1',generatedAt:new Date().toISOString(),passed,phase:passed?'assets-may-be-created':'blocked-before-assets',results,rule:'Keine Bilder oder Audio produzieren, bevor Skript, Quellen, statische Bilddramaturgie und Inhalt geprüft sind.'};
+const report={version:'science-v1',generatedAt:new Date().toISOString(),passed,phase:passed?'flow-assets-may-be-created':'blocked-before-assets',results,rule:'Keine Medien produzieren, bevor Skript, Quellen, visuelle Beats, Einzelprompts, flow-plan.json und GOOGLE-FLOW-MASTER-PROMPT.txt geprüft sind.'};
 fs.writeFileSync(path.join(paths.projectDir,'preproduction-report.json'),`${JSON.stringify(report,null,2)}\n`);
-if(!passed){console.error('Science-Preflight fehlgeschlagen. Produktion noch nicht starten.');process.exit(1);}
-console.log('✓ Science-Preflight bestanden. Bilder und Voice dürfen jetzt produziert werden.');
+if(!passed){console.error('Science-Preflight fehlgeschlagen. Google-Flow-Produktion noch nicht starten.');process.exit(1);}
+console.log('✓ Science-Preflight bestanden. Jetzt zuerst drei Thumbnails in Flow erzeugen, Nutzerauswahl abwarten und danach die Beats einzeln nacheinander produzieren.');
