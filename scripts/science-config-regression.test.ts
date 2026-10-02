@@ -5,8 +5,13 @@ describe('science config regression', () => {
   it('keeps the binding production rules', () => {
     const config = loadElectricalConfig();
     expect(config.version).toBe('science-v1');
+    expect(config.productionProfile).toBe('youtube-2min-v1');
     expect(config.voice.speed).toBe(1.1);
-    expect(config.format).toMatchObject({width: 1080, height: 1920, fps: 30});
+    expect(config.format).toMatchObject({width: 1920, height: 1080, fps: 30, aspectRatio: '16:9'});
+    expect(config.format.durationSeconds).toEqual({min: 90, ideal: 120, max: 150});
+    expect(config.script.words).toEqual({min: 230, ideal: 300, max: 370});
+    expect(config.script.narrativeStructure).toEqual(['hook','context','foundation','mechanism','deepening','payoff']);
+    expect(config.visuals.beats).toEqual({min: 12, ideal: 20, max: 28});
     expect(config.topicScope.identity).toBe('alltagswissenschaft-und-technik');
     expect(config.topicScope.audience).toBe('jugendliche-und-junge-erwachsene');
     expect(config.topicScope.concreteAndVisualPreferred).toBe(true);
@@ -27,6 +32,9 @@ describe('science config regression', () => {
     expect(config.visuals.styleId).toBe('scientific-scene-explainer-v1');
     expect(config.visuals.generatedImageTextPolicy).toBe('controlled-german-only');
     expect(config.visuals.visibleImageLanguage).toBe('de');
+    expect(config.visuals.coverUsesFirstScene).toBe(false);
+    expect(config.visuals.separateThumbnailForbidden).toBe(false);
+    expect(config.visuals.thumbnail).toEqual({required:true,width:1280,height:720,candidateCount:3});
     expect(config.visuals.fullFrameContextPreferredWhenUseful).toBe(true);
     expect(config.visuals.fixedBackgroundForbidden).toBe(true);
     expect(config.visuals.humanFiguresAllowedWhenExplanatory).toBe(true);
