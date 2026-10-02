@@ -28,7 +28,7 @@ import {
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
 if (!projectArg) {
-  console.error('Nutzung: npm run elektro:prepare -- <reel-ordner> [--force-transcribe]');
+  console.error('Nutzung: npm run science:prepare -- <video-ordner> [--force-transcribe]');
   process.exit(1);
 }
 
@@ -73,6 +73,7 @@ const plan = readJson(paths.scenePlan);
 if (!Array.isArray(plan.scenes) || plan.scenes.length < 2) throw new Error('scene-plan.json enthält keine gültigen Szenen.');
 const fps = Number(plan.fps ?? 30);
 if (!Number.isFinite(fps) || fps <= 0) throw new Error('Ungültige FPS im Szenenplan.');
+if (Number(plan.width) !== 1920 || Number(plan.height) !== 1080) throw new Error('Aktives Science-Video muss 1920×1080 / 16:9 sein.');
 const slug = String(plan.slug ?? path.basename(paths.root)).trim();
 if (!slug) throw new Error('Szenenplan benötigt einen slug.');
 
@@ -228,11 +229,11 @@ for (let index = 0; index < plan.scenes.length; index += 1) {
   const selected = images.find((file) => /(?:final|approved|freigabe)/i.test(path.basename(file))) ?? images[0];
   const metadata = imageMetadata(selected);
   const aspect = metadata.width / metadata.height;
-  if (metadata.width < 720 || metadata.height < 1280) {
+  if (metadata.width < 1280 || metadata.height < 720) {
     throw new Error(`Bild zu klein (${metadata.width}×${metadata.height}) für Szene ${scene.id}: ${selected}`);
   }
-  if (aspect < 0.48 || aspect > 0.68) {
-    throw new Error(`Bildformat für Szene ${scene.id} ist nicht reel-tauglich (${metadata.width}×${metadata.height}).`);
+  if (aspect < 1.70 || aspect > 1.85) {
+    throw new Error(`Bildformat für Szene ${scene.id} ist nicht 16:9-tauglich (${metadata.width}×${metadata.height}).`);
   }
   const digest = hash(selected);
   if (usedImageHashes.has(digest)) {
@@ -319,7 +320,7 @@ writeJson(paths.captionsJson, {
   source: 'local-whisper.cpp-word-timestamps',
   voiceSpeed: 1.10,
   durationSeconds: Number(durationSeconds.toFixed(3)),
-  style: {color: 'white', highlightColor: null, backgroundBox: false, maxLines: 2, verticalPositionPercent: 76},
+  style: {color: 'white', highlightColor: null, backgroundBox: false, maxLines: 2, verticalPositionPercent: 90},
   captions,
 });
 
@@ -374,10 +375,10 @@ const totalFrames = Math.ceil(durationSeconds * fps);
 const runtime = {
   version: 1,
   slug,
-  compositionId: String(plan.compositionId ?? 'SicherungsReel'),
+  compositionId: String(plan.compositionId ?? 'ScienceReel'),
   fps,
-  width: Number(plan.width ?? 1080),
-  height: Number(plan.height ?? 1920),
+  width: Number(plan.width ?? 1920),
+  height: Number(plan.height ?? 1080),
   totalFrames,
   durationSeconds: Number(durationSeconds.toFixed(3)),
   voiceoverPath: `reels/${slug}/audio/voiceover-final.wav`,
@@ -413,10 +414,10 @@ writeJson(paths.readinessReport, {
   warnings,
 });
 
-console.log('✓ Reel vollständig vorbereitet.');
+console.log('✓ YouTube-Science-Video vollständig vorbereitet.');
 console.log(`  Voice: ${durationSeconds.toFixed(3)} s bei 1,10×`);
 console.log(`  Worttreffer: ${(matchRatio * 100).toFixed(1)} %`);
-console.log(`  Szenen: ${alignedScenes.length}`);
+console.log(`  Visuelle Beats: ${alignedScenes.length}`);
 console.log(`  Bilder: ${alignedScenes.length}`);
 console.log(`  Caption-Blöcke: ${captions.length}`);
 console.log(`  Runtime: ${generatedRuntime}`);
