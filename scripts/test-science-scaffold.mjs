@@ -8,16 +8,19 @@ import {ELECTRICAL_REEL_DIRECTORIES, checkElectricalProjectStructure} from './li
 const root = fs.mkdtempSync(path.join(os.tmpdir(), 'science-scaffold-'));
 try {
   for (const relative of ELECTRICAL_REEL_DIRECTORIES) fs.mkdirSync(path.join(root, relative), {recursive: true});
-  const plan = createElectricalScenePlanTemplate({slug: 'science-scaffold-test', sceneCount: 8});
-  if (plan.scenes.length !== 8) throw new Error('Science-Template hat nicht acht Testszenen.');
+  const plan = createElectricalScenePlanTemplate({slug: 'science-scaffold-test', sceneCount: 20});
+  if (plan.scenes.length !== 20) throw new Error('Science-Template hat nicht zwanzig Standard-Beats.');
+  if (plan.productionProfile !== 'youtube-2min-v1') throw new Error('youtube-2min-v1 fehlt im Scaffold.');
+  if (plan.width !== 1920 || plan.height !== 1080) throw new Error('Scaffold ist nicht 1920×1080.');
   if (plan.visualPolicyVersion !== 'science-static-v1') throw new Error('Science-Static-Policy fehlt im Scaffold.');
   if (plan.compositionId !== 'ScienceReel') throw new Error('ScienceReel fehlt im Scaffold.');
+  if (plan.scenes[0]?.section !== 'hook' || plan.scenes.at(-1)?.section !== 'payoff') throw new Error('Dramaturgie-Abschnitte fehlen im Scaffold.');
   if (plan.scenes.some((scene) => scene.renderMode !== 'image-only' || scene.motionLevel !== 'none')) {
     throw new Error('Scaffold erzeugt unerlaubte bewegte oder nicht bildgeführte Szenen.');
   }
   const structure = checkElectricalProjectStructure(root, {requireContent: false});
   if (!structure.ok) throw new Error(`Scaffold-Struktur unvollständig: ${structure.missingDirectories.join(', ')}`);
-  console.log('✓ Science-Scaffold erzeugt den vollständigen statischen Produktionsordnervertrag.');
+  console.log('✓ Science-Scaffold erzeugt 20 statische 16:9-Beats plus Thumbnail-Struktur.');
 } finally {
   fs.rmSync(root, {recursive: true, force: true});
 }
