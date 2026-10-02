@@ -15,6 +15,7 @@ const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan,'utf8'))
 const errors = [];
 const warnings = [];
 const layouts = new Set();
+const normalize = (value) => String(value ?? '').replace(/\s+/g,' ').trim().toLowerCase();
 
 for (const scene of plan.scenes) {
   if (scene.layout) layouts.add(scene.layout);
@@ -55,26 +56,73 @@ else {
   if (!/(3|drei).*(Kandidat|Variante)|candidate/i.test(thumbnailPrompt)) warnings.push('Thumbnail-Prompt sollte drei Kandidaten/Varianten vorsehen.');
 }
 
-const combinedFile = path.join(paths.root,'02-bilder','ALLE-BILDPROMPTS-MIT-THUMBNAIL.txt');
-if (!fs.existsSync(combinedFile)) errors.push('Gesamt-Promptdatei ALLE-BILDPROMPTS-MIT-THUMBNAIL.txt fehlt.');
+let flowPlan = null;
+if (!fs.existsSync(paths.flowPlan)) errors.push('flow-plan.json fehlt. Jedes aktive Video benötigt eine bewusste Bild/Video-Entscheidung pro Beat.');
 else {
-  const combined = fs.readFileSync(combinedFile,'utf8');
-  const normalize = (value) => String(value).replace(/\s+/g,' ').trim().toLowerCase();
-  if (thumbnailPrompt && !normalize(combined).includes(normalize(thumbnailPrompt))) errors.push('Thumbnail-Prompt fehlt in der Gesamtdatei.');
+  try { flowPlan = JSON.parse(fs.readFileSync(paths.flowPlan,'utf8')); }
+  catch (error) { errors.push(`flow-plan.json ist ungültig: ${error.message}`); }
+}
+
+const flowEntries = Array.isArray(flowPlan?.scenes) ? flowPlan.scenes : [];
+const flowById = new Map(flowEntries.map((entry)=>[entry.id,entry]));
+let videoCount = 0;
+if (flowPlan) {
+  if (flowEntries.length !== plan.scenes.length) errors.push(`flow-plan.json enthält ${flowEntries.length} Beats; erwartet ${plan.scenes.length}.`);
   for (const scene of plan.scenes) {
-    if (promptFiles[scene.id] && !normalize(combined).includes(normalize(promptFiles[scene.id]))) errors.push(`${scene.id}: Prompt fehlt in der Gesamtdatei.`);
+    const entry = flowById.get(scene.id);
+    if (!entry) { errors.push(`${scene.id}: Eintrag im flow-plan.json fehlt.`); continue; }
+    if (!['image','image-to-video'].includes(entry.output)) {
+      errors.push(`${scene.id}: Flow-output muss final als image oder image-to-video festgelegt sein.`);
+      continue;
+    }
+    if (entry.output === 'image-to-video') {
+      videoCount += 1;
+      if (!String(entry.motionPrompt ?? '').trim()) errors.push(`${scene.id}: motionPrompt für Image-to-Video fehlt.`);
+      const seconds = Number(entry.clipSeconds ?? 0);
+      if (!Number.isFinite(seconds) || seconds <= 0 || seconds > config.visuals.flow.clipSecondsMax) errors.push(`${scene.id}: clipSeconds muss 1–${config.visuals.flow.clipSecondsMax} sein.`);
+      if (!String(entry.videoDir ?? '').trim()) errors.push(`${scene.id}: videoDir fehlt.`);
+    }
+  }
+  if (videoCount === 0) errors.push('Flow-Plan enthält keinen einzigen KI-Video-Beat. Die aktive Pipeline ist bewusst gemischt aus Bildern und Flow-Clips.');
+  const ratio = plan.scenes.length ? videoCount / plan.scenes.length : 0;
+  const target = config.visuals.flow.targetVideoRatio;
+  if (ratio < target.min || ratio > target.max) warnings.push(`KI-Video-Anteil ${(ratio*100).toFixed(0)} % liegt außerhalb des Richtwerts ${(target.min*100).toFixed(0)}–${(target.max*100).toFixed(0)} %. Inhaltliche Klarheit darf die Quote überstimmen.`);
+}
+
+const flowMaster = fs.existsSync(paths.flowMaster) ? fs.readFileSync(paths.flowMaster,'utf8') : '';
+if (!flowMaster) errors.push('GOOGLE-FLOW-MASTER-PROMPT.txt fehlt.');
+else {
+  if (/NOCH NICHT FINAL|PLACEHOLDER|ERGÄNZEN/i.test(flowMaster)) errors.push('Google-Flow-Masterprompt ist noch nicht final.');
+  if (!/(drei|3).*thumbnail/i.test(flowMaster)) errors.push('Flow-Masterprompt muss zuerst drei Thumbnail-Kandidaten verlangen.');
+  if (!/(stopp|stop).*auswahl|auswahl.*warten/i.test(flowMaster)) errors.push('Flow-Masterprompt muss nach den drei Thumbnails auf die Nutzerauswahl warten.');
+  if (!/(nacheinander|streng einzeln|beat 01.*beat 02)/is.test(flowMaster)) errors.push('Flow-Masterprompt muss Szenen strikt nacheinander erzeugen lassen.');
+  if (!/(image-to-video|ki-clip|flow-clip)/i.test(flowMaster)) errors.push('Flow-Masterprompt dokumentiert die KI-Video-Schritte nicht.');
+  if (thumbnailPrompt && !normalize(flowMaster).includes(normalize(thumbnailPrompt))) errors.push('Thumbnail-Prompt fehlt im Google-Flow-Masterprompt.');
+  for (const scene of plan.scenes) {
+    if (promptFiles[scene.id] && !normalize(flowMaster).includes(normalize(promptFiles[scene.id]))) errors.push(`${scene.id}: Bildprompt fehlt im Google-Flow-Masterprompt.`);
+    const entry = flowById.get(scene.id);
+    if (entry?.output === 'image-to-video' && !normalize(flowMaster).includes(normalize(entry.motionPrompt))) errors.push(`${scene.id}: Motion-Prompt fehlt im Google-Flow-Masterprompt.`);
   }
 }
 
+const combinedFile = path.join(paths.root,'02-bilder','ALLE-BILDPROMPTS-MIT-THUMBNAIL.txt');
+if (fs.existsSync(combinedFile)) {
+  const combined = fs.readFileSync(combinedFile,'utf8');
+  if (thumbnailPrompt && !normalize(combined).includes(normalize(thumbnailPrompt))) warnings.push('Legacy-Gesamtprompt enthält den Thumbnail-Prompt nicht vollständig. Maßgeblich ist GOOGLE-FLOW-MASTER-PROMPT.txt.');
+}
+
 const report = {
-  version:'science-static-v1',
+  version:'science-flow-mixed-v1',
   productionProfile:config.productionProfile,
+  productionMode:config.visuals.productionMode,
   styleId:config.visuals.styleId,
   brandVisualStyleDefined:config.visuals.brandVisualStyleDefined === true,
   generatedImageTextPolicy:config.visuals.generatedImageTextPolicy,
   generatedAt:new Date().toISOString(),
   passed:errors.length===0,
   sceneCount:plan.scenes.length,
+  flowVideoCount:videoCount,
+  staticImageCount:Math.max(0,plan.scenes.length-videoCount),
   layouts:[...layouts],
   visualPolicyVersion:plan.visualPolicyVersion,
   errors,
@@ -87,5 +135,5 @@ if (errors.length) {
   errors.forEach((error) => console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} statische 16:9-Beats plus separates Thumbnail.`);
+console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} Ausgangsbilder, ${videoCount} Google-Flow-KI-Clips geplant, separates Thumbnail und ein Masterprompt.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
