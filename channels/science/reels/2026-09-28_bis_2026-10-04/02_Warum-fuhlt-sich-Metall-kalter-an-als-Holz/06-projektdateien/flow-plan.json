@@ -1,0 +1,27 @@
+{
+  "version": "science-flow-plan-v1",
+  "productionProfile": "youtube-2min-v1",
+  "workflow": "thumbnail-first-then-sequential-scenes",
+  "clipSecondsMax": 10,
+  "targetVideoRatio": {"min": 0.4, "ideal": 0.5, "max": 0.6},
+  "scenes": [
+    {"id":"01-hook","output":"image","clipSeconds":null,"videoDir":"02-bilder/videos/01-hook","motionPrompt":""},
+    {"id":"02-context","output":"image","clipSeconds":null,"videoDir":"02-bilder/videos/02-context","motionPrompt":""},
+    {"id":"03-context","output":"image-to-video","clipSeconds":10,"videoDir":"02-bilder/videos/03-context","motionPrompt":"Aus dem ausgewählten Ausgangsbild einen ruhigen 10-Sekunden-Clip erzeugen. Die Hand bleibt stabil. Nur der wissenschaftliche Vorgang bewegt sich: Wärme fließt sichtbar von der wärmeren Hand in Metall und Holz. Wenige klare Wärmefluss-Pfeile entstehen an den Kontaktstellen und bewegen sich in die Materialien. Keine Kamerafahrt, kein Zoom, keine neuen Texte, keine neue Komposition."},
+    {"id":"04-foundation","output":"image","clipSeconds":null,"videoDir":"02-bilder/videos/04-foundation","motionPrompt":""},
+    {"id":"05-mechanism","output":"image-to-video","clipSeconds":10,"videoDir":"02-bilder/videos/05-mechanism","motionPrompt":"Das ausgewählte Metall-Cutaway als Startbild verwenden. Über 10 Sekunden breitet sich die zugeführte Wärme von der Kontaktstelle deutlich und schnell durch die Metallplatte aus. Die orangefarbene Wärmezone wandert kontrolliert weiter in das Metall. Hand und Kamera bleiben ruhig. Keine neuen Labels oder Objekte erzeugen."},
+    {"id":"06-mechanism","output":"image-to-video","clipSeconds":10,"videoDir":"02-bilder/videos/06-mechanism","motionPrompt":"Das Ausgangsbild unverändert als Komposition behalten. Zeige über 10 Sekunden, wie Wärme kontinuierlich vom Finger in die Metallplatte und anschließend seitlich weg von der Kontaktstelle fließt. Die Kontaktzone bleibt vergleichsweise kühl. Nur Wärmefluss und leichte Farbänderung animieren; keine Kamerabewegung, keine neuen Texte."},
+    {"id":"07-mechanism","output":"image","clipSeconds":null,"videoDir":"02-bilder/videos/07-mechanism","motionPrompt":""},
+    {"id":"08-mechanism","output":"image-to-video","clipSeconds":10,"videoDir":"02-bilder/videos/08-mechanism","motionPrompt":"Das ausgewählte Holz-Cutaway als Startbild verwenden. Über 10 Sekunden gelangt Wärme nur langsam von der Hand in einen kleinen Bereich des Holzes. Die warme Zone wächst deutlich langsamer und bleibt nahe an der Kontaktstelle. Keine Kamerafahrt, kein Zoom, keine neuen Texte oder zusätzlichen Objekte."},
+    {"id":"09-mechanism","output":"image-to-video","clipSeconds":10,"videoDir":"02-bilder/videos/09-mechanism","motionPrompt":"Die Komposition des Ausgangsbilds beibehalten. Über 10 Sekunden erwärmt sich die Holz-Kontaktstelle lokal sichtbar, während der Wärmefluss aus der Hand nach und nach schwächer wird. Pfeile dürfen dezent kleiner werden. Keine neue Beschriftung, keine Kamerabewegung, kein Szenenumbau."},
+    {"id":"10-mechanism","output":"image","clipSeconds":null,"videoDir":"02-bilder/videos/10-mechanism","motionPrompt":""},
+    {"id":"11-mechanism","output":"image","clipSeconds":null,"videoDir":"02-bilder/videos/11-mechanism","motionPrompt":""},
+    {"id":"12-mechanism","output":"image-to-video","clipSeconds":10,"videoDir":"02-bilder/videos/12-mechanism","motionPrompt":"Das Vergleichsbild als Startbild nutzen. Über 10 Sekunden soll links beim Metall ein deutlich stärkerer kontinuierlicher Wärmefluss aus dem Finger sichtbar sein, rechts beim Holz ein deutlich schwächerer. Die Metall-Kontaktstelle der Haut kühlt sichtbar stärker ab. Kamera und Hände bleiben stabil. Keine neuen Texte."},
+    {"id":"13-deepening","output":"image","clipSeconds":null,"videoDir":"02-bilder/videos/13-deepening","motionPrompt":""},
+    {"id":"14-deepening","output":"image-to-video","clipSeconds":10,"videoDir":"02-bilder/videos/14-deepening","motionPrompt":"Das ausgewählte Vergleichsbild der beiden gleich warmen Materialien als Startbild verwenden. Über 10 Sekunden Wärme vom Metall und vom Holz zur Hand fließen lassen; beim Metall klar schneller und stärker. Temperaturanzeigen und deutsche Beschriftungen unverändert lassen. Keine riskante Berührung ergänzen, keine Kamerabewegung, keine neuen Texte."},
+    {"id":"15-deepening","output":"image","clipSeconds":null,"videoDir":"02-bilder/videos/15-deepening","motionPrompt":""},
+    {"id":"16-deepening","output":"image","clipSeconds":null,"videoDir":"02-bilder/videos/16-deepening","motionPrompt":""},
+    {"id":"17-payoff","output":"image-to-video","clipSeconds":10,"videoDir":"02-bilder/videos/17-payoff","motionPrompt":"Die Payoff-Komposition beibehalten. Über 10 Sekunden Wärmefluss von der Hand in beide Materialien zeigen: auf der Metallseite mehrere deutlich schnellere und weiter wandernde Pfeile, auf der Holzseite nur wenige kurze und langsame. Keine neue Kameraaktion, keine neuen Texte, keine zusätzliche Dekoration."},
+    {"id":"18-payoff","output":"image","clipSeconds":null,"videoDir":"02-bilder/videos/18-payoff","motionPrompt":""}
+  ]
+}
