@@ -19,6 +19,9 @@ export type ScienceRuntimeScene = {
   fromFrame: number;
   toFrame: number;
   imagePath?: string;
+  videoPath?: string;
+  mediaType?: 'image' | 'video';
+  videoDurationSeconds?: number;
 };
 
 export type ScienceReelRuntime = {
@@ -44,6 +47,8 @@ export const assertScienceRuntime = (runtime: ScienceReelRuntime) => {
   for (const scene of runtime.scenes) {
     if (scene.fromFrame !== lastFrame) throw new Error(`Szenenlücke oder Überlappung vor ${scene.id}.`);
     if (scene.toFrame <= scene.fromFrame) throw new Error(`Ungültige Dauer in ${scene.id}.`);
+    if (!scene.imagePath && !scene.videoPath) throw new Error(`Szene ${scene.id} benötigt Bild oder Flow-Video.`);
+    if (scene.mediaType === 'video' && !scene.videoPath) throw new Error(`Video-Szene ${scene.id} benötigt videoPath.`);
     lastFrame = scene.toFrame;
   }
   if (lastFrame !== runtime.totalFrames) throw new Error('Letzte Szene endet nicht am Runtime-Ende.');
