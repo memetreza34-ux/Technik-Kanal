@@ -8,7 +8,7 @@ Der Kanal ist kein allgemeines Wissenschaftslexikon. Er konzentriert sich auf **
 
 Leitfrage für jedes neue Thema:
 
-> Kann ein Jugendlicher ohne großes Vorwissen nach einem kurzen Reel etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
+> Kann ein Jugendlicher ohne großes Vorwissen nach dem Video etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
 
 Wenn die Antwort nein ist oder erst viele abstrakte Grundlagen nötig wären, ist das Thema für den Kanal normalerweise ungeeignet.
 
@@ -66,30 +66,44 @@ Astronomie ist erlaubt, wenn die Frage konkret, anschaulich und ohne lange theor
 
 ## Ziel
 
-Wissenschaft und Technik so erklären, dass Jugendliche und junge Erwachsene nach dem Reel einen klaren Erkenntnisgewinn haben. Die Erklärung soll fachlich korrekt, visuell sofort verständlich und nicht unnötig akademisch sein.
+Wissenschaft und Technik so erklären, dass Jugendliche und junge Erwachsene nach dem Video einen klaren Erkenntnisgewinn haben. Die Erklärung soll fachlich korrekt, visuell sofort verständlich, ordentlich aufgebaut und nicht unnötig akademisch sein.
 
-## Formatstandard
+## Aktives Videoformat
 
-- deutschsprachiger Voice-over
-- direkte zentrale Frage als Hook
-- normalerweise 45 bis 75 Sekunden
-- adaptive Anzahl visueller Beats statt fester Szenenzahl
-- pro Bild genau eine Hauptaussage
-- Quellen für fachliche Tatsachen dokumentieren
-- keine gefährlichen Experimente oder riskanten Handlungsanweisungen
-- Fachbegriffe kurz und verständlich erklären
-- kein unnötiger Fachjargon
-- konkrete Beispiele und sichtbare Ursache-Wirkung bevorzugen
+Aktuell produzieren wir **normale YouTube-Videos**, keine Reels.
+
+Verbindlich ist `youtube-2min-v1`:
+
+- 16:9 / 1920×1080 / 30 fps
+- ungefähr 2 Minuten
+- 90–150 Sekunden, 120 Sekunden ideal
+- ungefähr 230–370 Wörter, 300 ideal
+- ungefähr 12–28 visuelle Beats, 20 ideal
+- separates 1280×720-Thumbnail mit drei Kandidaten
+- deutsche Voice
+- statische Bildszenen und harte Schnitte
+
+Der spätere Ausbau auf ungefähr 8–12 Minuten bekommt ein eigenes Longform-Profil. Das 2-Minuten-Format wird zuerst sauber getestet und nicht künstlich gestreckt.
+
+## Erzählstruktur
+
+Die verbindliche Story-Logik steht in `LONGFORM.md`:
+
+**Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff**
+
+Der Anfang soll sofort die zentrale Frage öffnen. Spätestens innerhalb der ersten 30 Sekunden muss die eigentliche Erklärung begonnen haben.
 
 ## Produktionsprinzip
 
 Die Bildwelt trägt die Erklärung. Remotion ist nur technische Montage- und Render-Schicht.
 
+Ein visueller Beat entspricht **einer verständlichen visuellen Aussage**, nicht automatisch einem Satz. Ein komplizierter Satz darf mehrere Bilder benötigen; mehrere Sätze dürfen auf einem Bild bleiben, wenn dieselbe Sache erklärt wird.
+
 Remotion darf keine eigenständigen visuellen Erklärungen, Kamerafahrten, Zooms, Prozessanimationen, Partikeleffekte, Parallaxen oder dekorative Bewegung erzeugen.
 
 Zulässig sind nur:
 
-- statische Szenenbilder
+- statische 16:9-Szenenbilder
 - harte Schnitte zwischen Bildern
 - Voice-over
 - statische kontrollierte Text-Overlays, wenn fachlich notwendig
