@@ -16,7 +16,8 @@ Biologie, Medizin, Anatomie, Krankheiten, Zellbiologie, DNA/Genetik und Biochemi
 - 230–370 Wörter, 300 ideal
 - 12–28 visuelle Beats, 20 ideal
 - separates 1280×720-Thumbnail mit drei Kandidaten
-- statische Bilder + harte Schnitte
+- Google-Flow-Mix aus statischen Bildern und Image-to-Video-Clips
+- Remotion: harte Schnitte, Voice, Captions, SFX, Export
 
 Der spätere Ausbau auf etwa 8–12 Minuten bekommt ein eigenes Profil. Das aktuelle 2-Minuten-System wird zuerst vollständig getestet.
 
@@ -31,14 +32,20 @@ Thema gegen Kanalrahmen prüfen
 → vollständiges deutsches Skript
 → visuelle Aussagen/Beats
 → Scientific Scene Explainer
-→ Bild- + Thumbnail-Prompts
+→ Einzelprompts
+→ flow-plan.json: jeden Beat als Bild oder Image-to-Video festlegen
+→ GOOGLE-FLOW-MASTER-PROMPT.txt bauen
 → Preflight
-→ Bilder + 3 Thumbnail-Kandidaten
+→ in Google Flow zuerst 3 Thumbnail-Kandidaten
+→ STOPP + Nutzerauswahl
+→ danach Beat 01, 02, 03 ... streng einzeln nacheinander
+→ für jeden Beat zuerst finales Ausgangsbild
+→ geplante Beats zusätzlich als Image-to-Video-Clip, maximal 10 s
 → Voice-over
 → Asset-Readiness
 → lokale Wort-Zeitstempel
 → Skript-/Voice-Ausrichtung
-→ statische 16:9-Montage
+→ 16:9-Montage aus Bildern + fertigen Flow-Clips
 → Untertitel + optionale SFX
 → Render
 → QA
@@ -73,11 +80,32 @@ Wichtige Regeln:
 - so wenig Information wie möglich, so viel wie nötig
 - keine generische KI-Kunst, Sci-Fi-HUDs, Neon-Überladung, Logos oder Wasserzeichen
 
+## Google Flow
+
+Verbindliche Workflow-Regeln: `channels/science/gehirn/FLOW-WORKFLOW.md`.
+
+Jedes aktive Video benötigt vor der Medienproduktion:
+
+- `06-projektdateien/flow-plan.json`
+- `02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt`
+- einen Thumbnail-Prompt
+- einen finalen Einzelprompt für jeden Beat
+
+Der Richtwert ist ein ausgewogener Mix von ungefähr 50/50 aus Bildern und Flow-KI-Clips. Die Erklärung hat Vorrang vor einer starren Quote.
+
+KI-Clip-Regeln:
+- Image-to-Video aus dem bereits freigegebenen Ausgangsbild
+- maximal 10 Sekunden
+- kein gesprochenes Dialog-Audio
+- keine Lippen-Synchronisation
+- keine neu erfundenen Texte während der Animation
+- sichtbarer Text ausschließlich Deutsch
+
 ## Thumbnail
 
-Bild 01 ist **nicht** mehr das Thumbnail.
+Bild 01 ist **nicht** das Thumbnail.
 
-Für jedes Video werden drei separate 1280×720-Kandidaten geplant und ein Gewinner gewählt. Titel, Thumbnail und Hook müssen dasselbe inhaltliche Versprechen geben.
+Für jedes Video werden drei separate 1280×720-Kandidaten erzeugt. Danach wird gestoppt und auf die Nutzerauswahl gewartet. Erst danach beginnt die Szenenproduktion. Titel, Thumbnail und Hook müssen dasselbe inhaltliche Versprechen geben.
 
 ## Neues Video
 
@@ -90,6 +118,12 @@ npm run science:new -- \
   --scenes=20
 ```
 
+Danach `flow-plan.json` finalisieren und die Masterdatei bauen:
+
+```bash
+npm run science:flow-master -- "<video-ordner>"
+```
+
 Der Ordnername `reels/` und die Composition `ScienceReel` bleiben vorerst nur aus Rückwärtskompatibilität bestehen.
 
 ## Preflight
@@ -98,7 +132,7 @@ Der Ordnername `reels/` und die Composition `ScienceReel` bleiben vorerst nur au
 npm run science:preflight -- "<video-ordner>"
 ```
 
-Der Preflight prüft Story-/Skriptstruktur, Quellen, Szenenplanung, Bildprompts, Thumbnail-Prompt und Produktionsdateien.
+Der Preflight prüft Story-/Skriptstruktur, Quellen, Szenenplanung, Einzelprompts, Thumbnail-Prompt, Flow-Plan, Google-Flow-Masterprompt und Produktionsdateien.
 
 ## Asset-Readiness
 
@@ -106,7 +140,7 @@ Der Preflight prüft Story-/Skriptstruktur, Quellen, Szenenplanung, Bildprompts,
 npm run science:ready -- "<video-ordner>"
 ```
 
-Danach müssen Voice, genau ein freigegebenes statisches 16:9-Bild pro Beat sowie mindestens drei Thumbnail-Kandidaten mit genau einem finalen Gewinner vorhanden sein.
+Danach müssen Voice, genau ein freigegebenes 16:9-Ausgangsbild pro Beat, alle im Flow-Plan vorgesehenen KI-Clips sowie mindestens drei Thumbnail-Kandidaten mit genau einem finalen Gewinner vorhanden sein.
 
 ## Fertigstellen
 
@@ -114,13 +148,19 @@ Danach müssen Voice, genau ein freigegebenes statisches 16:9-Bild pro Beat sowi
 npm run science:finish -- "<video-ordner>"
 ```
 
-Die Pipeline verarbeitet die Voice auf exakt 1,10×, normalisiert die Lautheit, erstellt lokale Wortzeiten mit `whisper.cpp`, synchronisiert Bilder und Untertitel, rendert 1920×1080 und führt Render-QA aus.
+Die Pipeline verarbeitet die Voice auf exakt 1,10×, normalisiert die Lautheit, erstellt lokale Wortzeiten mit `whisper.cpp`, synchronisiert Bilder/Flow-Clips und Untertitel, rendert 1920×1080 und führt Render-QA aus.
+
+## Remotion-Grenze
+
+Remotion darf fertige Bilder und fertige Google-Flow-Clips abspielen. Remotion erzeugt selbst keinen Zoom, Pan, Ken Burns, Parallax oder wissenschaftliche Animation.
+
+Ein Google-Flow-Image-to-Video-Clip ist ausdrücklich erlaubt: Die wissenschaftliche Bewegung wird vorher in Flow erzeugt; Remotion spielt den fertigen Clip nur ab.
 
 ## Altes Referenzprojekt
 
 `channels/science/reels/2026-09-28_bis_2026-10-04/01_Warum-ist-der-Himmel-blau/`
 
-Dieses Projekt bleibt nur als **Legacy-Referenz für Recherche/Quellen** erhalten. Es entspricht noch nicht dem neuen `youtube-2min-v1`-Produktionsvertrag und darf nicht als fertige Longform-Vorlage behandelt werden.
+Dieses Projekt bleibt nur als **Legacy-Referenz für Recherche/Quellen** erhalten und darf nicht als aktuelle Medienworkflow-Vorlage behandelt werden.
 
 ## Aktive Architektur
 
@@ -128,8 +168,10 @@ Dieses Projekt bleibt nur als **Legacy-Referenz für Recherche/Quellen** erhalte
 - Zielgruppe: Jugendliche und junge Erwachsene
 - Themenprofil: Alltagswissenschaft & Technik
 - Produktionsprofil: `youtube-2min-v1`
+- Medienmodus: `flow-mixed-assets`
 - Renderer: intern weiterhin `ScienceReel`
 - Runtime: `science-runtime.json`
-- technische Visual Policy: `science-static-v1`
+- technische Remotion-Grenze: `science-static-v1`
 - Bildwelt: `scientific-scene-explainer-v1`
+- Flow-Regeln: `gehirn/FLOW-WORKFLOW.md`
 - Befehle: ausschließlich `science:*`
