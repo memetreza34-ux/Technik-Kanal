@@ -64,10 +64,14 @@ else {
 }
 
 const flowEntries = Array.isArray(flowPlan?.scenes) ? flowPlan.scenes : [];
+const stepCount = Number(config.visuals?.flow?.imageProductionSteps ?? 5);
 if (flowPlan) {
   if (flowPlan.imageOnly !== true) errors.push('flow-plan.json muss imageOnly=true setzen.');
+  if (flowPlan.imageProductionSteps !== stepCount) errors.push(`flow-plan.json muss imageProductionSteps=${stepCount} setzen.`);
+  if (flowPlan.pauseAfterEachImageStep !== true) errors.push('flow-plan.json muss pauseAfterEachImageStep=true setzen.');
   if (flowEntries.length !== plan.scenes.length) errors.push(`flow-plan.json enthält ${flowEntries.length} Beats; erwartet ${plan.scenes.length}.`);
   const byId = new Map(flowEntries.map((entry)=>[entry.id,entry]));
+  const groupedIds = Array.from({length:stepCount},()=>[]);
   for (const scene of plan.scenes) {
     const entry = byId.get(scene.id);
     if (!entry) { errors.push(`${scene.id}: Eintrag im flow-plan.json fehlt.`); continue; }
@@ -75,7 +79,16 @@ if (flowPlan) {
     if (entry.clipSeconds != null) errors.push(`${scene.id}: clipSeconds ist im reinen Bild-Workflow nicht erlaubt.`);
     if (String(entry.motionPrompt ?? '').trim()) errors.push(`${scene.id}: motionPrompt ist im reinen Bild-Workflow nicht erlaubt.`);
     if (String(entry.videoDir ?? '').trim()) errors.push(`${scene.id}: videoDir ist im reinen Bild-Workflow nicht erlaubt.`);
+    const imageStep = Number(entry.imageStep);
+    if (!Number.isInteger(imageStep) || imageStep < 1 || imageStep > stepCount) errors.push(`${scene.id}: imageStep muss 1–${stepCount} sein.`);
+    else groupedIds[imageStep-1].push(scene.id);
   }
+  if (groupedIds.some((group)=>group.length===0)) errors.push(`Alle ${stepCount} Bildschritte müssen mindestens ein Bild enthalten.`);
+  const flattened = groupedIds.flat();
+  const expected = plan.scenes.map((scene)=>scene.id);
+  if (flattened.join('|') !== expected.join('|')) errors.push(`Die ${stepCount} Bildschritte müssen zusammenhängend und in Szenenreihenfolge angeordnet sein.`);
+  const sizes = groupedIds.map((group)=>group.length);
+  if (sizes.length && Math.max(...sizes)-Math.min(...sizes)>1) errors.push(`Die ${stepCount} Bildschritte müssen möglichst gleichmäßig verteilt sein. Aktuell: ${sizes.join(', ')}.`);
 }
 
 const flowMaster = fs.existsSync(paths.flowMaster) ? fs.readFileSync(paths.flowMaster,'utf8') : '';
@@ -84,9 +97,12 @@ else {
   if (/NOCH NICHT FINAL|PLACEHOLDER|ERGÄNZEN/i.test(flowMaster)) errors.push('Google-Flow-Masterprompt ist noch nicht final.');
   if (!/(drei|3).*thumbnail/i.test(flowMaster)) errors.push('Flow-Masterprompt muss zuerst drei Thumbnail-Kandidaten verlangen.');
   if (!/(stopp|stop).*auswahl|auswahl.*warten/i.test(flowMaster)) errors.push('Flow-Masterprompt muss nach den drei Thumbnails auf die Nutzerauswahl warten.');
-  if (!/(nacheinander|streng einzeln|beat 01.*beat 02)/is.test(flowMaster)) errors.push('Flow-Masterprompt muss Szenenbilder strikt nacheinander erzeugen lassen.');
   if (!/(nur bilder|ausschließlich.*bilder|keine ki-videoclips)/i.test(flowMaster)) errors.push('Flow-Masterprompt muss den reinen Bild-Workflow ausdrücklich festlegen.');
   if (/OUTPUT\s*=\s*IMAGE-TO-VIDEO|IMAGE-TO-VIDEO\s+[0-9]|KI-VIDEO-ANIMATION/i.test(flowMaster)) errors.push('Flow-Masterprompt enthält verbotene Video-/Animationsschritte.');
+  for (let step=1;step<=stepCount;step+=1) {
+    if (!new RegExp(`BILDSCHRITT\\s+${step}(?:\\/${stepCount})?`,'i').test(flowMaster)) errors.push(`Flow-Masterprompt enthält Bildschritt ${step} nicht ausdrücklich.`);
+  }
+  if (!/STOPP NACH BILDSCHRITT/i.test(flowMaster)) errors.push('Flow-Masterprompt muss zwischen den Bildschritten stoppen und auf Freigabe warten.');
   if (thumbnailPrompt && !normalize(flowMaster).includes(normalize(thumbnailPrompt))) errors.push('Thumbnail-Prompt fehlt im Google-Flow-Masterprompt.');
   for (const scene of plan.scenes) {
     if (promptFiles[scene.id] && !normalize(flowMaster).includes(normalize(promptFiles[scene.id]))) errors.push(`${scene.id}: Bildprompt fehlt im Google-Flow-Masterprompt.`);
@@ -94,9 +110,10 @@ else {
 }
 
 const report = {
-  version:'science-flow-images-v1',
+  version:'science-flow-images-v2-five-steps',
   productionProfile:config.productionProfile,
   productionMode:config.visuals.productionMode,
+  imageProductionSteps:stepCount,
   styleId:config.visuals.styleId,
   brandVisualStyleDefined:config.visuals.brandVisualStyleDefined === true,
   generatedImageTextPolicy:config.visuals.generatedImageTextPolicy,
@@ -117,5 +134,5 @@ if (errors.length) {
   errors.forEach((error) => console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} statische Szenenbilder, 0 KI-Videoclips, separates Thumbnail und ein Flow-Masterprompt.`);
+console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} statische Szenenbilder in genau ${stepCount} Bildschritten, 0 KI-Videoclips.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
