@@ -11,12 +11,13 @@ VERBINDLICHER ABLAUF
 1. Zuerst ausschließlich die drei Thumbnail-Kandidaten aus dem Thumbnail-Prompt erzeugen.
 2. Danach SOFORT STOPPEN und auf die ausdrückliche Auswahl des Nutzers warten. Noch keine Szenenbilder erzeugen.
 3. Den gewählten Thumbnail-Kandidaten anschließend als lockere visuelle Referenz für Qualitätsniveau und Illustrationssprache verwenden. Die Szenen dürfen trotzdem andere Orte, Farben und Kompositionen haben.
-4. Danach Beat für Beat streng einzeln nacheinander arbeiten: Bild 01 vollständig erzeugen, prüfen, auswählen und speichern. Erst danach Bild 02, dann Bild 03 usw. Niemals mehrere Beats gleichzeitig erzeugen.
-5. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen.
-6. KEINE KI-Videoclips, KEIN Image-to-Video und KEINE Animationen erzeugen.
-7. Wenn eine Aussage in einem Standbild nicht klar genug ist, die Szene besser gestalten oder in mehrere statische Beats aufteilen. Bewegung ist kein Ersatz für gute Bildplanung.
-8. Sichtbarer Text ausschließlich auf Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.
-9. Jedes finale Bild eindeutig nach seiner Beat-ID benennen und erst danach fortfahren.
+4. Nach der Cover-Auswahl die 18 Szenenbilder in GENAU 5 Bildschritten erzeugen: 01–04, 05–08, 09–12, 13–15, 16–18.
+5. Innerhalb jedes Bildschritts jedes Bild streng einzeln nacheinander erzeugen, prüfen, auswählen und speichern. Niemals mehrere Beats gleichzeitig erzeugen.
+6. Nach jedem vollständig abgeschlossenen Bildschritt STOPPEN, die fertigen Bilder nennen und auf die ausdrückliche Freigabe des Nutzers für den nächsten Bildschritt warten.
+7. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen.
+8. KEINE KI-Videoclips, KEIN Image-to-Video und KEINE Animationen erzeugen.
+9. Wenn eine Aussage in einem Standbild nicht klar genug ist, die Szene besser gestalten oder in mehrere statische Beats aufteilen. Bewegung ist kein Ersatz für gute Bildplanung.
+10. Sichtbarer Text ausschließlich auf Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.
 
 THUMBNAIL
 =========
@@ -29,6 +30,10 @@ Kandidat 3: Metall und Holz nebeneinander, über beiden identische Anzeige „21
 Drei wirklich verschiedene Kompositionen, nicht nur kleine Varianten derselben Anordnung. Sichtbarer Text ausschließlich auf Deutsch.
 
 STOPP NACH DIESEN DREI THUMBNAILS UND AUF DIE AUSWAHL DES NUTZERS WARTEN.
+
+BILDSCHRITT 1/5 · BILDER 01–04
+==============================
+Erzeuge jetzt ausschließlich Bilder 01 bis 04. Jedes Bild einzeln fertigstellen, auswählen und speichern, bevor das nächste beginnt.
 
 01-hook
 =======
@@ -58,6 +63,12 @@ Sprechaussage: „Wärme wandert immer vom wärmeren zum kälteren Bereich. Ents
 Bildidee: Erstelle eine klare 2D/2.5D-Wissenschaftsszene über die gesamte 16:9-Breite: links eine warme Handfläche, rechts eine kühlere feste Oberfläche. Ein kräftiger, aber sauberer Pfeil verläuft von warm nach kalt. Darunter zwei kurze deutsche Beschriftungen: „wärmer“ und „kälter“. Zusätzlich klein am Pfeil: „Wärmefluss“. Keine Formeln und keine zweite Aussage. Die Darstellung soll wie ein moderner Museumsexponat-Querschnitt wirken, nicht wie ein Schulbuchkasten.
 Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
 
+STOPP NACH BILDSCHRITT 1. Bilder 01–04 melden und auf Freigabe für Bildschritt 2 warten.
+
+BILDSCHRITT 2/5 · BILDER 05–08
+==============================
+Erzeuge jetzt ausschließlich Bilder 05 bis 08. Jedes Bild einzeln fertigstellen, auswählen und speichern, bevor das nächste beginnt.
+
 05-mechanism
 ============
 Beat 05-mechanism
@@ -85,6 +96,12 @@ Beat 08-mechanism
 Sprechaussage: „Holz verhält sich anders. Es leitet Wärme deutlich schlechter und transportiert die Energie deiner Hand nur langsam weiter.“
 Bildidee: Zeige jetzt eine große Holzoberfläche über die gesamte 16:9-Breite mit derselben Hand links. Wärme gelangt von der Hand nur in einen kleinen Bereich direkt unter den Fingern und breitet sich deutlich langsamer und kürzer aus als zuvor beim Metall. Nutze ein warmes, natürliches Holzbild mit klarer 2D/2.5D-Erklärschicht. Deutsches Label: „langsame Wärmeleitung“. Kein Metall in dieser Szene, keine Zahlen.
 Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+
+STOPP NACH BILDSCHRITT 2. Bilder 05–08 melden und auf Freigabe für Bildschritt 3 warten.
+
+BILDSCHRITT 3/5 · BILDER 09–12
+==============================
+Erzeuge jetzt ausschließlich Bilder 09 bis 12. Jedes Bild einzeln fertigstellen, auswählen und speichern, bevor das nächste beginnt.
 
 09-mechanism
 ============
@@ -114,6 +131,12 @@ Sprechaussage: „Bei Raumtemperatur kühlt Metall deine Haut schneller ab als H
 Bildidee: Zeige dieselbe Hand in einer klaren 16:9-Doppelszene: links auf Metall mit kräftigem Wärmefluss aus dem Finger, rechts auf Holz mit deutlich kleinerem Wärmefluss. Die Hautfarbe an der Metallseite ist kühler. Nutze die gesamte Breite, keine separaten Kästen. Zwei deutsche Labels reichen: „stärkerer Wärmefluss“ und „schwächerer Wärmefluss“. Keine zusätzlichen Aussagen.
 Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
 
+STOPP NACH BILDSCHRITT 3. Bilder 09–12 melden und auf Freigabe für Bildschritt 4 warten.
+
+BILDSCHRITT 4/5 · BILDER 13–15
+==============================
+Erzeuge jetzt ausschließlich Bilder 13 bis 15. Jedes Bild einzeln fertigstellen, auswählen und speichern, bevor das nächste beginnt.
+
 13-deepening
 ============
 Beat 13-deepening
@@ -135,6 +158,12 @@ Sprechaussage: „Darum wirken zum Beispiel eine Metallbank und eine Holzbank im
 Bildidee: Nutze den gesamten 16:9-Raum für einen winterlichen Park. Links eine Metallbank, rechts eine Holzbank, beide nebeneinander und mit leichtem Reif in derselben Umgebung. Eine stilisierte erwachsene Person berührt mit je einer Hand kurz beide Lehnen. Am Metall ist stärkerer Wärmeabfluss aus der Hand visualisiert. Keine Infobox, keine Zahlen. Optional kleine deutsche Labels: „Metall“ und „Holz“.
 Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
 
+STOPP NACH BILDSCHRITT 4. Bilder 13–15 melden und auf Freigabe für Bildschritt 5 warten.
+
+BILDSCHRITT 5/5 · BILDER 16–18
+==============================
+Erzeuge jetzt ausschließlich Bilder 16 bis 18. Jedes Bild einzeln fertigstellen, auswählen und speichern, bevor das nächste beginnt.
+
 16-deepening
 ============
 Beat 16-deepening
@@ -155,3 +184,5 @@ Beat 18-payoff
 Sprechaussage: „Gleiche Temperatur bedeutet also nicht automatisch gleiches Gefühl – entscheidend ist der Wärmefluss.“
 Bildidee: Finale 16:9-Szene: Metall und Holz nebeneinander, beide mit kleiner Anzeige „21 °C“. Darüber eine Hand, die beide berührt. Die Wärmefluss-Pfeile unterscheiden sich klar. Integriere einen einzigen deutschen Merksatz groß und sauber: „Gleiche Temperatur ≠ gleiches Gefühl“. Darunter klein: „Entscheidend ist der Wärmefluss.“ Keine weiteren Labels, kein Wasserzeichen.
 Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+
+BILDSCHRITT 5 ABGESCHLOSSEN. Die Szenenbild-Produktion ist vollständig.
