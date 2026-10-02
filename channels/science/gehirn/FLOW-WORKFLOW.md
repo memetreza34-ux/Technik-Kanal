@@ -27,21 +27,43 @@ Der Masterprompt enthält den Thumbnail-Prompt und alle Szenenprompts in Produkt
 5. Der gewählte Kandidat dient anschließend als **lockere visuelle Referenz** für Qualitätsniveau und Illustrationssprache.
 6. Die Szenen bleiben individuell: andere Orte, Farben und Kompositionen sind ausdrücklich erlaubt.
 
-## Phase 2 – Bilder streng nacheinander
+## Phase 2 – Szenenbilder in genau 5 Produktionsschritten
 
-Nach der Thumbnail-Auswahl werden die Bilder **streng einzeln nacheinander** erzeugt.
+**Nach der Thumbnail-/Cover-Auswahl wird die gesamte Bildproduktion immer in genau fünf Schritte aufgeteilt.**
 
-Für Beat 01:
+Die vorhandenen Beats werden möglichst gleichmäßig und in ihrer ursprünglichen Reihenfolge auf fünf zusammenhängende Gruppen verteilt. Bei 18 Bildern gilt zum Beispiel:
 
-1. genau den Prompt für Beat 01 ausführen,
+- **Bildschritt 1:** Bilder 01–04
+- **Bildschritt 2:** Bilder 05–08
+- **Bildschritt 3:** Bilder 09–12
+- **Bildschritt 4:** Bilder 13–15
+- **Bildschritt 5:** Bilder 16–18
+
+Bei einer anderen Beat-Anzahl werden die fünf Gruppen automatisch möglichst gleich groß verteilt. Kein Bild darf übersprungen oder doppelt einem Schritt zugeordnet werden.
+
+### Innerhalb jedes Bildschritts
+
+Die Bilder werden weiterhin **streng einzeln nacheinander** erzeugt. Beispiel Bildschritt 1:
+
+1. Bild 01 mit seinem eigenen Prompt erzeugen,
 2. Kandidaten prüfen,
 3. das beste Bild auswählen,
 4. eindeutig als `01-...-final.png` speichern,
-5. erst danach Beat 02 beginnen.
-
-Dann Beat 02, Beat 03 usw. bis zum letzten Beat.
+5. erst danach Bild 02 erzeugen,
+6. so fortfahren, bis alle Bilder dieses Bildschritts fertig sind.
 
 **Niemals mehrere Beats gleichzeitig erzeugen.**
+
+### Stopp zwischen den fünf Schritten
+
+Nach jedem vollständig abgeschlossenen Bildschritt gilt:
+
+- **STOPPEN**,
+- kurz melden, welche Bilder fertig sind,
+- auf die ausdrückliche Freigabe des Nutzers warten,
+- erst danach mit dem nächsten Bildschritt beginnen.
+
+Nach Bildschritt 5 ist die Bildproduktion abgeschlossen.
 
 ## Erlaubte Ausgabe pro Beat
 
@@ -108,7 +130,7 @@ Vor dem Erzeugen der Bilder müssen fertig sein:
 3. finales Skript
 4. visuelle Beats
 5. Einzelprompts
-6. `flow-plan.json` mit `output: image` für jeden Beat
-7. `GOOGLE-FLOW-MASTER-PROMPT.txt`
+6. `flow-plan.json` mit `output: image` für jeden Beat und Zuordnung zu genau einem der fünf Bildschritte
+7. `GOOGLE-FLOW-MASTER-PROMPT.txt` mit Thumbnail-Phase und fünf Bildschritten
 
 Fehlt eines davon, ist die Bildproduktion noch nicht freigegeben.
