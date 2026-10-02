@@ -19,6 +19,7 @@
     "science:setup-local": "node scripts/setup_local_transcription.mjs",
     "science:transcribe": "node scripts/transcribe_electrical_voiceover.mjs",
     "science:new": "node scripts/safe-new-science-reel.mjs",
+    "science:flow-master": "node scripts/build-google-flow-master-prompt.mjs",
     "science:scaffold-test": "node scripts/test-science-scaffold.mjs",
     "science:e2e": "node scripts/test-science-e2e.mjs",
     "science:preflight": "node scripts/science-preflight.mjs",
