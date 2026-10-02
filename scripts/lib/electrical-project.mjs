@@ -8,6 +8,7 @@ export const repositoryRoot = path.resolve(__dirname, '../..');
 export const channelRoot = path.join(repositoryRoot, 'channels/science');
 
 export const imageExtensions = new Set(['.png', '.jpg', '.jpeg', '.webp', '.avif']);
+export const videoExtensions = new Set(['.mp4', '.webm', '.mov', '.m4v']);
 export const audioExtensions = new Set(['.wav', '.mp3', '.m4a', '.aac', '.flac', '.ogg']);
 
 export const normalizePath = (value) => value.split(path.sep).join('/');
@@ -51,11 +52,14 @@ export const projectPaths = (projectArg) => {
     audioDir: path.join(root, '01-script-audio/audio'),
     sfxDir: path.join(root, '01-script-audio/sfx'),
     imagesDir: path.join(root, '02-bilder/images'),
+    videosDir: path.join(root, '02-bilder/videos'),
+    flowMaster: path.join(root, '02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt'),
     captionsDir: path.join(root, '03-caption'),
     pdfDir: path.join(root, '04-pdf'),
     exportDir: path.join(root, '05-export'),
     projectFilesDir: path.join(root, '06-projektdateien'),
     scenePlan: path.join(root, '06-projektdateien/scene-plan.json'),
+    flowPlan: path.join(root, '06-projektdateien/flow-plan.json'),
     sfxEvents: path.join(root, '06-projektdateien/sfx-events.json'),
     assetManifest: path.join(root, '06-projektdateien/asset-manifest.json'),
     readinessReport: path.join(root, '06-projektdateien/readiness-report.json'),
@@ -69,7 +73,7 @@ export const projectPaths = (projectArg) => {
 };
 
 export const validateProjectStructure = (paths) => {
-  const requiredDirectories = [paths.scriptAudio, paths.audioDir, paths.imagesDir, paths.captionsDir, paths.exportDir, paths.projectFilesDir];
+  const requiredDirectories = [paths.scriptAudio, paths.audioDir, paths.imagesDir, paths.videosDir, paths.captionsDir, paths.exportDir, paths.projectFilesDir];
   const missing = requiredDirectories.filter((dir) => !fs.existsSync(dir) || !fs.statSync(dir).isDirectory());
   if (missing.length) throw new Error(`Projektstruktur unvollständig:\n${missing.map((file) => `- ${file}`).join('\n')}`);
   if (!fs.existsSync(paths.scenePlan)) throw new Error(`Szenenplan fehlt: ${paths.scenePlan}`);
@@ -113,6 +117,15 @@ export const imageMetadata = (file) => {
   const stream = info.streams?.find((candidate) => candidate.codec_type === 'video');
   if (!stream?.width || !stream?.height) throw new Error(`Bildabmessungen nicht lesbar: ${file}`);
   return {width: Number(stream.width), height: Number(stream.height)};
+};
+
+export const videoMetadata = (file) => {
+  const info = ffprobe(file);
+  const stream = info.streams?.find((candidate) => candidate.codec_type === 'video');
+  if (!stream?.width || !stream?.height) throw new Error(`Videoabmessungen nicht lesbar: ${file}`);
+  const durationSeconds = Number(info.format?.duration ?? stream.duration);
+  if (!Number.isFinite(durationSeconds) || durationSeconds <= 0) throw new Error(`Videodauer nicht lesbar: ${file}`);
+  return {width: Number(stream.width), height: Number(stream.height), durationSeconds};
 };
 
 export const normalizeWord = (value) => String(value)
