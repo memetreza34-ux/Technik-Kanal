@@ -1,65 +1,87 @@
-# Skill: Science-Reel vollständig fertigstellen
+# Skill: Science-YouTube-Video vollständig fertigstellen
 
-## Phase 1 – Konzept
+Aktives Profil: **`youtube-2min-v1`**.
+
+## Phase 1 – Thema, Recherche und Story
 
 Vor Bildern und Audio:
 
-1. direkte Frage als Hook festlegen
-2. fachlich recherchieren und Quellen-IDs dokumentieren
-3. Szenen nach Aussagen planen; Bildanzahl adaptiv wählen
-4. jede Szene als `image-only` und `motionLevel: none` definieren
-5. pro Beat `gehirn/BILDWELT.md` anwenden
-6. Bild 01 als Coverquelle planen
+1. Thema gegen `gehirn/KANAL.md` prüfen
+2. direkte zentrale Frage festlegen
+3. grobes Titel-/Thumbnail-Versprechen definieren
+4. fachlich recherchieren und Quellen-IDs dokumentieren
+5. Story nach `gehirn/LONGFORM.md` aufbauen: Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff
+6. vollständiges deutsches Skript mit ungefähr 230–370 Wörtern fertigstellen
+7. Skript in ungefähr 12–28 visuelle Aussagen/Beats zerlegen
+
+Wichtig: **nicht automatisch ein Satz = ein Bild**. Ein komplizierter Satz darf mehrere Beats benötigen; mehrere Sätze dürfen einen Beat teilen.
+
+## Phase 2 – Bildplanung
 
 Aktive Bildwelt: **Scientific Scene Explainer v1**.
 
-Kernregel: Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die genau den gesprochenen Satz erklärt.
+Kernregel: Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die genau die aktuelle visuelle Aussage erklärt.
 
-Dabei je Szene neu entscheiden:
+Dabei je Beat neu entscheiden:
 - volle Umgebung/Ort oder reine Illustration?
-- technische Cutaway-/Mikro-/Vergleichsansicht sinnvoll?
+- technische Cutaway-/Detail-/Vergleichsansicht sinnvoll?
 - hilft eine stilisierte erwachsene Person?
 - braucht das Bild überhaupt Text?
 - wenn Text: nur Deutsch, kurz und fachlich relevant
 - Hintergrund/Farben passend zum Inhalt statt immer gleich
 - so wenig Information wie möglich, so viel wie nötig
 
-## Phase 2 – Bildprompts und Preflight
+Alle Szenenbilder sind 16:9 und für 1920×1080 geplant.
 
-Für jeden Beat einen eigenen Bildprompt aus dem konkreten Skriptsatz entwickeln.
+## Phase 3 – Thumbnail
+
+Thumbnail ist **separat von Bild 01**.
+
+- `02-bilder/prompts/00-thumbnail.txt`
+- 1280×720 / 16:9
+- drei Kandidaten planen
+- ein Gewinner manuell auswählen
+- Titel, Thumbnail und Hook müssen dasselbe Versprechen geben
+- keine irreführende oder fachlich falsche Zuspitzung
+
+## Phase 4 – Bildprompts und Preflight
+
+Für jeden visuellen Beat einen eigenen Bildprompt entwickeln.
 
 - visuelle Hauptidee festlegen
 - passende Umgebung oder Darstellungsform wählen
+- 16:9 ausdrücklich planen
 - nur notwendige Labels, Titel, Merksätze, Zahlen oder Pfeile vorsehen
 - sichtbaren Bildtext ausschließlich auf Deutsch anfordern
 - unnötige Dekoration, Sci-Fi-HUDs, Neon-Überladung, generische KI-Kunst und Informationsüberladung ausschließen
-- Bild 01 als Coverquelle planen
-- anschließend ausführen:
+
+Anschließend:
 
 ```bash
-npm run science:preflight -- "<reel-ordner>"
+npm run science:preflight -- "<video-ordner>"
 ```
 
 Bei Fehlern keine Medien erzeugen. Erst korrigieren und erneut prüfen.
 
-## Phase 3 – Nutzerassets
+## Phase 5 – Assets
 
 Nach bestandenem Preflight:
 
 - Rohaufnahme nach `01-script-audio/audio/`
-- genau ein finales statisches Bild je Szene
+- genau ein finales statisches 16:9-Bild je Beat
+- drei Thumbnail-Kandidaten und eine finale Freigabe
 - optional sichtbarer deutscher Bildtext gemäß Bildwelt
 - optionale SFX nach `01-script-audio/sfx/`
 
-Alle Bilder bleiben statisch. Es werden keine späteren Remotion-Animationen eingeplant.
+Alle Szenenbilder bleiben statisch. Es werden keine späteren Remotion-Animationen eingeplant.
 
-## Phase 4 – Ein-Befehl-Produktion
+## Phase 6 – Ein-Befehl-Produktion
 
 ```bash
-npm run science:finish -- "<reel-ordner>"
+npm run science:finish -- "<video-ordner>"
 ```
 
-Die Pipeline verarbeitet Audio auf 1,10×, erstellt lokale Wort-Zeitstempel, gleicht Transkript und Szenenplan ab, synchronisiert Bilder/Untertitel/SFX, setzt harte Schnitte, rendert das MP4 und erzeugt Render-QA sowie Kontrollbilder.
+Die Pipeline verarbeitet Audio auf 1,10×, erstellt lokale Wort-Zeitstempel, gleicht Transkript und Szenenplan ab, synchronisiert Bilder/Untertitel/SFX, setzt harte Schnitte, rendert 1920×1080 und erzeugt Render-QA sowie Kontrollbilder.
 
 ## Harte Remotion-Grenze
 
@@ -70,13 +92,16 @@ Zulässig sind statische Bilder, harte Schnitte, Voice-over, statische Titel/Ove
 ## Endkontrolle
 
 Prüfen:
-- erklärt jede Szene genau ihren Skriptsatz?
-- nutzt sie bei Bedarf den ganzen Bildraum sinnvoll?
+- beantwortet das Video wirklich seine Ausgangsfrage?
+- beginnt die Erklärung innerhalb der ersten 30 Sekunden?
+- hat das Skript einen roten Faden statt einer Faktenliste?
+- erklärt jeder Beat eine klare visuelle Aussage?
+- nutzt er bei Bedarf den ganzen 16:9-Bildraum sinnvoll?
 - ist die Darstellungsform fachlich passend?
 - sind sichtbare Bildtexte ausschließlich Deutsch und korrekt geschrieben?
 - sind Labels/Infos wirklich notwendig und nicht überladen?
 - gibt es keine Logos/Wasserzeichen oder fehlerhafte KI-Schrift?
 - bleiben alle Bilder statisch?
 - sind Untertitel vollständig?
-- ist Bild 01 als erster Shot und Coverquelle geeignet?
+- sind Titel, Thumbnail und Hook inhaltlich konsistent?
 - sind fachliche Aussagen durch Quellen gedeckt?
