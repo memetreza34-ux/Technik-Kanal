@@ -85,7 +85,7 @@ Beispiel bei 18 Bildern:
 
 **Nach der Cover-Auswahl gibt es keine weiteren Stopps, Rückfragen oder Freigaben.**
 
-Bildschritt 1 → automatisch 2 → 3 → 4 → 5.
+Nach Abschluss von Bildschritt 1 **automatisch mit Bildschritt 2** fortfahren, danach automatisch 3, 4 und 5. Die fünf Schritte werden vollständig ohne Zwischenfreigabe abgearbeitet.
 
 ## Flow-Abschluss – finale Google-Flow-Sammlung aufräumen
 
