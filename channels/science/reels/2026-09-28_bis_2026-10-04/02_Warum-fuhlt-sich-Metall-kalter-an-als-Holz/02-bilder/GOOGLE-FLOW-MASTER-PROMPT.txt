@@ -1,188 +1,201 @@
 GOOGLE FLOW MASTER PROMPT – NUR BILDER
 ======================================
 
-VIDEO: Warum fühlt sich Metall kälter an als Holz?
-FORMAT: 16:9 · 1920×1080
-BILDWELT: Scientific Scene Explainer v1
-SPRACHE IM BILD: ausschließlich Deutsch
+Video: Warum fühlt sich Metall kälter an als Holz?
+Format: 1920×1080, 16:9
+Bildwelt: Scientific Scene Explainer v1
 
 VERBINDLICHER ABLAUF
 ---------------------
-1. Zuerst ausschließlich die drei Thumbnail-Kandidaten aus dem Thumbnail-Prompt erzeugen.
-2. Danach SOFORT STOPPEN und auf die ausdrückliche Auswahl des Nutzers warten. Noch keine Szenenbilder erzeugen.
-3. Den gewählten Thumbnail-Kandidaten anschließend als lockere visuelle Referenz für Qualitätsniveau und Illustrationssprache verwenden. Die Szenen dürfen trotzdem andere Orte, Farben und Kompositionen haben.
-4. Nach der Cover-Auswahl die 18 Szenenbilder in GENAU 5 Bildschritten erzeugen: 01–04, 05–08, 09–12, 13–15, 16–18.
-5. Innerhalb jedes Bildschritts jedes Bild streng einzeln nacheinander erzeugen, prüfen, auswählen und speichern. Niemals mehrere Beats gleichzeitig erzeugen.
-6. Nach jedem vollständig abgeschlossenen Bildschritt STOPPEN, die fertigen Bilder nennen und auf die ausdrückliche Freigabe des Nutzers für den nächsten Bildschritt warten.
-7. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen.
-8. KEINE KI-Videoclips, KEIN Image-to-Video und KEINE Animationen erzeugen.
-9. Wenn eine Aussage in einem Standbild nicht klar genug ist, die Szene besser gestalten oder in mehrere statische Beats aufteilen. Bewegung ist kein Ersatz für gute Bildplanung.
-10. Sichtbarer Text ausschließlich auf Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.
+1. Zuerst NUR die drei Thumbnail-Kandidaten erzeugen.
+2. Danach STOPPEN und auf die ausdrückliche Auswahl des Nutzers warten. Noch keine Szenenbilder erzeugen.
+3. Das gewählte Thumbnail nur als Referenz für Qualitätsniveau und Illustrationssprache verwenden. Es ist KEINE Farb-, Layout-, Perspektiv- oder Hintergrundvorlage für alle Szenen.
+4. Nach der Cover-Auswahl die Szenenbilder in genau 5 Bildschritten erzeugen.
+5. Innerhalb jedes Bildschritts Bilder streng einzeln nacheinander erzeugen, prüfen, auswählen und speichern.
+6. Nach jedem Bildschritt STOPPEN und auf die ausdrückliche Freigabe des Nutzers warten.
+7. VISUELLE VIELFALT IST PFLICHT: nicht immer dieselbe Hand, denselben Materialblock, denselben Split-Screen oder denselben türkis/weißen Hintergrund verwenden.
+8. Normale Szenen haben keine große generierte Überschrift; bevorzugt 0–2 kurze deutsche Labels. Große Titel gehören primär ins Thumbnail.
+9. Bei sichtbaren Köpfen vollständige natürliche stilisierte Gesichtszüge zeigen. Keine gesichtslosen oder leeren Gesichter. Wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames lassen.
+10. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen.
+11. KEINE KI-Videoclips, KEINE Image-to-Video-Ausgabe und KEINE Animationen erzeugen.
+12. Sichtbarer Text ausschließlich Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.
 
-THUMBNAIL
-=========
-Erstelle drei klar unterschiedliche Thumbnail-Kandidaten für das deutsche YouTube-Wissenschaftsvideo „Warum fühlt sich Metall kälter an als Holz?“. Format 1280×720, 16:9, Scientific Scene Explainer v1, erwachsen, klar, hoher Kontrast, kein englischer Text, keine Logos, kein Wasserzeichen.
+THUMBNAIL – PHASE 1
+-------------------
+Erstelle drei klar unterschiedliche Thumbnail-Kandidaten für das deutsche YouTube-Wissenschaftsvideo „Warum fühlt sich Metall kälter an als Holz?“. 1280×720, 16:9, Scientific Scene Explainer v1, erwachsen, hochwertig, klare Materialwirkung, starke visuelle Hierarchie.
 
-Kandidat 1: Hand berührt links Metall und rechts Holz; beide zeigen „21 °C“. Beim Metall stärkerer Wärmeabfluss. Großer Text: „GLEICHE TEMPERATUR?“
-Kandidat 2: Nahaufnahme einer Hand zwischen Metall und Holz, diagonale Teilung. Großer Text: „WARUM IST METALL KÄLTER?“
-Kandidat 3: Metall und Holz nebeneinander, über beiden identische Anzeige „21 °C“. Hand berührt beide. Großer Text: „BEIDE 21 °C!“
+Kandidat 1: Metall- und Holzoberfläche mit identischer kleiner Anzeige „21 °C“, dazwischen eine Hand als starke zentrale Geste. Großer deutscher Text: „GLEICHE TEMPERATUR?“
+Kandidat 2: Winterliche Alltagsszene mit Metall- und Holzobjekt, sichtbar gleicher Temperaturwert, großer deutscher Text: „WARUM FÜHLT SICH METALL KÄLTER AN?“
+Kandidat 3: Naher Materialvergleich Metall gegen Holz, identischer Messwert, aber deutlich verschieden breiter Wärmefluss. Großer deutscher Text: „BEIDE 21 °C!“
 
-Drei wirklich verschiedene Kompositionen, nicht nur kleine Varianten derselben Anordnung. Sichtbarer Text ausschließlich auf Deutsch.
+Die drei Kandidaten müssen wirklich andere Kompositionen haben. Kein englischer Text, keine Logos, kein Wasserzeichen. Falls ein menschlicher Kopf sichtbar ist: vollständige natürliche stilisierte Gesichtszüge; keine gesichtslosen sichtbaren Köpfe.
 
-STOPP NACH DIESEN DREI THUMBNAILS UND AUF DIE AUSWAHL DES NUTZERS WARTEN.
+STOPP NACH DEN DREI THUMBNAILS. AUF AUSWAHL DES NUTZERS WARTEN.
 
-BILDSCHRITT 1/5 · BILDER 01–04
-==============================
-Erzeuge jetzt ausschließlich Bilder 01 bis 04. Jedes Bild einzeln fertigstellen, auswählen und speichern, bevor das nächste beginnt.
+SZENENBILDER – PHASE 2 · GENAU 5 BILDSCHRITTE
+------------------------------------------------
 
-01-hook
-=======
+BILDSCHRITT 1/5 · 01-hook BIS 03-foundation
+====================================================
+Erzeuge ausschließlich die 3 Bilder dieses Schritts. Die Visual-Typen in diesem Schritt müssen sichtbar unterschiedlich bleiben.
+
+01-HOOK · OUTPUT=IMAGE · VISUAL=environment-comparison · MOTIV=metal-wood-table-context
+================================================================================
 Beat 01-hook
 Sprechaussage: „Warum fühlt sich Metall kälter an als Holz, obwohl beide im selben Raum liegen?“
-Bildidee: Zeige einen modernen Innenraum mit einem Tisch über die gesamte 16:9-Bildfläche. Auf dem Tisch liegen links eine matte Metallplatte und rechts ein gleich großes Holzbrett. Eine erwachsene Hand berührt beide Materialien gleichzeitig mit zwei Fingern. Beide Oberflächen wirken gleich temperiert, aber beim Metall ist ein stärkerer bläulicher Wärmeabfluss aus der Hand angedeutet. Die Szene soll sofort die Frage nach dem unterschiedlichen Kältegefühl öffnen. Kein separater Infokasten. Sichtbarer Text nur auf Deutsch; optional klein: „Metall“ und „Holz“.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Bildidee: Vollständige moderne Innenraumszene statt freigestellter Infografik. Auf einem echten Tisch liegen eine matte Metallplatte und ein Holzbrett, beide glaubwürdig in derselben Umgebung. Eine Hand berührt beide nur kurz am unteren Bildrand; die Person selbst ist nicht sichtbar. Das Metall wirkt nicht künstlich blau, Holz nicht künstlich orange. Nur ein subtiler visueller Hinweis auf unterschiedlich starken Wärmeabfluss. Keine Thermometerwerte in diesem Beat.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-02-context
-==========
+Nur ein finales statisches Bild für 01-hook. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
+
+02-CONTEXT · OUTPUT=IMAGE · VISUAL=measurement-object · MOTIV=dual-thermometer-materials
+================================================================================
 Beat 02-context
-Sprechaussage: „Legst du ein Stück Metall und ein Stück Holz lange genug nebeneinander, haben beide ungefähr dieselbe Raumtemperatur.“
-Bildidee: Nutze die gesamte 16:9-Fläche für denselben Tisch im Raum. Metallplatte und Holzbrett liegen direkt nebeneinander. Auf beiden liegt jeweils ein kleines digitales Kontaktthermometer, beide zeigen deutlich „21 °C“. Die Umgebung soll glaubwürdig und ruhig sein, damit klar wird: gleicher Raum, gleiche Ausgangstemperatur. Keine Hand im Bild. Keine zusätzlichen Daten. Sichtbarer Text ausschließlich Deutsch.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Sprechaussage: „Legst du eine Metallplatte und ein Holzbrett lange nebeneinander, können beide dieselbe Raumtemperatur haben. Ein Thermometer kann auf beiden 21 Grad anzeigen. Trotzdem fühlt sich Metall deutlich kälter an.“
+Bildidee: Objekt- und Messszene ohne Menschen. Top-down-Messaufbau auf neutraler Arbeitsfläche: links Metallprobe, rechts Holzprobe, auf beiden je ein kleines digitales Kontaktthermometer mit „21 °C“. Fokus auf den identischen Messwert. Kein Wärmefluss, keine Hände, keine Pfeile. Perspektive deutlich technischer und ruhiger als Beat 01.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-03-context
-==========
-Beat 03-context
-Sprechaussage: „Deine Hand ist aber wärmer als diese beiden Oberflächen. Sobald du sie berührst, beginnt Wärme aus deiner Haut in das Material zu fließen.“
-Bildidee: Zeige eine erwachsene Hand von oben, die sich auf Metall und Holz legt. Die Hand ist mit einem dezenten warmen Orange markiert, die beiden Oberflächen neutral-kühler. Direkt an den Kontaktstellen beginnen wenige klare Pfeile von der Hand in die Materialien. Nutze den ganzen 16:9-Raum und integriere die wissenschaftliche Darstellung in die reale Tischszene. Ein einziges deutsches Label ist erlaubt: „Wärmefluss“. Keine Temperaturwerte, keine Infoboxen.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Nur ein finales statisches Bild für 02-context. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
 
-04-foundation
-=============
-Beat 04-foundation
-Sprechaussage: „Wärme wandert immer vom wärmeren zum kälteren Bereich. Entscheidend ist jetzt, wie schnell ein Material diese Wärme weitertransportiert.“
-Bildidee: Erstelle eine klare 2D/2.5D-Wissenschaftsszene über die gesamte 16:9-Breite: links eine warme Handfläche, rechts eine kühlere feste Oberfläche. Ein kräftiger, aber sauberer Pfeil verläuft von warm nach kalt. Darunter zwei kurze deutsche Beschriftungen: „wärmer“ und „kälter“. Zusätzlich klein am Pfeil: „Wärmefluss“. Keine Formeln und keine zweite Aussage. Die Darstellung soll wie ein moderner Museumsexponat-Querschnitt wirken, nicht wie ein Schulbuchkasten.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+03-FOUNDATION · OUTPUT=IMAGE · VISUAL=concept-heatflow · MOTIV=heatflow-hand-surface
+================================================================================
+Beat 03-foundation
+Sprechaussage: „Der Grund ist nicht die Temperatur allein, sondern der Wärmefluss. Deine Hand ist wärmer als beide Oberflächen. Beim Berühren fließt deshalb Wärme aus deiner Haut in das Material.“
+Bildidee: Klare wissenschaftliche Konzeptdarstellung statt Raumfoto. Seitlicher Querschnitt: oben ein einzelner Finger/Handausschnitt als warme Zone, darunter eine kühlere Materialoberfläche. Wenige saubere Pfeile zeigen ausschließlich von warm nach kalt. Optional nur die kleinen Labels „wärmer“ und „kälter“. Keine zweite Materialprobe, kein Split-Screen.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-STOPP NACH BILDSCHRITT 1. Bilder 01–04 melden und auf Freigabe für Bildschritt 2 warten.
+Nur ein finales statisches Bild für 03-foundation. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
 
-BILDSCHRITT 2/5 · BILDER 05–08
-==============================
-Erzeuge jetzt ausschließlich Bilder 05 bis 08. Jedes Bild einzeln fertigstellen, auswählen und speichern, bevor das nächste beginnt.
+STOPP NACH BILDSCHRITT 1. Melde die fertigen Bilder und warte auf Freigabe für Bildschritt 2.
 
-05-mechanism
-============
+BILDSCHRITT 2/5 · 04-mechanism BIS 06-mechanism
+====================================================
+Erzeuge ausschließlich die 3 Bilder dieses Schritts. Die Visual-Typen in diesem Schritt müssen sichtbar unterschiedlich bleiben.
+
+04-MECHANISM · OUTPUT=IMAGE · VISUAL=kitchen-context · MOTIV=spoon-in-hot-tea
+================================================================================
+Beat 04-mechanism
+Sprechaussage: „Ein Beispiel kennst du aus der Küche: Steckt ein Metalllöffel in heißem Tee, wird sein Griff schnell warm, weil Metall Wärme gut weiterleitet.“
+Bildidee: Vollständige glaubwürdige Küchenszene mit Tasse heißen Tees auf einer Arbeitsplatte. Ein Metalllöffel steckt in der Tasse; entlang des Löffels wird die Wärmeausbreitung subtil als warmer Verlauf dargestellt. Daneben liegen normale Küchengegenstände, aber nicht überladen. Keine Hand, keine Holzplatte, keine Laboroptik. Die Küche soll klar als neue visuelle Welt wirken.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
+
+Nur ein finales statisches Bild für 04-mechanism. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
+
+05-MECHANISM · OUTPUT=IMAGE · VISUAL=technical-cutaway · MOTIV=metal-conduction-cutaway
+================================================================================
 Beat 05-mechanism
-Sprechaussage: „Metall kann Wärme sehr gut leiten. Die Energie, die deine Hand an die Oberfläche abgibt, wird schnell in das restliche Metall weitergeleitet.“
-Bildidee: Zeige eine große Metallplatte, die fast die gesamte 16:9-Breite einnimmt, mit einer Hand links auf der Oberfläche. Von der Kontaktstelle breitet sich die zugeführte Wärme sichtbar schnell und weit durch das Metall aus: ein klarer orangefarbener Energieverlauf, der in der Platte nach rechts weiterzieht. Die Platte darf als sauberer Cutaway dargestellt sein. Nur ein kurzes deutsches Label: „schnelle Wärmeleitung“. Kein Holz in dieser Szene, keine Zahlen.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Sprechaussage: „Genau das passiert bei Raumtemperatur in die andere Richtung. Metall transportiert die Wärme deiner Hand schnell von der Kontaktstelle weg und kann weiter Wärme aufnehmen.“
+Bildidee: Technischer Cutaway einer langen Metallprobe, horizontal über den Frame. Links eine kleine warme Kontaktzone, von dort breitet sich der Energieverlauf weit durch das Metall aus. Keine sichtbare Hand; die Kontaktzone kann abstrakt als warmer Bereich markiert sein. Hintergrund dunkel-neutral wie ein modernes Museumsexponat, nicht türkis. Optional kleines Label „schnelle Wärmeleitung“.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-06-mechanism
-============
+Nur ein finales statisches Bild für 05-mechanism. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
+
+06-MECHANISM · OUTPUT=IMAGE · VISUAL=material-macro · MOTIV=wood-conduction-macro
+================================================================================
 Beat 06-mechanism
-Sprechaussage: „Dadurch bleibt die Kontaktstelle vergleichsweise kühl und deine Hand verliert dort weiterhin schnell Wärme.“
-Bildidee: Große 16:9-Nahaufnahme einer Hand auf einer Metallplatte. Zeige die Kontaktzone als kleinen Bereich unter den Fingern und die Wärme, die von dort sofort in ein größeres Metallvolumen abfließt. Die Hand soll sichtbar Wärme verlieren, während die Metallkontaktstelle nicht stark aufheizt. Verwende wenige Pfeile, die vom Finger in die Platte und anschließend seitlich durch das Metall zeigen. Deutsches Label: „Wärme wird weitergeleitet“. Keine Infobox.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Sprechaussage: „Holz leitet Wärme deutlich schlechter. Die abgegebene Wärme bleibt stärker nahe der Berührungsstelle, statt sich schnell durch das Material zu verteilen.“
+Bildidee: Makro-/Materialansicht eines Holzquerschnitts über fast den ganzen Frame. Eine kleine warme Zone bleibt nahe einer Kontaktstelle konzentriert und reicht nur wenig in das Holz hinein. Keine Hand, kein Metall, keine identische Cutaway-Komposition wie Beat 05; nutze eine schräge Makroperspektive mit sichtbarer Holzstruktur. Optional Label „langsame Wärmeleitung“.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-07-mechanism
-============
+Nur ein finales statisches Bild für 06-mechanism. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
+
+STOPP NACH BILDSCHRITT 2. Melde die fertigen Bilder und warte auf Freigabe für Bildschritt 3.
+
+BILDSCHRITT 3/5 · 07-mechanism BIS 09-deepening
+====================================================
+Erzeuge ausschließlich die 3 Bilder dieses Schritts. Die Visual-Typen in diesem Schritt müssen sichtbar unterschiedlich bleiben.
+
+07-MECHANISM · OUTPUT=IMAGE · VISUAL=thermal-comparison · MOTIV=finger-thermal-result
+================================================================================
 Beat 07-mechanism
-Sprechaussage: „Deine Haut kühlt deshalb in kurzer Zeit stärker ab. Genau diese schnelle Abkühlung nimmst du als besonders kalt wahr.“
-Bildidee: Zeige zwei Finger derselben erwachsenen Hand auf einer Metallfläche in einer realistischen Innenraumszene. Der Finger direkt am Metall wechselt an der Kontaktfläche sichtbar von warmem Orange zu kühlem Blau, während die restliche Hand neutral bleibt. Daneben nur ein kleines deutsches Label: „Haut kühlt schneller ab“. Keine anatomischen Details, keine Nerven, keine medizinische Darstellung. Die Hauptaussage ist ausschließlich die schnelle Abkühlung der Haut.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Sprechaussage: „Nach ein paar Sekunden ist deine Haut am Metall deshalb stärker abgekühlt als am Holz. Diese schnellere Abkühlung nimmst du als stärkeres Kältegefühl wahr.“
+Bildidee: Thermografie-artige Vergleichsdarstellung der Haut nach Kontakt. Zeige zwei Fingerspitzen groß nebeneinander, eine deutlich stärker abgekühlt, die andere näher an der Ausgangstemperatur. Die Materialplatten selbst nur klein am unteren Rand andeuten. Keine große Hand auf zwei Blöcken, keine wiederholte 21-Grad-Anzeige. Optional kleine Labels „Metallkontakt“ und „Holzkontakt“.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-08-mechanism
-============
-Beat 08-mechanism
-Sprechaussage: „Holz verhält sich anders. Es leitet Wärme deutlich schlechter und transportiert die Energie deiner Hand nur langsam weiter.“
-Bildidee: Zeige jetzt eine große Holzoberfläche über die gesamte 16:9-Breite mit derselben Hand links. Wärme gelangt von der Hand nur in einen kleinen Bereich direkt unter den Fingern und breitet sich deutlich langsamer und kürzer aus als zuvor beim Metall. Nutze ein warmes, natürliches Holzbild mit klarer 2D/2.5D-Erklärschicht. Deutsches Label: „langsame Wärmeleitung“. Kein Metall in dieser Szene, keine Zahlen.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Nur ein finales statisches Bild für 07-mechanism. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
 
-STOPP NACH BILDSCHRITT 2. Bilder 05–08 melden und auf Freigabe für Bildschritt 3 warten.
+08-DEEPENING · OUTPUT=IMAGE · VISUAL=bathroom-environment · MOTIV=tile-vs-rug-feet
+================================================================================
+Beat 08-deepening
+Sprechaussage: „Darum fühlt sich auch eine Fliese oft kälter an als ein Teppich, obwohl beide im selben Raum liegen. Die Fliese führt Wärme aus deinem Fuß schneller ab.“
+Bildidee: Vollständige Badezimmer-/Wohnraumszene aus niedriger Perspektive. Eine Person steht mit einem Fuß auf Fliese und einem Fuß auf einem kleinen Teppich; nur Füße und Unterschenkel sind im Frame, der Kopf ist bewusst vollständig außerhalb des Bildes. Wärmeabfluss an der Fliesenseite subtil stärker. Natürliche Raumfarben, keine Metall-/Holzblöcke.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-BILDSCHRITT 3/5 · BILDER 09–12
-==============================
-Erzeuge jetzt ausschließlich Bilder 09 bis 12. Jedes Bild einzeln fertigstellen, auswählen und speichern, bevor das nächste beginnt.
+Nur ein finales statisches Bild für 08-deepening. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
 
-09-mechanism
-============
-Beat 09-mechanism
-Sprechaussage: „Direkt an der Berührungsstelle erwärmt sich das Holz deshalb schneller. Der Wärmefluss aus deiner Hand wird kleiner.“
-Bildidee: 16:9-Nahaufnahme einer Hand auf Holz. Direkt unter den Fingern entsteht ein kleiner warmer Bereich im Holz, der nahe an der Hand bleibt. Die Wärme breitet sich nicht weit aus. Zeige zuerst einen etwas größeren Pfeil von der Hand ins Holz und weiter rechts nur noch einen kleinen Pfeil, um den abnehmenden Wärmefluss zu erklären. Deutsches Label: „Kontaktstelle wird wärmer“. Keine zusätzlichen Erklärboxen.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+09-DEEPENING · OUTPUT=IMAGE · VISUAL=outdoor-application · MOTIV=bike-handlebar-winter
+================================================================================
+Beat 09-deepening
+Sprechaussage: „Draußen ist es ähnlich: Ein blanker Metalllenker am Fahrrad kann sich im Winter kälter anfühlen als der Gummigriff daneben, obwohl beide dieselbe Umgebung hatten.“
+Bildidee: Winterliche Außenszene mit einem Fahrrad als Hauptmotiv. Naher, aber räumlicher Blick auf den Lenker: ein blankes Metallstück und direkt daneben der Gummigriff, leichter Reif, kalte Morgenumgebung. Keine Person nötig. Keine Pfeile quer über das ganze Bild; nur ein sehr dezenter Hinweis auf den Unterschied.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-10-mechanism
-============
-Beat 10-mechanism
-Sprechaussage: „Das Verrückte daran: Ein Thermometer kann auf Metall und Holz denselben Wert anzeigen, während deine Finger trotzdem zwei verschiedene Temperaturen zu fühlen scheinen.“
-Bildidee: Erstelle eine vollflächige 16:9-Vergleichsszene auf einem Tisch: links Metall, rechts Holz. Auf beiden zeigt ein identisches Thermometer „21 °C“. Eine Hand berührt beide Flächen. Beim Metall ist der Wärmeabfluss deutlich stärker visualisiert, beim Holz schwächer. Große, klare Bildaufteilung ohne Rahmen. Deutscher Kurztext oben: „Beide: 21 °C“. Keine weiteren Sätze.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Nur ein finales statisches Bild für 09-deepening. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
 
-11-mechanism
-============
-Beat 11-mechanism
-Sprechaussage: „Der Grund ist, dass dein Tastsinn kein eingebautes Oberflächenthermometer ist. Temperaturrezeptoren melden vor allem, wie sich die Temperatur deiner Haut verändert.“
-Bildidee: Zeige eine stilisierte erwachsene Hand in einer neutralen 16:9-Szene. Links berührt ein Finger Metall und kühlt an der Kontaktstelle sichtbar ab; rechts berührt ein anderer Finger Holz und bleibt näher an seiner Ausgangsfarbe. Ergänze keine Anatomie und keine Nervenzeichnung. Ein kurzer deutscher Merksatz darf integriert werden: „Wir fühlen die Veränderung unserer Haut.“ Keine medizinische Optik, kein englischer Text.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+STOPP NACH BILDSCHRITT 3. Melde die fertigen Bilder und warte auf Freigabe für Bildschritt 4.
 
-12-mechanism
-============
-Beat 12-mechanism
-Sprechaussage: „Bei Raumtemperatur kühlt Metall deine Haut schneller ab als Holz. Deshalb meldet dein Nervensystem beim Metall ein stärkeres Kältegefühl.“
-Bildidee: Zeige dieselbe Hand in einer klaren 16:9-Doppelszene: links auf Metall mit kräftigem Wärmefluss aus dem Finger, rechts auf Holz mit deutlich kleinerem Wärmefluss. Die Hautfarbe an der Metallseite ist kühler. Nutze die gesamte Breite, keine separaten Kästen. Zwei deutsche Labels reichen: „stärkerer Wärmefluss“ und „schwächerer Wärmefluss“. Keine zusätzlichen Aussagen.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+BILDSCHRITT 4/5 · 10-deepening BIS 12-deepening
+====================================================
+Erzeuge ausschließlich die 3 Bilder dieses Schritts. Die Visual-Typen in diesem Schritt müssen sichtbar unterschiedlich bleiben.
 
-STOPP NACH BILDSCHRITT 3. Bilder 09–12 melden und auf Freigabe für Bildschritt 4 warten.
+10-DEEPENING · OUTPUT=IMAGE · VISUAL=instrument-concept · MOTIV=thermometer-vs-skin-response
+================================================================================
+Beat 10-deepening
+Sprechaussage: „Deine Haut misst die Temperatur eines Gegenstands nicht wie ein Thermometer. Sie reagiert stark darauf, wie schnell sich ihre eigene Temperatur beim Kontakt verändert.“
+Bildidee: Instrument-/Konzeptszene. Links ein echtes digitales Thermometer, das eine Materialoberfläche misst; rechts eine vereinfachte thermische Darstellung einer Fingerspitze, deren Temperatur sich sichtbar verändert. Nicht als klassischer 50/50-Split-Screen, sondern beide Elemente in einem gemeinsamen Labor-/Messplatz integrieren. Optional Labels „Messwert“ und „Hautveränderung“.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-BILDSCHRITT 4/5 · BILDER 13–15
-==============================
-Erzeuge jetzt ausschließlich Bilder 13 bis 15. Jedes Bild einzeln fertigstellen, auswählen und speichern, bevor das nächste beginnt.
+Nur ein finales statisches Bild für 10-deepening. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
 
-13-deepening
-============
+11-DEEPENING · OUTPUT=IMAGE · VISUAL=material-infographic · MOTIV=aluminium-vs-wood-samples
+================================================================================
+Beat 11-deepening
+Sprechaussage: „Wie groß der Unterschied sein kann, zeigt die Wärmeleitfähigkeit: Aluminium transportiert Wärme mehr als tausendmal besser als typisches Holz.“
+Bildidee: Hochwertige Materialvergleichs-Illustration ohne Menschen. Zwei große reale Materialproben in einem modernen Wissenschaftsmuseum-Look: Aluminium und Holz. Nur zwei kleine Werte und ein klarer Vergleich „> 1000×“. Keine Hände, keine Thermometer, keine große Überschrift. Die Materialien sollen physisch greifbar wirken statt wie flache Balkendiagramme.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
+
+Nur ein finales statisches Bild für 11-deepening. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
+
+12-DEEPENING · OUTPUT=IMAGE · VISUAL=warm-lab-comparison · MOTIV=warm-materials-reverse-flow
+================================================================================
+Beat 12-deepening
+Sprechaussage: „Das Prinzip funktioniert auch andersherum. Ist Metall wärmer als deine Hand, überträgt es Wärme schneller auf deine Haut und kann sich heißer anfühlen als gleich warmes Holz.“
+Bildidee: Warme Labor-/Werkstattszene mit zwei gleich warmen Proben, Metall und Holz, beide klein mit „45 °C“ markiert. Eine Hand nähert sich von oben, berührt aber nicht sichtbar. Wärmefluss geht diesmal von den Materialien Richtung Hand und ist beim Metall deutlich stärker. Warme Umgebungstöne statt kaltem Türkis. Keine Warnoptik, keine Verbrennung.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
+
+Nur ein finales statisches Bild für 12-deepening. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
+
+STOPP NACH BILDSCHRITT 4. Melde die fertigen Bilder und warte auf Freigabe für Bildschritt 5.
+
+BILDSCHRITT 5/5 · 13-deepening BIS 15-payoff
+====================================================
+Erzeuge ausschließlich die 3 Bilder dieses Schritts. Die Visual-Typen in diesem Schritt müssen sichtbar unterschiedlich bleiben.
+
+13-DEEPENING · OUTPUT=IMAGE · VISUAL=misconception-comparison · MOTIV=same-temperature-different-transfer
+================================================================================
 Beat 13-deepening
-Sprechaussage: „Wie groß der Unterschied sein kann, zeigt die Wärmeleitfähigkeit: Aluminium leitet Wärme grob über tausendmal besser als Holz.“
-Bildidee: Erstelle eine hochwertige 16:9-Editorial-Infografik mit zwei großen Materialproben statt abstrakter Balkengrafik: links Aluminium, rechts Holz. Neben jeder Probe eine kurze deutsche Zahl: „Aluminium ≈ 237 W/(m·K)“ und „Holz ≈ 0,13 W/(m·K)“. Dazwischen ein klarer Hinweis: „über 1000×“. Die Materialien sollen groß und greifbar wirken. Genau eine visuelle Hauptidee: der enorme Unterschied der Wärmeleitfähigkeit. Kein weiterer Text.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Sprechaussage: „Metall ist also nicht automatisch ‚kälter gespeichert‘. Zwei Materialien können denselben Messwert haben und sich trotzdem verschieden anfühlen, weil sie Wärme unterschiedlich schnell übertragen.“
+Bildidee: Klare Missverständnis-Auflösung ohne Mensch. Zwei Materialkörper mit identischem kleinem Messwert „21 °C“. Von einer abstrakten warmen Kontaktquelle führen zwei unterschiedlich breite Wärmefluss-Wege zu Metall und Holz. Keine große Frage oben, kein wiederholter Tisch aus Beat 02. Die Hauptidee ist gleicher Messwert, unterschiedliche Übertragungsrate.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-14-deepening
-============
+Nur ein finales statisches Bild für 13-deepening. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
+
+14-DEEPENING · OUTPUT=IMAGE · VISUAL=application-montage · MOTIV=three-everyday-examples
+================================================================================
 Beat 14-deepening
-Sprechaussage: „Das Prinzip funktioniert auch umgekehrt. Ist Metall deutlich wärmer als deine Hand, fühlt es sich schneller heiß an als gleich warmes Holz.“
-Bildidee: Zeige eine sichere, nicht gefährliche 16:9-Vergleichsszene mit zwei erwärmten Materialplatten auf einem Labortisch: Metall links, Holz rechts, beide mit derselben Anzeige „45 °C“. Eine Hand ist nur knapp darüber, ohne direkten riskanten Kontakt. Wärmefluss-Pfeile zeigen vom Material zur Hand; beim Metall deutlich stärker. Deutscher Kurztext: „Gleich warm – Metall überträgt Wärme schneller“. Keine Verbrennungen, keine Warnoptik.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Sprechaussage: „Ob Metalllöffel, Fliese oder Fahrradlenker: Immer entscheidet die Geschwindigkeit des Wärmeflusses darüber, wie schnell deine Haut wärmer oder kälter wird.“
+Bildidee: Zusammenfassende Drei-Szenen-Montage über den gesamten Frame, aber ohne harte Infokasten-Rahmen: links eine Tasse mit Metalllöffel, mittig Fliese neben Teppich, rechts winterlicher Fahrradlenker. Die drei kleinen Welten sollen visuell verbunden sein, aber klar verschieden. Keine Person, keine großen Titel, höchstens ein kleines Label „Wärmefluss“.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-15-deepening
-============
-Beat 15-deepening
-Sprechaussage: „Darum wirken zum Beispiel eine Metallbank und eine Holzbank im Winter unterschiedlich kalt, obwohl beide lange draußen standen.“
-Bildidee: Nutze den gesamten 16:9-Raum für einen winterlichen Park. Links eine Metallbank, rechts eine Holzbank, beide nebeneinander und mit leichtem Reif in derselben Umgebung. Eine stilisierte erwachsene Person berührt mit je einer Hand kurz beide Lehnen. Am Metall ist stärkerer Wärmeabfluss aus der Hand visualisiert. Keine Infobox, keine Zahlen. Optional kleine deutsche Labels: „Metall“ und „Holz“.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Nur ein finales statisches Bild für 14-deepening. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
 
-STOPP NACH BILDSCHRITT 4. Bilder 13–15 melden und auf Freigabe für Bildschritt 5 warten.
+15-PAYOFF · OUTPUT=IMAGE · VISUAL=payoff-concept · MOTIV=temperature-vs-heatflow-payoff
+================================================================================
+Beat 15-payoff
+Sprechaussage: „Metall fühlt sich bei Raumtemperatur kälter an, weil es Wärme schneller aus deiner Hand abführt als Holz. Gleiche Temperatur bedeutet nicht automatisch gleiches Gefühl.“
+Bildidee: Sehr klare finale Konzeptszene, nicht zurück zum alten Hand-auf-zwei-Blöcke-Motiv. Eine warme Quelle mit kleinem Label „Hand“ speist zwei getrennte Wege: ein breiter schneller Wärmefluss in Metall, ein schmalerer langsamer Wärmefluss in Holz. Beide Materialien zeigen klein denselben Temperaturwert. Keine große Überschrift; optional nur „Metall“ und „Holz“.
+Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration, 16:9, 1920×1080. Nutze die gesamte Bildfläche sinnvoll. Keine große Überschrift und keinen großen Titel in der Szene; bevorzugt 0–2 kurze deutsche Labels. Kein englischer Text, keine Infobox-Wand, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen. Keine gesichtslosen sichtbaren Köpfe: Wenn ein Kopf sichtbar ist, vollständige natürliche stilisierte Gesichtszüge; wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames. Komposition, Palette und Perspektive sollen sich klar vom vorherigen Beat unterscheiden.
 
-BILDSCHRITT 5/5 · BILDER 16–18
-==============================
-Erzeuge jetzt ausschließlich Bilder 16 bis 18. Jedes Bild einzeln fertigstellen, auswählen und speichern, bevor das nächste beginnt.
-
-16-deepening
-============
-Beat 16-deepening
-Sprechaussage: „Es geht also nicht nur darum, welche Temperatur ein Gegenstand hat, sondern auch darum, wie schnell Wärme zwischen ihm und deiner Haut übertragen wird.“
-Bildidee: Erstelle eine klare 16:9-Zusammenführung: eine Hand in der Mitte, links ein Thermometer-Symbol mit dem deutschen Wort „Temperatur“, rechts ein deutliches Wärmefluss-Symbol zwischen Hand und Material mit dem deutschen Wort „Wärmefluss“. Beide Elemente führen visuell zur Hand. Keine mathematische Formel. Die eine Hauptaussage lautet: Gefühl entsteht nicht nur durch den Messwert, sondern auch durch den Wärmefluss.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
-
-17-payoff
-=========
-Beat 17-payoff
-Sprechaussage: „Metall fühlt sich deshalb kälter an, weil es Wärme viel schneller aus deiner Hand abführt als Holz.“
-Bildidee: Erstelle eine starke 16:9-Payoff-Szene mit einer Hand, die gleichzeitig Metall links und Holz rechts berührt. Vom Finger zur Metallseite verlaufen mehrere klare Wärmefluss-Pfeile; zur Holzseite nur wenige kleine. Die beiden Materialien füllen den Frame fast vollständig. Zwei kurze deutsche Labels: „schneller Wärmeabfluss“ bei Metall und „langsamer Wärmeabfluss“ bei Holz. Kein zusätzlicher Text.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
-
-18-payoff
-=========
-Beat 18-payoff
-Sprechaussage: „Gleiche Temperatur bedeutet also nicht automatisch gleiches Gefühl – entscheidend ist der Wärmefluss.“
-Bildidee: Finale 16:9-Szene: Metall und Holz nebeneinander, beide mit kleiner Anzeige „21 °C“. Darüber eine Hand, die beide berührt. Die Wärmefluss-Pfeile unterscheiden sich klar. Integriere einen einzigen deutschen Merksatz groß und sauber: „Gleiche Temperatur ≠ gleiches Gefühl“. Darunter klein: „Entscheidend ist der Wärmefluss.“ Keine weiteren Labels, kein Wasserzeichen.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
+Nur ein finales statisches Bild für 15-payoff. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.
 
 BILDSCHRITT 5 ABGESCHLOSSEN. Die Szenenbild-Produktion ist vollständig.
