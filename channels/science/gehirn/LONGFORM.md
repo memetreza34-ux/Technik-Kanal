@@ -35,21 +35,39 @@ Keine Begrüßung und kein Vorgeplänkel. Die Erklärung beginnt innerhalb der e
 - keine Wiederholung derselben Aussage nur zur Verlängerung
 - jeder Abschnitt bringt die zentrale Frage voran
 
-## Skript muss visuell abwechslungsreich schreibbar sein
+## Wichtigste Skriptregel: bildklar schreiben
 
-Das Skript wird nicht nur auf Sprache, sondern auch auf **Bildmöglichkeiten** geprüft.
+Jeder wichtige Satz bzw. Beat muss sich **einfach und eindeutig visualisieren lassen**.
+
+Vor Freigabe jedes Beats fragen:
+
+> „Welches eine Bild würde diesen gesprochenen Inhalt am schnellsten verständlich machen?“
+
+Wenn darauf keine klare Antwort möglich ist, muss der Satz einfacher oder konkreter geschrieben werden.
 
 Verbindlich:
-
-- nicht fünf Sätze hintereinander schreiben, die alle nur „Hand auf Metall/Holz“ zeigen können
-- wenn mehrere aufeinanderfolgende Aussagen dieselbe Bildidee erzwingen würden, den Abschnitt umschreiben
-- abstrakte Erklärung mit konkreten Anwendungen, Messsituationen, Umgebungen oder technischen Detailansichten abwechseln
-- Beispiele dürfen gezielt eingesetzt werden, wenn sie eine neue visuelle Welt öffnen und trotzdem die Hauptfrage erklären
-- vor Freigabe des Skripts eine kurze Visualisierungsprobe machen: Welche Darstellungsform hätte jeder Abschnitt?
+- Voice-over nicht unnötig abstrakt formulieren
+- eine Aussage pro Beat bevorzugen
+- sichtbare Ursache → Vorgang → Ergebnis bevorzugen
+- Fachdetails erst nennen, wenn ein klares Bild dafür existiert
+- Beispiele gezielt nutzen, wenn sie eine neue sinnvolle Bildform öffnen
+- nicht mehrere Sätze hintereinander schreiben, die praktisch dasselbe Bild benötigen
 
 **Warnsignal:** Drei benachbarte Beats würden dieselbe Hauptkomposition, dasselbe Hauptmotiv oder denselben Hintergrund benötigen.
 
 Dann gilt: **Skript/Beat-Plan ändern, nicht nur den Prompt umformulieren.**
+
+## Erste Szene und Thumbnail
+
+Titel, Thumbnail, Hook und erste Szene müssen dasselbe Versprechen öffnen.
+
+Nach Auswahl des Covers soll **Szene 01 bevorzugt dessen Hauptmotiv weiterführen**:
+- gleiche zentrale Bildidee wie das gewählte Cover
+- große Thumbnail-Schlagzeile für die Videoszene entfernen/reduzieren
+- Szene 01 wirkt wie die direkte Fortsetzung des Covers
+- Ausnahme nur, wenn das Cover den ersten gesprochenen Satz nicht fachlich sauber erklären kann
+
+Das Thumbnail bleibt technisch eine separate Datei; visuell soll der Einstieg trotzdem anschließen.
 
 ## Visuelle Beat-Regel
 
@@ -59,21 +77,40 @@ Sondern: **eine verständliche visuelle Aussage = ein Beat.**
 
 Ein komplizierter Satz darf mehrere Bilder benötigen. Mehrere Sätze dürfen auf demselben Bild bleiben, wenn dieselbe visuelle Aussage erklärt wird.
 
-Vor der Bildproduktion wird ein Diversity-Check gemacht:
-- mindestens 5 unterschiedliche Darstellungsformen im 2-Minuten-Video
+Vor der Bildproduktion wird für jeden Beat ein Mini-Brief definiert:
+- Voice-over-Kernaussage
+- Hauptmotiv
+- Erklärform
+- optional nötige Labels
+
+## Visuelle Vielfalt
+
+Mindestens 5 unterschiedliche Darstellungsformen im 2-Minuten-Video, z. B.:
+- Umgebung
+- Querschnitt
+- Makro
+- Vergleich
+- Prozessbild
+- Draufsicht
+- Diagramm
+- Schaltplan/Funktionsschema
+- Vorher/Nachher
+
+Regeln:
 - keine identische Hauptkomposition in zwei direkt aufeinanderfolgenden Beats
 - derselbe dominante Bildanker höchstens 3-mal
-- Motiv „Hand berührt Gegenstand + Pfeile“ höchstens 3-mal als Hauptbild
+- „Hand berührt Gegenstand + Pfeile“ höchstens 3-mal als Hauptbild
+- echte inhaltliche Variation statt nur anderer Perspektive/Farbe
 
-## Titel und Thumbnail
+## Text im Bild
 
-Thumbnail ist nicht Bild 01.
+Kurze Beschriftungen sind ausdrücklich erlaubt, wenn sie das Bild einfacher verständlich machen.
 
-- 1280×720
-- drei Kandidaten
-- ein Gewinner wird manuell ausgewählt
-- Titel, Thumbnail und Hook geben dasselbe Versprechen
-- das gewählte Thumbnail ist nur Stil-/Qualitätsreferenz, **keine Farb- oder Layoutvorlage für alle Szenen**
+- normale Szenen: meist 0–3 kurze deutsche Labels
+- Diagramme/Schaltpläne: ausnahmsweise bis 5
+- keine Textwand
+- keine eingebrannten Untertitel
+- keine große Szenenüberschrift als Standard
 
 ## Keine eingebrannten Untertitel
 
@@ -81,27 +118,28 @@ Die finalen YouTube-Videos haben **keine eingebrannten Untertitel/Captions**.
 
 Wortzeiten dürfen intern weiterhin für Bildwechsel, Timing und Synchronisation erzeugt werden. Sie werden aber nicht als Untertitel ins Video gerendert.
 
-Kurze Beschriftungen innerhalb eines wissenschaftlichen Bildes bleiben erlaubt, wenn sie für das Verständnis nötig sind. Sie sind kein Ersatz für Untertitel und sollen sparsam sein.
-
 ## Produktionsworkflow
 
 1. Thema gegen `KANAL.md` prüfen
 2. zentrale Frage formulieren
-3. Titel-/Thumbnail-Versprechen grob festlegen
+3. Titel-/Thumbnail-Versprechen festlegen
 4. fachlich recherchieren und Quellen dokumentieren
 5. Story-Struktur bauen
 6. vollständiges deutsches Skript schreiben
-7. Skript auf visuelle Wiederholungsgefahr prüfen und ggf. umschreiben
-8. Skript in visuelle Aussagen/Beats zerlegen
-9. Darstellungsformen bewusst variieren
-10. Bildprompts und Thumbnail-Prompts erstellen
-11. Preflight
-12. Bilder in den fünf Flow-Schritten erzeugen
-13. Voice erzeugen/aufnehmen und auf 1,10× verarbeiten
-14. Wortzeiten intern erzeugen und Beats synchronisieren
-15. statische 16:9-Montage in Remotion — **ohne eingebrannte Untertitel**
-16. optionale sparsame SFX
-17. Render-QA, Bild-QA, Quellen-QA und Endkontrolle
+7. **jede Aussage auf einfache Visualisierbarkeit prüfen**
+8. bei repetitiven Bildideen Skript/Beat-Plan umschreiben
+9. Skript in visuelle Aussagen/Beats zerlegen
+10. Darstellungsformen bewusst variieren
+11. Bildprompts und Thumbnail-Prompts erstellen
+12. Preflight
+13. drei Cover erzeugen und eines auswählen
+14. Szene 01 visuell an das gewählte Cover-Motiv anschließen
+15. Bilder in fünf Flow-Schritten erzeugen
+16. Voice erzeugen/aufnehmen und auf 1,10× verarbeiten
+17. Wortzeiten intern erzeugen und Beats synchronisieren
+18. statische 16:9-Montage in Remotion — ohne eingebrannte Untertitel
+19. optionale sparsame SFX
+20. Render-QA, Bild-QA, Quellen-QA und Endkontrolle
 
 ## Qualitätsfragen
 
@@ -109,10 +147,12 @@ Vor Produktion:
 - klare zentrale Frage?
 - roter Faden statt Faktenliste?
 - Erklärung startet früh?
-- jede Vertiefung relevant?
+- lässt sich jeder Beat in einem einfachen klaren Bild erklären?
+- erklärt jedes geplante Bild wirklich den aktuellen Voice-over-Satz?
+- erste Szene führt das gewählte Cover-Motiv sinnvoll weiter?
 - können die Beats visuell deutlich unterschiedlich aussehen?
-- gibt es keine Kette fast identischer Hand-/Materialbilder?
+- gibt es keine Kette fast identischer Bilder?
 - mindestens 5 Darstellungsformen geplant?
-- Titel, Thumbnail und Hook konsistent?
+- kurze Labels nur dort, wo sie helfen?
 - keine eingebrannten Untertitel vorgesehen?
 - klarer Payoff?
