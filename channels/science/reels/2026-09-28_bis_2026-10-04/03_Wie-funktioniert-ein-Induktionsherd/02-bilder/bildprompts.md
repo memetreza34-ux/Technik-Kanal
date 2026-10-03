@@ -1,17 +1,30 @@
-# Bildprompts – Scientific Scene Explainer v1
+# Technical Editorial Explainer 2.5D · YouTube 16:9
 
-Video: **Wie funktioniert ein Induktionsherd?**
+Alle 15 Szenenprompts und der Thumbnail-Prompt sind auf **Englisch** geschrieben. Sichtbarer Text im Bild bleibt ausschließlich **Deutsch**.
 
-15 visuelle Beats, 16:9, verteilt auf fünf Bildschritte à drei Bilder.
+## Style-Lock
 
-Leitregeln:
-- eine verständliche visuelle Aussage = ein Beat
-- mindestens 5 deutlich unterschiedliche Darstellungsformen
-- keine gleiche Hauptkomposition direkt hintereinander
-- kein Thumbnail-Look als starres Szenen-Template
-- normale Szenen ohne große Überschrift; 0–2 Labels bevorzugt
-- keine eingebrannten Untertitel
-- sichtbarer Text ausschließlich Deutsch
-- keine gesichtslosen sichtbaren Köpfe
+Jeder Prompt verwendet dieselbe Bildsprache:
 
-Einzelprompts liegen in `02-bilder/prompts/`.
+- clean modern 2D/2.5D vector-like technical editorial illustration
+- simplified but believable proportions
+- matte materials
+- clean edges
+- subtle gradients
+- soft controlled shadows
+- consistent line weight
+- moderate depth
+- warm off-white, graphite and muted industrial neutrals as base family
+- meaningful copper / blue / orange-red / green accents only
+
+Nicht erlaubt:
+- photorealism
+- real-photo aesthetics
+- hyperrealistic environments
+- generic AI art
+- white textbook infographic layouts
+- Pixar/cartoon styling
+- sci-fi HUDs
+- neon-heavy effects
+
+Die Darstellungsart darf zwischen Umgebung, Cutaway, Vergleich, Makro, Draufsicht, Diagramm und Prozessdarstellung wechseln. Der Style-Lock bleibt identisch.
