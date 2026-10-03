@@ -1,4 +1,0 @@
-Beat 12-mechanism
-Sprechaussage: „Bei Raumtemperatur kühlt Metall deine Haut schneller ab als Holz. Deshalb meldet dein Nervensystem beim Metall ein stärkeres Kältegefühl.“
-Bildidee: Zeige dieselbe Hand in einer klaren 16:9-Doppelszene: links auf Metall mit kräftigem Wärmefluss aus dem Finger, rechts auf Holz mit deutlich kleinerem Wärmefluss. Die Hautfarbe an der Metallseite ist kühler. Nutze die gesamte Breite, keine separaten Kästen. Zwei deutsche Labels reichen: „stärkerer Wärmefluss“ und „schwächerer Wärmefluss“. Keine zusätzlichen Aussagen.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.

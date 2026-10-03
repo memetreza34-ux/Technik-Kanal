@@ -1,7 +1,7 @@
-Erstelle drei klar unterschiedliche Thumbnail-Kandidaten für das deutsche YouTube-Wissenschaftsvideo „Warum fühlt sich Metall kälter an als Holz?“. Format 1280×720, 16:9, Scientific Scene Explainer v1, erwachsen, klar, hoher Kontrast, kein englischer Text, keine Logos, kein Wasserzeichen.
+Erstelle drei klar unterschiedliche Thumbnail-Kandidaten für das deutsche YouTube-Wissenschaftsvideo „Warum fühlt sich Metall kälter an als Holz?“. 1280×720, 16:9, Scientific Scene Explainer v1, erwachsen, hochwertig, klare Materialwirkung, starke visuelle Hierarchie.
 
-Kandidat 1: Hand berührt links Metall und rechts Holz; beide zeigen „21 °C“. Beim Metall stärkerer Wärmeabfluss. Großer Text: „GLEICHE TEMPERATUR?“
-Kandidat 2: Nahaufnahme einer Hand zwischen Metall und Holz, diagonale Teilung. Großer Text: „WARUM IST METALL KÄLTER?“
-Kandidat 3: Metall und Holz nebeneinander, über beiden identische Anzeige „21 °C“. Hand berührt beide. Großer Text: „BEIDE 21 °C!“
+Kandidat 1: Metall- und Holzoberfläche mit identischer kleiner Anzeige „21 °C“, dazwischen eine Hand als starke zentrale Geste. Großer deutscher Text: „GLEICHE TEMPERATUR?“
+Kandidat 2: Winterliche Alltagsszene mit Metall- und Holzobjekt, sichtbar gleicher Temperaturwert, großer deutscher Text: „WARUM FÜHLT SICH METALL KÄLTER AN?“
+Kandidat 3: Naher Materialvergleich Metall gegen Holz, identischer Messwert, aber deutlich verschieden breiter Wärmefluss. Großer deutscher Text: „BEIDE 21 °C!“
 
-Drei wirklich verschiedene Kompositionen, nicht nur kleine Varianten derselben Anordnung. Sichtbarer Text ausschließlich auf Deutsch.
+Die drei Kandidaten müssen wirklich andere Kompositionen haben. Kein englischer Text, keine Logos, kein Wasserzeichen. Falls ein menschlicher Kopf sichtbar ist: vollständige natürliche stilisierte Gesichtszüge; keine gesichtslosen sichtbaren Köpfe.

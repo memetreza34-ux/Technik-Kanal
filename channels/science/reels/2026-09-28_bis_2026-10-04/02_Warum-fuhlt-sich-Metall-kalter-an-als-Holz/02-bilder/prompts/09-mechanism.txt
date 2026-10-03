@@ -1,4 +1,0 @@
-Beat 09-mechanism
-Sprechaussage: „Direkt an der Berührungsstelle erwärmt sich das Holz deshalb schneller. Der Wärmefluss aus deiner Hand wird kleiner.“
-Bildidee: 16:9-Nahaufnahme einer Hand auf Holz. Direkt unter den Fingern entsteht ein kleiner warmer Bereich im Holz, der nahe an der Hand bleibt. Die Wärme breitet sich nicht weit aus. Zeige zuerst einen etwas größeren Pfeil von der Hand ins Holz und weiter rechts nur noch einen kleinen Pfeil, um den abnehmenden Wärmefluss zu erklären. Deutsches Label: „Kontaktstelle wird wärmer“. Keine zusätzlichen Erklärboxen.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.

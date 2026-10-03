@@ -1,4 +1,0 @@
-Beat 10-mechanism
-Sprechaussage: „Das Verrückte daran: Ein Thermometer kann auf Metall und Holz denselben Wert anzeigen, während deine Finger trotzdem zwei verschiedene Temperaturen zu fühlen scheinen.“
-Bildidee: Erstelle eine vollflächige 16:9-Vergleichsszene auf einem Tisch: links Metall, rechts Holz. Auf beiden zeigt ein identisches Thermometer „21 °C“. Eine Hand berührt beide Flächen. Beim Metall ist der Wärmeabfluss deutlich stärker visualisiert, beim Holz schwächer. Große, klare Bildaufteilung ohne Rahmen. Deutscher Kurztext oben: „Beide: 21 °C“. Keine weiteren Sätze.
-Regeln: genau eine visuelle Hauptaussage. Scientific Scene Explainer v1, hochwertige erwachsene 2D/2.5D-Editorial-Illustration. Nutze die gesamte 16:9-Bildfläche, Ziel 1920×1080. Sichtbarer Text ausschließlich Deutsch, kein englischer Text. Keine unnötigen Infoboxen, keine Informationsüberladung, kein Sci-Fi-HUD, kein kindlicher Cartoonstil, keine Logos oder Wasserzeichen.
