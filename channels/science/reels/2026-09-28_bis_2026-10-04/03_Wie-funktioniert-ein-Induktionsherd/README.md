@@ -4,7 +4,7 @@ Profil: **youtube-2min-v1** · 1920×1080 · 16:9 · ca. 2 Minuten
 
 Zentrale Frage: **Wie funktioniert ein Induktionsherd?**
 
-Status: Recherche, Story, 291-Wörter-Skript, Quellen, 15 diverse visuelle Beats, 15 Einzelprompts, Thumbnail-Prompt und Google-Flow-Plan sind vorbereitet.
+Status: Recherche, Story, 291-Wörter-Skript, Quellen, 15 diverse visuelle Beats, 15 englische Einzelprompts, Thumbnail-Prompt und Google-Flow-Plan sind vorbereitet.
 
 ## Kernantwort
 
@@ -13,6 +13,33 @@ Unter der Glaskeramik erzeugt eine mit hochfrequentem Wechselstrom gespeiste Kup
 ## Dramaturgie
 
 Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff
+
+## Aktive Bildwelt
+
+**Technical Editorial Explainer 2.5D**
+
+Die frühere visuelle Ausführung von Scientific Scene Explainer ist ersetzt. Der alte interne Stil-Identifier bleibt nur aus Kompatibilitätsgründen bestehen.
+
+Konstant in allen 15 Bildern:
+- clean 2D/2.5D vector-like technical editorial rendering
+- vereinfachte, glaubwürdige Proportionen
+- matte Materialien
+- klare Kanten
+- dezente Gradients
+- weiche kontrollierte Schatten
+- konsistente Linienstärke
+- warmes Off-White / Graphit / gedeckte Industrietöne als Grundfamilie
+- technische Akzentfarben nur mit Bedeutung
+- kein Fotorealismus
+- keine echte Fotooptik
+- kein weißes Schulbuch-Infografik-Template
+- kein Pixar/Cartoon
+- kein Sci-Fi-HUD
+- keine generische KI-Kunst
+
+Die Darstellungsform darf wechseln: Umgebung, Cutaway, Makro, Vergleich, Draufsicht, Diagramm, Prozessdarstellung oder Zusammenfassung. Der **Style-Lock bleibt immer identisch**.
+
+Alle Google-Flow-Prompts sind auf **Englisch** geschrieben. Sichtbarer Text im Bild bleibt ausschließlich **Deutsch**.
 
 ## Google Flow
 
@@ -58,6 +85,6 @@ Nicht in der finalen Sammlung: die zwei verworfenen Cover, Testbilder, Fehlversu
 
 ## Visual Diversity
 
-Die 15 Beats wechseln bewusst zwischen voller Küche, Querschnitt, Vergleich, Spulen-Konzept, Magnetfeld-Kopplung, Material-Makro, Thermodarstellung, Kochgeschirr-Reihe, Magnettest, Vorher/Nachher, Draufsicht, Energieweg und reduzierter Abschlusskette.
+Die 15 Beats wechseln bewusst zwischen vereinfachter Küche, Querschnitt, Vergleich, Spulen-Konzept, Magnetfeld-Kopplung, Material-Makro, Thermodarstellung, Kochgeschirr-Reihe, Magnettest, Vorher/Nachher, Draufsicht, Energieweg und reduzierter Abschlusskette.
 
 Das Thumbnail ist nur Qualitäts-/Stilreferenz. Es darf nicht als starre Farb- oder Kompositionsvorlage für die Szenen kopiert werden.
