@@ -1,136 +1,147 @@
 # Google Flow – verbindlicher Bild-Workflow
 
-Dieser Workflow gilt für jedes neue Video des Kanals.
+Dieser Workflow gilt für jedes neue Video.
 
 ## Grundsatz
 
-Google Flow erzeugt **ausschließlich statische Bilder**. Es werden keine KI-Videoclips, keine Image-to-Video-Animationen und keine bewegten Szenen erzeugt.
+Google Flow erzeugt **ausschließlich statische Bilder**. Keine KI-Videoclips, kein Image-to-Video, keine bewegten Szenen.
 
-Remotion montiert die fertigen Bilder mit Voice-over, Untertiteln, optionalen SFX und harten Schnitten. Remotion erzeugt ebenfalls keine Kamerabewegung oder Animation.
+Remotion montiert die Bilder mit Voice-over, optionalen SFX und harten Schnitten. **Keine eingebrannten Untertitel/Captions.**
 
 ## Eine Masterdatei pro Video
 
-Jedes aktive Video benötigt:
-
+Pflicht:
 - `02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt`
 - `06-projektdateien/flow-plan.json`
-- die Einzelprompts unter `02-bilder/prompts/`
-
-Der Masterprompt enthält den Thumbnail-Prompt und alle Szenenprompts in Produktionsreihenfolge. Er ist die eine Datei, die für die Bildproduktion in Google Flow verwendet wird.
+- Einzelprompts unter `02-bilder/prompts/`
 
 ## Phase 1 – Thumbnail zuerst
 
-1. Zuerst genau **3 unterschiedliche Thumbnail-Kandidaten** erzeugen.
-2. Danach **STOPPEN**.
-3. Noch keine Szenenbilder erzeugen.
-4. Auf die ausdrückliche Auswahl des Nutzers warten.
-5. Der gewählte Kandidat dient anschließend als **lockere visuelle Referenz** für Qualitätsniveau und Illustrationssprache.
-6. Die Szenen bleiben individuell: andere Orte, Farben und Kompositionen sind ausdrücklich erlaubt.
+1. genau 3 unterschiedliche Thumbnail-Kandidaten erzeugen
+2. STOPPEN
+3. noch keine Szenenbilder erzeugen
+4. auf Nutzerauswahl warten
+5. gewähltes Thumbnail nur als Referenz für **Qualitätsniveau und Illustrationssprache** verwenden
 
-## Phase 2 – Szenenbilder in genau 5 Produktionsschritten
+Wichtig: Das Thumbnail ist **keine** Vorlage für die Farbpalette, den Hintergrund, die Perspektive, Split-Screen-Anordnung oder Textpositionen aller Szenen.
 
-**Nach der Thumbnail-/Cover-Auswahl wird die gesamte Bildproduktion immer in genau fünf Schritte aufgeteilt.**
+## Phase 2 – genau 5 Bildschritte
 
-Die vorhandenen Beats werden möglichst gleichmäßig und in ihrer ursprünglichen Reihenfolge auf fünf zusammenhängende Gruppen verteilt. Bei 18 Bildern gilt zum Beispiel:
+Nach der Cover-Auswahl wird die Bildproduktion immer in genau fünf Schritte aufgeteilt. Die Beats werden möglichst gleichmäßig und in Reihenfolge verteilt.
 
-- **Bildschritt 1:** Bilder 01–04
-- **Bildschritt 2:** Bilder 05–08
-- **Bildschritt 3:** Bilder 09–12
-- **Bildschritt 4:** Bilder 13–15
-- **Bildschritt 5:** Bilder 16–18
+Beispiel bei 15 Bildern:
+- Bildschritt 1: 01–03
+- Bildschritt 2: 04–06
+- Bildschritt 3: 07–09
+- Bildschritt 4: 10–12
+- Bildschritt 5: 13–15
 
-Bei einer anderen Beat-Anzahl werden die fünf Gruppen automatisch möglichst gleich groß verteilt. Kein Bild darf übersprungen oder doppelt einem Schritt zugeordnet werden.
+Beispiel bei 18 Bildern:
+- Bildschritt 1: 01–04
+- Bildschritt 2: 05–08
+- Bildschritt 3: 09–12
+- Bildschritt 4: 13–15
+- Bildschritt 5: 16–18
 
-### Innerhalb jedes Bildschritts
+### Innerhalb eines Bildschritts
 
-Die Bilder werden weiterhin **streng einzeln nacheinander** erzeugt. Beispiel Bildschritt 1:
+- Bilder streng einzeln nacheinander erzeugen
+- jedes Bild prüfen und bestes Ergebnis auswählen
+- sauber speichern
+- erst dann das nächste Bild erzeugen
+- niemals mehrere Beats gleichzeitig erzeugen
 
-1. Bild 01 mit seinem eigenen Prompt erzeugen,
-2. Kandidaten prüfen,
-3. das beste Bild auswählen,
-4. eindeutig als `01-...-final.png` speichern,
-5. erst danach Bild 02 erzeugen,
-6. so fortfahren, bis alle Bilder dieses Bildschritts fertig sind.
+Nach jedem vollständigen Bildschritt:
+- STOPPEN
+- fertige Bilder melden
+- auf ausdrückliche Freigabe warten
 
-**Niemals mehrere Beats gleichzeitig erzeugen.**
+## Verbindlicher Diversity-Check vor jedem Bild
 
-### Stopp zwischen den fünf Schritten
+Vor dem Generieren eines Beats immer das vorherige und nächste geplante Bild prüfen.
 
-Nach jedem vollständig abgeschlossenen Bildschritt gilt:
+Fragen:
+1. Ist die Hauptkomposition deutlich anders als beim vorherigen Bild?
+2. Ist der primäre Bildanker anders oder wenigstens klar anders inszeniert?
+3. Verwenden wir schon wieder dieselbe Hand-/Material-/Pfeil-Szene?
+4. Wiederholen wir dieselbe Türkis-/Weiß-Palette oder denselben Split-Screen?
+5. Öffnet dieser Beat eine neue sinnvolle visuelle Perspektive?
 
-- **STOPPEN**,
-- kurz melden, welche Bilder fertig sind,
-- auf die ausdrückliche Freigabe des Nutzers warten,
-- erst danach mit dem nächsten Bildschritt beginnen.
+Wenn die Antwort auf 1 oder 5 Nein ist: Prompt bzw. Beat-Plan ändern, bevor das Bild erzeugt wird.
 
-Nach Bildschritt 5 ist die Bildproduktion abgeschlossen.
+Ziel:
+- mindestens 5 unterschiedliche Darstellungsformen im Video
+- keine identische Hauptkomposition direkt hintereinander
+- derselbe dominante Bildanker höchstens 3-mal
+- „Hand auf Gegenstand + Pfeile“ höchstens 3-mal als Hauptmotiv
+- pro Bildschritt möglichst 3 unterschiedliche Darstellungsformen
 
-## Erlaubte Ausgabe pro Beat
+## Menschen und Gesichter
 
-Es gibt genau eine erlaubte Ausgabe:
+Wenn Menschen vorkommen:
+- sichtbarer Kopf = vollständige natürliche stilisierte Gesichtszüge
+- keine leeren/gesichtslosen Köpfe
+- wenn Gesicht unnötig ist, Kopf komplett außerhalb des Frames lassen
+- Hände/Füße/Körperausschnitte nur bei fachlichem Nutzen
 
-### `image`
+## Text in Szenenbildern
 
-Ein finales statisches 16:9-Bild.
+- große Überschriften gehören primär ins Thumbnail
+- normale Szenen bevorzugt ohne große Headline
+- bevorzugt 0–2 kurze Labels
+- sichtbarer Text nur Deutsch
+- nicht dieselbe Überschrift über mehrere Bilder wiederholen
+
+## Erlaubte Ausgabe
+
+Pro Beat genau ein finales statisches 16:9-Bild.
 
 Nicht erlaubt:
-
 - KI-Videoclips
 - Image-to-Video
 - animierte Prozesse
-- generierte Kamerafahrten
 - Zoom/Pan/Ken-Burns
-- zusätzliche bewegte Varianten
-
-Wenn eine Aussage in einem Standbild nicht verständlich genug ist, wird der Beat besser gestaltet oder in zwei statische Beats aufgeteilt. Bewegung ist **kein Ersatz für gute Bildplanung**.
+- generierte Kamerafahrten
 
 ## Benennung
 
 Beispiele:
-
 - `01-hook-final.png`
 - `02-context-final.png`
 - `03-mechanism-final.png`
 
-Jeder Beat erhält genau ein freigegebenes finales Bild.
-
 ## Bildwelt
 
-Alle Bilder folgen `BILDWELT.md`:
+Alle Bilder folgen `BILDWELT.md`.
 
-> Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die genau die Aussage des Beats erklärt.
-
-Die gesamte 16:9-Fläche darf genutzt werden. Umgebung, technische Illustration, Cutaway, Vergleich, Detailansicht oder stilisierte Menschen werden nach Erklärnutzen gewählt. Sichtbarer Bildtext ist ausschließlich Deutsch.
+> Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die genau die Aussage des Beats erklärt — und die sich sinnvoll vom vorherigen Bild unterscheidet.
 
 ## Remotion-Grenze
 
 Remotion darf:
-
-- finale statische Bilder anzeigen
+- statische Bilder anzeigen
 - harte Schnitte setzen
 - Voice-over abspielen
-- Untertitel anzeigen
 - optionale SFX platzieren
 - rendern
 
 Remotion darf nicht:
-
-- Videos oder KI-Clips als Szenenquelle erwarten
-- aus Standbildern Bewegung erzeugen
-- zoomen oder schwenken
+- Untertitel/Captions ins finale Video rendern
+- Bewegung aus Standbildern erzeugen
+- zoomen/schwenken
 - wissenschaftliche Prozesse animieren
-- neue visuelle Aussagen erfinden
+- Videoclips erwarten
 
 ## Pflicht vor Produktion
 
-Vor dem Erzeugen der Bilder müssen fertig sein:
-
-1. Recherche und Quellen
-2. Story-Struktur
+Vor Bilderzeugung müssen fertig sein:
+1. Recherche/Quellen
+2. Story
 3. finales Skript
-4. visuelle Beats
-5. Einzelprompts
-6. `flow-plan.json` mit `output: image` für jeden Beat und Zuordnung zu genau einem der fünf Bildschritte
-7. `GOOGLE-FLOW-MASTER-PROMPT.txt` mit Thumbnail-Phase und fünf Bildschritten
+4. Visual-Diversity-Prüfung des Skripts
+5. visuelle Beats
+6. Einzelprompts
+7. `flow-plan.json` mit 5 Schritten und Visual-Typ/Primärmotiv pro Beat
+8. `GOOGLE-FLOW-MASTER-PROMPT.txt`
 
-Fehlt eines davon, ist die Bildproduktion noch nicht freigegeben.
+Fehlt etwas davon, ist die Bildproduktion nicht freigegeben.
