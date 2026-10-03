@@ -103,7 +103,7 @@ lines.push('BINDING WORKFLOW');
 lines.push('----------------');
 lines.push('1. First create ONLY the three thumbnail candidates.');
 lines.push('2. Then STOP and wait for the explicit user selection. Do not create scene images yet.');
-lines.push('3. Keep the selected cover as 00-thumbnail-final and delete/remove the TWO rejected covers from the final Flow collection.');
+lines.push('3. ZWEI NICHT GEWÄHLTEN COVER nach der Auswahl aus der finalen Flow-Sammlung entfernen; selected cover = 00-thumbnail-final.');
 lines.push('4. Use the selected thumbnail only as a quality and illustration-language reference, never as a fixed palette, layout, perspective or background template.');
 lines.push(`5. After the cover selection, create all scene images in exactly ${stepCount} image steps.`);
 lines.push('6. Within each step generate images strictly one by one, inspect, choose the best, rename correctly and save. Do not keep rejected variants in the final collection.');
@@ -116,7 +116,7 @@ lines.push('12. VISUELLE VIELFALT IST PFLICHT: vary composition, scene type and 
 lines.push('13. Normal scenes should usually have 0–2 short German labels; technical diagrams may use a few more when essential. No large generated scene headline.');
 lines.push('14. If a head is visible, show complete natural stylized facial features. No blank or faceless visible heads.');
 lines.push('15. Exactly one final static 16:9 image per beat.');
-lines.push('16. No AI video clips, no image-to-video and no animation.');
+lines.push('16. No AI video clips and no motion generation.');
 lines.push('17. Visible image text only in German. Prompt instructions in English.');
 lines.push('');
 lines.push('THUMBNAIL — PHASE 1');
@@ -159,8 +159,8 @@ for (let stepIndex=0;stepIndex<groupedScenes.length;stepIndex+=1) {
 }
 
 lines.push('');
-lines.push('PHASE 3 — FINAL ASSET CLEANUP');
-lines.push('-----------------------------');
+lines.push('PHASE 3 – FINALE ASSET-BEREINIGUNG');
+lines.push('-----------------------------------');
 lines.push(`1. Use exactly one final Google Flow collection/folder named “${flowPlan.finalCollectionName}”.`);
 lines.push('2. Move/collect 00-thumbnail-final and all final scene images there.');
 lines.push('3. Remove both rejected covers, intermediate versions, failed attempts, duplicates and rejected variants.');
