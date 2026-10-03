@@ -61,7 +61,7 @@ Beispiel bei 18 Bildern:
 
 Nach Abschluss von Bildschritt 1 automatisch mit Bildschritt 2 fortfahren, danach 3, 4 und 5. Die fünf Schritte bleiben als Produktionsstruktur sichtbar, werden aber in einem durchgehenden Lauf abgearbeitet.
 
-## Phase 3 – finale Google-Flow-Sammlung aufräumen
+## Flow-Abschluss – finale Google-Flow-Sammlung aufräumen
 
 Nach Bildschritt 5 wird **vor dem Abschlussbericht** aufgeräumt.
 
@@ -78,7 +78,42 @@ Pflichtinhalt der finalen Sammlung:
 - `00-thumbnail-final`
 - alle finalen Szenenbilder `01-...-final` bis zum letzten Beat
 
-Erst wenn diese Bereinigung abgeschlossen ist, den Gesamtabschluss melden.
+Erst wenn diese Bereinigung abgeschlossen ist, den Flow-Gesamtabschluss melden.
+
+## Übergabe von Phase 2 an Phase 3
+
+Nach der Flow-Produktion übernimmt **der Nutzer** die final akzeptierten Dateien und legt sie in die Projektordner ab:
+
+- Szenenbilder: `02-bilder/images/<scene-id>/`
+- gewähltes Thumbnail: `02-bilder/thumbnail/`
+- Voice-over: `01-script-audio/audio/`
+
+Diese Ordner sind der verbindliche **Phase-2-Handoff**.
+
+### Phase 3 – Antigravity / KI-Agent
+
+Antigravity, Codex oder ein anderer Montage-Agent darf ab diesem Punkt **keine Bilder selbst erzeugen oder beschaffen**.
+
+Phase 3 muss ausschließlich die Dateien verwenden, die der Nutzer in Phase 2 in die oben genannten Ordner gelegt hat.
+
+Verboten:
+- neue Bilder generieren oder regenerieren
+- Google Flow erneut zur Bilderzeugung starten
+- fehlende Bilder durch Platzhalter ersetzen
+- Bilder im Web suchen oder aus anderen Quellen holen
+- Szenenbilder automatisch austauschen
+- Image-to-Video oder KI-Clips erzeugen
+
+Erlaubt:
+- vorhandene Phase-2-Dateien prüfen
+- vorhandene finale Dateien in Runtime-/Render-Verzeichnisse kopieren
+- Voice synchronisieren
+- harte Schnitte/SFX anwenden
+- rendern und QA durchführen
+
+**Fehlt ein benötigtes Asset oder ist die Auswahl nicht eindeutig, muss Phase 3 stoppen und den Fehler melden. Der Agent darf niemals selbst Ersatz erzeugen.**
+
+Details: `AGENT-HANDOFF.md`.
 
 ## Verbindlicher Diversity-Check vor jedem Bild
 
@@ -129,15 +164,15 @@ Nicht erlaubt:
 
 ## Bildwelt
 
-Alle Bilder folgen `BILDWELT.md`:
-
-> Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die genau die Aussage des Beats erklärt — und die sich sinnvoll vom vorherigen Bild unterscheidet.
+Alle Bilder folgen `BILDWELT.md`.
 
 ## Remotion-Grenze
 
 Remotion darf statische Bilder anzeigen, harte Schnitte setzen, Voice-over abspielen, optionale SFX platzieren und rendern.
 
 Remotion darf keine Untertitel/Captions ins finale Video rendern, keine Bewegung aus Standbildern erzeugen, nicht zoomen/schwenken, keine wissenschaftlichen Prozesse animieren und keine Videoclips erwarten.
+
+Remotion darf in Phase 3 **nur vorhandene Phase-2-Assets** verwenden. Keine Generierung, keine Ersatzsuche.
 
 ## Pflicht vor Produktion
 
@@ -151,4 +186,4 @@ Vor Bilderzeugung müssen fertig sein:
 7. `flow-plan.json` mit 5 Schritten, Visual-Typ/Primärmotiv und Final-Collection-Regeln
 8. `GOOGLE-FLOW-MASTER-PROMPT.txt`
 
-**Freigabepunkt ist nur nach den drei Thumbnail-Kandidaten. Nach der Cover-Auswahl werden Bildschritt 1 bis 5 ohne Zwischenstopp vollständig fertiggestellt, danach wird die finale Sammlung bereinigt und erst dann der Abschluss gemeldet.**
+**Freigabepunkt ist nur nach den drei Thumbnail-Kandidaten. Nach der Cover-Auswahl werden Bildschritt 1 bis 5 ohne Zwischenstopp vollständig fertiggestellt. Danach legt der Nutzer die akzeptierten finalen Assets in die Phase-2-Projektordner. Phase 3 montiert ausschließlich diese vorhandenen Dateien und erzeugt niemals eigene Ersatz-Assets.**
