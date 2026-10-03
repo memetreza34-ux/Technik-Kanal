@@ -7,8 +7,9 @@ Vor Änderungen zuerst lesen:
 3. `gehirn/REELS.md`
 4. `gehirn/BILDWELT.md`
 5. `gehirn/FLOW-WORKFLOW.md`
-6. `engine/config/science-v1.json`
-7. den aktuellen Video-Ordner
+6. `gehirn/AGENT-HANDOFF.md`
+7. `engine/config/science-v1.json`
+8. den aktuellen Video-Ordner
 
 ## Kanalrichtung
 
@@ -155,6 +156,29 @@ Ablauf:
 
 Jeder Bildschritt soll möglichst mindestens drei unterschiedliche Darstellungsformen enthalten, **ohne den Style-Lock zu verlassen**.
 
+## Phase 2 → Phase 3: verbindlicher Asset-Handoff
+
+`gehirn/AGENT-HANDOFF.md` ist verbindlich.
+
+**Phase 2 gehört dem Nutzer / Google Flow.** Der Nutzer legt die akzeptierten finalen Dateien selbst in die Projektordner:
+
+- Szenenbilder: `02-bilder/images/<scene-id>/`
+- gewähltes Thumbnail: `02-bilder/thumbnail/`
+- Voice-over: `01-script-audio/audio/`
+
+**Phase 3 gehört Antigravity/Codex/dem Montage-Agenten. Dieser Agent darf keine visuellen Assets selbst erzeugen.**
+
+In Phase 3 verboten:
+- Bilder generieren oder regenerieren
+- Google Flow für neue Bilder starten
+- fehlende Bilder durch Platzhalter, Internetfundstücke oder andere Ersatzbilder ersetzen
+- Image-to-Video/KI-Clips erzeugen
+- fehlende Szenen automatisch überspringen
+
+Phase 3 darf ausschließlich die in Phase 2 vom Nutzer abgelegten Dateien lesen, prüfen, für Runtime/Render kopieren, synchronisieren und montieren.
+
+**Fehlt ein Asset oder ist die Auswahl mehrdeutig: STOPP und fehlende/unklare Datei melden. Niemals selbst Ersatz erzeugen.**
+
 ## Sprache und Untertitel
 
 - Voice-over Deutsch
@@ -170,6 +194,8 @@ Remotion darf finale statische Bilder anordnen, harte Schnitte setzen, Voice-ove
 
 Remotion darf keine Untertitel/Captions ins finale Video rendern, nicht zoomen, schwenken, rotieren, parallaxen oder Ken Burns erzeugen, keine wissenschaftlichen Prozesse animieren und keine Videoclips als Szenenquelle erwarten.
 
+Remotion/Phase 3 darf ausschließlich bereits vorhandene Phase-2-Bilder verwenden und keine Bildgenerierung oder Ersatzsuche auslösen.
+
 ## Audio
 
 - Voice exakt 1,10×, Tonhöhe erhalten
@@ -179,4 +205,4 @@ Remotion darf keine Untertitel/Captions ins finale Video rendern, nicht zoomen, 
 
 ## Produktionsregel
 
-Erst Thema → Recherche → Story → Skript → **Visual-Diversity-Check** → Beats → **englische Prompts mit konstantem Technical-Editorial-Style-Lock** → Flow-Plan → 3 Cover-Kandidaten → Cover-Auswahl → **2 verworfene Cover entfernen** → fünf Bildschritte ohne Zwischenstopps komplett abarbeiten → **finale Assets korrekt benennen und in eine einzige saubere Flow-Sammlung bündeln** → Voice → Timing → Remotion → QA.
+Erst Thema → Recherche → Story → Skript → **Visual-Diversity-Check** → Beats → **englische Prompts mit konstantem Technical-Editorial-Style-Lock** → Flow-Plan → 3 Cover-Kandidaten → Cover-Auswahl → **2 verworfene Cover entfernen** → fünf Bildschritte ohne Zwischenstopps komplett abarbeiten → finale Assets korrekt benennen → **Phase 2: Nutzer legt alle akzeptierten finalen Dateien in die vorgesehenen Projektordner** → **Phase 3: Antigravity/KI-Agent verwendet ausschließlich diese vorhandenen Dateien, erzeugt niemals Ersatz** → Voice → Timing → Remotion → QA.
