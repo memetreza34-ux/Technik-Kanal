@@ -60,6 +60,26 @@ Alle Google-Flow-Prompts sind auf **Englisch** geschrieben. Sichtbarer Text im B
 
 Der einzige Freigabepunkt ist die Auswahl des Covers. Danach wird die komplette Bildproduktion und Bereinigung in einem Lauf fertiggestellt.
 
+## Phase 2 – Nutzer legt die finalen Dateien ab
+
+Nach der Flow-Erzeugung legt der Nutzer die akzeptierten Dateien selbst in die Projektordner:
+
+- Szenenbilder: `02-bilder/images/<scene-id>/`
+- finales Thumbnail: `02-bilder/thumbnail/`
+- Voice-over: `01-script-audio/audio/`
+
+Diese Dateien sind die einzige verbindliche Quelle für die Montage.
+
+## Phase 3 – Antigravity / KI-Agent
+
+Antigravity, Codex oder ein anderer Montage-Agent darf **keine Bilder selbst erzeugen, regenerieren, suchen oder ersetzen**.
+
+Er verwendet ausschließlich die Dateien aus den Phase-2-Ordnern.
+
+Wenn ein benötigtes Bild fehlt oder mehrere Kandidaten nicht eindeutig markiert sind: **STOPP und konkret melden. Kein Platzhalter, keine Web-Suche, keine eigene Generierung, kein automatisches Überspringen.**
+
+Phase 3 darf vorhandene Dateien prüfen, in Runtime-/Render-Ordner kopieren, Voice synchronisieren, harte Schnitte/SFX anwenden, rendern und QA durchführen.
+
 ## Finale Asset-Struktur
 
 Die finale Flow-Sammlung enthält ausschließlich:
