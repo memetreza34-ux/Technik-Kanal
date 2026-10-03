@@ -1,22 +1,11 @@
-Erzeuge drei deutlich unterschiedliche YouTube-Thumbnail-Kandidaten im Format 1280×720 / 16:9 für das Video „Wie funktioniert ein Induktionsherd?“.
+Create exactly three clearly different YouTube thumbnail candidates in 1280×720 / 16:9 for the video “Wie funktioniert ein Induktionsherd?”.
 
-Gemeinsame Regeln:
-- Scientific Scene Explainer v1, hochwertig, erwachsen, klar
-- ein starkes Hauptmotiv, wenig Details
-- sichtbarer Text ausschließlich Deutsch
-- keine Person nötig
-- keine Logos/Wasserzeichen
-- keine falsche Darstellung einer glühenden Induktionsspule
-- keine generische Sci-Fi-Optik
-- alle drei Varianten müssen sich in Komposition, Hintergrund und Blickwinkel klar unterscheiden
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, warm off-white/graphite/muted industrial neutrals, meaningful copper/blue/orange accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic page, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects.
 
-Kandidat A:
-Großer Topf auf schwarzem Induktionskochfeld, darunter als sauberer Cutaway die Kupferspule und das Magnetfeld. Kurzer Text: „WIE WIRD DER TOPF HEISS?“
+Candidate A: large induction pot and cooktop cutaway, copper coil visible underneath, a few clean magnetic-field arcs. German headline only: “WIE WIRD DER TOPF HEISS?”
 
-Kandidat B:
-Seitlicher Querschnitt durch Kochfeld und Topfboden. Unten Kupferspule, dazwischen Glaskeramik, im Topfboden sichtbare Wirbelströme und Wärme. Kurzer Text: „WÄRME DIREKT IM TOPF“
+Candidate B: simplified side cutaway through pot base, glass-ceramic surface and copper coil, with heat clearly appearing in the pot base. German headline only: “WÄRME DIREKT IM TOPF”.
 
-Kandidat C:
-Sehr reduziertes technisches Motiv: große Kupferspule links unten, Topfboden rechts oben, dazwischen ein klarer Magnetfeldbogen. Kurzer Text: „KEINE HEIZSPIRALE?“
+Candidate C: reduced technical composition with a large copper coil, the pot base above it and one clear magnetic-field connection. German headline only: “KEINE HEIZSPIRALE?”
 
-Erzeuge zuerst nur diese drei Thumbnail-Kandidaten und stoppe danach.
+The three candidates must differ strongly in composition and camera angle while keeping the exact same STYLE LOCK. No people, no logos, no watermarks, no English visible text.
