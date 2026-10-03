@@ -17,31 +17,8 @@
     "medicineAllowed": false,
     "highlyAbstractScienceAllowed": false,
     "astronomyPolicy": "nur-konkrete-anschauliche-themen",
-    "preferredDomains": [
-      "alltagsphysik",
-      "elektrotechnik-elektronik",
-      "energie",
-      "maschinen-technische-systeme",
-      "verkehr-bahn-autos-mobilitaet",
-      "gebaeude-infrastruktur-versorgung",
-      "materialien-werkstoffe",
-      "einfache-alltagschemie",
-      "wetter-naturphaenomene",
-      "greifbare-astronomie"
-    ],
-    "excludedDomains": [
-      "biologie",
-      "medizin",
-      "anatomie",
-      "krankheiten",
-      "zellbiologie",
-      "dna-genetik",
-      "biochemie",
-      "stark-abstrakte-quantenphysik",
-      "abstrakte-teilchenphysik",
-      "komplizierte-relativitaetstheorie",
-      "hochtheoretische-astrophysik"
-    ],
+    "preferredDomains": ["alltagsphysik","elektrotechnik-elektronik","energie","maschinen-technische-systeme","verkehr-bahn-autos-mobilitaet","gebaeude-infrastruktur-versorgung","materialien-werkstoffe","einfache-alltagschemie","wetter-naturphaenomene","greifbare-astronomie"],
+    "excludedDomains": ["biologie","medizin","anatomie","krankheiten","zellbiologie","dna-genetik","biochemie","stark-abstrakte-quantenphysik","abstrakte-teilchenphysik","komplizierte-relativitaetstheorie","hochtheoretische-astrophysik"],
     "selectionRule": "Ein Jugendlicher soll ohne grosses Vorwissen nach dem Video etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann."
   },
   "script": {
@@ -50,35 +27,29 @@
     "oneCentralQuestion": true,
     "onePayoff": true,
     "technicalTermMustBeExplained": true,
-    "narrativeStructure": ["hook", "context", "foundation", "mechanism", "deepening", "payoff"],
+    "narrativeStructure": ["hook","context","foundation","mechanism","deepening","payoff"],
     "visualBeatRule": "Eine visuelle Aussage entspricht einem Beat; nicht automatisch ein Satz pro Bild.",
-    "hook": {
-      "type": "direct-question",
-      "headlineWordsMax": 10,
-      "voiceWordsMax": 24,
-      "mustContainQuestionMark": true,
-      "firstFrameAnimationAllowed": false,
-      "forbiddenMetaphors": ["unsichtbarer held", "geheime kraft"]
-    }
+    "rewriteWhenThreeAdjacentBeatsWouldLookSimilar": true,
+    "hook": {"type":"direct-question","headlineWordsMax":10,"voiceWordsMax":24,"mustContainQuestionMark":true,"firstFrameAnimationAllowed":false,"forbiddenMetaphors":["unsichtbarer held","geheime kraft"]}
   },
   "voice": {
     "speed": 1.1,
-    "speedRange": {"min": 1.1, "max": 1.1},
+    "speedRange": {"min":1.1,"max":1.1},
     "silenceThresholdMs": 400,
     "keptPauseMs": 160,
     "silenceThresholdDb": -45,
-    "loudness": {"integratedLufs": -16, "truePeakDb": -1.5, "loudnessRange": 11}
+    "loudness": {"integratedLufs":-16,"truePeakDb":-1.5,"loudnessRange":11}
   },
   "visuals": {
     "policyVersion": "science-static-v1",
     "productionMode": "flow-image-only",
-    "beats": {"min": 12, "ideal": 20, "max": 28},
+    "beats": {"min":12,"ideal":20,"max":28},
     "maximumTextOnlyScenesPerVideo": 0,
     "frameZeroMustContainMainMotif": true,
     "generatedImageTextPolicy": "controlled-german-only",
     "coverUsesFirstScene": false,
     "separateThumbnailForbidden": false,
-    "thumbnail": {"required": true, "width": 1280, "height": 720, "candidateCount": 3},
+    "thumbnail": {"required":true,"width":1280,"height":720,"candidateCount":3},
     "transitionPolicy": "hard-cut",
     "animationAllowed": false,
     "cameraMotionAllowed": false,
@@ -89,6 +60,17 @@
     "humanFiguresAllowedWhenExplanatory": true,
     "informationDensityPolicy": "minimum-necessary",
     "visibleImageLanguage": "de",
+    "diversity": {
+      "minimumDistinctVisualTypesPerVideo": 5,
+      "sameCompositionMaxConsecutive": 1,
+      "samePrimaryMotifMaxPerVideo": 3,
+      "handOnObjectPrimaryMotifMaxPerVideo": 3,
+      "minimumDistinctVisualTypesPerImageStepPreferred": 3,
+      "largeGeneratedHeadlineInSceneImagesAllowed": false,
+      "preferredLabelsMax": 2,
+      "blankOrFeaturelessVisibleFacesForbidden": true,
+      "thumbnailReferenceScope": "quality-and-illustration-style-only-not-layout-or-palette"
+    },
     "flow": {
       "masterPromptRequired": true,
       "planRequired": true,
@@ -108,13 +90,11 @@
       "remotionMayGenerateMotion": false
     }
   },
-  "textQuality": {
-    "headlineWordsMax": 10,
-    "bodyWordsMax": 24,
-    "duplicatePhraseMinimumWords": 4,
-    "vaguePhrases": ["das musst du wissen", "was bedeutet das konkret", "die wichtige frage", "der wichtigste punkt", "so funktioniert es", "hier ist die antwort", "ganz einfach erklärt"]
-  },
+  "textQuality": {"headlineWordsMax":10,"bodyWordsMax":24,"duplicatePhraseMinimumWords":4,"vaguePhrases":["das musst du wissen","was bedeutet das konkret","die wichtige frage","der wichtigste punkt","so funktioniert es","hier ist die antwort","ganz einfach erklärt"]},
   "captions": {
+    "enabled": false,
+    "burnedIn": false,
+    "internalTimingAllowed": true,
     "maximumStartDelayMs": 500,
     "maximumEndDriftMs": 500,
     "maximumGapMs": 1200,
@@ -128,64 +108,11 @@
     "backgroundBox": false,
     "animated": false
   },
-  "alignment": {"minimumWordMatchRatio": 0.82},
-  "sound": {
-    "musicBedAllowed": false,
-    "maximumCuesPerScene": 1,
-    "recommendedCuesPerVideo": {"min": 0, "max": 8},
-    "defaultCueVolume": 0.16,
-    "maximumCueVolume": 0.3,
-    "allowedRoles": ["sfx-accent", "sfx-warning", "sfx-reveal", "sfx-success", "sfx-soft-whoosh", "sfx-environment", "sfx-science"]
-  },
-  "imageAnalysis": {
-    "landscapeAspectMin": 1.7,
-    "landscapeAspectMax": 1.85,
-    "minimumWidth": 1280,
-    "minimumHeight": 720,
-    "whiteBandMaximumRatio": 0.34,
-    "fullImageWhiteMaximumRatio": 0.16,
-    "backgroundClusterDistance": 28,
-    "minimumBackgroundClusters": 2
-  },
-  "render": {
-    "codec": "h264",
-    "crf": 18,
-    "pixelFormat": "yuv420p",
-    "audioCodec": "aac",
-    "audioBitrate": "192k",
-    "x264Preset": "medium"
-  },
-  "renderQa": {
-    "blackMinimumDurationSeconds": 0.35,
-    "maximumInitialSilenceSeconds": 0.7,
-    "maximumEndSilenceSeconds": 0.7,
-    "integratedLufsMin": -18,
-    "integratedLufsMax": -14,
-    "truePeakMaximumDb": -1,
-    "controlFrameCount": 12
-  },
-  "safety": {
-    "hazardousTopicDisclaimerRequired": true,
-    "riskyPhrases": [
-      "unter spannung arbeiten",
-      "sicherung überbrücken",
-      "fi überbrücken",
-      "schutzleiter entfernen",
-      "mit bloßen händen prüfen",
-      "chemikalien zusammenkippen ohne schutz",
-      "giftiges gas einatmen",
-      "radioaktive quelle öffnen"
-    ],
-    "dateSensitiveTerms": ["din vde", "dguv", "norm", "gesetz", "prüffrist", "grenzwert", "aktuell", "heute"]
-  },
-  "textLimits": {
-    "kicker": 32,
-    "headline": 90,
-    "body": 180,
-    "formula": 120,
-    "outcome": 160,
-    "label": 60,
-    "step": 80,
-    "voiceoverInstruction": 1200
-  }
+  "alignment": {"minimumWordMatchRatio":0.82},
+  "sound": {"musicBedAllowed":false,"maximumCuesPerScene":1,"recommendedCuesPerVideo":{"min":0,"max":8},"defaultCueVolume":0.16,"maximumCueVolume":0.3,"allowedRoles":["sfx-accent","sfx-warning","sfx-reveal","sfx-success","sfx-soft-whoosh","sfx-environment","sfx-science"]},
+  "imageAnalysis": {"landscapeAspectMin":1.7,"landscapeAspectMax":1.85,"minimumWidth":1280,"minimumHeight":720,"whiteBandMaximumRatio":0.34,"fullImageWhiteMaximumRatio":0.16,"backgroundClusterDistance":28,"minimumBackgroundClusters":2},
+  "render": {"codec":"h264","crf":18,"pixelFormat":"yuv420p","audioCodec":"aac","audioBitrate":"192k","x264Preset":"medium"},
+  "renderQa": {"blackMinimumDurationSeconds":0.35,"maximumInitialSilenceSeconds":0.7,"maximumEndSilenceSeconds":0.7,"integratedLufsMin":-18,"integratedLufsMax":-14,"truePeakMaximumDb":-1,"controlFrameCount":12},
+  "safety": {"hazardousTopicDisclaimerRequired":true,"riskyPhrases":["unter spannung arbeiten","sicherung überbrücken","fi überbrücken","schutzleiter entfernen","mit bloßen händen prüfen","chemikalien zusammenkippen ohne schutz","giftiges gas einatmen","radioaktive quelle öffnen"],"dateSensitiveTerms":["din vde","dguv","norm","gesetz","prüffrist","grenzwert","aktuell","heute"]},
+  "textLimits": {"kicker":32,"headline":90,"body":180,"formula":120,"outcome":160,"label":60,"step":80,"voiceoverInstruction":1200}
 }
