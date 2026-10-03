@@ -12,6 +12,7 @@ const paths = electricalProjectPaths(root);
 const config = loadElectricalConfig();
 const read = (file) => fs.readFileSync(file, 'utf8').trim();
 const readJson = (file) => JSON.parse(read(file));
+const normalize = (value) => String(value ?? '').trim().toLowerCase();
 
 if (!fs.existsSync(paths.scenePlan)) throw new Error('scene-plan.json fehlt.');
 if (!fs.existsSync(paths.flowPlan)) throw new Error('flow-plan.json fehlt.');
@@ -23,6 +24,7 @@ const flowPlan = readJson(paths.flowPlan);
 const scenes = Array.isArray(plan.scenes) ? plan.scenes : [];
 const flowScenes = Array.isArray(flowPlan.scenes) ? flowPlan.scenes : [];
 const stepCount = Number(config.visuals?.flow?.imageProductionSteps ?? 5);
+const diversity = config.visuals?.diversity ?? {};
 if (!scenes.length) throw new Error('Szenenplan enthält keine Beats.');
 if (flowPlan.imageOnly !== true) throw new Error('flow-plan.json muss imageOnly=true setzen.');
 if (flowPlan.imageProductionSteps !== stepCount) throw new Error(`flow-plan.json muss imageProductionSteps=${stepCount} setzen.`);
@@ -30,36 +32,50 @@ if (flowScenes.length !== scenes.length) throw new Error(`flow-plan.json muss ${
 
 const byId = new Map(flowScenes.map((entry) => [entry.id, entry]));
 const groupedScenes = Array.from({length: stepCount}, () => []);
+const visualTypes = new Set();
+const motifCounts = new Map();
+let previousVisualType = null;
+let handOnObjectCount = 0;
+
 for (const scene of scenes) {
   const entry = byId.get(scene.id);
   if (!entry) throw new Error(`Flow-Plan fehlt für ${scene.id}.`);
-  if (entry.output !== 'image') throw new Error(`${scene.id}: Nur output=image ist erlaubt. KI-Videoclips sind deaktiviert.`);
-  if (entry.clipSeconds != null || String(entry.motionPrompt ?? '').trim() || String(entry.videoDir ?? '').trim()) {
-    throw new Error(`${scene.id}: Video-/Motion-Felder sind im Bild-Workflow nicht erlaubt.`);
-  }
+  if (entry.output !== 'image') throw new Error(`${scene.id}: Nur output=image ist erlaubt.`);
+  if (entry.clipSeconds != null || String(entry.motionPrompt ?? '').trim() || String(entry.videoDir ?? '').trim()) throw new Error(`${scene.id}: Video-/Motion-Felder sind nicht erlaubt.`);
+
   const imageStep = Number(entry.imageStep);
-  if (!Number.isInteger(imageStep) || imageStep < 1 || imageStep > stepCount) {
-    throw new Error(`${scene.id}: imageStep muss eine Ganzzahl von 1 bis ${stepCount} sein.`);
-  }
-  groupedScenes[imageStep - 1].push(scene);
+  if (!Number.isInteger(imageStep) || imageStep < 1 || imageStep > stepCount) throw new Error(`${scene.id}: imageStep muss 1–${stepCount} sein.`);
+
+  const visualType = normalize(entry.visualType);
+  const primaryMotif = normalize(entry.primaryMotif);
+  if (!visualType || /ungeplant|tbd|placeholder/.test(visualType)) throw new Error(`${scene.id}: visualType ist noch nicht final geplant.`);
+  if (!primaryMotif || /ungeplant|tbd|placeholder/.test(primaryMotif)) throw new Error(`${scene.id}: primaryMotif ist noch nicht final geplant.`);
+  if (previousVisualType && previousVisualType === visualType) throw new Error(`${scene.id}: derselbe visualType darf nicht direkt hintereinander dominieren.`);
+  previousVisualType = visualType;
+  visualTypes.add(visualType);
+  motifCounts.set(primaryMotif,(motifCounts.get(primaryMotif)??0)+1);
+  if (/hand.*(gegenstand|kontakt|material|object)|hand-contact|hand-on-object/.test(primaryMotif)) handOnObjectCount += 1;
+
+  groupedScenes[imageStep - 1].push({scene,entry});
   const promptFile = path.join(paths.promptDir, `${scene.id}.txt`);
   if (!fs.existsSync(promptFile)) throw new Error(`${scene.id}: Einzelprompt fehlt.`);
 }
 
-for (let index = 0; index < groupedScenes.length; index += 1) {
-  if (!groupedScenes[index].length) throw new Error(`Bildschritt ${index + 1} enthält keine Bilder.`);
+for (let index=0;index<groupedScenes.length;index+=1) {
+  if (!groupedScenes[index].length) throw new Error(`Bildschritt ${index+1} enthält keine Bilder.`);
+  const types = new Set(groupedScenes[index].map(({entry})=>normalize(entry.visualType)));
+  const required = Math.min(groupedScenes[index].length,Number(diversity.minimumDistinctVisualTypesPerImageStepPreferred ?? 3));
+  if (types.size < required) throw new Error(`Bildschritt ${index+1}: zu wenig visuelle Vielfalt (${types.size}/${required}).`);
 }
 
-const flattened = groupedScenes.flat().map((scene) => scene.id);
+const flattened = groupedScenes.flat().map(({scene}) => scene.id);
 const expectedOrder = scenes.map((scene) => scene.id);
-if (flattened.join('|') !== expectedOrder.join('|')) {
-  throw new Error('Die fünf Bildschritte müssen zusammenhängend und in derselben Reihenfolge wie der Szenenplan angeordnet sein.');
-}
-
+if (flattened.join('|') !== expectedOrder.join('|')) throw new Error('Die fünf Bildschritte müssen zusammenhängend und in Szenenreihenfolge angeordnet sein.');
 const sizes = groupedScenes.map((group) => group.length);
-if (Math.max(...sizes) - Math.min(...sizes) > 1) {
-  throw new Error(`Die ${stepCount} Bildschritte müssen möglichst gleichmäßig verteilt sein. Aktuell: ${sizes.join(', ')}.`);
-}
+if (Math.max(...sizes)-Math.min(...sizes)>1) throw new Error(`Die ${stepCount} Bildschritte müssen möglichst gleichmäßig verteilt sein. Aktuell: ${sizes.join(', ')}.`);
+if (visualTypes.size < Number(diversity.minimumDistinctVisualTypesPerVideo ?? 5)) throw new Error(`Mindestens ${diversity.minimumDistinctVisualTypesPerVideo ?? 5} unterschiedliche Visual-Typen erforderlich.`);
+for (const [motif,count] of motifCounts) if (count > Number(diversity.samePrimaryMotifMaxPerVideo ?? 3)) throw new Error(`Primärmotiv „${motif}“ kommt ${count}-mal vor; zu häufig.`);
+if (handOnObjectCount > Number(diversity.handOnObjectPrimaryMotifMaxPerVideo ?? 3)) throw new Error(`Hand-auf-Gegenstand-Motiv kommt ${handOnObjectCount}-mal vor; zu häufig.`);
 
 const lines = [];
 lines.push('GOOGLE FLOW MASTER PROMPT – NUR BILDER');
@@ -73,14 +89,16 @@ lines.push('VERBINDLICHER ABLAUF');
 lines.push('---------------------');
 lines.push('1. Zuerst NUR die drei Thumbnail-Kandidaten erzeugen.');
 lines.push('2. Danach STOPPEN und auf die ausdrückliche Auswahl des Nutzers warten. Noch keine Szenenbilder erzeugen.');
-lines.push('3. Den gewählten Thumbnail-Kandidaten als lockere visuelle Referenz für Qualitätsniveau und Illustrationssprache verwenden. Szenen dürfen trotzdem andere Orte, Farben und Kompositionen haben.');
+lines.push('3. Das gewählte Thumbnail nur als Referenz für Qualitätsniveau und Illustrationssprache verwenden. Es ist KEINE Farb-, Layout-, Perspektiv- oder Hintergrundvorlage für alle Szenen.');
 lines.push(`4. Nach der Cover-Auswahl die Szenenbilder in genau ${stepCount} Bildschritten erzeugen.`);
-lines.push('5. Innerhalb jedes Bildschritts die Bilder streng einzeln nacheinander erzeugen, prüfen, auswählen und speichern. Niemals mehrere Beats gleichzeitig erzeugen.');
-lines.push('6. Nach jedem vollständig abgeschlossenen Bildschritt STOPPEN und auf die ausdrückliche Freigabe des Nutzers warten.');
-lines.push('7. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen und auswählen.');
-lines.push('8. KEINE KI-Videoclips, KEINE Image-to-Video-Ausgabe und KEINE Animationen erzeugen.');
-lines.push('9. Wenn ein Vorgang Bewegung bräuchte, ihn als verständliches Standbild oder als zusätzlichen statischen Beat erklären.');
-lines.push('10. Sichtbarer Text ausschließlich Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.');
+lines.push('5. Innerhalb jedes Bildschritts Bilder streng einzeln nacheinander erzeugen, prüfen, auswählen und speichern.');
+lines.push('6. Nach jedem Bildschritt STOPPEN und auf die ausdrückliche Freigabe des Nutzers warten.');
+lines.push('7. VISUELLE VIELFALT IST PFLICHT: nicht immer dieselbe Hand, denselben Materialblock, denselben Split-Screen oder denselben türkis/weißen Hintergrund verwenden.');
+lines.push('8. Normale Szenen haben keine große generierte Überschrift; bevorzugt 0–2 kurze deutsche Labels. Große Titel gehören primär ins Thumbnail.');
+lines.push('9. Bei sichtbaren Köpfen vollständige natürliche stilisierte Gesichtszüge zeigen. Keine gesichtslosen oder leeren Gesichter. Wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames lassen.');
+lines.push('10. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen.');
+lines.push('11. KEINE KI-Videoclips, KEINE Image-to-Video-Ausgabe und KEINE Animationen erzeugen.');
+lines.push('12. Sichtbarer Text ausschließlich Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.');
 lines.push('');
 lines.push('THUMBNAIL – PHASE 1');
 lines.push('-------------------');
@@ -91,35 +109,32 @@ lines.push('');
 lines.push(`SZENENBILDER – PHASE 2 · GENAU ${stepCount} BILDSCHRITTE`);
 lines.push('------------------------------------------------');
 
-for (let stepIndex = 0; stepIndex < groupedScenes.length; stepIndex += 1) {
+for (let stepIndex=0;stepIndex<groupedScenes.length;stepIndex+=1) {
   const stepNumber = stepIndex + 1;
   const group = groupedScenes[stepIndex];
-  const first = group[0]?.id;
-  const last = group.at(-1)?.id;
+  const first = group[0]?.scene.id;
+  const last = group.at(-1)?.scene.id;
   lines.push('');
   lines.push(`BILDSCHRITT ${stepNumber}/${stepCount} · ${first} BIS ${last}`);
   lines.push('='.repeat(52));
-  lines.push(`Erzeuge jetzt ausschließlich die ${group.length} Bilder dieses Bildschritts. Jedes Bild einzeln fertigstellen, auswählen und speichern, bevor das nächste beginnt.`);
+  lines.push(`Erzeuge ausschließlich die ${group.length} Bilder dieses Schritts. Die Visual-Typen in diesem Schritt müssen sichtbar unterschiedlich bleiben.`);
 
-  for (const scene of group) {
+  for (const {scene,entry} of group) {
     const promptFile = path.join(paths.promptDir, `${scene.id}.txt`);
     lines.push('');
-    lines.push(`${scene.id.toUpperCase()} · OUTPUT=IMAGE`);
-    lines.push('='.repeat(Math.min(80, scene.id.length + 16)));
+    lines.push(`${scene.id.toUpperCase()} · OUTPUT=IMAGE · VISUAL=${entry.visualType} · MOTIV=${entry.primaryMotif}`);
+    lines.push('='.repeat(Math.min(80,scene.id.length+40)));
     lines.push(read(promptFile));
     lines.push('');
-    lines.push(`Nur ein finales statisches Bild für ${scene.id} erzeugen. Keine Animation und keinen Videoclip erzeugen.`);
+    lines.push(`Nur ein finales statisches Bild für ${scene.id}. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.`);
   }
 
   lines.push('');
-  if (stepNumber < stepCount) {
-    lines.push(`STOPP NACH BILDSCHRITT ${stepNumber}. Melde die fertigen Bilder und warte auf die ausdrückliche Freigabe des Nutzers für Bildschritt ${stepNumber + 1}.`);
-  } else {
-    lines.push(`BILDSCHRITT ${stepNumber} ABGESCHLOSSEN. Die Szenenbild-Produktion ist vollständig.`);
-  }
+  if (stepNumber < stepCount) lines.push(`STOPP NACH BILDSCHRITT ${stepNumber}. Melde die fertigen Bilder und warte auf Freigabe für Bildschritt ${stepNumber+1}.`);
+  else lines.push(`BILDSCHRITT ${stepNumber} ABGESCHLOSSEN. Die Szenenbild-Produktion ist vollständig.`);
 }
 
 fs.writeFileSync(paths.flowMaster, `${lines.join('\n')}\n`);
 console.log(`✓ Google-Flow-Masterprompt gebaut: ${paths.flowMaster}`);
-console.log(`  ${scenes.length} statische Bild-Beats in ${stepCount} Bildschritten, 0 KI-Videoclips.`);
+console.log(`  ${scenes.length} statische Bilder · ${visualTypes.size} Visual-Typen · ${stepCount} Schritte · 0 Clips.`);
 console.log(`  Verteilung: ${sizes.join(' / ')} Bilder.`);
