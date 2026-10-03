@@ -28,6 +28,8 @@ const diversity = config.visuals?.diversity ?? {};
 if (!scenes.length) throw new Error('Szenenplan enthält keine Beats.');
 if (flowPlan.imageOnly !== true) throw new Error('flow-plan.json muss imageOnly=true setzen.');
 if (flowPlan.imageProductionSteps !== stepCount) throw new Error(`flow-plan.json muss imageProductionSteps=${stepCount} setzen.`);
+if (flowPlan.pauseAfterEachImageStep !== false) throw new Error('flow-plan.json muss pauseAfterEachImageStep=false setzen.');
+if (flowPlan.continueAutomaticallyBetweenImageSteps !== true) throw new Error('flow-plan.json muss continueAutomaticallyBetweenImageSteps=true setzen.');
 if (flowScenes.length !== scenes.length) throw new Error(`flow-plan.json muss ${scenes.length} Beat-Einträge enthalten.`);
 
 const byId = new Map(flowScenes.map((entry) => [entry.id, entry]));
@@ -92,13 +94,14 @@ lines.push('2. Danach STOPPEN und auf die ausdrückliche Auswahl des Nutzers war
 lines.push('3. Das gewählte Thumbnail nur als Referenz für Qualitätsniveau und Illustrationssprache verwenden. Es ist KEINE Farb-, Layout-, Perspektiv- oder Hintergrundvorlage für alle Szenen.');
 lines.push(`4. Nach der Cover-Auswahl die Szenenbilder in genau ${stepCount} Bildschritten erzeugen.`);
 lines.push('5. Innerhalb jedes Bildschritts Bilder streng einzeln nacheinander erzeugen, prüfen, auswählen und speichern.');
-lines.push('6. Nach jedem Bildschritt STOPPEN und auf die ausdrückliche Freigabe des Nutzers warten.');
-lines.push('7. VISUELLE VIELFALT IST PFLICHT: nicht immer dieselbe Hand, denselben Materialblock, denselben Split-Screen oder denselben türkis/weißen Hintergrund verwenden.');
-lines.push('8. Normale Szenen haben keine große generierte Überschrift; bevorzugt 0–2 kurze deutsche Labels. Große Titel gehören primär ins Thumbnail.');
-lines.push('9. Bei sichtbaren Köpfen vollständige natürliche stilisierte Gesichtszüge zeigen. Keine gesichtslosen oder leeren Gesichter. Wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames lassen.');
-lines.push('10. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen.');
-lines.push('11. KEINE KI-Videoclips, KEINE Image-to-Video-Ausgabe und KEINE Animationen erzeugen.');
-lines.push('12. Sichtbarer Text ausschließlich Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.');
+lines.push('6. NACH DER COVER-AUSWAHL KEINE WEITEREN STOPPS ODER RÜCKFRAGEN: Bildschritt 1 bis 5 automatisch vollständig nacheinander abarbeiten.');
+lines.push('7. Erst nach Abschluss von Bildschritt 5 melden, dass alle Bilder fertig sind.');
+lines.push('8. VISUELLE VIELFALT IST PFLICHT: nicht immer dieselbe Hand, denselben Materialblock, denselben Split-Screen oder denselben türkis/weißen Hintergrund verwenden.');
+lines.push('9. Normale Szenen haben keine große generierte Überschrift; bevorzugt 0–2 kurze deutsche Labels. Große Titel gehören primär ins Thumbnail.');
+lines.push('10. Bei sichtbaren Köpfen vollständige natürliche stilisierte Gesichtszüge zeigen. Keine gesichtslosen oder leeren Gesichter. Wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames lassen.');
+lines.push('11. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen.');
+lines.push('12. KEINE KI-Videoclips, KEINE Image-to-Video-Ausgabe und KEINE Animationen erzeugen.');
+lines.push('13. Sichtbarer Text ausschließlich Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.');
 lines.push('');
 lines.push('THUMBNAIL – PHASE 1');
 lines.push('-------------------');
@@ -106,8 +109,8 @@ lines.push(read(thumbnailFile));
 lines.push('');
 lines.push('STOPP NACH DEN DREI THUMBNAILS. AUF AUSWAHL DES NUTZERS WARTEN.');
 lines.push('');
-lines.push(`SZENENBILDER – PHASE 2 · GENAU ${stepCount} BILDSCHRITTE`);
-lines.push('------------------------------------------------');
+lines.push(`SZENENBILDER – PHASE 2 · GENAU ${stepCount} BILDSCHRITTE · OHNE ZWISCHENSTOPPS`);
+lines.push('---------------------------------------------------------------------');
 
 for (let stepIndex=0;stepIndex<groupedScenes.length;stepIndex+=1) {
   const stepNumber = stepIndex + 1;
@@ -130,11 +133,11 @@ for (let stepIndex=0;stepIndex<groupedScenes.length;stepIndex+=1) {
   }
 
   lines.push('');
-  if (stepNumber < stepCount) lines.push(`STOPP NACH BILDSCHRITT ${stepNumber}. Melde die fertigen Bilder und warte auf Freigabe für Bildschritt ${stepNumber+1}.`);
-  else lines.push(`BILDSCHRITT ${stepNumber} ABGESCHLOSSEN. Die Szenenbild-Produktion ist vollständig.`);
+  if (stepNumber < stepCount) lines.push(`BILDSCHRITT ${stepNumber} ABGESCHLOSSEN → OHNE STOPP DIREKT MIT BILDSCHRITT ${stepNumber+1} FORTFAHREN.`);
+  else lines.push(`BILDSCHRITT ${stepNumber} ABGESCHLOSSEN. Jetzt erst Gesamtabschluss melden: alle fünf Bildschritte und alle Szenenbilder sind fertig.`);
 }
 
 fs.writeFileSync(paths.flowMaster, `${lines.join('\n')}\n`);
 console.log(`✓ Google-Flow-Masterprompt gebaut: ${paths.flowMaster}`);
-console.log(`  ${scenes.length} statische Bilder · ${visualTypes.size} Visual-Typen · ${stepCount} Schritte · 0 Clips.`);
+console.log(`  ${scenes.length} statische Bilder · ${visualTypes.size} Visual-Typen · ${stepCount} Schritte ohne Zwischenstopps · 0 Clips.`);
 console.log(`  Verteilung: ${sizes.join(' / ')} Bilder.`);
