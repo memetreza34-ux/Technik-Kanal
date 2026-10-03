@@ -8,161 +8,134 @@ Vor Änderungen zuerst lesen:
 4. `gehirn/BILDWELT.md`
 5. `gehirn/FLOW-WORKFLOW.md`
 6. `engine/config/science-v1.json`
-7. `skills/reel-fertigstellen.md`
-8. den aktuellen Video-Ordner
+7. den aktuellen Video-Ordner
 
 ## Kanalrichtung
 
-Dies ist ein deutschsprachiger Kanal für **Alltagswissenschaft und Technik**. Zielgruppe sind vor allem Jugendliche und junge Erwachsene.
+Deutschsprachiger Kanal für **Alltagswissenschaft und Technik** für Jugendliche und junge Erwachsene. Themen müssen greifbar, visuell erklärbar und ohne viel Vorwissen verständlich sein.
 
-Der Kanal ist bewusst **kein allgemeines Wissenschaftslexikon**. Themen sollen greifbar, visuell erklärbar und ohne umfangreiche Vorkenntnisse verständlich sein.
-
-Bevorzugte Bereiche: Physik im Alltag, Elektrotechnik/Elektronik, Energie, Maschinen, Verkehr/Mobilität, Gebäude/Infrastruktur, Materialien/Werkstoffe, einfache Alltagschemie, Wetter/Naturphänomene und greifbare Astronomie.
-
-Nicht als reguläre Kanalthemen verwenden: Biologie, Medizin, Anatomie, Krankheiten, Zellbiologie, DNA/Genetik, Biochemie sowie stark abstrakte Quanten-, Teilchen-, Relativitäts- oder Astrophysik ohne greifbaren Zugang.
+Nicht regulär verwenden: Biologie, Medizin, Anatomie, Krankheiten, Zellbiologie, DNA/Genetik, Biochemie sowie stark abstrakte Quanten-, Teilchen-, Relativitäts- oder Astrophysik ohne greifbaren Zugang.
 
 Leitfrage:
 
-> Kann ein Jugendlicher ohne großes Vorwissen nach dem Video etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
+> Kann ein Jugendlicher nach dem Video etwas verstehen, das er sehen, benutzen, erleben oder sich konkret vorstellen kann?
 
-## Aktives Produktionsprofil
+## Aktives Profil
 
-`youtube-2min-v1` ist verbindlich:
+`youtube-2min-v1`:
 
-- normales YouTube-Video, kein Reel
 - 1920×1080 / 16:9 / 30 fps
-- 90–150 Sekunden, 120 Sekunden ideal
+- 90–150 Sekunden, 120 ideal
 - 230–370 Wörter, 300 ideal
-- 12–28 visuelle Beats, 20 ideal
-- separates 1280×720-Thumbnail mit drei Kandidaten
-- **Google Flow erzeugt ausschließlich statische Bilder**
-- keine KI-Videoclips und kein Image-to-Video
+- 12–28 visuelle Beats
+- separates 1280×720-Thumbnail mit 3 Kandidaten
+- Google Flow erzeugt ausschließlich statische Bilder
+- keine KI-Videoclips, kein Image-to-Video
+- finale Videos haben **keine eingebrannten Untertitel/Captions**
 
-Interne Namen wie `ScienceReel` oder der Ordner `reels/` bleiben nur vorübergehend aus Rückwärtskompatibilität bestehen. Sie dürfen nicht als Produktdefinition interpretiert werden.
+Interne Namen wie `ScienceReel` bleiben nur aus Rückwärtskompatibilität bestehen.
 
 ## Story
 
-Verbindliche Dramaturgie nach `gehirn/LONGFORM.md`:
-
 **Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff**
 
-- keine Begrüßung oder lange Einleitung
-- zentrale Frage sofort öffnen
-- Erklärung spätestens innerhalb der ersten 30 Sekunden beginnen
+- keine Begrüßung
+- Kernfrage sofort öffnen
+- Erklärung innerhalb der ersten 30 Sekunden beginnen
 - Ursache → Vorgang → Ergebnis bevorzugen
 - keine lose Faktenliste
-- Vertiefungen müssen die Hauptfrage unterstützen
-- Payoff beantwortet die Ausgangsfrage klar
-- Titel, Thumbnail und Hook müssen dasselbe Versprechen geben
+- Payoff beantwortet die Ausgangsfrage
 
-## Visuelle Beats
+## Skript muss visuell abwechslungsreich sein
 
-Nicht automatisch einen Satz pro Bild erzeugen.
+Vor Freigabe des Skripts prüfen, welche Bilder daraus entstehen würden.
 
-> Eine verständliche visuelle Aussage = ein Beat.
+Wenn drei benachbarte Abschnitte fast dieselbe Szene benötigen würden, muss **das Skript bzw. der Beat-Plan umgeschrieben werden**. Nicht versuchen, dieselbe Bildidee nur mit leicht verändertem Prompt zu retten.
 
-Ein komplizierter Satz kann mehrere Bilder brauchen. Mehrere Sätze dürfen dasselbe Bild verwenden, solange dieselbe Sache erklärt wird.
+Bevorzugt abwechseln:
+- volle Umgebung
+- Mess-/Objektszene
+- Cutaway
+- Material-/Makroansicht
+- Vergleich
+- Alltagssituation
+- Instrument-/Messansicht
+- wissenschaftliche Konzeptdarstellung
+- Zusammenfassung/Montage
 
-## Google Flow – verbindlicher Produktionsablauf
+Verbindliche Limits:
+- mindestens 5 unterschiedliche Darstellungsformen pro 2-Minuten-Video
+- keine identische Hauptkomposition in zwei direkt aufeinanderfolgenden Beats
+- derselbe dominante Bildanker höchstens 3-mal pro Video
+- „Hand auf Gegenstand + Pfeile“ höchstens 3-mal als Hauptkomposition
 
-`gehirn/FLOW-WORKFLOW.md` ist verbindlich.
+## Google Flow
 
-Für jedes aktive Video müssen vor Bildproduktion vorhanden und final sein:
+Vor Bildproduktion müssen final sein:
 
 - `06-projektdateien/flow-plan.json`
 - `02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt`
-- alle Einzelprompts unter `02-bilder/prompts/`
+- alle Einzelprompts
 
 Ablauf:
 
-1. zuerst drei Thumbnail-Kandidaten erzeugen
-2. danach **STOPP** und auf die Nutzerauswahl warten
-3. gewählten Kandidaten als lockere visuelle Referenz verwenden
-4. danach die komplette Szenenbild-Produktion in **genau 5 Bildschritte** aufteilen
-5. die Beats möglichst gleichmäßig und in Reihenfolge auf diese fünf Schritte verteilen
-6. innerhalb jedes Bildschritts jedes Bild **streng einzeln nacheinander** erzeugen, prüfen, auswählen und speichern
-7. nach jedem Bildschritt **STOPPEN** und auf die Freigabe des Nutzers für den nächsten Bildschritt warten
-8. jeder Beat erhält genau ein finales statisches 16:9-Bild
-9. keine KI-Videoclips, keine Animationen und kein Image-to-Video erzeugen
+1. 3 Thumbnail-Kandidaten
+2. STOPP und Nutzerauswahl
+3. gewähltes Thumbnail nur als Referenz für **Qualitätsniveau und Illustrationssprache** nutzen — nicht Palette, Layout, Hintergrund oder Perspektive kopieren
+4. danach genau 5 Bildschritte
+5. innerhalb eines Bildschritts Bilder streng einzeln nacheinander
+6. nach jedem Bildschritt STOPP und Freigabe abwarten
+7. jeder Beat = genau ein finales statisches 16:9-Bild
+8. keine KI-Videoclips oder Animationen
 
-Beispiel bei 18 Bildern:
-
-- Bildschritt 1: 01–04
-- Bildschritt 2: 05–08
-- Bildschritt 3: 09–12
-- Bildschritt 4: 13–15
-- Bildschritt 5: 16–18
-
-Wenn ein Vorgang als einzelnes Standbild nicht klar genug ist, den visuellen Beat verbessern oder in mehrere statische Bilder aufteilen.
-
-## Inhalt und Sicherheit
-
-- fachliche Aussagen mit stabilen Quellen-IDs dokumentieren
-- Normen, Grenzwerte und aktuelle Regeln nie ohne Quelle behaupten
-- keine gefährlichen Experimente oder riskanten Handlungsanweisungen
-- keine Anleitung zu Arbeiten an Netzspannung
-- keine Manipulation oder Überbrückung von Schutzgeräten
-- chemische, physikalische oder elektrische Gefahren nur erklärend und sicher darstellen
-- unnötigen Fachjargon vermeiden
-- Fachbegriffe unmittelbar erklären
-- konkrete Ursache-Wirkung und sichtbare Beispiele bevorzugen
-
-## Sprache
-
-- Voice-over, Untertitel und kontrollierte Overlays sind Deutsch
-- Bildprompts dürfen Englisch oder Deutsch sein
-- sichtbarer Text innerhalb generierter Wissenschaftsbilder ist ausschließlich Deutsch
-- englische Labels oder englische Infotexte im Bild sind nicht zulässig
-- zufällige KI-Schrift, Logos oder Wasserzeichen sind nicht zulässig
+Jeder Bildschritt soll möglichst mindestens drei unterschiedliche Darstellungsformen enthalten.
 
 ## Bildwelt
 
-Die verbindliche Bildwelt ist in `gehirn/BILDWELT.md` definiert.
+`gehirn/BILDWELT.md` ist verbindlich.
 
-Kernprinzip:
-
-> Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die die konkrete Aussage dieses Beats erklärt.
-
-Dabei gilt:
+Kernregeln:
 - eine Hauptaussage pro Bild
-- volle Umgebungen und Orte nutzen, wenn sie beim Erklären helfen
-- wissenschaftliche Information direkt in die Szene integrieren
-- reine Illustrationen, Cutaways, Detailansichten, Vergleiche oder Personen nur einsetzen, wenn sie die beste Darstellungsform sind
-- Menschen sind erlaubt, aber stilisiert, erwachsen und nur mit fachlicher Funktion
-- Hintergründe und Farben dürfen je nach Thema wechseln
-- Titel, Labels, Merksätze, Zahlen und Pfeile sind optional
-- sichtbarer Text im Bild nur auf Deutsch
-- so wenig Information wie möglich, so viel wie nötig
-- keine Informationsüberladung und keine dekorativen Elemente ohne Erklärfunktion
+- Szenen visuell deutlich variieren
+- keine wiederkehrende Türkis-/Weiß-Schablone
+- keine große Überschrift in normalen Szenen; große Titel primär im Thumbnail
+- normale Szenen bevorzugt 0–2 kurze Labels
+- sichtbarer Text nur Deutsch
+- keine gesichtslosen sichtbaren Köpfe
+- wenn ein Gesicht sichtbar ist: vollständige natürliche stilisierte Gesichtszüge
+- wenn kein Gesicht gebraucht wird: Kopf vollständig aus dem Frame lassen statt leeren Kopf zu zeichnen
+- Menschen nur bei fachlichem Nutzen
 
-## Thumbnail
+## Sprache und Untertitel
 
-Thumbnail ist nicht Bild 01.
+- Voice-over Deutsch
+- sichtbarer Bildtext Deutsch
+- **keine eingebrannten Untertitel im finalen Video**
+- Wortzeiten dürfen intern für Synchronisation genutzt werden
+- kurze wissenschaftliche Labels innerhalb der Bilder bleiben erlaubt
 
-- separat planen
-- 1280×720
-- drei Kandidaten
-- fachlich korrekt
-- dasselbe Versprechen wie Titel und Hook
-- keine irreführende Zuspitzung
-- in Flow zuerst erzeugen und danach auf die Nutzerauswahl warten
+## Remotion
 
-## Remotion – harte Grenze
+Remotion darf:
+- finale statische Bilder anordnen
+- harte Schnitte setzen
+- Voice-over abspielen
+- optionale SFX platzieren
+- rendern
 
-Remotion ist ausschließlich technische Montage- und Export-Schicht.
+Remotion darf nicht:
+- Untertitel/Captions ins finale Video rendern
+- zoomen, schwenken, rotieren, parallaxen oder Ken Burns erzeugen
+- wissenschaftliche Prozesse animieren
+- Videoclips als Szenenquelle erwarten
 
-Remotion darf nur finale statische Bilder zeitlich anordnen, harte Schnitte setzen, Voice-over abspielen, Untertitel und statische Overlays anzeigen, optionale SFX platzieren und rendern.
+## Audio
 
-Remotion darf NICHT zoomen, schwenken, rotieren, parallaxen, Ken-Burns-Bewegung erzeugen, Partikel erzeugen, wissenschaftliche Prozesse animieren oder Videoclips als Szenenquelle erwarten.
-
-## Audio und Synchronisation
-
-- Roh-Voice wird auf exakt **1,10×** verarbeitet; Tonhöhe bleibt erhalten
-- finale Voice ist die verbindliche Zeitquelle
+- Voice exakt 1,10×, Tonhöhe erhalten
+- finale Voice ist Zeitquelle
 - lokale Wortzeiten mit `whisper.cpp`
-- Skript und Transkript werden robust gegeneinander ausgerichtet
-- Bildwechsel, Untertitel und SFX verwenden dieselbe Zeitbasis
+- Wortzeiten dienen Bildwechseln/Timing, nicht eingebrannten Untertiteln
 
 ## Produktionsregel
 
-Erst Thema, Recherche, Story-Struktur und vollständiges Skript abschließen. Danach visuelle Aussagen planen, Bildwelt anwenden, Einzelprompts und Flow-Plan festlegen und den Google-Flow-Masterprompt bauen. Erst anschließend Bilder erzeugen. **Nach dem Cover immer fünf klar getrennte Bildschritte verwenden. Keine Video- oder Animationsplanung als Ersatz für gute statische Bilddramaturgie.**
+Erst Thema → Recherche → Story → Skript → **Visual-Diversity-Check** → Beats → Prompts/Flow-Plan → Bilder in fünf Schritten → Voice → Timing → Remotion → QA.
