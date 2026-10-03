@@ -79,14 +79,16 @@ Vor Bildproduktion müssen final sein:
 
 Ablauf:
 
-1. 3 Thumbnail-Kandidaten
-2. STOPP und Nutzerauswahl
+1. 3 Thumbnail-Kandidaten erzeugen
+2. **STOPP und Nutzerauswahl** — dies ist der einzige Freigabepunkt
 3. gewähltes Thumbnail nur als Referenz für **Qualitätsniveau und Illustrationssprache** nutzen — nicht Palette, Layout, Hintergrund oder Perspektive kopieren
 4. danach genau 5 Bildschritte
-5. innerhalb eines Bildschritts Bilder streng einzeln nacheinander
-6. nach jedem Bildschritt STOPP und Freigabe abwarten
-7. jeder Beat = genau ein finales statisches 16:9-Bild
-8. keine KI-Videoclips oder Animationen
+5. innerhalb eines Bildschritts Bilder streng einzeln nacheinander erzeugen, prüfen, auswählen und speichern
+6. **zwischen Bildschritt 1–5 nicht stoppen und keine weitere Freigabe erfragen**
+7. nach Bildschritt 1 automatisch mit 2, dann 3, 4 und 5 fortfahren
+8. erst nach Bildschritt 5 den vollständigen Abschluss melden
+9. jeder Beat = genau ein finales statisches 16:9-Bild
+10. keine KI-Videoclips oder Animationen
 
 Jeder Bildschritt soll möglichst mindestens drei unterschiedliche Darstellungsformen enthalten.
 
@@ -116,18 +118,9 @@ Kernregeln:
 
 ## Remotion
 
-Remotion darf:
-- finale statische Bilder anordnen
-- harte Schnitte setzen
-- Voice-over abspielen
-- optionale SFX platzieren
-- rendern
+Remotion darf finale statische Bilder anordnen, harte Schnitte setzen, Voice-over abspielen, optionale SFX platzieren und rendern.
 
-Remotion darf nicht:
-- Untertitel/Captions ins finale Video rendern
-- zoomen, schwenken, rotieren, parallaxen oder Ken Burns erzeugen
-- wissenschaftliche Prozesse animieren
-- Videoclips als Szenenquelle erwarten
+Remotion darf keine Untertitel/Captions ins finale Video rendern, nicht zoomen, schwenken, rotieren, parallaxen oder Ken Burns erzeugen, keine wissenschaftlichen Prozesse animieren und keine Videoclips als Szenenquelle erwarten.
 
 ## Audio
 
@@ -138,4 +131,4 @@ Remotion darf nicht:
 
 ## Produktionsregel
 
-Erst Thema → Recherche → Story → Skript → **Visual-Diversity-Check** → Beats → Prompts/Flow-Plan → Bilder in fünf Schritten → Voice → Timing → Remotion → QA.
+Erst Thema → Recherche → Story → Skript → **Visual-Diversity-Check** → Beats → Prompts/Flow-Plan → 3 Cover-Kandidaten → Cover-Auswahl → **fünf Bildschritte ohne Zwischenstopps komplett abarbeiten** → Voice → Timing → Remotion → QA.
