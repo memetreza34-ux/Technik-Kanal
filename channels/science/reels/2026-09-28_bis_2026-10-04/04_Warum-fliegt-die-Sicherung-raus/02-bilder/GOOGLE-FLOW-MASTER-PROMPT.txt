@@ -1,0 +1,122 @@
+GOOGLE FLOW MASTER PROMPT — IMAGE ONLY
+=======================================
+
+Video: Warum fliegt die Sicherung raus?
+Scene format: 1920×1080 / 16:9
+Active visual world: Technical Editorial Explainer 2.5D
+Final Flow collection: sicherung-video-assets-final
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects. Keep every scene simple: one dominant explanatory idea, only necessary objects. Visible text only in German and only when requested. No subtitles, logos or watermarks.
+
+CORE EXPLANATION RULES
+----------------------
+1. Every image must explain the CURRENT voice-over statement as simply and directly as possible.
+2. One dominant explanatory idea per image. Use only the objects needed for that idea.
+3. The main message should be recognizable within about 1–2 seconds.
+4. Camera-angle changes alone do NOT count as visual variety. Change the explanatory form when needed.
+5. If adjacent beats would become nearly the same image, change the explanatory form instead of producing another variation.
+6. Normal scenes use 0–3 short German labels only when labels reduce explanation effort. No subtitle sentences.
+7. Scene 01 must continue the main motif of the USER-SELECTED thumbnail and remove the large thumbnail headline.
+
+BINDING WORKFLOW
+----------------
+1. First create exactly 3 thumbnail candidates and nothing else.
+2. STOP and wait for the user to choose one cover.
+3. Selected cover = 00-thumbnail-final. Remove the two unselected covers from the final collection.
+4. Then create all 15 scene images in exactly 5 image steps: 01–03, 04–06, 07–09, 10–12, 13–15.
+5. Generate each image individually, inspect it, keep the best result and rename it immediately.
+6. After the cover selection there are NO further stops or questions. Continue automatically through all five image steps.
+7. No AI video, no image-to-video, no animation.
+8. At the end remove failed attempts, duplicates and rejected variants.
+9. Final collection contains ONLY 00-thumbnail-final plus 01-hook-final through 15-payoff-final.
+
+PHASE 1 — THUMBNAIL
+-------------------
+Create exactly three clearly different YouTube thumbnail candidates in 1280×720 / 16:9.
+
+Candidate A: a large household miniature circuit breaker in the tripped position, with a kettle and fan heater suggested in the background. German headline only: “WARUM FLIEGT SIE RAUS?”
+Candidate B: a clean cutaway of one circuit breaker showing the thermal bimetal and magnetic trip as two distinct internal mechanisms. German headline only: “WAS PASSIERT DA DRIN?”
+Candidate C: a clearly overloaded household circuit with several high-power appliances connected, leading visually toward a circuit breaker that has just tripped. German headline only: “ZU VIEL STROM?”
+
+Keep each candidate understandable in one glance. No people. No clutter. No English visible text.
+
+STOP AFTER THE THREE THUMBNAILS. WAIT FOR USER SELECTION.
+After selection, remove the two rejected covers and use the chosen cover’s main motif as the visual starting point for scene 01.
+
+IMAGE STEP 1/5 — 01 TO 03
+==========================
+
+01-HOOK
+Continue the SELECTED thumbnail’s main motif. Remove the large thumbnail headline. Show the household miniature circuit breaker clearly in the tripped position and retain only the everyday context needed for the opening question. Add at most one small German label: “AUSGELÖST”. Final name: 01-hook-final.
+
+02-CONTEXT
+Create a simple household circuit map. Show one miniature circuit breaker feeding one electrical branch with a few recognizable household loads. Add only “ein Stromkreis” and “Strom”. This is not a detailed wiring schematic. Final name: 02-context-final.
+
+03-CONTEXT
+Create a clean cable cross-section. Show copper conductor, insulation and restrained orange heat buildup when current is too high for too long. Add “Leitung wird warm”. No breaker or room. Final name: 03-context-final.
+
+CONTINUE DIRECTLY TO IMAGE STEP 2. NO STOP.
+
+IMAGE STEP 2/5 — 04 TO 06
+==========================
+
+04-FOUNDATION
+Create an exploded technical cutaway of one miniature circuit breaker. Show thermal bimetal strip, magnetic trip coil and latch/switching mechanism. Labels: “Bimetall”, “Magnetauslöser”, “Schaltmechanismus”. Final name: 04-foundation-final.
+
+05-FOUNDATION
+Create a before-and-after illustration of a bimetal strip only. Left cool and nearly straight, right warm and visibly bent. Labels: “kalt”, “warm”. Final name: 05-foundation-final.
+
+06-MECHANISM
+Create a close-up mechanical cutaway showing the bent bimetal releasing the latch mechanism and opening the circuit. Labels: “Bimetall”, “Auslösung”. Do not focus on the magnetic trip. Final name: 06-mechanism-final.
+
+CONTINUE DIRECTLY TO IMAGE STEP 3. NO STOP.
+
+IMAGE STEP 3/5 — 07 TO 09
+==========================
+
+07-MECHANISM
+Create a minimal timing concept for overload. Show a current line briefly above normal next to a bimetal not yet bent far enough to trip. Labels: “kurzzeitig”, “Überlast”. No detailed numbered graph. Final name: 07-mechanism-final.
+
+08-MECHANISM
+Create a minimal fault diagram showing conductors of different potential connected through an unintended very low-resistance path and a sharply increased current path. Label: “Kurzschluss”. Final name: 08-mechanism-final.
+
+09-MECHANISM
+Create a clean cutaway of the magnetic trip. Show high current through the coil and a metal armature/plunger being pulled into the trip mechanism. Labels: “Spule”, “Anker”. Final name: 09-mechanism-final.
+
+CONTINUE DIRECTLY TO IMAGE STEP 4. NO STOP.
+
+IMAGE STEP 4/5 — 10 TO 12
+==========================
+
+10-MECHANISM
+Create a clear comparison: left bent bimetal labeled “Überlast – verzögert”; right magnetic coil/armature labeled “Kurzschluss – sehr schnell”. Both lead to the same breaker trip. Final name: 10-mechanism-final.
+
+11-DEEPENING
+Create a close-up of a circuit breaker immediately after tripping. Show the handle in trip/intermediate or off position and a small internal latch through a cutaway window. Label: “ausgelöst”. Final name: 11-deepening-final.
+
+12-DEEPENING
+Create a simplified household distribution board with several breakers. One is clearly tripped. Label only that breaker: “betroffener Stromkreis”. Final name: 12-deepening-final.
+
+CONTINUE DIRECTLY TO IMAGE STEP 5. NO STOP.
+
+IMAGE STEP 5/5 — 13 TO 15
+==========================
+
+13-DEEPENING
+Create a simple technical scene centered on one miniature circuit breaker protecting an electrical cable. Add only “Überstromschutz”. No RCD in this scene. Final name: 13-deepening-final.
+
+14-DEEPENING
+Create a simple functional illustration of an RCD/FI with phase and neutral passing through it plus one unintended leakage-current path toward earth. Labels: “Fehlerstromschutz”, “Fehlerstrom”. Final name: 14-deepening-final.
+
+15-PAYOFF
+Create a final simple summary with two paths converging on the same trip: “Überlast” → “Bimetall”; “Kurzschluss” → “Magnetauslöser”; both end at “Stromkreis getrennt”. Final name: 15-payoff-final.
+
+IMAGE STEP 5 COMPLETE. CLEAN FINAL COLLECTION BEFORE REPORTING COMPLETION.
+
+FINAL CLEANUP
+-------------
+Use exactly one final Google Flow collection/folder named “sicherung-video-assets-final”.
+Keep only 00-thumbnail-final and all 15 final scene images.
+Remove the two rejected covers, failed attempts, intermediate versions, duplicates and rejected variants.
+Only after cleanup report that image production is complete.
