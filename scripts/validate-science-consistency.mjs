@@ -71,11 +71,15 @@ if(d?.thumbnailReferenceScope!=='quality-and-illustration-style-only-not-layout-
 const flow=config.visuals.flow;
 if(!flow?.masterPromptRequired||!flow?.planRequired) errors.push('Flow-Plan/Masterprompt müssen Pflicht sein.');
 if(!flow?.thumbnailFirst||!flow?.pauseAfterThumbnailCandidates) errors.push('Thumbnail-Stop-Regel fehlt.');
+if(flow?.deleteUnselectedThumbnailCandidatesAfterSelection!==true) errors.push('Zwei nicht gewählte Cover müssen nach der Auswahl entfernt werden.');
+if(flow?.selectedThumbnailFinalName!=='00-thumbnail-final') errors.push('Gewähltes Cover muss 00-thumbnail-final heißen.');
 if(flow?.imageProductionSteps!==5||flow?.balancedImageStepGrouping!==true) errors.push('Genau fünf Bildschritte fehlen.');
 if(flow?.pauseAfterEachImageProductionStep!==false) errors.push('Zwischenstopps nach Bildschritten müssen deaktiviert sein.');
 if(flow?.continueAutomaticallyBetweenImageSteps!==true) errors.push('Automatische Fortsetzung zwischen Bildschritten muss aktiv sein.');
 if(flow?.finalReportAfterAllImageSteps!==true) errors.push('Gesamtabschluss darf erst nach allen fünf Bildschritten erfolgen.');
 if(!flow?.sequentialSceneGenerationRequired||!flow?.oneImagePerBeatRequired) errors.push('Sequentielle Einzelbilder fehlen.');
+if(flow?.finalFlowCollectionRequired!==true||flow?.singleFinalFlowCollectionPerVideo!==true) errors.push('Genau eine finale Flow-Sammlung pro Video muss Pflicht sein.');
+if(flow?.removeRejectedVariantsBeforeCompletion!==true||flow?.renameFinalAssetsBeforeCompletion!==true||flow?.finalCollectionContainsFinalAssetsOnly!==true) errors.push('Finale Flow-Sammlung muss bereinigt und korrekt benannt werden.');
 if(flow?.imageOnly!==true||flow?.aiVideoAllowed!==false||flow?.clipsAllowed!==false) errors.push('Flow muss bild-only sein.');
 if(flow?.remotionMayPlayFlowClips!==false||flow?.remotionMayGenerateMotion!==false) errors.push('Remotion darf keine Clips/Motion erzeugen.');
 
@@ -83,13 +87,21 @@ if(!/(drei|3).*thumbnail/is.test(flowWorkflow)||!/(STOPPEN|STOPP)/.test(flowWork
 if(!/genau 5 Bildschritte|genau fünf Bildschritte/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW fünf Schritte fehlen.');
 if(!/keine weiteren Stopps|keine Zwischenstopps/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW muss Zwischenstopps nach der Cover-Auswahl verbieten.');
 if(!/automatisch mit Bildschritt 2|automatisch vollständig/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW muss automatische Fortsetzung durch alle fünf Schritte verlangen.');
+if(!/zwei nicht gewählten.*Cover|zwei verworfenen Cover/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW muss die zwei nicht gewählten Cover entfernen.');
+if(!/genau \*\*eine finale Google-Flow-Sammlung|genau eine finale Google-Flow-Sammlung/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW muss genau eine finale Flow-Sammlung verlangen.');
+if(!/Zwischenstände.*Fehlversuche|Fehlversuche.*Zwischenstände/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW muss Zwischenstände und Fehlversuche aus der finalen Sammlung entfernen.');
 if(!/visuelle Vielfalt/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW Diversity fehlt.');
 if(!/keine eingebrannten Untertitel/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW subtitle-free fehlt.');
 if(!/GOOGLE-FLOW-MASTER-PROMPT\.txt/i.test(claude)||!/flow-plan\.json/i.test(claude)) errors.push('CLAUDE Flow-Dateien fehlen.');
 if(!/keine weitere Freigabe|keine weiteren Freigaben|keine Zwischenstopps/i.test(claude)) errors.push('CLAUDE muss Cover als einzigen Freigabepunkt festlegen.');
+if(!/zwei nicht gewählten Cover|2 verworfene Cover/i.test(claude)) errors.push('CLAUDE muss verworfene Cover entfernen.');
+if(!/genau einer finalen Google-Flow-Sammlung|eine einzige saubere Flow-Sammlung/i.test(claude)) errors.push('CLAUDE muss eine einzige finale Flow-Sammlung verlangen.');
 if(!flowBuilder.includes('NUR BILDER')||!flowBuilder.includes('VISUELLE VIELFALT IST PFLICHT')) errors.push('Flow-Master-Builder enthält Bild-/Diversity-Regeln nicht.');
 if(!flowBuilder.includes('visualType')||!flowBuilder.includes('primaryMotif')) errors.push('Flow-Master-Builder prüft Visual-Typ/Primärmotiv nicht.');
 if(!flowBuilder.includes('KEINE WEITEREN STOPPS ODER RÜCKFRAGEN')) errors.push('Flow-Master-Builder muss Zwischenstopps nach Cover-Auswahl verbieten.');
+if(!flowBuilder.includes('ZWEI NICHT GEWÄHLTEN COVER')) errors.push('Flow-Master-Builder muss verworfene Cover entfernen.');
+if(!flowBuilder.includes('PHASE 3 – FINALE ASSET-BEREINIGUNG')) errors.push('Flow-Master-Builder muss eine finale Asset-Bereinigung erzeugen.');
+if(!flowBuilder.includes('finalCollectionName')) errors.push('Flow-Master-Builder muss eine finale Flow-Sammlung benennen.');
 if(flowBuilder.includes('STOPP NACH BILDSCHRITT')) errors.push('Flow-Master-Builder darf keine Zwischenstopps nach Bildschritten erzeugen.');
 if(flowBuilder.includes('image-to-video')) errors.push('Flow-Master-Builder darf kein Image-to-Video enthalten.');
 
@@ -98,6 +110,8 @@ if(scienceReel.includes('OffthreadVideo')||scienceReel.includes('videoPath')) er
 if(!template.includes("runtimeFile:'science-runtime.json'")||!template.includes("productionProfile:'youtube-2min-v1'")) errors.push('Scene-Template falsch.');
 if(!newVideo.includes("visualType:'UNGEPLANT'")||!newVideo.includes("primaryMotif:'UNGEPLANT'")) errors.push('Neue Videos müssen Visual-Diversity-Platzhalter anlegen.');
 if(!newVideo.includes('pauseAfterEachImageStep:false')||!newVideo.includes('continueAutomaticallyBetweenImageSteps:true')) errors.push('Neue Videos müssen fünf Bildschritte ohne Zwischenstopps anlegen.');
+if(!newVideo.includes('deleteUnselectedThumbnailCandidatesAfterSelection:true')||!newVideo.includes("selectedThumbnailFinalName:'00-thumbnail-final'")) errors.push('Neue Videos müssen Cover-Bereinigung anlegen.');
+if(!newVideo.includes('finalFlowCollectionRequired:true')||!newVideo.includes('singleFinalFlowCollectionPerVideo:true')||!newVideo.includes('finalCollectionContainsFinalAssetsOnly:true')) errors.push('Neue Videos müssen eine bereinigte finale Flow-Sammlung anlegen.');
 if(newVideo.includes('02-bilder/videos')||newVideo.includes('image-to-video')) errors.push('Neue Videos dürfen keine KI-Video-Struktur anlegen.');
 if(!processVoice.includes('loudnorm=I=')) errors.push('Voice-Loudness-Normalisierung fehlt.');
 if(!renderQa.includes('blackdetect')||!renderQa.includes('silencedetect')) errors.push('Render-QA Schwarzbild/Randstille fehlt.');
@@ -108,4 +122,4 @@ if(errors.length){
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log('✓ youtube-2min-v1: abwechslungsreiche Bildpipeline, fünf Flow-Schritte ohne Zwischenstopps, keine eingebrannten Untertitel und Scientific Scene Explainer sind konsistent.');
+console.log('✓ youtube-2min-v1: diverse Bildpipeline, fünf Flow-Schritte ohne Zwischenstopps, Cover-Bereinigung, eine finale Flow-Sammlung und subtitle-free Rendering sind konsistent.');
