@@ -75,7 +75,9 @@ let handOnObjectCount = 0;
 if (flowPlan) {
   if (flowPlan.imageOnly !== true) errors.push('flow-plan.json muss imageOnly=true setzen.');
   if (flowPlan.imageProductionSteps !== stepCount) errors.push(`flow-plan.json muss imageProductionSteps=${stepCount} setzen.`);
-  if (flowPlan.pauseAfterEachImageStep !== true) errors.push('flow-plan.json muss pauseAfterEachImageStep=true setzen.');
+  if (flowPlan.pauseAfterEachImageStep !== false) errors.push('flow-plan.json muss pauseAfterEachImageStep=false setzen.');
+  if (flowPlan.continueAutomaticallyBetweenImageSteps !== true) errors.push('flow-plan.json muss continueAutomaticallyBetweenImageSteps=true setzen.');
+  if (flowPlan.finalReportAfterAllImageSteps !== true) errors.push('flow-plan.json muss finalReportAfterAllImageSteps=true setzen.');
   if (flowEntries.length !== plan.scenes.length) errors.push(`flow-plan.json enthält ${flowEntries.length} Beats; erwartet ${plan.scenes.length}.`);
 
   const byId = new Map(flowEntries.map((entry)=>[entry.id,entry]));
@@ -135,16 +137,20 @@ else {
   if (!/(nur bilder|ausschließlich.*bilder|keine ki-videoclips)/i.test(flowMaster)) errors.push('Flow-Masterprompt muss den reinen Bild-Workflow festlegen.');
   if (/OUTPUT\s*=\s*IMAGE-TO-VIDEO|KI-VIDEO-ANIMATION/i.test(flowMaster)) errors.push('Flow-Masterprompt enthält verbotene Video-/Animationsschritte.');
   for (let step=1;step<=stepCount;step+=1) if (!new RegExp(`BILDSCHRITT\\s+${step}(?:\\/${stepCount})?`,'i').test(flowMaster)) errors.push(`Flow-Masterprompt enthält Bildschritt ${step} nicht.`);
-  if (!/STOPP NACH BILDSCHRITT/i.test(flowMaster)) errors.push('Flow-Masterprompt muss zwischen den Bildschritten stoppen.');
+  if (/STOPP NACH BILDSCHRITT\s+[1-4]/i.test(flowMaster)) errors.push('Flow-Masterprompt darf nach der Cover-Auswahl keine Zwischenstopps zwischen Bildschritt 1–5 enthalten.');
+  if (!/(ohne zwischenstopp|keine weiteren stopps|keine zwischenstopps|direkt mit bildschritt)/i.test(flowMaster)) errors.push('Flow-Masterprompt muss die automatische Fortsetzung zwischen allen fünf Bildschritten ausdrücklich verlangen.');
+  if (!/(erst nach.*bildschritt 5|nach abschluss von bildschritt 5|gesamtabschluss)/i.test(flowMaster)) errors.push('Flow-Masterprompt muss den Gesamtabschluss erst nach Bildschritt 5 vorsehen.');
   if (thumbnailPrompt && !normalize(flowMaster).includes(normalize(thumbnailPrompt))) errors.push('Thumbnail-Prompt fehlt im Masterprompt.');
   for (const scene of plan.scenes) if (promptFiles[scene.id] && !normalize(flowMaster).includes(normalize(promptFiles[scene.id]))) errors.push(`${scene.id}: Bildprompt fehlt im Masterprompt.`);
 }
 
 const report = {
-  version:'science-flow-images-v3-diversity',
+  version:'science-flow-images-v4-no-intermediate-stops',
   productionProfile:config.productionProfile,
   productionMode:config.visuals.productionMode,
   imageProductionSteps:stepCount,
+  pauseAfterEachImageStep:false,
+  continueAutomaticallyBetweenImageSteps:true,
   styleId:config.visuals.styleId,
   generatedAt:new Date().toISOString(),
   passed:errors.length===0,
@@ -164,5 +170,5 @@ if (errors.length) {
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} statische Bilder, ${distinctVisualTypes.size} Visual-Typen, ${stepCount} Bildschritte, 0 Clips.`);
+console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} statische Bilder, ${distinctVisualTypes.size} Visual-Typen, ${stepCount} Bildschritte ohne Zwischenstopps, 0 Clips.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
