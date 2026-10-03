@@ -21,7 +21,10 @@ Pflicht:
 2. danach **STOPPEN**
 3. noch keine Szenenbilder erzeugen
 4. auf die ausdrückliche Nutzerauswahl warten
-5. gewähltes Thumbnail nur als Referenz für **Qualitätsniveau und Illustrationssprache** verwenden
+5. gewähltes Thumbnail als `00-thumbnail-final` übernehmen
+6. die zwei nicht gewählten Thumbnail-Kandidaten **löschen oder aus der finalen Flow-Sammlung entfernen**
+7. in der finalen Sammlung darf nur das ausgewählte Cover verbleiben
+8. gewähltes Thumbnail nur als Referenz für **Qualitätsniveau und Illustrationssprache** verwenden
 
 Das Thumbnail ist **keine** Vorlage für Farbpalette, Hintergrund, Perspektive, Split-Screen-Anordnung oder Textpositionen aller Szenen.
 
@@ -47,7 +50,8 @@ Beispiel bei 18 Bildern:
 
 - Bilder streng einzeln nacheinander erzeugen
 - jedes Bild prüfen und das beste Ergebnis auswählen
-- sauber speichern
+- das finale Bild sofort korrekt benennen
+- verworfene Varianten nicht in der finalen Sammlung behalten
 - erst danach das nächste Bild erzeugen
 - niemals mehrere Beats gleichzeitig erzeugen
 
@@ -57,10 +61,24 @@ Beispiel bei 18 Bildern:
 
 Nach Abschluss von Bildschritt 1 automatisch mit Bildschritt 2 fortfahren, danach 3, 4 und 5. Die fünf Schritte bleiben als Produktionsstruktur sichtbar, werden aber in einem durchgehenden Lauf abgearbeitet.
 
-Erst nach Bildschritt 5 melden:
-- dass alle fünf Bildschritte abgeschlossen sind
-- welche finalen Bilder erzeugt wurden
-- ob einzelne Bilder wegen Qualitätsproblemen neu erzeugt werden mussten
+## Phase 3 – finale Google-Flow-Sammlung aufräumen
+
+Nach Bildschritt 5 wird **vor dem Abschlussbericht** aufgeräumt.
+
+Verbindlich:
+- genau **eine finale Google-Flow-Sammlung / ein finaler Google-Flow-Ordner pro Video**
+- alle finalen Assets dort zusammenführen
+- nur das ausgewählte Cover behalten
+- alle zwei verworfenen Cover entfernen
+- Fehlversuche, Zwischenstände, doppelte Bilder und verworfene Varianten entfernen
+- alle finalen Szenenbilder korrekt in Reihenfolge benennen
+- keine Testbilder oder Alternativen in der finalen Sammlung belassen
+
+Pflichtinhalt der finalen Sammlung:
+- `00-thumbnail-final`
+- alle finalen Szenenbilder `01-...-final` bis zum letzten Beat
+
+Erst wenn diese Bereinigung abgeschlossen ist, den Gesamtabschluss melden.
 
 ## Verbindlicher Diversity-Check vor jedem Bild
 
@@ -130,7 +148,7 @@ Vor Bilderzeugung müssen fertig sein:
 4. Visual-Diversity-Prüfung des Skripts
 5. visuelle Beats
 6. Einzelprompts
-7. `flow-plan.json` mit 5 Schritten und Visual-Typ/Primärmotiv pro Beat
+7. `flow-plan.json` mit 5 Schritten, Visual-Typ/Primärmotiv und Final-Collection-Regeln
 8. `GOOGLE-FLOW-MASTER-PROMPT.txt`
 
-**Freigabepunkt ist nur nach den drei Thumbnail-Kandidaten. Nach der Cover-Auswahl werden Bildschritt 1 bis 5 ohne Zwischenstopp vollständig fertiggestellt.**
+**Freigabepunkt ist nur nach den drei Thumbnail-Kandidaten. Nach der Cover-Auswahl werden Bildschritt 1 bis 5 ohne Zwischenstopp vollständig fertiggestellt, danach wird die finale Sammlung bereinigt und erst dann der Abschluss gemeldet.**
