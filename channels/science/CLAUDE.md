@@ -81,14 +81,19 @@ Ablauf:
 
 1. 3 Thumbnail-Kandidaten erzeugen
 2. **STOPP und Nutzerauswahl** — dies ist der einzige Freigabepunkt
-3. gewähltes Thumbnail nur als Referenz für **Qualitätsniveau und Illustrationssprache** nutzen — nicht Palette, Layout, Hintergrund oder Perspektive kopieren
-4. danach genau 5 Bildschritte
-5. innerhalb eines Bildschritts Bilder streng einzeln nacheinander erzeugen, prüfen, auswählen und speichern
-6. **zwischen Bildschritt 1–5 nicht stoppen und keine weitere Freigabe erfragen**
-7. nach Bildschritt 1 automatisch mit 2, dann 3, 4 und 5 fortfahren
-8. erst nach Bildschritt 5 den vollständigen Abschluss melden
-9. jeder Beat = genau ein finales statisches 16:9-Bild
-10. keine KI-Videoclips oder Animationen
+3. gewähltes Thumbnail als `00-thumbnail-final` übernehmen
+4. die zwei nicht gewählten Cover **löschen oder aus der finalen Flow-Sammlung entfernen**
+5. gewähltes Thumbnail nur als Referenz für **Qualitätsniveau und Illustrationssprache** nutzen — nicht Palette, Layout, Hintergrund oder Perspektive kopieren
+6. danach genau 5 Bildschritte
+7. innerhalb eines Bildschritts Bilder streng einzeln nacheinander erzeugen, prüfen, auswählen und direkt korrekt benennen
+8. **zwischen Bildschritt 1–5 nicht stoppen und keine weitere Freigabe erfragen**
+9. nach Bildschritt 1 automatisch mit 2, dann 3, 4 und 5 fortfahren
+10. nach Bildschritt 5 alle finalen Assets in **genau einer finalen Google-Flow-Sammlung / einem finalen Ordner pro Video** zusammenführen
+11. Zwischenstände, Fehlversuche, doppelte Bilder, verworfene Varianten und die zwei nicht gewählten Cover aus der finalen Sammlung entfernen
+12. finale Sammlung enthält nur `00-thumbnail-final` plus alle finalen Szenenbilder in richtiger Reihenfolge
+13. erst danach den vollständigen Abschluss melden
+14. jeder Beat = genau ein finales statisches 16:9-Bild
+15. keine KI-Videoclips oder Animationen
 
 Jeder Bildschritt soll möglichst mindestens drei unterschiedliche Darstellungsformen enthalten.
 
@@ -131,4 +136,4 @@ Remotion darf keine Untertitel/Captions ins finale Video rendern, nicht zoomen, 
 
 ## Produktionsregel
 
-Erst Thema → Recherche → Story → Skript → **Visual-Diversity-Check** → Beats → Prompts/Flow-Plan → 3 Cover-Kandidaten → Cover-Auswahl → **fünf Bildschritte ohne Zwischenstopps komplett abarbeiten** → Voice → Timing → Remotion → QA.
+Erst Thema → Recherche → Story → Skript → **Visual-Diversity-Check** → Beats → Prompts/Flow-Plan → 3 Cover-Kandidaten → Cover-Auswahl → **2 verworfene Cover entfernen** → fünf Bildschritte ohne Zwischenstopps komplett abarbeiten → **finale Assets korrekt benennen und in eine einzige saubere Flow-Sammlung bündeln** → Voice → Timing → Remotion → QA.
