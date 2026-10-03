@@ -18,16 +18,16 @@ Pflicht:
 ## Phase 1 – Thumbnail zuerst
 
 1. genau 3 unterschiedliche Thumbnail-Kandidaten erzeugen
-2. STOPPEN
+2. danach **STOPPEN**
 3. noch keine Szenenbilder erzeugen
-4. auf Nutzerauswahl warten
+4. auf die ausdrückliche Nutzerauswahl warten
 5. gewähltes Thumbnail nur als Referenz für **Qualitätsniveau und Illustrationssprache** verwenden
 
-Wichtig: Das Thumbnail ist **keine** Vorlage für die Farbpalette, den Hintergrund, die Perspektive, Split-Screen-Anordnung oder Textpositionen aller Szenen.
+Das Thumbnail ist **keine** Vorlage für Farbpalette, Hintergrund, Perspektive, Split-Screen-Anordnung oder Textpositionen aller Szenen.
 
-## Phase 2 – genau 5 Bildschritte
+## Phase 2 – genau 5 Bildschritte, ohne Zwischenstopps
 
-Nach der Cover-Auswahl wird die Bildproduktion immer in genau fünf Schritte aufgeteilt. Die Beats werden möglichst gleichmäßig und in Reihenfolge verteilt.
+Nach der Cover-Auswahl wird die gesamte Szenenbild-Produktion in genau fünf klar erkennbare Schritte aufgeteilt. Die Beats werden möglichst gleichmäßig und in Reihenfolge verteilt.
 
 Beispiel bei 15 Bildern:
 - Bildschritt 1: 01–03
@@ -46,30 +46,34 @@ Beispiel bei 18 Bildern:
 ### Innerhalb eines Bildschritts
 
 - Bilder streng einzeln nacheinander erzeugen
-- jedes Bild prüfen und bestes Ergebnis auswählen
+- jedes Bild prüfen und das beste Ergebnis auswählen
 - sauber speichern
-- erst dann das nächste Bild erzeugen
+- erst danach das nächste Bild erzeugen
 - niemals mehrere Beats gleichzeitig erzeugen
 
-Nach jedem vollständigen Bildschritt:
-- STOPPEN
-- fertige Bilder melden
-- auf ausdrückliche Freigabe warten
+### Zwischen den fünf Bildschritten
+
+**Es gibt nach der Cover-Auswahl keine weiteren Stopps, Rückfragen oder Freigaben.**
+
+Nach Abschluss von Bildschritt 1 automatisch mit Bildschritt 2 fortfahren, danach 3, 4 und 5. Die fünf Schritte bleiben als Produktionsstruktur sichtbar, werden aber in einem durchgehenden Lauf abgearbeitet.
+
+Erst nach Bildschritt 5 melden:
+- dass alle fünf Bildschritte abgeschlossen sind
+- welche finalen Bilder erzeugt wurden
+- ob einzelne Bilder wegen Qualitätsproblemen neu erzeugt werden mussten
 
 ## Verbindlicher Diversity-Check vor jedem Bild
 
 **Visuelle Vielfalt ist Pflicht.** Die fünf Bildschritte dürfen nicht aus Varianten derselben Komposition bestehen.
 
-Vor dem Generieren eines Beats immer das vorherige und nächste geplante Bild prüfen.
-
-Fragen:
+Vor jedem Beat vorheriges und nächstes geplantes Bild prüfen:
 1. Ist die Hauptkomposition deutlich anders als beim vorherigen Bild?
-2. Ist der primäre Bildanker anders oder wenigstens klar anders inszeniert?
-3. Verwenden wir schon wieder dieselbe Hand-/Material-/Pfeil-Szene?
-4. Wiederholen wir dieselbe Türkis-/Weiß-Palette oder denselben Split-Screen?
+2. Ist der primäre Bildanker anders oder klar anders inszeniert?
+3. Wiederholt sich dieselbe Hand-/Material-/Pfeil-Szene?
+4. Wiederholt sich dieselbe Türkis-/Weiß-Palette oder derselbe Split-Screen?
 5. Öffnet dieser Beat eine neue sinnvolle visuelle Perspektive?
 
-Wenn die Antwort auf 1 oder 5 Nein ist: Prompt bzw. Beat-Plan ändern, bevor das Bild erzeugt wird.
+Wenn 1 oder 5 mit Nein beantwortet wird: Prompt bzw. Beat-Plan vor der Erzeugung verbessern.
 
 Ziel:
 - mindestens 5 unterschiedliche Darstellungsformen im Video
@@ -105,34 +109,17 @@ Nicht erlaubt:
 - Zoom/Pan/Ken-Burns
 - generierte Kamerafahrten
 
-## Benennung
-
-Beispiele:
-- `01-hook-final.png`
-- `02-context-final.png`
-- `03-mechanism-final.png`
-
 ## Bildwelt
 
-Alle Bilder folgen `BILDWELT.md`.
+Alle Bilder folgen `BILDWELT.md`:
 
 > Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die genau die Aussage des Beats erklärt — und die sich sinnvoll vom vorherigen Bild unterscheidet.
 
 ## Remotion-Grenze
 
-Remotion darf:
-- statische Bilder anzeigen
-- harte Schnitte setzen
-- Voice-over abspielen
-- optionale SFX platzieren
-- rendern
+Remotion darf statische Bilder anzeigen, harte Schnitte setzen, Voice-over abspielen, optionale SFX platzieren und rendern.
 
-Remotion darf nicht:
-- Untertitel/Captions ins finale Video rendern
-- Bewegung aus Standbildern erzeugen
-- zoomen/schwenken
-- wissenschaftliche Prozesse animieren
-- Videoclips erwarten
+Remotion darf keine Untertitel/Captions ins finale Video rendern, keine Bewegung aus Standbildern erzeugen, nicht zoomen/schwenken, keine wissenschaftlichen Prozesse animieren und keine Videoclips erwarten.
 
 ## Pflicht vor Produktion
 
@@ -146,4 +133,4 @@ Vor Bilderzeugung müssen fertig sein:
 7. `flow-plan.json` mit 5 Schritten und Visual-Typ/Primärmotiv pro Beat
 8. `GOOGLE-FLOW-MASTER-PROMPT.txt`
 
-Fehlt etwas davon, ist die Bildproduktion nicht freigegeben.
+**Freigabepunkt ist nur nach den drei Thumbnail-Kandidaten. Nach der Cover-Auswahl werden Bildschritt 1 bis 5 ohne Zwischenstopp vollständig fertiggestellt.**
