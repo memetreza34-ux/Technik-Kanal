@@ -1,198 +1,173 @@
-GOOGLE FLOW MASTER PROMPT – NUR BILDER
-======================================
+GOOGLE FLOW MASTER PROMPT — NUR BILDER / IMAGE ONLY
+===================================================
 
 Video: Wie funktioniert ein Induktionsherd?
-Format Szenen: 1920×1080 / 16:9
-Bildwelt: Scientific Scene Explainer v1
-Finales Video: OHNE eingebrannte Untertitel/Captions
+Scene format: 1920×1080 / 16:9
+Active visual world: Technical Editorial Explainer 2.5D
+Legacy internal style id: Scientific Scene Explainer v1 — compatibility only; the old visual execution is retired.
+Final Flow collection: induktionsherd-video-assets-final
 
-GLOBALER VISUAL-DIVERSITY-CHECK
-------------------------------
-- Die 15 Bilder dürfen nicht wie Varianten desselben Bildes aussehen.
-- Vor jedem Bild vorherigen und nächsten Beat gedanklich vergleichen.
-- Keine identische Hauptkomposition direkt hintereinander.
-- Kein dauerhaft gleicher Türkis-/Navy-Hintergrund, kein dauerhaft gleicher Split-Screen.
-- Normale Szenen ohne große Überschrift; 0–2 kurze deutsche Labels bevorzugt.
-- Sichtbarer Kopf nur mit vollständigen natürlichen stilisierten Gesichtszügen; sonst Kopf vollständig aus dem Frame.
-- Das ausgewählte Thumbnail ist nur Qualitäts-/Illustrationsreferenz, keine Farb-/Layout-Schablone.
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Keep the exact same visual language across the entire video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals as the base family; use copper, blue, orange/red, green or yellow only as meaningful technical accents. Do not use photorealism, real-photo aesthetics, hyperrealistic environments, generic AI art, white textbook infographic layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects. Scene type, perspective and environment may change, but rendering language, material simplification, line quality, typography and callout design must remain consistent. Visible text only in German and only when explicitly requested. Google Flow prompt instructions are written in English.
 
-PHASE 1 – THUMBNAIL
+BINDING WORKFLOW
+----------------
+1. First create exactly 3 thumbnail candidates and nothing else.
+2. Then STOP and wait for the user to choose one cover.
+3. The selected cover becomes 00-thumbnail-final.
+4. Die zwei nicht gewählten Cover löschen bzw. aus der finalen Flow-Sammlung entfernen.
+5. Use the selected cover only as a quality and illustration-language reference. Do not copy its exact color palette, layout, perspective or background to all scenes.
+6. After the cover selection create all 15 scene images in exactly 5 image steps: 01–03, 04–06, 07–09, 10–12, 13–15.
+7. Generate every image individually, inspect it, keep the best result, name it correctly and then continue.
+8. Nach der Cover-Auswahl keine weiteren Stopps oder Rückfragen. Bildschritt 1 bis 5 automatisch vollständig abarbeiten.
+9. VISUELLE VIELFALT IST PFLICHT: scene type and composition may vary, but the STYLE LOCK must never change.
+10. Keine gesichtslosen sichtbaren Köpfe. If a head is visible, use complete natural stylized facial features.
+11. Keine KI-Videoclips, no image-to-video, no animation.
+12. Visible image text only in German. Prompt instructions remain English.
+13. After image step 5, remove failed attempts, duplicates, intermediate versions, rejected variants and both rejected covers.
+14. Keep exactly one final Google Flow collection/folder named “induktionsherd-video-assets-final”.
+15. The final collection contains only 00-thumbnail-final plus 01-hook-final through 15-payoff-final.
+16. Erst nach Bildschritt 5 und nach der finalen Bereinigung den Gesamtabschluss melden.
+
+PHASE 1 — THUMBNAIL
 -------------------
-Erzeuge drei deutlich unterschiedliche YouTube-Thumbnail-Kandidaten im Format 1280×720 / 16:9 für das Video „Wie funktioniert ein Induktionsherd?“.
+Create exactly three clearly different YouTube thumbnail candidates in 1280×720 / 16:9 for the video “Wie funktioniert ein Induktionsherd?”.
 
-Gemeinsame Regeln:
-- Scientific Scene Explainer v1, hochwertig, erwachsen, klar
-- ein starkes Hauptmotiv, wenig Details
-- sichtbarer Text ausschließlich Deutsch
-- keine Person nötig
-- keine Logos/Wasserzeichen
-- keine falsche Darstellung einer glühenden Induktionsspule
-- keine generische Sci-Fi-Optik
-- alle drei Varianten müssen sich in Komposition, Hintergrund und Blickwinkel klar unterscheiden
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, warm off-white/graphite/muted industrial neutrals, meaningful copper/blue/orange accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic page, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects.
 
-Kandidat A:
-Großer Topf auf schwarzem Induktionskochfeld, darunter als sauberer Cutaway die Kupferspule und das Magnetfeld. Kurzer Text: „WIE WIRD DER TOPF HEISS?“
+Candidate A: large induction pot and cooktop cutaway, copper coil visible underneath, a few clean magnetic-field arcs. German headline only: “WIE WIRD DER TOPF HEISS?”
 
-Kandidat B:
-Seitlicher Querschnitt durch Kochfeld und Topfboden. Unten Kupferspule, dazwischen Glaskeramik, im Topfboden sichtbare Wirbelströme und Wärme. Kurzer Text: „WÄRME DIREKT IM TOPF“
+Candidate B: simplified side cutaway through pot base, glass-ceramic surface and copper coil, with heat clearly appearing in the pot base. German headline only: “WÄRME DIREKT IM TOPF”.
 
-Kandidat C:
-Sehr reduziertes technisches Motiv: große Kupferspule links unten, Topfboden rechts oben, dazwischen ein klarer Magnetfeldbogen. Kurzer Text: „KEINE HEIZSPIRALE?“
+Candidate C: reduced technical composition with a large copper coil, the pot base above it and one clear magnetic-field connection. German headline only: “KEINE HEIZSPIRALE?”
 
-Erzeuge zuerst nur diese drei Thumbnail-Kandidaten und stoppe danach.
+The three candidates must differ strongly in composition and camera angle while keeping the exact same STYLE LOCK. No people, no logos, no watermarks, no English visible text.
 
-STOPP. AUF DIE AUSDRÜCKLICHE THUMBNAIL-AUSWAHL DES NUTZERS WARTEN.
+STOP AFTER THE THREE THUMBNAILS. WAIT FOR USER SELECTION.
+After selection: selected cover = 00-thumbnail-final; remove the other two covers; then continue through all five image steps without another question.
 
-PHASE 2 – FÜNF BILDSCHRITTE · OHNE ZWISCHENSTOPPS
---------------------------------------------------
-Nach der Cover-Auswahl keine weiteren Stopps, Rückfragen oder Freigaben. Bildschritt 1 vollständig abarbeiten und danach automatisch direkt mit Bildschritt 2, 3, 4 und 5 fortfahren. Erst nach Bildschritt 5 den Gesamtabschluss melden.
+PHASE 2 — FIVE IMAGE STEPS · NO INTERMEDIATE STOPS
+==================================================
 
-BILDSCHRITT 1/5 · 01-hook BIS 03-context
-====================================================
-Erzeuge ausschließlich die drei Bilder dieses Schritts. Jedes Bild einzeln erzeugen, prüfen, auswählen und speichern. Erst danach das nächste Bild.
+IMAGE STEP 1/5 · 01–03
+----------------------
 
-01-HOOK · OUTPUT=IMAGE
-----------------------------------------
-Erzeuge eine moderne echte Küchenumgebung als volle 16:9-Szene. Im Zentrum steht ein schwarzes Induktionskochfeld mit einem Topf, in dem Wasser sichtbar kräftig erhitzt wird. Die Glaskeramik selbst soll nicht wie eine glühende Heizplatte aussehen. Unter einem kleinen transparenten Teil des Kochfelds darf man dezent eine Kupferspule erkennen, damit sofort eine technische Frage entsteht. Keine Pfeilorgie, keine Split-Screen-Grafik, keine große Überschrift. Hauptidee: Der Topf wird heiß, obwohl keine klassische glühende Heizspirale sichtbar ist.
+01-HOOK
+Create a wide 16:9 scene showing a simplified modern kitchen with a black induction cooktop and one pot heating water. Use a slightly elevated three-quarter view. The cooktop should not glow like a conventional hotplate. Add a small clean cutaway window in the cooktop so a flat copper coil is subtly visible underneath, creating immediate curiosity without turning the image into an infographic. No person, no hand, no split screen, no large headline, no text.
 
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 01-hook-final
 
-Finaldatei: 01-hook-final.png
+02-CONTEXT
+Create a wide 16:9 technical cutaway of a conventional electric glass-ceramic cooktop. Show three clearly separated layers: a resistive heating element below, the glass-ceramic surface in the middle, and a pot above. Use a few restrained orange heat arrows moving upward from the heating element through the glass into the pot. Add only two small German labels with thin leader lines: “Heizelement” and “Wärmeweg”. No kitchen environment, no person, no large headline.
 
-02-CONTEXT · OUTPUT=IMAGE
-----------------------------------------
-Technischer Querschnitt eines klassischen elektrischen Glaskeramik-Kochfelds. Zeige unten ein deutlich heißes Widerstands-Heizelement, darüber die Glaskeramik, darüber einen Topf. Drei klar getrennte Ebenen füllen das Bild. Wärme soll sichtbar von unten über das Glas zum Topf wandern, aber nur mit wenigen dezenten Wärmefarben und maximal zwei kleinen deutschen Labels: „Heizelement“ und „Wärmeweg“. Keine Küche im Hintergrund; sachliche technische Illustration. Hauptidee: Beim klassischen Elektrokochfeld wird zuerst das Heizelement heiß.
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 02-context-final
 
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
+03-CONTEXT
+Create a wide 16:9 comparison scene divided into two visually different areas, not a mirrored split-screen. On the left, show a conventional electric cooktop where heat travels from a heating element through the glass to the pot. On the right, show an induction cooktop where energy is transferred directly into the pot base. Use different camera angles on both sides so the composition does not look duplicated. Add only two small German labels: “klassisch” and “Induktion”. No large headline, no people.
 
-Finaldatei: 02-context-final.png
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 03-context-final
 
-03-CONTEXT · OUTPUT=IMAGE
-----------------------------------------
-Ein einziger breiter Vergleich in zwei unterschiedlich gestalteten Bereichen, nicht symmetrisch gespiegelt. Links ein klassisches Elektrokochfeld mit Heizelement → Glas → Topf. Rechts ein Induktionskochfeld, bei dem die Energie sichtbar direkt in den Topfboden gelangt. Nutze unterschiedliche Perspektiven, damit es nicht wie zweimal dasselbe Bild wirkt. Nur die kurzen deutschen Labels „klassisch“ und „Induktion“. Hauptidee: Induktion überspringt den langen Wärmeweg und erzeugt Wärme direkt im Kochgeschirr.
+IMAGE STEP 1 COMPLETE → continue directly to IMAGE STEP 2, no stop.
 
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
+IMAGE STEP 2/5 · 04–06
+----------------------
 
-Finaldatei: 03-context-final.png
+04-FOUNDATION
+Create a wide 16:9 technical cutaway of an induction cooktop built into a simplified kitchen counter. Remove one clean section of the glass-ceramic surface so the internal construction is visible. Show one large flat spiral copper coil and compact power electronics underneath. Keep the components simplified but technically recognizable. Add only two small German labels with thin leader lines: “Kupferspule” and “Leistungselektronik”. The copper coil is the main subject. No pot as the main subject, no hand, no person, no large headline.
 
-BILDSCHRITT 1 ABGESCHLOSSEN → OHNE STOPP DIREKT MIT BILDSCHRITT 2 FORTFAHREN.
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 04-foundation-final
 
-BILDSCHRITT 2/5 · 04-foundation BIS 06-mechanism
-====================================================
-Erzeuge ausschließlich die drei Bilder dieses Schritts. Jedes Bild einzeln erzeugen, prüfen, auswählen und speichern. Erst danach das nächste Bild.
+05-FOUNDATION
+Create a wide 16:9 scientific concept scene on a calm warm-neutral background. Show one large flat spiral copper coil as the central object. Visualize a changing magnetic field using only a few clean curved blue-gray field lines around and above the coil. Keep the field lines simple, precise and integrated into the illustration, not glowing or futuristic. Add one small German label: “wechselndes Magnetfeld”. No pot, no kitchen, no hand, no person, no large headline.
 
-04-FOUNDATION · OUTPUT=IMAGE
-----------------------------------------
-Detaillierter technischer Cutaway eines Induktionskochfelds auf einer Küchenarbeitsplatte. Entferne einen Teil der Glaskeramik visuell wie bei einer Museumsschnittzeichnung. Darunter eine große flache Kupferspule und kompakte Leistungselektronik. Zeige Leiterbahnen und Spule präzise, aber nicht überladen. Maximal zwei kleine Labels: „Kupferspule“ und „Leistungselektronik“. Keine Hand, kein Topf als Hauptmotiv. Hauptidee: Unter dem Glas sitzt eine flache Kupferspule, die von Elektronik angesteuert wird.
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 05-foundation-final
 
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
+06-MECHANISM
+Create a wide 16:9 integrated cutaway through an induction pot, glass-ceramic surface and copper coil. Show the pot realistically simplified on top, the glass layer in the middle and the flat copper coil below. A few clean magnetic-field lines rise from the coil through the glass into the pot base. Make the pot base visibly thicker and technically suitable for induction. Add only two small German labels: “Magnetfeld” and “Topfboden”. No heat colors yet; this image explains coupling only. No person, no large headline.
 
-Finaldatei: 04-foundation-final.png
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 06-mechanism-final
 
-05-FOUNDATION · OUTPUT=IMAGE
-----------------------------------------
-Reine wissenschaftliche Konzeptdarstellung auf hellem neutralem Hintergrund: eine flache Kupferspule groß im Bild, durch die wechselnder Strom fließt. Um die Spule ein räumlich verständliches wechselndes Magnetfeld mit wenigen sauberen Feldlinien. Kein Topf, keine Küche, keine Hand. Ein einziges kleines Label „wechselndes Magnetfeld“. Hauptidee: Wechselstrom in der Spule erzeugt ein sich änderndes Magnetfeld.
+IMAGE STEP 2 COMPLETE → continue directly to IMAGE STEP 3, no stop.
 
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
+IMAGE STEP 3/5 · 07–09
+----------------------
 
-Finaldatei: 05-foundation-final.png
+07-MECHANISM
+Create a wide 16:9 extreme material-macro view of the induction-compatible pot base. Show the metal as a clean simplified cross-section with several closed electrical current loops inside the material. The loops should clearly represent induced eddy currents and stay inside the metal, not float as decorative neon rings. Add one small German label: “Wirbelströme”. No cooktop overview, no kitchen, no hand, no person, no large headline.
 
-06-MECHANISM · OUTPUT=IMAGE
-----------------------------------------
-Querschnitt durch Topf, Glaskeramik und Kupferspule. Der Topf steht realistisch auf dem Glas. Magnetfeldlinien steigen von der Spule durch die Glaskeramik in den metallischen Topfboden. Der Topfboden ist als dicke magnetisch geeignete Schicht sichtbar. Keine Wärmefarben dominieren; hier geht es nur um die Kopplung des Magnetfelds. Maximal zwei Labels: „Magnetfeld“ und „Topfboden“. Hauptidee: Das Magnetfeld erreicht den Topfboden durch die Glaskeramik.
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 07-mechanism-final
 
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
+08-MECHANISM
+Create a wide 16:9 technical heat-detail view of the pot base. Show the induced current paths inside the metal and explain how electrical resistance turns their energy into heat. Use a controlled temperature gradient inside the metal only, moving from neutral tones to orange/red without flames. Add one small German label: “elektrischer Widerstand → Wärme”. No full cooktop, no kitchen, no hand, no person, no large headline.
 
-Finaldatei: 06-mechanism-final.png
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 08-mechanism-final
 
-BILDSCHRITT 2 ABGESCHLOSSEN → OHNE STOPP DIREKT MIT BILDSCHRITT 3 FORTFAHREN.
+09-MECHANISM
+Create a wide 16:9 simplified kitchen scene from a side angle, clearly different from scene 01. Show a pot on the induction cooktop and integrate a restrained semi-transparent thermal overlay: the pot base is strongly warm while the glass surface below is only warmer near the contact area. Do not show a glowing coil. Add one small German label: “Wärme entsteht im Topfboden”. No person, no large headline.
 
-BILDSCHRITT 3/5 · 07-mechanism BIS 09-mechanism
-====================================================
-Erzeuge ausschließlich die drei Bilder dieses Schritts. Jedes Bild einzeln erzeugen, prüfen, auswählen und speichern. Erst danach das nächste Bild.
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 09-mechanism-final
 
-07-MECHANISM · OUTPUT=IMAGE
-----------------------------------------
-Extreme Material-Makroansicht des Topfbodens, als präzise wissenschaftliche Illustration. Zeige im Metall mehrere geschlossene elektrische Stromschleifen, die durch das wechselnde Magnetfeld entstehen. Keine Hand, keine Küche, keine Gesamtansicht des Herdes. Ein kleines deutsches Label „Wirbelströme“. Die Strompfade sollen klar im Material liegen und nicht wie dekorative Neonringe wirken. Hauptidee: Im leitfähigen Topfboden entstehen induzierte Wirbelströme.
+IMAGE STEP 3 COMPLETE → continue directly to IMAGE STEP 4, no stop.
 
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
+IMAGE STEP 4/5 · 10–12
+----------------------
 
-Finaldatei: 07-mechanism-final.png
+10-DEEPENING
+Create a wide 16:9 object-lineup scene on a clean technical work surface. Show four different cookware examples side by side: cast iron, magnetic stainless steel, pure aluminum and glass. Keep them simplified and clearly distinguishable. Mark each only with a small German status label such as “geeignet” or “nicht geeignet”. No hand, no kitchen, no magnetic-field arrows, no large headline.
 
-08-MECHANISM · OUTPUT=IMAGE
-----------------------------------------
-Technische Wärme-Detailansicht eines Topfbodens. Zeige die zuvor induzierten Strompfade im Metall und wie deren Energie durch elektrischen Widerstand in Wärme übergeht. Nutze eine kontrollierte Temperaturfarbskala innerhalb des Metalls: von neutral zu warm, ohne Flammen. Ein kleines Label „elektrischer Widerstand → Wärme“. Kein Kochfeld-Gesamtbild. Hauptidee: Der Widerstand des Metalls wandelt elektrische Energie in Wärme um.
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange/green accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 10-deepening-final
 
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
+11-DEEPENING
+Create a wide 16:9 close-up technical scene of a single pot base resting on or held above a clean workbench. A small magnet clearly sticks to the underside of the pot. If a hand is necessary, show only the hand and crop the person completely out of frame. Add one small German label: “Magnet haftet”. No coil, no magnetic-field arcs, no large headline.
 
-Finaldatei: 08-mechanism-final.png
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange/green accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 11-deepening-final
 
-09-MECHANISM · OUTPUT=IMAGE
-----------------------------------------
-Volle moderne Küchenumgebung, deutlich anders als Bild 01: seitliche Perspektive auf einen Topf auf dem Induktionsfeld. Integriere eine dezente halbtransparente thermische Darstellung: der Topfboden ist stark warm, die Glaskeramik darunter nur im Kontaktbereich erwärmt. Zeige keine glühende Spule. Kleines Label „Wärme entsteht im Topfboden“. Keine Person. Hauptidee: Der Topf selbst ist der Wärmeerzeuger; das Glas wird vor allem vom heißen Topf erwärmt.
+12-DEEPENING
+Create a wide 16:9 before-and-after technical environment scene showing the same induction cooktop in two natural moments. On the left, the pot sits on the active cooking zone and the magnetic coupling is subtly visible. On the right, the pot is lifted a few centimeters above the surface and the coupling visibly stops. Use different camera angles for the two moments so it does not look mirrored. Add two small German labels: “Topf aufgesetzt” and “Topf weg”. No person, no large headline.
 
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange/green accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 12-deepening-final
 
-Finaldatei: 09-mechanism-final.png
+IMAGE STEP 4 COMPLETE → continue directly to IMAGE STEP 5, no stop.
 
-BILDSCHRITT 3 ABGESCHLOSSEN → OHNE STOPP DIREKT MIT BILDSCHRITT 4 FORTFAHREN.
+IMAGE STEP 5/5 · 13–15
+----------------------
 
-BILDSCHRITT 4/5 · 10-deepening BIS 12-deepening
-====================================================
-Erzeuge ausschließlich die drei Bilder dieses Schritts. Jedes Bild einzeln erzeugen, prüfen, auswählen und speichern. Erst danach das nächste Bild.
+13-DEEPENING
+Create a wide 16:9 top-down technical scene of a modern induction cooktop with multiple cooking zones. One zone contains a suitable pot and is subtly marked as active; another zone is empty and stays neutral. Explain pot detection cleanly without futuristic interface graphics. Add one small German label: “Topf erkannt”. No magnetic-field lines, no hands, no person, no large headline.
 
-10-DEEPENING · OUTPUT=IMAGE
-----------------------------------------
-Sachliche Objektaufnahme auf heller Werkbank: vier unterschiedliche Kochgeschirre nebeneinander, zum Beispiel Gusseisen, magnetischer Edelstahl, reines Aluminium und Glas. Markiere nur mit kleinen deutschen Symbol-Labels, welche Varianten „geeignet“ oder „nicht geeignet“ sind. Keine Hand, keine Küche, keine Magnetfeldpfeile. Hauptidee: Nicht jedes Kochgeschirr funktioniert auf Induktion.
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange/green accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 13-deepening-final
 
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
+14-DEEPENING
+Create a wide 16:9 technical energy-path illustration built around a simplified induction cooktop silhouette. Show a short clear path from the copper coil to the pot base and then to heat. Also show a small secondary heat path from the hot pot back into the glass-ceramic surface to explain residual heat. Add only two German labels: “direkter Energieweg” and “Restwärme”. Do not make it a full left-right comparison like scene 03. No person, no large headline.
 
-Finaldatei: 10-deepening-final.png
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange/green accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 14-deepening-final
 
-11-DEEPENING · OUTPUT=IMAGE
-----------------------------------------
-Enge realistische Editorial-Nahaufnahme eines einzelnen Topfbodens, der hochkant gehalten oder auf einer Werkbank liegt. Ein kleiner Magnet haftet klar am Boden. Wenn eine Hand nötig ist, nur die Hand im Bild, kein Kopf und keine Person. Ein einziges kleines Label „Magnet haftet“. Keine Spule, keine Magnetfeldlinien. Hauptidee: Der Magnettest ist ein praktischer Hinweis auf Induktionstauglichkeit.
+15-PAYOFF
+Create a wide 16:9 summary chain across the frame with four connected technical stages: 1) a copper coil carrying alternating current, 2) a changing magnetic field, 3) eddy currents inside the pot base, 4) the pot base becoming warm. Keep each stage simple and visually distinct but rendered in the exact same visual language. Add exactly four short German labels: “Wechselstrom”, “Magnetfeld”, “Wirbelströme”, “Wärme”. No kitchen, no hand, no person, no large headline, no white textbook page.
 
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals with meaningful copper/blue/orange/green accents only. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly requested. No subtitles, logos or watermarks.
+Final name: 15-payoff-final
 
-Finaldatei: 11-deepening-final.png
+IMAGE STEP 5 COMPLETE. Do not report completion yet.
 
-12-DEEPENING · OUTPUT=IMAGE
-----------------------------------------
-Breite Küchenszene mit zwei Zeitmomenten in einer natürlichen Vorher-Nachher-Komposition: links steht der Topf auf der Kochzone und die magnetische Kopplung ist dezent sichtbar; rechts ist derselbe Topf einige Zentimeter angehoben und die Kopplung endet. Die beiden Hälften sollen unterschiedliche Kamerawinkel haben, nicht gespiegelt sein. Kleine Labels „Topf aufgesetzt“ und „Topf weg“. Hauptidee: Ohne Topf bricht die direkte Energieübertragung ab.
-
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
-
-Finaldatei: 12-deepening-final.png
-
-BILDSCHRITT 4 ABGESCHLOSSEN → OHNE STOPP DIREKT MIT BILDSCHRITT 5 FORTFAHREN.
-
-BILDSCHRITT 5/5 · 13-deepening BIS 15-payoff
-====================================================
-Erzeuge ausschließlich die drei Bilder dieses Schritts. Jedes Bild einzeln erzeugen, prüfen, auswählen und speichern. Erst danach das nächste Bild.
-
-13-DEEPENING · OUTPUT=IMAGE
-----------------------------------------
-Draufsicht auf ein modernes Induktionskochfeld mit mehreren Kochzonen. Auf einer Zone steht ein geeigneter Topf, eine andere Zone ist leer. Die aktive Zone wird nur dezent markiert, die leere bleibt neutral. Zeige die Topferkennung technisch sauber, aber ohne futuristisches HUD. Maximal ein kleines Label „Topf erkannt“. Keine Magnetfeldlinien, keine Hände. Hauptidee: Viele Induktionsfelder erkennen, ob geeignetes Kochgeschirr aufliegt.
-
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
-
-Finaldatei: 13-deepening-final.png
-
-14-DEEPENING · OUTPUT=IMAGE
-----------------------------------------
-Wissenschaftliche Energieweg-Illustration mit echter Kochfeld-Silhouette. Zeige einen kurzen Weg „Spule → Topfboden → Wärme“ und daneben dezent die Restwärme, die vom heißen Topf zurück in die Glaskeramik fließt. Keine vollständige links-rechts-Systemvergleichsgrafik wie Bild 03. Maximal zwei Labels: „direkter Energieweg“ und „Restwärme“. Hauptidee: Induktion heizt direkt im Topf, aber das Glas kann danach trotzdem heiß sein.
-
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
-
-Finaldatei: 14-deepening-final.png
-
-15-PAYOFF · OUTPUT=IMAGE
-----------------------------------------
-Reduzierte, hochwertige Abschlussgrafik im Stil eines modernen Wissenschaftsmuseums. Vier klar verbundene Stationen über die gesamte 16:9-Breite: 1) Kupferspule mit Wechselstrom, 2) wechselndes Magnetfeld, 3) Wirbelströme im Topfboden, 4) warmer Topfboden. Jede Station hat genau ein kurzes deutsches Label: „Wechselstrom“, „Magnetfeld“, „Wirbelströme“, „Wärme“. Keine Küche, keine Hand, keine große Überschrift. Hauptidee: Die komplette Funktionskette in vier verständlichen Schritten.
-
-Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustration, sauberer erwachsener 2D/2.5D-Look, klare räumliche Tiefe, fachlich plausibel, moderne natürliche Bildgestaltung. Nutze die gesamte Bildfläche. Sichtbarer Text ausschließlich Deutsch und nur wenn ausdrücklich genannt. Keine große Szenenüberschrift, keine Untertitel, kein englischer Text, kein Wasserzeichen, kein Logo, kein Sci-Fi-HUD, kein Pixar-/Kinderstil, keine generische KI-Kunstoptik. Keine gesichtslosen sichtbaren Köpfe; wenn Menschen nicht gebraucht werden, keine Person hinzufügen.
-
-Finaldatei: 15-payoff-final.png
-
-BILDSCHRITT 5 ABGESCHLOSSEN. Jetzt erst Gesamtabschluss melden: alle fünf Bildschritte und alle 15 Szenenbilder sind vollständig fertig.
+PHASE 3 — FINAL ASSET CLEANUP
+-----------------------------
+1. Use exactly one final Google Flow collection/folder named “induktionsherd-video-assets-final”.
+2. Keep 00-thumbnail-final and all 15 final scene images there.
+3. Remove the two rejected covers, failed attempts, intermediate versions, duplicate images and rejected variants.
+4. Verify final order and names: 00-thumbnail-final, 01-hook-final, 02-context-final, 03-context-final, 04-foundation-final, 05-foundation-final, 06-mechanism-final, 07-mechanism-final, 08-mechanism-final, 09-mechanism-final, 10-deepening-final, 11-deepening-final, 12-deepening-final, 13-deepening-final, 14-deepening-final, 15-payoff-final.
+5. Only after this cleanup report that the entire image production is complete.
