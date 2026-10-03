@@ -2,9 +2,9 @@
 
 ## Ziel
 
-Die Bildwelt ist kein starres Kunst-Template. Jedes Bild soll **eine konkrete visuelle Aussage verständlich erklären** und trotzdem wie derselbe Wissenschafts- und Technikkanal wirken.
+Jedes Bild soll **eine konkrete Aussage verständlich erklären** und trotzdem wie derselbe Wissenschafts- und Technikkanal wirken. Wiedererkennung entsteht durch Illustrationsqualität, Klarheit und Informationshierarchie — **nicht** durch immer dieselbe Komposition, Farbpalette oder denselben Bildaufbau.
 
-Die zentrale Frage bei jedem Beat lautet:
+Leitfrage pro Beat:
 
 > Welche visuelle Szene lässt den Zuschauer genau diese Aussage am schnellsten verstehen?
 
@@ -12,214 +12,205 @@ Nicht einfach ein Bild vom Thema erzeugen. Eine Szene bauen, die die Aussage erk
 
 ## Format
 
-- aktive Videos: 1920×1080 / 16:9
+- 1920×1080 / 16:9
 - statische Szenenbilder
-- voller 16:9-Bildraum darf genutzt werden
-- Thumbnail ist ein separates 1280×720-Asset und folgt eigenen Aufmerksamkeitsregeln
+- voller Bildraum darf genutzt werden
+- Thumbnail separat in 1280×720
 
 ## Grundprinzip
 
 - eine Hauptaussage pro Bild
 - wissenschaftlich verständlich vor dekorativ
-- der gesamte Bildraum darf und soll genutzt werden, wenn eine Umgebung die Erklärung verbessert
-- keine Pflicht zu freigestellten Objekten auf leerem Hintergrund
-- keine Pflicht zu Infoboxen, Labels, Titeln oder Merksätzen
-- nur Informationen zeigen, die für den jeweiligen Beat wirklich helfen
-- lieber freie Fläche als Informationsüberladung
+- Umgebung nutzen, wenn sie beim Erklären hilft
+- keine Pflicht zu Infoboxen, Pfeilen, Personen oder Cutaways
+- nur Informationen zeigen, die für den Beat wirklich nötig sind
+- **Szenenbilder tragen normalerweise keine große Überschrift**; große Titel gehören primär ins Thumbnail
+- in normalen Szenen bevorzugt 0–2 kurze Labels, nur wenn sie wirklich helfen
 
-## Darstellungsformen
+## Verbindliche visuelle Vielfalt
 
-Die Darstellungsform wird **pro visueller Aussage** gewählt. Nicht automatisch pro Satz.
+Ein Video darf nicht wie 15 Varianten desselben Bildes aussehen.
 
-Erlaubt und ausdrücklich erwünscht sind unter anderem:
+Für das 2-Minuten-Profil gilt:
 
-1. **volle Umgebung / Ort** — Straße, Labor, Landschaft, Meer, Werkstatt, Raum, Weltraum, Fabrik, Bahnhof, Technikraum usw., wenn Kontext hilft
-2. **integrierte Wissenschaftsszene** — reale/stilisierte Umgebung plus wissenschaftliche Erklärung direkt in der Szene
-3. **technische Illustration / Cutaway** — wenn innerer Aufbau erklärt wird
-4. **Mikro-/Molekül-/Materialansicht** — wenn ein relevanter Prozess unsichtbar oder sehr klein ist
-5. **Vergleich / Vorher-Nachher / Größenvergleich** — wenn die Aussage einen Unterschied erklärt
-6. **reine wissenschaftliche Illustration** — wenn ein echter Ort keinen Mehrwert bietet
-7. **Mensch in Situation** — wenn Alltag, Größenvergleich, Experiment, Nutzung oder Handlung relevant ist
+- mindestens **5 deutlich unterschiedliche Darstellungsformen** im gesamten Video
+- dieselbe Hauptkomposition darf **nicht in zwei direkt aufeinanderfolgenden Beats** wiederholt werden
+- derselbe primäre Bildanker darf höchstens **3-mal pro Video** dominieren
+- das Motiv **„Hand berührt Gegenstand + Pfeile“** darf höchstens **3-mal pro Video** als Hauptkomposition vorkommen
+- innerhalb jedes der fünf Bildschritte sollen möglichst mindestens **3 unterschiedliche Darstellungsformen** vorkommen
+- gleiche Perspektive, identische Teilung links/rechts, gleicher Hintergrund und gleiche Objektanordnung nicht mehrfach hintereinander verwenden
+- wenn drei aufeinanderfolgende Skriptteile zwangsläufig fast dasselbe Bild ergeben würden, **Skript oder Beat-Plan umschreiben**, statt drei ähnliche Bilder zu erzeugen
 
-Nicht jede Szene braucht denselben Aufbau.
+Erwünschte Wechsel:
+
+1. volle Umgebung / Alltagsszene
+2. Objekt- oder Messszene
+3. technische Illustration / Cutaway
+4. Material-/Makroansicht
+5. Vergleich
+6. klare wissenschaftliche Konzeptdarstellung
+7. reales Anwendungsbeispiel
+8. Instrument-/Messansicht
+9. zusammenfassende Montage
+
+## Keine Thumbnail-Kopie
+
+Das ausgewählte Thumbnail ist nur eine Referenz für:
+
+- Qualitätsniveau
+- Strich-/Illustrationssprache
+- Materialdarstellung
+- allgemeine Professionalität
+
+Es ist **keine** Vorlage für:
+
+- Farbpalette aller Szenen
+- Hintergrund aller Szenen
+- Kamerawinkel
+- Objektanordnung
+- Split-Screen-Aufbau
+- Textpositionen
+
+Die Szenen dürfen und sollen je nach Inhalt andere Orte, Farben und Kompositionen haben.
 
 ## Umgebungen und voller Bildraum
 
-Wenn ein Ort fachlich hilft, soll das Bild **nicht** wie ein isoliertes Schulbuchobjekt aussehen.
+Wenn ein Ort fachlich hilft, soll das Bild nicht wie ein isoliertes Schulbuchobjekt wirken.
 
 Beispiele:
-- Schall: Lautsprecher und Person in einem echten Raum; Druckwelle in die Szene integriert
-- Gewitter: vollständige Landschaft und Gewitterwolke; Ladungen und Entladung in den Himmel integriert
-- Wärmepumpe: Haus oder Technikraum als ganze Szene; Energiefluss direkt in die Umgebung integriert
-- Induktion: Werkbank oder Versuchsaufbau; Magnet, Spule und Messgerät in einer nachvollziehbaren Situation
-- Bahn/Verkehr: Fahrzeug oder Infrastruktur im realen Kontext; technische Erklärung dort integrieren, wo sie tatsächlich stattfindet
-- Induktionsherd: echte Küche als volle Szene; Kochfeld und später integrierter Cutaway je nach Beat
-
-Die Umgebung darf atmosphärisch und räumlich wirken, darf aber die fachliche Aussage nie verdecken.
+- Induktionsherd: Küche → später Cutaway
+- Wärmepumpe: Haus / Technikraum → später technische Detailansicht
+- Wärmeleitung: Küche, Badezimmer, Werkstatt oder Winterumgebung statt immer derselbe Materialblock
+- Bahn/Verkehr: Fahrzeug oder Infrastruktur im passenden realen Kontext
+- Schall: Raum, Halle oder Straße mit integrierter Erklärung
 
 ## Illustrationsstil
 
 - hochwertige wissenschaftliche Editorial-/Museum-Illustration
 - sauberer 2D/2.5D-Look
 - erwachsen, modern, klar
-- moderate räumliche Tiefe und kontrolliertes Shading
-- nicht fotorealistisch erzwingen
-- nicht kindlich oder cartoonig
+- moderate räumliche Tiefe
+- kontrolliertes Shading
 - keine generische KI-Kunstoptik
-- keine übertriebene Cinematic- oder Sci-Fi-Ästhetik
+- kein Pixar-/Kinder-Cartoon-Look
+- keine übertriebene Cinematic-/Sci-Fi-Ästhetik
+- kein dauerhaft gleiches Türkis-/Navy-Template
 
-## Menschen
+## Menschen und Gesichter
 
-Menschen sind erlaubt, aber nur wenn sie die Aussage verbessern.
+Menschen nur einsetzen, wenn sie fachlich etwas beitragen.
 
-Nutzen bei:
-- Alltagssituationen
-- Größenvergleich
-- Experimenten
-- Bedienung oder Nutzung von Technik
-- Wirkung eines physikalischen oder technischen Phänomens im Alltag
-- Handlung oder Perspektive
+**Faceless-Kanal bedeutet: kein realer Moderator vor der Kamera. Es bedeutet nicht, dass gezeichnete Menschen gesichtslose Köpfe haben sollen.**
 
-Regeln:
-- stilisiert, erwachsen, editorial
-- nicht fotorealistisch
-- nicht kindlich
-- keine unnötigen Gesichter oder Personen als Dekoration
-- Person darf Teil einer größeren Umgebung sein
+Verbindliche Regeln:
+
+- wenn ein Kopf/Gesicht sichtbar ist, muss die Person **natürliche, vollständige, stilisierte Gesichtszüge** haben
+- keine leeren Gesichter, keine glatten gesichtslosen Köpfe, keine fehlenden Augen/Nase/Mund
+- wenn das Gesicht nicht gebraucht wird, die Person bewusst so кадrieren, dass der Kopf komplett außerhalb des Bildes liegt; nicht einen sichtbaren Kopf ohne Gesicht zeichnen
+- Hände, Füße oder Körperausschnitte sind erlaubt, wenn die Bildaussage sie benötigt
+- Personen erwachsen, editorial und nicht fotorealistisch darstellen
+- keine Person nur als Dekoration hinzufügen
 
 ## Farbe und Hintergrund
 
-Es gibt **keinen festen Navy-Hintergrund für jedes Bild**.
+Es gibt keinen festen Hintergrund für alle Bilder.
 
-Die Farbwelt richtet sich nach Inhalt und Umgebung:
-- Technik/Elektronik: Navy, Anthrazit, Grau, Metalltöne
+Farben folgen Inhalt und Ort:
+- Technik: Metall, Grau, Anthrazit, gezielte Akzente
 - Wärme/Energie: kontrollierte Orange-/Rottöne
 - Wasser/Klima: Blau-/Türkistöne
-- Geologie/Materialien: Stein-, Braun- und Erdtöne
-- Wetter/Naturphänomene: natürliche Himmel-, Erd- und Umgebungsfarben
-- Weltraum: dunkles Blau/Schwarz
-- Alltag/Verkehr/Infrastruktur: natürliche Umgebungsfarben
+- Materialien: natürliche Materialfarben
+- Alltag/Verkehr: glaubwürdige Umgebungsfarben
+- Winter: natürliche kalte Außenfarben
 
-Wiedererkennung entsteht durch Illustrationsqualität, Informationshierarchie, Labelstil und Klarheit — nicht durch denselben Hintergrund in jedem Bild.
+**Nicht:** alle Bilder mit demselben türkisfarbenen Hintergrund, derselben weißen Fläche und derselben Handposition erzeugen.
 
-## Text, Labels und Merksätze
+## Text und Labels
 
-Text ist **optional und beatabhängig**.
+Text ist optional.
 
-Eine Szene kann enthalten:
-- gar keinen Text
-- nur einen Titel
-- 1–4 kurze Labels
-- einen kurzen Merksatz
-- eine Zahl oder einen Fakt
-- einen kurzen Vergleich
-- wenige Prozesspfeile
-- eine kurze Definition
-
-Regeln:
-- nur deutscher Text im Bild
-- niemals englische Labels oder englische Infotexte
-- Text kurz und direkt
+Normale Szenen:
+- bevorzugt kein großer Titel
+- bevorzugt 0–2 kurze Labels
+- maximal 4 Labels nur bei echtem Erklärnutzen
+- sichtbarer Text ausschließlich Deutsch
 - keine Textwand
-- keine erzwungene Infobox
-- Labels nur dort, wo sie die Erklärung verbessern
-- bei KI-generiertem Text müssen Rechtschreibung und Inhalt im QA geprüft werden
-- bei fehlerhaftem Text Bild ablehnen oder Text kontrolliert ersetzen
+- keine automatisch wiederholte Überschrift wie „GLEICHE TEMPERATUR?“ in mehreren Szenen
+
+Thumbnail:
+- darf einen großen kurzen Text tragen
+- darf stärker vereinfachen und kontrastieren
 
 ## Informationsdichte
 
 Standard: **so wenig Information wie möglich, so viel wie nötig**.
 
 Vermeiden:
-- Titel + viele Labels + Infobox + Formel + Merksatz gleichzeitig
-- sieben oder mehr Labels ohne zwingenden Grund
+- Titel + mehrere Labels + Infobox + Formel gleichzeitig
 - dekorative Pfeile
-- doppelte Erklärung derselben Information
-- zusätzliche Fakten, die im aktuellen Beat nicht gebraucht werden
-
-Bevorzugen:
-- starke Szene + 2 Labels
-- starke Szene + 1 Merksatz
-- Vergleich + 2 Werte
-- Prozess + wenige Pfeile
-- reine Illustration ohne Text, wenn sie bereits eindeutig ist
+- dieselbe Aussage mehrfach im Bild
+- zusätzliche Fakten ohne Bezug zum aktuellen Beat
 
 ## Beat-Logik
 
-**Nicht:** ein Satz = ein Bild.
+Nicht: ein Satz = ein Bild.
 
-**Sondern:** eine verständliche visuelle Aussage = ein Beat.
+Sondern: **eine verständliche visuelle Aussage = ein Beat.**
 
-- ein komplizierter Satz darf mehrere Bilder bekommen
-- mehrere Sätze dürfen auf demselben Bild bleiben
-- Bildwechsel erfolgen wegen Verständnis und Story, nicht wegen Satzzeichen
+Vor dem finalen Bildplan wird zusätzlich geprüft:
+
+> Erzeugen die geplanten Beats wirklich unterschiedliche Bilder — oder nur Variationen desselben Motivs?
+
+Bei zu hoher Wiederholung: Skript und Beat-Plan zuerst überarbeiten.
 
 ## Prompt-Logik pro Beat
 
-Jeder Bildprompt wird aus der konkreten visuellen Aussage entwickelt:
-
-1. **Aussage bestimmen**
-2. **eine visuelle Hauptidee festlegen**
-3. **passende Darstellungsform wählen**
-4. **entscheiden, ob Umgebung/Ort hilft**
-5. **entscheiden, ob Mensch sinnvoll ist**
-6. **nur notwendige Labels/Text festlegen**
-7. **Farben und Hintergrund passend zum Inhalt wählen**
-8. **unnötige Elemente explizit ausschließen**
-9. **16:9-Komposition für den gesamten Frame planen**
-
-## Thumbnail-Ausnahme
-
-Das Thumbnail ist kein normaler Erklärbeat.
-
-Es darf:
-- stärker vereinfachen
-- ein Hauptmotiv deutlich größer zeigen
-- eine kurze deutsche Aussage oder Frage tragen
-- stärkeren Kontrast nutzen
-
-Es darf nicht:
-- fachlich falsch werden
-- ein anderes Versprechen als Titel/Hook geben
-- mit unnötigen Details überladen werden
-
-Für jedes Video werden drei 1280×720-Kandidaten geplant und ein Gewinner ausgewählt.
+1. konkrete Aussage bestimmen
+2. Hauptmotiv bestimmen
+3. Darstellungsform bestimmen
+4. mit vorherigem und nächstem Beat auf Wiederholung prüfen
+5. Umgebung wählen, wenn sie hilft
+6. Person nur bei Nutzen einsetzen
+7. bei sichtbarem Kopf vollständige Gesichtszüge verlangen
+8. Text auf das Minimum begrenzen
+9. Farbe und Hintergrund aus der Szene ableiten
+10. explizit ausschließen, was beim vorherigen Beat bereits dominierte
+11. gesamten 16:9-Raum sinnvoll komponieren
 
 ## Negativregeln
 
 Nicht automatisch verwenden:
-- immer denselben dunklen Hintergrund
-- immer freigestelltes Objekt in der Mitte
-- immer Infoboxen
-- immer Titel
+- dieselbe Hand auf demselben Materialblock
+- dieselbe links/rechts-Vergleichsansicht
+- denselben türkisfarbenen Hintergrund
+- denselben großen Titel oben
+- dieselbe Perspektive
+- immer Pfeile
 - immer Menschen
 - immer Cutaway
-- immer Pfeile
-- immer dieselben Farben
 
 Verboten bzw. vermeiden:
 - englischer sichtbarer Text
 - zufällige KI-Schrift
-- Logos und Wasserzeichen
+- Logos/Wasserzeichen
 - Sci-Fi-HUDs
 - Neon-Überladung
-- übertriebener Glow
 - Fantasy-Partikel
-- Pixar-/Kinder-Cartoon-Look
-- dekorative Elemente ohne Erklärfunktion
+- gesichtslose sichtbare Köpfe
 - Informationsüberladung
 
 ## Qualitätsfrage vor Freigabe
 
-Ein Bild ist nur gut, wenn diese Fragen mit Ja beantwortet werden können:
+Ein Bild ist nur gut, wenn:
 
-1. Versteht man die Kernaussage schneller durch dieses Bild?
-2. Nutzt die Szene den verfügbaren 16:9-Raum sinnvoll?
-3. Ist die gewählte Umgebung oder Illustration fachlich passend?
-4. Sind Text und Labels wirklich notwendig und korrekt?
-5. Gibt es keine unnötigen Informationen?
-6. Passt die Darstellung stilistisch zum erwachsenen Wissenschafts- und Technikkanal?
-7. Enthält das Bild ausschließlich deutschen sichtbaren Text?
-8. Passt der Beat logisch zwischen das vorherige und nächste Bild?
+1. die Kernaussage schneller verständlich wird
+2. es sich sichtbar vom vorherigen Beat unterscheidet
+3. der 16:9-Raum sinnvoll genutzt wird
+4. Umgebung/Darstellungsform fachlich passt
+5. Text wirklich notwendig und korrekt ist
+6. keine leeren/gesichtslosen sichtbaren Köpfe vorkommen
+7. der Stil erwachsen und professionell bleibt
+8. sichtbarer Text nur Deutsch ist
+9. das Bild nicht wie eine Kopie des Thumbnails oder des vorherigen Beats wirkt
 
-Wenn nicht, Prompt oder Bild überarbeiten.
+Wenn nicht: Prompt oder Skript/Beat-Plan überarbeiten.
