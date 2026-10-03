@@ -11,6 +11,13 @@ if (!projectArg) {
 }
 
 const paths = projectPaths(projectArg);
+
+// PHASE-3-HARD-GUARD:
+// Antigravity/Codex/der Montage-Agent darf keine visuellen Assets erzeugen oder ersetzen.
+// Vor jeder Vorbereitung werden daher IMMER die vom Nutzer in Phase 2 abgelegten Dateien geprüft.
+// Diese Prüfung darf auch mit --readiness-passed nicht übersprungen werden.
+run(process.execPath, ['scripts/science-required-media.mjs', paths.root], {cwd: repositoryRoot});
+
 if (!args.includes('--readiness-passed')) run(process.execPath, ['scripts/science-readiness.mjs', paths.root], {cwd: repositoryRoot});
 
 const voices = findVoiceFiles(paths.audioDir);
@@ -25,6 +32,7 @@ if (!finalVoice || rawIsNewer) {
 }
 
 // Der bewährte Alignment-Kern schreibt temporär reel-runtime.json; nach dem Lauf bleibt nur science-runtime.json bestehen.
+// Er arbeitet ausschließlich mit den zuvor geprüften Phase-2-Dateien und erzeugt keine Szenenbilder.
 const temporaryRuntimePath = path.join(channelRoot, 'src/generated/reel-runtime.json');
 const scienceRuntimePath = path.join(channelRoot, 'src/generated/science-runtime.json');
 const previousTemporaryRuntime = fs.existsSync(temporaryRuntimePath) ? fs.readFileSync(temporaryRuntimePath) : null;
