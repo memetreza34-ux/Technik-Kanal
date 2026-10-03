@@ -53,14 +53,17 @@ Vor Freigabe des Skripts prüfen, welche Bilder daraus entstehen würden.
 Wenn drei benachbarte Abschnitte fast dieselbe Szene benötigen würden, muss **das Skript bzw. der Beat-Plan umgeschrieben werden**. Nicht versuchen, dieselbe Bildidee nur mit leicht verändertem Prompt zu retten.
 
 Bevorzugt abwechseln:
-- volle Umgebung
+- vereinfachte Umgebungsszene
 - Mess-/Objektszene
-- Cutaway
+- technische Cutaway-/Querschnittsansicht
+- Explosionsdarstellung
 - Material-/Makroansicht
 - Vergleich
-- Alltagssituation
-- Instrument-/Messansicht
-- wissenschaftliche Konzeptdarstellung
+- Prozessdarstellung
+- Draufsicht
+- Bauteil mit Callouts
+- vereinfachtes Diagramm
+- Schaltplan / Funktionsschema
 - Zusammenfassung/Montage
 
 Verbindliche Limits:
@@ -68,6 +71,61 @@ Verbindliche Limits:
 - keine identische Hauptkomposition in zwei direkt aufeinanderfolgenden Beats
 - derselbe dominante Bildanker höchstens 3-mal pro Video
 - „Hand auf Gegenstand + Pfeile“ höchstens 3-mal als Hauptkomposition
+
+## Aktive Bildwelt
+
+`gehirn/BILDWELT.md` ist verbindlich.
+
+Aktiv ist **Technical Editorial Explainer 2.5D**. Die frühere visuelle Ausführung ist ersetzt. Der alte interne Stil-Identifier `scientific-scene-explainer-v1` bleibt nur aus technischer Rückwärtskompatibilität bestehen und darf nicht als Anleitung für den alten Look verstanden werden.
+
+### Fester Style-Lock für jedes Bild
+
+- clean modern 2D/2.5D vector-like technical editorial illustration
+- vereinfachte, aber glaubwürdige Proportionen
+- matte Materialien
+- klare Kanten und saubere Formen
+- dezente Gradients
+- weiche kontrollierte Schatten
+- konsistente Linienstärke
+- moderate räumliche Tiefe
+- erwachsen, professionell, technisch erklärend
+- Grundfamilie: warmes Off-White, Graphit, gedeckte Industrietöne
+- Akzentfarben nur mit technischer Bedeutung
+
+Ausdrücklich nicht verwenden:
+- Fotorealismus
+- echte Fotooptik
+- hyperrealistische Umgebungen
+- generische KI-Kunst
+- weiße Schulbuch-/PowerPoint-Infografik als Standardlook
+- Pixar-/Kinder-Cartoon
+- Sci-Fi-HUD
+- Neon-heavy Effekte
+
+Wichtig: **Darstellungsform, Perspektive und Umgebung dürfen wechseln; Rendering-Sprache, Materialvereinfachung, Linienqualität, Typografie und Callout-Design bleiben konstant.**
+
+### Prompt-Sprache
+
+- alle Google-Flow-Prompts auf **Englisch** schreiben
+- sichtbarer Text im Bild ausschließlich **Deutsch**
+- jeder Einzelprompt muss den Style-Lock enthalten oder ihn eindeutig vom Masterprompt erben
+- wenn ein Prompt alte oder widersprüchliche Stilwörter enthält, hat der aktuelle Technical-Editorial-Style-Lock Vorrang
+
+### Labels und Beschriftungen
+
+- normale Szenen bevorzugt 0–2 kurze Labels
+- technische Diagramme dürfen bei echtem Erklärnutzen mehr kurze Labels verwenden
+- keine große Überschrift in normalen Szenen
+- dünne Leader-Lines
+- kleine ruhige Label-Flächen
+- keine schwebenden UI-Karten ohne Nutzen
+
+### Menschen
+
+- keine gesichtslosen sichtbaren Köpfe
+- sichtbarer Kopf = vollständige natürliche stilisierte Gesichtszüge
+- wenn kein Gesicht gebraucht wird: Kopf vollständig aus dem Frame
+- Menschen nur bei fachlichem Nutzen
 
 ## Google Flow
 
@@ -95,28 +153,13 @@ Ablauf:
 14. jeder Beat = genau ein finales statisches 16:9-Bild
 15. keine KI-Videoclips oder Animationen
 
-Jeder Bildschritt soll möglichst mindestens drei unterschiedliche Darstellungsformen enthalten.
-
-## Bildwelt
-
-`gehirn/BILDWELT.md` ist verbindlich.
-
-Kernregeln:
-- eine Hauptaussage pro Bild
-- Szenen visuell deutlich variieren
-- keine wiederkehrende Türkis-/Weiß-Schablone
-- keine große Überschrift in normalen Szenen; große Titel primär im Thumbnail
-- normale Szenen bevorzugt 0–2 kurze Labels
-- sichtbarer Text nur Deutsch
-- keine gesichtslosen sichtbaren Köpfe
-- wenn ein Gesicht sichtbar ist: vollständige natürliche stilisierte Gesichtszüge
-- wenn kein Gesicht gebraucht wird: Kopf vollständig aus dem Frame lassen statt leeren Kopf zu zeichnen
-- Menschen nur bei fachlichem Nutzen
+Jeder Bildschritt soll möglichst mindestens drei unterschiedliche Darstellungsformen enthalten, **ohne den Style-Lock zu verlassen**.
 
 ## Sprache und Untertitel
 
 - Voice-over Deutsch
 - sichtbarer Bildtext Deutsch
+- Google-Flow-Prompts Englisch
 - **keine eingebrannten Untertitel im finalen Video**
 - Wortzeiten dürfen intern für Synchronisation genutzt werden
 - kurze wissenschaftliche Labels innerhalb der Bilder bleiben erlaubt
@@ -136,4 +179,4 @@ Remotion darf keine Untertitel/Captions ins finale Video rendern, nicht zoomen, 
 
 ## Produktionsregel
 
-Erst Thema → Recherche → Story → Skript → **Visual-Diversity-Check** → Beats → Prompts/Flow-Plan → 3 Cover-Kandidaten → Cover-Auswahl → **2 verworfene Cover entfernen** → fünf Bildschritte ohne Zwischenstopps komplett abarbeiten → **finale Assets korrekt benennen und in eine einzige saubere Flow-Sammlung bündeln** → Voice → Timing → Remotion → QA.
+Erst Thema → Recherche → Story → Skript → **Visual-Diversity-Check** → Beats → **englische Prompts mit konstantem Technical-Editorial-Style-Lock** → Flow-Plan → 3 Cover-Kandidaten → Cover-Auswahl → **2 verworfene Cover entfernen** → fünf Bildschritte ohne Zwischenstopps komplett abarbeiten → **finale Assets korrekt benennen und in eine einzige saubere Flow-Sammlung bündeln** → Voice → Timing → Remotion → QA.
