@@ -37,8 +37,10 @@ for (const scene of plan.scenes) {
   promptFiles[scene.id] = prompt;
   if (/\[GENAUE|\[AUSSAGE|ERGÄNZEN|PLACEHOLDER|NEUE BILDWELT/i.test(prompt)) errors.push(`${scene.id}: Prompt ist noch nicht final.`);
   if (!/(16:9|1920.?1080|landscape)/i.test(prompt)) warnings.push(`${scene.id}: 16:9 sollte im Prompt ausdrücklich festgelegt sein.`);
-  if (!/(Deutsch|German|deutsche Beschrift|deutscher Text|kein englischer Text|no English text)/i.test(prompt)) warnings.push(`${scene.id}: Bei sichtbarem Bildtext Deutsch-only ausdrücklich festlegen.`);
-  if (!/(eine Hauptaussage|one main idea|one scientific statement|genau.*Aussage|exact idea|exact statement|visuelle Hauptidee)/i.test(prompt)) warnings.push(`${scene.id}: Prompt sollte die eine visuelle Kernaussage des Beats klar priorisieren.`);
+  if (!/(Deutsch|German|deutsche Beschrift|deutscher Text|kein englischer Text|no English text)/i.test(prompt)) warnings.push(`${scene.id}: Deutsch-only für sichtbaren Text ausdrücklich festlegen.`);
+  if (!/(eine Hauptaussage|one main idea|visuelle Hauptidee|genau.*Aussage)/i.test(prompt)) warnings.push(`${scene.id}: eine visuelle Hauptaussage klar priorisieren.`);
+  if (!/(keine große Überschrift|keine grosse Überschrift|no large headline|keinen großen Titel|keinen grossen Titel)/i.test(prompt)) errors.push(`${scene.id}: Szenenprompt muss große generierte Überschriften ausdrücklich ausschließen.`);
+  if (!/(keine gesichtslosen|keine leeren Gesichter|sichtbarer Kopf.*Gesicht|visible head.*face|Kopf.*außerhalb|Kopf.*ausserhalb)/i.test(prompt)) errors.push(`${scene.id}: Prompt muss die Regel gegen gesichtslose sichtbare Köpfe enthalten.`);
 }
 
 const promptManifest = fs.existsSync(paths.promptManifest) ? JSON.parse(fs.readFileSync(paths.promptManifest,'utf8')) : null;
@@ -57,7 +59,7 @@ else {
 }
 
 let flowPlan = null;
-if (!fs.existsSync(paths.flowPlan)) errors.push('flow-plan.json fehlt. Jedes aktive Video benötigt einen expliziten Bild-Plan.');
+if (!fs.existsSync(paths.flowPlan)) errors.push('flow-plan.json fehlt.');
 else {
   try { flowPlan = JSON.parse(fs.readFileSync(paths.flowPlan,'utf8')); }
   catch (error) { errors.push(`flow-plan.json ist ungültig: ${error.message}`); }
@@ -65,30 +67,60 @@ else {
 
 const flowEntries = Array.isArray(flowPlan?.scenes) ? flowPlan.scenes : [];
 const stepCount = Number(config.visuals?.flow?.imageProductionSteps ?? 5);
+const diversity = config.visuals?.diversity ?? {};
+let distinctVisualTypes = new Set();
+let motifCounts = new Map();
+let handOnObjectCount = 0;
+
 if (flowPlan) {
   if (flowPlan.imageOnly !== true) errors.push('flow-plan.json muss imageOnly=true setzen.');
   if (flowPlan.imageProductionSteps !== stepCount) errors.push(`flow-plan.json muss imageProductionSteps=${stepCount} setzen.`);
   if (flowPlan.pauseAfterEachImageStep !== true) errors.push('flow-plan.json muss pauseAfterEachImageStep=true setzen.');
   if (flowEntries.length !== plan.scenes.length) errors.push(`flow-plan.json enthält ${flowEntries.length} Beats; erwartet ${plan.scenes.length}.`);
+
   const byId = new Map(flowEntries.map((entry)=>[entry.id,entry]));
-  const groupedIds = Array.from({length:stepCount},()=>[]);
+  const grouped = Array.from({length:stepCount},()=>[]);
+  let previousVisualType = null;
+
   for (const scene of plan.scenes) {
     const entry = byId.get(scene.id);
     if (!entry) { errors.push(`${scene.id}: Eintrag im flow-plan.json fehlt.`); continue; }
-    if (entry.output !== 'image') errors.push(`${scene.id}: Nur output=image ist erlaubt. KI-Videoclips sind nicht Teil dieses Kanals.`);
-    if (entry.clipSeconds != null) errors.push(`${scene.id}: clipSeconds ist im reinen Bild-Workflow nicht erlaubt.`);
-    if (String(entry.motionPrompt ?? '').trim()) errors.push(`${scene.id}: motionPrompt ist im reinen Bild-Workflow nicht erlaubt.`);
-    if (String(entry.videoDir ?? '').trim()) errors.push(`${scene.id}: videoDir ist im reinen Bild-Workflow nicht erlaubt.`);
+    if (entry.output !== 'image') errors.push(`${scene.id}: Nur output=image ist erlaubt.`);
+    if (entry.clipSeconds != null || String(entry.motionPrompt ?? '').trim() || String(entry.videoDir ?? '').trim()) errors.push(`${scene.id}: Video-/Motion-Felder sind nicht erlaubt.`);
+
     const imageStep = Number(entry.imageStep);
     if (!Number.isInteger(imageStep) || imageStep < 1 || imageStep > stepCount) errors.push(`${scene.id}: imageStep muss 1–${stepCount} sein.`);
-    else groupedIds[imageStep-1].push(scene.id);
+    else grouped[imageStep-1].push(entry);
+
+    const visualType = normalize(entry.visualType);
+    const primaryMotif = normalize(entry.primaryMotif);
+    if (!visualType || /ungeplant|tbd|placeholder/.test(visualType)) errors.push(`${scene.id}: visualType muss vor Produktion konkret geplant sein.`);
+    if (!primaryMotif || /ungeplant|tbd|placeholder/.test(primaryMotif)) errors.push(`${scene.id}: primaryMotif muss vor Produktion konkret geplant sein.`);
+    if (visualType) distinctVisualTypes.add(visualType);
+    if (primaryMotif) motifCounts.set(primaryMotif,(motifCounts.get(primaryMotif)??0)+1);
+    if (/hand.*(gegenstand|kontakt|material|object)|hand-contact|hand-on-object/.test(primaryMotif)) handOnObjectCount += 1;
+    if (previousVisualType && visualType && visualType === previousVisualType) errors.push(`${scene.id}: derselbe visualType darf nicht direkt hintereinander dominieren.`);
+    if (visualType) previousVisualType = visualType;
   }
-  if (groupedIds.some((group)=>group.length===0)) errors.push(`Alle ${stepCount} Bildschritte müssen mindestens ein Bild enthalten.`);
-  const flattened = groupedIds.flat();
+
+  if (grouped.some((group)=>group.length===0)) errors.push(`Alle ${stepCount} Bildschritte müssen mindestens ein Bild enthalten.`);
+  const flattened = grouped.flat().map((entry)=>entry.id);
   const expected = plan.scenes.map((scene)=>scene.id);
   if (flattened.join('|') !== expected.join('|')) errors.push(`Die ${stepCount} Bildschritte müssen zusammenhängend und in Szenenreihenfolge angeordnet sein.`);
-  const sizes = groupedIds.map((group)=>group.length);
+  const sizes = grouped.map((group)=>group.length);
   if (sizes.length && Math.max(...sizes)-Math.min(...sizes)>1) errors.push(`Die ${stepCount} Bildschritte müssen möglichst gleichmäßig verteilt sein. Aktuell: ${sizes.join(', ')}.`);
+
+  if (distinctVisualTypes.size < Number(diversity.minimumDistinctVisualTypesPerVideo ?? 5)) errors.push(`Zu wenig visuelle Vielfalt: ${distinctVisualTypes.size} Visual-Typen; mindestens ${diversity.minimumDistinctVisualTypesPerVideo ?? 5}.`);
+  for (const [motif,count] of motifCounts) {
+    if (count > Number(diversity.samePrimaryMotifMaxPerVideo ?? 3)) errors.push(`Primärmotiv „${motif}“ kommt ${count}-mal vor; maximal ${diversity.samePrimaryMotifMaxPerVideo ?? 3}.`);
+  }
+  if (handOnObjectCount > Number(diversity.handOnObjectPrimaryMotifMaxPerVideo ?? 3)) errors.push(`Hand-auf-Gegenstand-Motiv kommt ${handOnObjectCount}-mal vor; maximal ${diversity.handOnObjectPrimaryMotifMaxPerVideo ?? 3}.`);
+
+  for (let index=0;index<grouped.length;index+=1) {
+    const types = new Set(grouped[index].map((entry)=>normalize(entry.visualType)).filter(Boolean));
+    const required = Math.min(grouped[index].length,Number(diversity.minimumDistinctVisualTypesPerImageStepPreferred ?? 3));
+    if (types.size < required) errors.push(`Bildschritt ${index+1}: nur ${types.size} Visual-Typen für ${grouped[index].length} Bilder; erwartet mindestens ${required}.`);
+  }
 }
 
 const flowMaster = fs.existsSync(paths.flowMaster) ? fs.readFileSync(paths.flowMaster,'utf8') : '';
@@ -96,34 +128,32 @@ if (!flowMaster) errors.push('GOOGLE-FLOW-MASTER-PROMPT.txt fehlt.');
 else {
   if (/NOCH NICHT FINAL|PLACEHOLDER|ERGÄNZEN/i.test(flowMaster)) errors.push('Google-Flow-Masterprompt ist noch nicht final.');
   if (!/(drei|3).*thumbnail/i.test(flowMaster)) errors.push('Flow-Masterprompt muss zuerst drei Thumbnail-Kandidaten verlangen.');
-  if (!/(stopp|stop).*auswahl|auswahl.*warten/i.test(flowMaster)) errors.push('Flow-Masterprompt muss nach den drei Thumbnails auf die Nutzerauswahl warten.');
-  if (!/(nur bilder|ausschließlich.*bilder|keine ki-videoclips)/i.test(flowMaster)) errors.push('Flow-Masterprompt muss den reinen Bild-Workflow ausdrücklich festlegen.');
-  if (/OUTPUT\s*=\s*IMAGE-TO-VIDEO|IMAGE-TO-VIDEO\s+[0-9]|KI-VIDEO-ANIMATION/i.test(flowMaster)) errors.push('Flow-Masterprompt enthält verbotene Video-/Animationsschritte.');
-  for (let step=1;step<=stepCount;step+=1) {
-    if (!new RegExp(`BILDSCHRITT\\s+${step}(?:\\/${stepCount})?`,'i').test(flowMaster)) errors.push(`Flow-Masterprompt enthält Bildschritt ${step} nicht ausdrücklich.`);
-  }
-  if (!/STOPP NACH BILDSCHRITT/i.test(flowMaster)) errors.push('Flow-Masterprompt muss zwischen den Bildschritten stoppen und auf Freigabe warten.');
-  if (thumbnailPrompt && !normalize(flowMaster).includes(normalize(thumbnailPrompt))) errors.push('Thumbnail-Prompt fehlt im Google-Flow-Masterprompt.');
-  for (const scene of plan.scenes) {
-    if (promptFiles[scene.id] && !normalize(flowMaster).includes(normalize(promptFiles[scene.id]))) errors.push(`${scene.id}: Bildprompt fehlt im Google-Flow-Masterprompt.`);
-  }
+  if (!/(stopp|stop).*auswahl|auswahl.*warten/i.test(flowMaster)) errors.push('Flow-Masterprompt muss nach den Thumbnails auf die Nutzerauswahl warten.');
+  if (!/(keine Farb|nicht.*Farbpalette|keine.*Layoutvorlage|nicht.*Layout)/i.test(flowMaster)) errors.push('Flow-Masterprompt muss verbieten, Thumbnail-Palette oder Layout auf alle Szenen zu kopieren.');
+  if (!/(visuelle Vielfalt|unterschiedliche Darstellungsformen|Diversity)/i.test(flowMaster)) errors.push('Flow-Masterprompt muss die visuelle Vielfalt ausdrücklich verlangen.');
+  if (!/(keine gesichtslosen|keine leeren Gesichter|sichtbarer Kopf.*Gesicht)/i.test(flowMaster)) errors.push('Flow-Masterprompt muss gesichtslose sichtbare Köpfe verbieten.');
+  if (!/(nur bilder|ausschließlich.*bilder|keine ki-videoclips)/i.test(flowMaster)) errors.push('Flow-Masterprompt muss den reinen Bild-Workflow festlegen.');
+  if (/OUTPUT\s*=\s*IMAGE-TO-VIDEO|KI-VIDEO-ANIMATION/i.test(flowMaster)) errors.push('Flow-Masterprompt enthält verbotene Video-/Animationsschritte.');
+  for (let step=1;step<=stepCount;step+=1) if (!new RegExp(`BILDSCHRITT\\s+${step}(?:\\/${stepCount})?`,'i').test(flowMaster)) errors.push(`Flow-Masterprompt enthält Bildschritt ${step} nicht.`);
+  if (!/STOPP NACH BILDSCHRITT/i.test(flowMaster)) errors.push('Flow-Masterprompt muss zwischen den Bildschritten stoppen.');
+  if (thumbnailPrompt && !normalize(flowMaster).includes(normalize(thumbnailPrompt))) errors.push('Thumbnail-Prompt fehlt im Masterprompt.');
+  for (const scene of plan.scenes) if (promptFiles[scene.id] && !normalize(flowMaster).includes(normalize(promptFiles[scene.id]))) errors.push(`${scene.id}: Bildprompt fehlt im Masterprompt.`);
 }
 
 const report = {
-  version:'science-flow-images-v2-five-steps',
+  version:'science-flow-images-v3-diversity',
   productionProfile:config.productionProfile,
   productionMode:config.visuals.productionMode,
   imageProductionSteps:stepCount,
   styleId:config.visuals.styleId,
-  brandVisualStyleDefined:config.visuals.brandVisualStyleDefined === true,
-  generatedImageTextPolicy:config.visuals.generatedImageTextPolicy,
   generatedAt:new Date().toISOString(),
   passed:errors.length===0,
   sceneCount:plan.scenes.length,
   staticImageCount:plan.scenes.length,
   flowVideoCount:0,
+  distinctVisualTypeCount:distinctVisualTypes.size,
+  handOnObjectCount,
   layouts:[...layouts],
-  visualPolicyVersion:plan.visualPolicyVersion,
   errors,
   warnings
 };
@@ -131,8 +161,8 @@ fs.writeFileSync(path.join(paths.projectDir,'creative-qa-report.json'),`${JSON.s
 
 if (errors.length) {
   console.error('Science-Creative-QA fehlgeschlagen:');
-  errors.forEach((error) => console.error(`- ${error}`));
+  errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} statische Szenenbilder in genau ${stepCount} Bildschritten, 0 KI-Videoclips.`);
+console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} statische Bilder, ${distinctVisualTypes.size} Visual-Typen, ${stepCount} Bildschritte, 0 Clips.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
