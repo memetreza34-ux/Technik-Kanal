@@ -55,6 +55,13 @@
     "cameraMotionAllowed": false,
     "brandVisualStyleDefined": true,
     "styleId": "scientific-scene-explainer-v1",
+    "styleName": "Technical Editorial Explainer 2.5D",
+    "styleVersion": "v1",
+    "legacyStyleIdRetainedForCompatibilityOnly": true,
+    "promptLanguage": "en",
+    "styleLockRequiredInEveryFlowPrompt": true,
+    "photorealismAllowed": false,
+    "whiteTextbookInfographicAsDefaultAllowed": false,
     "fullFrameContextPreferredWhenUseful": true,
     "fixedBackgroundForbidden": true,
     "humanFiguresAllowedWhenExplanatory": true,
@@ -67,7 +74,7 @@
       "handOnObjectPrimaryMotifMaxPerVideo": 3,
       "minimumDistinctVisualTypesPerImageStepPreferred": 3,
       "largeGeneratedHeadlineInSceneImagesAllowed": false,
-      "preferredLabelsMax": 2,
+      "preferredLabelsMax": 3,
       "blankOrFeaturelessVisibleFacesForbidden": true,
       "thumbnailReferenceScope": "quality-and-illustration-style-only-not-layout-or-palette"
     },
@@ -123,5 +130,5 @@
   "render": {"codec":"h264","crf":18,"pixelFormat":"yuv420p","audioCodec":"aac","audioBitrate":"192k","x264Preset":"medium"},
   "renderQa": {"blackMinimumDurationSeconds":0.35,"maximumInitialSilenceSeconds":0.7,"maximumEndSilenceSeconds":0.7,"integratedLufsMin":-18,"integratedLufsMax":-14,"truePeakMaximumDb":-1,"controlFrameCount":12},
   "safety": {"hazardousTopicDisclaimerRequired":true,"riskyPhrases":["unter spannung arbeiten","sicherung überbrücken","fi überbrücken","schutzleiter entfernen","mit bloßen händen prüfen","chemikalien zusammenkippen ohne schutz","giftiges gas einatmen","radioaktive quelle öffnen"],"dateSensitiveTerms":["din vde","dguv","norm","gesetz","prüffrist","grenzwert","aktuell","heute"]},
-  "textLimits": {"kicker":32,"headline":90,"body":180,"formula":120,"outcome":160,"label":60,"step":80,"voiceoverInstruction":1200}
+  "textLimits": {"kicker":32,"headline":90,"body":24,"formula":120,"outcome":160,"label":60,"step":80,"voiceoverInstruction":1200}
 }
