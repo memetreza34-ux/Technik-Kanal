@@ -9,6 +9,7 @@ const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8'));
 const claude=fs.readFileSync(path.join(root,'channels/science/CLAUDE.md'),'utf8');
 const imageWorld=fs.readFileSync(path.join(root,'channels/science/gehirn/BILDWELT.md'),'utf8');
 const flowWorkflow=fs.readFileSync(path.join(root,'channels/science/gehirn/FLOW-WORKFLOW.md'),'utf8');
+const agentHandoffDoc=fs.readFileSync(path.join(root,'channels/science/gehirn/AGENT-HANDOFF.md'),'utf8');
 const channel=fs.readFileSync(path.join(root,'channels/science/gehirn/KANAL.md'),'utf8');
 const longform=fs.readFileSync(path.join(root,'channels/science/gehirn/LONGFORM.md'),'utf8');
 const voice=JSON.parse(fs.readFileSync(path.join(root,'channels/science/engine/config/voice-v1.json'),'utf8'));
@@ -16,6 +17,7 @@ const scienceReel=fs.readFileSync(path.join(root,'channels/science/src/ScienceRe
 const template=fs.readFileSync(path.join(root,'scripts/lib/create-electrical-scene-plan-template.mjs'),'utf8');
 const newVideo=fs.readFileSync(path.join(root,'scripts/new-science-reel.mjs'),'utf8');
 const flowBuilder=fs.readFileSync(path.join(root,'scripts/build-google-flow-master-prompt.mjs'),'utf8');
+const prepareScience=fs.readFileSync(path.join(root,'scripts/prepare_science_reel.mjs'),'utf8');
 const processVoice=fs.readFileSync(path.join(root,'scripts/process_voiceover.mjs'),'utf8');
 const renderQa=fs.readFileSync(path.join(root,'scripts/qa_science_render.mjs'),'utf8');
 const errors=[];
@@ -83,6 +85,13 @@ if(flow?.removeRejectedVariantsBeforeCompletion!==true||flow?.renameFinalAssetsB
 if(flow?.imageOnly!==true||flow?.aiVideoAllowed!==false||flow?.clipsAllowed!==false) errors.push('Flow muss bild-only sein.');
 if(flow?.remotionMayPlayFlowClips!==false||flow?.remotionMayGenerateMotion!==false) errors.push('Remotion darf keine Clips/Motion erzeugen.');
 
+const handoff=config.visuals?.agentHandoff;
+if(handoff?.phase2SceneAssetRoot!=='02-bilder/images'||handoff?.phase2ThumbnailRoot!=='02-bilder/thumbnail'||handoff?.phase2VoiceRoot!=='01-script-audio/audio') errors.push('Phase-2-Handoff-Ordner sind falsch konfiguriert.');
+if(handoff?.phase3AssetSource!=='phase2-project-folders-only') errors.push('Phase 3 muss ausschließlich Phase-2-Projektordner verwenden.');
+if(handoff?.phase3MayGenerateVisualAssets!==false||handoff?.phase3MayRegenerateVisualAssets!==false) errors.push('Phase 3 darf keine visuellen Assets erzeugen/regenerieren.');
+if(handoff?.phase3MaySearchExternalAssets!==false||handoff?.phase3MaySubstituteMissingAssets!==false||handoff?.phase3MaySkipMissingScenes!==false||handoff?.phase3MayUseGeneratedPlaceholders!==false) errors.push('Phase 3 darf keine externen/ersetzten/übersprungenen/Placeholder-Assets verwenden.');
+if(handoff?.missingAssetPolicy!=='stop-and-report'||handoff?.ambiguousAssetPolicy!=='stop-and-report') errors.push('Phase 3 muss bei fehlenden/mehrdeutigen Assets stoppen und melden.');
+
 if(!/(drei|3).*thumbnail/is.test(flowWorkflow)||!/(STOPPEN|STOPP)/.test(flowWorkflow)) errors.push('FLOW-WORKFLOW Thumbnail-Stop fehlt.');
 if(!/genau 5 Bildschritte|genau fünf Bildschritte/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW fünf Schritte fehlen.');
 if(!/keine weiteren Stopps|keine Zwischenstopps/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW muss Zwischenstopps nach der Cover-Auswahl verbieten.');
@@ -92,10 +101,12 @@ if(!/genau \*\*eine finale Google-Flow-Sammlung|genau eine finale Google-Flow-Sa
 if(!/Zwischenstände.*Fehlversuche|Fehlversuche.*Zwischenstände/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW muss Zwischenstände und Fehlversuche aus der finalen Sammlung entfernen.');
 if(!/visuelle Vielfalt/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW Diversity fehlt.');
 if(!/keine eingebrannten Untertitel/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW subtitle-free fehlt.');
+if(!/Phase 3.*Antigravity|Antigravity.*Phase 3/is.test(flowWorkflow)||!/keine Bilder selbst erzeugen|keine Bilder generieren/i.test(flowWorkflow)) errors.push('FLOW-WORKFLOW muss Phase 3 auf vorhandene Phase-2-Assets begrenzen.');
+if(!/Phase 3.*keine visuellen Assets selbst erzeugen/is.test(agentHandoffDoc)||!/stoppen und den fehlenden\/unklaren Dateinamen melden/i.test(agentHandoffDoc)) errors.push('AGENT-HANDOFF.md muss No-Generation und Stop-Regel dokumentieren.');
 if(!/GOOGLE-FLOW-MASTER-PROMPT\.txt/i.test(claude)||!/flow-plan\.json/i.test(claude)) errors.push('CLAUDE Flow-Dateien fehlen.');
 if(!/keine weitere Freigabe|keine weiteren Freigaben|keine Zwischenstopps/i.test(claude)) errors.push('CLAUDE muss Cover als einzigen Freigabepunkt festlegen.');
 if(!/zwei nicht gewählten Cover|2 verworfene Cover/i.test(claude)) errors.push('CLAUDE muss verworfene Cover entfernen.');
-if(!/genau einer finalen Google-Flow-Sammlung|eine einzige saubere Flow-Sammlung/i.test(claude)) errors.push('CLAUDE muss eine einzige finale Flow-Sammlung verlangen.');
+if(!/Phase 3.*keine visuellen Assets selbst erzeugen/is.test(claude)||!/Fehlt ein Asset.*STOPP/is.test(claude)) errors.push('CLAUDE muss Phase-3-No-Generation und Stop-Regel festlegen.');
 if(!flowBuilder.includes('NUR BILDER')||!flowBuilder.includes('VISUELLE VIELFALT IST PFLICHT')) errors.push('Flow-Master-Builder enthält Bild-/Diversity-Regeln nicht.');
 if(!flowBuilder.includes('visualType')||!flowBuilder.includes('primaryMotif')) errors.push('Flow-Master-Builder prüft Visual-Typ/Primärmotiv nicht.');
 if(!flowBuilder.includes('KEINE WEITEREN STOPPS ODER RÜCKFRAGEN')) errors.push('Flow-Master-Builder muss Zwischenstopps nach Cover-Auswahl verbieten.');
@@ -112,7 +123,9 @@ if(!newVideo.includes("visualType:'UNGEPLANT'")||!newVideo.includes("primaryMoti
 if(!newVideo.includes('pauseAfterEachImageStep:false')||!newVideo.includes('continueAutomaticallyBetweenImageSteps:true')) errors.push('Neue Videos müssen fünf Bildschritte ohne Zwischenstopps anlegen.');
 if(!newVideo.includes('deleteUnselectedThumbnailCandidatesAfterSelection:true')||!newVideo.includes("selectedThumbnailFinalName:'00-thumbnail-final'")) errors.push('Neue Videos müssen Cover-Bereinigung anlegen.');
 if(!newVideo.includes('finalFlowCollectionRequired:true')||!newVideo.includes('singleFinalFlowCollectionPerVideo:true')||!newVideo.includes('finalCollectionContainsFinalAssetsOnly:true')) errors.push('Neue Videos müssen eine bereinigte finale Flow-Sammlung anlegen.');
+if(!newVideo.includes("phase3AssetSource:'phase2-project-folders-only'")||!newVideo.includes('phase3MayGenerateVisualAssets:false')||!newVideo.includes("phase3MissingAssetPolicy:'stop-and-report'")) errors.push('Neue Videos müssen Phase-3-No-Generation-Handoff verankern.');
 if(newVideo.includes('02-bilder/videos')||newVideo.includes('image-to-video')) errors.push('Neue Videos dürfen keine KI-Video-Struktur anlegen.');
+if(!prepareScience.includes('PHASE-3-HARD-GUARD')||!prepareScience.includes("scripts/science-required-media.mjs")) errors.push('science:prepare muss Phase-2-Assets vor jeder Phase-3-Verarbeitung hart prüfen.');
 if(!processVoice.includes('loudnorm=I=')) errors.push('Voice-Loudness-Normalisierung fehlt.');
 if(!renderQa.includes('blackdetect')||!renderQa.includes('silencedetect')) errors.push('Render-QA Schwarzbild/Randstille fehlt.');
 if(!renderQa.includes('freezeDetectionEnabled: false')) errors.push('Freeze Detection muss deaktiviert bleiben.');
@@ -122,4 +135,4 @@ if(errors.length){
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log('✓ youtube-2min-v1: diverse Bildpipeline, fünf Flow-Schritte ohne Zwischenstopps, Cover-Bereinigung, eine finale Flow-Sammlung und subtitle-free Rendering sind konsistent.');
+console.log('✓ youtube-2min-v1: Bildpipeline, Phase-2-Handoff, Phase-3-No-Generation, fünf Flow-Schritte, Cover-Bereinigung und subtitle-free Rendering sind konsistent.');
