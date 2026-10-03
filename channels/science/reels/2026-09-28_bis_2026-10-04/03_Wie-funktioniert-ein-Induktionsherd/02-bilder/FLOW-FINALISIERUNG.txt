@@ -1,0 +1,48 @@
+GOOGLE FLOW – FINALE ASSET-BEREINIGUNG
+======================================
+
+Video: Wie funktioniert ein Induktionsherd?
+Finale Sammlung / finaler Ordner: induktionsherd-video-assets-final
+
+Diese Finalisierung gilt nach der Cover-Auswahl und nach Abschluss aller fünf Bildschritte.
+
+1. BEHALTE NUR DAS GEWÄHLTE COVER.
+   - Benenne das gewählte Cover eindeutig als: 00-thumbnail-final
+   - Lösche die zwei nicht gewählten Cover-Kandidaten oder entferne sie vollständig aus der finalen Sammlung.
+
+2. PRÜFE ALLE 15 FINALEN SZENENBILDER.
+   - Es muss genau ein finales Bild pro Beat geben.
+   - Benenne sie in dieser Reihenfolge:
+     01-hook-final
+     02-context-final
+     03-context-final
+     04-foundation-final
+     05-foundation-final
+     06-mechanism-final
+     07-mechanism-final
+     08-mechanism-final
+     09-mechanism-final
+     10-deepening-final
+     11-deepening-final
+     12-deepening-final
+     13-deepening-final
+     14-deepening-final
+     15-payoff-final
+
+3. RÄUME DIE MEDIEN AUF.
+   - Entferne Fehlversuche.
+   - Entferne Zwischenversionen.
+   - Entferne doppelte Bilder.
+   - Entferne verworfene Varianten.
+   - Entferne die zwei nicht gewählten Cover.
+   - Keine Testbilder in der finalen Sammlung behalten.
+
+4. FASSE ALLES IN GENAU EINER FINALEN GOOGLE-FLOW-SAMMLUNG / EINEM FINALEN ORDNER ZUSAMMEN.
+   Name: induktionsherd-video-assets-final
+
+5. DIE FINALE SAMMLUNG DARF NUR ENTHALTEN:
+   - 00-thumbnail-final
+   - 15 korrekt benannte finale Szenenbilder
+
+6. Erst wenn die Sammlung sauber ist und nur diese finalen Assets enthält, melde:
+   „Finale Asset-Sammlung vollständig und bereinigt.“
