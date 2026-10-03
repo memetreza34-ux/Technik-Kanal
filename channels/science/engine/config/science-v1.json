@@ -104,6 +104,20 @@
       "clipsAllowed": false,
       "remotionMayPlayFlowClips": false,
       "remotionMayGenerateMotion": false
+    },
+    "agentHandoff": {
+      "phase2SceneAssetRoot": "02-bilder/images",
+      "phase2ThumbnailRoot": "02-bilder/thumbnail",
+      "phase2VoiceRoot": "01-script-audio/audio",
+      "phase3AssetSource": "phase2-project-folders-only",
+      "phase3MayGenerateVisualAssets": false,
+      "phase3MayRegenerateVisualAssets": false,
+      "phase3MaySearchExternalAssets": false,
+      "phase3MaySubstituteMissingAssets": false,
+      "phase3MaySkipMissingScenes": false,
+      "phase3MayUseGeneratedPlaceholders": false,
+      "missingAssetPolicy": "stop-and-report",
+      "ambiguousAssetPolicy": "stop-and-report"
     }
   },
   "textQuality": {"headlineWordsMax":10,"bodyWordsMax":24,"duplicatePhraseMinimumWords":4,"vaguePhrases":["das musst du wissen","was bedeutet das konkret","die wichtige frage","der wichtigste punkt","so funktioniert es","hier ist die antwort","ganz einfach erklärt"]},
