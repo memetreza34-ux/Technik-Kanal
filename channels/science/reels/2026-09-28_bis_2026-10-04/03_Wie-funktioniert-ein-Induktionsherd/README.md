@@ -16,13 +16,17 @@ Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff
 
 ## Google Flow
 
-1. drei Thumbnail-Kandidaten
-2. STOPP und Nutzerauswahl
-3. danach genau 5 Bildschritte
-4. pro Schritt genau 3 Bilder, streng einzeln nacheinander
-5. nach jedem Schritt STOPP
-6. ausschließlich statische Bilder
-7. keine eingebrannten Untertitel
+1. drei Thumbnail-Kandidaten erzeugen
+2. danach **STOPP und Nutzerauswahl**
+3. nach der Cover-Auswahl genau 5 Bildschritte
+4. pro Schritt genau 3 Bilder, streng einzeln nacheinander erzeugen, prüfen, auswählen und speichern
+5. **keine Zwischenstopps oder Rückfragen zwischen Bildschritt 1–5**
+6. Bildschritt 1 → automatisch 2 → 3 → 4 → 5
+7. erst nach Bildschritt 5 den vollständigen Abschluss melden
+8. ausschließlich statische Bilder
+9. keine eingebrannten Untertitel
+
+Der einzige Freigabepunkt ist die Auswahl des Covers. Danach wird die komplette Bildproduktion in einem Lauf fertiggestellt.
 
 ## Visual Diversity
 
