@@ -106,7 +106,7 @@ Verbindliche Regeln:
 
 - wenn ein Kopf/Gesicht sichtbar ist, muss die Person **natürliche, vollständige, stilisierte Gesichtszüge** haben
 - keine leeren Gesichter, keine glatten gesichtslosen Köpfe, keine fehlenden Augen/Nase/Mund
-- wenn das Gesicht nicht gebraucht wird, die Person bewusst so кадrieren, dass der Kopf komplett außerhalb des Bildes liegt; nicht einen sichtbaren Kopf ohne Gesicht zeichnen
+- wenn das Gesicht nicht gebraucht wird, die Person bewusst so kadrieren, dass der Kopf komplett außerhalb des Bildes liegt; nicht einen sichtbaren Kopf ohne Gesicht zeichnen
 - Hände, Füße oder Körperausschnitte sind erlaubt, wenn die Bildaussage sie benötigt
 - Personen erwachsen, editorial und nicht fotorealistisch darstellen
 - keine Person nur als Dekoration hinzufügen
