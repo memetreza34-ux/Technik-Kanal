@@ -1,10 +1,12 @@
 {
-  "version": "science-flow-image-v2",
+  "version": "science-flow-image-v3-no-intermediate-stops",
   "productionProfile": "youtube-2min-v1",
-  "workflow": "thumbnail-first-then-five-image-steps",
+  "workflow": "thumbnail-first-then-five-image-steps-no-intermediate-stops",
   "imageOnly": true,
   "imageProductionSteps": 5,
-  "pauseAfterEachImageStep": true,
+  "pauseAfterEachImageStep": false,
+  "continueAutomaticallyBetweenImageSteps": true,
+  "finalReportAfterAllImageSteps": true,
   "steps": [
     {"step":1,"sceneIds":["01-hook","02-context","03-context"]},
     {"step":2,"sceneIds":["04-foundation","05-foundation","06-mechanism"]},
