@@ -37,7 +37,7 @@ Keine Begrüßung und kein Vorgeplänkel. Die Erklärung beginnt innerhalb der e
 
 ## Wichtigste Skriptregel: bildklar schreiben
 
-Jeder wichtige Satz bzw. Beat muss sich **einfach und eindeutig visualisieren lassen**.
+Jeder wichtige Satz bzw. Beat muss sich **einfach und eindeutig visualisieren lassen** und das Video muss insgesamt **visuell abwechslungsreich** bleiben.
 
 Vor Freigabe jedes Beats fragen:
 
