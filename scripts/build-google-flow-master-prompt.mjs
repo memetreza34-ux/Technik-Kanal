@@ -30,6 +30,11 @@ if (flowPlan.imageOnly !== true) throw new Error('flow-plan.json muss imageOnly=
 if (flowPlan.imageProductionSteps !== stepCount) throw new Error(`flow-plan.json muss imageProductionSteps=${stepCount} setzen.`);
 if (flowPlan.pauseAfterEachImageStep !== false) throw new Error('flow-plan.json muss pauseAfterEachImageStep=false setzen.');
 if (flowPlan.continueAutomaticallyBetweenImageSteps !== true) throw new Error('flow-plan.json muss continueAutomaticallyBetweenImageSteps=true setzen.');
+if (flowPlan.deleteUnselectedThumbnailCandidatesAfterSelection !== true) throw new Error('flow-plan.json muss die zwei nicht gewählten Cover nach Auswahl entfernen.');
+if (flowPlan.selectedThumbnailFinalName !== '00-thumbnail-final') throw new Error('flow-plan.json muss selectedThumbnailFinalName=00-thumbnail-final setzen.');
+if (flowPlan.finalFlowCollectionRequired !== true || flowPlan.singleFinalFlowCollectionPerVideo !== true) throw new Error('flow-plan.json muss genau eine finale Flow-Sammlung pro Video verlangen.');
+if (flowPlan.removeRejectedVariantsBeforeCompletion !== true || flowPlan.renameFinalAssetsBeforeCompletion !== true || flowPlan.finalCollectionContainsFinalAssetsOnly !== true) throw new Error('flow-plan.json muss die finale Asset-Bereinigung vollständig aktivieren.');
+if (!String(flowPlan.finalCollectionName ?? '').trim()) throw new Error('flow-plan.json muss finalCollectionName setzen.');
 if (flowScenes.length !== scenes.length) throw new Error(`flow-plan.json muss ${scenes.length} Beat-Einträge enthalten.`);
 
 const byId = new Map(flowScenes.map((entry) => [entry.id, entry]));
@@ -86,28 +91,34 @@ lines.push('');
 lines.push(`Video: ${plan.title ?? plan.slug}`);
 lines.push(`Format: ${plan.width}×${plan.height}, 16:9`);
 lines.push('Bildwelt: Scientific Scene Explainer v1');
+lines.push(`Finale Flow-Sammlung: ${flowPlan.finalCollectionName}`);
 lines.push('');
 lines.push('VERBINDLICHER ABLAUF');
 lines.push('---------------------');
 lines.push('1. Zuerst NUR die drei Thumbnail-Kandidaten erzeugen.');
 lines.push('2. Danach STOPPEN und auf die ausdrückliche Auswahl des Nutzers warten. Noch keine Szenenbilder erzeugen.');
-lines.push('3. Das gewählte Thumbnail nur als Referenz für Qualitätsniveau und Illustrationssprache verwenden. Es ist KEINE Farb-, Layout-, Perspektiv- oder Hintergrundvorlage für alle Szenen.');
-lines.push(`4. Nach der Cover-Auswahl die Szenenbilder in genau ${stepCount} Bildschritten erzeugen.`);
-lines.push('5. Innerhalb jedes Bildschritts Bilder streng einzeln nacheinander erzeugen, prüfen, auswählen und speichern.');
-lines.push('6. NACH DER COVER-AUSWAHL KEINE WEITEREN STOPPS ODER RÜCKFRAGEN: Bildschritt 1 bis 5 automatisch vollständig nacheinander abarbeiten.');
-lines.push('7. Erst nach Abschluss von Bildschritt 5 melden, dass alle Bilder fertig sind.');
-lines.push('8. VISUELLE VIELFALT IST PFLICHT: nicht immer dieselbe Hand, denselben Materialblock, denselben Split-Screen oder denselben türkis/weißen Hintergrund verwenden.');
-lines.push('9. Normale Szenen haben keine große generierte Überschrift; bevorzugt 0–2 kurze deutsche Labels. Große Titel gehören primär ins Thumbnail.');
-lines.push('10. Bei sichtbaren Köpfen vollständige natürliche stilisierte Gesichtszüge zeigen. Keine gesichtslosen oder leeren Gesichter. Wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames lassen.');
-lines.push('11. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen.');
-lines.push('12. KEINE KI-Videoclips, KEINE Image-to-Video-Ausgabe und KEINE Animationen erzeugen.');
-lines.push('13. Sichtbarer Text ausschließlich Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.');
+lines.push('3. Nach der Auswahl das gewählte Cover als 00-thumbnail-final übernehmen und die ZWEI NICHT GEWÄHLTEN COVER löschen bzw. aus der finalen Flow-Sammlung entfernen.');
+lines.push('4. Das gewählte Thumbnail nur als Referenz für Qualitätsniveau und Illustrationssprache verwenden. Es ist KEINE Farb-, Layout-, Perspektiv- oder Hintergrundvorlage für alle Szenen.');
+lines.push(`5. Nach der Cover-Auswahl die Szenenbilder in genau ${stepCount} Bildschritten erzeugen.`);
+lines.push('6. Innerhalb jedes Bildschritts Bilder streng einzeln nacheinander erzeugen, prüfen, auswählen, korrekt benennen und speichern. Verworfene Varianten nicht in der finalen Sammlung behalten.');
+lines.push('7. NACH DER COVER-AUSWAHL KEINE WEITEREN STOPPS ODER RÜCKFRAGEN: Bildschritt 1 bis 5 automatisch vollständig nacheinander abarbeiten.');
+lines.push('8. Nach Bildschritt 5 ALLE finalen Assets in genau EINER finalen Google-Flow-Sammlung / einem finalen Ordner zusammenführen.');
+lines.push('9. Vor dem Abschluss Fehlversuche, Zwischenstände, doppelte Bilder, verworfene Varianten und die zwei nicht gewählten Cover aus der finalen Sammlung entfernen.');
+lines.push('10. Die finale Sammlung darf NUR 00-thumbnail-final plus alle korrekt benannten finalen Szenenbilder enthalten.');
+lines.push('11. Erst nach dieser Bereinigung melden, dass die komplette Bildproduktion fertig ist.');
+lines.push('12. VISUELLE VIELFALT IST PFLICHT: nicht immer dieselbe Hand, denselben Materialblock, denselben Split-Screen oder denselben türkis/weißen Hintergrund verwenden.');
+lines.push('13. Normale Szenen haben keine große generierte Überschrift; bevorzugt 0–2 kurze deutsche Labels. Große Titel gehören primär ins Thumbnail.');
+lines.push('14. Bei sichtbaren Köpfen vollständige natürliche stilisierte Gesichtszüge zeigen. Keine gesichtslosen oder leeren Gesichter. Wenn kein Gesicht gebraucht wird, Kopf vollständig außerhalb des Frames lassen.');
+lines.push('15. Für jeden Beat genau EIN finales statisches 16:9-Bild erzeugen.');
+lines.push('16. KEINE KI-Videoclips, KEINE Image-to-Video-Ausgabe und KEINE Animationen erzeugen.');
+lines.push('17. Sichtbarer Text ausschließlich Deutsch. Keine Logos, Wasserzeichen oder zufällige KI-Schrift.');
 lines.push('');
 lines.push('THUMBNAIL – PHASE 1');
 lines.push('-------------------');
 lines.push(read(thumbnailFile));
 lines.push('');
 lines.push('STOPP NACH DEN DREI THUMBNAILS. AUF AUSWAHL DES NUTZERS WARTEN.');
+lines.push('NACH AUSWAHL: gewähltes Cover = 00-thumbnail-final; die zwei anderen Cover entfernen. Danach ohne weitere Rückfrage mit allen fünf Bildschritten fortfahren.');
 lines.push('');
 lines.push(`SZENENBILDER – PHASE 2 · GENAU ${stepCount} BILDSCHRITTE · OHNE ZWISCHENSTOPPS`);
 lines.push('---------------------------------------------------------------------');
@@ -129,15 +140,25 @@ for (let stepIndex=0;stepIndex<groupedScenes.length;stepIndex+=1) {
     lines.push('='.repeat(Math.min(80,scene.id.length+40)));
     lines.push(read(promptFile));
     lines.push('');
-    lines.push(`Nur ein finales statisches Bild für ${scene.id}. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.`);
+    lines.push(`Nur ein finales statisches Bild für ${scene.id}. Nach Auswahl sofort korrekt als ${scene.id}-final benennen. Keine Animation, kein Videoclip, keine große Überschrift, keine gesichtslosen sichtbaren Köpfe.`);
   }
 
   lines.push('');
   if (stepNumber < stepCount) lines.push(`BILDSCHRITT ${stepNumber} ABGESCHLOSSEN → OHNE STOPP DIREKT MIT BILDSCHRITT ${stepNumber+1} FORTFAHREN.`);
-  else lines.push(`BILDSCHRITT ${stepNumber} ABGESCHLOSSEN. Jetzt erst Gesamtabschluss melden: alle fünf Bildschritte und alle Szenenbilder sind fertig.`);
+  else lines.push(`BILDSCHRITT ${stepNumber} ABGESCHLOSSEN. Noch NICHT melden: zuerst finale Sammlung bereinigen.`);
 }
+
+lines.push('');
+lines.push('PHASE 3 – FINALE ASSET-BEREINIGUNG');
+lines.push('----------------------------------');
+lines.push(`1. Genau eine finale Google-Flow-Sammlung / einen finalen Ordner namens „${flowPlan.finalCollectionName}“ verwenden.`);
+lines.push('2. 00-thumbnail-final und alle finalen Szenenbilder in diese Sammlung verschieben/zusammenführen.');
+lines.push('3. Die zwei nicht gewählten Cover, Zwischenversionen, Fehlversuche, doppelte Bilder und verworfene Varianten entfernen.');
+lines.push('4. Prüfen, dass alle Szenenbilder in korrekter Reihenfolge und mit -final benannt sind.');
+lines.push('5. Erst wenn nur finale Assets übrig sind, Gesamtabschluss melden.');
 
 fs.writeFileSync(paths.flowMaster, `${lines.join('\n')}\n`);
 console.log(`✓ Google-Flow-Masterprompt gebaut: ${paths.flowMaster}`);
 console.log(`  ${scenes.length} statische Bilder · ${visualTypes.size} Visual-Typen · ${stepCount} Schritte ohne Zwischenstopps · 0 Clips.`);
+console.log(`  Finale Flow-Sammlung: ${flowPlan.finalCollectionName}`);
 console.log(`  Verteilung: ${sizes.join(' / ')} Bilder.`);
