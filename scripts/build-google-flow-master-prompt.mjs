@@ -88,8 +88,8 @@ for (const [motif,count] of motifCounts) if (count > Number(diversity.samePrimar
 if (handOnObjectCount > Number(diversity.handOnObjectPrimaryMotifMaxPerVideo ?? 3)) throw new Error(`Hand-auf-Gegenstand-Motiv kommt ${handOnObjectCount}-mal vor; zu häufig.`);
 
 const lines = [];
-lines.push('GOOGLE FLOW MASTER PROMPT — IMAGE ONLY');
-lines.push('======================================');
+lines.push('GOOGLE FLOW MASTER PROMPT — NUR BILDER / IMAGE ONLY');
+lines.push('===================================================');
 lines.push('');
 lines.push(`Video: ${plan.title ?? plan.slug}`);
 lines.push(`Format: ${plan.width}×${plan.height}, 16:9`);
