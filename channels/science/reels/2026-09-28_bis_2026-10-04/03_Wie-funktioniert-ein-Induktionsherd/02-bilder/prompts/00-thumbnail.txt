@@ -1,0 +1,22 @@
+Erzeuge drei deutlich unterschiedliche YouTube-Thumbnail-Kandidaten im Format 1280×720 / 16:9 für das Video „Wie funktioniert ein Induktionsherd?“.
+
+Gemeinsame Regeln:
+- Scientific Scene Explainer v1, hochwertig, erwachsen, klar
+- ein starkes Hauptmotiv, wenig Details
+- sichtbarer Text ausschließlich Deutsch
+- keine Person nötig
+- keine Logos/Wasserzeichen
+- keine falsche Darstellung einer glühenden Induktionsspule
+- keine generische Sci-Fi-Optik
+- alle drei Varianten müssen sich in Komposition, Hintergrund und Blickwinkel klar unterscheiden
+
+Kandidat A:
+Großer Topf auf schwarzem Induktionskochfeld, darunter als sauberer Cutaway die Kupferspule und das Magnetfeld. Kurzer Text: „WIE WIRD DER TOPF HEISS?“
+
+Kandidat B:
+Seitlicher Querschnitt durch Kochfeld und Topfboden. Unten Kupferspule, dazwischen Glaskeramik, im Topfboden sichtbare Wirbelströme und Wärme. Kurzer Text: „WÄRME DIREKT IM TOPF“
+
+Kandidat C:
+Sehr reduziertes technisches Motiv: große Kupferspule links unten, Topfboden rechts oben, dazwischen ein klarer Magnetfeldbogen. Kurzer Text: „KEINE HEIZSPIRALE?“
+
+Erzeuge zuerst nur diese drei Thumbnail-Kandidaten und stoppe danach.

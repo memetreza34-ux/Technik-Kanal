@@ -1,0 +1,15 @@
+{
+  "status": "preproduction-ready-for-preflight",
+  "slug": "wie-funktioniert-ein-induktionsherd",
+  "productionProfile": "youtube-2min-v1",
+  "completed": ["folder-structure","science-static-v1","scientific-scene-explainer-v1","research","story-structure","script","sources","visual-diversity-plan","image-plan","thumbnail-plan","flow-image-plan","five-image-step-plan","google-flow-master-prompt"],
+  "open": ["preflight","thumbnail-3-candidates","thumbnail-user-selection","image-step-1-01-to-03","image-step-2-04-to-06","image-step-3-07-to-09","image-step-4-10-to-12","image-step-5-13-to-15","voiceover","render","qa"],
+  "requiredVisibleSceneImages": 15,
+  "imageProductionSteps": 5,
+  "imageStepSizes": [3,3,3,3,3],
+  "pauseAfterEachImageStep": true,
+  "plannedFlowVideoClips": 0,
+  "plannedStaticImageBeats": 15,
+  "embeddedCaptions": false,
+  "nextCommand": "npm run science:preflight -- \"channels/science/reels/2026-09-28_bis_2026-10-04/03_Wie-funktioniert-ein-Induktionsherd\""
+}
