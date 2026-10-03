@@ -78,6 +78,13 @@ if (flowPlan) {
   if (flowPlan.pauseAfterEachImageStep !== false) errors.push('flow-plan.json muss pauseAfterEachImageStep=false setzen.');
   if (flowPlan.continueAutomaticallyBetweenImageSteps !== true) errors.push('flow-plan.json muss continueAutomaticallyBetweenImageSteps=true setzen.');
   if (flowPlan.finalReportAfterAllImageSteps !== true) errors.push('flow-plan.json muss finalReportAfterAllImageSteps=true setzen.');
+  if (flowPlan.deleteUnselectedThumbnailCandidatesAfterSelection !== true) errors.push('flow-plan.json muss die zwei nicht gewählten Cover nach Auswahl entfernen.');
+  if (flowPlan.selectedThumbnailFinalName !== '00-thumbnail-final') errors.push('flow-plan.json muss selectedThumbnailFinalName=00-thumbnail-final setzen.');
+  if (flowPlan.finalFlowCollectionRequired !== true || flowPlan.singleFinalFlowCollectionPerVideo !== true) errors.push('flow-plan.json muss genau eine finale Flow-Sammlung pro Video verlangen.');
+  if (!String(flowPlan.finalCollectionName ?? '').trim()) errors.push('flow-plan.json muss finalCollectionName setzen.');
+  if (flowPlan.removeRejectedVariantsBeforeCompletion !== true) errors.push('flow-plan.json muss verworfene Varianten vor Abschluss entfernen.');
+  if (flowPlan.renameFinalAssetsBeforeCompletion !== true) errors.push('flow-plan.json muss finale Assets vor Abschluss korrekt benennen.');
+  if (flowPlan.finalCollectionContainsFinalAssetsOnly !== true) errors.push('flow-plan.json muss die finale Sammlung auf finale Assets beschränken.');
   if (flowEntries.length !== plan.scenes.length) errors.push(`flow-plan.json enthält ${flowEntries.length} Beats; erwartet ${plan.scenes.length}.`);
 
   const byId = new Map(flowEntries.map((entry)=>[entry.id,entry]));
@@ -126,6 +133,9 @@ if (flowPlan) {
 }
 
 const flowMaster = fs.existsSync(paths.flowMaster) ? fs.readFileSync(paths.flowMaster,'utf8') : '';
+const finalizationFile = path.join(path.dirname(paths.flowMaster),'FLOW-FINALISIERUNG.txt');
+const flowFinalization = fs.existsSync(finalizationFile) ? fs.readFileSync(finalizationFile,'utf8') : '';
+const cleanupText = `${flowMaster}\n${flowFinalization}`;
 if (!flowMaster) errors.push('GOOGLE-FLOW-MASTER-PROMPT.txt fehlt.');
 else {
   if (/NOCH NICHT FINAL|PLACEHOLDER|ERGÄNZEN/i.test(flowMaster)) errors.push('Google-Flow-Masterprompt ist noch nicht final.');
@@ -144,13 +154,20 @@ else {
   for (const scene of plan.scenes) if (promptFiles[scene.id] && !normalize(flowMaster).includes(normalize(promptFiles[scene.id]))) errors.push(`${scene.id}: Bildprompt fehlt im Masterprompt.`);
 }
 
+if (!/(00-thumbnail-final)/i.test(cleanupText)) errors.push('Flow-Cleanup muss das ausgewählte Cover als 00-thumbnail-final benennen.');
+if (!/(zwei nicht gewählten.*cover|zwei verworfenen.*cover|2 nicht gewählten.*cover)/i.test(cleanupText)) errors.push('Flow-Cleanup muss die zwei nicht gewählten Cover entfernen.');
+if (!/(finale.*google-flow-sammlung|finalen.*google-flow.*ordner|finale flow-sammlung)/i.test(cleanupText)) errors.push('Flow-Cleanup muss genau eine finale Google-Flow-Sammlung / einen finalen Ordner verlangen.');
+if (!/(fehlversuche|zwischenversionen|zwischenstände)/i.test(cleanupText)) errors.push('Flow-Cleanup muss Fehlversuche und Zwischenstände entfernen.');
+if (!/(nur.*finale assets|finale sammlung.*nur|nur enthalten)/i.test(cleanupText)) errors.push('Flow-Cleanup muss die finale Sammlung auf finale Assets beschränken.');
+
 const report = {
-  version:'science-flow-images-v4-no-intermediate-stops',
+  version:'science-flow-images-v5-final-collection',
   productionProfile:config.productionProfile,
   productionMode:config.visuals.productionMode,
   imageProductionSteps:stepCount,
   pauseAfterEachImageStep:false,
   continueAutomaticallyBetweenImageSteps:true,
+  finalFlowCollectionRequired:true,
   styleId:config.visuals.styleId,
   generatedAt:new Date().toISOString(),
   passed:errors.length===0,
@@ -170,5 +187,5 @@ if (errors.length) {
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} statische Bilder, ${distinctVisualTypes.size} Visual-Typen, ${stepCount} Bildschritte ohne Zwischenstopps, 0 Clips.`);
+console.log(`✓ Creative-QA bestanden: ${plan.scenes.length} statische Bilder, ${distinctVisualTypes.size} Visual-Typen, ${stepCount} Bildschritte ohne Zwischenstopps, Cover-Cleanup und finale Flow-Sammlung, 0 Clips.`);
 warnings.forEach((warning)=>console.warn(`⚠ ${warning}`));
