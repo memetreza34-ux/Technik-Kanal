@@ -4,11 +4,11 @@ Profil: **youtube-2min-v1** · 1920×1080 · 16:9 · ca. 2 Minuten
 
 Zentrale Frage: **Wie funktioniert ein Induktionsherd?**
 
-Status: Recherche, Story, 291-Wörter-Skript, Quellen, 15 diverse visuelle Beats, 15 englische Einzelprompts, Thumbnail-Prompt und Google-Flow-Plan sind vorbereitet.
+Status: Recherche, Story, 291-Wörter-Skript, Quellen, 15 visuelle Beats, Thumbnail-Plan und Google-Flow-Plan sind vorbereitet.
 
 ## Kernantwort
 
-Unter der Glaskeramik erzeugt eine mit hochfrequentem Wechselstrom gespeiste Kupferspule ein wechselndes Magnetfeld. Dieses Feld induziert Ströme im geeigneten Topfboden. Durch elektrische Verluste/Widerstand wird dort Wärme erzeugt. Deshalb wird bei Induktion vor allem der Topf selbst zum Wärmeerzeuger.
+Unter der Glaskeramik erzeugt eine mit hochfrequentem Wechselstrom gespeiste Kupferspule ein wechselndes Magnetfeld. Dieses Feld induziert Ströme im geeigneten Topfboden. Durch elektrischen Widerstand wird dort Wärme erzeugt. Deshalb wird bei Induktion vor allem der Topf selbst zum Wärmeerzeuger.
 
 ## Dramaturgie
 
@@ -18,51 +18,78 @@ Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff
 
 **Technical Editorial Explainer 2.5D**
 
-Die frühere visuelle Ausführung von Scientific Scene Explainer ist ersetzt. Der alte interne Stil-Identifier bleibt nur aus Kompatibilitätsgründen bestehen.
+Verbindliche Priorität für dieses Video:
 
-Konstant in allen 15 Bildern:
-- clean 2D/2.5D vector-like technical editorial rendering
-- vereinfachte, glaubwürdige Proportionen
-- matte Materialien
-- klare Kanten
-- dezente Gradients
-- weiche kontrollierte Schatten
-- konsistente Linienstärke
-- warmes Off-White / Graphit / gedeckte Industrietöne als Grundfamilie
-- technische Akzentfarben nur mit Bedeutung
-- kein Fotorealismus
-- keine echte Fotooptik
-- kein weißes Schulbuch-Infografik-Template
+> Jedes Bild erklärt den aktuellen gesprochenen Inhalt so einfach und direkt wie möglich.
+
+Nicht „schönes Bild zum Thema“, sondern **klare Illustration des aktuellen Satzes**.
+
+Regeln:
+- eine dominante Aussage pro Bild
+- minimale nötige Objekte
+- Hauptaussage in ungefähr 1–2 Sekunden erfassbar
+- 0–3 kurze deutsche Labels, wenn sie wirklich helfen
+- keine eingebrannten Untertitel
+- kein Fotorealismus / keine echte Fotooptik
+- keine weiße Schulbuchseite als Dauerlook
 - kein Pixar/Cartoon
 - kein Sci-Fi-HUD
 - keine generische KI-Kunst
+- eine andere Kameraperspektive allein zählt nicht als visuelle Vielfalt
 
-Die Darstellungsform darf wechseln: Umgebung, Cutaway, Makro, Vergleich, Draufsicht, Diagramm, Prozessdarstellung oder Zusammenfassung. Der **Style-Lock bleibt immer identisch**.
+Wenn benachbarte Beats praktisch dasselbe Bild benötigen würden, wird **Skript/Beat-Plan bzw. die Erklärform geändert**, nicht nur der Winkel.
 
-Alle Google-Flow-Prompts sind auf **Englisch** geschrieben. Sichtbarer Text im Bild bleibt ausschließlich **Deutsch**.
+## Erste Szene = Fortsetzung des Covers
+
+Nach der Auswahl des Covers:
+
+- Szene 01 übernimmt bevorzugt dessen **zentrale Bildidee / Hauptmotiv**
+- große Thumbnail-Schlagzeile wird entfernt
+- nur die Elemente bleiben, die den Hook erklären
+- Szene 01 soll wie die natürliche Fortsetzung des Covers wirken
+
+Das Cover ist danach keine starre Farb-/Layoutvorlage für alle weiteren Szenen.
+
+## Visuelle Folge
+
+Die 15 Bilder sind bewusst als unterschiedliche Erklärformen geplant:
+
+1. Cover-Fortsetzung / Hook
+2. klassischer Wärmeweg als einfacher Querschnitt
+3. zwei vereinfachte Energiepfade im Vergleich
+4. isolierte Explosionsdarstellung aus Glas, Spule, Elektronik
+5. einzelne Spule + wechselndes Magnetfeld
+6. Minimal-Querschnitt aus Topfboden, Glas, Spule
+7. Material-Makro mit Wirbelströmen
+8. Materialdetail Widerstand → Wärme
+9. vereinfachte Thermodarstellung Topfboden/Glas
+10. Kochgeschirr-Materialreihe
+11. Magnettest-Nahaufnahme
+12. Vorher/Nachher: Topf aufgesetzt / Topf weg
+13. Top-down Topferkennung
+14. einfache Restwärme-Darstellung
+15. reduzierte Vier-Schritt-Zusammenfassung
+
+Damit soll verhindert werden, dass 10–15 Bilder wie Varianten desselben Herd-/Topf-Bildes aussehen.
 
 ## Google Flow
 
 1. drei Thumbnail-Kandidaten erzeugen
-2. danach **STOPP und Nutzerauswahl**
+2. danach STOPP und Nutzerauswahl
 3. gewähltes Cover als `00-thumbnail-final` übernehmen
-4. die **zwei nicht gewählten Cover löschen oder aus der finalen Sammlung entfernen**
-5. danach genau 5 Bildschritte
-6. pro Schritt genau 3 Bilder, streng einzeln nacheinander erzeugen, prüfen, auswählen und sofort korrekt benennen
-7. **keine Zwischenstopps oder Rückfragen zwischen Bildschritt 1–5**
-8. Bildschritt 1 → automatisch 2 → 3 → 4 → 5
-9. nach Bildschritt 5 Fehlversuche, Zwischenstände, doppelte Bilder und verworfene Varianten entfernen
-10. `00-thumbnail-final` + alle 15 finalen Szenenbilder in **genau einer finalen Google-Flow-Sammlung / einem finalen Ordner** zusammenführen
-11. finaler Sammlungsname: `induktionsherd-video-assets-final`
-12. erst wenn nur finale Assets übrig sind, den vollständigen Abschluss melden
+4. zwei nicht gewählte Cover entfernen
+5. Szene 01 aus dem gewählten Cover-Hauptmotiv ableiten
+6. danach genau 5 Bildschritte mit je 3 Bildern
+7. jedes Bild einzeln erzeugen, prüfen und korrekt benennen
+8. nach jedem Bild mit dem vorherigen finalen Bild vergleichen; bei zu ähnlicher Hauptidee andere Erklärform verwenden
+9. keine Zwischenstopps zwischen Bildschritt 1–5
+10. nach Bildschritt 5 Fehlversuche, Zwischenstände, doppelte Bilder und verworfene Varianten entfernen
+11. `00-thumbnail-final` + 15 finale Szenenbilder in genau einer finalen Flow-Sammlung bündeln
+12. finaler Sammlungsname: `induktionsherd-video-assets-final`
 13. ausschließlich statische Bilder
 14. keine eingebrannten Untertitel
 
-Der einzige Freigabepunkt ist die Auswahl des Covers. Danach wird die komplette Bildproduktion und Bereinigung in einem Lauf fertiggestellt.
-
 ## Phase 2 – Nutzer legt die finalen Dateien ab
-
-Nach der Flow-Erzeugung legt der Nutzer die akzeptierten Dateien selbst in die Projektordner:
 
 - Szenenbilder: `02-bilder/images/<scene-id>/`
 - finales Thumbnail: `02-bilder/thumbnail/`
@@ -72,13 +99,9 @@ Diese Dateien sind die einzige verbindliche Quelle für die Montage.
 
 ## Phase 3 – Antigravity / KI-Agent
 
-Antigravity, Codex oder ein anderer Montage-Agent darf **keine Bilder selbst erzeugen, regenerieren, suchen oder ersetzen**.
+Phase 3 darf **keine Bilder erzeugen, regenerieren, suchen oder ersetzen**.
 
-Er verwendet ausschließlich die Dateien aus den Phase-2-Ordnern.
-
-Wenn ein benötigtes Bild fehlt oder mehrere Kandidaten nicht eindeutig markiert sind: **STOPP und konkret melden. Kein Platzhalter, keine Web-Suche, keine eigene Generierung, kein automatisches Überspringen.**
-
-Phase 3 darf vorhandene Dateien prüfen, in Runtime-/Render-Ordner kopieren, Voice synchronisieren, harte Schnitte/SFX anwenden, rendern und QA durchführen.
+Er verwendet ausschließlich die vorhandenen Phase-2-Dateien. Fehlt ein Bild oder ist die Auswahl nicht eindeutig: STOPP und konkret melden. Keine Platzhalter, keine Web-Suche, kein automatisches Überspringen.
 
 ## Finale Asset-Struktur
 
@@ -101,10 +124,4 @@ Die finale Flow-Sammlung enthält ausschließlich:
 - `14-deepening-final`
 - `15-payoff-final`
 
-Nicht in der finalen Sammlung: die zwei verworfenen Cover, Testbilder, Fehlversuche, Zwischenversionen oder doppelte Varianten.
-
-## Visual Diversity
-
-Die 15 Beats wechseln bewusst zwischen vereinfachter Küche, Querschnitt, Vergleich, Spulen-Konzept, Magnetfeld-Kopplung, Material-Makro, Thermodarstellung, Kochgeschirr-Reihe, Magnettest, Vorher/Nachher, Draufsicht, Energieweg und reduzierter Abschlusskette.
-
-Das Thumbnail ist nur Qualitäts-/Stilreferenz. Es darf nicht als starre Farb- oder Kompositionsvorlage für die Szenen kopiert werden.
+Nicht enthalten: verworfene Cover, Testbilder, Fehlversuche, Zwischenversionen oder doppelte Varianten.
