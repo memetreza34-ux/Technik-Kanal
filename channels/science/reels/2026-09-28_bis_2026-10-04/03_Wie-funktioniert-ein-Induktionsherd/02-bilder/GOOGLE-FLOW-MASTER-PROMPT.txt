@@ -43,8 +43,9 @@ Erzeuge zuerst nur diese drei Thumbnail-Kandidaten und stoppe danach.
 
 STOPP. AUF DIE AUSDRÜCKLICHE THUMBNAIL-AUSWAHL DES NUTZERS WARTEN.
 
-PHASE 2 – FÜNF BILDSCHRITTE
----------------------------
+PHASE 2 – FÜNF BILDSCHRITTE · OHNE ZWISCHENSTOPPS
+--------------------------------------------------
+Nach der Cover-Auswahl keine weiteren Stopps, Rückfragen oder Freigaben. Bildschritt 1 vollständig abarbeiten und danach automatisch direkt mit Bildschritt 2, 3, 4 und 5 fortfahren. Erst nach Bildschritt 5 den Gesamtabschluss melden.
 
 BILDSCHRITT 1/5 · 01-hook BIS 03-context
 ====================================================
@@ -74,7 +75,7 @@ Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustr
 
 Finaldatei: 03-context-final.png
 
-STOPP NACH BILDSCHRITT 1. Fertige Bilder melden und auf Freigabe für Bildschritt 2 warten.
+BILDSCHRITT 1 ABGESCHLOSSEN → OHNE STOPP DIREKT MIT BILDSCHRITT 2 FORTFAHREN.
 
 BILDSCHRITT 2/5 · 04-foundation BIS 06-mechanism
 ====================================================
@@ -104,7 +105,7 @@ Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustr
 
 Finaldatei: 06-mechanism-final.png
 
-STOPP NACH BILDSCHRITT 2. Fertige Bilder melden und auf Freigabe für Bildschritt 3 warten.
+BILDSCHRITT 2 ABGESCHLOSSEN → OHNE STOPP DIREKT MIT BILDSCHRITT 3 FORTFAHREN.
 
 BILDSCHRITT 3/5 · 07-mechanism BIS 09-mechanism
 ====================================================
@@ -134,7 +135,7 @@ Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustr
 
 Finaldatei: 09-mechanism-final.png
 
-STOPP NACH BILDSCHRITT 3. Fertige Bilder melden und auf Freigabe für Bildschritt 4 warten.
+BILDSCHRITT 3 ABGESCHLOSSEN → OHNE STOPP DIREKT MIT BILDSCHRITT 4 FORTFAHREN.
 
 BILDSCHRITT 4/5 · 10-deepening BIS 12-deepening
 ====================================================
@@ -164,7 +165,7 @@ Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustr
 
 Finaldatei: 12-deepening-final.png
 
-STOPP NACH BILDSCHRITT 4. Fertige Bilder melden und auf Freigabe für Bildschritt 5 warten.
+BILDSCHRITT 4 ABGESCHLOSSEN → OHNE STOPP DIREKT MIT BILDSCHRITT 5 FORTFAHREN.
 
 BILDSCHRITT 5/5 · 13-deepening BIS 15-payoff
 ====================================================
@@ -194,4 +195,4 @@ Format 16:9, 1920×1080. Hochwertige wissenschaftliche Editorial-/Museum-Illustr
 
 Finaldatei: 15-payoff-final.png
 
-BILDSCHRITT 5 ABGESCHLOSSEN. Szenenbild-Produktion vollständig.
+BILDSCHRITT 5 ABGESCHLOSSEN. Jetzt erst Gesamtabschluss melden: alle fünf Bildschritte und alle 15 Szenenbilder sind vollständig fertig.
