@@ -58,6 +58,8 @@ Nach jedem vollständigen Bildschritt:
 
 ## Verbindlicher Diversity-Check vor jedem Bild
 
+**Visuelle Vielfalt ist Pflicht.** Die fünf Bildschritte dürfen nicht aus Varianten derselben Komposition bestehen.
+
 Vor dem Generieren eines Beats immer das vorherige und nächste geplante Bild prüfen.
 
 Fragen:
