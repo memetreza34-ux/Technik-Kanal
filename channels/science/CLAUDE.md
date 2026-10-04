@@ -114,8 +114,8 @@ Wichtig: **Darstellungsform, Perspektive und Umgebung dürfen wechseln; Renderin
 
 ### Labels und Beschriftungen
 
-- normale Szenen bevorzugt 0–2 kurze Labels
-- technische Diagramme dürfen bei echtem Erklärnutzen mehr kurze Labels verwenden
+- normale Szenen bevorzugt 0–1 kurze Labels, maximal 2
+- technische Diagramme dürfen bei echtem Erklärnutzen bis zu 3 kurze Labels verwenden
 - keine große Überschrift in normalen Szenen
 - dünne Leader-Lines
 - kleine ruhige Label-Flächen
@@ -179,7 +179,7 @@ Phase 3 darf ausschließlich die in Phase 2 vom Nutzer abgelegten Dateien lesen,
 
 **Fehlt ein Asset oder ist die Auswahl mehrdeutig: STOPP und fehlende/unklare Datei melden. Niemals selbst Ersatz erzeugen.**
 
-## Sprache und Untertitel
+## Sprache, Captions und Export
 
 - Voice-over Deutsch
 - sichtbarer Bildtext Deutsch
@@ -187,6 +187,9 @@ Phase 3 darf ausschließlich die in Phase 2 vom Nutzer abgelegten Dateien lesen,
 - **keine eingebrannten Untertitel im finalen Video**
 - Wortzeiten dürfen intern für Synchronisation genutzt werden
 - kurze wissenschaftliche Labels innerhalb der Bilder bleiben erlaubt
+- es gibt **keinen separaten `03-caption`-Ordner**
+- `social-caption.md`, Wortzeiten, Caption-JSON, Transcript sowie optionale SRT/VTT liegen **direkt in `05-export/`**
+- Unterordner `05-export/video/` ist nur für die gerenderten Videodateien
 
 ## Remotion
 
@@ -202,7 +205,8 @@ Remotion/Phase 3 darf ausschließlich bereits vorhandene Phase-2-Bilder verwende
 - finale Voice ist Zeitquelle
 - lokale Wortzeiten mit `whisper.cpp`
 - Wortzeiten dienen Bildwechseln/Timing, nicht eingebrannten Untertiteln
+- erzeugte Wortzeit-/Caption-Dateien werden direkt in `05-export/` geschrieben
 
 ## Produktionsregel
 
-Erst Thema → Recherche → Story → Skript → **Visual-Diversity-Check** → Beats → **englische Prompts mit konstantem Technical-Editorial-Style-Lock** → Flow-Plan → 3 Cover-Kandidaten → Cover-Auswahl → **2 verworfene Cover entfernen** → fünf Bildschritte ohne Zwischenstopps komplett abarbeiten → finale Assets korrekt benennen → **Phase 2: Nutzer legt alle akzeptierten finalen Dateien in die vorgesehenen Projektordner** → **Phase 3: Antigravity/KI-Agent verwendet ausschließlich diese vorhandenen Dateien, erzeugt niemals Ersatz** → Voice → Timing → Remotion → QA.
+Erst Thema → Recherche → Story → Skript → **Visual-Diversity-Check** → Beats → **englische Prompts mit konstantem Technical-Editorial-Style-Lock** → Flow-Plan → 3 Cover-Kandidaten → Cover-Auswahl → **2 verworfene Cover entfernen** → fünf Bildschritte ohne Zwischenstopps komplett abarbeiten → finale Assets korrekt benennen → **Phase 2: Nutzer legt alle akzeptierten finalen Dateien in die vorgesehenen Projektordner** → **Phase 3: Antigravity/KI-Agent verwendet ausschließlich diese vorhandenen Dateien, erzeugt niemals Ersatz** → Voice → Timing → Remotion → QA → Caption-/Timing-/Social-Dateien direkt nach `05-export/`.

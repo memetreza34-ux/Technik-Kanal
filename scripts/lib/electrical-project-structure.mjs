@@ -3,6 +3,7 @@ import path from 'node:path';
 
 // Interne ELECTRICAL_* Namen bleiben vorerst aus Rückwärtskompatibilität bestehen.
 // Der Vertrag selbst ist kanalweit und gilt für neue Science-Videos.
+// Caption-/Timing-Dateien liegen direkt in 05-export; es gibt keinen separaten Caption-Ordner.
 export const ELECTRICAL_REEL_DIRECTORIES = [
   '01-script-audio',
   '01-script-audio/audio',
@@ -11,7 +12,6 @@ export const ELECTRICAL_REEL_DIRECTORIES = [
   '02-bilder/images',
   '02-bilder/prompts',
   '02-bilder/thumbnail',
-  '03-caption',
   '04-pdf',
   '05-export',
   '05-export/video',
@@ -25,7 +25,7 @@ export const ELECTRICAL_REQUIRED_CONTENT_FILES = [
   '01-script-audio/script-fliesstext.txt',
   '01-script-audio/voiceover.txt',
   '02-bilder/thumbnail/README.md',
-  '03-caption/social-caption.md',
+  '05-export/social-caption.md',
   '04-pdf/inhalt.md',
   '06-projektdateien/motion-design.md',
   '06-projektdateien/production-status.json',
@@ -35,8 +35,9 @@ export const ELECTRICAL_REQUIRED_CONTENT_FILES = [
 ];
 
 export const ELECTRICAL_GENERATED_FILES = [
-  '03-caption/word-timestamps.json',
-  '03-caption/voiceover-final.captions.json',
+  '05-export/word-timestamps.json',
+  '05-export/voiceover-final.captions.json',
+  '05-export/transcript-final.txt',
   '05-export/voiceover-final.srt',
   '05-export/voiceover-final.vtt',
   '06-projektdateien/asset-manifest.json',
@@ -63,10 +64,11 @@ export const electricalProjectPaths = (root) => ({
   thumbnailDir: path.join(root, '02-bilder/thumbnail'),
   prompts: path.join(root, '02-bilder/bildprompts.md'),
   flowMaster: path.join(root, '02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt'),
-  captionsDir: path.join(root, '03-caption'),
-  socialCaption: path.join(root, '03-caption/social-caption.md'),
-  captionsFinal: path.join(root, '03-caption/voiceover-final.captions.json'),
-  wordTimestamps: path.join(root, '03-caption/word-timestamps.json'),
+  // Kompatibilitätsalias: Caption-Dateien liegen direkt im Exportbereich.
+  captionsDir: path.join(root, '05-export'),
+  socialCaption: path.join(root, '05-export/social-caption.md'),
+  captionsFinal: path.join(root, '05-export/voiceover-final.captions.json'),
+  wordTimestamps: path.join(root, '05-export/word-timestamps.json'),
   pdfDir: path.join(root, '04-pdf'),
   learningSheet: path.join(root, '04-pdf/inhalt.md'),
   exportDir: path.join(root, '05-export'),

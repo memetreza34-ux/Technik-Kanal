@@ -51,16 +51,17 @@ export const projectPaths = (projectArg) => {
     audioDir: path.join(root, '01-script-audio/audio'),
     sfxDir: path.join(root, '01-script-audio/sfx'),
     imagesDir: path.join(root, '02-bilder/images'),
-    captionsDir: path.join(root, '03-caption'),
     pdfDir: path.join(root, '04-pdf'),
     exportDir: path.join(root, '05-export'),
+    // Kompatibilitätsalias: Caption-/Timing-Dateien liegen direkt in 05-export.
+    captionsDir: path.join(root, '05-export'),
     projectFilesDir: path.join(root, '06-projektdateien'),
     scenePlan: path.join(root, '06-projektdateien/scene-plan.json'),
     sfxEvents: path.join(root, '06-projektdateien/sfx-events.json'),
     assetManifest: path.join(root, '06-projektdateien/asset-manifest.json'),
     readinessReport: path.join(root, '06-projektdateien/readiness-report.json'),
-    wordTimestamps: path.join(root, '03-caption/word-timestamps.json'),
-    captionsJson: path.join(root, '03-caption/voiceover-final.captions.json'),
+    wordTimestamps: path.join(root, '05-export/word-timestamps.json'),
+    captionsJson: path.join(root, '05-export/voiceover-final.captions.json'),
     captionsSrt: path.join(root, '05-export/voiceover-final.srt'),
     captionsVtt: path.join(root, '05-export/voiceover-final.vtt'),
     workDir: path.join(root, '06-projektdateien/.work'),
@@ -69,7 +70,7 @@ export const projectPaths = (projectArg) => {
 };
 
 export const validateProjectStructure = (paths) => {
-  const requiredDirectories = [paths.scriptAudio, paths.audioDir, paths.imagesDir, paths.captionsDir, paths.exportDir, paths.projectFilesDir];
+  const requiredDirectories = [paths.scriptAudio, paths.audioDir, paths.imagesDir, paths.exportDir, paths.projectFilesDir];
   const missing = requiredDirectories.filter((dir) => !fs.existsSync(dir) || !fs.statSync(dir).isDirectory());
   if (missing.length) throw new Error(`Projektstruktur unvollständig:\n${missing.map((file) => `- ${file}`).join('\n')}`);
   if (!fs.existsSync(paths.scenePlan)) throw new Error(`Szenenplan fehlt: ${paths.scenePlan}`);

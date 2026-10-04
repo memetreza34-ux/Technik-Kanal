@@ -15,6 +15,7 @@ Das aktive Profil ist **`youtube-2min-v1`**:
 - **nur statische Szenenbilder** aus Google Flow
 - harte Schnitte
 - Voice 1,10× mit Loudness-Normalisierung
+- finale Videos ohne eingebrannte Untertitel
 
 ## Google Flow
 
@@ -37,7 +38,7 @@ Nicht automatisch ein Satz pro Bild. Eine verständliche visuelle Aussage entspr
 
 ## Bildwelt
 
-Aktive Bildwelt: **Scientific Scene Explainer v1**.
+Aktive Bildwelt: **Technical Editorial Explainer 2.5D**.
 
 > Nicht einfach ein Bild vom Thema erzeugen, sondern eine visuelle Szene bauen, die die konkrete Aussage des Beats erklärt.
 
@@ -51,9 +52,23 @@ Thumbnail ist separat von Bild 01:
 - ein Gewinner
 - muss dasselbe Versprechen wie Titel und Hook geben
 
+## Export / Captions
+
+Es gibt **keinen separaten `03-caption`-Ordner**. Alles, was zu Caption, Timing oder Veröffentlichung gehört, liegt direkt in `05-export/`:
+
+- `social-caption.md`
+- `word-timestamps.json`
+- `voiceover-final.captions.json`
+- `transcript-final.txt`
+- `voiceover-final.srt`
+- `voiceover-final.vtt`
+- final gerenderte Videos unter `05-export/video/`
+
+Caption-/Timing-Dateien dürfen für Synchronisation oder externe Plattform-Untertitel genutzt werden. Sie werden **nicht in das finale Video eingebrannt**.
+
 ## Remotion-Rolle
 
-Remotion darf nur statische Bilder zeitlich anordnen, harte Schnitte setzen, Voice/Captions/SFX abspielen und exportieren. Wissenschaftliche Visualisierungen und Bewegung werden nicht in Remotion erzeugt.
+Remotion darf nur statische Bilder zeitlich anordnen, harte Schnitte setzen, Voice/SFX abspielen und exportieren. Caption-/Wortzeitdaten dürfen intern fürs Timing gelesen werden, aber Remotion rendert keine Untertitel in das finale Video. Wissenschaftliche Visualisierungen und Bewegung werden nicht in Remotion erzeugt.
 
 ## Befehle
 
