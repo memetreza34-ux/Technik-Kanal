@@ -1,6 +1,8 @@
-Create a cutaway of the inside wall of a refrigerator showing one evaporator surface or coil. Show a small amount of heat moving from the refrigerator interior toward the evaporator. Add one German label: “Verdampfer”. Keep food and shelves minimal and secondary. Use at most one heat arrow.
+Create a cutaway of the inside wall of a refrigerator showing one clearly recognizable evaporator surface or coil. Show a small amount of heat moving from the refrigerator interior toward the evaporator with one restrained heat arrow. Keep food and shelves minimal and secondary. The evaporator itself must be visually emphasized through shape and placement, not through text.
+
+Do not render any visible text, label box, title, scene number, beat number, section name or production metadata in this image. No blank callout boxes.
 
 STYLE LOCK — Technical Editorial Explainer 2.5D
 Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
-DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
-16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Use no more than one heat arrow. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. No visible text. No logos or watermarks. No people.
