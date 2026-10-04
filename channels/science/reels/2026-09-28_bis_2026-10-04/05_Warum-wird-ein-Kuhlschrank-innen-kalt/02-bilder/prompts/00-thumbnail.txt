@@ -1,12 +1,10 @@
-Create exactly three clearly different YouTube thumbnail candidates in 1280×720 / 16:9 for the video “Warum fliegt die Sicherung raus?”.
+Create exactly three clearly different YouTube thumbnail candidates, 1280x720, 16:9, for the German science video “Warum wird ein Kühlschrank innen kalt?”.
+
+Candidate A: one large simplified refrigerator cutaway, blue/cool inside, orange heat leaving at the back. German headline only: “WOHIN GEHT DIE WÄRME?”
+Candidate B: one refrigerator with the back condenser area visibly warm and the inside visibly cool. German headline only: “WIE MACHT ER KALT?”
+Candidate C: a simple side cutaway showing a heat path from inside to outside. German headline only: “KÄLTE ODER WÄRME?”
+
+Keep each candidate extremely simple and readable in one glance: one dominant object, strong contrast, no small diagrams, no extra labels, no people, no English visible text, no logos or watermarks.
 
 STYLE LOCK — Technical Editorial Explainer 2.5D
-Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects. Keep every scene simple: one dominant explanatory idea, only necessary objects. Visible text only in German and only when requested. No subtitles, logos or watermarks.
-
-Candidate A: a large household miniature circuit breaker in the tripped position, with a kettle and fan heater suggested in the background. Strong simple composition. German headline only: “WARUM FLIEGT SIE RAUS?”
-
-Candidate B: a clean cutaway of one circuit breaker showing the thermal bimetal and magnetic trip as two distinct internal mechanisms. German headline only: “WAS PASSIERT DA DRIN?”
-
-Candidate C: a clearly overloaded household circuit with several high-power appliances connected, leading visually toward a circuit breaker that has just tripped. German headline only: “ZU VIEL STROM?”
-
-Keep each candidate understandable in one glance. No people. No clutter. No English visible text.
+Use clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.

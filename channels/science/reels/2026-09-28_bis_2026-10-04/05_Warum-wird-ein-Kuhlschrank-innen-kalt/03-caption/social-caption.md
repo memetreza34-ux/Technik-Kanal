@@ -1,5 +1,7 @@
-# YouTube-Beschreibung – Entwurf
+# YouTube-Beschreibung
 
-Warum fliegt ein Sicherungsautomat eigentlich raus? Das Video zeigt einfach den Unterschied zwischen Überlast und Kurzschluss und erklärt, warum im Leitungsschutzschalter Bimetall und Magnetauslöser zusammenarbeiten.
+**Warum wird ein Kühlschrank innen kalt?**
 
-Keine eingebrannten Untertitel im Video.
+Warum ist es im Kühlschrank kalt, während hinten Wärme abgegeben wird? Dieses Video erklärt den Kältekreislauf mit Kompressor, Wärmeabgabe, Druckabfall und Verdampfer einfach und visuell.
+
+Keine eingebrannten Video-Untertitel.

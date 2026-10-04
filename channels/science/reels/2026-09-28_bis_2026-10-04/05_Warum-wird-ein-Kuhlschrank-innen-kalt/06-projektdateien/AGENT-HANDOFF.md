@@ -1,22 +1,10 @@
-# Phase-2 → Phase-3 Handoff
+# Phase 3 – Agent-Handoff
 
-Phase 2 wird vom Nutzer kontrolliert.
+Phase 3 darf keine visuellen Assets selbst erzeugen, regenerieren, suchen oder ersetzen.
 
-Finale Assets werden abgelegt unter:
+Zulässige Quellen:
 - `02-bilder/images/<scene-id>/`
 - `02-bilder/thumbnail/`
 - `01-script-audio/audio/`
 
-Phase 3 darf ausschließlich diese vorhandenen Dateien verwenden.
-
-## Verboten in Phase 3
-
-- Bilder erzeugen oder regenerieren
-- Google Flow zur Bilderzeugung starten
-- Bilder im Web suchen
-- Platzhalter erzeugen
-- fehlende Assets ersetzen
-- Szenen überspringen
-- KI-Videoclips erzeugen
-
-Fehlt ein Asset oder ist die Auswahl mehrdeutig: **STOPP und konkret melden.**
+Fehlt ein Asset oder ist die Auswahl mehrdeutig: stoppen und den fehlenden/unklaren Dateinamen melden. Keine Platzhalter, keine Web-Suche, keine Ersatzbilder, keine übersprungenen Szenen, keine KI-Clips.
