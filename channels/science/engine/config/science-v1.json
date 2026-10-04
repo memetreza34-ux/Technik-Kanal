@@ -91,7 +91,7 @@
       "handOnObjectPrimaryMotifMaxPerVideo": 3,
       "minimumDistinctVisualTypesPerImageStepPreferred": 3,
       "largeGeneratedHeadlineInSceneImagesAllowed": false,
-      "preferredLabelsMax": 1,
+      "preferredLabelsMax": 2,
       "blankOrFeaturelessVisibleFacesForbidden": true,
       "thumbnailReferenceScope": "quality-and-illustration-style-only-not-layout-or-palette"
     },
