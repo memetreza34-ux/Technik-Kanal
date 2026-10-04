@@ -16,11 +16,36 @@ Vor jedem Prompt:
 1. aktuelle Voice-over-Kernaussage in einem Satz festhalten
 2. genau ein Hauptmotiv bestimmen
 3. die einfachste passende Erklärform wählen
-4. 0–3 kurze deutsche Labels nur dann einsetzen, wenn sie Verständnis sparen
+4. Informationsbudget festlegen
+5. Text nur einsetzen, wenn er das Verständnis wirklich spart
 
 Ein schönes Bild, das den gesprochenen Satz nicht klar erklärt, wird verworfen.
 
 **Nur die Perspektive zu ändern zählt nicht als echte visuelle Vielfalt.** Wenn zwei benachbarte Beats praktisch dasselbe Bild brauchen, muss zuerst Skript/Beat-Plan verbessert werden.
+
+## Verbindlicher Density-Lock
+
+Normale Szenen:
+- genau eine dominante Erkläridee
+- bevorzugt ein Hauptobjekt
+- höchstens 3 wichtige visuelle Elemente
+- bevorzugt 0–1 kurzes deutsches Label
+- absolut höchstens 2 Labels
+- höchstens 2 Pfeile
+- höchstens 2 Panels
+- keine große Szenenüberschrift
+- keine ganzen Textsätze
+- keine schwebenden Infoboxen
+- keine sekundären Mini-Diagramme
+- nicht gleichzeitig viele Labels + Pfeile + Boxen + Zusatzgrafik
+
+Vergleich/Diagramm/Zusammenfassung:
+- höchstens 4 wichtige visuelle Elemente
+- höchstens 3 kurze Labels
+- höchstens 2 Panels
+- weiterhin genau eine zentrale Aussage
+
+Wenn diese Grenzen nicht reichen: **nicht quetschen**. Beat vereinfachen oder in zwei visuelle Aussagen teilen.
 
 ## Eine Masterdatei pro Video
 
@@ -28,6 +53,18 @@ Pflicht:
 - `02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt`
 - `06-projektdateien/flow-plan.json`
 - Einzelprompts unter `02-bilder/prompts/`
+
+Jeder Beat in `flow-plan.json` braucht zusätzlich ein `informationBudget` mit:
+- `densityClass`
+- `oneDominantIdea`
+- `maxLabels`
+- `maxPrimaryObjects`
+- `maxPanels`
+- `maxArrows`
+- `largeHeadlineAllowed=false`
+- `fullSentenceTextAllowed=false`
+
+Ohne gültiges Informationsbudget darf der Flow-Masterprompt nicht gebaut werden.
 
 ## Phase 1 – Thumbnail zuerst
 
@@ -46,6 +83,7 @@ Szene 01 soll **bevorzugt das Hauptmotiv des ausgewählten Covers fortführen**.
 - gleiche zentrale Bildidee / gleiches Hauptmotiv
 - große Thumbnail-Schlagzeile aus der Videoszene entfernen
 - nur die Elemente behalten, die den ersten gesprochenen Satz erklären
+- Cover-Deko entfernen, wenn sie für Szene 01 nicht nötig ist
 - Szene 01 soll wie die natürliche Fortsetzung des Covers wirken
 - Ausnahme nur, wenn das Cover den ersten Voice-over-Satz fachlich nicht klar darstellen kann
 
@@ -74,7 +112,9 @@ Beispiel bei 18 Bildern:
 - Bilder streng einzeln nacheinander erzeugen
 - vor jedem Bild den gesprochenen Satz / Beat prüfen
 - nur die minimale nötige Bildinformation zeigen
+- Informationsbudget des Beats einhalten
 - jedes Bild prüfen und das beste Ergebnis auswählen
+- Bild verwerfen, wenn es überladen wirkt oder mehrere visuelle Zentren hat
 - mit dem vorherigen finalen Bild vergleichen
 - wenn Hauptkomposition/Hauptidee zu ähnlich ist: andere Erklärform wählen, nicht nur anderen Winkel
 - das finale Bild sofort korrekt benennen
@@ -137,19 +177,20 @@ Fehlt ein benötigtes Asset oder ist die Auswahl nicht eindeutig: **STOPP und ko
 
 Details: `AGENT-HANDOFF.md`.
 
-## Verbindlicher Erklär- und Diversity-Check vor jedem Bild
+## Verbindlicher Erklär-, Density- und Diversity-Check vor jedem Bild
 
 Vor jedem Beat prüfen:
 1. Erklärt dieses Bild exakt den aktuellen gesprochenen Inhalt?
 2. Kann man die Hauptaussage in etwa 1–2 Sekunden erkennen?
 3. Gibt es nur eine dominante Erkläridee?
-4. Ist die Hauptkomposition deutlich anders als beim vorherigen Bild?
-5. Ist der primäre Bildanker anders oder wirklich anders erklärt?
-6. Würde eine kurze deutsche Beschriftung das Verständnis verbessern?
-7. Wird unnötiger Text/unnötige Technik vermieden?
+4. Bleibt die Szene innerhalb ihres Informationsbudgets?
+5. Ist die Hauptkomposition deutlich anders als beim vorherigen Bild?
+6. Ist der primäre Bildanker anders oder wirklich anders erklärt?
+7. Würde eine kurze deutsche Beschriftung das Verständnis verbessern?
+8. Wird unnötiger Text/unnötige Technik vermieden?
 
-Wenn 1–3 nicht erfüllt sind: Prompt vereinfachen.
-Wenn 4–5 nicht erfüllt sind: Erklärform wechseln oder Skript/Beat-Plan ändern.
+Wenn 1–4 nicht erfüllt sind: Prompt vereinfachen oder Beat teilen.
+Wenn 5–6 nicht erfüllt sind: Erklärform wechseln oder Skript/Beat-Plan ändern.
 
 Ziel:
 - mindestens 5 unterschiedliche Darstellungsformen im Video
@@ -169,9 +210,10 @@ Wenn Menschen vorkommen:
 ## Text in Szenenbildern
 
 - sichtbarer Text nur Deutsch
-- normale Szenen meist 0–3 kurze Labels
-- Diagramme/Schaltpläne ausnahmsweise bis 5
+- normale Szenen bevorzugt 0–1, maximal 2 kurze Labels
+- Vergleich/Diagramm/Zusammenfassung maximal 3 kurze Labels
 - keine Textwand
+- keine ganzen Erklärungssätze
 - große Überschriften primär im Thumbnail
 - keine eingebrannten Untertitel
 - Labels direkt am erklärten Objekt platzieren
@@ -193,7 +235,7 @@ Alle Bilder folgen `BILDWELT.md` und `LONGFORM.md`.
 
 Leitregel:
 
-> Nicht einfach ein Bild vom Thema erzeugen. Den aktuellen gesprochenen Satz mit der einfachsten passenden Illustration erklären.
+> Nicht einfach ein Bild vom Thema erzeugen. Den aktuellen gesprochenen Satz mit der einfachsten passenden Illustration erklären — mit möglichst wenig Information im Bild.
 
 ## Remotion-Grenze
 
@@ -211,8 +253,9 @@ Vor Bilderzeugung müssen fertig sein:
 3. finales Skript
 4. Visualisierbarkeitsprüfung des Skripts
 5. visuelle Beats
-6. Einzelprompts
-7. `flow-plan.json` mit 5 Schritten, Visual-Typ/Primärmotiv und Final-Collection-Regeln
-8. `GOOGLE-FLOW-MASTER-PROMPT.txt`
+6. Informationsbudget pro Beat
+7. Einzelprompts
+8. `flow-plan.json` mit 5 Schritten, Visual-Typ, Primärmotiv, `informationBudget` und Final-Collection-Regeln
+9. `GOOGLE-FLOW-MASTER-PROMPT.txt`
 
 **Freigabepunkt ist nur nach den drei Thumbnail-Kandidaten. Nach der Cover-Auswahl beginnt Szene 01 bevorzugt mit dem Cover-Hauptmotiv; danach werden Bildschritt 1 bis 5 ohne Zwischenstopp fertiggestellt. Der Nutzer legt die akzeptierten Assets in Phase 2 ab; Phase 3 montiert ausschließlich diese vorhandenen Dateien.**
