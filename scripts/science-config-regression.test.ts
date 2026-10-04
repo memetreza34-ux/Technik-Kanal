@@ -12,6 +12,7 @@ describe('science config regression', () => {
     expect(config.script.words).toEqual({min:230,ideal:300,max:370});
     expect(config.script.narrativeStructure).toEqual(['hook','context','foundation','mechanism','deepening','payoff']);
     expect(config.script.rewriteWhenThreeAdjacentBeatsWouldLookSimilar).toBe(true);
+    expect(config.script.splitBeatWhenImageBudgetWouldBeExceeded).toBe(true);
     expect(config.visuals.beats).toEqual({min:12,ideal:20,max:28});
     expect(config.topicScope.identity).toBe('alltagswissenschaft-und-technik');
     expect(config.topicScope.audience).toBe('jugendliche-und-junge-erwachsene');
@@ -25,6 +26,23 @@ describe('science config regression', () => {
     expect(config.visuals.generatedImageTextPolicy).toBe('controlled-german-only');
     expect(config.visuals.visibleImageLanguage).toBe('de');
     expect(config.visuals.thumbnail).toEqual({required:true,width:1280,height:720,candidateCount:3});
+    expect(config.visuals.informationDensityPolicy).toBe('strict-minimum-necessary');
+    expect(config.visuals.informationBudget).toMatchObject({
+      oneDominantIdeaRequired:true,
+      normalScenePreferredLabelsMax:1,
+      normalSceneHardLabelsMax:2,
+      diagramComparisonSummaryLabelsMax:3,
+      normalScenePrimaryObjectsMax:3,
+      diagramComparisonSummaryPrimaryObjectsMax:4,
+      panelsMax:2,
+      arrowsMax:2,
+      annotationSystemsMax:1,
+      fullSentenceTextAllowed:false,
+      largeSceneHeadlineAllowed:false,
+      floatingInfoBoxesPreferredMax:0,
+      splitBeatWhenBudgetExceeded:true,
+      coverExemptFromSceneDensityBudget:true,
+    });
     expect(config.visuals.diversity).toMatchObject({
       minimumDistinctVisualTypesPerVideo:5,
       sameCompositionMaxConsecutive:1,
