@@ -1,0 +1,33 @@
+# Sprechtext
+
+## Hook
+
+Du schaltest Wasserkocher und Heizlüfter ein – plötzlich klickt es, und ein Teil der Wohnung ist dunkel. Warum schaltet der Sicherungsautomat ab?
+
+## Kontext
+
+Ein Leitungsschutzschalter überwacht den Strom in einem Stromkreis. Fließt mehr Strom, als Leitung und Schalter dauerhaft vertragen, schützt er die Leitung vor zu starker Erwärmung.
+
+## Grundlage
+
+Im Inneren arbeiten dafür zwei verschiedene Auslöser. Der erste ist für Überlast zuständig. Fließt über längere Zeit zu viel Strom, erwärmt sich ein Bimetallstreifen.
+
+## Mechanismus
+
+Er besteht aus zwei Metallen, die sich bei Wärme unterschiedlich ausdehnen. Dadurch verbiegt sich der Streifen und löst den Schaltmechanismus aus. Der Stromkreis wird getrennt.
+
+Das passiert nicht sofort, weil eine kurze höhere Belastung noch kein Kurzschluss sein muss.
+
+Ganz anders beim Kurzschluss. Berühren sich Leiter mit unterschiedlichem Potential nahezu direkt, kann der Strom sehr schnell stark ansteigen. Dafür besitzt der Sicherungsautomat einen elektromagnetischen Schnellauslöser. Der hohe Strom erzeugt in einer Spule ein starkes Magnetfeld. Ein beweglicher Anker wird angezogen und entriegelt den Schalter in sehr kurzer Zeit.
+
+Darum kann derselbe Sicherungsautomat auf zwei Arten abschalten: verzögert bei Überlast und sehr schnell bei einem starken Kurzschlussstrom.
+
+## Vertiefung
+
+Nach dem Auslösen steht der Hebel in einer Abschalt- oder Zwischenstellung. Erst wenn die Ursache beseitigt ist, lässt sich der Stromkreis wieder einschalten. Löst der Automat wiederholt aus, sollte man nicht einfach immer wieder einschalten, sondern die Ursache prüfen lassen.
+
+Wichtig: Der Sicherungsautomat schützt vor allem Leitungen gegen Überstrom. Ein FI- beziehungsweise RCD-Schalter hat eine andere Aufgabe: Er erkennt Fehlerströme, zum Beispiel wenn Strom einen unerwünschten Weg gegen Erde nimmt.
+
+## Payoff
+
+Kurz gesagt: Zu viel Strom erwärmt bei Überlast das Bimetall. Ein sehr hoher Kurzschlussstrom aktiviert den Magnetauslöser. Beide Mechanismen entriegeln den Schalter – und trennen den Stromkreis, bevor Leitungen gefährlich überlastet werden.
