@@ -12,6 +12,8 @@ Only render visible scene text that is explicitly requested inside the scene pro
 
 Requested labels must remain small supporting callouts, never a headline or section title. Keep all requested text comfortably inside the 16:9 safe area; never crop it at the top, bottom or sides. Every requested label must be exact, complete and readable. If text is misspelled, blank, corrupted, cropped, substituted or turned into a large headline, REJECT that image and regenerate it before continuing.
 
+FINAL IMAGE SELECTION LOCK: compare every newly generated scene image with all already accepted final images from the same video. If it repeats essentially the same dominant composition, object angle, arrow pattern or full-scene layout without a genuinely different explanatory form, REJECT it and regenerate with a clearly different composition. A different camera angle alone is not enough. The payoff may return to the hook idea, but it must not simply duplicate the hook image.
+
 THUMBNAIL EXCEPTION: thumbnail prompts may use the explicitly requested thumbnail headline. This exception applies only to the thumbnail phase and never carries into scene images.`;
 
 export const applySceneVisibleTextLock = (text) => {
