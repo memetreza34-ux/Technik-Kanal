@@ -20,9 +20,43 @@ Für jeden Beat vor dem Prompt festlegen:
 1. **Kernaussage des Voice-over in einem kurzen Satz**
 2. **ein Hauptmotiv**, das diese Aussage sichtbar macht
 3. **eine Erklärform**: Umgebung, Querschnitt, Makro, Vergleich, Diagramm usw.
-4. optional **0–3 kurze deutsche Labels**, nur wenn sie Verständnis sparen
+4. optional **0–1 kurzes deutsches Label**; zwei nur wenn zwingend nötig
 
 Das Bild darf keine zweite große Aussage gleichzeitig erklären.
+
+## Harte Informationsbudget-Regel
+
+Normale Szenen müssen visuell ruhig bleiben. Das ist kein Wunsch, sondern ein Produktionslimit.
+
+### Normale Szene
+- genau **eine dominante Erkläridee**
+- bevorzugt **ein Hauptobjekt**
+- insgesamt höchstens **3 wichtige visuelle Elemente/Objekte**
+- bevorzugt **0–1 Label**, absolut höchstens **2 kurze Labels**
+- höchstens **2 Pfeile**
+- höchstens **2 Teilflächen/Panels**
+- keine große Überschrift
+- keine Textsätze im Bild
+- keine schwebenden Infoboxen als Standard
+- nicht gleichzeitig Labels + viele Pfeile + Infoboxen + Zusatzdiagramm verwenden
+
+### Vergleich, Diagramm oder finale Zusammenfassung
+Nur wenn die Aussage ohne diese Form schlechter verständlich wäre:
+- höchstens **4 wichtige visuelle Elemente**
+- höchstens **3 kurze Labels**
+- höchstens **2 Panels**
+- weiterhin nur **eine zentrale Aussage**
+- jedes Element muss sofort erkennbar sein; keine Mini-Diagramme in den Ecken
+
+### Wenn das Budget nicht reicht
+Dann **nicht alles in ein Bild quetschen**.
+
+Stattdessen:
+1. Beat/Skript in zwei verständliche visuelle Aussagen teilen, oder
+2. unwichtige Information weglassen, oder
+3. eine einfachere Erklärform wählen.
+
+**Ein überfülltes Bild wird nicht akzeptiert, auch wenn es fachlich korrekt ist.**
 
 ## Erste Szene = Cover-Motiv
 
@@ -33,6 +67,7 @@ Verbindlich:
 - gleiche Illustrationssprache
 - große Thumbnail-Schlagzeile entfernen oder stark reduzieren
 - Szene 01 muss wie die natürliche Fortsetzung des Covers wirken
+- alle Cover-Zusatzelemente entfernen, die für den ersten gesprochenen Satz nicht nötig sind
 - nicht blind exakt dieselbe Datei verwenden, wenn die Thumbnail-Typografie die Videoszene stört
 
 Ausnahme nur, wenn das Cover bewusst eine symbolische Idee zeigt, die den ersten gesprochenen Satz nicht verständlich darstellen kann.
@@ -89,6 +124,9 @@ Akzentfarben nur mit Bedeutung:
 - Neon-Glow als Hauptstil
 - Fantasy-Partikel
 - dekorative Effekte ohne Erklärfunktion
+- überfüllte Erklärbilder mit mehreren gleich wichtigen Zentren
+- Titel + mehrere Labels + Infoboxen + Pfeile gleichzeitig
+- kleine Zusatzdiagramme, wenn das Hauptbild bereits genügt
 
 ## Erklärformen bewusst wechseln
 
@@ -100,7 +138,7 @@ Erlaubt und erwünscht:
 5. Objektvergleich
 6. Prozessdarstellung
 7. Draufsicht
-8. Bauteil mit Callouts
+8. Bauteil mit Callout
 9. vereinfachtes Diagramm
 10. Schaltplan / Funktionsschema
 11. Mess-/Instrumentansicht
@@ -122,29 +160,24 @@ Keine identische Hauptkomposition direkt hintereinander. Derselbe dominante Bild
 
 ## Text, Beschriftungen und Callouts
 
-Text im Bild ist **erlaubt und erwünscht, wenn er das Verständnis wirklich verbessert**.
+Text im Bild ist erlaubt, aber **sparsam**.
 
 Drei Modi:
-- **0 Labels**: Bild erklärt sich vollständig selbst
-- **1–3 Labels**: Standard bei technischen Erklärbildern
-- **4–5 Labels**: nur bei komplexen Diagrammen/Schaltplänen
+- **0 Labels**: bevorzugt, wenn das Bild sich selbst erklärt
+- **1 Label**: Standard, wenn ein Begriff Orientierung spart
+- **2 Labels**: nur wenn beide für den aktuellen Satz nötig sind
+- **3 Labels**: ausschließlich bei echtem Vergleich, Diagramm oder Zusammenfassung
 
 Regeln:
 - sichtbarer Text ausschließlich **Deutsch**
 - Google-Flow-Prompt selbst auf **Englisch**
-- kurze Begriffe statt Sätze
+- einzelne Begriffe oder sehr kurze Wortgruppen statt Sätzen
 - keine eingebrannten Untertitel
-- keine große Szenenüberschrift als Standard
+- keine große Szenenüberschrift
+- keine Textwand
 - dünne Leader-Lines
-- kleine ruhige Label-Flächen
 - Text direkt am relevanten Objekt statt verstreute Infoboxen
-
-Beispiele guter Labels:
-- „Kupferspule“
-- „Magnetfeld“
-- „Topfboden“
-- „Wirbelströme“
-- „Wärme“
+- wenn zwei Labels reichen, niemals vier erzeugen
 
 ## Schaltpläne und Diagramme
 
@@ -157,6 +190,8 @@ Schaltpläne und Funktionsgrafiken sind erlaubt, wenn sie die Aussage einfacher 
 - deutsche Bezeichnungen
 - vereinfachte 2.5D-Bauteile dürfen mit 2D-Schema kombiniert werden
 - kein dekorativer Ballast
+- maximal zwei klar getrennte Funktionsbereiche/Panels
+- maximal drei kurze Labels
 
 Wenn ein exakter Schaltplan nicht sicher darstellbar ist, lieber eine einfache korrekte Funktionsdarstellung als falsche Verdrahtung.
 
@@ -173,23 +208,14 @@ Menschen nur bei fachlichem Nutzen.
 
 Alle Google-Flow-Prompts werden **auf Englisch** geschrieben. Sichtbarer Bildtext bleibt **Deutsch**.
 
-### Verbindlicher Style-Lock
+### Verbindlicher Style- und Density-Lock
 
 ```text
 STYLE LOCK — Technical Editorial Explainer 2.5D
-Keep the exact same visual language across the entire video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook infographic layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects. Scene type, perspective and environment may change, but rendering language, material simplification, line quality, typography and callout design must remain consistent. The image must explain the current voice-over statement as directly and simply as possible. Visible text only in German and only when it improves understanding.
+Keep the exact same visual language across the entire video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook infographic layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects. Scene type, perspective and environment may change, but rendering language, material simplification, line quality, typography and callout design must remain consistent. The image must explain the current voice-over statement as directly and simply as possible. Visible text only in German.
+
+DENSITY LOCK — Keep the scene visually sparse. One dominant explanatory idea. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large scene headline, no full-sentence text, no floating info boxes, no secondary mini-diagrams. If the idea needs more information than this budget allows, simplify or split it into another beat instead of crowding the image.
 ```
-
-## Informationsdichte
-
-Standard: **so wenig Information wie möglich, so viel wie nötig**.
-
-Vermeiden:
-- Titel + viele Labels + Infobox + Formel gleichzeitig
-- dekorative Pfeile
-- dieselbe Aussage mehrfach im Bild
-- unnötige Objekte
-- technische Details, die der Voice-over an dieser Stelle noch gar nicht erklärt
 
 ## Qualitätsprüfung vor Freigabe
 
@@ -197,12 +223,15 @@ Ein Bild ist nur gut, wenn:
 1. der aktuelle Voice-over-Satz dadurch sofort verständlicher wird
 2. ein Zuschauer die Hauptaussage in ungefähr 1–2 Sekunden erfassen kann
 3. genau eine dominante Erkläridee vorhanden ist
-4. die Technical-Editorial-2.5D-Bildwelt erhalten bleibt
-5. es nicht fotorealistisch wirkt
-6. es nicht wie eine generische Schulbuchseite wirkt
-7. es sich sinnvoll vom vorherigen Beat unterscheidet
-8. Labels kurz, korrekt und deutsch sind
-9. keine gesichtslosen sichtbaren Köpfe vorkommen
-10. der 16:9-Raum sinnvoll genutzt wird
+4. normale Szenen höchstens 3 wichtige visuelle Elemente enthalten
+5. normale Szenen bevorzugt 0–1 und niemals mehr als 2 Labels enthalten
+6. keine große Überschrift, Textwand oder unnötige Infobox vorkommt
+7. die Technical-Editorial-2.5D-Bildwelt erhalten bleibt
+8. es nicht fotorealistisch wirkt
+9. es nicht wie eine generische Schulbuchseite wirkt
+10. es sich sinnvoll vom vorherigen Beat unterscheidet
+11. Labels kurz, korrekt und deutsch sind
+12. keine gesichtslosen sichtbaren Köpfe vorkommen
+13. der 16:9-Raum sinnvoll genutzt wird
 
-Wenn nicht: **Prompt oder bei strukturellem Problem das Skript/den Beat-Plan überarbeiten, bevor das Bild übernommen wird.**
+Wenn nicht: **Prompt vereinfachen oder bei strukturellem Problem Skript/Beat-Plan teilen bzw. umschreiben, bevor das Bild übernommen wird.**
