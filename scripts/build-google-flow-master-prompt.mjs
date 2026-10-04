@@ -17,6 +17,9 @@ const normalize = (value) => String(value ?? '').trim().toLowerCase();
 const STYLE_LOCK = `STYLE LOCK — Technical Editorial Explainer 2.5D
 Keep the exact same visual language across the entire video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals as the base family; use copper, blue, orange/red, green or yellow only as meaningful technical accents. Do not use photorealism, real-photo aesthetics, hyperrealistic environments, generic AI art, white textbook infographic layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects. Scene type, perspective and environment may change, but rendering language, material simplification, line quality, typography and callout design must remain consistent. Visible text only in German and only when explicitly requested. Google Flow prompt instructions are written in English. This STYLE LOCK overrides any older style wording inside scene-specific prompt text.`;
 
+const DENSITY_LOCK = `DENSITY LOCK — MINIMUM NECESSARY INFORMATION
+Keep the scene visually sparse and immediately readable. One dominant explanatory idea only. In a normal scene prefer one main object and never exceed three important visual elements. Prefer zero or one short German label; never exceed two labels in a normal scene. Use at most two arrows and at most two panels. No large scene headline, no full-sentence text, no floating info boxes, no secondary mini-diagrams and no decorative technical clutter. Do not combine a headline, multiple labels, arrows, callout boxes and a secondary diagram in the same scene. If the spoken idea cannot fit inside this budget, simplify it or split it into another beat before image generation. Comparison/diagram/summary scenes may use at most four important visual elements and three short German labels, but still only one central message.`;
+
 if (!fs.existsSync(paths.scenePlan)) throw new Error('scene-plan.json fehlt.');
 if (!fs.existsSync(paths.flowPlan)) throw new Error('flow-plan.json fehlt.');
 const thumbnailFile = path.join(paths.promptDir, '00-thumbnail.txt');
@@ -28,8 +31,17 @@ const scenes = Array.isArray(plan.scenes) ? plan.scenes : [];
 const flowScenes = Array.isArray(flowPlan.scenes) ? flowPlan.scenes : [];
 const stepCount = Number(config.visuals?.flow?.imageProductionSteps ?? 5);
 const diversity = config.visuals?.diversity ?? {};
+const budgetConfig = config.visuals?.informationBudget ?? {};
+const normalLabelsMax = Number(budgetConfig.normalSceneHardLabelsMax ?? 2);
+const complexLabelsMax = Number(budgetConfig.diagramComparisonSummaryLabelsMax ?? 3);
+const normalObjectsMax = Number(budgetConfig.normalScenePrimaryObjectsMax ?? 3);
+const complexObjectsMax = Number(budgetConfig.diagramComparisonSummaryPrimaryObjectsMax ?? 4);
+const panelsMax = Number(budgetConfig.panelsMax ?? 2);
+const arrowsMax = Number(budgetConfig.arrowsMax ?? 2);
+
 if (!scenes.length) throw new Error('Szenenplan enthält keine Beats.');
 if (flowPlan.imageOnly !== true) throw new Error('flow-plan.json muss imageOnly=true setzen.');
+if (flowPlan.informationBudgetLocked !== true) throw new Error('flow-plan.json muss informationBudgetLocked=true setzen.');
 if (flowPlan.imageProductionSteps !== stepCount) throw new Error(`flow-plan.json muss imageProductionSteps=${stepCount} setzen.`);
 if (flowPlan.pauseAfterEachImageStep !== false) throw new Error('flow-plan.json muss pauseAfterEachImageStep=false setzen.');
 if (flowPlan.continueAutomaticallyBetweenImageSteps !== true) throw new Error('flow-plan.json muss continueAutomaticallyBetweenImageSteps=true setzen.');
@@ -66,6 +78,22 @@ for (const scene of scenes) {
   motifCounts.set(primaryMotif,(motifCounts.get(primaryMotif)??0)+1);
   if (/hand.*(gegenstand|kontakt|material|object)|hand-contact|hand-on-object/.test(primaryMotif)) handOnObjectCount += 1;
 
+  const budget = entry.informationBudget;
+  if (!budget || budget.oneDominantIdea !== true) throw new Error(`${scene.id}: informationBudget.oneDominantIdea=true ist Pflicht.`);
+  const densityClass = normalize(budget.densityClass || 'normal');
+  if (!['normal','complex'].includes(densityClass)) throw new Error(`${scene.id}: densityClass muss normal oder complex sein.`);
+  const isComplex = densityClass === 'complex';
+  const maxLabels = Number(budget.maxLabels);
+  const maxPrimaryObjects = Number(budget.maxPrimaryObjects);
+  const maxPanelsScene = Number(budget.maxPanels);
+  const maxArrowsScene = Number(budget.maxArrows);
+  if (!Number.isInteger(maxLabels) || maxLabels < 0 || maxLabels > (isComplex ? complexLabelsMax : normalLabelsMax)) throw new Error(`${scene.id}: maxLabels überschreitet das Informationsbudget.`);
+  if (!Number.isInteger(maxPrimaryObjects) || maxPrimaryObjects < 1 || maxPrimaryObjects > (isComplex ? complexObjectsMax : normalObjectsMax)) throw new Error(`${scene.id}: maxPrimaryObjects überschreitet das Informationsbudget.`);
+  if (!Number.isInteger(maxPanelsScene) || maxPanelsScene < 1 || maxPanelsScene > panelsMax) throw new Error(`${scene.id}: maxPanels überschreitet das Informationsbudget.`);
+  if (!Number.isInteger(maxArrowsScene) || maxArrowsScene < 0 || maxArrowsScene > arrowsMax) throw new Error(`${scene.id}: maxArrows überschreitet das Informationsbudget.`);
+  if (budget.largeHeadlineAllowed !== false) throw new Error(`${scene.id}: largeHeadlineAllowed muss false sein.`);
+  if (budget.fullSentenceTextAllowed !== false) throw new Error(`${scene.id}: fullSentenceTextAllowed muss false sein.`);
+
   groupedScenes[imageStep - 1].push({scene,entry});
   const promptFile = path.join(paths.promptDir, `${scene.id}.txt`);
   if (!fs.existsSync(promptFile)) throw new Error(`${scene.id}: Einzelprompt fehlt.`);
@@ -99,6 +127,8 @@ lines.push(`Final Flow collection: ${flowPlan.finalCollectionName}`);
 lines.push('');
 lines.push(STYLE_LOCK);
 lines.push('');
+lines.push(DENSITY_LOCK);
+lines.push('');
 lines.push('BINDING WORKFLOW');
 lines.push('----------------');
 lines.push('1. First create ONLY the three thumbnail candidates.');
@@ -113,11 +143,12 @@ lines.push('9. Remove failed attempts, intermediate versions, duplicates, reject
 lines.push('10. Final collection contains ONLY 00-thumbnail-final plus correctly named final scene images.');
 lines.push('11. Report completion only after cleanup.');
 lines.push('12. VISUELLE VIELFALT IST PFLICHT: vary composition, scene type and perspective while NEVER leaving the STYLE LOCK.');
-lines.push('13. Normal scenes should usually have 0–2 short German labels; technical diagrams may use a few more when essential. No large generated scene headline.');
-lines.push('14. If a head is visible, show complete natural stylized facial features. No blank or faceless visible heads.');
-lines.push('15. Exactly one final static 16:9 image per beat.');
-lines.push('16. No AI video clips and no motion generation.');
-lines.push('17. Visible image text only in German. Prompt instructions in English.');
+lines.push('13. INFORMATIONSDICHTE IST HART BEGRENZT: normal scenes prefer 0–1 label and may never exceed 2; complex comparison/diagram/summary scenes may never exceed 3. Do not crowd multiple explanations into one image.');
+lines.push('14. If a scene would need more objects, labels, arrows or panels than its budget allows, simplify or split the beat before generation.');
+lines.push('15. If a head is visible, show complete natural stylized facial features. No blank or faceless visible heads.');
+lines.push('16. Exactly one final static 16:9 image per beat.');
+lines.push('17. No AI video clips and no motion generation.');
+lines.push('18. Visible image text only in German. Prompt instructions in English.');
 lines.push('');
 lines.push('THUMBNAIL — PHASE 1');
 lines.push('-------------------');
@@ -139,18 +170,23 @@ for (let stepIndex=0;stepIndex<groupedScenes.length;stepIndex+=1) {
   lines.push('');
   lines.push(`IMAGE STEP ${stepNumber}/${stepCount} · ${first} TO ${last}`);
   lines.push('='.repeat(52));
-  lines.push(`Create only the ${group.length} images in this step. Keep their scene types visibly different while preserving the exact same STYLE LOCK.`);
+  lines.push(`Create only the ${group.length} images in this step. Keep their scene types visibly different while preserving the exact same STYLE LOCK and DENSITY LOCK.`);
 
   for (const {scene,entry} of group) {
     const promptFile = path.join(paths.promptDir, `${scene.id}.txt`);
+    const budget = entry.informationBudget;
     lines.push('');
     lines.push(`${scene.id.toUpperCase()} · OUTPUT=IMAGE · VISUAL=${entry.visualType} · MOTIF=${entry.primaryMotif}`);
     lines.push('='.repeat(Math.min(80,scene.id.length+40)));
     lines.push(STYLE_LOCK);
     lines.push('');
+    lines.push(DENSITY_LOCK);
+    lines.push('');
+    lines.push(`SCENE BUDGET — density=${budget.densityClass}; max important visual elements=${budget.maxPrimaryObjects}; max labels=${budget.maxLabels}; max panels=${budget.maxPanels}; max arrows=${budget.maxArrows}; large headline=false; full-sentence text=false.`);
+    lines.push('');
     lines.push(read(promptFile));
     lines.push('');
-    lines.push(`Create exactly one final static image for ${scene.id}. The STYLE LOCK has priority over any conflicting style wording. After selection rename it immediately to ${scene.id}-final. No animation, no video clip, no large headline, no faceless visible heads.`);
+    lines.push(`Create exactly one final static image for ${scene.id}. The STYLE LOCK and DENSITY LOCK have priority over any conflicting prompt wording. Remove any unnecessary labels, boxes, arrows or secondary objects. After selection rename it immediately to ${scene.id}-final. No animation, no video clip, no large headline, no faceless visible heads.`);
   }
 
   lines.push('');
@@ -170,6 +206,6 @@ lines.push('5. Report completion only when the collection contains final assets 
 fs.writeFileSync(paths.flowMaster, `${lines.join('\n')}\n`);
 console.log(`✓ Google-Flow-Masterprompt gebaut: ${paths.flowMaster}`);
 console.log(`  ${scenes.length} statische Bilder · ${visualTypes.size} Visual-Typen · ${stepCount} Schritte ohne Zwischenstopps · 0 Clips.`);
-console.log('  Bildwelt: Technical Editorial Explainer 2.5D · Style-Lock in jedem Prompt.');
+console.log('  Bildwelt: Technical Editorial Explainer 2.5D · Style-Lock + Density-Lock in jedem Prompt.');
 console.log(`  Finale Flow-Sammlung: ${flowPlan.finalCollectionName}`);
 console.log(`  Verteilung: ${sizes.join(' / ')} Bilder.`);
