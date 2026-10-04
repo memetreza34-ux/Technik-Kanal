@@ -30,6 +30,20 @@ Jedes neue Video benötigt `06-projektdateien/flow-plan.json` und `02-bilder/GOO
 5. erst danach Beat 02 usw.
 6. **keine KI-Videoclips und kein Image-to-Video**
 
+`npm run science:flow-master` setzt automatisch einen harten **Visible-Text-Lock** in alle Szenenprompts und den Masterprompt.
+
+### Sichtbarer Text in Szenen
+
+- **niemals Szenen-/Beat-Nummern im Bild**
+- keine Szenen-IDs, Abschnittsnamen, Dateinamen, Bildschritt-Nummern oder Asset-Namen sichtbar
+- keine Produktionsanweisungen wie `SZENE 10`, `10-MECHANISM`, `BILDSCHRITT 3` oder `01-hook-final`
+- nur ausdrücklich im Einzelprompt verlangte Labels dürfen sichtbar sein
+- Thumbnail-Überschriften dürfen niemals in normale Szenen durchsickern
+- angeforderte Labels bleiben klein und innerhalb sicherer Bildränder; sie werden nie zur großen Überschrift
+- falscher, leerer, abgeschnittener oder erfundener Text = Bild verwerfen und neu erzeugen
+
+Die vollständige finale Bildprüfung steht in `gehirn/FINAL-IMAGE-QA.md`.
+
 ## Story
 
 **Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff**
@@ -43,6 +57,8 @@ Aktive Bildwelt: **Technical Editorial Explainer 2.5D**.
 > Nicht einfach ein Bild vom Thema erzeugen, sondern eine visuelle Szene bauen, die die konkrete Aussage des Beats erklärt.
 
 Je nach Aussage dürfen volle Orte/Umgebungen, technische Illustrationen, Cutaways, Detailansichten, Vergleiche oder stilisierte erwachsene Menschen eingesetzt werden. Sichtbarer Bildtext ist ausschließlich Deutsch. Leitregel: **so wenig Information wie möglich, so viel wie nötig**.
+
+Zusätzlich gilt bei der finalen Auswahl: Ein neues Bild darf nicht praktisch dieselbe Hauptkomposition eines bereits finalisierten Bildes wiederholen. Gleicher Objektwinkel plus gleiche Pfeile oder eine fast identische Vollansicht werden verworfen und mit einer anderen Erklärform neu erzeugt. Der Payoff darf die Hook-Idee aufgreifen, aber nicht einfach das Hook-Bild kopieren.
 
 ## Thumbnail
 
