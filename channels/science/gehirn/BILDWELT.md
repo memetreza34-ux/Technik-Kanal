@@ -26,6 +26,8 @@ Das Bild darf keine zweite große Aussage gleichzeitig erklären.
 
 ## Harte Informationsbudget-Regel
 
+Leitsatz: **so wenig Information wie möglich, so viel wie nötig**.
+
 Normale Szenen müssen visuell ruhig bleiben. Das ist kein Wunsch, sondern ein Produktionslimit.
 
 ### Normale Szene
