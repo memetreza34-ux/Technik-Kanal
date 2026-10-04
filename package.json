@@ -10,6 +10,7 @@
     "validate:science-system": "node scripts/validate-science-system.mjs",
     "validate:science-consistency": "node scripts/validate-science-consistency.mjs",
     "validate:science-visual-policy": "node scripts/test-science-visual-policy.mjs",
+    "validate:testphase-regressions": "node scripts/test-science-testphase-regressions.mjs",
     "typecheck": "node scripts/typecheck.mjs",
     "check": "npm run typecheck",
     "studio": "npm run studio --workspace @science/channel",
@@ -33,7 +34,7 @@
     "science:creative-qa": "node scripts/science-creative-qa.mjs",
     "science:image-qa": "node scripts/science-image-qa.mjs",
     "science:system-test": "npm test && npm run science:scaffold-test && npm run science:e2e && npm run smoke",
-    "test": "npm run validate:science-syntax && npm run validate:science-template && npm run validate:science-system && npm run validate:science-consistency && npm run validate:science-visual-policy && npm run typecheck && vitest run"
+    "test": "npm run validate:science-syntax && npm run validate:science-template && npm run validate:science-system && npm run validate:science-consistency && npm run validate:science-visual-policy && npm run validate:testphase-regressions && npm run typecheck && vitest run"
   },
   "dependencies": {
     "@remotion/cli": "4.0.490",
