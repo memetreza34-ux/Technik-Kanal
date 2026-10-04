@@ -30,6 +30,7 @@
     "narrativeStructure": ["hook","context","foundation","mechanism","deepening","payoff"],
     "visualBeatRule": "Eine visuelle Aussage entspricht einem Beat; nicht automatisch ein Satz pro Bild.",
     "rewriteWhenThreeAdjacentBeatsWouldLookSimilar": true,
+    "splitBeatWhenImageBudgetWouldBeExceeded": true,
     "hook": {"type":"direct-question","headlineWordsMax":10,"voiceWordsMax":24,"mustContainQuestionMark":true,"firstFrameAnimationAllowed":false,"forbiddenMetaphors":["unsichtbarer held","geheime kraft"]}
   },
   "voice": {
@@ -65,7 +66,23 @@
     "fullFrameContextPreferredWhenUseful": true,
     "fixedBackgroundForbidden": true,
     "humanFiguresAllowedWhenExplanatory": true,
-    "informationDensityPolicy": "minimum-necessary",
+    "informationDensityPolicy": "strict-minimum-necessary",
+    "informationBudget": {
+      "oneDominantIdeaRequired": true,
+      "normalScenePreferredLabelsMax": 1,
+      "normalSceneHardLabelsMax": 2,
+      "diagramComparisonSummaryLabelsMax": 3,
+      "normalScenePrimaryObjectsMax": 3,
+      "diagramComparisonSummaryPrimaryObjectsMax": 4,
+      "panelsMax": 2,
+      "arrowsMax": 2,
+      "annotationSystemsMax": 1,
+      "fullSentenceTextAllowed": false,
+      "largeSceneHeadlineAllowed": false,
+      "floatingInfoBoxesPreferredMax": 0,
+      "splitBeatWhenBudgetExceeded": true,
+      "coverExemptFromSceneDensityBudget": true
+    },
     "visibleImageLanguage": "de",
     "diversity": {
       "minimumDistinctVisualTypesPerVideo": 5,
@@ -74,7 +91,7 @@
       "handOnObjectPrimaryMotifMaxPerVideo": 3,
       "minimumDistinctVisualTypesPerImageStepPreferred": 3,
       "largeGeneratedHeadlineInSceneImagesAllowed": false,
-      "preferredLabelsMax": 2,
+      "preferredLabelsMax": 1,
       "blankOrFeaturelessVisibleFacesForbidden": true,
       "thumbnailReferenceScope": "quality-and-illustration-style-only-not-layout-or-palette"
     },
