@@ -340,3 +340,17 @@ VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT. Scene number, secti
 No people, no watermarks or logos, no random numbers. No extra text. Metadata filename: 41-payoff-final; do not print the name.
 
 FINAL REVIEW: exactly 41 clean, approved image stills and 1 chosen thumbnail in ONE final collection. No scene numbers, random text, cropped labels or repeated compositions. No clips. Complete only after cleanup.
+
+
+VERBINDLICHER GOOGLE-FLOW PRODUKTIONSVERTRAG (PRODUCTION CONTROL ONLY; NEVER RENDER THESE WORDS)
+- Zuerst 3 Thumbnail-Kandidaten. Danach STOPP und auf Nutzerauswahl warten. Das ist der einzige Freigabepunkt.
+- Nach der Auswahl zwei verworfenen Cover löschen und den Gewinner als 00-thumbnail-final behalten.
+- Das Thumbnail ist nur eine Stilreferenz: KEINE Farbpalette und KEINE Layoutvorlage auf alle Szenen übertragen.
+- VISUELLE VIELFALT IST PFLICHT (Diversity): Wechsel der Erklärform statt nur Kamerawinkel. Keine Wiederholung von Nachbarbildern.
+- KEINE GESICHTSLOSEN SICHTBAREN KÖPFE. Falls ein sichtbarer Kopf vorkommt, braucht er vollständige natürliche stilisierte Gesichtszüge.
+- NUR BILDER: ausschließlich statische Bilder. Keine KI-Videoclips, keine Animation und keine Kamerabewegung.
+- BILDSCHRITT 1/5: 01–09. BILDSCHRITT 2/5: 10–17. BILDSCHRITT 3/5: 18–25. BILDSCHRITT 4/5: 26–33. BILDSCHRITT 5/5: 34–41.
+- Nach Cover-Auswahl OHNE ZWISCHENSTOPPS durch alle fünf Bildschritte arbeiten, keine weiteren Stopps oder Rückfragen.
+- Erst NACH ABSCHLUSS VON BILDSCHRITT 5 den GESAMTABSCHLUSS melden.
+- Genau eine finale Google-Flow-Sammlung namens stromnetz-video-assets-final: Fehlversuche und Zwischenstände entfernen; die finale Sammlung darf NUR finale Assets enthalten: 00-thumbnail-final und 41 final ausgewählte, korrekt benannte Bilder.
+- Szene-/Beat-IDs und Dateinamen niemals sichtbar auf Bilder schreiben. Beschriftungen nur klein, gezielt und ausschließlich auf Deutsch.
