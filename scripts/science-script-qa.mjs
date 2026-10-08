@@ -12,7 +12,7 @@ if (!projectArg) {
 }
 
 const paths = electricalProjectPaths(path.resolve(projectArg));
-const config = loadElectricalConfig();
+const config = loadElectricalConfig(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')).productionProfile);
 const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')));
 const fullText = plan.scenes.map((scene) => scene.voiceText).join(' ');
 const words = fullText.trim().split(/\s+/).filter(Boolean);

@@ -97,3 +97,8 @@ npm run science:finish -- "<video-ordner>"
 ```
 
 Interne Namen wie `ScienceReel` und der Ordner `reels/` bleiben nur aus Rückwärtskompatibilität bestehen.
+
+
+## Neuer Langvideo-Produktionspfad (6–7 Minuten)
+
+Das erste lange Video liegt unter `reels/2026-10-05_bis_2026-10-11/01_Wie-kommt-Strom-in-deine-Steckdose/` mit 41 statischen Bildbeats und vollständigem Sprechertext. Das Profil `youtube-6to7min-v1` nutzt dieselbe 2.5D-Bildwelt und dieselben Flow-/Handoff-Regeln. Es wird pro Videoprojekt dynamisch ausgewählt, ohne die 2-Minuten-Referenzen umzuschreiben. In `05-export/youtube-caption.txt` stehen Titel und Beschreibung gemeinsam; in `skript-mit-zeitstempeln.txt` das komplette Skript mit geschätzten Beat-Zeiten, die nach echtem Audio aktualisiert werden müssen.

@@ -82,7 +82,7 @@ export const ScienceScene = z.object({
 
 export const ScenePlan = z.object({
   version: z.literal('science-v1'),
-  productionProfile: z.literal('youtube-2min-v1').optional(),
+  productionProfile: z.enum(['youtube-2min-v1','youtube-6to7min-v1']).optional(),
   slug: nonEmpty,
   title: z.string().optional(),
   compositionId: z.literal('ScienceReel'),
@@ -95,7 +95,7 @@ export const ScenePlan = z.object({
   width: z.literal(1920),
   height: z.literal(1080),
   minimumWordMatchRatio: z.number().min(0.5).max(1).default(0.82),
-  scenes: z.array(ScienceScene).min(2).max(28),
+  scenes: z.array(ScienceScene).min(2).max(50),
   totalFrames: z.number().int().positive().optional(),
   plannedFrames: z.number().int().positive().optional(),
   durationSeconds: z.number().positive().optional(),

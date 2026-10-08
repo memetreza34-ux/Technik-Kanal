@@ -10,7 +10,7 @@ const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--')
 if (!projectArg) throw new Error('Nutzung: npm run science:creative-qa -- <video-ordner>');
 
 const paths = electricalProjectPaths(path.resolve(projectArg));
-const config = loadElectricalConfig();
+const config = loadElectricalConfig(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')).productionProfile);
 const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan,'utf8')));
 const errors = [];
 const warnings = [];

@@ -14,7 +14,7 @@ const errors=[];
 const warnings=[];
 const scenes=plan.scenes;
 
-if(plan.productionProfile!=='youtube-2min-v1') errors.push('Produktionsprofil muss youtube-2min-v1 sein.');
+if(!['youtube-2min-v1','youtube-6to7min-v1'].includes(plan.productionProfile)) errors.push('Unbekanntes Produktionsprofil.');
 if(plan.width!==1920||plan.height!==1080) errors.push('Szenenplan muss 1920×1080 sein.');
 
 for(const scene of scenes){

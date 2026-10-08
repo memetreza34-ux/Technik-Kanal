@@ -190,3 +190,13 @@ Vor Produktion:
 - mindestens 5 Darstellungsformen geplant?
 - keine eingebrannten Untertitel vorgesehen?
 - klarer Payoff?
+
+
+## Nach der Testphase: Profil youtube-6to7min-v1
+
+Ab dem ersten 6–7-Minuten-Video kann der neue Generator mit `--profile=youtube-6to7min-v1` aufgerufen werden. 16:9 / 30 fps, 360–420 Sekunden, ca. 850–1075 Wörter, 34–50 Beats (ideal 42). Nur echte Erklär-Tiefe, niemals Zeit mit Wiederholungen füllen. Die bestehenden Flow-Style-, Density-, Visible-Text- und Handoff-Regeln gelten unverändert.
+
+Beispiel:
+`npm run science:new -- --week=2026-10-05_bis_2026-10-11 --slot=02 --title="Wie funktioniert ein Windrad?" --profile=youtube-6to7min-v1`
+
+Im Export liegen YouTube-Titel + Beschreibung zusammen in `05-export/youtube-caption.txt` und das komplette Skript mit Zeitfenstern in `05-export/skript-mit-zeitstempeln.txt`. Vor der Sprachaufnahme sind nur geschätzte Zeitfenster möglich. Nach finalem Audio muss die Synchronisation anhand der echten Wort-/Szenenzeitdaten erfolgen.

@@ -15,7 +15,7 @@ if (!projectArg) {
 const root = path.resolve(projectArg);
 assertElectricalProjectStructure(root);
 const paths = electricalProjectPaths(root);
-const config = loadElectricalConfig();
+const config = loadElectricalConfig(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')).productionProfile);
 const errors = [];
 const warnings = [];
 const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));

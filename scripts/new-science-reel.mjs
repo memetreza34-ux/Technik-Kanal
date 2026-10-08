@@ -10,12 +10,15 @@ const week=opt('week');
 const slot=opt('slot');
 const title=opt('title');
 const hook=(opt('hook')??title??'').trim();
-const sceneCount=Number(opt('scenes')??20);
+const productionProfile=opt('profile')??'youtube-2min-v1';
+const isLong=productionProfile==='youtube-6to7min-v1';
+if(!['youtube-2min-v1','youtube-6to7min-v1'].includes(productionProfile)) throw new Error('Unbekanntes Profil.');
+const sceneCount=Number(opt('scenes')??(isLong?42:20));
 const imageProductionSteps=5;
 
 if(!week||!slot||!title) throw new Error('Pflicht: --week --slot --title');
 if(!hook.endsWith('?')) throw new Error('Hook muss eine direkte Frage sein.');
-if(!Number.isInteger(sceneCount)||sceneCount<12||sceneCount>28) throw new Error('Visuelle Beats für youtube-2min-v1: 12–28.');
+if(!Number.isInteger(sceneCount)||sceneCount<(isLong?34:12)||sceneCount>(isLong?50:28)) throw new Error('Visuelle Beats außerhalb des Profils.');
 
 const slug=title.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/ß/g,'ss').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-+|-+$/g,'').toLowerCase();
 const folderTitle=title.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/ß/g,'ss').replace(/[^a-zA-Z0-9ÄÖÜäöüß]+/g,'-').replace(/^-+|-+$/g,'');
@@ -23,7 +26,7 @@ const root=path.join(process.cwd(),'channels/science/reels',week,`${String(Numbe
 if(fs.existsSync(root)) throw new Error(`Video existiert bereits: ${root}`);
 for(const rel of ELECTRICAL_REEL_DIRECTORIES) fs.mkdirSync(path.join(root,rel),{recursive:true});
 
-const plan=createElectricalScenePlanTemplate({slug,title,hook,compositionId:'ScienceReel',sceneCount});
+const plan=createElectricalScenePlanTemplate({slug,title,hook,compositionId:'ScienceReel',sceneCount,productionProfile});
 const write=(rel,data)=>{const file=path.join(root,rel);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,data);};
 const json=(rel,value)=>write(rel,`${JSON.stringify(value,null,2)}\n`);
 
@@ -50,7 +53,7 @@ const defaultInformationBudget={
 
 const flowPlan={
   version:'science-flow-image-v8-density-locked',
-  productionProfile:'youtube-2min-v1',
+  productionProfile,
   workflow:'thumbnail-first-then-five-image-steps-no-intermediate-stops-final-cleanup',
   imageOnly:true,
   informationBudgetLocked:true,
@@ -87,9 +90,9 @@ const flowPlan={
   }))
 };
 
-write('README.md',`# ${title}\n\nProfil: **youtube-2min-v1** · 16:9 · ca. 2 Minuten\n\nZentrale Frage: ${hook}\n\nSkriptstruktur: Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff.\n\nBildwelt: **Technical Editorial Explainer 2.5D**. Alle Flow-Prompts werden auf Englisch geschrieben, sichtbarer Bildtext bleibt Deutsch. Jeder Prompt muss denselben Style-Lock und Density-Lock tragen.\n\n**Informationsbudget:** normale Szene = eine dominante Aussage, bevorzugt 1 Hauptobjekt, höchstens 3 wichtige visuelle Elemente, bevorzugt 0–1 und maximal 2 kurze Labels, maximal 2 Pfeile, keine große Szenenüberschrift, keine Textsätze und keine zusätzlichen Mini-Diagramme. Wenn das nicht reicht, Beat vereinfachen oder teilen.\n\nGoogle Flow: nur statische Bilder. Erst drei Thumbnails → STOPP/Auswahl → gewähltes Cover als \`00-thumbnail-final\` behalten und zwei verworfene Cover entfernen → genau fünf Bildschritte ohne Zwischenstopps → finale Bilder korrekt benennen → nur finale Assets in genau einer Flow-Sammlung \`${slug}-assets-final\` bündeln.\n\n**Phase-2/Phase-3-Handoff:** Der Nutzer legt die akzeptierten finalen Szenenbilder unter \`02-bilder/images/<scene-id>/\` und das finale Thumbnail unter \`02-bilder/thumbnail/\` ab. Antigravity/Codex/der Phase-3-Agent darf ausschließlich diese vorhandenen Dateien verwenden und niemals Bilder generieren, regenerieren, suchen oder ersetzen. Fehlt ein Asset: stoppen und melden.\n\nCaption-, Timing-, SRT-/VTT- und YouTube-Beschreibungsdateien liegen direkt in \`05-export/\`. Es gibt keinen separaten Caption-Ordner. Das finale Video hat **keine eingebrannten Untertitel/Captions**.\n`);
+write('README.md',`# ${title}\n\nProfil: **${productionProfile}** · 16:9 · ${isLong?'6–7 Minuten':'ca. 2 Minuten'}\n\nZentrale Frage: ${hook}\n\nSkriptstruktur: Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff.\n\nBildwelt: **Technical Editorial Explainer 2.5D**. Alle Flow-Prompts werden auf Englisch geschrieben, sichtbarer Bildtext bleibt Deutsch. Jeder Prompt muss denselben Style-Lock und Density-Lock tragen.\n\n**Informationsbudget:** normale Szene = eine dominante Aussage, bevorzugt 1 Hauptobjekt, höchstens 3 wichtige visuelle Elemente, bevorzugt 0–1 und maximal 2 kurze Labels, maximal 2 Pfeile, keine große Szenenüberschrift, keine Textsätze und keine zusätzlichen Mini-Diagramme. Wenn das nicht reicht, Beat vereinfachen oder teilen.\n\nGoogle Flow: nur statische Bilder. Erst drei Thumbnails → STOPP/Auswahl → gewähltes Cover als \`00-thumbnail-final\` behalten und zwei verworfene Cover entfernen → genau fünf Bildschritte ohne Zwischenstopps → finale Bilder korrekt benennen → nur finale Assets in genau einer Flow-Sammlung \`${slug}-assets-final\` bündeln.\n\n**Phase-2/Phase-3-Handoff:** Der Nutzer legt die akzeptierten finalen Szenenbilder unter \`02-bilder/images/<scene-id>/\` und das finale Thumbnail unter \`02-bilder/thumbnail/\` ab. Antigravity/Codex/der Phase-3-Agent darf ausschließlich diese vorhandenen Dateien verwenden und niemals Bilder generieren, regenerieren, suchen oder ersetzen. Fehlt ein Asset: stoppen und melden.\n\nCaption-, Timing-, SRT-/VTT- und YouTube-Beschreibungsdateien liegen direkt in \`05-export/\`. Es gibt keinen separaten Caption-Ordner. Das finale Video hat **keine eingebrannten Untertitel/Captions**.\n`);
 write('01-script-audio/script.md',`# Sprechtext\n\n## Hook\n${hook}\n\n## Kontext\n\n## Grundlage\n\n## Mechanismus\n\n## Vertiefung\n\n## Payoff\n`);
-write('01-script-audio/script-fliesstext.txt',`${hook} Vollständigen 2-Minuten-Sprechtext nach LONGFORM.md ergänzen.\n`);
+write('01-script-audio/script-fliesstext.txt',`${hook} Vollständigen ${isLong?'6–7-Minuten-':'2-Minuten-'}Sprechtext nach LONGFORM.md ergänzen.\n`);
 write('01-script-audio/voiceover.txt',`${hook} Vollständigen finalen Voice-over-Text ergänzen.\n`);
 write('01-script-audio/audio/00_AUDIO_HIER_EINFUEGEN.md','# PHASE 2 – Voice hier einfügen. Phase 3 verwendet nur vorhandene Audiodateien; fehlende Voice wird gemeldet und nicht ersetzt.\n');
 write('01-script-audio/sfx/README.md','# Optionale, sparsame SFX.\n');
@@ -108,7 +111,7 @@ write('06-projektdateien/storyboard.md','# Storyboard\n\nStory zuerst. Danach Vi
 json('06-projektdateien/scene-plan.json',plan);
 json('06-projektdateien/flow-plan.json',flowPlan);
 json('06-projektdateien/prompt-manifest.json',createElectricalPromptManifestTemplate(plan));
-json('06-projektdateien/visual-policy.json',{version:'science-static-v1',productionProfile:'youtube-2min-v1',productionMode:'flow-image-only',brandVisualStyleDefined:true,styleId:'scientific-scene-explainer-v1',styleName:'Technical Editorial Explainer 2.5D',legacyStyleIdRetainedForCompatibilityOnly:true,promptLanguage:'en',styleLockRequiredInEveryFlowPrompt:true,densityLockRequiredInEveryFlowPrompt:true,photorealismAllowed:false,whiteTextbookInfographicAsDefaultAllowed:false,generatedImageTextPolicy:'controlled-german-only',visibleImageLanguage:'de',width:1920,height:1080,thumbnailRequired:true,thumbnailCandidateCount:3,imageOnly:true,imageProductionSteps:5,informationBudgetLocked:true,normalScenePreferredLabelsMax:1,normalSceneHardLabelsMax:2,diagramComparisonSummaryLabelsMax:3,normalScenePrimaryObjectsMax:3,diagramComparisonSummaryPrimaryObjectsMax:4,panelsMax:2,arrowsMax:2,largeSceneHeadlineAllowed:false,fullSentenceTextAllowed:false,splitBeatWhenBudgetExceeded:true,pauseAfterEachImageStep:false,continueAutomaticallyBetweenImageSteps:true,finalReportAfterAllImageSteps:true,deleteUnselectedThumbnailCandidatesAfterSelection:true,selectedThumbnailFinalName:'00-thumbnail-final',finalFlowCollectionRequired:true,singleFinalFlowCollectionPerVideo:true,removeRejectedVariantsBeforeCompletion:true,renameFinalAssetsBeforeCompletion:true,finalCollectionContainsFinalAssetsOnly:true,phase2SceneAssetRoot:'02-bilder/images',phase2ThumbnailRoot:'02-bilder/thumbnail',phase3AssetSource:'phase2-project-folders-only',phase3MayGenerateVisualAssets:false,phase3MayRegenerateVisualAssets:false,phase3MaySearchExternalAssets:false,phase3MaySubstituteMissingAssets:false,phase3MaySkipMissingScenes:false,phase3MayUseGeneratedPlaceholders:false,phase3MissingAssetPolicy:'stop-and-report',phase3AmbiguousAssetPolicy:'stop-and-report',visualDiversityRequired:true,blankOrFeaturelessVisibleFacesForbidden:true,burnedInCaptions:false,flowAiVideoAllowed:false,remotionAnimationAllowed:false,transitionPolicy:'hard-cut'});
+json('06-projektdateien/visual-policy.json',{version:'science-static-v1',productionProfile,productionMode:'flow-image-only',brandVisualStyleDefined:true,styleId:'scientific-scene-explainer-v1',styleName:'Technical Editorial Explainer 2.5D',legacyStyleIdRetainedForCompatibilityOnly:true,promptLanguage:'en',styleLockRequiredInEveryFlowPrompt:true,densityLockRequiredInEveryFlowPrompt:true,photorealismAllowed:false,whiteTextbookInfographicAsDefaultAllowed:false,generatedImageTextPolicy:'controlled-german-only',visibleImageLanguage:'de',width:1920,height:1080,thumbnailRequired:true,thumbnailCandidateCount:3,imageOnly:true,imageProductionSteps:5,informationBudgetLocked:true,normalScenePreferredLabelsMax:1,normalSceneHardLabelsMax:2,diagramComparisonSummaryLabelsMax:3,normalScenePrimaryObjectsMax:3,diagramComparisonSummaryPrimaryObjectsMax:4,panelsMax:2,arrowsMax:2,largeSceneHeadlineAllowed:false,fullSentenceTextAllowed:false,splitBeatWhenBudgetExceeded:true,pauseAfterEachImageStep:false,continueAutomaticallyBetweenImageSteps:true,finalReportAfterAllImageSteps:true,deleteUnselectedThumbnailCandidatesAfterSelection:true,selectedThumbnailFinalName:'00-thumbnail-final',finalFlowCollectionRequired:true,singleFinalFlowCollectionPerVideo:true,removeRejectedVariantsBeforeCompletion:true,renameFinalAssetsBeforeCompletion:true,finalCollectionContainsFinalAssetsOnly:true,phase2SceneAssetRoot:'02-bilder/images',phase2ThumbnailRoot:'02-bilder/thumbnail',phase3AssetSource:'phase2-project-folders-only',phase3MayGenerateVisualAssets:false,phase3MayRegenerateVisualAssets:false,phase3MaySearchExternalAssets:false,phase3MaySubstituteMissingAssets:false,phase3MaySkipMissingScenes:false,phase3MayUseGeneratedPlaceholders:false,phase3MissingAssetPolicy:'stop-and-report',phase3AmbiguousAssetPolicy:'stop-and-report',visualDiversityRequired:true,blankOrFeaturelessVisibleFacesForbidden:true,burnedInCaptions:false,flowAiVideoAllowed:false,remotionAnimationAllowed:false,transitionPolicy:'hard-cut'});
 json('06-projektdateien/production-status.json',createElectricalStatusTemplate(plan));
 json('06-projektdateien/asset-manifest.json',{version:'science-v1',slug,assets:[]});
 

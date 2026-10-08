@@ -8,7 +8,7 @@ const sectionForIndex=(index,sceneCount)=>{
   return 'deepening';
 };
 
-export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema',hook='Warum passiert das?',compositionId='ScienceReel',sceneCount=20})=>{
+export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema',hook='Warum passiert das?',compositionId='ScienceReel',sceneCount=20,productionProfile='youtube-2min-v1'})=>{
   const scenes=Array.from({length:sceneCount},(_,index)=>{
     const number=String(index+1).padStart(2,'0');
     const section=sectionForIndex(index,sceneCount);
@@ -45,7 +45,7 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
 
   return {
     version:'science-v1',
-    productionProfile:'youtube-2min-v1',
+    productionProfile,
     visualPolicyVersion:'science-static-v1',
     generatedImageTextPolicy:'controlled-german-only',
     slug,
@@ -62,7 +62,7 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
 
 export const createElectricalPromptManifestTemplate=(scenePlan)=>({
   version:'science-v1',
-  productionProfile:'youtube-2min-v1',
+  productionProfile:scenePlan.productionProfile,
   visualPolicyVersion:'science-static-v1',
   styleId:'scientific-scene-explainer-v1',
   slug:scenePlan.slug,
@@ -97,7 +97,7 @@ export const createElectricalPromptManifestTemplate=(scenePlan)=>({
 export const createElectricalStatusTemplate=(scenePlan)=>({
   status:'preproduction-blocked-until-gates-pass',
   slug:scenePlan.slug,
-  productionProfile:'youtube-2min-v1',
+  productionProfile:scenePlan.productionProfile,
   completed:['folder-structure','science-static-v1-template','scientific-scene-explainer-v1'],
   open:['research','story-structure','script','sources','image-plan','thumbnail-plan','preflight','images','thumbnail','voiceover','captions','render','qa'],
   requiredVisibleSceneImages:scenePlan.scenes.length,

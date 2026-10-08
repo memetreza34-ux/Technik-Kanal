@@ -9,7 +9,7 @@ if (!projectArg) throw new Error('Nutzung: npm run science:flow-master -- <video
 
 const root = path.resolve(projectArg);
 const paths = electricalProjectPaths(root);
-const config = loadElectricalConfig();
+const config = loadElectricalConfig(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')).productionProfile);
 const read = (file) => fs.readFileSync(file, 'utf8').trim();
 const readJson = (file) => JSON.parse(read(file));
 const normalize = (value) => String(value ?? '').trim().toLowerCase();

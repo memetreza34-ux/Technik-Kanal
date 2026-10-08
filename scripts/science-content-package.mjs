@@ -57,7 +57,7 @@ if (plan) {
   if (plan.visualPolicyVersion === 'science-static-v1') {
     if (!fs.existsSync(paths.visualPolicy)) errors.push('visual-policy.json fehlt für science-static-v1.');
     if (plan.generatedImageTextPolicy !== 'controlled-german-only') errors.push('Szenenplan muss kontrollierten deutschen Bildtext erlauben.');
-    if (plan.productionProfile !== 'youtube-2min-v1') errors.push('Szenenplan muss youtube-2min-v1 verwenden.');
+    if (!['youtube-2min-v1','youtube-6to7min-v1'].includes(plan.productionProfile)) errors.push('Unbekanntes Produktionsprofil.');
     if (plan.width !== 1920 || plan.height !== 1080) errors.push('Szenenplan muss 1920×1080 / 16:9 verwenden.');
     if (plan.compositionId !== 'ScienceReel') errors.push('Aktuelle Kompatibilitäts-Composition muss ScienceReel bleiben.');
     if (plan.runtimeFile !== 'science-runtime.json') errors.push('Science Static muss science-runtime.json verwenden.');
