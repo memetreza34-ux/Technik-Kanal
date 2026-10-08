@@ -39,8 +39,8 @@ for (const scene of plan.scenes) {
   if (!/(16:9|1920.?1080|landscape)/i.test(prompt)) warnings.push(`${scene.id}: 16:9 sollte im Prompt ausdrücklich festgelegt sein.`);
   if (!/(Deutsch|German|deutsche Beschrift|deutscher Text|kein englischer Text|no English text)/i.test(prompt)) warnings.push(`${scene.id}: Deutsch-only für sichtbaren Text ausdrücklich festlegen.`);
   if (!/(eine Hauptaussage|one main idea|visuelle Hauptidee|genau.*Aussage)/i.test(prompt)) warnings.push(`${scene.id}: eine visuelle Hauptaussage klar priorisieren.`);
-  if (!/(keine große Überschrift|keine grosse Überschrift|no large headline|no large scene headings|no large scene headline|keinen großen Titel|keinen grossen Titel)/i.test(prompt)) errors.push(`${scene.id}: Szenenprompt muss große generierte Überschriften ausdrücklich ausschließen.`);
-  if (!/(keine gesichtslosen|keine leeren Gesichter|sichtbarer Kopf.*Gesicht|visible head.*face|Kopf.*außerhalb|Kopf.*ausserhalb)/i.test(prompt)) errors.push(`${scene.id}: Prompt muss die Regel gegen gesichtslose sichtbare Köpfe enthalten.`);
+  if (!/(keine große Überschrift|keine grosse Überschrift|no large headline|no large scene headings|no large scene headline|no boxes[^.]*large scene headings|keinen großen Titel|keinen grossen Titel)/i.test(prompt)) errors.push(`${scene.id}: Szenenprompt muss große generierte Überschriften ausdrücklich ausschließen.`);
+  if (!/(keine gesichtslosen|keine leeren Gesichter|sichtbarer Kopf.*Gesicht|visible head.*face|no people|Kopf.*außerhalb|Kopf.*ausserhalb)/i.test(prompt)) errors.push(`${scene.id}: Prompt muss die Regel gegen gesichtslose sichtbare Köpfe enthalten.`);
 }
 
 const promptManifest = fs.existsSync(paths.promptManifest) ? JSON.parse(fs.readFileSync(paths.promptManifest,'utf8')) : null;
