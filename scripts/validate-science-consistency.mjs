@@ -118,7 +118,7 @@ if(flowBuilder.includes('image-to-video')) errors.push('Flow-Master-Builder darf
 
 if(!scienceReel.includes("./generated/science-runtime.json")) errors.push('ScienceReel muss science-runtime.json laden.');
 if(scienceReel.includes('OffthreadVideo')||scienceReel.includes('videoPath')) errors.push('ScienceReel darf keine Videoszenen unterstützen.');
-if(!template.includes("runtimeFile:'science-runtime.json'")||!template.includes("productionProfile:'youtube-2min-v1'")) errors.push('Scene-Template falsch.');
+if(!template.includes("runtimeFile:'science-runtime.json'")||!template.includes("productionProfile='youtube-2min-v1'")||!template.includes("productionProfile:scenePlan.productionProfile")) errors.push('Scene-Template muss beide Profiltypen dynamisch unterstützen.');
 if(!newVideo.includes("visualType:'UNGEPLANT'")||!newVideo.includes("primaryMotif:'UNGEPLANT'")) errors.push('Neue Videos müssen Visual-Diversity-Platzhalter anlegen.');
 if(!newVideo.includes('pauseAfterEachImageStep:false')||!newVideo.includes('continueAutomaticallyBetweenImageSteps:true')) errors.push('Neue Videos müssen fünf Bildschritte ohne Zwischenstopps anlegen.');
 if(!newVideo.includes('deleteUnselectedThumbnailCandidatesAfterSelection:true')||!newVideo.includes("selectedThumbnailFinalName:'00-thumbnail-final'")) errors.push('Neue Videos müssen Cover-Bereinigung anlegen.');

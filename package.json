@@ -9,6 +9,7 @@
     "validate:science-syntax": "node scripts/validate-science-syntax.mjs",
     "validate:science-system": "node scripts/validate-science-system.mjs",
     "validate:science-consistency": "node scripts/validate-science-consistency.mjs",
+    "validate:science-longform": "node scripts/test-science-longform.mjs",
     "validate:science-visual-policy": "node scripts/test-science-visual-policy.mjs",
     "validate:testphase-regressions": "node scripts/test-science-testphase-regressions.mjs",
     "typecheck": "node scripts/typecheck.mjs",

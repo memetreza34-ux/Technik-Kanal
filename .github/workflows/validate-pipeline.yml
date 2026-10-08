@@ -30,6 +30,10 @@ jobs:
         run: npm run validate:science-consistency
       - name: Science Static visual policy
         run: npm run validate:science-visual-policy
+      - name: Longform profile and export test
+        run: npm run validate:science-longform
+      - name: First longform video preflight
+        run: npm run science:preflight -- "channels/science/reels/2026-10-05_bis_2026-10-11/01_Wie-kommt-Strom-in-deine-Steckdose"
 
   types-and-unit:
     name: TypeScript and unit tests
