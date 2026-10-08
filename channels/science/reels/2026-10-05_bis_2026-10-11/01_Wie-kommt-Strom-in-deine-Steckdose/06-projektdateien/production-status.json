@@ -1,0 +1,35 @@
+{
+  "status": "preproduction-ready-for-preflight",
+  "slug": "wie-kommt-strom-in-deine-steckdose",
+  "productionProfile": "youtube-6to7min-v1",
+  "completed": [
+    "research",
+    "script",
+    "41-beats",
+    "41-image-prompts",
+    "google-flow-master-prompt",
+    "3-cover-concepts",
+    "export-caption",
+    "planned-timecoded-script"
+  ],
+  "open": [
+    "preflight",
+    "thumbnail-user-selection",
+    "image-generation-5-steps",
+    "final-voiceover",
+    "real-audio-timestamps",
+    "render",
+    "QA"
+  ],
+  "requiredVisibleSceneImages": 41,
+  "imageProductionSteps": 5,
+  "imageStepSizes": [
+    9,
+    8,
+    8,
+    8,
+    8
+  ],
+  "finalCollectionName": "stromnetz-video-assets-final",
+  "timingStatus": "estimated until actual voiceover"
+}

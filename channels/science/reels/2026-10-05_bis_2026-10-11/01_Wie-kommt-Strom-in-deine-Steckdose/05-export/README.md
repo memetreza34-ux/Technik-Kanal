@@ -1,0 +1,1 @@
+youtube-caption.txt enthält Titel und Beschreibung in EINER kopierbaren Datei. skript-mit-zeitstempeln.txt enthält das gesamte Voiceover pro Zeitabschnitt; Zeiten sind derzeit PLANZEITEN und müssen nach finaler Sprachaufnahme ersetzt werden. Finales MP4 später in video/. Kein separater 03-caption Ordner. Keine eingebrannten Untertitel.
