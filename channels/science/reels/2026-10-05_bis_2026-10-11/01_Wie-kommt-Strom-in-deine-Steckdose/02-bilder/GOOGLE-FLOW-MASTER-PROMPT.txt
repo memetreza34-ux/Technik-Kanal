@@ -341,18 +341,18 @@ DENSITY LOCK: One clear explanatory message per scene; at most three visually im
 VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT. Scene number, section, 'Scene 01', 'Beat 01', filenames, step numbers and cover headline are production instructions and must NEVER appear in the scene image. All image text only exact explicitly requested German labels. Reject cropped, garbled, blank, invented, English, or over-large text.
 No people, no watermarks or logos, no random numbers. No extra text. Metadata filename: 41-payoff-final; do not print the name.
 
-FINAL REVIEW: exactly 41 clean, approved image stills and 1 chosen thumbnail in ONE final collection. No scene numbers, random text, cropped labels or repeated compositions. No clips. Complete only after cleanup.
+FINAL REVIEW: exactly 41 clean, approved scene images in ONE final scene collection; the chosen thumbnail is exported separately to 05-export/cover and is never included in the video or scene collection. No scene numbers, random text, cropped labels or repeated compositions. No clips. Complete only after cleanup.
 
 
 VERBINDLICHER GOOGLE-FLOW PRODUKTIONSVERTRAG (PRODUCTION CONTROL ONLY; NEVER RENDER THESE WORDS)
 - Zuerst 3 Thumbnail-Kandidaten. Danach STOPP und auf Nutzerauswahl warten. Das ist der einzige Freigabepunkt.
-- Nach der Auswahl zwei verworfenen Cover löschen und den Gewinner als 00-thumbnail-final behalten.
-- Das Thumbnail ist nur eine Stilreferenz: KEINE Farbpalette und KEINE Layoutvorlage auf alle Szenen übertragen.
+- Nach der Auswahl zwei verworfenen Cover löschen und 00-thumbnail-final ausschließlich in 05-export/cover exportieren, niemals ins Video.
+- Das Thumbnail ist NUR ein Veröffentlichungsasset: Szene 01 komplett unabhängig gestalten. KEINE Farbpalette, KEINE Layoutvorlage und KEIN Cover-Motiv auf Videoszenen übertragen.
 - VISUELLE VIELFALT IST PFLICHT (Diversity): Wechsel der Erklärform statt nur Kamerawinkel. Keine Wiederholung von Nachbarbildern.
 - KEINE GESICHTSLOSEN SICHTBAREN KÖPFE. Falls ein sichtbarer Kopf vorkommt, braucht er vollständige natürliche stilisierte Gesichtszüge.
 - NUR BILDER: ausschließlich statische Bilder. Keine KI-Videoclips, keine Animation und keine Kamerabewegung.
 - BILDSCHRITT 1/5: 01–09. BILDSCHRITT 2/5: 10–17. BILDSCHRITT 3/5: 18–25. BILDSCHRITT 4/5: 26–33. BILDSCHRITT 5/5: 34–41.
 - Nach Cover-Auswahl OHNE ZWISCHENSTOPPS durch alle fünf Bildschritte arbeiten, keine weiteren Stopps oder Rückfragen.
 - Erst NACH ABSCHLUSS VON BILDSCHRITT 5 den GESAMTABSCHLUSS melden.
-- Genau eine finale Google-Flow-Sammlung namens stromnetz-video-assets-final: Fehlversuche und Zwischenstände entfernen; die finale Sammlung darf NUR finale Assets enthalten: 00-thumbnail-final und 41 final ausgewählte, korrekt benannte Bilder.
+- Genau eine finale Google-Flow-Sammlung namens stromnetz-video-assets-final: Fehlversuche und Zwischenstände entfernen; die finale Sammlung darf NUR die 41 final ausgewählten, korrekt benannten SZENENBILDER enthalten. Das Cover liegt getrennt unter 05-export/cover.
 - Szene-/Beat-IDs und Dateinamen niemals sichtbar auf Bilder schreiben. Beschriftungen nur klein, gezielt und ausschließlich auf Deutsch.

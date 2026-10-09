@@ -1,1 +1,3 @@
-Drei Cover erstellen, Nutzer wählt eines. Nur Gewinner 00-thumbnail-final ablegen; zwei übrige Cover entfernen.
+# Cover-Produktionsstaging
+
+Hier können die drei Coverkandidaten während der Auswahl liegen. **Der gewählte Gewinner gehört anschließend ausschließlich nach `05-export/cover/00-thumbnail-final.*`.** Die anderen zwei Kandidaten entfernen. Kein Cover darf als Videoszene verwendet werden.
