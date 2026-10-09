@@ -31,6 +31,9 @@ for(let i=0;i<plan.scenes.length;i++){
   const p=fs.readFileSync(path.join(root,'02-bilder/prompts',s.id+'.txt'),'utf8');
   if(!p.includes('Technical Editorial Explainer 2.5D')||!p.includes('VISIBLE TEXT LOCK')) errors.push('Prompt-Lock fehlt bei '+s.id);
 }
+if(flow.coverNeverUsedAsVideoFrame!==true||flow.scene01IndependentFromCover!==true||flow.coverExportDir!=='05-export/cover') errors.push('Cover-Szenentrennung fehlt.');
+if(plan.scenes[0].visualRecipe?.stage==='cover-continuation') errors.push('Hook darf Cover-Motiv nicht fortsetzen.');
+if(!master.includes('05-export/cover')) errors.push('Separater Cover-Export fehlt im Master.');
 if(!master.includes('THREE')&&!master.includes('three')) errors.push('Thumbnail-Wahl fehlt im Master.');
 if(!master.includes('NO')&&!master.includes('NEVER')) errors.push('Bildmetadatenverbot fehlt.');
 const sample = ScenePlan.parse(createElectricalScenePlanTemplate({slug:'longform-test',sceneCount:42,productionProfile:'youtube-6to7min-v1'}));

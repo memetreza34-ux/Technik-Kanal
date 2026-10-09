@@ -20,7 +20,7 @@
   },
   "visualBeats": {
     "min": 34,
-    "ideal": 42,
+    "ideal": 46,
     "max": 50
   },
   "narrativeStructure": [
@@ -60,7 +60,16 @@
     "normalSceneHardLabelsMax": 2,
     "normalScenePrimaryObjectsMax": 3,
     "sameCompositionMaxConsecutive": 1,
-    "minimumDistinctVisualTypesPerVideo": 7
+    "minimumDistinctVisualTypesPerVideo": 7,
+    "coverExportDir": "05-export/cover",
+    "coverInVideoForbidden": true,
+    "scene01MustBeIndependent": true,
+    "visualBeatPacingSeconds": {
+      "preferredMin": 5,
+      "preferredMax": 9,
+      "reviewIfLongerThan": 10
+    },
+    "extraBeatsWhenExplanationChanges": true
   },
   "phase3": {
     "mayGenerateVisualAssets": false,

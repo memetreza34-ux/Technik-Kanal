@@ -73,6 +73,7 @@ let motifCounts = new Map();
 let handOnObjectCount = 0;
 
 if (flowPlan) {
+  if(plan.productionProfile==='youtube-6to7min-v1' && (flowPlan.scene01IndependentFromCover!==true || flowPlan.coverNeverUsedAsVideoFrame!==true || flowPlan.coverExportDir!=='05-export/cover')) errors.push('6–7-Minuten-Profil: Cover darf nur im Export sein; Szene 01 muss eigenständig sein.');
   if (flowPlan.imageOnly !== true) errors.push('flow-plan.json muss imageOnly=true setzen.');
   if (flowPlan.imageProductionSteps !== stepCount) errors.push(`flow-plan.json muss imageProductionSteps=${stepCount} setzen.`);
   if (flowPlan.pauseAfterEachImageStep !== false) errors.push('flow-plan.json muss pauseAfterEachImageStep=false setzen.');

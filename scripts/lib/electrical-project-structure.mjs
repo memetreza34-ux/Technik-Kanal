@@ -61,7 +61,8 @@ export const electricalProjectPaths = (root) => ({
   voiceoverText: path.join(root, '01-script-audio/voiceover.txt'),
   imageDir: path.join(root, '02-bilder/images'),
   promptDir: path.join(root, '02-bilder/prompts'),
-  thumbnailDir: path.join(root, '02-bilder/thumbnail'),
+  thumbnailDir: path.join(root, '02-bilder/thumbnail'), // Legacy-Quellordner
+  exportCoverDir: path.join(root, '05-export/cover'), // neues Export-Cover, nie Videoframe
   prompts: path.join(root, '02-bilder/bildprompts.md'),
   flowMaster: path.join(root, '02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt'),
   // Kompatibilitätsalias: Caption-Dateien liegen direkt im Exportbereich.

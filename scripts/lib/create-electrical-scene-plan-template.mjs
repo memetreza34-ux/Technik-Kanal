@@ -15,7 +15,7 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
     const isHook=section==='hook';
     const isPayoff=section==='payoff';
     const id=isHook?`${number}-hook`:isPayoff?`${number}-payoff`:`${number}-${section}`;
-    const subject=isHook?'Hauptmotiv zur zentralen Frage':isPayoff?'visuelle Kernerkenntnis':`fachliche Kernaussage des Beats ${index+1}`;
+    const subject=isHook?'Eigenständiges Erklärbild zur gesprochenen Hook-Aussage, keine Cover-Fortsetzung':isPayoff?'visuelle Kernerkenntnis':`fachliche Kernaussage des Beats ${index+1}`;
     return {
       id,
       section,
@@ -74,7 +74,9 @@ export const createElectricalPromptManifestTemplate=(scenePlan)=>({
     imageRequired:false,
     sourceSceneId:null,
     candidateCount:0,
-    separateThumbnailForbidden:false
+    separateThumbnailForbidden:false,
+    exportDir:'05-export/cover',
+    neverUsedAsVideoFrame:true
   },
   thumbnail:{
     required:true,

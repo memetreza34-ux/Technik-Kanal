@@ -11,10 +11,10 @@ const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--')
 if (!projectArg) throw new Error('Nutzung: npm run science:ready -- <video-ordner>');
 const root = path.resolve(projectArg);
 const paths = electricalProjectPaths(root);
-const config = loadElectricalConfig();
+const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')));
+const config = loadElectricalConfig(plan.productionProfile);
 const errors = [];
 const warnings = [];
-const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')));
 const voice = findVoiceFiles(paths.audioDir);
 if (!voice.raw && !voice.final) errors.push(`Keine Roh- oder Finalaufnahme in ${paths.audioDir}.`);
 
@@ -59,10 +59,12 @@ for (const scene of plan.scenes) {
 
 if (selectedImages.length !== plan.scenes.length && errors.length === 0) errors.push('Nicht für jeden visuellen Beat wurde genau ein finales Bild ausgewählt.');
 
-const thumbnailImages=findMedia(paths.thumbnailDir,imageExtensions).filter((file)=>!path.basename(file).startsWith('.generated-'));
+const exportOnlyCover = plan.productionProfile === 'youtube-6to7min-v1';
+const thumbnailImages=findMedia(exportOnlyCover?paths.exportCoverDir:paths.thumbnailDir,imageExtensions).filter((file)=>!path.basename(file).startsWith('.generated-'));
 const thumbnailApproved=thumbnailImages.filter((file)=>approvedPattern.test(path.basename(file)));
 let selectedThumbnail=null;
-if(thumbnailImages.length<config.visuals.thumbnail.candidateCount) errors.push(`Thumbnail: mindestens ${config.visuals.thumbnail.candidateCount} Kandidaten erforderlich; gefunden ${thumbnailImages.length}.`);
+if(exportOnlyCover && thumbnailImages.length!==1) errors.push(`Finales Export-Cover: genau eine Bilddatei unter 05-export/cover erwartet, gefunden ${thumbnailImages.length}.`);
+if(!exportOnlyCover && thumbnailImages.length<config.visuals.thumbnail.candidateCount) errors.push(`Thumbnail: mindestens ${config.visuals.thumbnail.candidateCount} Kandidaten erforderlich; gefunden ${thumbnailImages.length}.`);
 if(thumbnailApproved.length!==1) errors.push(`Thumbnail: genau ein Kandidat muss als final/approved/freigabe markiert sein; gefunden ${thumbnailApproved.length}.`);
 else {
   const file=thumbnailApproved[0];
@@ -72,14 +74,14 @@ else {
   if(aspect<1.7||aspect>1.85) errors.push(`Thumbnail-Seitenverhältnis ${aspect.toFixed(3)} ist nicht 16:9-tauglich.`);
   const digest=digestFor(file);
   if(seen.has(digest)) errors.push(`Thumbnail darf nicht identisch mit Szenenbild ${seen.get(digest)} sein.`);
-  selectedThumbnail={file:path.relative(root,file).split(path.sep).join('/'),candidateCount:thumbnailImages.length,width:metadata.width,height:metadata.height};
+  selectedThumbnail={file:path.relative(root,file).split(path.sep).join('/'),candidateCount:thumbnailImages.length,width:metadata.width,height:metadata.height,exportOnly:exportOnlyCover,neverUsedAsVideoFrame:exportOnlyCover};
 }
 
 const invalidSfx = findMedia(paths.sfxDir, new Set([...audioExtensions])).filter((file) => fs.statSync(file).size === 0);
 invalidSfx.forEach((file) => warnings.push(`Leere SFX-Datei: ${file}`));
 
 const report = {
-  version: 'youtube-2min-media-v1',
+  version: exportOnlyCover?'youtube-longform-media-v2':'youtube-2min-media-v1',
   productionProfile: config.productionProfile,
   generatedAt: new Date().toISOString(),
   passed: errors.length === 0,
