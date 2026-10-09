@@ -9,3 +9,8 @@ Erstes 6–7-Minuten-Video · ca. 06:30 · 958 Sprecherwörter · 41 statische 1
 - Gesamtskript mit 00:00–00:xx Planzeiten: 05-export/skript-mit-zeitstempeln.txt, nach Audio angleichen
 - Bildwelt: Technical Editorial Explainer 2.5D; keine Szenennummern, keine großen Texte, keine überladenen Bilder
 - Phase 3 nutzt nur bereitgestellte Phase-2-Bilder; noch KEIN finales MP4
+
+
+## Videoanalyse 09.10.2026
+
+Das Cover wird künftig nur unter `05-export/cover/` exportiert, niemals als Video-Frame. Szene 01 ist ein eigenständiges Erklärbild. Bei Bedarf mehr klare Bildbeats (Richtwert 46 für neue 6–7-Minuten-Videos). Details in `06-projektdateien/VIDEO-REVIEW-2026-10-09.md`. Das vorhandene MP4 wird durch diese Prompt-/Planänderung nicht automatisch neu gerendert.

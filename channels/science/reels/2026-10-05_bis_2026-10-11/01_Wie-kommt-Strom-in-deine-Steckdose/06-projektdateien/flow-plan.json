@@ -98,8 +98,8 @@
       "id": "01-hook",
       "output": "image",
       "imageStep": 1,
-      "visualType": "cover-continuation",
-      "primaryMotif": "cover-continuation-1",
+      "visualType": "independent-hook-illustration",
+      "primaryMotif": "lampe-und-steckdose-in-normalem-raum",
       "informationBudget": {
         "densityClass": "normal",
         "oneDominantIdea": true,
@@ -791,5 +791,8 @@
         "fullSentenceTextAllowed": false
       }
     }
-  ]
+  ],
+  "coverExportDir": "05-export/cover",
+  "coverNeverUsedAsVideoFrame": true,
+  "scene01IndependentFromCover": true
 }

@@ -19,12 +19,12 @@
       "voiceText": "Wie kommt der Strom eigentlich in deine Steckdose? Zwischen einer Windkraftanlage und deiner Nachttischlampe liegt ein gewaltiges Netz. Wir verfolgen seinen Weg.",
       "imageDir": "02-bilder/images/01-hook",
       "backgroundFamily": "content-driven",
-      "shotType": "cover-continuation",
+      "shotType": "independent-hook-illustration",
       "referenceGroup": "technical-editorial-explainer-2.5d",
       "visualRecipe": {
-        "stage": "cover-continuation",
+        "stage": "independent-hook-illustration",
         "camera": "one simple decisive explanatory camera view",
-        "subject": "One huge illustrated German wall outlet in a dim bedroom, distant power lines beyond window; selected cover motif, WITHOUT cover headline.",
+        "subject": "Normal video illustration: one lit desk lamp plugged into a German outlet, no cover composition",
         "focus": "current single spoken explanation",
         "motion": "none",
         "callouts": []
