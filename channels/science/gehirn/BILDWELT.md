@@ -60,19 +60,13 @@ Stattdessen:
 
 **Ein überfülltes Bild wird nicht akzeptiert, auch wenn es fachlich korrekt ist.**
 
-## Erste Szene = Cover-Motiv
+## Szene 01 ist unabhängig vom Cover
 
-Nach der manuellen Cover-Auswahl soll Szene 01 **bevorzugt das gewählte Cover-Motiv übernehmen**.
+**Für alle neuen Videos:** Das Cover ist ausschließlich ein separates YouTube-Veröffentlichungsbild unter `05-export/cover/00-thumbnail-final.*`. Es gehört niemals als erstes Bild, Zwischenszene, Platzhalter oder Outro ins MP4. **Szene 01 ist ein normales, eigenständiges Erklärbild**, das allein auf dem gesprochenen Hook basiert. Niemals Cover-Komposition, großes Motiv oder Thumbnail-Schrift übernehmen.
 
-Verbindlich:
-- gleiche zentrale Bildidee / gleiches Hauptmotiv wie das gewählte Cover
-- gleiche Illustrationssprache
-- große Thumbnail-Schlagzeile entfernen oder stark reduzieren
-- Szene 01 muss wie die natürliche Fortsetzung des Covers wirken
-- alle Cover-Zusatzelemente entfernen, die für den ersten gesprochenen Satz nicht nötig sind
-- nicht blind exakt dieselbe Datei verwenden, wenn die Thumbnail-Typografie die Videoszene stört
+## Bildwechsel nach Aussage, nicht nach starrer Zeit
 
-Ausnahme nur, wenn das Cover bewusst eine symbolische Idee zeigt, die den ersten gesprochenen Satz nicht verständlich darstellen kann.
+Für 6–7 Minuten ca. 46 statische Erklärbeats anstreben; Anzahl flexibel, wenn die Story anderes verlangt. Bei neuer Ursache, neuem Prozessschritt oder wechselndem Voice-over-Thema neues Bild planen. 5–9 Sekunden pro Bild sind häufig passend; bei mehr als etwa 10 Sekunden prüfen, ob eine zusätzliche, fachlich sinnvolle Illustration nötig ist. Wiederholte Landschaften und gleiche Bilder mit neuer Überschrift sind zu verwerfen. Große automatische Szenenüberschriften sind verboten; kurze deutsche Labels nur wenn nötig.
 
 ## Format
 

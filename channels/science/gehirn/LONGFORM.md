@@ -64,18 +64,11 @@ Verbindlich:
 
 Dann gilt: **Skript/Beat-Plan ändern, nicht nur den Prompt umformulieren.**
 
-## Erste Szene und Thumbnail
+## Cover getrennt von der Videohandlung
 
-Titel, Thumbnail, Hook und erste Szene müssen dasselbe Versprechen öffnen.
+Das Cover stellt dieselbe Frage wie der Hook, darf aber in **keinem einzigen Frame der MP4** vorkommen. Der eine gewählte Cover-Gewinner wird ausschließlich als Datei `05-export/cover/00-thumbnail-final.*` bereitgestellt. **Szene 01 ist eine unabhängige normale technische Illustration** des ersten gesprochenen Satzes. Kein Covermotiv, keine Cover-Grafik, kein Titel im Video.
 
-Nach Auswahl des Covers soll **Szene 01 bevorzugt dessen Hauptmotiv weiterführen**:
-- gleiche zentrale Bildidee wie das gewählte Cover
-- große Thumbnail-Schlagzeile für die Videoszene entfernen/reduzieren
-- Cover-Zusatzelemente entfernen, die für den ersten gesprochenen Satz nicht nötig sind
-- Szene 01 wirkt wie die direkte Fortsetzung des Covers
-- Ausnahme nur, wenn das Cover den ersten gesprochenen Satz nicht fachlich sauber erklären kann
-
-Das Thumbnail bleibt technisch eine separate Datei; visuell soll der Einstieg trotzdem anschließen.
+Bei 6–7 Minuten etwa 46 visuelle Beats anpeilen. Bildwechsel bevorzugt dort, wo der Text eine neue konkrete Aussage macht; bei Bildhaltezeit über 10 Sekunden eine Teilung prüfen. Zusätzliche Bilder vor der Bildgenerierung und vor Phase 3 im Beat-Plan festlegen; Phase 3 darf nichts selbst nachgenerieren.
 
 ## Visuelle Beat-Regel
 
@@ -165,7 +158,7 @@ Wortzeiten dürfen intern weiterhin für Bildwechsel, Timing und Synchronisation
 12. Bildprompts und Thumbnail-Prompts erstellen
 13. Preflight
 14. drei Cover erzeugen und eines auswählen
-15. Szene 01 visuell an das gewählte Cover-Motiv anschließen
+15. Szene 01 normal und unabhängig vom Cover planen
 16. Bilder in fünf Flow-Schritten erzeugen
 17. Voice erzeugen/aufnehmen und auf 1,10× verarbeiten
 18. Wortzeiten intern erzeugen und Beats synchronisieren
@@ -184,7 +177,7 @@ Vor Produktion:
 - reichen 0–1 Labels normalerweise aus?
 - muss ein Beat geteilt werden, statt mehr Information in ein Bild zu quetschen?
 - erklärt jedes geplante Bild wirklich den aktuellen Voice-over-Satz?
-- erste Szene führt das gewählte Cover-Motiv sinnvoll weiter?
+- Szene 01 eigenständig und das Cover nur im Export?
 - können die Beats visuell deutlich unterschiedlich aussehen?
 - gibt es keine Kette fast identischer Bilder?
 - mindestens 5 Darstellungsformen geplant?

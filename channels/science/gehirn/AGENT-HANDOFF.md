@@ -62,3 +62,8 @@ Prompts und Flow-Pläne erklären, was erstellt werden sollte; sie sind in Phase
 ## Grundsatz
 
 > Phase 2 erstellt und liefert die Assets. Phase 3 verwendet nur diese Assets und montiert daraus das Video.
+
+
+## Neue Cover-Regel (ab erstem 6–7-Minuten-Video)
+
+`05-export/cover/00-thumbnail-final.*` ist ausschließlich das YouTube-Thumbnail. Dieses Cover darf der Montage-Agent nicht in die Timeline ziehen, auch nicht als Szene 01. Szene 01 ist eine unabhängige Erklärillustration nach dem gesprochenen Hook. Wenn zusätzliche Bilder für verständlichen Bildwechsel nötig werden, muss Phase 2 sie bereitstellen; Phase 3 stoppt und meldet fehlende Dateien, statt selbst Bilder zu erzeugen.

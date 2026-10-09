@@ -66,28 +66,19 @@ Jeder Beat in `flow-plan.json` braucht zusätzlich ein `informationBudget` mit:
 
 Ohne gültiges Informationsbudget darf der Flow-Masterprompt nicht gebaut werden.
 
-## Phase 1 – Thumbnail zuerst
+## Phase 1 – Cover-Auswahl, danach separater Export
 
-1. genau 3 unterschiedliche Thumbnail-Kandidaten erzeugen
-2. danach **STOPPEN**
-3. noch keine Szenenbilder erzeugen
-4. auf die ausdrückliche Nutzerauswahl warten
-5. gewähltes Thumbnail als `00-thumbnail-final` übernehmen
-6. die zwei nicht gewählten Thumbnail-Kandidaten löschen oder aus der finalen Flow-Sammlung entfernen
-7. in der finalen Sammlung darf nur das ausgewählte Cover verbleiben
+1. Zuerst genau drei Thumbnail-Kandidaten erzeugen.
+2. STOPP und auf die ausdrückliche Nutzerauswahl warten – einziger Freigabepunkt.
+3. Genau ein Cover auswählen, die zwei verworfenen Cover entfernen.
+4. Gewinner als `00-thumbnail-final` ausschließlich nach `05-export/cover/` exportieren. **Cover darf niemals ins MP4-Video**.
+5. **Szene 01 ist eine eigene normale Bildszene** zum ersten gesprochenen Hook, keine Fortsetzung oder Kopie des Covermotivs.
+6. Danach genau fünf Bildschritte; automatisch mit Bildschritt 2 fortfahren und ohne weitere Stopps alle Bilder erzeugen.
+7. Am Ende genau eine finale Google-Flow-Sammlung nur mit finalen Szenenbildern. Das Cover ist separat im Export und nicht Teil der Videoszenen.
 
-### Szene 01 nach Cover-Auswahl
+### Visueller Rhythmus
 
-Szene 01 soll **bevorzugt das Hauptmotiv des ausgewählten Covers fortführen**.
-
-- gleiche zentrale Bildidee / gleiches Hauptmotiv
-- große Thumbnail-Schlagzeile aus der Videoszene entfernen
-- nur die Elemente behalten, die den ersten gesprochenen Satz erklären
-- Cover-Deko entfernen, wenn sie für Szene 01 nicht nötig ist
-- Szene 01 soll wie die natürliche Fortsetzung des Covers wirken
-- Ausnahme nur, wenn das Cover den ersten Voice-over-Satz fachlich nicht klar darstellen kann
-
-Das Cover ist danach weiterhin **keine starre Palette oder Layoutvorlage für alle späteren Szenen**.
+6–7 Minuten: ungefähr 46 Bildbeats statt starrer 41. Wenn zwei Aussagen in einem Satz unterschiedliche Bilder erfordern, Skript/Beat vorab teilen. Bevorzugt 5–9 Sekunden pro Bild; über 10 Sekunden auf sinnvolle Teilung prüfen. Die fünf Bildschritte bleiben gleichmäßig verteilt, ohne Zwischenfreigabe.
 
 ## Phase 2 – genau 5 Bildschritte, ohne Zwischenstopps
 
@@ -133,7 +124,7 @@ Nach Bildschritt 5 wird vor dem Abschlussbericht aufgeräumt.
 
 Verbindlich:
 - genau eine finale Google-Flow-Sammlung / ein finaler Ordner pro Video
-- nur das ausgewählte Cover behalten
+- Cover separat im Export behalten und alle abgelehnten Cover entfernen
 - alle zwei verworfenen Cover entfernen
 - Fehlversuche, Zwischenstände, doppelte Bilder und verworfene Varianten entfernen
 - alle finalen Szenenbilder korrekt in Reihenfolge benennen
@@ -148,7 +139,7 @@ Pflichtinhalt:
 Nach der Flow-Produktion legt **der Nutzer** die final akzeptierten Dateien in die Projektordner:
 
 - Szenenbilder: `02-bilder/images/<scene-id>/`
-- gewähltes Thumbnail: `02-bilder/thumbnail/`
+- gewähltes Thumbnail nur als Export: `05-export/cover/`
 - Voice-over: `01-script-audio/audio/`
 
 Diese Ordner sind die einzige verbindliche Quelle für Phase 3.
@@ -258,4 +249,4 @@ Vor Bilderzeugung müssen fertig sein:
 8. `flow-plan.json` mit 5 Schritten, Visual-Typ, Primärmotiv, `informationBudget` und Final-Collection-Regeln
 9. `GOOGLE-FLOW-MASTER-PROMPT.txt`
 
-**Freigabepunkt ist nur nach den drei Thumbnail-Kandidaten. Nach der Cover-Auswahl beginnt Szene 01 bevorzugt mit dem Cover-Hauptmotiv; danach werden Bildschritt 1 bis 5 ohne Zwischenstopp fertiggestellt. Der Nutzer legt die akzeptierten Assets in Phase 2 ab; Phase 3 montiert ausschließlich diese vorhandenen Dateien.**
+**Freigabepunkt ist nur nach den drei Thumbnail-Kandidaten. Nach der Cover-Auswahl beginnt Szene 01 als eigenständiges Erklärbild; danach werden Bildschritt 1 bis 5 ohne Zwischenstopp fertiggestellt. Der Nutzer legt die akzeptierten Assets in Phase 2 ab; Phase 3 montiert ausschließlich diese vorhandenen Dateien.**
