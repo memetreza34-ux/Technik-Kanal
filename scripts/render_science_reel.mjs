@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {channelRoot, ensureDirectory, projectPaths, readJson, repositoryRoot, run} from './lib/electrical-project.mjs';
+import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
 
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
@@ -12,9 +13,11 @@ if (!projectArg) {
 
 const paths = projectPaths(projectArg);
 const sourcePlan = readJson(paths.scenePlan);
-if (sourcePlan.productionProfile !== 'youtube-2min-v1') throw new Error('Aktiver Renderer erwartet youtube-2min-v1.');
-if (Number(sourcePlan.width) !== 1920 || Number(sourcePlan.height) !== 1080) throw new Error('Aktiver Renderer erwartet 1920×1080 / 16:9.');
-if (sourcePlan.visualPolicyVersion !== 'science-static-v1') throw new Error('Nur science-static-v1 wird vom aktiven Renderer unterstützt.');
+const config = loadElectricalConfig(sourcePlan.productionProfile);
+if (Number(sourcePlan.width) !== config.format.width || Number(sourcePlan.height) !== config.format.height || Number(sourcePlan.fps) !== config.format.fps) {
+  throw new Error(`Renderer erwartet ${config.format.width}×${config.format.height} bei ${config.format.fps} FPS für ${config.productionProfile}.`);
+}
+if (sourcePlan.visualPolicyVersion !== config.visuals.policyVersion) throw new Error(`Nur ${config.visuals.policyVersion} wird vom Renderer unterstützt.`);
 if (sourcePlan.compositionId !== 'ScienceReel') throw new Error('Aktive Kompatibilitäts-Composition muss ScienceReel sein.');
 if (sourcePlan.runtimeFile !== 'science-runtime.json') throw new Error('Science-Videos müssen science-runtime.json verwenden.');
 
@@ -32,13 +35,16 @@ run(process.execPath, prepareArgs, {cwd: repositoryRoot});
 
 const runtime = readJson(path.join(paths.projectFilesDir, 'reel-runtime.json'));
 if (runtime.compositionId !== 'ScienceReel') throw new Error('Erzeugte Runtime verwendet nicht ScienceReel.');
-if (Number(runtime.width) !== 1920 || Number(runtime.height) !== 1080) throw new Error('Erzeugte Runtime ist nicht 1920×1080.');
+if (Number(runtime.width) !== config.format.width || Number(runtime.height) !== config.format.height || Number(runtime.fps) !== config.format.fps) {
+  throw new Error('Erzeugte Runtime passt nicht zum ausgewählten Produktionsprofil.');
+}
 const scienceRuntimePath = path.join(channelRoot, 'src/generated/science-runtime.json');
 if (!fs.existsSync(scienceRuntimePath)) throw new Error(`Science-Runtime fehlt: ${scienceRuntimePath}`);
 
 run('npm', ['run', 'check'], {cwd: repositoryRoot});
-ensureDirectory(paths.exportDir);
-const output = path.join(paths.exportDir, `${runtime.slug}.mp4`);
+const videoDir = path.join(paths.exportDir, 'video');
+ensureDirectory(videoDir);
+const output = path.join(videoDir, `${runtime.slug}.mp4`);
 const npx = process.platform === 'win32' ? 'npx.cmd' : 'npx';
 run(npx, ['remotion','render','src/index.ts','ScienceReel',output,'--codec=h264','--audio-codec=aac','--audio-bitrate=192k','--pixel-format=yuv420p','--crf=18'], {cwd: channelRoot});
 

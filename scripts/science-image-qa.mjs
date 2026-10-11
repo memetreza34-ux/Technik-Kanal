@@ -12,7 +12,7 @@ if(!projectArg) throw new Error('Nutzung: npm run science:image-qa -- <video-ord
 const root=path.resolve(projectArg);
 const paths=electricalProjectPaths(root);
 const plan=ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan,'utf8')));
-const config=loadElectricalConfig();
+const config=loadElectricalConfig(plan.productionProfile);
 const errors=[];
 const warnings=[];
 const analyses=[];

@@ -2,6 +2,18 @@ import {describe, expect, it} from 'vitest';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
 
 describe('science config regression', () => {
+  it('supports the 6–7-minute profile without changing the short profile', () => {
+    const short = loadElectricalConfig('youtube-2min-v1');
+    const long = loadElectricalConfig('youtube-6to7min-v1');
+    expect(short.format.durationSeconds).toEqual({min:90,ideal:120,max:150});
+    expect(long.productionProfile).toBe('youtube-6to7min-v1');
+    expect(long.format.durationSeconds).toEqual({min:360,ideal:390,max:420});
+    expect(long.script.words).toEqual({min:850,ideal:975,max:1075});
+    expect(long.visuals.beats).toEqual({min:34,ideal:46,max:50});
+    expect(long.visuals.policyVersion).toBe('science-static-v1');
+    expect(() => loadElectricalConfig('unknown-profile')).toThrow();
+  });
+
   it('keeps the binding production rules', () => {
     const config = loadElectricalConfig();
     expect(config.version).toBe('science-v1');
