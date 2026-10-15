@@ -45,7 +45,8 @@
     "science:phase1-handoff": "node scripts/science-phase1-handoff.mjs",
     "validate:science-phase1-handoff": "node scripts/test-science-phase1-handoff.mjs",
     "technik:import": "node scripts/technik-import.mjs",
-    "validate:technik-simple": "node scripts/test-technik-simple.mjs"
+    "validate:technik-simple": "node scripts/test-technik-simple.mjs",
+    "technik:cleanup": "node scripts/technik-cleanup.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.490",

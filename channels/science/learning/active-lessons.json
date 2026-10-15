@@ -6,6 +6,16 @@
   "updatedAt": "2026-10-15",
   "lessons": [
     {
+      "id": "qa-003",
+      "priority": 1,
+      "status": "active",
+      "area": "label-quality-and-schematic-visuals",
+      "evidenceLevel": "verified-video-frame-review",
+      "source": "warum-sinkt-ein-riesiges-stahlschiff-nicht.mp4 (hochgeladen am 15.10.2026), Frame bei 04:36",
+      "observation": "Der Film ist visuell kohärent, aber viele 2.5D-Bilder erklären das technische Prinzip zu wenig; im Frame bei 04:36 steht die verbotene Produktionsbeschriftung '35 | DEEPENING'.",
+      "action": "Nach jedem Flow-Render Bildserie vollständig sichten; sichtbare Produktionsnummern/Kapitel-IDs strikt ablehnen und regenerieren. Mehr sinnvolle deutsch beschriftete technische Schemata, Kraftdiagramme, Formeln, Maß-/Wasserlinien, Querschnitte und direkte Vergleiche nutzen. Normal bis 3 Labels, Diagramme bis 5; gut lesbar, keine erfundenen Werte. Etwa 35–50 % sachlich erklärende Visuals anstreben, ohne unpassende Füllgrafiken."
+    },
+    {
       "id": "qa-001",
       "priority": 1,
       "status": "active",
@@ -13,7 +23,7 @@
       "evidenceLevel": "verified-production-issue",
       "source": "gehirn/TESTPHASE-ABSCHLUSS.md",
       "observation": "Szenen-Metadaten, falsche Bildlabels und Thumbnail-Leaks traten in der Pilotphase auf.",
-      "action": "Jedes finale Szenenbild vor Freigabe gegen Voice, sichtbaren Text und Metadaten-/Cover-Leak prüfen; Szene 01 niemals als Thumbnail fortsetzen."
+      "action": "Jedes finale Szenenbild vor Freigabe gegen Voice, sichtbaren Text und Metadaten-/Cover-Leak prüfen; Szene 01 niemals als Thumbnail fortsetzen. Zusätzlich das aktuell bestätigte Metadaten-Leak '35 | DEEPENING' als harte Fehlerkategorie behandeln."
     },
     {
       "id": "qa-002",

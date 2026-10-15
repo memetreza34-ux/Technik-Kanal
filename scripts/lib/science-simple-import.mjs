@@ -88,5 +88,5 @@ export function importScienceDrop({repoRoot,packageDir,projectDir=null,dryRun=fa
     fs.copyFileSync(item.from,item.to);
     imported.push(item.label);
   }
-  return {projectDir:project,packageDir:inputDir,sceneCount:plan.scenes.length,readyFromDrop:selected.size,missing,hasCover:Boolean(cover||fs.existsSync(path.join(project,'05-export/cover.png'))),hasVoice:Boolean(voice||fs.existsSync(path.join(project,'01-script-audio/audio/voiceover-raw.wav'))),copied:imported,plannedCopies:copies.length,dryRun};
+  return {projectDir:project,packageDir:inputDir,sceneCount:plan.scenes.length,readyFromDrop:selected.size,missing,hasCover:Boolean(cover||[...IMAGE_EXTENSIONS].some(ext=>fs.existsSync(path.join(project,'05-export/cover'+ext)))),hasVoice:Boolean(voice||fs.existsSync(path.join(project,'01-script-audio/audio/voiceover-raw.wav'))),copied:imported,plannedCopies:copies.length,dryRun};
 }
