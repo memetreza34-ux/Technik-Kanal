@@ -13,3 +13,8 @@ Alle Agenten (ChatGPT, Codex, Claude und Antigravity) müssen vor jeder Wissonau
 Weiterhin verbindlich: Technical Editorial Explainer 2.5D, fachliche Richtigkeit, Cover ist nicht Szene 01, Flow erzeugt nur statische Bilder, Montageagenten dürfen fehlende Bilder niemals selbst erzeugen.
 
 Warnung: Science-Branch nicht ungeprüft in main mergen, da er sonst den ursprünglichen Elektrotechnik-Kanal ersetzt.
+
+## Pflicht nach jeder fertigen Phase 1: EIN GitHub-Kopierlink
+
+Nach erfolgreichem `npm run science:phase1 -- "VIDEO_ORDNER"` entsteht im Videoordner `PHASE-1-START-HIER.md`: das komplette freigegebene Skript, sämtliche Google-Flow-Prompts inklusive Cover, fünf Bildschritte und Einzellinks. **Als Agent diese Datei samt Skript/Prompts auf GitHub committen/pushen und anschließend dem Nutzer sofort den direkten Link auf die konkrete Datei schicken**, nicht nur den Verzeichnisnamen oder eine lokale Datei. Der Link muss am Laptop ohne weitere Suche kopierbar sein. Ein Link auf eine nicht gepushte Datei ist verboten. Nicht als Phase 1 fertig melden, solange der Link nicht funktioniert. Details: `channels/science/gehirn/FLOW-WORKFLOW.md`.
+
