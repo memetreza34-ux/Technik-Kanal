@@ -497,7 +497,7 @@
       "id": "24-mechanism",
       "output": "image",
       "imageStep": 3,
-      "visualType": "experiment",
+      "visualType": "object-comparison",
       "primaryMotif": "foil-boat-in-bowl",
       "informationBudget": {
         "densityClass": "normal",
@@ -599,7 +599,7 @@
       "id": "30-mechanism",
       "output": "image",
       "imageStep": 4,
-      "visualType": "environment",
+      "visualType": "wide-environment",
       "primaryMotif": "ship-in-beam-sea",
       "informationBudget": {
         "densityClass": "normal",
