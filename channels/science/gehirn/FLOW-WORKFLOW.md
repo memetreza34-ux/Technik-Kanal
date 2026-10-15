@@ -2,8 +2,8 @@
 
 Nach fertiger Recherche, finalem Sprechertext, finalen Visual-Beats, Coverprompt, allen Einzelprompts und Google-Flow-Masterprompt ist folgender Abschluss **verbindlich**:
 
-1. `npm run science:flow-master -- "VIDEO_ORDNER"` – finalen Bild-Masterprompt erzeugen/aktualisieren.
-2. `npm run science:phase1 -- "VIDEO_ORDNER"` – bestehende Skript-, Quellen-, Kreativ- und Stil-Gates ausführen. Nur bei erfolgreichem Preflight wird `PHASE-1-START-HIER.md` erzeugt.
+1. `npm run science:phase1 -- "VIDEO_ORDNER"` – dieser **eine Befehl** aktualisiert die Google-Flow-Einzelprompt-Locks und den Masterprompt, prüft Skript, Quellen, Kreativität und Stil. Nur bei erfolgreichem Preflight wird `PHASE-1-START-HIER.md` erzeugt.
+2. Die erzeugte Kopiermappe öffnen und Vollständigkeit prüfen.
 3. `PHASE-1-START-HIER.md`, finalen Szenenplan, den fertigen Sprechertext, den Masterprompt und alle Bildprompts nach GitHub committen/pushen.
 4. **Sofort danach genau einen Direktlink auf die fertige `PHASE-1-START-HIER.md` im richtigen Branch schicken.** Nutzer soll am Laptop Skript/Prompts mit minimalen Klicks öffnen und kopieren können.
 5. Erst dann Phase 1 als vollständig übergeben bezeichnen und Google Flow Phase 2 starten.
