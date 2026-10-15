@@ -1,6 +1,6 @@
 ## Phase-1-Abschluss am Laptop
 
-`npm run science:flow-master -- "VIDEO_ORDNER"` und `npm run science:phase1 -- "VIDEO_ORDNER"` ausführen. Nach erfolgreicher Prüfung enthält **`VIDEO_ORDNER/PHASE-1-START-HIER.md`** den Sprechertext, alle Google-Flow-Prompts, Cover und Einzelbildlinks kopierfertig in einer GitHub-Datei. Danach **auf GitHub committen/pushen und sofort den echten Direktlink schicken**, damit der Nutzer direkt von seinem Laptop aus Google Flow und Voice-Produktion starten kann.
+**Ein Befehl:** `npm run science:phase1 -- "VIDEO_ORDNER"` baut den aktuellen Masterprompt, prüft die komplette Phase 1 und erstellt die Kopiermappe. Nach erfolgreicher Prüfung enthält **`VIDEO_ORDNER/PHASE-1-START-HIER.md`** den Sprechertext, alle Google-Flow-Prompts, Cover und Einzelbildlinks kopierfertig in einer GitHub-Datei. Danach **auf GitHub committen/pushen und sofort den echten Direktlink schicken**, damit der Nutzer direkt von seinem Laptop aus Google Flow und Voice-Produktion starten kann.
 
 > **WISSONAUT – PRIORITÄT 1:** Wir verbessern uns nach jedem Video. Jedes Video erhält automatisch einen Lernbrief, einen Review und eine Vorlage für YouTube-Studio-Daten. Die verbindlichen Regeln stehen in [gehirn/VERBESSERUNGSSYSTEM.md](gehirn/VERBESSERUNGSSYSTEM.md).
 
