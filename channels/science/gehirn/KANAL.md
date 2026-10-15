@@ -1,3 +1,5 @@
+> **WISSONAUT – PRIORITÄT 1:** Nach jedem Video aus Bild-/Story-Fehlern und echten YouTube-Studio-Daten lernen. Vor jedem neuen Video eine messbare Verbesserung umsetzen. Verbindlich: `VERBESSERUNGSSYSTEM.md` und `../learning/active-lessons.json`.
+
 # Kanal
 
 Deutschsprachiger Faceless-Wissens- und Bildungskanal für **Alltagswissenschaft und Technik**. Zielgruppe sind vor allem Jugendliche und junge Erwachsene, die verständlich lernen sollen, wie Dinge aus ihrer Umgebung, Technik und Natur funktionieren.
