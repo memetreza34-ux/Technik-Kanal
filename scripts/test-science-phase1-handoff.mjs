@@ -28,6 +28,14 @@ try{
   assert.ok(text.includes('02-bilder/prompts/5-scene.txt'));
   assert.ok(text.includes('Technical Editorial Explainer 2.5D'));
   assert.equal(text,fs.readFileSync(buildSciencePhase1Handoff(opts).output,'utf8'));
+  // A normal workflow instruction about placeholders must not be mistaken for a real placeholder.
+  const masterFile='02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt';
+  save(masterFile,['Technical Editorial Explainer 2.5D','VISIBLE TEXT LOCK','Never use a placeholder as a video frame.',cover,...prompts].join('\n\n'));
+  buildSciencePhase1Handoff(opts);
+  // But even a single changed prompt must invalidate a stale master.
+  save('02-bilder/prompts/2-scene.txt',prompts[1]+' Additional verified detail.');
+  assert.throws(()=>buildSciencePhase1Handoff(opts),/Masterprompt nicht aktuell/);
+  save('02-bilder/prompts/2-scene.txt',prompts[1]);
   save('06-projektdateien/preproduction-report.json',{passed:false,phase:'blocked-before-assets'});
   assert.throws(()=>buildSciencePhase1Handoff(opts),/noch nicht freigegeben/);
   save('06-projektdateien/preproduction-report.json',{passed:true,phase:'assets-may-be-created'});
