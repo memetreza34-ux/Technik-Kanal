@@ -1,3 +1,5 @@
+> **Vor jedem Skript:** Letzte Retrospektive, neue Zuschauerkennzahlen und `VERBESSERUNGSSYSTEM.md` lesen. Ziel ist ein konkret besseres Video, nicht bloß ein weiteres Video. Titel/Thumbnail/Hook und Bildwechsel anhand der tatsächlich entdeckten Schwächen verbessern.
+
 # Longform — YouTube-Erklärvideo
 
 ## Aktives Profil
