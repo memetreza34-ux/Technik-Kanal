@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {projectPaths, repositoryRoot, run} from './lib/electrical-project.mjs';
+import {generateScienceLearningReport} from './lib/science-learning.mjs';
 
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
@@ -27,6 +28,9 @@ if (!whisperCandidates.some((candidate) => fs.existsSync(candidate)) || !fs.exis
 }
 
 run(process.execPath, ['scripts/render_science_reel.mjs', paths.root, '--force-transcribe', '--preflight-passed'], {cwd: repositoryRoot});
+// Technische QA ist erst der Anfang: redaktionelle und spätere datenbasierte Reviews bereitstellen.
+const learning = generateScienceLearningReport(paths.root);
 console.log('\n=== SCIENCE-YOUTUBE-PRODUKTION ABGESCHLOSSEN ===');
 console.log(`Video-Ordner: ${paths.root}`);
 console.log('Kontaktbogen, Szenen-Stills, finales Thumbnail und vollständiges MP4 fachlich und visuell prüfen.');
+console.log(`PRIORITÄT 1: POST-VIDEO-REVIEW.md ausfüllen, nach Veröffentlichung Studio-Daten erfassen und science:learn -- report wiederholen. Lernbericht: ${learning.target}`);
