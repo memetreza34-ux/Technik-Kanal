@@ -1,0 +1,131 @@
+BILDSCHRITT 1/5 — SZENEN 1 BIS 9
+================================================
+Generate exactly 9 final STATIC images in strict sequential order. Choose only one accepted image per scene; discard failures. Preserve Technical Editorial Explainer 2.5D and obey the STYLE and DENSITY LOCK.
+
+01-hook — OUTPUT=IMAGE / environment / container-ship-at-waterline
+-------------------------------------------------------
+ONE STATIC IMAGE ONLY, 1920x1080, landscape 16:9. Wissonaut independent video scene, not a YouTube thumbnail. This is the precise spoken beat to explain: "Warum sinkt ein riesiges Stahlschiff nicht? Ein massiver Stahlklotz geht unter, aber ein Frachter voller Container schwimmt. Was macht den Unterschied?"
+
+EXACT VISUAL BRIEF — Wide cinematic yet restrained side view of an enormous loaded container ship floating calmly, natural visible waterline, understated port horizon, no enormous text or cover motifs.
+Primary explanatory motif: container-ship-at-waterline. Visual presentation type: environment. Make the main mechanism legible in under two seconds, physically plausible and visually distinct from the previous scene; do not merely repeat a ship viewed from another angle. Request visible German labels: none (zero visible text). If no labels are requested, the image contains no text.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean premium adult 2D/2.5D vector-like technical editorial illustration, believable physics and proportions, matte materials, crisp controlled contours, restrained shadows and subtle tonal gradients, moderate depth, graphites and warm off-white with meaningful muted ocean-blue accents. Not photorealistic, not childish cartoon, not Pixar, not neon or sci-fi HUD. Maintain a coherent illustration language yet change composition and viewpoint whenever the explanation benefits.
+
+DENSITY LOCK — Exactly one dominant explanatory idea and one main focal subject. Normal scene: maximum three important visual objects, zero or one short German label preferred, no more than two small German labels, at most two arrows and two panels. Technical comparison: at most four objects and three labels. NO large scene headline, NO full-sentence visible text, no boxes or decorative charts. VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT: do NOT draw beat ID, scene number, file name, image step, production instruction, thumbnail headline, spurious English words or random numbers; reject misspelled, illegible, incomplete or cropped text. No people, no faceless visible heads.
+
+OUTPUT: precisely one high-quality finished static 16:9 scene image. Keep essential geometry in the central image safe area. Scene ID 01-hook and final filename are production metadata ONLY and must NEVER appear inside the image. Store the accepted asset as 01-hook-final. Never create AI video or animation.
+
+
+02-context — OUTPUT=IMAGE / cutaway / ship-interior-cargo
+-------------------------------------------------------
+ONE STATIC IMAGE ONLY, 1920x1080, landscape 16:9. Wissonaut independent video scene, not a YouTube thumbnail. This is the precise spoken beat to explain: "Ein solches Schiff besteht aus vielen Tonnen Stahl. Dazu kommen Maschinen, Treibstoff und Ladung. Trotzdem hält es sich über der Wasseroberfläche."
+
+EXACT VISUAL BRIEF — Clean technical cutaway through a ship's hull showing solid structural steel, engine area and stowed cargo, realistic scale, mostly dry internal spaces.
+Primary explanatory motif: ship-interior-cargo. Visual presentation type: cutaway. Make the main mechanism legible in under two seconds, physically plausible and visually distinct from the previous scene; do not merely repeat a ship viewed from another angle. Request visible German labels: none (zero visible text). If no labels are requested, the image contains no text.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean premium adult 2D/2.5D vector-like technical editorial illustration, believable physics and proportions, matte materials, crisp controlled contours, restrained shadows and subtle tonal gradients, moderate depth, graphites and warm off-white with meaningful muted ocean-blue accents. Not photorealistic, not childish cartoon, not Pixar, not neon or sci-fi HUD. Maintain a coherent illustration language yet change composition and viewpoint whenever the explanation benefits.
+
+DENSITY LOCK — Exactly one dominant explanatory idea and one main focal subject. Normal scene: maximum three important visual objects, zero or one short German label preferred, no more than two small German labels, at most two arrows and two panels. Technical comparison: at most four objects and three labels. NO large scene headline, NO full-sentence visible text, no boxes or decorative charts. VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT: do NOT draw beat ID, scene number, file name, image step, production instruction, thumbnail headline, spurious English words or random numbers; reject misspelled, illegible, incomplete or cropped text. No people, no faceless visible heads.
+
+OUTPUT: precisely one high-quality finished static 16:9 scene image. Keep essential geometry in the central image safe area. Scene ID 02-context and final filename are production metadata ONLY and must NEVER appear inside the image. Store the accepted asset as 02-context-final. Never create AI video or animation.
+
+
+03-context — OUTPUT=IMAGE / macro / steel-material-closeup
+-------------------------------------------------------
+ONE STATIC IMAGE ONLY, 1920x1080, landscape 16:9. Wissonaut independent video scene, not a YouTube thumbnail. This is the precise spoken beat to explain: "Es liegt nicht daran, dass Stahl plötzlich leichter wird, sobald man daraus ein Schiff baut. Das Material bleibt genauso dicht."
+
+EXACT VISUAL BRIEF — Macro illustration of a dense solid steel slab and a piece of ship plate with identical metallic grain and matte finish, no size-illusion.
+Primary explanatory motif: steel-material-closeup. Visual presentation type: macro. Make the main mechanism legible in under two seconds, physically plausible and visually distinct from the previous scene; do not merely repeat a ship viewed from another angle. Request visible German labels: none (zero visible text). If no labels are requested, the image contains no text.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean premium adult 2D/2.5D vector-like technical editorial illustration, believable physics and proportions, matte materials, crisp controlled contours, restrained shadows and subtle tonal gradients, moderate depth, graphites and warm off-white with meaningful muted ocean-blue accents. Not photorealistic, not childish cartoon, not Pixar, not neon or sci-fi HUD. Maintain a coherent illustration language yet change composition and viewpoint whenever the explanation benefits.
+
+DENSITY LOCK — Exactly one dominant explanatory idea and one main focal subject. Normal scene: maximum three important visual objects, zero or one short German label preferred, no more than two small German labels, at most two arrows and two panels. Technical comparison: at most four objects and three labels. NO large scene headline, NO full-sentence visible text, no boxes or decorative charts. VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT: do NOT draw beat ID, scene number, file name, image step, production instruction, thumbnail headline, spurious English words or random numbers; reject misspelled, illegible, incomplete or cropped text. No people, no faceless visible heads.
+
+OUTPUT: precisely one high-quality finished static 16:9 scene image. Keep essential geometry in the central image safe area. Scene ID 03-context and final filename are production metadata ONLY and must NEVER appear inside the image. Store the accepted asset as 03-context-final. Never create AI video or animation.
+
+
+04-context — OUTPUT=IMAGE / process / bow-water-displacement
+-------------------------------------------------------
+ONE STATIC IMAGE ONLY, 1920x1080, landscape 16:9. Wissonaut independent video scene, not a YouTube thumbnail. This is the precise spoken beat to explain: "Die überraschende Antwort steckt im Wasser selbst. Ein Schiff drückt Wasser zur Seite, und das Wasser übt eine Kraft nach oben aus."
+
+EXACT VISUAL BRIEF — Underwater oblique cutaway around a broad ship hull, show the hull occupying part of the water volume, subtle teal displacement silhouette with no magical upward beams.
+Primary explanatory motif: bow-water-displacement. Visual presentation type: process. Make the main mechanism legible in under two seconds, physically plausible and visually distinct from the previous scene; do not merely repeat a ship viewed from another angle. Request visible German labels: none (zero visible text). If no labels are requested, the image contains no text.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean premium adult 2D/2.5D vector-like technical editorial illustration, believable physics and proportions, matte materials, crisp controlled contours, restrained shadows and subtle tonal gradients, moderate depth, graphites and warm off-white with meaningful muted ocean-blue accents. Not photorealistic, not childish cartoon, not Pixar, not neon or sci-fi HUD. Maintain a coherent illustration language yet change composition and viewpoint whenever the explanation benefits.
+
+DENSITY LOCK — Exactly one dominant explanatory idea and one main focal subject. Normal scene: maximum three important visual objects, zero or one short German label preferred, no more than two small German labels, at most two arrows and two panels. Technical comparison: at most four objects and three labels. NO large scene headline, NO full-sentence visible text, no boxes or decorative charts. VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT: do NOT draw beat ID, scene number, file name, image step, production instruction, thumbnail headline, spurious English words or random numbers; reject misspelled, illegible, incomplete or cropped text. No people, no faceless visible heads.
+
+OUTPUT: precisely one high-quality finished static 16:9 scene image. Keep essential geometry in the central image safe area. Scene ID 04-context and final filename are production metadata ONLY and must NEVER appear inside the image. Store the accepted asset as 04-context-final. Never create AI video or animation.
+
+
+05-context — OUTPUT=IMAGE / diagram / stationary-floating-hull
+-------------------------------------------------------
+ONE STATIC IMAGE ONLY, 1920x1080, landscape 16:9. Wissonaut independent video scene, not a YouTube thumbnail. This is the precise spoken beat to explain: "Diese Kraft nennt man Auftrieb. Ohne Auftrieb könnte kein Schiff schwimmen, egal wie stark sein Motor ist oder wie schnell es fährt."
+
+EXACT VISUAL BRIEF — Simple stationary ship cross-section with one quiet upward blue arrow at the underwater hull, horizontal still water and no movement effects.
+Primary explanatory motif: stationary-floating-hull. Visual presentation type: diagram. Make the main mechanism legible in under two seconds, physically plausible and visually distinct from the previous scene; do not merely repeat a ship viewed from another angle. Request visible German labels: none (zero visible text). If no labels are requested, the image contains no text.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean premium adult 2D/2.5D vector-like technical editorial illustration, believable physics and proportions, matte materials, crisp controlled contours, restrained shadows and subtle tonal gradients, moderate depth, graphites and warm off-white with meaningful muted ocean-blue accents. Not photorealistic, not childish cartoon, not Pixar, not neon or sci-fi HUD. Maintain a coherent illustration language yet change composition and viewpoint whenever the explanation benefits.
+
+DENSITY LOCK — Exactly one dominant explanatory idea and one main focal subject. Normal scene: maximum three important visual objects, zero or one short German label preferred, no more than two small German labels, at most two arrows and two panels. Technical comparison: at most four objects and three labels. NO large scene headline, NO full-sentence visible text, no boxes or decorative charts. VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT: do NOT draw beat ID, scene number, file name, image step, production instruction, thumbnail headline, spurious English words or random numbers; reject misspelled, illegible, incomplete or cropped text. No people, no faceless visible heads.
+
+OUTPUT: precisely one high-quality finished static 16:9 scene image. Keep essential geometry in the central image safe area. Scene ID 05-context and final filename are production metadata ONLY and must NEVER appear inside the image. Store the accepted asset as 05-context-final. Never create AI video or animation.
+
+
+06-context — OUTPUT=IMAGE / object-comparison / three-physical-models
+-------------------------------------------------------
+ONE STATIC IMAGE ONLY, 1920x1080, landscape 16:9. Wissonaut independent video scene, not a YouTube thumbnail. This is the precise spoken beat to explain: "Dafür brauchen wir nur drei Dinge zu verstehen: Gewicht, verdrängtes Wasser und die Form des Schiffsrumpfes. Dann wird das Rätsel logisch."
+
+EXACT VISUAL BRIEF — Three separate restrained physical tabletop models: a small weight, a basin water level, and a hollow boat hull, one visual connection, no words.
+Primary explanatory motif: three-physical-models. Visual presentation type: object-comparison. Make the main mechanism legible in under two seconds, physically plausible and visually distinct from the previous scene; do not merely repeat a ship viewed from another angle. Request visible German labels: none (zero visible text). If no labels are requested, the image contains no text.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean premium adult 2D/2.5D vector-like technical editorial illustration, believable physics and proportions, matte materials, crisp controlled contours, restrained shadows and subtle tonal gradients, moderate depth, graphites and warm off-white with meaningful muted ocean-blue accents. Not photorealistic, not childish cartoon, not Pixar, not neon or sci-fi HUD. Maintain a coherent illustration language yet change composition and viewpoint whenever the explanation benefits.
+
+DENSITY LOCK — Exactly one dominant explanatory idea and one main focal subject. Normal scene: maximum three important visual objects, zero or one short German label preferred, no more than two small German labels, at most two arrows and two panels. Technical comparison: at most four objects and three labels. NO large scene headline, NO full-sentence visible text, no boxes or decorative charts. VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT: do NOT draw beat ID, scene number, file name, image step, production instruction, thumbnail headline, spurious English words or random numbers; reject misspelled, illegible, incomplete or cropped text. No people, no faceless visible heads.
+
+OUTPUT: precisely one high-quality finished static 16:9 scene image. Keep essential geometry in the central image safe area. Scene ID 06-context and final filename are production metadata ONLY and must NEVER appear inside the image. Store the accepted asset as 06-context-final. Never create AI video or animation.
+
+
+07-context — OUTPUT=IMAGE / environment / iron-sphere-in-tank
+-------------------------------------------------------
+ONE STATIC IMAGE ONLY, 1920x1080, landscape 16:9. Wissonaut independent video scene, not a YouTube thumbnail. This is the precise spoken beat to explain: "Stell dir zunächst eine schwere Eisenkugel vor. Lässt du sie ins Wasser fallen, sinkt sie, bis sie auf dem Boden liegt."
+
+EXACT VISUAL BRIEF — Transparent laboratory water tank with a single dense dark iron ball resting on the tank bottom; clear waterline and neutral background.
+Primary explanatory motif: iron-sphere-in-tank. Visual presentation type: environment. Make the main mechanism legible in under two seconds, physically plausible and visually distinct from the previous scene; do not merely repeat a ship viewed from another angle. Request visible German labels: none (zero visible text). If no labels are requested, the image contains no text.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean premium adult 2D/2.5D vector-like technical editorial illustration, believable physics and proportions, matte materials, crisp controlled contours, restrained shadows and subtle tonal gradients, moderate depth, graphites and warm off-white with meaningful muted ocean-blue accents. Not photorealistic, not childish cartoon, not Pixar, not neon or sci-fi HUD. Maintain a coherent illustration language yet change composition and viewpoint whenever the explanation benefits.
+
+DENSITY LOCK — Exactly one dominant explanatory idea and one main focal subject. Normal scene: maximum three important visual objects, zero or one short German label preferred, no more than two small German labels, at most two arrows and two panels. Technical comparison: at most four objects and three labels. NO large scene headline, NO full-sentence visible text, no boxes or decorative charts. VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT: do NOT draw beat ID, scene number, file name, image step, production instruction, thumbnail headline, spurious English words or random numbers; reject misspelled, illegible, incomplete or cropped text. No people, no faceless visible heads.
+
+OUTPUT: precisely one high-quality finished static 16:9 scene image. Keep essential geometry in the central image safe area. Scene ID 07-context and final filename are production metadata ONLY and must NEVER appear inside the image. Store the accepted asset as 07-context-final. Never create AI video or animation.
+
+
+08-context — OUTPUT=IMAGE / object-comparison / floating-metal-bowl
+-------------------------------------------------------
+ONE STATIC IMAGE ONLY, 1920x1080, landscape 16:9. Wissonaut independent video scene, not a YouTube thumbnail. This is the precise spoken beat to explain: "Formst du aus einer dünnen Metallplatte dagegen eine breite, wasserdichte Schale, kann dieselbe Art von Metall plötzlich oben bleiben."
+
+EXACT VISUAL BRIEF — Simple wide thin metal bowl afloat in a transparent water tank next to a small separate dense metal block, clearly different displaced volumes.
+Primary explanatory motif: floating-metal-bowl. Visual presentation type: object-comparison. Make the main mechanism legible in under two seconds, physically plausible and visually distinct from the previous scene; do not merely repeat a ship viewed from another angle. Request visible German labels: none (zero visible text). If no labels are requested, the image contains no text.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean premium adult 2D/2.5D vector-like technical editorial illustration, believable physics and proportions, matte materials, crisp controlled contours, restrained shadows and subtle tonal gradients, moderate depth, graphites and warm off-white with meaningful muted ocean-blue accents. Not photorealistic, not childish cartoon, not Pixar, not neon or sci-fi HUD. Maintain a coherent illustration language yet change composition and viewpoint whenever the explanation benefits.
+
+DENSITY LOCK — Exactly one dominant explanatory idea and one main focal subject. Normal scene: maximum three important visual objects, zero or one short German label preferred, no more than two small German labels, at most two arrows and two panels. Technical comparison: at most four objects and three labels. NO large scene headline, NO full-sentence visible text, no boxes or decorative charts. VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT: do NOT draw beat ID, scene number, file name, image step, production instruction, thumbnail headline, spurious English words or random numbers; reject misspelled, illegible, incomplete or cropped text. No people, no faceless visible heads.
+
+OUTPUT: precisely one high-quality finished static 16:9 scene image. Keep essential geometry in the central image safe area. Scene ID 08-context and final filename are production metadata ONLY and must NEVER appear inside the image. Store the accepted asset as 08-context-final. Never create AI video or animation.
+
+
+09-foundation — OUTPUT=IMAGE / cutaway / submerged-box-pressure
+-------------------------------------------------------
+ONE STATIC IMAGE ONLY, 1920x1080, landscape 16:9. Wissonaut independent video scene, not a YouTube thumbnail. This is the precise spoken beat to explain: "Warum? Wasser drückt auf alles, was in ihm steckt. Dieser Druck wirkt nicht nur seitlich, sondern auch auf Unterseiten nach oben."
+
+EXACT VISUAL BRIEF — Water tank cutaway around a submerged rectangular object, clear blue pressure forces on underside and above using maximum two sparse arrows.
+Primary explanatory motif: submerged-box-pressure. Visual presentation type: cutaway. Make the main mechanism legible in under two seconds, physically plausible and visually distinct from the previous scene; do not merely repeat a ship viewed from another angle. Request visible German labels: none (zero visible text). If no labels are requested, the image contains no text.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean premium adult 2D/2.5D vector-like technical editorial illustration, believable physics and proportions, matte materials, crisp controlled contours, restrained shadows and subtle tonal gradients, moderate depth, graphites and warm off-white with meaningful muted ocean-blue accents. Not photorealistic, not childish cartoon, not Pixar, not neon or sci-fi HUD. Maintain a coherent illustration language yet change composition and viewpoint whenever the explanation benefits.
+
+DENSITY LOCK — Exactly one dominant explanatory idea and one main focal subject. Normal scene: maximum three important visual objects, zero or one short German label preferred, no more than two small German labels, at most two arrows and two panels. Technical comparison: at most four objects and three labels. NO large scene headline, NO full-sentence visible text, no boxes or decorative charts. VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT: do NOT draw beat ID, scene number, file name, image step, production instruction, thumbnail headline, spurious English words or random numbers; reject misspelled, illegible, incomplete or cropped text. No people, no faceless visible heads.
+
+OUTPUT: precisely one high-quality finished static 16:9 scene image. Keep essential geometry in the central image safe area. Scene ID 09-foundation and final filename are production metadata ONLY and must NEVER appear inside the image. Store the accepted asset as 09-foundation-final. Never create AI video or animation.
+
+
+BILDSCHRITT 1 ABGESCHLOSSEN. OHNE ZWISCHENSTOPP direkt mit BILDSCHRITT 2 fortfahren.

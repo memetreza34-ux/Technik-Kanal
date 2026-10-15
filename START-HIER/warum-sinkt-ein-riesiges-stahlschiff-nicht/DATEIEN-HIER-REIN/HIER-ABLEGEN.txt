@@ -1,0 +1,9 @@
+Hier ALLE fertigen Dateien einfügen, ohne Unterordner:
+
+- 01.png ... 45.png (45 verschiedene fertige Google-Flow-Szenenbilder), ODER die vollen Namen wie 01-hook-final.png
+- 00-thumbnail-final.png (genau ein ausgewähltes YouTube-Cover)
+- voiceover-raw.wav (deutscher Sprechertext als eine Aufnahme, mp3/m4a ebenfalls akzeptiert)
+
+Die 45 Bilder müssen 16:9 sein; die Reihenfolge ist wichtig. Keine Entwürfe oder doppelten Bilder reinlegen.
+Die Bilder/Audio werden per technik:import ins Renderer-Projekt kopiert. Die Originale in diesem Ordner bleiben erhalten.
+Fehlende Bilder führen zur Ausgabe einer Fehlermeldung, nicht zu Fantasie-Ersatzbildern.
