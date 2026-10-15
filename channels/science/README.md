@@ -1,3 +1,5 @@
+> **WISSONAUT – PRIORITÄT 1:** Wir verbessern uns nach jedem Video. Jedes Video erhält automatisch einen Lernbrief, einen Review und eine Vorlage für YouTube-Studio-Daten. Die verbindlichen Regeln stehen in [gehirn/VERBESSERUNGSSYSTEM.md](gehirn/VERBESSERUNGSSYSTEM.md).
+
 # Alltagswissenschaft & Technik
 
 Deutschsprachiger Faceless-Kanal für verständlich erklärte Physik, Technik, Energie, Materialien, Infrastruktur und greifbare Naturphänomene für Jugendliche und junge Erwachsene.
