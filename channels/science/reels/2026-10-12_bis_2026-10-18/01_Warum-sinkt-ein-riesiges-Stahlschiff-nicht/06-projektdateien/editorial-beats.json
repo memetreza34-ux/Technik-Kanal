@@ -171,7 +171,7 @@
     {
       "section": "mechanism",
       "voiceText": "Jetzt formst du aus einem ähnlich großen Stück Folie ein offenes, breites Boot. Häufig bleibt dieses schwimmen, obwohl das Material gleich ist.",
-      "visualType": "experiment",
+      "visualType": "object-comparison",
       "primaryMotif": "foil-boat-in-bowl",
       "visualBrief": "Three-quarter close view of broad bowl-shaped aluminum foil boat floating in a transparent vessel; no human hands or text."
     },
@@ -213,7 +213,7 @@
     {
       "section": "mechanism",
       "voiceText": "Doch Auftrieb allein reicht nicht. Ein Schiff muss auch stabil bleiben, wenn Wind, Wellen oder eine ungleichmäßige Beladung es zur Seite neigen.",
-      "visualType": "environment",
+      "visualType": "wide-environment",
       "primaryMotif": "ship-in-beam-sea",
       "visualBrief": "Medium wide illustration of a cargo ship leaning moderately under a broad gentle lateral swell, waterline tilted relative to hull and realistic geometry."
     },
