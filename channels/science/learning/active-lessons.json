@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "channel": "Wissonaut",
+  "priority": 1,
+  "method": "Evidence-first: qualitative Video-Reviews + YouTube Studio Kennzahlen + kontrollierte Tests",
+  "updatedAt": "2026-10-15",
+  "lessons": [
+    {
+      "id": "qa-001",
+      "priority": 1,
+      "status": "active",
+      "area": "visual-consistency",
+      "evidenceLevel": "verified-production-issue",
+      "source": "gehirn/TESTPHASE-ABSCHLUSS.md",
+      "observation": "Szenen-Metadaten, falsche Bildlabels und Thumbnail-Leaks traten in der Pilotphase auf.",
+      "action": "Jedes finale Szenenbild vor Freigabe gegen Voice, sichtbaren Text und Metadaten-/Cover-Leak prüfen; Szene 01 niemals als Thumbnail fortsetzen."
+    },
+    {
+      "id": "qa-002",
+      "priority": 2,
+      "status": "active",
+      "area": "pacing",
+      "evidenceLevel": "verified-production-issue",
+      "source": "gehirn/BILDWELT.md",
+      "observation": "Zu ähnliche und überladene Illustrationen waren ein Qualitätsproblem.",
+      "action": "Eine visuelle Erkläridee pro Beat; bei Wiederholungen Skript und Beat-Plan ändern, nicht nur Bildvarianten erzeugen."
+    },
+    {
+      "id": "hyp-001",
+      "priority": 3,
+      "status": "active",
+      "area": "growth",
+      "evidenceLevel": "untested-hypothesis",
+      "source": "gehirn/VERBESSERUNGSSYSTEM.md",
+      "observation": "Noch keine vergleichbaren YouTube-Studio-Daten im Repo als Wirkungsnachweis.",
+      "action": "Vor jedem Video ein klar überprüfbares Titel-Thumbnail-Hook-Versprechen und eine Hypothese mit Zielmetrik festlegen; nach Veröffentlichung messen."
+    }
+  ]
+}
