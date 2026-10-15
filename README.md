@@ -1,3 +1,7 @@
+## Phase 1 – Kopierlink für Google Flow und Voice
+
+Nach dem fertigen Skript und allen Einzelbildprompts: `npm run science:flow-master -- "VIDEO_ORDNER"`, danach `npm run science:phase1 -- "VIDEO_ORDNER"`. Bei bestandener Prüfung entsteht im Videoordner **`PHASE-1-START-HIER.md`** mit vollständigem Skript, Flow-Masterprompt und Links zu allen Einzelprompts. Diese Datei samt Prompts **committen/pushen**, dann dem Nutzer den ausgegebenen **GitHub-Direktlink** schicken. Kein lokaler Pfad statt Link. Anleitung: `channels/science/gehirn/FLOW-WORKFLOW.md`.
+
 > **OBERSTE PRIORITÄT 1 – WISSONAUT KONTINUIERLICH VERBESSERN:** Vor jedem Video die Erkenntnisse der bisherigen Videos berücksichtigen; nach jedem Rendern eine redaktionelle Qualitätsprüfung und nach der Veröffentlichung eine datenbasierte YouTube-Auswertung durchführen. Pflicht: [VERBESSERUNGSSYSTEM](channels/science/gehirn/VERBESSERUNGSSYSTEM.md). Mehr relevante Aufrufe und Abonnenten sind messbare Ziele, keine Garantie.
 
 # Alltagswissenschaft & Technik
