@@ -98,7 +98,7 @@ Es gibt **keinen separaten `03-caption`-Ordner**. Alles, was zu Caption, Timing 
 - `transcript-final.txt`
 - `voiceover-final.srt`
 - `voiceover-final.vtt`
-- final gerenderte Videos unter `05-export/video.mp4/`
+- final gerenderte Videos unter `05-export/video.mp4`
 
 Caption-/Timing-Dateien dürfen für Synchronisation oder externe Plattform-Untertitel genutzt werden. Sie werden **nicht in das finale Video eingebrannt**.
 

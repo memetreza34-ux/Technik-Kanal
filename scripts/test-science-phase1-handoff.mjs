@@ -6,7 +6,7 @@ import path from 'node:path';
 import {buildSciencePhase1Handoff} from './lib/science-phase1-handoff.mjs';
 
 const repoRoot=fs.mkdtempSync(path.join(os.tmpdir(),'wissonaut-phase1-'));
-const projectDir=path.join(repoRoot,'channels/science/reels/2026-10-05/01-Demo');
+const projectDir=path.join(repoRoot,'channels/science/YouTube/2026-10-05/01-Demo');
 const save=(file,content)=>{const name=path.join(projectDir,file);fs.mkdirSync(path.dirname(name),{recursive:true});fs.writeFileSync(name,typeof content==='string'?content:JSON.stringify(content));return name;};
 try{
   const scenes=Array.from({length:5},(_,i)=>({id:(i+1)+'-scene',voiceText:'Echte Erklärung Nummer '+(i+1)+'.'}));

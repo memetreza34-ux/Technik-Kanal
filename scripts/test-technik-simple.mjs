@@ -7,7 +7,7 @@ import {buildScienceSimpleHandoff} from './lib/science-simple-handoff.mjs';
 import {importScienceDrop} from './lib/science-simple-import.mjs';
 
 const repoRoot=fs.mkdtempSync(path.join(os.tmpdir(),'technik-einfach-'));
-const slug='test-video',projectDir=path.join(repoRoot,'channels/science/reels/2026-Woche/01-Test');
+const slug='test-video',projectDir=path.join(repoRoot,'channels/science/YouTube/2026-Woche/01-Test');
 const put=(rel,value)=>{const p=path.join(projectDir,rel);fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,typeof value==='string'?value:JSON.stringify(value));};
 try{
   const scenes=Array.from({length:5},(_,i)=>({id:String(i+1).padStart(2,'0')+'-context',voiceText:'Wissenschaft Nummer '+(i+1)+'.',imageDir:'02-bilder/images/'+String(i+1).padStart(2,'0')+'-context'}));
@@ -54,7 +54,7 @@ try{
   assert.equal(result.copied.length,4);
   assert.equal(result.missing.length,3);
   assert.ok(fs.existsSync(path.join(projectDir,'02-bilder/images/01-context/01-context-final.png')));
-  assert.ok(fs.existsSync(path.join(projectDir,'05-export/cover/00-thumbnail-final.png')));
+  assert.ok(fs.existsSync(path.join(projectDir,'05-export/cover.png')));
   assert.ok(fs.existsSync(path.join(projectDir,'01-script-audio/audio/voiceover-raw.wav')));
   assert.equal(importScienceDrop({repoRoot,packageDir:handoff.folder}).copied.length,0);
   fs.writeFileSync(path.join(drop,'01.png'),'changed-image');

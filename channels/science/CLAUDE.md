@@ -214,7 +214,7 @@ Phase 3 darf ausschließlich die in Phase 2 vom Nutzer abgelegten Dateien lesen,
 - kurze wissenschaftliche Labels innerhalb der Bilder bleiben erlaubt
 - es gibt **keinen separaten `03-caption`-Ordner**
 - `social-caption.md`, Wortzeiten, Caption-JSON, Transcript sowie optionale SRT/VTT liegen **direkt in `05-export/`**
-- Unterordner `05-export/video.mp4/` ist nur für die gerenderten Videodateien
+- Unterordner `05-export/video.mp4` ist nur für die gerenderten Videodateien
 
 ## Remotion
 
