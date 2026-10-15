@@ -1,3 +1,15 @@
+## Phase 1 abgeschlossen – obligatorische GitHub-Kopiermappe
+
+Nach fertiger Recherche, finalem Sprechertext, finalen Visual-Beats, Coverprompt, allen Einzelprompts und Google-Flow-Masterprompt ist folgender Abschluss **verbindlich**:
+
+1. `npm run science:flow-master -- "VIDEO_ORDNER"` – finalen Bild-Masterprompt erzeugen/aktualisieren.
+2. `npm run science:phase1 -- "VIDEO_ORDNER"` – bestehende Skript-, Quellen-, Kreativ- und Stil-Gates ausführen. Nur bei erfolgreichem Preflight wird `PHASE-1-START-HIER.md` erzeugt.
+3. `PHASE-1-START-HIER.md`, finalen Szenenplan, den fertigen Sprechertext, den Masterprompt und alle Bildprompts nach GitHub committen/pushen.
+4. **Sofort danach genau einen Direktlink auf die fertige `PHASE-1-START-HIER.md` im richtigen Branch schicken.** Nutzer soll am Laptop Skript/Prompts mit minimalen Klicks öffnen und kopieren können.
+5. Erst dann Phase 1 als vollständig übergeben bezeichnen und Google Flow Phase 2 starten.
+
+Die Kopiermappe enthält den kompletten Sprechtext aus `scene-plan.json`, den vollständigen Google-Flow-Masterprompt, die drei Cover-Kandidaten als Prompt und alle individuellen Bildprompt-Links; beides zusätzlich als kopierbare Textblöcke. Die Datei ersetzt weder die originalen Quellen noch die Sicherheitsregeln. Gibt es fehlende Prompts, Platzhalter oder einen veralteten Masterprompt, wird **nicht** so getan, als wäre Phase 1 fertig. **Kein GitHub-Link ohne tatsächlichen GitHub-Commit/Push.**
+
 # Google Flow – verbindlicher Bild-Workflow
 
 Dieser Workflow gilt für jedes neue Video.
