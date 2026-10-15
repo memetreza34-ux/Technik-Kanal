@@ -29,7 +29,7 @@ const thresholds = config.renderQa;
 const runtimeFile = path.join(paths.projectFilesDir, 'reel-runtime.json');
 if (!fs.existsSync(runtimeFile)) throw new Error('Kompatibilitäts-Runtime reel-runtime.json fehlt. Zuerst science:prepare oder science:render ausführen.');
 const runtime = readJson(runtimeFile);
-const defaultVideo = path.join(paths.exportDir, 'video', `${runtime.slug}.mp4`);
+const defaultVideo = path.join(paths.exportDir, 'video.mp4');
 const legacyVideo = path.join(paths.exportDir, `${runtime.slug}.mp4`);
 const video = path.resolve(videoArg ? videoArg.slice('--video='.length) : (fs.existsSync(defaultVideo) ? defaultVideo : legacyVideo));
 if (!fs.existsSync(video)) throw new Error(`Gerendertes Video fehlt: ${video}`);

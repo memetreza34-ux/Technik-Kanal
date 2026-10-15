@@ -64,7 +64,7 @@ const forbidden = [
   'channels/science/src/SchutzleiterReel.tsx',
   'channels/science/src/LeitungsschutzschalterReel.tsx',
   'channels/science/engine/config/electrical-v1.json',
-  'channels/science/reels/2026-08-03_bis_2026-08-09',
+  'channels/science/YouTube/2026-08-03_bis_2026-08-09',
   'channels/science/engine/VISUAL-QUALITY-GATE.md',
   'channels/science/gehirn/BILDSTIL.md',
   'channels/science/gehirn/SCIENCE-VISUAL-GRAMMAR.md',

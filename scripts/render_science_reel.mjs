@@ -42,9 +42,9 @@ const scienceRuntimePath = path.join(channelRoot, 'src/generated/science-runtime
 if (!fs.existsSync(scienceRuntimePath)) throw new Error(`Science-Runtime fehlt: ${scienceRuntimePath}`);
 
 run('npm', ['run', 'check'], {cwd: repositoryRoot});
-const videoDir = path.join(paths.exportDir, 'video');
+const videoDir = paths.exportDir;
 ensureDirectory(videoDir);
-const output = path.join(videoDir, `${runtime.slug}.mp4`);
+const output = path.join(videoDir, 'video.mp4');
 const npx = process.platform === 'win32' ? 'npx.cmd' : 'npx';
 run(npx, ['remotion','render','src/index.ts','ScienceReel',output,'--codec=h264','--audio-codec=aac','--audio-bitrate=192k','--pixel-format=yuv420p','--crf=18'], {cwd: channelRoot});
 

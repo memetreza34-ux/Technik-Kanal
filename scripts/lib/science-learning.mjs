@@ -10,7 +10,7 @@ const measured=x=>typeof x==='number'&&Number.isFinite(x);
 const directories=dir=>fs.existsSync(dir)?fs.readdirSync(dir,{withFileTypes:true}).filter(e=>e.isDirectory()).map(e=>path.join(dir,e.name)).sort():[];
 const median=values=>{const a=[...values].sort((x,y)=>x-y);return a.length%2?a[Math.floor(a.length/2)]:(a[a.length/2-1]+a[a.length/2])/2;};
 const rounded=x=>Number(x.toFixed(2));
-export const listScienceProjects=channelDir=>directories(path.join(channelDir,'reels')).flatMap(week=>directories(week));
+export const listScienceProjects=channelDir=>directories(path.join(channelDir,'YouTube')).flatMap(week=>directories(week));
 export const validateScienceAnalytics=data=>{
   if(data?.version!==1||!Array.isArray(data.snapshots))throw Error('Analytics: version 1 und snapshots[] erforderlich.');
   const seen=new Set();
@@ -29,7 +29,7 @@ const hasData=s=>fields.some(key=>measured(s[key]));
 const comparable=(shot,profile,current,channelDir)=>{
   const peers=listScienceProjects(channelDir).filter(dir=>path.resolve(dir)!==path.resolve(current)).map(dir=>{
     const plan=read(projectFile(dir,'06-projektdateien/scene-plan.json'));
-    const analytics=read(projectFile(dir,'05-export/youtube-analytics.json'));
+    const analytics=read(projectFile(dir,'06-projektdateien/youtube-analytics.json'));
     if(plan?.productionProfile!==profile||!analytics)return null;
     try{validateScienceAnalytics(analytics);}catch{return null;}
     return {dir,publishedAt:analytics.publishedAt,snapshot:analytics.snapshots.find(s=>s.afterHours===shot.afterHours)};
@@ -77,7 +77,7 @@ export function initializeScienceLearning(projectDir,{channelDir=path.resolve('c
       thisVideoHypothesis:null,oneControlledChange:null,primarySuccessMetric:null,editorApproved:false,
       instruction:'Vor Skript, Titel und Thumbnail eine konkrete Verbesserung mit messbarem Erfolgskriterium festlegen.'});
   }
-  const analytics=projectFile(projectDir,'05-export/youtube-analytics.json');
+  const analytics=projectFile(projectDir,'06-projektdateien/youtube-analytics.json');
   if(!fs.existsSync(analytics))write(analytics,{
     version:1,channel:'Wissonaut',slug:plan.slug,productionProfile:plan.productionProfile,
     source:'YouTube Studio; echte Messwerte manuell eintragen, niemals schätzen',
@@ -95,7 +95,7 @@ export function initializeScienceLearning(projectDir,{channelDir=path.resolve('c
     '- Fehler: falscher Text, fehlende Assets, lange Wiederholungen, Cover im Video, Audio und Schnitt?',
     '',
     '## Nach Veröffentlichung – Messdaten und Beobachtung',
-    '- Kennzahlen bei 24 h, 72 h, 7 d und 28 d in 05-export/youtube-analytics.json erfassen.',
+    '- Kennzahlen bei 24 h, 72 h, 7 d und 28 d in 06-projektdateien/youtube-analytics.json erfassen.',
     '- Retentionskurve: konkrete Zeitstempel der Einbrüche und interessante Spitzen notieren.',
     '- CTR zusammen mit Impressionen, Traffic-Quelle und Thema betrachten.',
     '- Hypothesen und tatsächliche Beobachtungen getrennt dokumentieren.',
@@ -120,7 +120,7 @@ export function initializeScienceLearning(projectDir,{channelDir=path.resolve('c
 export function generateScienceLearningReport(projectDir,{channelDir=path.resolve('channels/science')}={}){
   initializeScienceLearning(projectDir,{channelDir});
   const plan=read(projectFile(projectDir,'06-projektdateien/scene-plan.json'));
-  const data=validateScienceAnalytics(read(projectFile(projectDir,'05-export/youtube-analytics.json')));
+  const data=validateScienceAnalytics(read(projectFile(projectDir,'06-projektdateien/youtube-analytics.json')));
   if(plan.slug!==data.slug||plan.productionProfile!==data.productionProfile)throw Error('Analytics passt nicht zum Szenenplan.');
   const shot=data.snapshots.filter(hasData).sort((a,b)=>b.afterHours-a.afterHours)[0]??null;
   const comparisons=shot?comparable(shot,plan.productionProfile,projectDir,channelDir):{};

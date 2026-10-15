@@ -1,233 +1,44 @@
-# Bildwelt — Technical Editorial Explainer 2.5D
+# Wissonaut – Bildwelt und technische Erklärqualität
 
-> Die frühere visuelle Ausführung von „Scientific Scene Explainer“ ist ersetzt. Der alte interne Stil-Identifier `scientific-scene-explainer-v1` bleibt nur aus technischer Rückwärtskompatibilität bestehen. Inhaltlich gilt ausschließlich diese Bildwelt.
+## Verbindliche Grundidee
 
-## Oberste Regel: erst erklären, dann gestalten
+Ein Bild soll **etwas vermitteln, das der Zuschauer durch Zuhören allein schlechter verstehen würde**. Fachlich richtige, klare, abwechslungsreiche Bilder haben Vorrang vor hübscher, aber austauschbarer Dekoration. Feedback vom Video »Warum sinkt ein riesiges Stahlschiff nicht?«: das visuelle Niveau ist konsistent, aber beschriftete technische Infografiken, Maßangaben, Kraftpfeile und klare Querschnitte fehlen teilweise. Auch mehrere Außenansichten ähnlicher Frachter sind redundant.
 
-Jedes Szenenbild muss den gerade gesprochenen Inhalt **so einfach und direkt wie möglich** sichtbar machen.
+## Ein konsistenter Stil, viele Darstellungsformen
 
-Nicht fragen: „Was wäre ein schönes Bild zu diesem Thema?“
+- **Technical Editorial Explainer 2.5D**: hochwertige ruhige redaktionelle Technikillustrationen, exakte Formen, matte Oberflächen, kontrollierte weiche Schatten und dezente Tiefe.
+- Farben je nach Thema: warmes Off-White, Graphit, neutrale Metalle; Blau für Wasser/Kälte, Kupfer/Orange für elektrische/thermische Vorgänge, weitere Signalfarben sparsam und semantisch.
+- Geeignete Formen: 2D-Schema, Infografik, Schaltplan, Querschnitt, Explosionszeichnung, technische Prozesskette, Druck-/Kraftdiagramm, Vergleich gleicher Maßstäbe, Laboraufbau, Makro, reale Umgebung und 2.5D-Schnittmodell.
+- Kein fester Hintergrund, kein dauernd wiederholtes Schiff/Objekt aus anderen Blickwinkeln. Kein identischer Bildaufbau für benachbarte Szenen. Keine leeren gesichtslosen Köpfe, Photoshop-Stock-Ästhetik, unnötige Stickmen oder wahllose Elemente.
+- **Das Cover ist nie Szene 01.** Video beginnt mit einer eigenen, normalen Illustration zum Sprechertext.
 
-Sondern:
+## Wie viel technische Erklärung?
 
-> „Was muss der Zuschauer in genau diesem Moment sehen, damit der gesprochene Satz sofort verständlich wird?“
+Bei langen Videos als redaktionelle Planung ca. **35–50 % sinnvolle technische Schaubilder, beschriftete Cutaways, Diagramme, Vergleiche oder Infografiken** anstreben. Es gibt keine harte starre Quote: Manche Sätze brauchen eine reale Situation; andere einen klaren Querschnitt oder einen präzisen 2D-Plan. Niemals rein dekorative Diagramme einbauen, nur um eine Quote zu erfüllen.
 
-Wenn ein Bild zwar gut aussieht, aber den Voice-over-Satz nicht klar erklärt, ist es falsch.
+Bevor Bilder erstellt werden, pro Beat notieren: **Was genau soll der Zuschauer im Bild erkennen?** Erst dann die geeignete Form, erforderliche Beschriftungen und Perspektive wählen. Wenn eine komplizierte Aussage mehr als ein klares Bild benötigt, Beat teilen statt unlesbare Minischrift hineinzupressen.
 
-### Direkte Text-zu-Bild-Regel
+## Sichtbarer Text – ausdrücklich erlaubt und erwünscht, wenn er hilft
 
-Für jeden Beat vor dem Prompt festlegen:
-1. **Kernaussage des Voice-over in einem kurzen Satz**
-2. **ein Hauptmotiv**, das diese Aussage sichtbar macht
-3. **eine Erklärform**: Umgebung, Querschnitt, Makro, Vergleich, Diagramm usw.
-4. optional **0–1 kurzes deutsches Label**; zwei nur wenn zwingend nötig
+- Normale Szenen: meist 0–2, bei echtem Erklärbedarf **bis zu 3 klare deutsche Labels**.
+- Technische Diagramme, Schaltpläne, Vergleiche, Querschnitte oder Infografiken: **bis zu 5 sinnvolle deutsche Labels**; dazu nötige Formeln, Einheiten, Dimensionslinien und Legenden. Bis zu 3 Panels und 4 fachlich korrekte Pfeile sind möglich, wenn sie zum Verständnisschritt gehören.
+- Lesbarkeit auf dem Handy: große, kontrastreiche Beschriftungen, eindeutige Ankerlinien und genügend Abstand. Schreibweise und Physik prüfen, insbesondere Pfeilrichtung, Proportionen, Wasserstand, Schaltverbindungen und Werte. **Nie Zahlen erfinden.**
+- Große Überschriften sind nur für echte erklärende Infografiken sinnvoll; keine künstlichen Titel auf allen Bildern. Sichtbare Sprache ausschließlich Deutsch, Produktionsmetadaten wie »Scene 14« oder Dateinamen niemals ins Bild.
 
-Das Bild darf keine zweite große Aussage gleichzeitig erklären.
+## Beispiele für bessere Szenen
 
-## Harte Informationsbudget-Regel
+1. »Auftrieb gleicht Gewicht aus«: Rumpfquerschnitt mit zwei korrekt gerichteten Kraftpfeilen, gut lesbar **»Auftrieb«** / **»Gewicht«**, ruhiger blauer Bereich des verdrängten Wassers.
+2. »Voll beladen liegt tiefer«: Zwei identisch skalierte Rumpfquerschnitte **»leer«** / **»beladen«**, deutliche Wasserlinien und sichtbarer Tiefgang.
+3. »Ladung oben gefährdet Stabilität«: technische Doppelskizze mit Schwerpunktpunkten und klar markiertem **»Schwerpunkt«** sowie einer nachvollziehbaren Neigung.
+4. »Ein Stromkreis schließt sich«: übersichtlicher Schaltplan und passendes 2.5D-Bauteil, markierte Leitungsführung statt beliebiger Kabeldekoration.
+5. »Eine Kältemaschine transportiert Wärme«: vierstationiges Prozessschema mit passend gerichteten Pfeilen und verständlichen deutschen Kurzlabels.
 
-Leitsatz: **so wenig Information wie möglich, so viel wie nötig**.
+## Verbindlicher Ablauf
 
-Normale Szenen müssen visuell ruhig bleiben. Das ist kein Wunsch, sondern ein Produktionslimit.
+1. Erst prüfen, ob Fachinhalt und Hook stimmen, dann expliziten visuellen Erklärzweck pro Beat festhalten.
+2. Style Lock bleibt konstant; der **Dichte-Lock hängt vom Visualtyp ab**: technischer Erklärinhalt darf mehr Informationen tragen als eine normale Umgebungsillustration.
+3. **Ein einziges Google-Flow-Masterprompt** enthält Cover und alle Szenen. Flow erstellt erst drei Cover-Kandidaten und wartet einmal auf Nutzerauswahl; danach alle Szenen ohne Zwischenstopps.
+4. Jedes erzeugte Bild sofort gegen aktuellen Sprechertext prüfen. Falsche oder unlesbare Labels, Physikfehler, doppelte Hauptmotive oder fehlende Szenen werden korrigiert.
+5. Nur geprüfte finale Standbilder, keine KI-Videoclips. Nach Rendering komplettes Video bewerten und Erkenntnisse im Verbesserungssystem dokumentieren.
 
-### Normale Szene
-- genau **eine dominante Erkläridee**
-- bevorzugt **ein Hauptobjekt**
-- insgesamt höchstens **3 wichtige visuelle Elemente/Objekte**
-- bevorzugt **0–1 Label**, absolut höchstens **2 kurze Labels**
-- höchstens **2 Pfeile**
-- höchstens **2 Teilflächen/Panels**
-- keine große Überschrift
-- keine Textsätze im Bild
-- keine schwebenden Infoboxen als Standard
-- nicht gleichzeitig Labels + viele Pfeile + Infoboxen + Zusatzdiagramm verwenden
-
-### Vergleich, Diagramm oder finale Zusammenfassung
-Nur wenn die Aussage ohne diese Form schlechter verständlich wäre:
-- höchstens **4 wichtige visuelle Elemente**
-- höchstens **3 kurze Labels**
-- höchstens **2 Panels**
-- weiterhin nur **eine zentrale Aussage**
-- jedes Element muss sofort erkennbar sein; keine Mini-Diagramme in den Ecken
-
-### Wenn das Budget nicht reicht
-Dann **nicht alles in ein Bild quetschen**.
-
-Stattdessen:
-1. Beat/Skript in zwei verständliche visuelle Aussagen teilen, oder
-2. unwichtige Information weglassen, oder
-3. eine einfachere Erklärform wählen.
-
-**Ein überfülltes Bild wird nicht akzeptiert, auch wenn es fachlich korrekt ist.**
-
-## Szene 01 ist unabhängig vom Cover
-
-**Für alle neuen Videos:** Das Cover ist ausschließlich ein separates YouTube-Veröffentlichungsbild unter `05-export/cover/00-thumbnail-final.*`. Es gehört niemals als erstes Bild, Zwischenszene, Platzhalter oder Outro ins MP4. **Szene 01 ist ein normales, eigenständiges Erklärbild**, das allein auf dem gesprochenen Hook basiert. Niemals Cover-Komposition, großes Motiv oder Thumbnail-Schrift übernehmen.
-
-## Bildwechsel nach Aussage, nicht nach starrer Zeit
-
-Für 6–7 Minuten ca. 46 statische Erklärbeats anstreben; Anzahl flexibel, wenn die Story anderes verlangt. Bei neuer Ursache, neuem Prozessschritt oder wechselndem Voice-over-Thema neues Bild planen. 5–9 Sekunden pro Bild sind häufig passend; bei mehr als etwa 10 Sekunden prüfen, ob eine zusätzliche, fachlich sinnvolle Illustration nötig ist. Wiederholte Landschaften und gleiche Bilder mit neuer Überschrift sind zu verwerfen. Große automatische Szenenüberschriften sind verboten; kurze deutsche Labels nur wenn nötig.
-
-## Format
-
-- 1920×1080 / 16:9
-- statische Szenenbilder
-- Thumbnail separat in 1280×720
-- gesamte Bildfläche sinnvoll nutzen
-
-## Fester Style-Lock
-
-Alle Bilder gehören zur gleichen visuellen Familie:
-
-- moderne technische Editorial-Illustration
-- sauberer **2D/2.5D vector-like Look**
-- vereinfachte, glaubwürdige Proportionen
-- matte Materialien statt Fotorealismus
-- klare Formen und saubere Konturen
-- dezente Gradients
-- weiche kontrollierte Schatten
-- moderate räumliche Tiefe
-- konsistente Linienstärke
-- erwachsen, professionell, ruhig
-- technisch erklärend statt dekorativ
-
-### Farbe
-
-Grundfamilie:
-- warmes Off-White / helles Beige für neutrale Flächen
-- Graphit / Anthrazit für Technik und Linien
-- gedeckte Industrietöne
-
-Akzentfarben nur mit Bedeutung:
-- Kupfer = Leiter/Spule
-- Blau = Feld, Kälte, Luft, Wasser oder neutraler Energiepfad
-- Orange/Rot = Wärme
-- Grün = aktiv / korrekt / erkannt
-- Gelb = Warnung / gezielter Fokus
-
-**Kein fester Hintergrund für alle Bilder.** Die Umgebung und Grundfläche dürfen wechseln. Konstant bleiben Rendering, Materialvereinfachung, Linien, Schatten und Label-Stil.
-
-## Was ausdrücklich nicht gewünscht ist
-
-- Fotorealismus / echte Fotooptik
-- hyperrealistische Küchen, Werkstätten oder Fahrzeuge
-- generische KI-Kunst
-- immer derselbe Herd / Topf / Gegenstand aus leicht anderer Perspektive
-- immer dieselbe Türkis-/Weiß-Komposition
-- weißes Schulbuch-/PowerPoint-Infografik-Template als Dauerlook
-- Pixar-/Kinder-Cartoon
-- Sci-Fi-HUD
-- Neon-Glow als Hauptstil
-- Fantasy-Partikel
-- dekorative Effekte ohne Erklärfunktion
-- überfüllte Erklärbilder mit mehreren gleich wichtigen Zentren
-- Titel + mehrere Labels + Infoboxen + Pfeile gleichzeitig
-- kleine Zusatzdiagramme, wenn das Hauptbild bereits genügt
-
-## Erklärformen bewusst wechseln
-
-Erlaubt und erwünscht:
-1. vereinfachte Umgebungsszene
-2. technischer Cutaway / Querschnitt
-3. Explosionsdarstellung
-4. Material-/Makroansicht
-5. Objektvergleich
-6. Prozessdarstellung
-7. Draufsicht
-8. Bauteil mit Callout
-9. vereinfachtes Diagramm
-10. Schaltplan / Funktionsschema
-11. Mess-/Instrumentansicht
-12. Vorher/Nachher
-13. reduzierte Prozesskette / Zusammenfassung
-
-Mindestens **5 deutlich unterschiedliche Darstellungsformen** pro 2-Minuten-Video.
-
-### Wiederholungsregel
-
-Wenn mehrere aufeinanderfolgende Voice-over-Beats praktisch dasselbe Bild benötigen würden, ist das **zuerst ein Skript-/Beat-Problem**.
-
-Dann gilt:
-- Skript oder Beat-Aufteilung ändern
-- nicht nur Perspektive oder Farbe ändern
-- keine künstliche Variation derselben Szene erzeugen
-
-Keine identische Hauptkomposition direkt hintereinander. Derselbe dominante Bildanker höchstens 3-mal pro Video. „Hand auf Gegenstand + Pfeile“ höchstens 3-mal als Hauptmotiv.
-
-## Text, Beschriftungen und Callouts
-
-Text im Bild ist erlaubt, aber **sparsam**.
-
-Drei Modi:
-- **0 Labels**: bevorzugt, wenn das Bild sich selbst erklärt
-- **1 Label**: Standard, wenn ein Begriff Orientierung spart
-- **2 Labels**: nur wenn beide für den aktuellen Satz nötig sind
-- **3 Labels**: ausschließlich bei echtem Vergleich, Diagramm oder Zusammenfassung
-
-Regeln:
-- sichtbarer Text ausschließlich **Deutsch**
-- Google-Flow-Prompt selbst auf **Englisch**
-- einzelne Begriffe oder sehr kurze Wortgruppen statt Sätzen
-- keine eingebrannten Untertitel
-- keine große Szenenüberschrift
-- keine Textwand
-- dünne Leader-Lines
-- Text direkt am relevanten Objekt statt verstreute Infoboxen
-- wenn zwei Labels reichen, niemals vier erzeugen
-
-## Schaltpläne und Diagramme
-
-Schaltpläne und Funktionsgrafiken sind erlaubt, wenn sie die Aussage einfacher erklären als eine Umgebungsszene.
-
-- fachliche Richtigkeit vor Design
-- klare technische Linien
-- saubere Symbole
-- warm-neutraler Hintergrund statt klinischem Reinweiß
-- deutsche Bezeichnungen
-- vereinfachte 2.5D-Bauteile dürfen mit 2D-Schema kombiniert werden
-- kein dekorativer Ballast
-- maximal zwei klar getrennte Funktionsbereiche/Panels
-- maximal drei kurze Labels
-
-Wenn ein exakter Schaltplan nicht sicher darstellbar ist, lieber eine einfache korrekte Funktionsdarstellung als falsche Verdrahtung.
-
-## Menschen
-
-Menschen nur bei fachlichem Nutzen.
-
-- sichtbarer Kopf = vollständige natürliche stilisierte Gesichtszüge
-- keine gesichtslosen sichtbaren Köpfe
-- wenn ein Gesicht nicht gebraucht wird: Kopf komplett außerhalb des Frames
-- keine Person als Dekoration
-
-## Prompt-Sprache
-
-Alle Google-Flow-Prompts werden **auf Englisch** geschrieben. Sichtbarer Bildtext bleibt **Deutsch**.
-
-### Verbindlicher Style- und Density-Lock
-
-```text
-STYLE LOCK — Technical Editorial Explainer 2.5D
-Keep the exact same visual language across the entire video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook infographic layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects. Scene type, perspective and environment may change, but rendering language, material simplification, line quality, typography and callout design must remain consistent. The image must explain the current voice-over statement as directly and simply as possible. Visible text only in German.
-
-DENSITY LOCK — Keep the scene visually sparse. One dominant explanatory idea. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large scene headline, no full-sentence text, no floating info boxes, no secondary mini-diagrams. If the idea needs more information than this budget allows, simplify or split it into another beat instead of crowding the image.
-```
-
-## Qualitätsprüfung vor Freigabe
-
-Ein Bild ist nur gut, wenn:
-1. der aktuelle Voice-over-Satz dadurch sofort verständlicher wird
-2. ein Zuschauer die Hauptaussage in ungefähr 1–2 Sekunden erfassen kann
-3. genau eine dominante Erkläridee vorhanden ist
-4. normale Szenen höchstens 3 wichtige visuelle Elemente enthalten
-5. normale Szenen bevorzugt 0–1 und niemals mehr als 2 Labels enthalten
-6. keine große Überschrift, Textwand oder unnötige Infobox vorkommt
-7. die Technical-Editorial-2.5D-Bildwelt erhalten bleibt
-8. es nicht fotorealistisch wirkt
-9. es nicht wie eine generische Schulbuchseite wirkt
-10. es sich sinnvoll vom vorherigen Beat unterscheidet
-11. Labels kurz, korrekt und deutsch sind
-12. keine gesichtslosen sichtbaren Köpfe vorkommen
-13. der 16:9-Raum sinnvoll genutzt wird
-
-Wenn nicht: **Prompt vereinfachen oder bei strukturellem Problem Skript/Beat-Plan teilen bzw. umschreiben, bevor das Bild übernommen wird.**
+**Priorität 1 bleibt Lernen aus jedem Video:** richtige Hypothesen messen, nicht ungeprüft Erfolg versprechen. Änderungen an der Bildwelt sind auf technische Verständlichkeit gerichtet, nicht auf mehr dekoratives Chaos.

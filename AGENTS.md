@@ -1,3 +1,15 @@
+## Verbindliche Ordnernamen und sauberer Export
+
+Das GitHub-Repository heißt **Technik-Kanal**. Unter `channels/science/` gibt es künftig **`YouTube/`** statt `reels/`; der alte Ordner `channels/elektrotechnik` ist im aktuellen Branch bereits entfernt. Ein lokaler Mac-Ordner mit dem Namen `Elektrotechnik-Kanal` muss am Mac selbst umbenannt und mit Git synchronisiert werden – GitHub ändert keinen Finder-Ordnernamen.
+
+**`05-export/` enthält sichtbar ausschließlich:** `video.mp4`, `cover.png` (oder Bilddatei im Originalformat) und `caption.txt`. Keine Unterordner, Metadaten, SRT, Analytics oder Kontaktbögen an dieser Stelle. Alle technischen Hilfsdateien gehören nach `06-projektdateien/`.
+
+**Nur zwei Kopierdateien:** `START-HIER/<slug>/01-SKRIPT.txt` und `02-GOOGLE-FLOW-PROMPT.txt`. Das Masterprompt enthält Cover und alle Bilder; alle fertigen Bilder und die Stimme werden unter `DATEIEN-HIER-REIN/` gesammelt.
+
+## Bildwelt – Verbesserung aus dem Schiffs-Video
+
+Premium **Technical Editorial Explainer 2.5D** mit technisch korrekten Querschnitten, Schnittmodellen, Funktionsschemas, Diagrammen, Vergleichstabellen und verständlichen Infografiken. Bei langen YouTube-Videos ungefähr **ein Drittel bis die Hälfte** der Bilder gezielt als technische Erklärung statt dekorative Außenansicht planen. **Beschriftungen sind ausdrücklich erwünscht**, wo sie echte Fragen beantworten: normale Szenen bis zu drei, komplexe technische Infografiken bis zu fünf kurze deutsche Labels sowie nötige Zahlen, Einheiten, Formeln, Legenden und Pfeile. Alles muss am Smartphone lesbar sein; niemals erfundene Werte, Fehler, englische Bildwörter oder winzige unlesbare Schriften. Kein starrer Pflichtmix: Illustration passend zum Sprechertext wählen. Die Kritik am letzten Video ist eine redaktionelle Beobachtung, noch kein Beweis für höhere Views.
+
 ## ABSOLUT VERBINDLICH: eine einzige Google-Flow-Promptdatei für den Nutzer
 
 **Nutzeroberfläche pro Video ausschließlich `START-HIER/<video-slug>/` mit zwei Textdateien:** `01-SKRIPT.txt` (ein Fließtext ohne Kapitelüberschriften) und `02-GOOGLE-FLOW-PROMPT.txt` (**ein Prompt zum einmaligen Einfügen in Google Flow**, inklusive 3 Thumbnail-Kandidaten, STOPP bis Nutzer Cover wählt, alle Szenen mit Style-/Qualitätsregeln, korrekte Benennung und abschließende Prüfung). Daneben nur `DATEIEN-HIER-REIN/` für fertige Bilder/Voice.

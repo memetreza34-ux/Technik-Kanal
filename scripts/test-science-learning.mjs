@@ -10,12 +10,12 @@ const channelDir=path.join(scratch,'channels/science');
 const save=(file,content)=>{fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,typeof content==='string'?content:JSON.stringify(content,null,2));};
 const load=file=>JSON.parse(fs.readFileSync(file,'utf8'));
 const project=(name,profile='youtube-6to7min-v1')=>{
-  const dir=path.join(channelDir,'reels/2026-10-01_bis_2026-10-07',name);
+  const dir=path.join(channelDir,'YouTube/2026-10-01_bis_2026-10-07',name);
   save(path.join(dir,'06-projektdateien/scene-plan.json'),{slug:name,productionProfile:profile});
   return dir;
 };
 const fill=(dir,metric)=>{
-  const file=path.join(dir,'05-export/youtube-analytics.json');
+  const file=path.join(dir,'06-projektdateien/youtube-analytics.json');
   const data=load(file);data.publishedAt='2026-10-01T12:00:00Z';
   Object.assign(data.snapshots.find(s=>s.afterHours===168),{capturedAt:'2026-10-08T12:00:00Z',impressions:1000,views:400,ctrPercent:metric,retention30Percent:65,averagePercentageViewed:44,subscribersGained:8});
   save(file,data);

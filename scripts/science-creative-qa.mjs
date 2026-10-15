@@ -73,7 +73,7 @@ let motifCounts = new Map();
 let handOnObjectCount = 0;
 
 if (flowPlan) {
-  if(plan.productionProfile==='youtube-6to7min-v1' && (flowPlan.scene01IndependentFromCover!==true || flowPlan.coverNeverUsedAsVideoFrame!==true || flowPlan.coverExportDir!=='05-export/cover')) errors.push('6–7-Minuten-Profil: Cover darf nur im Export sein; Szene 01 muss eigenständig sein.');
+  if(plan.productionProfile==='youtube-6to7min-v1' && (flowPlan.scene01IndependentFromCover!==true || flowPlan.coverNeverUsedAsVideoFrame!==true || flowPlan.coverExportDir!=='05-export')) errors.push('6–7-Minuten-Profil: Cover darf nur im Export sein; Szene 01 muss eigenständig sein.');
   if (flowPlan.imageOnly !== true) errors.push('flow-plan.json muss imageOnly=true setzen.');
   if (flowPlan.imageProductionSteps !== stepCount) errors.push(`flow-plan.json muss imageProductionSteps=${stepCount} setzen.`);
   if (flowPlan.pauseAfterEachImageStep !== false) errors.push('flow-plan.json muss pauseAfterEachImageStep=false setzen.');
@@ -161,6 +161,11 @@ if (!/(finale.*google-flow-sammlung|finalen.*google-flow.*ordner|finale flow-sam
 if (!/(fehlversuche|zwischenversionen|zwischenstände)/i.test(cleanupText)) errors.push('Flow-Cleanup muss Fehlversuche und Zwischenstände entfernen.');
 if (!/(nur.*finale assets|finale sammlung.*nur|nur enthalten)/i.test(cleanupText)) errors.push('Flow-Cleanup muss die finale Sammlung auf finale Assets beschränken.');
 
+// Beobachtung aus dem Schiffs-Video: technische Erklärbilder statt bloßer Dekoration fördern.
+const technicalTypes=/diagram|schema|cutaway|cross-section|infographic|comparison|process|experiment|macro|schematic/i;
+const technicalCount=flowEntries.filter(scene=>technicalTypes.test(String(scene.visualType??''))).length;
+if(plan.productionProfile==='youtube-6to7min-v1' && flowEntries.length && technicalCount/flowEntries.length<0.35)
+  warnings.push('Nur '+technicalCount+'/'+flowEntries.length+' Beats als technische Diagramme/Schemata/Cutaways geplant. Etwa 35–50 % anstreben, wenn es fachlich passt.');
 const report = {
   version:'science-flow-images-v5-final-collection',
   productionProfile:config.productionProfile,
