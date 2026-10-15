@@ -1,8 +1,11 @@
+> **OBERSTE PRIORITÄT – WISSONAUT KONTINUIERLICH VERBESSERN:** Vor jedem Skript `gehirn/VERBESSERUNGSSYSTEM.md`, den letzten Lernbericht und `learning/active-lessons.json` auswerten. Jeder neue Videoordner besitzt einen Lernbrief mit konkreter Hypothese, Änderung und Zielmetrik. Nach jedem Rendern die vollständige Retrospektive ausfüllen, nach Veröffentlichung echte YouTube-Studio-Daten erfassen und Verbesserungen beim nächsten Video nachweisbar anwenden. Keine erfundenen Kennzahlen oder Viralitätsgarantien.
+
 # Wissenschaftskanal – Arbeitsregeln
 
 Vor Änderungen zuerst lesen:
 
-1. `gehirn/KANAL.md`
+1. `gehirn/VERBESSERUNGSSYSTEM.md` (Priorität 1)
+2. `gehirn/KANAL.md`
 2. `gehirn/LONGFORM.md`
 3. `gehirn/REELS.md`
 4. `gehirn/BILDWELT.md`
