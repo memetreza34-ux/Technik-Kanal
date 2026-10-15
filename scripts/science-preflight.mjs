@@ -3,6 +3,7 @@ import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import {electricalProjectPaths,assertElectricalProjectStructure} from './lib/electrical-project-structure.mjs';
+import {buildSciencePhase1Handoff} from './lib/science-phase1-handoff.mjs';
 
 const [projectArg]=process.argv.slice(2).filter((arg)=>!arg.startsWith('--'));
 if(!projectArg){console.error('Nutzung: npm run science:preflight -- <reel-ordner>');process.exit(1);}
@@ -25,4 +26,22 @@ const passed=results.every((result)=>result.passed);
 const report={version:'science-v1',generatedAt:new Date().toISOString(),passed,phase:passed?'assets-may-be-created':'blocked-before-assets',results,rule:'Keine Bilder oder Audio produzieren, bevor Skript, Quellen, statische Bilddramaturgie und Inhalt geprüft sind.'};
 fs.writeFileSync(path.join(paths.projectDir,'preproduction-report.json'),`${JSON.stringify(report,null,2)}\n`);
 if(!passed){console.error('Science-Preflight fehlgeschlagen. Produktion noch nicht starten.');process.exit(1);}
-console.log('✓ Science-Preflight bestanden. Bilder und Voice dürfen jetzt produziert werden.');
+try{
+  const handoff=buildSciencePhase1Handoff({
+    projectDir:root,
+    repoRoot:path.resolve(process.cwd()),
+    repository:process.env.GITHUB_REPOSITORY??'memetreza34-ux/Technik-Kanal',
+    ref:process.env.SCIENCE_GITHUB_REF??'science-channel-v1'
+  });
+  console.log('✓ Science-Preflight und Phase 1 bestanden. Bilder und Voice dürfen jetzt produziert werden.');
+  console.log('✓ Alle '+handoff.sceneCount+' Google-Flow-Szenenprompts + vollständiges Skript zum Kopieren: '+handoff.output);
+  console.log('✓ NACH COMMIT/PUSH DEN DIREKTLINK SENDEN: '+handoff.url);
+  console.log('  Wichtig: Dieser Link funktioniert erst, nachdem die Datei im GitHub-Branch gespeichert wurde.');
+}catch(error){
+  report.passed=false;
+  report.phase='blocked-before-assets';
+  report.results.push({id:'phase1-handoff',passed:false,error:error.message});
+  fs.writeFileSync(path.join(paths.projectDir,'preproduction-report.json'),`${JSON.stringify(report,null,2)}\n`);
+  console.error('Phase-1-Übergabe fehlgeschlagen: '+error.message);
+  process.exit(1);
+}
