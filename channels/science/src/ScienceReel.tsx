@@ -1,7 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Img, staticFile, useCurrentFrame} from 'remotion';
 import {ScienceSoundLayer, SCIENCE_COLORS} from '@science/core';
-import {ScienceSceneHeader} from './engine/ScienceSceneHeader';
 import type {ScienceReelRuntime} from './engine/science-contracts';
 import runtimeJson from './generated/science-runtime.json';
 
@@ -26,7 +25,6 @@ export const ScienceReel: React.FC = () => {
           <Img src={staticFile(scene.imagePath)} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
         </AbsoluteFill>
       ) : null}
-      {scene.headline ? <ScienceSceneHeader kicker={scene.kicker} headline={scene.headline}/> : null}
     </AbsoluteFill>
   );
 };

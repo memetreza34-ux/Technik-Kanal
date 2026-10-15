@@ -29,6 +29,19 @@ try{
   assert.equal(load(paths.brief).permanentLessons.length,1);
   assert.equal(load(paths.analytics).snapshots.length,4);
   assert.ok(fs.existsSync(paths.editorial));
+  assert.ok(fs.existsSync(paths.editorialDecisions),'Review-Entscheidungen werden pro Video angelegt.');
+  const decisions=load(paths.editorialDecisions);
+  assert.equal(decisions.editorApproved,false,'Keine automatische Freigabe ohne Videoanalyse.');
+  decisions.editorApproved=true;
+  decisions.reviewer='Video Editor';
+  decisions.reviewedAt='2026-10-15T13:00:00Z';
+  decisions.improvements=[{
+    evidenceType:'visual-review',
+    observation:'Technische Zeichnungen erklären wichtige Stellen zu wenig.',
+    nextVideoChange:'Mindestens drei gezielte beschriftete Schemata einsetzen.',
+    testMetric:'Zuschauerbindung im Abschnitt mit technischen Grafiken'
+  }];
+  save(paths.editorialDecisions,decisions);
   save(paths.brief,{...load(paths.brief),thisVideoHypothesis:'Test wird nicht überschrieben'});
   initializeScienceLearning(target,{channelDir});
   assert.equal(load(paths.brief).thisVideoHypothesis,'Test wird nicht überschrieben');
@@ -44,6 +57,9 @@ try{
   const next=project('05-e');
   const nextPaths=initializeScienceLearning(next,{channelDir});
   assert.ok(load(nextPaths.brief).inheritedTests.some(x=>x.area==='thumbnail-title'));
+  assert.ok(load(nextPaths.brief).inheritedEditorialActions.some(x=>x.nextVideoChange.includes('Schemata')),
+    'Freigegebene qualitative Verbesserung muss im nächsten Video ankommen.');
+  assert.equal(load(nextPaths.brief).inheritedEditorialActions[0].sourceVideo,'04-d');
   assert.throws(()=>validateScienceAnalytics({version:1,snapshots:[{afterHours:168,ctrPercent:110}]}));
   assert.throws(()=>validateScienceAnalytics({version:1,snapshots:[{afterHours:24},{afterHours:24}]}));
   console.log('✓ Wissonaut Learning: Start, echte Daten, Peer-Baseline, Testvererbung, Idempotenz und ungültige Messwerte geprüft.');

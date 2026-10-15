@@ -26,6 +26,7 @@ if (!args.includes('--preflight-passed')) {
 } else {
   run(process.execPath, ['scripts/science-required-media.mjs', paths.root], {cwd: repositoryRoot});
   run(process.execPath, ['scripts/science-image-qa.mjs', paths.root], {cwd: repositoryRoot});
+  run(process.execPath, ['scripts/science-asset-review.mjs', 'check', paths.root], {cwd: repositoryRoot});
   run(process.execPath, ['scripts/science-runtime-readiness.mjs', paths.root], {cwd: repositoryRoot});
 }
 

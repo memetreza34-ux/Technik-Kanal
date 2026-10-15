@@ -185,6 +185,7 @@ const report = {
     'Finales MP4 vollständig mit Ton ansehen.',
     'Fachliche Bildaussage, Lesbarkeit, harte Schnitte, Untertitel und SFX-Lautstärke bestätigen.',
     'Sichtbaren Bildtext auf Deutsch, Rechtschreibung und fachliche Richtigkeit prüfen.',
+    'Produktionsmetadaten wie 35 | DEEPENING, Szenennummern und Flow-Anweisungen streng ausschließen.',
     'Finales separates Thumbnail gegen Titel und Hook prüfen.',
   ],
 };

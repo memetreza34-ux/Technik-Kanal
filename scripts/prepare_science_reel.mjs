@@ -17,6 +17,7 @@ const paths = projectPaths(projectArg);
 // Vor jeder Vorbereitung werden daher IMMER die vom Nutzer in Phase 2 abgelegten Dateien geprüft.
 // Diese Prüfung darf auch mit --readiness-passed nicht übersprungen werden.
 run(process.execPath, ['scripts/science-required-media.mjs', paths.root], {cwd: repositoryRoot});
+run(process.execPath, ['scripts/science-asset-review.mjs', 'check', paths.root], {cwd: repositoryRoot});
 
 if (!args.includes('--readiness-passed')) run(process.execPath, ['scripts/science-readiness.mjs', paths.root], {cwd: repositoryRoot});
 
