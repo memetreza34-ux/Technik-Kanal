@@ -3,7 +3,7 @@ import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import {electricalProjectPaths,assertElectricalProjectStructure} from './lib/electrical-project-structure.mjs';
-import {buildSciencePhase1Handoff} from './lib/science-phase1-handoff.mjs';
+import {buildScienceSimpleHandoff} from './lib/science-simple-handoff.mjs';
 
 const [projectArg]=process.argv.slice(2).filter((arg)=>!arg.startsWith('--'));
 if(!projectArg){console.error('Nutzung: npm run science:preflight -- <reel-ordner>');process.exit(1);}
@@ -27,14 +27,14 @@ const report={version:'science-v1',generatedAt:new Date().toISOString(),passed,p
 fs.writeFileSync(path.join(paths.projectDir,'preproduction-report.json'),`${JSON.stringify(report,null,2)}\n`);
 if(!passed){console.error('Science-Preflight fehlgeschlagen. Produktion noch nicht starten.');process.exit(1);}
 try{
-  const handoff=buildSciencePhase1Handoff({
+  const handoff=buildScienceSimpleHandoff({
     projectDir:root,
     repoRoot:path.resolve(process.cwd()),
     repository:process.env.GITHUB_REPOSITORY??'memetreza34-ux/Technik-Kanal',
     ref:process.env.SCIENCE_GITHUB_REF??'science-channel-v1'
   });
   console.log('✓ Science-Preflight und Phase 1 bestanden. Bilder und Voice dürfen jetzt produziert werden.');
-  console.log('✓ Alle '+handoff.sceneCount+' Google-Flow-Szenenprompts + vollständiges Skript zum Kopieren: '+handoff.output);
+  console.log('✓ Einfacher START-HIER-Ordner: ein Fließtext, Coverprompt, fünf Flow-Pakete und DATEIEN-HIER-REIN: '+handoff.folder);
   console.log('✓ NACH COMMIT/PUSH DEN DIREKTLINK SENDEN: '+handoff.url);
   console.log('  Wichtig: Dieser Link funktioniert erst, nachdem die Datei im GitHub-Branch gespeichert wurde.');
 }catch(error){

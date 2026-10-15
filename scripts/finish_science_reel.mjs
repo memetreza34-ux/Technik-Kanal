@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {projectPaths, repositoryRoot, run} from './lib/electrical-project.mjs';
 import {generateScienceLearningReport} from './lib/science-learning.mjs';
+import {importScienceDrop} from './lib/science-simple-import.mjs';
 
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
@@ -12,6 +13,14 @@ if (!projectArg) {
 }
 
 const paths = projectPaths(projectArg);
+// Nutzer legt alle Bild- und Sprachdateien in EINEN START-HIER-Ablageordner.
+// Vor der technischen Readiness sicher und ohne Überschreiben in den Renderer importieren.
+const scenePlan=JSON.parse(fs.readFileSync(paths.scenePlan,'utf8'));
+const dropPath=path.join(repositoryRoot,'START-HIER',scenePlan.slug);
+if(fs.existsSync(path.join(dropPath,'DATEIEN-HIER-REIN'))){
+  const imported=importScienceDrop({repoRoot:repositoryRoot,projectDir:paths.root,packageDir:dropPath});
+  console.log('✓ Einfacher Medienimport: '+imported.copied.length+' neue Dateien, '+imported.missing.length+' ausstehende Szenenbilder.');
+}
 run(process.execPath, ['scripts/science-readiness.mjs', paths.root], {cwd: repositoryRoot});
 
 const whisperCandidates = [

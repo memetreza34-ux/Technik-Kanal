@@ -1,3 +1,9 @@
+## NORMALER ARBEITSABLAUF – NUR START-HIER (WISSONAUT)
+
+Das Repo heißt `Technik-Kanal`. Die Nutzerschnittstelle ist NUR `START-HIER/<video-slug>/`: `01-SKRIPT.txt` (ein vollständiger deutscher Fließtext), `02-FLOW-COVER.txt` (drei Coveroptionen), `03-FLOW-BILDER-1.txt` bis `07-FLOW-BILDER-5.txt` und `DATEIEN-HIER-REIN/` (alle finalen Bilder, Cover und Stimme). Keine alternativen Skriptvarianten, keine riesige Markdown-Masterkopie und keine 45 Einzeldateien dem Nutzer als primären Einstieg zumuten. Nach Phase 1 diese wenigen Dateien automatisch erzeugen und die echte GitHub-Ordner-URL übermitteln. Renderer-Interna bleiben unverändert unter `channels/science` und dürfen nicht ins tägliche Nutzermenü.
+
+Bei Phase 3 zunächst `npm run technik:import -- "START-HIER/<video-slug>"` oder den automatischen Import in `science:finish` verwenden; niemals Medien selbst erfinden, Bild-IDs ignorieren oder bestehende unterschiedliche Dateien überschreiben. Fehlende/duplizierte Dateien sind zu melden.
+
 # Wissonaut – Agentenregeln
 
 ## Priorität 1: Nach jedem Video messbar besser werden
