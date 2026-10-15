@@ -35,8 +35,38 @@ try{
  save('channel/learning/active-lessons.json',{lessons:[{id:'qa-003',status:'active'}]});
  save('06-projektdateien/learning-brief.json',{permanentLessons:[{id:'qa-003'}],thisVideoHypothesis:'Mehr technische Diagramme verbessern den Wissensgewinn.',oneControlledChange:'Mehr Kraftpfeile auf Querschnitten.',primarySuccessMetric:'Retention nach 30 Sekunden',editorApproved:true});
  assert.equal(checkScienceLearningBrief(dir,{channelDir:channel}).passed,true);
+ // Jedes zuvor tatsächlich fertig gerenderte Video braucht ein freigegebenes
+ // Review, sonst darf die Folgeproduktion nicht mit bloßen Hypothesen starten.
+ const last=path.join(channel,'YouTube/2026-10-01_bis_2026-10-07/01-Vorher');
+ save('channel/YouTube/2026-10-01_bis_2026-10-07/01-Vorher/05-export/video.mp4','previous-video');
+ assert.equal(checkScienceLearningBrief(dir,{channelDir:channel}).passed,true,
+   'Der aktuelle Testordner ohne gültigen YouTube-Wochenpfad gilt nicht als Folgevideoproduktion.');
+
  const b=load('06-projektdateien/learning-brief.json');b.editorApproved=false;save('06-projektdateien/learning-brief.json',b);
  assert.equal(checkScienceLearningBrief(dir,{channelDir:channel}).passed,false);
+ // Prüfung mit richtigem nächsten Pfad und tatsächlichem gerenderten Vorgänger:
+ const nextVideo=path.join(channel,'YouTube/2026-10-08_bis_2026-10-14/02-Folge');
+ fs.mkdirSync(path.join(nextVideo,'06-projektdateien'),{recursive:true});
+ fs.writeFileSync(path.join(nextVideo,'06-projektdateien/learning-brief.json'),JSON.stringify({
+   permanentLessons:[{id:'qa-003'}],thisVideoHypothesis:'Technische Diagramme verbessern Verstehen.',
+   oneControlledChange:'Mehr deutsche Fachlabels.',primarySuccessMetric:'Retention',
+   editorApproved:true,inheritedEditorialActions:[]
+ }));
+ assert.match(checkScienceLearningBrief(nextVideo,{channelDir:channel}).errors.join(' '),/noch nicht redaktionell ausgewertet/);
+ fs.mkdirSync(path.join(last,'06-projektdateien'),{recursive:true});
+ fs.writeFileSync(path.join(last,'06-projektdateien/editorial-decisions.json'),JSON.stringify({
+   version:1,slug:'previous-video',editorApproved:true,reviewer:'Editor',
+   reviewedAt:'2026-10-15T12:00:00Z',
+   improvements:[{evidenceType:'visual-review',observation:'Querschnitte erklären den Sachverhalt unklar.',
+     nextVideoChange:'Große lesbare Fachlabels in Diagrammen verwenden.',testMetric:'Retention'}]
+ }));
+ assert.match(checkScienceLearningBrief(nextVideo,{channelDir:channel}).errors.join(' '),/fehlt im nächsten Lernbrief/);
+ const follow=JSON.parse(fs.readFileSync(path.join(nextVideo,'06-projektdateien/learning-brief.json')));
+ follow.inheritedEditorialActions=[{sourceVideo:'previous-video'}];
+ fs.writeFileSync(path.join(nextVideo,'06-projektdateien/learning-brief.json'),JSON.stringify(follow));
+ assert.equal(checkScienceLearningBrief(nextVideo,{channelDir:channel}).passed,true,
+   'Abgenommenes Vorvideo und übertragene Erkenntnis müssen Folgevideo freischalten.');
+
  const component=fs.readFileSync(path.resolve('channels/science/src/ScienceReel.tsx'),'utf8');
  assert.ok(!component.includes('ScienceSceneHeader'),'Renderer darf keine SceneHeader-Overlay-Komponente verwenden.');
  for(const file of ['scripts/science-readiness.mjs','scripts/prepare_science_reel.mjs','scripts/render_science_reel.mjs']){

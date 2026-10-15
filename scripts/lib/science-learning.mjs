@@ -15,6 +15,7 @@ export const listScienceProjects=channelDir=>directories(path.join(channelDir,'Y
 // Ein Studio-Kennzahlen-Unterschied alleine ist kein Kausalitätsnachweis.
 const validEditorial=(record)=>record?.version===1&&record?.editorApproved===true&&
   typeof record.reviewer==='string'&&record.reviewer.trim().length>=4&&
+  Number.isFinite(Date.parse(record.reviewedAt??''))&&
   Array.isArray(record.improvements)&&record.improvements.length>0&&
   record.improvements.every(item=>typeof item.observation==='string'&&item.observation.trim().length>=10&&
     typeof item.nextVideoChange==='string'&&item.nextVideoChange.trim().length>=10&&

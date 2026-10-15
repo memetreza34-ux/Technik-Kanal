@@ -100,5 +100,39 @@ export function checkScienceLearningBrief(projectDir,{channelDir=path.resolve('c
   if(!safe(brief.oneControlledChange))errors.push('Eine konkrete kontrollierte Änderung fehlt.');
   if(!safe(brief.primarySuccessMetric))errors.push('Vorher definierte Zielmetrik fehlt.');
   if(brief.editorApproved!==true)errors.push('Redaktionelle Freigabe des Verbesserungsplans fehlt (editorApproved=true erst nach Sichtung).');
+  // Ein abgeschlossenes vorheriges Video darf nicht kommentarlos vergessen werden.
+  // Nur Projekte mit tatsächlich erstelltem Render/QA sind revisionspflichtig; Entwürfe nicht.
+  const videosBase=path.join(channelDir,'YouTube');
+  const folders=fs.existsSync(videosBase)?
+    fs.readdirSync(videosBase,{withFileTypes:true}).filter(e=>e.isDirectory())
+      .flatMap(week=>{
+        const weekPath=path.join(videosBase,week.name);
+        return fs.readdirSync(weekPath,{withFileTypes:true}).filter(e=>e.isDirectory())
+          .map(video=>path.join(weekPath,video.name));
+      }).sort():[];
+  const previousCompleted=folders.filter(dir=>{
+    if(path.resolve(dir)>=root)return false;
+    const qa=path.join(dir,'06-projektdateien/qa-report.json');
+    const video=path.join(dir,'05-export/video.mp4');
+    if(fs.existsSync(video))return true;
+    if(!fs.existsSync(qa))return false;
+    try{return read(qa).passed===true;}catch{return false;}
+  }).at(-1);
+  if(previousCompleted){
+    const decisionFile=path.join(previousCompleted,'06-projektdateien/editorial-decisions.json');
+    const review=fs.existsSync(decisionFile)?read(decisionFile):null;
+    const approved=review?.version===1&&review.editorApproved===true&&
+      safe(review.reviewer)&&Number.isFinite(Date.parse(review.reviewedAt??''))&&
+      Array.isArray(review.improvements)&&review.improvements.length>0&&
+      review.improvements.every(x=>safe(x.observation)&&safe(x.nextVideoChange)&&safe(x.testMetric)&&
+        ['visual-review','youtube-studio','viewer-feedback'].includes(x.evidenceType));
+    if(!approved)errors.push('Letztes fertig gerendertes Video wurde noch nicht redaktionell ausgewertet: '+
+      path.basename(previousCompleted)+'. Zuerst science:learn -- review und eine belegte Verbesserung freigeben.');
+    else{
+      const carried=(brief.inheritedEditorialActions??[]).filter(x=>x.sourceVideo===review.slug);
+      if(!carried.length)errors.push('Die freigegebene Lektion aus '+review.slug+' fehlt im nächsten Lernbrief. Zuerst science:learn -- start erneut aufrufen.');
+    }
+  }
+
   return {passed:errors.length===0,errors,file};
 }
