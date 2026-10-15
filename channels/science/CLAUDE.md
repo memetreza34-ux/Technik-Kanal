@@ -1,3 +1,5 @@
+> **PHASE-1-LINK IST PFLICHT:** Sobald Recherche, Sprechertext, Bildkonzept und alle Google-Flow-Prompts fertig und Phase-1-Preflight grün sind, `npm run science:phase1 -- "VIDEO_ORDNER"` ausführen. Die generierte `PHASE-1-START-HIER.md` mit dem Video auf GitHub committen/pushen und dem Nutzer **direkt den Link zu dieser Datei** schicken. Darin sind das ganze Skript, der Masterprompt, der Coverprompt und jeder Einzelprompt kopierbereit. Nicht nur sagen, wo es liegt, sondern den Link geben. Vor dem GitHub-Commit nicht von einer funktionierenden URL sprechen.
+
 > **OBERSTE PRIORITÄT – WISSONAUT KONTINUIERLICH VERBESSERN:** Vor jedem Skript `gehirn/VERBESSERUNGSSYSTEM.md`, den letzten Lernbericht und `learning/active-lessons.json` auswerten. Jeder neue Videoordner besitzt einen Lernbrief mit konkreter Hypothese, Änderung und Zielmetrik. Nach jedem Rendern die vollständige Retrospektive ausfüllen, nach Veröffentlichung echte YouTube-Studio-Daten erfassen und Verbesserungen beim nächsten Video nachweisbar anwenden. Keine erfundenen Kennzahlen oder Viralitätsgarantien.
 
 # Wissenschaftskanal – Arbeitsregeln
