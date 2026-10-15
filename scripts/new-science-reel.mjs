@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {createElectricalPromptManifestTemplate,createElectricalScenePlanTemplate,createElectricalStatusTemplate} from './lib/create-electrical-scene-plan-template.mjs';
 import {ELECTRICAL_REEL_DIRECTORIES} from './lib/electrical-project-structure.mjs';
+import {initializeScienceLearning} from './lib/science-learning.mjs';
 
 const args=process.argv.slice(2);
 const opt=(name)=>args.find((x)=>x.startsWith(`--${name}=`))?.slice(name.length+3);
@@ -118,6 +119,9 @@ json('06-projektdateien/prompt-manifest.json',createElectricalPromptManifestTemp
 json('06-projektdateien/visual-policy.json',{version:'science-static-v1',productionProfile,productionMode:'flow-image-only',brandVisualStyleDefined:true,styleId:'scientific-scene-explainer-v1',styleName:'Technical Editorial Explainer 2.5D',legacyStyleIdRetainedForCompatibilityOnly:true,promptLanguage:'en',styleLockRequiredInEveryFlowPrompt:true,densityLockRequiredInEveryFlowPrompt:true,photorealismAllowed:false,whiteTextbookInfographicAsDefaultAllowed:false,generatedImageTextPolicy:'controlled-german-only',visibleImageLanguage:'de',width:1920,height:1080,thumbnailRequired:true,thumbnailCandidateCount:3,imageOnly:true,imageProductionSteps:5,informationBudgetLocked:true,normalScenePreferredLabelsMax:1,normalSceneHardLabelsMax:2,diagramComparisonSummaryLabelsMax:3,normalScenePrimaryObjectsMax:3,diagramComparisonSummaryPrimaryObjectsMax:4,panelsMax:2,arrowsMax:2,largeSceneHeadlineAllowed:false,fullSentenceTextAllowed:false,splitBeatWhenBudgetExceeded:true,pauseAfterEachImageStep:false,continueAutomaticallyBetweenImageSteps:true,finalReportAfterAllImageSteps:true,deleteUnselectedThumbnailCandidatesAfterSelection:true,selectedThumbnailFinalName:'00-thumbnail-final',finalFlowCollectionRequired:true,singleFinalFlowCollectionPerVideo:true,removeRejectedVariantsBeforeCompletion:true,renameFinalAssetsBeforeCompletion:true,finalCollectionContainsFinalAssetsOnly:true,phase2SceneAssetRoot:'02-bilder/images',phase2ThumbnailRoot:'02-bilder/thumbnail',phase3AssetSource:'phase2-project-folders-only',phase3MayGenerateVisualAssets:false,phase3MayRegenerateVisualAssets:false,phase3MaySearchExternalAssets:false,phase3MaySubstituteMissingAssets:false,phase3MaySkipMissingScenes:false,phase3MayUseGeneratedPlaceholders:false,phase3MissingAssetPolicy:'stop-and-report',phase3AmbiguousAssetPolicy:'stop-and-report',visualDiversityRequired:true,blankOrFeaturelessVisibleFacesForbidden:true,burnedInCaptions:false,flowAiVideoAllowed:false,remotionAnimationAllowed:false,transitionPolicy:'hard-cut'});
 json('06-projektdateien/production-status.json',createElectricalStatusTemplate(plan));
 json('06-projektdateien/asset-manifest.json',{version:'science-v1',slug,assets:[]});
+// PRIORITÄT 1: Lernstand für die neue Produktion automatisch übernehmen.
+initializeScienceLearning(root);
 
 console.log(`✓ YouTube-Science-Video angelegt: ${root}`);
+console.log('PRIORITÄT 1: learning-brief.json mit Hypothese, Änderung und Zielmetrik füllen, bevor das Skript entsteht.');
 console.log('Vor Bildproduktion: Skript-Diversity + Informationsbudget prüfen, visualType/primaryMotif/informationBudget planen, englische Style- und Density-Lock-Prompts schreiben und science:flow-master ausführen. Phase 3 darf später nur die vom Nutzer abgelegten Phase-2-Dateien verwenden. Caption-/Timing-Dateien liegen direkt in 05-export.');
