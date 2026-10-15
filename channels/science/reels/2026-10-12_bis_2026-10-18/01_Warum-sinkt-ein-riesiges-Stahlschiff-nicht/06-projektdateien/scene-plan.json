@@ -1,0 +1,1232 @@
+{
+  "version": "science-v1",
+  "productionProfile": "youtube-6to7min-v1",
+  "slug": "warum-sinkt-ein-riesiges-stahlschiff-nicht",
+  "title": "Warum sinkt ein riesiges Stahlschiff nicht?",
+  "language": "de",
+  "compositionId": "ScienceReel",
+  "runtimeFile": "science-runtime.json",
+  "visualPolicyVersion": "science-static-v1",
+  "generatedImageTextPolicy": "controlled-german-only",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "minimumWordMatchRatio": 0.82,
+  "scenes": [
+    {
+      "id": "01-hook",
+      "section": "hook",
+      "title": "Warum sinkt ein riesiges Stahlschiff nicht?",
+      "voiceText": "Warum sinkt ein riesiges Stahlschiff nicht? Ein massiver Stahlklotz geht unter, aber ein Frachter voller Container schwimmt. Was macht den Unterschied?",
+      "imageDir": "02-bilder/images/01-hook",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "environment",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Wide cinematic yet restrained side view of an enormous loaded container ship floating calmly, natural visible waterline, understated port horizon, no enormous text or cover motifs.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "hero",
+      "factClaim": "Warum sinkt ein riesiges Stahlschiff nicht? Ein massiver Stahlklotz geht unter, aber ein Frachter voller Container schwimmt. Was macht den Unterschied?",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "02-context",
+      "section": "context",
+      "title": "context 2",
+      "voiceText": "Ein solches Schiff besteht aus vielen Tonnen Stahl. Dazu kommen Maschinen, Treibstoff und Ladung. Trotzdem hält es sich über der Wasseroberfläche.",
+      "imageDir": "02-bilder/images/02-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "cutaway",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Clean technical cutaway through a ship's hull showing solid structural steel, engine area and stowed cargo, realistic scale, mostly dry internal spaces.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Ein solches Schiff besteht aus vielen Tonnen Stahl. Dazu kommen Maschinen, Treibstoff und Ladung. Trotzdem hält es sich über der Wasseroberfläche.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "03-context",
+      "section": "context",
+      "title": "context 3",
+      "voiceText": "Es liegt nicht daran, dass Stahl plötzlich leichter wird, sobald man daraus ein Schiff baut. Das Material bleibt genauso dicht.",
+      "imageDir": "02-bilder/images/03-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "macro",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Macro illustration of a dense solid steel slab and a piece of ship plate with identical metallic grain and matte finish, no size-illusion.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Es liegt nicht daran, dass Stahl plötzlich leichter wird, sobald man daraus ein Schiff baut. Das Material bleibt genauso dicht.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "04-context",
+      "section": "context",
+      "title": "context 4",
+      "voiceText": "Die überraschende Antwort steckt im Wasser selbst. Ein Schiff drückt Wasser zur Seite, und das Wasser übt eine Kraft nach oben aus.",
+      "imageDir": "02-bilder/images/04-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "process",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Underwater oblique cutaway around a broad ship hull, show the hull occupying part of the water volume, subtle teal displacement silhouette with no magical upward beams.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Die überraschende Antwort steckt im Wasser selbst. Ein Schiff drückt Wasser zur Seite, und das Wasser übt eine Kraft nach oben aus.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "05-context",
+      "section": "context",
+      "title": "context 5",
+      "voiceText": "Diese Kraft nennt man Auftrieb. Ohne Auftrieb könnte kein Schiff schwimmen, egal wie stark sein Motor ist oder wie schnell es fährt.",
+      "imageDir": "02-bilder/images/05-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "diagram",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Simple stationary ship cross-section with one quiet upward blue arrow at the underwater hull, horizontal still water and no movement effects.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Diese Kraft nennt man Auftrieb. Ohne Auftrieb könnte kein Schiff schwimmen, egal wie stark sein Motor ist oder wie schnell es fährt.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "06-context",
+      "section": "context",
+      "title": "context 6",
+      "voiceText": "Dafür brauchen wir nur drei Dinge zu verstehen: Gewicht, verdrängtes Wasser und die Form des Schiffsrumpfes. Dann wird das Rätsel logisch.",
+      "imageDir": "02-bilder/images/06-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "object-comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "object-comparison",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Three separate restrained physical tabletop models: a small weight, a basin water level, and a hollow boat hull, one visual connection, no words.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Dafür brauchen wir nur drei Dinge zu verstehen: Gewicht, verdrängtes Wasser und die Form des Schiffsrumpfes. Dann wird das Rätsel logisch.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "07-context",
+      "section": "context",
+      "title": "context 7",
+      "voiceText": "Stell dir zunächst eine schwere Eisenkugel vor. Lässt du sie ins Wasser fallen, sinkt sie, bis sie auf dem Boden liegt.",
+      "imageDir": "02-bilder/images/07-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "environment",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Transparent laboratory water tank with a single dense dark iron ball resting on the tank bottom; clear waterline and neutral background.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Stell dir zunächst eine schwere Eisenkugel vor. Lässt du sie ins Wasser fallen, sinkt sie, bis sie auf dem Boden liegt.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "08-context",
+      "section": "context",
+      "title": "context 8",
+      "voiceText": "Formst du aus einer dünnen Metallplatte dagegen eine breite, wasserdichte Schale, kann dieselbe Art von Metall plötzlich oben bleiben.",
+      "imageDir": "02-bilder/images/08-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "object-comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "object-comparison",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Simple wide thin metal bowl afloat in a transparent water tank next to a small separate dense metal block, clearly different displaced volumes.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Formst du aus einer dünnen Metallplatte dagegen eine breite, wasserdichte Schale, kann dieselbe Art von Metall plötzlich oben bleiben.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "09-foundation",
+      "section": "foundation",
+      "title": "foundation 9",
+      "voiceText": "Warum? Wasser drückt auf alles, was in ihm steckt. Dieser Druck wirkt nicht nur seitlich, sondern auch auf Unterseiten nach oben.",
+      "imageDir": "02-bilder/images/09-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "cutaway",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Water tank cutaway around a submerged rectangular object, clear blue pressure forces on underside and above using maximum two sparse arrows.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Warum? Wasser drückt auf alles, was in ihm steckt. Dieser Druck wirkt nicht nur seitlich, sondern auch auf Unterseiten nach oben.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "10-foundation",
+      "section": "foundation",
+      "title": "foundation 10",
+      "voiceText": "Je tiefer man unter die Wasseroberfläche kommt, desto größer wird der Wasserdruck. Dadurch kann insgesamt eine Kraft nach oben entstehen.",
+      "imageDir": "02-bilder/images/10-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "diagram",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Simple vertical water column with two clean measurement levels and subtly stronger pressure at the bottom; use one up arrow and one down arrow.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Je tiefer man unter die Wasseroberfläche kommt, desto größer wird der Wasserdruck. Dadurch kann insgesamt eine Kraft nach oben entstehen.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "11-foundation",
+      "section": "foundation",
+      "title": "foundation 11",
+      "voiceText": "Schon vor sehr langer Zeit wurde dieser Zusammenhang beschrieben. Er heißt archimedisches Prinzip und lässt sich ohne komplizierte Formeln erklären.",
+      "imageDir": "02-bilder/images/11-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "material-macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "material-macro",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Close-up of a clear laboratory measuring vessel with an immersed smooth object and a subtle displaced-water meniscus, no historical human portraits.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Schon vor sehr langer Zeit wurde dieser Zusammenhang beschrieben. Er heißt archimedisches Prinzip und lässt sich ohne komplizierte Formeln erklären.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "12-foundation",
+      "section": "foundation",
+      "title": "foundation 12",
+      "voiceText": "Ein Gegenstand erhält genau so viel Auftriebskraft, wie das Wasser wiegt, das er verdrängt. Nicht die Stahlmenge ist dafür entscheidend.",
+      "imageDir": "02-bilder/images/12-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "diagram",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "One simple isolated object partially immersed in water with balanced downward weight arrow and upward buoyancy arrow; separate subtle outlined displaced water volume.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Ein Gegenstand erhält genau so viel Auftriebskraft, wie das Wasser wiegt, das er verdrängt. Nicht die Stahlmenge ist dafür entscheidend.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "13-foundation",
+      "section": "foundation",
+      "title": "foundation 13",
+      "voiceText": "Ein Kilogramm Wasser übt durch sein Gewicht ungefähr dieselbe Gewichtskraft aus wie ein Gegenstand mit einem Kilogramm Masse.",
+      "imageDir": "02-bilder/images/13-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "object-comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "object-comparison",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Physical comparison of a sealed one-liter water bottle and a one-kilogram reference weight on balanced tabletop scales, simple consistent proportions.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Ein Kilogramm Wasser übt durch sein Gewicht ungefähr dieselbe Gewichtskraft aus wie ein Gegenstand mit einem Kilogramm Masse.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "14-foundation",
+      "section": "foundation",
+      "title": "foundation 14",
+      "voiceText": "Wenn ein schwimmender Körper gerade ruht, ist der Auftrieb genauso groß wie seine Gewichtskraft. Sonst würde er steigen oder weiter sinken.",
+      "imageDir": "02-bilder/images/14-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "diagram",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Flat-bottomed floating model hull, identical-length upward and downward force arrows, neutral background and visible waterline.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Wenn ein schwimmender Körper gerade ruht, ist der Auftrieb genauso groß wie seine Gewichtskraft. Sonst würde er steigen oder weiter sinken.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "15-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 15",
+      "voiceText": "Ein solider Stahlblock verdrängt beim Eintauchen nur sein eigenes kleines Volumen. Dieses Wasser wiegt viel weniger als der schwere Stahlblock.",
+      "imageDir": "02-bilder/images/15-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "macro",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Steel cube below a water surface beside a translucent outline of precisely its own displaced water volume, single compact scientific comparison.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Ein solider Stahlblock verdrängt beim Eintauchen nur sein eigenes kleines Volumen. Dieses Wasser wiegt viel weniger als der schwere Stahlblock.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "16-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 16",
+      "voiceText": "Darum reicht die Auftriebskraft beim Stahlblock nicht aus, um sein Gewicht auszugleichen. Er sinkt, selbst wenn er ganz unter Wasser ist.",
+      "imageDir": "02-bilder/images/16-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "diagram",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Submerged metal cube with visibly longer downward weight arrow than blue upward buoyancy arrow, no pseudo-physics bubbles.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Darum reicht die Auftriebskraft beim Stahlblock nicht aus, um sein Gewicht auszugleichen. Er sinkt, selbst wenn er ganz unter Wasser ist.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "17-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 17",
+      "voiceText": "Ein Schiff ist völlig anders gebaut. Seine Hülle schließt einen großen Raum ein, der nicht komplett mit Stahl gefüllt ist.",
+      "imageDir": "02-bilder/images/17-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "cutaway",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Wide precise ship cross-section with steel outer shell and large enclosed dry spaces including cargo bays; no giant continuous empty air bubble.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Ein Schiff ist völlig anders gebaut. Seine Hülle schließt einen großen Raum ein, der nicht komplett mit Stahl gefüllt ist.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "18-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 18",
+      "voiceText": "Zusammen mit Hohlräumen, Luft und Ladung verteilt sich die Masse über ein sehr großes äußeres Volumen. Das verändert die mittlere Dichte.",
+      "imageDir": "02-bilder/images/18-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "diagram",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Simplified side-by-side volumetric blocks, one solid steel and one outlined hollow hull volume, clear visibly different material fill fractions.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Zusammen mit Hohlräumen, Luft und Ladung verteilt sich die Masse über ein sehr großes äußeres Volumen. Das verändert die mittlere Dichte.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "19-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 19",
+      "voiceText": "Mit mittlerer Dichte ist gemeint: Wie viel Masse steckt im gesamten betrachteten Volumen? Beim schwimmenden Schiff ist diese mittlere Dichte klein genug.",
+      "imageDir": "02-bilder/images/19-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "object-comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "object-comparison",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Two equal-size transparent model boxes on neutral surface: one packed heavy dark steel and one mainly enclosed space with light structure, no numbers.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Mit mittlerer Dichte ist gemeint: Wie viel Masse steckt im gesamten betrachteten Volumen? Beim schwimmenden Schiff ist diese mittlere Dichte klein genug.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "20-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 20",
+      "voiceText": "Der breite Rumpf kann schon beim teilweisen Eintauchen sehr viel Wasser verdrängen. Genau dieses verdrängte Wasser erzeugt den nötigen Auftrieb.",
+      "imageDir": "02-bilder/images/20-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "cutaway",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Underwater side cutaway showing transparent blue displaced-water shape matching the immersed portion of a broad cargo vessel hull, accurate waterline.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Der breite Rumpf kann schon beim teilweisen Eintauchen sehr viel Wasser verdrängen. Genau dieses verdrängte Wasser erzeugt den nötigen Auftrieb.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "21-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 21",
+      "voiceText": "Sinkt das Schiff zunächst etwas tiefer ein, verdrängt es mehr Wasser. Dadurch wächst der Auftrieb, bis er das gesamte Gewicht trägt.",
+      "imageDir": "02-bilder/images/21-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "process",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Single ship model shown with a faint earlier waterline and a lower equilibrium waterline, highlighted extra submerged hull volume, no motion streaks.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Sinkt das Schiff zunächst etwas tiefer ein, verdrängt es mehr Wasser. Dadurch wächst der Auftrieb, bis er das gesamte Gewicht trägt.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "22-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 22",
+      "voiceText": "Es gibt also keine geheimnisvolle Kraft, die Stahl besonders behandelt. Entscheidend ist, wie viel Wasser der gesamte Schiffskörper zur Seite drückt.",
+      "imageDir": "02-bilder/images/22-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "diagram",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Simple cross-section of a floating steel hull with restrained hydrostatic pressure shading along submerged plating, one upward net-force arrow.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Es gibt also keine geheimnisvolle Kraft, die Stahl besonders behandelt. Entscheidend ist, wie viel Wasser der gesamte Schiffskörper zur Seite drückt.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "23-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 23",
+      "voiceText": "Ein kleines Experiment macht das sichtbar. Aus derselben Alufolie formst du zuerst eine enge Kugel und legst sie ins Wasser.",
+      "imageDir": "02-bilder/images/23-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "experiment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "experiment",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Top-down educational experiment: compact crumpled aluminum foil ball placed in a clear water bowl, realistic foil geometry and matte background.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Ein kleines Experiment macht das sichtbar. Aus derselben Alufolie formst du zuerst eine enge Kugel und legst sie ins Wasser.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "24-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 24",
+      "voiceText": "Jetzt formst du aus einem ähnlich großen Stück Folie ein offenes, breites Boot. Häufig bleibt dieses schwimmen, obwohl das Material gleich ist.",
+      "imageDir": "02-bilder/images/24-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "experiment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "experiment",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Three-quarter close view of broad bowl-shaped aluminum foil boat floating in a transparent vessel; no human hands or text.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Jetzt formst du aus einem ähnlich großen Stück Folie ein offenes, breites Boot. Häufig bleibt dieses schwimmen, obwohl das Material gleich ist.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "25-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 25",
+      "voiceText": "Die Bootsform schiebt beim Eintauchen mehr Wasser weg, ohne sofort selbst vollzulaufen. Das ist die Grundidee hinter dem großen Schiffsrumpf.",
+      "imageDir": "02-bilder/images/25-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "process",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Cross-section of floating aluminum foil boat with a clean transparent outline of displaced water under its hull and dry interior.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Die Bootsform schiebt beim Eintauchen mehr Wasser weg, ohne sofort selbst vollzulaufen. Das ist die Grundidee hinter dem großen Schiffsrumpf.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "26-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 26",
+      "voiceText": "Ein Frachter kann aber nicht beliebig viel tragen. Jeder zusätzliche Container erhöht seine Masse und damit die nötige verdrängte Wassermenge.",
+      "imageDir": "02-bilder/images/26-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "environment",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Clean side view of port crane lowering one container onto cargo ship; focus on cargo, hull and waterline, restrained architecture.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Ein Frachter kann aber nicht beliebig viel tragen. Jeder zusätzliche Container erhöht seine Masse und damit die nötige verdrängte Wassermenge.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "27-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 27",
+      "voiceText": "Deshalb liegt ein beladenes Schiff tiefer im Wasser als ein leeres. Dieser Unterschied lässt sich direkt am sichtbaren Tiefgang erkennen.",
+      "imageDir": "02-bilder/images/27-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "comparison",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Precise split-screen profile comparison of the same cargo ship unloaded versus loaded, consistent scale and water surface, different draft clearly visible.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Deshalb liegt ein beladenes Schiff tiefer im Wasser als ein leeres. Dieser Unterschied lässt sich direkt am sichtbaren Tiefgang erkennen.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "28-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 28",
+      "voiceText": "Tiefgang nennt man den Abstand von der Wasseroberfläche bis zum tiefsten Teil des Schiffes unter Wasser. Er ist beim Beladen entscheidend.",
+      "imageDir": "02-bilder/images/28-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "cutaway",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Clean profile section of floating ship with vertical measurement from waterline to keel, tiny short German label 'Tiefgang' only.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Tiefgang nennt man den Abstand von der Wasseroberfläche bis zum tiefsten Teil des Schiffes unter Wasser. Er ist beim Beladen entscheidend.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "29-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 29",
+      "voiceText": "Wird zu viel Ladung aufgenommen, kann die sichere Reserve zu klein werden. Bei Wellen oder zusätzlichem Wasser wird das gefährlich.",
+      "imageDir": "02-bilder/images/29-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "environment",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Side view of heavily laden but still afloat cargo vessel with very low freeboard and gentle wave crest, correct scale, no disaster sensationalism.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Wird zu viel Ladung aufgenommen, kann die sichere Reserve zu klein werden. Bei Wellen oder zusätzlichem Wasser wird das gefährlich.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "30-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 30",
+      "voiceText": "Doch Auftrieb allein reicht nicht. Ein Schiff muss auch stabil bleiben, wenn Wind, Wellen oder eine ungleichmäßige Beladung es zur Seite neigen.",
+      "imageDir": "02-bilder/images/30-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "environment",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Medium wide illustration of a cargo ship leaning moderately under a broad gentle lateral swell, waterline tilted relative to hull and realistic geometry.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Doch Auftrieb allein reicht nicht. Ein Schiff muss auch stabil bleiben, wenn Wind, Wellen oder eine ungleichmäßige Beladung es zur Seite neigen.",
+      "sourceIds": [
+        "USCG-STABILITY",
+        "NOAA-BOAT"
+      ]
+    },
+    {
+      "id": "31-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 31",
+      "voiceText": "Stabilität bedeutet: Nach einer kleinen Neigung soll ein geeignet beladenes Schiff wieder aufgerichtet werden, statt immer weiter zu kippen.",
+      "imageDir": "02-bilder/images/31-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "diagram",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Two-panel clean hull cross-section: slight heel and returning upright position, one short curved righting arrow, no complicated metacenter construction.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Stabilität bedeutet: Nach einer kleinen Neigung soll ein geeignet beladenes Schiff wieder aufgerichtet werden, statt immer weiter zu kippen.",
+      "sourceIds": [
+        "USCG-STABILITY",
+        "NOAA-BOAT"
+      ]
+    },
+    {
+      "id": "32-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 32",
+      "voiceText": "Dabei spielen die Lage des Schwerpunkts und die Form des eingetauchten Rumpfes zusammen. Die Ladung muss deshalb sinnvoll verteilt werden.",
+      "imageDir": "02-bilder/images/32-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "cutaway",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Transverse ship cutaway with heavy cargo secured low and centered, highlight center of gravity as one subtle neutral dot, no exact misleading vectors.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Dabei spielen die Lage des Schwerpunkts und die Form des eingetauchten Rumpfes zusammen. Die Ladung muss deshalb sinnvoll verteilt werden.",
+      "sourceIds": [
+        "USCG-STABILITY",
+        "NOAA-BOAT"
+      ]
+    },
+    {
+      "id": "33-mechanism",
+      "section": "mechanism",
+      "title": "mechanism 33",
+      "voiceText": "Schwere Gegenstände weit oben können die Stabilität verschlechtern. Darum ist nicht nur das Gesamtgewicht wichtig, sondern auch sein Ort.",
+      "imageDir": "02-bilder/images/33-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "comparison",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Two simplified identical hull cross-sections: heavy cargo low versus heavy cargo high, clean distinction without claiming every low load is automatically safe.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Schwere Gegenstände weit oben können die Stabilität verschlechtern. Darum ist nicht nur das Gesamtgewicht wichtig, sondern auch sein Ort.",
+      "sourceIds": [
+        "USCG-STABILITY",
+        "NOAA-BOAT"
+      ]
+    },
+    {
+      "id": "34-deepening",
+      "section": "deepening",
+      "title": "deepening 34",
+      "voiceText": "Manche Schiffe nutzen Ballastwasser. In dafür vorgesehenen Tanks wird Wasser aufgenommen oder abgegeben, um Tiefgang, Trimmung und Stabilität zu beeinflussen.",
+      "imageDir": "02-bilder/images/34-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "cutaway",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Longitudinal ship cutaway with two sealed low ballast tanks partially filled and separated from dry cargo spaces, realistic technical layout.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Manche Schiffe nutzen Ballastwasser. In dafür vorgesehenen Tanks wird Wasser aufgenommen oder abgegeben, um Tiefgang, Trimmung und Stabilität zu beeinflussen.",
+      "sourceIds": [
+        "USCG-STABILITY",
+        "NOAA-BOAT"
+      ]
+    },
+    {
+      "id": "35-deepening",
+      "section": "deepening",
+      "title": "deepening 35",
+      "voiceText": "Auch das Wasser selbst macht einen kleinen Unterschied. Salzwasser ist bei vergleichbaren Bedingungen dichter als Süßwasser und liefert pro verdrängtem Liter mehr Auftrieb.",
+      "imageDir": "02-bilder/images/35-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "macro",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Two simple transparent water sample beakers labeled only 'Süßwasser' and 'Salzwasser', subtle different dissolved salt symbols without fantasy effects.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Auch das Wasser selbst macht einen kleinen Unterschied. Salzwasser ist bei vergleichbaren Bedingungen dichter als Süßwasser und liefert pro verdrängtem Liter mehr Auftrieb.",
+      "sourceIds": [
+        "NOAA-SALT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "36-deepening",
+      "section": "deepening",
+      "title": "deepening 36",
+      "voiceText": "Ein Schiff schwimmt deshalb im Süßwasser bei sonst gleichen Bedingungen etwas tiefer. Es muss mehr Volumen verdrängen, um dasselbe Gewicht zu tragen.",
+      "imageDir": "02-bilder/images/36-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "comparison",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Side-by-side same ship hull in lake and sea at matched scale, freshwater draft slightly deeper, clear small visual difference and unobtrusive labels.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Ein Schiff schwimmt deshalb im Süßwasser bei sonst gleichen Bedingungen etwas tiefer. Es muss mehr Volumen verdrängen, um dasselbe Gewicht zu tragen.",
+      "sourceIds": [
+        "NOAA-SALT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "37-deepening",
+      "section": "deepening",
+      "title": "deepening 37",
+      "voiceText": "Und warum sinken Schiffe manchmal trotzdem? Häufig liegt die Antwort darin, dass Wasser in Bereiche gelangt, die vorher nicht geflutet waren.",
+      "imageDir": "02-bilder/images/37-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "cutaway",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Clear ship compartment cutaway with a small damaged below-waterline opening and blue water entering one formerly dry hold, realistic no gore.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Und warum sinken Schiffe manchmal trotzdem? Häufig liegt die Antwort darin, dass Wasser in Bereiche gelangt, die vorher nicht geflutet waren.",
+      "sourceIds": [
+        "NOAA-SALT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "38-deepening",
+      "section": "deepening",
+      "title": "deepening 38",
+      "voiceText": "Dringt Wasser ein, wird die gesamte schwimmende Konstruktion schwerer. Gleichzeitig gehen nutzbare Auftriebsreserven verloren. Ab einer Grenze kann sie untergehen.",
+      "imageDir": "02-bilder/images/38-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "process",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Engineering cross-section showing rising water inside one compartment and lower external freeboard, a single clear flooded area, no unnecessary arrows.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Dringt Wasser ein, wird die gesamte schwimmende Konstruktion schwerer. Gleichzeitig gehen nutzbare Auftriebsreserven verloren. Ab einer Grenze kann sie untergehen.",
+      "sourceIds": [
+        "USCG-STABILITY",
+        "NOAA-BOAT"
+      ]
+    },
+    {
+      "id": "39-deepening",
+      "section": "deepening",
+      "title": "deepening 39",
+      "voiceText": "Deshalb haben große Schiffe wasserdichte Abteilungen. Sie sollen verhindern, dass ein einzelnes Leck sofort den ganzen Rumpf überflutet.",
+      "imageDir": "02-bilder/images/39-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "cutaway",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Exploded technical cutaway of a vessel with distinct sealed watertight bulkheads, just one flooded compartment isolated from adjacent dry compartments.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Deshalb haben große Schiffe wasserdichte Abteilungen. Sie sollen verhindern, dass ein einzelnes Leck sofort den ganzen Rumpf überflutet.",
+      "sourceIds": [
+        "USCG-STABILITY",
+        "NOAA-BOAT"
+      ]
+    },
+    {
+      "id": "40-deepening",
+      "section": "deepening",
+      "title": "deepening 40",
+      "voiceText": "Solche Abteilungen machen ein Schiff nicht unverwundbar. Wie viel Wasser es verkraftet, hängt vom Entwurf, vom Schaden und von der Beladung ab.",
+      "imageDir": "02-bilder/images/40-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "diagram",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Restrained two-panel hull damage cases with small isolated flooding versus extensive multi-compartment flooding, no dramatic explosions.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Solche Abteilungen machen ein Schiff nicht unverwundbar. Wie viel Wasser es verkraftet, hängt vom Entwurf, vom Schaden und von der Beladung ab.",
+      "sourceIds": [
+        "USCG-STABILITY",
+        "NOAA-BOAT"
+      ]
+    },
+    {
+      "id": "41-deepening",
+      "section": "deepening",
+      "title": "deepening 41",
+      "voiceText": "Auch ein U-Boot nutzt dasselbe Prinzip. Es kann Ballasttanks kontrolliert fluten und mit Luft ausblasen, um seine mittlere Dichte zu verändern.",
+      "imageDir": "02-bilder/images/41-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "cutaway",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Technically plausible submarine transverse cutaway showing ballast tanks outside pressure hull, blue water entering through lower openings and air vents.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Auch ein U-Boot nutzt dasselbe Prinzip. Es kann Ballasttanks kontrolliert fluten und mit Luft ausblasen, um seine mittlere Dichte zu verändern.",
+      "sourceIds": [
+        "USCG-STABILITY",
+        "NOAA-BOAT"
+      ]
+    },
+    {
+      "id": "42-deepening",
+      "section": "deepening",
+      "title": "deepening 42",
+      "voiceText": "Beim Tauchen vergrößert der Wasserballast seine Masse. Zum Auftauchen verdrängt Druckluft Wasser aus den Tanks. Das ist kontrollierter Auftrieb.",
+      "imageDir": "02-bilder/images/42-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "process",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Simple technical process comparison of a submarine ballast tank water-filled versus air-blown, accurate valves, pressure hull separate, two panels.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Beim Tauchen vergrößert der Wasserballast seine Masse. Zum Auftauchen verdrängt Druckluft Wasser aus den Tanks. Das ist kontrollierter Auftrieb.",
+      "sourceIds": [
+        "MUSEUM-SUB",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "43-deepening",
+      "section": "deepening",
+      "title": "deepening 43",
+      "voiceText": "Damit wird auch ein Irrtum klar: Nicht die Fahrt oder der Propeller hält den Frachter oben. Er kann völlig still im Hafen schwimmen.",
+      "imageDir": "02-bilder/images/43-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "environment",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Calm modern cargo ship resting motionless alongside quay, propeller not visible, believable hull draft and no engine wash or motion.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Damit wird auch ein Irrtum klar: Nicht die Fahrt oder der Propeller hält den Frachter oben. Er kann völlig still im Hafen schwimmen.",
+      "sourceIds": [
+        "MUSEUM-SUB",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "44-deepening",
+      "section": "deepening",
+      "title": "deepening 44",
+      "voiceText": "Wenn du das nächste Mal ein Schiff siehst, achte auf die Wasserlinie. Unter ihr liegt genau so viel verdrängtes Wasser, wie sein Gesamtgewicht erfordert.",
+      "imageDir": "02-bilder/images/44-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "diagram",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Full side profile of floating cargo vessel with submerged hull volume cleanly tinted muted blue, only one short label 'Wasserlinie'.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Wenn du das nächste Mal ein Schiff siehst, achte auf die Wasserlinie. Unter ihr liegt genau so viel verdrängtes Wasser, wie sein Gesamtgewicht erfordert.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    },
+    {
+      "id": "45-payoff",
+      "section": "payoff",
+      "title": "payoff 45",
+      "voiceText": "Ein Stahlschiff schwimmt also nicht trotz, sondern wegen seiner durchdachten Form: Der große Rumpf verdrängt genug Wasser, damit der Auftrieb sein Gewicht trägt.",
+      "imageDir": "02-bilder/images/45-payoff",
+      "backgroundFamily": "content-driven",
+      "shotType": "payoff",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "payoff",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Elegant simplified engineering cutaway of a large ship afloat, clear displaced-water region and perfectly balanced small force arrows, entirely independent from promotional cover.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": []
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "payoff",
+      "factClaim": "Ein Stahlschiff schwimmt also nicht trotz, sondern wegen seiner durchdachten Form: Der große Rumpf verdrängt genug Wasser, damit der Auftrieb sein Gewicht trägt.",
+      "sourceIds": [
+        "NOAA-BOAT",
+        "OPENSTAX"
+      ]
+    }
+  ]
+}

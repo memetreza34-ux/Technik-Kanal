@@ -1,0 +1,871 @@
+{
+  "version": "science-flow-image-v9-longform",
+  "productionProfile": "youtube-6to7min-v1",
+  "workflow": "thumbnail-first-then-five-image-steps-no-intermediate-stops-final-cleanup",
+  "imageOnly": true,
+  "informationBudgetLocked": true,
+  "imageProductionSteps": 5,
+  "pauseAfterEachImageStep": false,
+  "continueAutomaticallyBetweenImageSteps": true,
+  "finalReportAfterAllImageSteps": true,
+  "deleteUnselectedThumbnailCandidatesAfterSelection": true,
+  "selectedThumbnailFinalName": "00-thumbnail-final",
+  "coverExportDir": "05-export/cover",
+  "coverNeverUsedAsVideoFrame": true,
+  "scene01IndependentFromCover": true,
+  "finalFlowCollectionRequired": true,
+  "singleFinalFlowCollectionPerVideo": true,
+  "finalCollectionName": "stahlschiff-auftrieb-video-assets-final",
+  "removeRejectedVariantsBeforeCompletion": true,
+  "renameFinalAssetsBeforeCompletion": true,
+  "finalCollectionContainsFinalAssetsOnly": true,
+  "diversityRequired": true,
+  "phase2SceneAssetRoot": "02-bilder/images",
+  "phase2ThumbnailRoot": "02-bilder/thumbnail",
+  "phase3AssetSource": "phase2-project-folders-only",
+  "phase3MayGenerateVisualAssets": false,
+  "phase3MayRegenerateVisualAssets": false,
+  "phase3MaySearchExternalAssets": false,
+  "phase3MaySubstituteMissingAssets": false,
+  "phase3MaySkipMissingScenes": false,
+  "phase3MissingAssetPolicy": "stop-and-report",
+  "steps": [
+    {
+      "step": 1,
+      "sceneIds": [
+        "01-hook",
+        "02-context",
+        "03-context",
+        "04-context",
+        "05-context",
+        "06-context",
+        "07-context",
+        "08-context",
+        "09-foundation"
+      ]
+    },
+    {
+      "step": 2,
+      "sceneIds": [
+        "10-foundation",
+        "11-foundation",
+        "12-foundation",
+        "13-foundation",
+        "14-foundation",
+        "15-mechanism",
+        "16-mechanism",
+        "17-mechanism",
+        "18-mechanism"
+      ]
+    },
+    {
+      "step": 3,
+      "sceneIds": [
+        "19-mechanism",
+        "20-mechanism",
+        "21-mechanism",
+        "22-mechanism",
+        "23-mechanism",
+        "24-mechanism",
+        "25-mechanism",
+        "26-mechanism",
+        "27-mechanism"
+      ]
+    },
+    {
+      "step": 4,
+      "sceneIds": [
+        "28-mechanism",
+        "29-mechanism",
+        "30-mechanism",
+        "31-mechanism",
+        "32-mechanism",
+        "33-mechanism",
+        "34-deepening",
+        "35-deepening",
+        "36-deepening"
+      ]
+    },
+    {
+      "step": 5,
+      "sceneIds": [
+        "37-deepening",
+        "38-deepening",
+        "39-deepening",
+        "40-deepening",
+        "41-deepening",
+        "42-deepening",
+        "43-deepening",
+        "44-deepening",
+        "45-payoff"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "environment",
+      "primaryMotif": "container-ship-at-waterline",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "02-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "cutaway",
+      "primaryMotif": "ship-interior-cargo",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "03-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "macro",
+      "primaryMotif": "steel-material-closeup",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "04-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "process",
+      "primaryMotif": "bow-water-displacement",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "05-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "diagram",
+      "primaryMotif": "stationary-floating-hull",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "06-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "object-comparison",
+      "primaryMotif": "three-physical-models",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "07-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "environment",
+      "primaryMotif": "iron-sphere-in-tank",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "08-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "object-comparison",
+      "primaryMotif": "floating-metal-bowl",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "09-foundation",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "cutaway",
+      "primaryMotif": "submerged-box-pressure",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "10-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "diagram",
+      "primaryMotif": "pressure-with-depth",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "11-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "material-macro",
+      "primaryMotif": "water-in-graduated-vessel",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "12-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "diagram",
+      "primaryMotif": "buoyancy-force-pair",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "13-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "object-comparison",
+      "primaryMotif": "equal-mass-weight-and-water",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "14-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "diagram",
+      "primaryMotif": "two-balanced-arrows",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "15-mechanism",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "macro",
+      "primaryMotif": "solid-steel-block-volume",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "16-mechanism",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "diagram",
+      "primaryMotif": "steel-block-unbalanced-force",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "17-mechanism",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "cutaway",
+      "primaryMotif": "hollow-ship-hull",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "18-mechanism",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "diagram",
+      "primaryMotif": "ship-average-density",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "19-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "object-comparison",
+      "primaryMotif": "filled-vs-hollow-volume",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "20-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "cutaway",
+      "primaryMotif": "wide-hull-displaced-volume",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "21-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "process",
+      "primaryMotif": "draft-adjusting-model",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "22-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "diagram",
+      "primaryMotif": "hydrostatic-hull-pressure",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "23-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "experiment",
+      "primaryMotif": "foil-ball-in-bowl",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "24-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "experiment",
+      "primaryMotif": "foil-boat-in-bowl",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "25-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "process",
+      "primaryMotif": "foil-boat-displacement-crosssection",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "26-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "environment",
+      "primaryMotif": "cargo-crane-loading",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "27-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "comparison",
+      "primaryMotif": "loaded-unloaded-waterlines",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "28-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "cutaway",
+      "primaryMotif": "draft-keel-section",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "29-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "environment",
+      "primaryMotif": "overloaded-ship-low-freeboard",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "30-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "environment",
+      "primaryMotif": "ship-in-beam-sea",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "31-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "diagram",
+      "primaryMotif": "righting-arm-diagram",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "32-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "cutaway",
+      "primaryMotif": "cargo-center-of-mass",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "33-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "comparison",
+      "primaryMotif": "high-low-cargo-placement",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "34-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "cutaway",
+      "primaryMotif": "ballast-tank-section",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "35-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "macro",
+      "primaryMotif": "salt-and-fresh-samples",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "36-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "comparison",
+      "primaryMotif": "ship-river-ocean-waterline",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "37-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "cutaway",
+      "primaryMotif": "breached-hull-flooding",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "38-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "process",
+      "primaryMotif": "progressive-flooding-level",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "39-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "cutaway",
+      "primaryMotif": "watertight-bulkheads",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "40-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "diagram",
+      "primaryMotif": "damage-stability-comparison",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "41-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "cutaway",
+      "primaryMotif": "submarine-ballast-tanks",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "42-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "process",
+      "primaryMotif": "submarine-ballast-air",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "43-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "environment",
+      "primaryMotif": "ship-stationary-in-harbor",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "44-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "diagram",
+      "primaryMotif": "ship-waterline-final-review",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "45-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "payoff",
+      "primaryMotif": "hull-principle-finale",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    }
+  ]
+}

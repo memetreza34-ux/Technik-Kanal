@@ -1,0 +1,31 @@
+{
+  "status": "phase1-preproduction-written-pending-local-full-preflight",
+  "slug": "warum-sinkt-ein-riesiges-stahlschiff-nicht",
+  "productionProfile": "youtube-6to7min-v1",
+  "completed": [
+    "research",
+    "verified-sources",
+    "story",
+    "voice-script",
+    "visual-beats",
+    "thumbnail-brief",
+    "prompt-plan"
+  ],
+  "open": [
+    "native-local-preflight",
+    "thumbnail-user-choice",
+    "45-flow-scene-images",
+    "voice-recording",
+    "word-alignment",
+    "render",
+    "visual-audio-QA",
+    "youtube-analytics"
+  ],
+  "userMustProvide": [
+    "selected Google Flow thumbnail",
+    "45 final still images",
+    "German raw voice-over"
+  ],
+  "requiredVisibleSceneImages": 45,
+  "nextCommand": "npm run science:phase1 -- \"<video-ordner>\""
+}
