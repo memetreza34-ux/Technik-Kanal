@@ -41,7 +41,7 @@
     "test": "npm run validate:science-syntax && npm run validate:science-template && npm run validate:science-system && npm run validate:science-consistency && npm run validate:science-visual-policy && npm run validate:testphase-regressions && npm run validate:science-learning && npm run validate:science-phase1-handoff && npm run typecheck && vitest run",
     "science:learn": "node scripts/science-learning.mjs",
     "validate:science-learning": "node scripts/test-science-learning.mjs",
-    "science:phase1": "node scripts/science-preflight.mjs",
+    "science:phase1": "node scripts/finish-science-phase1.mjs",
     "science:phase1-handoff": "node scripts/science-phase1-handoff.mjs",
     "validate:science-phase1-handoff": "node scripts/test-science-phase1-handoff.mjs"
   },
