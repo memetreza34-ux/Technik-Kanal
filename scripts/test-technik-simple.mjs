@@ -35,7 +35,7 @@ try{
   assert.ok(fs.existsSync(path.join(projectDir,'01-script-audio/audio/voiceover-raw.wav')));
   assert.equal(importScienceDrop({repoRoot,packageDir:handoff.folder}).copied.length,0);
   fs.writeFileSync(path.join(drop,'01.png'),'changed-image');
-  assert.throws(()=>importScienceDrop({repoRoot,packageDir:handoff.folder}),/nicht automatisch überschreiben/);
+  assert.throws(()=>importScienceDrop({repoRoot,packageDir:handoff.folder}),/nicht automatisch überschreiben/i);
   fs.writeFileSync(path.join(drop,'01.png'),'first-image');
   fs.writeFileSync(path.join(drop,'02.png'),'second-copy');
   assert.throws(()=>importScienceDrop({repoRoot,packageDir:handoff.folder}),/Mehrere Bilder/);

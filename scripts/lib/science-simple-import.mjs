@@ -79,7 +79,7 @@ export function importScienceDrop({repoRoot,packageDir,projectDir=null,dryRun=fa
   for(const action of copies){
     if(fs.existsSync(action.to)&&sha(action.from)!==sha(action.to))errors.push(action.label+': vorhandene Datei unterscheidet sich. Nicht automatisch überschreiben: '+action.to);
   }
-  const missing=plan.scenes.filter(scene=>!selected.has(scene.id)&&!fs.existsSync(path.join(project,scene.imageDir,scene.id+'-final.png'))&&!fs.existsSync(path.join(project,scene.imageDir,scene.id+'-final.jpg'))&&!fs.existsSync(path.join(project,scene.imageDir,scene.id+'-final.webp'))).map(scene=>scene.id);
+  const missing=plan.scenes.filter(scene=>!selected.has(scene.id)&&![...IMAGE_EXTENSIONS].some(ext=>fs.existsSync(path.join(project,scene.imageDir,scene.id+'-final'+ext)))).map(scene=>scene.id);
   if(errors.length)throw Error('Import abgebrochen – keine Datei wurde kopiert:\n'+errors.map(x=>'- '+x).join('\n'));
   const imported=[];
   if(!dryRun)for(const item of copies){
