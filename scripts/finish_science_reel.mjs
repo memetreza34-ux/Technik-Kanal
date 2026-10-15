@@ -4,7 +4,7 @@ import path from 'node:path';
 import {projectPaths, repositoryRoot, run} from './lib/electrical-project.mjs';
 import {generateScienceLearningReport} from './lib/science-learning.mjs';
 import {importScienceDrop} from './lib/science-simple-import.mjs';
-import {flattenScienceExport} from './lib/science-export-cleanup.mjs';
+import {flattenScienceExport,migrateLegacyLocalReels} from './lib/science-export-cleanup.mjs';
 
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
@@ -13,6 +13,7 @@ if (!projectArg) {
   process.exit(1);
 }
 
+migrateLegacyLocalReels(repositoryRoot);
 const paths = projectPaths(projectArg);
 // Altbestände in cover/ und video/ sicher in den flachen Export verschieben.
 flattenScienceExport(paths.root);

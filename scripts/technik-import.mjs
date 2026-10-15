@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {importScienceDrop,findScienceVideoBySlug} from './lib/science-simple-import.mjs';
-import {flattenScienceExport} from './lib/science-export-cleanup.mjs';
+import {flattenScienceExport,migrateLegacyLocalReels} from './lib/science-export-cleanup.mjs';
 
 const repoRoot=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const args=process.argv.slice(2);
@@ -16,6 +16,7 @@ else{
   if(options.length!==1)throw Error('Bitte einen Videonamen auswählen: npm run technik:import -- "START-HIER/VIDEO"');
   folder=options[0];
 }
+migrateLegacyLocalReels(repoRoot,{dryRun:args.includes('--check')});
 flattenScienceExport(findScienceVideoBySlug(repoRoot,path.basename(folder)),{dryRun:args.includes('--check')});
 const result=importScienceDrop({repoRoot,packageDir:folder,dryRun:args.includes('--check')});
 console.log('✓ Technik-Kanal – Medienordner '+(result.dryRun?'geprüft':'eingelesen'));

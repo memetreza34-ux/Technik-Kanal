@@ -57,3 +57,39 @@ export function findScienceVideoFolders(repoRoot){
    return fs.readdirSync(root,{withFileTypes:true}).filter(e=>e.isDirectory()).map(e=>path.join(root,e.name));
  }).filter(p=>fs.existsSync(path.join(p,'06-projektdateien/scene-plan.json')));
 }
+
+
+export function migrateLegacyLocalReels(repoRoot,{dryRun=false}={}){
+  const root=path.resolve(repoRoot);
+  const oldDir=path.join(root,'channels/science/reels');
+  const newDir=path.join(root,'channels/science/YouTube');
+  if(!directory(oldDir))return {oldDir,files:0,moved:0,skipped:true};
+  if(!directory(newDir))throw Error('Neue YouTube-Struktur fehlt. Zuerst Branch science-channel-v1 aktualisieren; alte Dateien bleiben unangetastet.');
+  const files=[];
+  const folders=[];
+  const walk=dir=>{
+    folders.push(dir);
+    for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
+      const f=path.join(dir,entry.name);
+      if(entry.isSymbolicLink())throw Error('Symlink im alten Reels-Ordner: '+f+' – manuell prüfen.');
+      if(entry.isDirectory())walk(f);
+      else if(entry.isFile())files.push(f);
+    }
+  };
+  walk(oldDir);
+  const operations=files.map(source=>{
+    const relative=path.relative(oldDir,source);
+    const destination=path.join(newDir,relative);
+    if(fs.existsSync(destination)&&sha(source)!==sha(destination))throw Error('Konflikt: '+source+' kollidiert mit '+destination+'. Keine alten Dateien gelöscht.');
+    return {source,destination,duplicate:fs.existsSync(destination)};
+  });
+  if(!dryRun){
+    for(const item of operations){
+      fs.mkdirSync(path.dirname(item.destination),{recursive:true});
+      if(item.duplicate)fs.unlinkSync(item.source); // exakt gleicher Hash: identische Kopie
+      else fs.renameSync(item.source,item.destination);
+    }
+    for(const dir of folders.reverse())if(directory(dir)&&fs.readdirSync(dir).length===0)fs.rmdirSync(dir);
+  }
+  return {oldDir,files:files.length,moved:operations.length,skipped:false,dryRun};
+}

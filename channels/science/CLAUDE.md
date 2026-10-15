@@ -1,3 +1,5 @@
+> **Einmalige lokale Ordnerbereinigung:** Nach Branch-Synchronisation `npm run technik:cleanup -- --check` und danach `npm run technik:cleanup` ausführen, damit alte ungetrackte MP4s/Flow-Bilder aus `reels` erhalten bleiben und `05-export` nur Video, Cover und Caption zeigt. Bei Hashkonflikten nicht überschreiben; gezielt nachfragen.
+
 ## Verbindliche Ordnernamen und sauberer Export
 
 Das GitHub-Repository heißt **Technik-Kanal**. Unter `channels/science/` gibt es künftig **`YouTube/`** statt `reels/`; der alte Ordner `channels/elektrotechnik` ist im aktuellen Branch bereits entfernt. Ein lokaler Mac-Ordner mit dem Namen `Elektrotechnik-Kanal` muss am Mac selbst umbenannt und mit Git synchronisiert werden – GitHub ändert keinen Finder-Ordnernamen.

@@ -1,3 +1,5 @@
+> **Lokale einmalige Aufräumarbeit nach Wechsel auf den Science-Branch:** Erst prüfen, dass `channels/science/YouTube` aus dem neuen Branch existiert. Dann `npm run technik:cleanup -- --check`, danach `npm run technik:cleanup`. Bewahrt alte Medien aus dem vorherigen `reels`-Ordner, überführt sie sicher nach `YouTube` und legt fertige Video-/Cover-Dateien direkt unter `05-export` ab; keine Konflikte überschreiben. Niemals blind `git clean -fd` oder `rm -rf` auf Medienordner anwenden.
+
 ## Verbindliche Ordnernamen und sauberer Export
 
 Das GitHub-Repository heißt **Technik-Kanal**. Unter `channels/science/` gibt es künftig **`YouTube/`** statt `reels/`; der alte Ordner `channels/elektrotechnik` ist im aktuellen Branch bereits entfernt. Ein lokaler Mac-Ordner mit dem Namen `Elektrotechnik-Kanal` muss am Mac selbst umbenannt und mit Git synchronisiert werden – GitHub ändert keinen Finder-Ordnernamen.

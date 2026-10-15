@@ -12,4 +12,6 @@ Die intern benötigten Szenenpläne liegen unter `channels/science/YouTube/<woch
 
 Alle internen Skripte, Quellen, technischen Bildprompts, Prüfberichte und Lernregeln bleiben erhalten. Nicht löschen. `main` ist der bisherige Elektrotechnik-Stand, gearbeitet wird im Branch `science-channel-v1`.
 
+**Lokaler Altbestand:** Nach dem Aktualisieren des Branches `npm run technik:cleanup` ausführen. Der Befehl verschiebt alte, nicht von Git erfasste Medien aus `reels` nach `YouTube` und ordnet Video/Cover/Caption flach in `05-export` ein. Unterschiedliche vorhandene Dateien werden nicht überschrieben. Vor dem Ausführen kann `npm run technik:cleanup -- --check` die Migration prüfen.
+
 **Lokal am Mac:** Den Finder-Ordner `Elektrotechnik-Kanal` bei geschlossenem Codex in `Technik-Kanal` umbenennen; danach Projekt erneut öffnen und den Branch aktualisieren.
