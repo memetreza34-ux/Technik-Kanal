@@ -1,3 +1,7 @@
+## Zweite feste Produktionsregel: Übergabe ohne Suchaufwand
+
+Jede abgeschlossene Phase 1 liefert am Laptop direkt einen **GitHub-Dateilink** auf `PHASE-1-START-HIER.md` mit vollständigem Sprechskript, dem finalen Google-Flow-Masterprompt, drei Thumbnail-Kandidaten als Prompt und allen Szenen-Prompts. Ausführen: `npm run science:phase1 -- "VIDEO_ORDNER"`. Nur nach bestandenem Preflight wird die Kopiermappe erstellt; der Agent committed/pusht sie nach GitHub und übermittelt sofort den Link. Keine Platzhalter und keine Links auf nicht gespeicherte Dateien. Die kontinuierliche Verbesserung bleibt Priorität 1.
+
 # PRIORITÄT 1 – Wissonaut wird nach jedem Video besser
 
 ## Oberste Kanalregel
