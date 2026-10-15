@@ -1,12 +1,8 @@
-## Einfache Nutzer-Übergabe – ab sofort vorrangig
+## EIN Flow-Prompt – verbindliche Phase-1-Nutzerübergabe
 
-Nach jeder fertigen Phase 1 nur den **START-HIER/<video-slug>**-Ordner als primären GitHub-Link geben. Er enthält genau **01-SKRIPT.txt** als kopierbaren Fließtext, **02-FLOW-COVER.txt**, **03–07-FLOW-BILDER-1..5.txt** und **DATEIEN-HIER-REIN/** für alle fertigen Bilder/Voice. Den früheren 140-KB-Masterprompt und 45 Einzelprompts niemals als normale Nutzer-Hauptansicht präsentieren. Diese werden von der Pipeline intern zur Qualitätssicherung aufbewahrt. **Phase-1-Lauf:** `npm run science:phase1 -- "VIDEO_ORDNER"`. Neue Ausgabe ist die einfache Mappe; sie muss vor Übermittlung auf GitHub gepusht werden.
+Jede Phase 1 erzeugt im `START-HIER/<video-slug>/` **exakt zwei Nutzer-Textdateien**: `01-SKRIPT.txt` (Fließtext) und `02-GOOGLE-FLOW-PROMPT.txt` (eine einzige vollständig kopierbare Flow-Anweisung mit 3 Coverkandidaten und *allen* Szenen). Plus `DATEIEN-HIER-REIN/` für fertige Medien. **Keine fünf Flow-Pakete, kein separater Coverprompt, kein zweiter Flow-Master für den Nutzer.** Interne technische Einzelprompts dürfen bestehen bleiben.
 
-Nach dem Drag-and-drop aller Medien übernimmt `npm run technik:import -- "START-HIER/<video-slug>"` die Bilder anhand ihrer Nummern und die Stimme sicher in die internen Renderpfade. `science:finish` versucht denselben Import automatisch, bevor es Medien prüft. Fehlende oder doppelte Dateien nicht künstlich ersetzen.
-
-## Zweite feste Produktionsregel: Übergabe ohne Suchaufwand
-
-Jede abgeschlossene Phase 1 liefert am Laptop direkt einen **GitHub-Dateilink** auf `PHASE-1-START-HIER.md` mit vollständigem Sprechskript, dem finalen Google-Flow-Masterprompt, drei Thumbnail-Kandidaten als Prompt und allen Szenen-Prompts. Ausführen: `npm run science:phase1 -- "VIDEO_ORDNER"`. Nur nach bestandenem Preflight wird die Kopiermappe erstellt; der Agent committed/pusht sie nach GitHub und übermittelt sofort den Link. Keine Platzhalter und keine Links auf nicht gespeicherte Dateien. Die kontinuierliche Verbesserung bleibt Priorität 1.
+Generator: `npm run science:phase1 -- "VIDEO_ORDNER"`. Der Master muss aktuell sein und Cover sowie alle Einzelprompts vollständig enthalten, sonst kein Erfolg. Nur nachdem beide neuen Dateien committet/gepusht sind, den direkten GitHub-Ordnerlink an den Nutzer senden. Bei Google Flow nach den Coverkandidaten einmal stoppen, dann alle Szenen ohne weitere Zwischenstopps.
 
 # PRIORITÄT 1 – Wissonaut wird nach jedem Video besser
 

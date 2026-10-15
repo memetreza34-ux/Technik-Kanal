@@ -34,7 +34,7 @@ try{
     ref:process.env.SCIENCE_GITHUB_REF??'science-channel-v1'
   });
   console.log('✓ Science-Preflight und Phase 1 bestanden. Bilder und Voice dürfen jetzt produziert werden.');
-  console.log('✓ Einfacher START-HIER-Ordner: ein Fließtext, Coverprompt, fünf Flow-Pakete und DATEIEN-HIER-REIN: '+handoff.folder);
+  console.log('✓ Einfacher START-HIER-Ordner: ein Fließtext, EIN Google-Flow-Prompt mit Cover und allen Szenen sowie DATEIEN-HIER-REIN: '+handoff.folder);
   console.log('✓ NACH COMMIT/PUSH DEN DIREKTLINK SENDEN: '+handoff.url);
   console.log('  Wichtig: Dieser Link funktioniert erst, nachdem die Datei im GitHub-Branch gespeichert wurde.');
 }catch(error){

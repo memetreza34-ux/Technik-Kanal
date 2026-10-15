@@ -22,30 +22,29 @@ export function buildScienceSimpleHandoff({repoRoot,projectDir,repository='memet
   const voice=read(file('01-script-audio/voiceover.txt'));
   const expectedVoice=plan.scenes.map(s=>s.voiceText.trim()).join('\n\n');
   if(!voice||voice.replace(/\s+/g,' ')!==expectedVoice.replace(/\s+/g,' '))throw Error('Der Fließtext stimmt nicht mit dem finalen Szenenplan überein.');
+  // EIN Google-Flow-Prompt: Cover + sämtliche Szenen in der finalen Reihenfolge.
+  // Die technischen Einzelprompts bleiben nur als interne Produktions-/QA-Quellen bestehen.
   const cover=read(file('02-bilder/prompts/00-thumbnail.txt'));
-  if(!cover||!/THUMBNAIL/i.test(cover))throw Error('Coverprompt fehlt.');
-  const stepTexts=flow.steps.map((step,index)=>{
-    const lines=[
-      `GOOGLE FLOW – WISSONAUT – BILDSCHRITT ${index+1}/5`,
-      'Nur statische 16:9-Bilder im Technical Editorial Explainer 2.5D-Stil.',
-      'Jedes Bild einzeln erstellen, auf Inhalt/Text/Qualität prüfen und korrekt als -final speichern.',
-      'Keine Produktionsnummern oder Dateinamen ins Bild schreiben.',
-      'Diese neun Szenen in Reihenfolge bearbeiten, nicht alle zu einer Collage zusammenfassen.',
-      index===0?'Zuerst die drei Coverkandidaten aus 02-FLOW-COVER.txt erstellen und auf die Nutzerwahl warten. Danach Bildschritt 1.':'Die Cover-Auswahl ist bereits erledigt; NICHT neu erzeugen.',
-      '',
-    ];
-    for(const id of step.sceneIds){
-      const prompt=read(file('02-bilder/prompts/'+id+'.txt'));
-      if(!prompt||!prompt.includes('Technical Editorial Explainer 2.5D')||!prompt.includes('VISIBLE TEXT LOCK'))throw Error('Prompt nicht final oder Stilregeln fehlen: '+id);
-      lines.push('----- '+id+' -----','',prompt,'');
-    }
-    lines.push(index===4?'GESAMTABSCHLUSS: alle Szenen auf Vollständigkeit prüfen; nur finale Bilder behalten.':'WEITER: Ohne weitere Rückfrage direkt Bildschritt '+(index+2)+'/5.');
-    return lines.join('\n')+'\n';
-  });
+  const master=read(file('02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt'));
+  if(!cover||!master||!master.includes(cover))throw Error('Der eine Flow-Masterprompt enthält den Coverprompt nicht vollständig.');
+  if(!master.includes('Technical Editorial Explainer 2.5D')||!master.includes('VISIBLE TEXT LOCK'))
+    throw Error('Flow-Masterprompt hat die verbindlichen Bildwelt-/Textregeln nicht.');
+  for(let i=1;i<=5;i++)if(!master.includes('BILDSCHRITT '+i+'/5'))
+    throw Error('Der eine Flow-Masterprompt enthält Bildschritt '+i+'/5 nicht.');
+  for(const id of ids){
+    const scenePrompt=read(file('02-bilder/prompts/'+id+'.txt'));
+    if(!scenePrompt||!master.includes(scenePrompt))
+      throw Error('Fehlender oder veralteter Szenenprompt im einen Masterprompt: '+id);
+  }
   const pack=path.join(root,'START-HIER',plan.slug);
   put(path.join(pack,'01-SKRIPT.txt'),voice+'\n');
-  put(path.join(pack,'02-FLOW-COVER.txt'),cover+'\n');
-  for(let i=0;i<5;i++)put(path.join(pack,`${String(i+3).padStart(2,'0')}-FLOW-BILDER-${i+1}.txt`),stepTexts[i]);
+  put(path.join(pack,'02-GOOGLE-FLOW-PROMPT.txt'),master+'\n');
+  // Nur bekannte ältere Flow-Pakete entfernen – nichts aus den technischen Originalen löschen.
+  for(const name of ['02-FLOW-COVER.txt',...Array.from({length:5},(_,i)=>
+    `${String(i+3).padStart(2,'0')}-FLOW-BILDER-${i+1}.txt`)]){
+    const stale=path.join(pack,name);
+    if(fs.existsSync(stale))fs.rmSync(stale);
+  }
   const info=path.join(pack,'DATEIEN-HIER-REIN/HIER-ABLEGEN.txt');
   if(!fs.existsSync(info))put(info,
     'Hier alle finalen Bilder und eine Sprachaufnahme ablegen.\n'+
@@ -53,7 +52,7 @@ export function buildScienceSimpleHandoff({repoRoot,projectDir,repository='memet
     'Cover: 00-thumbnail-final.png; Sprache: voiceover-raw.wav.\n'+
     'Keine Unterordner. Die Originaldateien bleiben bei der Übernahme erhalten.\n');
   const projectIndex=file('PHASE-1-START-HIER.md');
-  put(projectIndex,`# Einfache Produktionsmappe\n\n**Bitte nur diesen Ordner nutzen:** [START-HIER/${plan.slug}](../../../../../START-HIER/${plan.slug})\n\nEine Skriptdatei als Fließtext, ein Coverprompt, fünf Bildpakete und genau ein Ordner für alle fertigen Dateien. Die technischen Originale bleiben für die Videomontage erhalten.\n`);
+  put(projectIndex,`# Einfache Produktionsmappe\n\n**Bitte nur diesen Ordner nutzen:** [START-HIER/${plan.slug}](../../../../../START-HIER/${plan.slug})\n\nEine Skriptdatei als Fließtext, **eine einzige Google-Flow-Datei** mit Cover und allen Bildern sowie ein Ordner für alle fertigen Dateien. Die technischen Originale bleiben für die Videomontage erhalten.\n`);
   const url=`https://github.com/${repository}/tree/${encodeURIComponent(ref)}/START-HIER/${encodeURIComponent(plan.slug)}`;
-  return {folder:pack,url,sceneCount:ids.length,script:path.join(pack,'01-SKRIPT.txt'),flowPrompts:6,dropFolder:path.join(pack,'DATEIEN-HIER-REIN')};
+  return {folder:pack,url,sceneCount:ids.length,script:path.join(pack,'01-SKRIPT.txt'),flowPrompts:1,flowPrompt:path.join(pack,'02-GOOGLE-FLOW-PROMPT.txt'),dropFolder:path.join(pack,'DATEIEN-HIER-REIN')};
 }

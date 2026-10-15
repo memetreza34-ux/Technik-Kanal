@@ -13,7 +13,7 @@ const result=buildScienceSimpleHandoff({
   repository:arg('repo')??process.env.GITHUB_REPOSITORY??'memetreza34-ux/Technik-Kanal',
   ref:arg('ref')??process.env.SCIENCE_GITHUB_REF??'science-channel-v1'
 });
-console.log('✓ PHASE 1: Ein Fließtext, ein Coverprompt, fünf Flow-Pakete und ein Datei-Ablageordner für '+result.sceneCount+' Bilder.');
+console.log('✓ PHASE 1: Ein Fließtext, ein einziger vollständiger Google-Flow-Prompt und ein Datei-Ablageordner für '+result.sceneCount+' Bilder.');
 console.log('START-HIER-Ordner: '+result.folder);
 console.log('LINK NACH COMMIT/PUSH DEM NUTZER SENDEN: '+result.url);
 console.log('Hinweis: Nur eine bereits auf GitHub gespeicherte Kopiermappe ist über den Link erreichbar.');

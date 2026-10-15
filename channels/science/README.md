@@ -1,3 +1,5 @@
+> **EINFACHE NUTZERÜBERGABE:** Ein Fließtext-Skript und **genau ein** Google-Flow-Prompt (inklusive Cover und aller Bildszenen) unter `START-HIER/<video-slug>`. Keine separaten Cover- oder fünf Flow-Paketdateien. Technische Einzelprompts bleiben intern. Siehe Root-`README.md` und `scripts/lib/science-simple-handoff.mjs`.
+
 ## Phase-1-Abschluss am Laptop
 
 **Ein Befehl:** `npm run science:phase1 -- "VIDEO_ORDNER"` baut den aktuellen Masterprompt, prüft die komplette Phase 1 und erstellt die Kopiermappe. Nach erfolgreicher Prüfung enthält **`VIDEO_ORDNER/PHASE-1-START-HIER.md`** den Sprechertext, alle Google-Flow-Prompts, Cover und Einzelbildlinks kopierfertig in einer GitHub-Datei. Danach **auf GitHub committen/pushen und sofort den echten Direktlink schicken**, damit der Nutzer direkt von seinem Laptop aus Google Flow und Voice-Produktion starten kann.

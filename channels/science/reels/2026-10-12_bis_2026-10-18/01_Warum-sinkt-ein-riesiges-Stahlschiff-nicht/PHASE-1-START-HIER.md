@@ -1,5 +1,5 @@
-# Wissonaut – eine einfache Produktionsmappe
+# Aktuelles Wissonaut-Video – hier anfangen
 
-**Öffne nur noch [START-HIER/warum-sinkt-ein-riesiges-stahlschiff-nicht](../../../../../START-HIER/warum-sinkt-ein-riesiges-stahlschiff-nicht).**
+Öffne nur [den einfachen START-HIER-Ordner](../../../../../START-HIER/warum-sinkt-ein-riesiges-stahlschiff-nicht).
 
-Dort sind genau eine Fließtext-Skriptdatei, ein Coverprompt, fünf Bildprompt-Dateien und ein Ordner für fertige Bilder und Voice. Die technischen Dateien im Projektordner bleiben im Hintergrund für Codex erhalten.
+Darin findest du **ein vollständiges Fließtext-Skript, genau einen Google-Flow-Prompt mit Cover und allen 45 Bildszenen und einen Ordner zum Einlegen der fertigen Bilder und Sprachaufnahme**. Alle übrigen Dateien im Projekt sind interne technische Arbeitsdateien.

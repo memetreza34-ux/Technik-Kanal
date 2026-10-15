@@ -1,17 +1,15 @@
-# Technik-Kanal – hier anfangen
+# Technik-Kanal – nur hier arbeiten
 
-**Nur diesen Ordner für die Produktion öffnen.** `channels/`, `core/`, `scripts/` und andere Dateien enthalten die interne Technik für Rendering, Qualität und Lernsystem. Bitte nicht löschen.
+Öffne den Ordner deines Videos. Mehr brauchst du nicht:
 
-Öffne den Ordner deines aktuellen Videos. Darin findest du:
-- `01-SKRIPT.txt` – genau **ein** vollständig kopierbarer deutscher Sprechertext als Fließtext.
-- `02-FLOW-COVER.txt` – 3 Thumbnail-Ideen; erst Auswahl treffen.
-- `03-FLOW-BILDER-1.txt` bis `07-FLOW-BILDER-5.txt` – fünf Google-Flow-Promptpakete mit allen Bildern.
-- `DATEIEN-HIER-REIN/` – **ein einziger Ablageordner** für alle finalen Google-Flow-Bilder, Cover und deutsche Sprachaufnahme.
+- `01-SKRIPT.txt` – **einmal kopieren** für die deutsche Sprachaufnahme.
+- `02-GOOGLE-FLOW-PROMPT.txt` – **einmal kopieren** für Google Flow. Diese **eine Datei** enthält die drei Thumbnail-Ideen, die Nutzerauswahl und die komplette Bildproduktion mit allen 45 Szenen.
+- `DATEIEN-HIER-REIN/` – alle finalen Bilder, das eine ausgewählte Cover und die Sprachaufnahme ablegen.
 
-Die bereits vorhandene technische Projektstruktur unter `channels/science` bleibt für die automatisierte Montage erhalten, wird aber bei der normalen Bedienung nicht gebraucht.
+**Keine fünf Flow-Pakete. Kein zweiter Coverprompt. Keine zusätzlichen Skriptversionen.**
 
-**Ablage:** Szenenbilder eindeutig `01.png`, `02.png`, ... oder `01-hook-final.png` usw. benennen. Gewähltes Cover `00-thumbnail-final.png`. Stimme `voiceover-raw.wav`.
+Google Flow soll nach den drei Covervorschlägen nur für deine Auswahl stoppen und danach die 45 Standbilder automatisch nacheinander erstellen. Bilder müssen geprüft und mit eindeutigen Szenennummern benannt werden.
 
-Nach dem Einfügen vom Repo-Hauptordner aus `npm run technik:import -- "START-HIER/warum-sinkt-ein-riesiges-stahlschiff-nicht"` ausführen. Danach nutzt `npm run science:finish -- "channels/science/reels/2026-10-12_bis_2026-10-18/01_Warum-sinkt-ein-riesiges-Stahlschiff-nicht"` die echten vorhandenen Bilder. Keine fehlenden Bilder erzeugen, ersetzen oder überspringen.
+Dateien können `01.png` bis `45.png` heißen, das gewählte Cover `00-thumbnail-final.png` und die Sprachaufnahme `voiceover-raw.wav`. Keine Unterordner erforderlich.
 
-Der GitHub-Name ist bereits `Technik-Kanal`. Der **lokale Finder-Ordnername** kann unabhängig davon in `Technik-Kanal` umbenannt werden.
+Nach der Ablage per `npm run technik:import -- "START-HIER/warum-sinkt-ein-riesiges-stahlschiff-nicht"` sicher übernehmen. Die technische Originalstruktur bleibt unter `channels/science/` erhalten.

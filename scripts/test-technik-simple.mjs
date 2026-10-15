@@ -18,10 +18,33 @@ try{
   put('01-script-audio/voiceover.txt',voice+'\n');
   put('02-bilder/prompts/00-thumbnail.txt','THUMBNAIL: drei Coverkandidaten.');
   for(const s of scenes)put('02-bilder/prompts/'+s.id+'.txt','ONE STATIC IMAGE '+s.id+'\nTechnical Editorial Explainer 2.5D\nVISIBLE TEXT LOCK\n');
+  const cover='THUMBNAIL: drei Coverkandidaten.';
+  const scenePrompts=scenes.map(s=>'ONE STATIC IMAGE '+s.id+'\nTechnical Editorial Explainer 2.5D\nVISIBLE TEXT LOCK');
+  put('02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt',[cover,
+    'Technical Editorial Explainer 2.5D VISIBLE TEXT LOCK',
+    ...[1,2,3,4,5].map(n=>'BILDSCHRITT '+n+'/5'),
+    ...scenePrompts].join('\n\n'));
+  // Alter Zustand simulieren: wird beim Generieren aufgeräumt.
+  const stalePack=path.join(repoRoot,'START-HIER',slug);
+  fs.mkdirSync(stalePack,{recursive:true});
+  fs.writeFileSync(path.join(stalePack,'02-FLOW-COVER.txt'),'alt');
+  for(let i=1;i<=5;i++)fs.writeFileSync(path.join(stalePack,String(i+2).padStart(2,'0')+'-FLOW-BILDER-'+i+'.txt'),'alt');
   const handoff=buildScienceSimpleHandoff({repoRoot,projectDir});
   assert.equal(fs.readFileSync(handoff.script,'utf8').trim(),voice);
-  assert.ok(fs.existsSync(path.join(handoff.folder,'07-FLOW-BILDER-5.txt')));
-  assert.equal(fs.readdirSync(handoff.folder).filter(f=>f.endsWith('.txt')).length,7);
+  assert.equal(handoff.flowPrompts,1);
+  const flowFile=path.join(handoff.folder,'02-GOOGLE-FLOW-PROMPT.txt');
+  const allInOne=fs.readFileSync(flowFile,'utf8');
+  assert.ok(allInOne.includes(cover));
+  for(const prompt of scenePrompts)assert.ok(allInOne.includes(prompt));
+  for(let n=1;n<=5;n++)assert.ok(allInOne.includes('BILDSCHRITT '+n+'/5'));
+  assert.equal(fs.readdirSync(handoff.folder).filter(f=>f.endsWith('.txt')).length,2);
+  assert.ok(!fs.existsSync(path.join(handoff.folder,'02-FLOW-COVER.txt')));
+  assert.ok(!fs.existsSync(path.join(handoff.folder,'07-FLOW-BILDER-5.txt')));
+  const saved=fs.readFileSync(flowFile,'utf8');
+  assert.equal(fs.readFileSync(buildScienceSimpleHandoff({repoRoot,projectDir}).flowPrompt,'utf8'),saved);
+  put('02-bilder/prompts/'+scenes[0].id+'.txt','UNSYNCED CHANGED PROMPT');
+  assert.throws(()=>buildScienceSimpleHandoff({repoRoot,projectDir}),/Fehlender oder veralteter Szenenprompt/);
+  put('02-bilder/prompts/'+scenes[0].id+'.txt',scenePrompts[0]);
   const drop=handoff.dropFolder;
   fs.writeFileSync(path.join(drop,'01.png'),'first-image');
   fs.writeFileSync(path.join(drop,'02-context-final.png'),'second-image');
@@ -42,5 +65,5 @@ try{
   fs.unlinkSync(path.join(drop,'02.png'));
   put('06-projektdateien/preproduction-report.json',{passed:false,phase:'blocked'});
   assert.throws(()=>buildScienceSimpleHandoff({repoRoot,projectDir}),/noch nicht freigegeben/);
-  console.log('✓ Technik-Kanal Ein-Ordner-Arbeitsplatz: 7 Texte, sicherer Medienimport, Idempotenz, Konflikt-/Duplikatprüfung und Preflight-Gate.');
+  console.log('✓ Technik-Kanal Ein-Ordner-Arbeitsplatz: 1 Skript + 1 Gesamt-Flowprompt, sicherer Medienimport, Idempotenz, Konflikt-/Duplikatprüfung und Preflight-Gate.');
 }finally{fs.rmSync(repoRoot,{recursive:true,force:true});}

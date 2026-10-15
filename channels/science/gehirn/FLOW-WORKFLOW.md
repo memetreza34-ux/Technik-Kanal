@@ -1,20 +1,20 @@
-## Einfache Nutzer-Übergabe – ab sofort vorrangig
+## EIN Flow-Prompt – verbindliche Phase-1-Nutzerübergabe
 
-Nach jeder fertigen Phase 1 nur den **START-HIER/<video-slug>**-Ordner als primären GitHub-Link geben. Er enthält genau **01-SKRIPT.txt** als kopierbaren Fließtext, **02-FLOW-COVER.txt**, **03–07-FLOW-BILDER-1..5.txt** und **DATEIEN-HIER-REIN/** für alle fertigen Bilder/Voice. Den früheren 140-KB-Masterprompt und 45 Einzelprompts niemals als normale Nutzer-Hauptansicht präsentieren. Diese werden von der Pipeline intern zur Qualitätssicherung aufbewahrt. **Phase-1-Lauf:** `npm run science:phase1 -- "VIDEO_ORDNER"`. Neue Ausgabe ist die einfache Mappe; sie muss vor Übermittlung auf GitHub gepusht werden.
+Jede Phase 1 erzeugt im `START-HIER/<video-slug>/` **exakt zwei Nutzer-Textdateien**: `01-SKRIPT.txt` (Fließtext) und `02-GOOGLE-FLOW-PROMPT.txt` (eine einzige vollständig kopierbare Flow-Anweisung mit 3 Coverkandidaten und *allen* Szenen). Plus `DATEIEN-HIER-REIN/` für fertige Medien. **Keine fünf Flow-Pakete, kein separater Coverprompt, kein zweiter Flow-Master für den Nutzer.** Interne technische Einzelprompts dürfen bestehen bleiben.
 
-Nach dem Drag-and-drop aller Medien übernimmt `npm run technik:import -- "START-HIER/<video-slug>"` die Bilder anhand ihrer Nummern und die Stimme sicher in die internen Renderpfade. `science:finish` versucht denselben Import automatisch, bevor es Medien prüft. Fehlende oder doppelte Dateien nicht künstlich ersetzen.
+Generator: `npm run science:phase1 -- "VIDEO_ORDNER"`. Der Master muss aktuell sein und Cover sowie alle Einzelprompts vollständig enthalten, sonst kein Erfolg. Nur nachdem beide neuen Dateien committet/gepusht sind, den direkten GitHub-Ordnerlink an den Nutzer senden. Bei Google Flow nach den Coverkandidaten einmal stoppen, dann alle Szenen ohne weitere Zwischenstopps.
 
 ## Phase 1 abgeschlossen – obligatorische GitHub-Kopiermappe
 
 Nach fertiger Recherche, finalem Sprechertext, finalen Visual-Beats, Coverprompt, allen Einzelprompts und Google-Flow-Masterprompt ist folgender Abschluss **verbindlich**:
 
 1. `npm run science:phase1 -- "VIDEO_ORDNER"` – dieser **eine Befehl** aktualisiert die Google-Flow-Einzelprompt-Locks und den Masterprompt, prüft Skript, Quellen, Kreativität und Stil. Nur bei erfolgreichem Preflight wird `PHASE-1-START-HIER.md` erzeugt.
-2. Die erzeugte Kopiermappe öffnen und Vollständigkeit prüfen.
-3. `PHASE-1-START-HIER.md`, finalen Szenenplan, den fertigen Sprechertext, den Masterprompt und alle Bildprompts nach GitHub committen/pushen.
-4. **Sofort danach genau einen Direktlink auf die fertige `PHASE-1-START-HIER.md` im richtigen Branch schicken.** Nutzer soll am Laptop Skript/Prompts mit minimalen Klicks öffnen und kopieren können.
+2. Die zwei Nutzerdateien unter `START-HIER/<video-slug>` öffnen, besonders den einen Flow-Prompt auf Cover und sämtliche Szenen prüfen.
+3. Die beiden Nutzerdateien `01-SKRIPT.txt` und `02-GOOGLE-FLOW-PROMPT.txt` nach GitHub committen/pushen; interne Quellen weiterhin speichern.
+4. **Sofort danach den Direktlink auf den richtigen `START-HIER/<video-slug>`-Ordner im GitHub-Branch schicken.** Nutzer soll am Laptop Skript/Prompts mit minimalen Klicks öffnen und kopieren können.
 5. Erst dann Phase 1 als vollständig übergeben bezeichnen und Google Flow Phase 2 starten.
 
-Die Kopiermappe enthält den kompletten Sprechtext aus `scene-plan.json`, den vollständigen Google-Flow-Masterprompt, die drei Cover-Kandidaten als Prompt und alle individuellen Bildprompt-Links; beides zusätzlich als kopierbare Textblöcke. Die Datei ersetzt weder die originalen Quellen noch die Sicherheitsregeln. Gibt es fehlende Prompts, Platzhalter oder einen veralteten Masterprompt, wird **nicht** so getan, als wäre Phase 1 fertig. **Kein GitHub-Link ohne tatsächlichen GitHub-Commit/Push.**
+Die Nutzerdatei `02-GOOGLE-FLOW-PROMPT.txt` enthält alle Cover- und Einzelbild-Anweisungen als **einen einzigen kopierbaren Prompt**; im Nutzerordner gibt es keine zusätzlichen Promptdateien. Die Datei ersetzt weder die originalen Quellen noch die Sicherheitsregeln. Gibt es fehlende Prompts, Platzhalter oder einen veralteten Masterprompt, wird **nicht** so getan, als wäre Phase 1 fertig. **Kein GitHub-Link ohne tatsächlichen GitHub-Commit/Push.**
 
 # Google Flow – verbindlicher Bild-Workflow
 
