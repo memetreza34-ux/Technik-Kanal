@@ -1,3 +1,5 @@
+> **OBERSTE PRIORITÄT 1 – WISSONAUT KONTINUIERLICH VERBESSERN:** Vor jedem Video die Erkenntnisse der bisherigen Videos berücksichtigen; nach jedem Rendern eine redaktionelle Qualitätsprüfung und nach der Veröffentlichung eine datenbasierte YouTube-Auswertung durchführen. Pflicht: [VERBESSERUNGSSYSTEM](channels/science/gehirn/VERBESSERUNGSSYSTEM.md). Mehr relevante Aufrufe und Abonnenten sind messbare Ziele, keine Garantie.
+
 # Alltagswissenschaft & Technik
 
 Produktionssystem für einen deutschsprachigen Faceless-Wissenskanal über **greifbare Alltagswissenschaft und Technik** für Jugendliche und junge Erwachsene.
