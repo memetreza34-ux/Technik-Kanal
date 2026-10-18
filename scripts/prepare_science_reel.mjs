@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
-import {channelRoot, findVoiceFiles, projectPaths, repositoryRoot, run} from './lib/electrical-project.mjs';
+import {channelRoot, findVoiceFiles, projectPaths, readJson, repositoryRoot, run} from './lib/electrical-project.mjs';
+import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
+import {assignCameraMoves} from './lib/science-camera-motion.mjs';
+import {assertMusicSource, buildMusicBed, findMusic, measureLoudness} from './lib/science-music-bed.mjs';
 
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
@@ -20,6 +23,11 @@ run(process.execPath, ['scripts/science-required-media.mjs', paths.root], {cwd: 
 run(process.execPath, ['scripts/science-asset-review.mjs', 'check', paths.root], {cwd: repositoryRoot});
 
 if (!args.includes('--readiness-passed')) run(process.execPath, ['scripts/science-readiness.mjs', paths.root], {cwd: repositoryRoot});
+
+const config = loadElectricalConfig(readJson(paths.scenePlan).productionProfile);
+const musicSettings = config.sound?.musicBed ?? {};
+const music = config.sound?.musicBedAllowed ? findMusic(paths.root) : null;
+if (music) assertMusicSource(music, musicSettings);
 
 const voices = findVoiceFiles(paths.audioDir);
 let finalVoice = voices.final;
@@ -45,9 +53,25 @@ try {
 
   const projectRuntime = path.join(paths.projectFilesDir, 'reel-runtime.json');
   if (!fs.existsSync(projectRuntime)) throw new Error(`Science-Runtime wurde nicht erzeugt: ${projectRuntime}`);
+  const runtime = readJson(projectRuntime);
+  // Dezente virtuelle Kamera pro Standbild (Zoom/Schwenk im Wechsel; cameraMove: "none" schaltet sie pro Szene ab).
+  const cameraMotion = config.visuals?.cameraMotionAllowed ? config.visuals.cameraMotion : {enabled: false};
+  runtime.scenes = assignCameraMoves(runtime.scenes, cameraMotion);
+  // Leiser Musikteppich unter der Stimme (optional, nur mit Quellenangabe).
+  delete runtime.musicPath;
+  if (music) {
+    const relative = `reels/${runtime.slug}/audio/music-bed.wav`;
+    const bed = buildMusicBed({input: music.file, output: path.join(channelRoot, 'public', relative), durationSeconds: runtime.durationSeconds, settings: musicSettings});
+    runtime.musicPath = relative;
+    runtime.music = {source: music.source, file: path.basename(music.file), targetLufs: musicSettings.targetLufs ?? null, measuredLufs: measureLoudness(bed)};
+    console.log(`✓ Musikteppich: ${path.basename(music.file)} → ${runtime.music.measuredLufs ?? '?'} LUFS (Stimme ≈ ${config.voice?.loudness?.integratedLufs ?? -16} LUFS).`);
+  } else if (config.sound?.musicBedAllowed) {
+    console.warn(`⚠ Kein Musikteppich: Musikdatei plus QUELLE.txt in 01-script-audio/musik/ legen (empfohlen: YouTube Audio Library).`);
+  }
+  fs.writeFileSync(projectRuntime, `${JSON.stringify(runtime, null, 2)}\n`);
   fs.mkdirSync(path.dirname(scienceRuntimePath), {recursive: true});
   fs.copyFileSync(projectRuntime, scienceRuntimePath);
-  console.log(`✓ Science-Runtime aktualisiert: ${scienceRuntimePath}`);
+  console.log(`✓ Science-Runtime aktualisiert: ${scienceRuntimePath} (${runtime.scenes.filter((scene) => scene.cameraMove?.type !== 'none').length} Szenen mit dezenter Kamerabewegung)`);
 } finally {
   if (previousTemporaryRuntime) fs.writeFileSync(temporaryRuntimePath, previousTemporaryRuntime);
   else fs.rmSync(temporaryRuntimePath, {force: true});

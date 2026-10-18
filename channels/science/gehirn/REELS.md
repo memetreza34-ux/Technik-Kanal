@@ -118,9 +118,9 @@ Das Thumbnail ist **separat vom ersten Szenenbild**.
 
 ## Remotion-Vertrag
 
-Remotion erzeugt keine kreative Bildbewegung. Verboten sind Zoom, Pan, Ken Burns, Parallax, Rotation, Partikel, animierte Diagramme, animierte technische Prozesse und automatische Übergangseffekte.
+Remotion legt nur eine dezente virtuelle Kamera über jedes Standbild (höchstens 4 % Zoom, 1,5 % Schwenk, im Wechsel). Verboten bleiben Parallax, Rotation, Partikel, animierte Diagramme, animierte technische Prozesse und automatische Übergangseffekte.
 
-Zulässig sind statische Bilder, harte Schnitte, Voice-over, Untertitel ohne Bewegungsanimation, statische kontrollierte Overlays, optionale SFX und Export.
+Zulässig sind statische Bilder mit dieser Kamera, harte Schnitte, Voice-over, ein leiser Musikteppich mit Quellenangabe, Untertitel ohne Bewegungsanimation, statische kontrollierte Overlays, optionale SFX und Export.
 
 ## Produktionsreihenfolge
 

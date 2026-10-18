@@ -55,7 +55,8 @@
     "thumbnail": {"required":true,"width":1280,"height":720,"candidateCount":3},
     "transitionPolicy": "hard-cut",
     "animationAllowed": false,
-    "cameraMotionAllowed": false,
+    "cameraMotionAllowed": true,
+    "cameraMotion": {"enabled":true,"maxScale":1.04,"panPercent":1.5,"pattern":["zoom-in","pan-right","zoom-out","pan-left"],"perSceneOptOut":"cameraMove: none","note":"Nur dezente virtuelle Kamera über dem Standbild; harte Schnitte bleiben, keine Prozessanimation."},
     "brandVisualStyleDefined": true,
     "styleId": "scientific-scene-explainer-v1",
     "styleName": "Technical Editorial Explainer 2.5D",
@@ -158,7 +159,7 @@
     "animated": false
   },
   "alignment": {"minimumWordMatchRatio":0.82},
-  "sound": {"musicBedAllowed":false,"maximumCuesPerScene":1,"recommendedCuesPerVideo":{"min":0,"max":8},"defaultCueVolume":0.16,"maximumCueVolume":0.3,"allowedRoles":["sfx-accent","sfx-warning","sfx-reveal","sfx-success","sfx-soft-whoosh","sfx-environment","sfx-science"]},
+  "sound": {"musicBedAllowed":true,"musicBed":{"folder":"01-script-audio/musik","targetLufs":-30,"truePeakDb":-3,"fadeInSeconds":2,"fadeOutSeconds":3,"sourceNoteRequired":true,"recommendedSource":"YouTube Audio Library"},"maximumCuesPerScene":1,"recommendedCuesPerVideo":{"min":0,"max":8},"defaultCueVolume":0.16,"maximumCueVolume":0.3,"allowedRoles":["sfx-accent","sfx-warning","sfx-reveal","sfx-success","sfx-soft-whoosh","sfx-environment","sfx-science"]},
   "imageAnalysis": {"landscapeAspectMin":1.7,"landscapeAspectMax":1.85,"minimumWidth":1280,"minimumHeight":720,"whiteBandMaximumRatio":0.34,"fullImageWhiteMaximumRatio":0.16,"backgroundClusterDistance":28,"minimumBackgroundClusters":2},
   "render": {"codec":"h264","crf":18,"pixelFormat":"yuv420p","audioCodec":"aac","audioBitrate":"192k","x264Preset":"medium"},
   "renderQa": {"blackMinimumDurationSeconds":0.35,"maximumInitialSilenceSeconds":0.7,"maximumEndSilenceSeconds":0.7,"integratedLufsMin":-18,"integratedLufsMax":-14,"truePeakMaximumDb":-1,"controlFrameCount":12},

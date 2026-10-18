@@ -31,12 +31,14 @@ export function importScienceDrop({repoRoot,packageDir,projectDir=null,dryRun=fa
   const files=fs.readdirSync(target,{withFileTypes:true}).filter(item=>item.isFile()&&!item.name.startsWith('.')).map(item=>item.name);
   const numbered=new Map(plan.scenes.map((scene,index)=>[index+1,scene]));
   const selected=new Map();
-  let cover=null,voice=null;
+  let cover=null,voice=null,music=null,musicSource=null;
   const errors=[];
   const unknown=[];
   const hashes=new Map();
   for(const name of files){
     if(name==='HIER-ABLEGEN.txt'||name==='README.txt')continue;
+    // Musikteppich (optional): genau eine Datei musik.* plus musik-quelle.txt mit Herkunft und Lizenz.
+    if(/^musik[-_]quelle\.txt$/i.test(name)){musicSource={file:path.join(target,name),name};continue;}
     const ext=path.extname(name).toLowerCase();
     const file=path.join(target,name);
     if(IMAGE_EXTENSIONS.has(ext)){
@@ -59,6 +61,9 @@ export function importScienceDrop({repoRoot,packageDir,projectDir=null,dryRun=fa
       if(hashes.has(hash))errors.push('Doppeltes identisches Bild: '+name+' und '+hashes.get(hash));
       else hashes.set(hash,name);
       selected.set(scene.id,{file,name,ext,scene});
+    }else if(AUDIO_EXTENSIONS.has(ext)&&/^(musik|music)([-_. ][^/]*)?$/i.test(path.basename(name,ext))){
+      if(music)errors.push('Mehr als eine Musikdatei im Ablageordner.');
+      else music={file,name,ext};
     }else if(AUDIO_EXTENSIONS.has(ext)){
       if(voice)errors.push('Mehr als eine Sprachaufnahme im Ablageordner.');
       else voice={file,name,ext};
@@ -76,6 +81,10 @@ export function importScienceDrop({repoRoot,packageDir,projectDir=null,dryRun=fa
   });
   if(cover)copies.push({from:cover.file,to:within(project,'05-export/cover'+cover.ext),label:'Cover'});
   if(voice)copies.push({from:voice.file,to:within(project,'01-script-audio/audio/voiceover-raw'+voice.ext),label:'Stimme'});
+  if(music&&!musicSource)errors.push('Musik ohne musik-quelle.txt: Titel, Künstler, Quelle und Lizenz eintragen (z. B. YouTube Audio Library).');
+  if(musicSource&&!music)errors.push('musik-quelle.txt ohne Musikdatei (musik.mp3 o. ä.).');
+  if(music)copies.push({from:music.file,to:within(project,'01-script-audio/musik/'+music.name),label:'Musik'});
+  if(musicSource)copies.push({from:musicSource.file,to:within(project,'01-script-audio/musik/QUELLE.txt'),label:'Musikquelle'});
   for(const action of copies){
     if(fs.existsSync(action.to)&&sha(action.from)!==sha(action.to))errors.push(action.label+': vorhandene Datei unterscheidet sich. Nicht automatisch überschreiben: '+action.to);
   }
@@ -88,5 +97,5 @@ export function importScienceDrop({repoRoot,packageDir,projectDir=null,dryRun=fa
     fs.copyFileSync(item.from,item.to);
     imported.push(item.label);
   }
-  return {projectDir:project,packageDir:inputDir,sceneCount:plan.scenes.length,readyFromDrop:selected.size,missing,hasCover:Boolean(cover||[...IMAGE_EXTENSIONS].some(ext=>fs.existsSync(path.join(project,'05-export/cover'+ext)))),hasVoice:Boolean(voice||fs.existsSync(path.join(project,'01-script-audio/audio/voiceover-raw.wav'))),copied:imported,plannedCopies:copies.length,dryRun};
+  return {projectDir:project,packageDir:inputDir,sceneCount:plan.scenes.length,readyFromDrop:selected.size,missing,hasCover:Boolean(cover||[...IMAGE_EXTENSIONS].some(ext=>fs.existsSync(path.join(project,'05-export/cover'+ext)))),hasVoice:Boolean(voice||fs.existsSync(path.join(project,'01-script-audio/audio/voiceover-raw.wav'))),hasMusic:Boolean(music||fs.existsSync(path.join(project,'01-script-audio/musik/QUELLE.txt'))),copied:imported,plannedCopies:copies.length,dryRun};
 }
