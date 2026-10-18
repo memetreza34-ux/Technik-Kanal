@@ -1,3 +1,5 @@
+> **NEUE VERBINDLICHE BILDREGEL FÜR 6–7-MINUTEN-VIDEOS:** Bei normalen Szenen bis zu 3 klare deutsche Beschriftungen, bei fachlich begründeten technischen Diagrammen/Schemata/Infografiken bis zu 5 Labels plus nötige Einheiten, Formeln und Pfeile. Ca. 35–50 % der Bilder als tatsächlich erklärende technische Darstellungen anstreben; Kontextbilder je nach Skript. Ältere strengere Hinweise (0–1/2/3 Labels) werden für das Longform-Profil durch diese Regel ersetzt. Quelle: [BILDWELT](BILDWELT.md).
+
 > **Vor jedem Skript:** Letzte Retrospektive, neue Zuschauerkennzahlen und `VERBESSERUNGSSYSTEM.md` lesen. Ziel ist ein konkret besseres Video, nicht bloß ein weiteres Video. Titel/Thumbnail/Hook und Bildwechsel anhand der tatsächlich entdeckten Schwächen verbessern.
 
 # Longform — YouTube-Erklärvideo

@@ -5,7 +5,7 @@ import {ScenePlan} from './lib/electrical-contracts.mjs';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
 import {createElectricalScenePlanTemplate} from './lib/create-electrical-scene-plan-template.mjs';
 
-const root = path.resolve('channels/science/reels/2026-10-05_bis_2026-10-11/01_Wie-kommt-Strom-in-deine-Steckdose');
+const root = path.resolve('channels/science/YouTube/2026-10-05_bis_2026-10-11/01_Wie-kommt-Strom-in-deine-Steckdose');
 const json = file => JSON.parse(fs.readFileSync(path.join(root,file),'utf8'));
 const plan = ScenePlan.parse(json('06-projektdateien/scene-plan.json'));
 const flow = json('06-projektdateien/flow-plan.json');
@@ -14,8 +14,8 @@ const shortProfile = loadElectricalConfig('youtube-2min-v1');
 const rendererSource = fs.readFileSync(path.resolve('scripts/render_science_reel.mjs'), 'utf8');
 const renderQaSource = fs.readFileSync(path.resolve('scripts/qa_science_render.mjs'), 'utf8');
 const words = plan.scenes.map(s=>s.voiceText).join(' ').trim().split(/\s+/).length;
-const exportText = fs.readFileSync(path.join(root,'05-export/skript-mit-zeitstempeln.txt'),'utf8');
-const youtube = fs.readFileSync(path.join(root,'05-export/youtube-caption.txt'),'utf8');
+const exportText = fs.readFileSync(path.join(root,'06-projektdateien/skript-mit-zeitstempeln.txt'),'utf8');
+const youtube = fs.readFileSync(path.join(root,'05-export/caption.txt'),'utf8');
 const master = fs.readFileSync(path.join(root,'02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt'),'utf8');
 const errors = [];
 if(profile.format.durationSeconds.min!==360||profile.format.durationSeconds.max!==420) errors.push('Langvideo-Laufzeitprofil nicht geladen.');
@@ -23,7 +23,7 @@ if(shortProfile.format.durationSeconds.max!==150) errors.push('2-Minuten-Referen
 if(!rendererSource.includes('loadElectricalConfig(sourcePlan.productionProfile)')) errors.push('Renderer unterstützt keine dynamische Profilwahl.');
 if(rendererSource.includes("sourcePlan.productionProfile !== 'youtube-2min-v1'")) errors.push('Renderer blockiert das Langvideo-Profil.');
 if(!renderQaSource.includes('loadElectricalConfig(sourcePlan.productionProfile)')) errors.push('Render-QA verwendet kein dynamisches Profil.');
-if(!rendererSource.includes("path.join(paths.exportDir, 'video')")) errors.push('Finales Video muss in 05-export/video gespeichert werden.');
+if(!rendererSource.includes("const videoDir = paths.exportDir")) errors.push('Finales Video muss direkt unter 05-export/video.mp4 gespeichert werden.');
 if(plan.productionProfile!=='youtube-6to7min-v1') errors.push('Profil ist nicht lang.');
 if(plan.scenes.length<34 || plan.scenes.length>50) errors.push('Langvideo-Szenenzahl außerhalb des Profils.');
 if(words<profile.script.words.min||words>profile.script.words.max) errors.push('Sprechtext nicht im Wortbudget.');
@@ -40,9 +40,9 @@ for(let i=0;i<plan.scenes.length;i++){
   const p=fs.readFileSync(path.join(root,'02-bilder/prompts',s.id+'.txt'),'utf8');
   if(!p.includes('Technical Editorial Explainer 2.5D')||!p.includes('VISIBLE TEXT LOCK')) errors.push('Prompt-Lock fehlt bei '+s.id);
 }
-if(flow.coverNeverUsedAsVideoFrame!==true||flow.scene01IndependentFromCover!==true||flow.coverExportDir!=='05-export/cover') errors.push('Cover-Szenentrennung fehlt.');
+if(flow.coverNeverUsedAsVideoFrame!==true||flow.scene01IndependentFromCover!==true||flow.coverExportDir!=='05-export') errors.push('Cover-Szenentrennung fehlt.');
 if(plan.scenes[0].visualRecipe?.stage==='cover-continuation') errors.push('Hook darf Cover-Motiv nicht fortsetzen.');
-if(!master.includes('05-export/cover')) errors.push('Separater Cover-Export fehlt im Master.');
+if(!master.includes('05-export')) errors.push('Separater Cover-Export fehlt im Master.');
 if(!master.includes('THREE')&&!master.includes('three')) errors.push('Thumbnail-Wahl fehlt im Master.');
 if(!master.includes('NO')&&!master.includes('NEVER')) errors.push('Bildmetadatenverbot fehlt.');
 const sample = ScenePlan.parse(createElectricalScenePlanTemplate({slug:'longform-test',sceneCount:42,productionProfile:'youtube-6to7min-v1'}));

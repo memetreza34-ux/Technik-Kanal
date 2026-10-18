@@ -9,7 +9,7 @@ const sha=file=>createHash('sha256').update(fs.readFileSync(file)).digest('hex')
 const within=(base,filename)=>{const full=path.resolve(base,filename);if(full===path.resolve(base)||!full.startsWith(path.resolve(base)+path.sep))throw Error('Pfad außerhalb des Videoordners: '+filename);return full;};
 
 export function findScienceVideoBySlug(repoRoot,slug){
-  const base=path.join(repoRoot,'channels/science/reels');
+  const base=path.join(repoRoot,'channels/science/YouTube');
   const matches=getFolders(base).flatMap(getFolders).filter(dir=>{
     const file=path.join(dir,'06-projektdateien/scene-plan.json');
     if(!fs.existsSync(file))return false;
@@ -74,7 +74,7 @@ export function importScienceDrop({repoRoot,packageDir,projectDir=null,dryRun=fa
     to:within(project,path.join(item.scene.imageDir,item.scene.id+'-final'+item.ext)),
     label:'Bild '+item.scene.id
   });
-  if(cover)copies.push({from:cover.file,to:within(project,'05-export/cover/00-thumbnail-final'+cover.ext),label:'Cover'});
+  if(cover)copies.push({from:cover.file,to:within(project,'05-export/cover'+cover.ext),label:'Cover'});
   if(voice)copies.push({from:voice.file,to:within(project,'01-script-audio/audio/voiceover-raw'+voice.ext),label:'Stimme'});
   for(const action of copies){
     if(fs.existsSync(action.to)&&sha(action.from)!==sha(action.to))errors.push(action.label+': vorhandene Datei unterscheidet sich. Nicht automatisch überschreiben: '+action.to);
@@ -88,5 +88,5 @@ export function importScienceDrop({repoRoot,packageDir,projectDir=null,dryRun=fa
     fs.copyFileSync(item.from,item.to);
     imported.push(item.label);
   }
-  return {projectDir:project,packageDir:inputDir,sceneCount:plan.scenes.length,readyFromDrop:selected.size,missing,hasCover:Boolean(cover||fs.existsSync(path.join(project,'05-export/cover/00-thumbnail-final.png'))),hasVoice:Boolean(voice||fs.existsSync(path.join(project,'01-script-audio/audio/voiceover-raw.wav'))),copied:imported,plannedCopies:copies.length,dryRun};
+  return {projectDir:project,packageDir:inputDir,sceneCount:plan.scenes.length,readyFromDrop:selected.size,missing,hasCover:Boolean(cover||[...IMAGE_EXTENSIONS].some(ext=>fs.existsSync(path.join(project,'05-export/cover'+ext)))),hasVoice:Boolean(voice||fs.existsSync(path.join(project,'01-script-audio/audio/voiceover-raw.wav'))),copied:imported,plannedCopies:copies.length,dryRun};
 }

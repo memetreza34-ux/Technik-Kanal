@@ -3,7 +3,7 @@ import path from 'node:path';
 
 // Interne ELECTRICAL_* Namen bleiben vorerst aus Rückwärtskompatibilität bestehen.
 // Der Vertrag selbst ist kanalweit und gilt für neue Science-Videos.
-// Caption-/Timing-Dateien liegen direkt in 05-export; es gibt keinen separaten Caption-Ordner.
+// Caption-/Timing-Hilfsdateien liegen in 06-projektdateien; es gibt keinen separaten Caption-Ordner.
 export const ELECTRICAL_REEL_DIRECTORIES = [
   '01-script-audio',
   '01-script-audio/audio',
@@ -14,7 +14,6 @@ export const ELECTRICAL_REEL_DIRECTORIES = [
   '02-bilder/thumbnail',
   '04-pdf',
   '05-export',
-  '05-export/video',
   '06-projektdateien',
   '06-projektdateien/render',
 ];
@@ -25,7 +24,7 @@ export const ELECTRICAL_REQUIRED_CONTENT_FILES = [
   '01-script-audio/script-fliesstext.txt',
   '01-script-audio/voiceover.txt',
   '02-bilder/thumbnail/README.md',
-  '05-export/social-caption.md',
+  '06-projektdateien/social-caption.md',
   '04-pdf/inhalt.md',
   '06-projektdateien/motion-design.md',
   '06-projektdateien/production-status.json',
@@ -35,11 +34,11 @@ export const ELECTRICAL_REQUIRED_CONTENT_FILES = [
 ];
 
 export const ELECTRICAL_GENERATED_FILES = [
-  '05-export/word-timestamps.json',
-  '05-export/voiceover-final.captions.json',
-  '05-export/transcript-final.txt',
-  '05-export/voiceover-final.srt',
-  '05-export/voiceover-final.vtt',
+  '06-projektdateien/word-timestamps.json',
+  '06-projektdateien/voiceover-final.captions.json',
+  '06-projektdateien/transcript-final.txt',
+  '06-projektdateien/voiceover-final.srt',
+  '06-projektdateien/voiceover-final.vtt',
   '06-projektdateien/asset-manifest.json',
   '06-projektdateien/script-qa-report.json',
   '06-projektdateien/creative-qa-report.json',
@@ -62,20 +61,20 @@ export const electricalProjectPaths = (root) => ({
   imageDir: path.join(root, '02-bilder/images'),
   promptDir: path.join(root, '02-bilder/prompts'),
   thumbnailDir: path.join(root, '02-bilder/thumbnail'), // Legacy-Quellordner
-  exportCoverDir: path.join(root, '05-export/cover'), // neues Export-Cover, nie Videoframe
+  exportCoverDir: path.join(root, '05-export'), // neues Export-Cover, nie Videoframe
   prompts: path.join(root, '02-bilder/bildprompts.md'),
   flowMaster: path.join(root, '02-bilder/GOOGLE-FLOW-MASTER-PROMPT.txt'),
   // Kompatibilitätsalias: Caption-Dateien liegen direkt im Exportbereich.
-  captionsDir: path.join(root, '05-export'),
-  socialCaption: path.join(root, '05-export/social-caption.md'),
-  captionsFinal: path.join(root, '05-export/voiceover-final.captions.json'),
-  wordTimestamps: path.join(root, '05-export/word-timestamps.json'),
+  captionsDir: path.join(root, '06-projektdateien'),
+  socialCaption: path.join(root, '06-projektdateien/social-caption.md'),
+  captionsFinal: path.join(root, '06-projektdateien/voiceover-final.captions.json'),
+  wordTimestamps: path.join(root, '06-projektdateien/word-timestamps.json'),
   pdfDir: path.join(root, '04-pdf'),
   learningSheet: path.join(root, '04-pdf/inhalt.md'),
   exportDir: path.join(root, '05-export'),
-  videoDir: path.join(root, '05-export/video'),
-  srt: path.join(root, '05-export/voiceover-final.srt'),
-  vtt: path.join(root, '05-export/voiceover-final.vtt'),
+  videoDir: path.join(root, '05-export'),
+  srt: path.join(root, '06-projektdateien/voiceover-final.srt'),
+  vtt: path.join(root, '06-projektdateien/voiceover-final.vtt'),
   projectDir: path.join(root, '06-projektdateien'),
   scenePlan: path.join(root, '06-projektdateien/scene-plan.json'),
   flowPlan: path.join(root, '06-projektdateien/flow-plan.json'),

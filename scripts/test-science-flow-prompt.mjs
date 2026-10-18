@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {buildGoogleFlowMasterPrompt} from './build-google-flow-master-prompt.mjs';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
-import {DENSITY_LOCK_HEADING,FLOW_PROMPT_VERSION,STYLE_LOCK_HEADING,findFlowPromptLeaks,flowSceneBrief,flowSceneLabels} from './lib/science-flow-prompt.mjs';
+import {DENSITY_LOCK_HEADING,FLOW_PROMPT_VERSION,STYLE_LOCK_HEADING,TECHNICAL_DENSITY_LOCK_HEADING,densityLockFor,findFlowPromptLeaks,flowSceneBrief,flowSceneLabels} from './lib/science-flow-prompt.mjs';
 import {applyMasterVisibleTextLock} from './science-visible-text-lock.mjs';
 import {buildSciencePhase1Handoff} from './lib/science-phase1-handoff.mjs';
 import {buildScienceSimpleHandoff} from './lib/science-simple-handoff.mjs';
@@ -38,7 +38,7 @@ const flowPlan = {
   imageOnly: true, informationBudgetLocked: true, imageProductionSteps: 5, pauseAfterEachImageStep: false, continueAutomaticallyBetweenImageSteps: true,
   deleteUnselectedThumbnailCandidatesAfterSelection: true, selectedThumbnailFinalName: '00-thumbnail-final', finalFlowCollectionRequired: true,
   singleFinalFlowCollectionPerVideo: true, removeRejectedVariantsBeforeCompletion: true, renameFinalAssetsBeforeCompletion: true,
-  finalCollectionContainsFinalAssetsOnly: true, finalCollectionName: 'flow-test-final', coverExportDir: '05-export/cover',
+  finalCollectionContainsFinalAssetsOnly: true, finalCollectionName: 'flow-test-final', coverExportDir: '05-export',
   coverNeverUsedAsVideoFrame: true, scene01IndependentFromCover: true, steps,
   scenes: scenes.map((scene, index) => ({id: scene.id, output: 'image', imageStep: Math.floor(index / 2) + 1, visualType: types[index], primaryMotif: `motif-${index}`, informationBudget: {densityClass: index === 5 ? 'complex' : 'normal', oneDominantIdea: true, maxLabels: index === 5 ? 2 : 1, maxPrimaryObjects: 3, maxPanels: index === 5 ? 2 : 1, maxArrows: 2, largeHeadlineAllowed: false, fullSentenceTextAllowed: false}})),
 };
@@ -49,7 +49,9 @@ const {text} = buildGoogleFlowMasterPrompt({plan, flowPlan, config, thumbnailPro
 // Stil- und Density-Block genau einmal, keine Metadaten, kein Sprechtext.
 assert.ok(text.includes(FLOW_PROMPT_VERSION));
 assert.equal(count(text, STYLE_LOCK_HEADING), 1);
-assert.equal(count(text, DENSITY_LOCK_HEADING), 1);
+assert.equal(count(text, TECHNICAL_DENSITY_LOCK_HEADING), 1, '6–7 Minuten nutzt den technischen Density-Block genau einmal');
+assert.equal(count(text, DENSITY_LOCK_HEADING), 0);
+assert.ok(densityLockFor('youtube-2min-v1').startsWith(DENSITY_LOCK_HEADING), 'archiviertes Profil behält den sparsamen Density-Block');
 assert.ok(!text.includes('old scene-level style text'));
 for (const scene of scenes) {
   assert.ok(!text.toLowerCase().includes(scene.id), `Szenen-ID ${scene.id} darf nicht im Flow-Prompt stehen`);
@@ -100,8 +102,8 @@ try {
 }
 
 // Echte Daten: das 45-Szenen-Stahlschiff-Video lässt sich im neuen Format bauen.
-const shipDir = 'channels/science/reels/2026-10-12_bis_2026-10-18/01_Warum-sinkt-ein-riesiges-Stahlschiff-nicht';
-if (fs.existsSync(path.join(shipDir, '06-projektdateien/flow-plan.json'))) {
+const shipDir = ['YouTube', 'reels'].map((folder) => `channels/science/${folder}/2026-10-12_bis_2026-10-18/01_Warum-sinkt-ein-riesiges-Stahlschiff-nicht`).find((dir) => fs.existsSync(path.join(dir, '06-projektdateien/flow-plan.json')));
+if (shipDir) {
   const read = (rel) => fs.readFileSync(path.join(shipDir, rel), 'utf8').trim();
   const shipPlan = JSON.parse(read('06-projektdateien/scene-plan.json'));
   const shipPrompts = Object.fromEntries(shipPlan.scenes.map((scene) => [scene.id, read(`02-bilder/prompts/${scene.id}.txt`)]));

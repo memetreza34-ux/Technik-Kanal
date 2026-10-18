@@ -63,7 +63,7 @@ const exportOnlyCover = plan.productionProfile === 'youtube-6to7min-v1';
 const thumbnailImages=findMedia(exportOnlyCover?paths.exportCoverDir:paths.thumbnailDir,imageExtensions).filter((file)=>!path.basename(file).startsWith('.generated-'));
 const thumbnailApproved=thumbnailImages.filter((file)=>approvedPattern.test(path.basename(file)));
 let selectedThumbnail=null;
-if(exportOnlyCover && thumbnailImages.length!==1) errors.push(`Finales Export-Cover: genau eine Bilddatei unter 05-export/cover erwartet, gefunden ${thumbnailImages.length}.`);
+if(exportOnlyCover && thumbnailImages.length!==1) errors.push(`Finales Export-Cover: genau eine Bilddatei unter 05-export als cover.png oder cover.jpg erwartet, gefunden ${thumbnailImages.length}.`);
 if(!exportOnlyCover && thumbnailImages.length<config.visuals.thumbnail.candidateCount) errors.push(`Thumbnail: mindestens ${config.visuals.thumbnail.candidateCount} Kandidaten erforderlich; gefunden ${thumbnailImages.length}.`);
 if(thumbnailApproved.length!==1) errors.push(`Thumbnail: genau ein Kandidat muss als final/approved/freigabe markiert sein; gefunden ${thumbnailApproved.length}.`);
 else {

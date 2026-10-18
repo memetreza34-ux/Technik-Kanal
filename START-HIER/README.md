@@ -12,4 +12,4 @@ Google Flow soll nach den drei Covervorschlägen nur für deine Auswahl stoppen 
 
 Dateien können `01.png` bis `45.png` heißen, das gewählte Cover `00-thumbnail-final.png` und die Sprachaufnahme `voiceover-raw.wav`. Keine Unterordner erforderlich.
 
-Nach der Ablage per `npm run technik:import -- "START-HIER/warum-sinkt-ein-riesiges-stahlschiff-nicht"` sicher übernehmen. Die technische Originalstruktur bleibt unter `channels/science/` erhalten.
+Im internen Projektordner `channels/science/YouTube/` heißt der fertige Export `05-export/` und enthält nur Video, Cover und Caption. Keine weiteren Unterordner.\n\nNach der Ablage per `npm run technik:import -- "START-HIER/warum-sinkt-ein-riesiges-stahlschiff-nicht"` sicher übernehmen. Die technische Originalstruktur bleibt unter `channels/science/` erhalten.

@@ -44,7 +44,7 @@ if (!safeFlowBuilder.includes('enforceScenePromptLocks')) errors.push('Safe-Buil
 if (!safeFlowBuilder.includes('enforceMasterVisibleTextLock')) errors.push('Safe-Builder schützt Masterprompt nicht.');
 
 if (projectStructure.includes("'03-caption'")) errors.push('03-caption darf nicht wieder als Produktionsordner eingeführt werden.');
-if (!projectStructure.includes("captionsDir: path.join(root, '05-export')")) errors.push('Caption-/Timing-Ausgaben müssen direkt in 05-export liegen.');
+if (!projectStructure.includes("captionsDir: path.join(root, '06-projektdateien')")) errors.push('Caption-/Timing-Dateien liegen intern in 06-projektdateien (seit dem flachen YouTube-Export).');
 
 const budget = config.visuals?.informationBudget;
 if (budget?.normalScenePreferredLabelsMax !== 1 || budget?.normalSceneHardLabelsMax !== 2) errors.push('Density-Lock für normale Labels wurde gelockert.');

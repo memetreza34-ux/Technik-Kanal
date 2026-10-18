@@ -28,6 +28,13 @@ export const loadElectricalConfig = (profile) => {
         ...config.visuals,
         beats: long.visualBeats,
         diversity: {...config.visuals.diversity, minimumDistinctVisualTypesPerVideo: long.visualSystem.minimumDistinctVisualTypesPerVideo},
+        informationBudget: {...config.visuals.informationBudget,
+          normalScenePreferredLabelsMax: long.visualSystem.normalScenePreferredLabelsMax ?? 2,
+          normalSceneHardLabelsMax: long.visualSystem.normalSceneHardLabelsMax ?? 3,
+          diagramComparisonSummaryLabelsMax: long.visualSystem.diagramComparisonSummaryLabelsMax ?? 5,
+          panelsMax: long.visualSystem.panelsMax ?? 3,
+          arrowsMax: long.visualSystem.arrowsMax ?? 4
+        },
       },
     };
   }

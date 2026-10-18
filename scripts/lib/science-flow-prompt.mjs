@@ -19,6 +19,14 @@ export const DENSITY_LOCK_HEADING = 'DENSITY LOCK — MINIMUM NECESSARY INFORMAT
 export const DENSITY_LOCK = `${DENSITY_LOCK_HEADING}
 Keep every scene visually sparse and immediately readable. One dominant explanatory idea only. In a normal scene prefer one main object and never exceed three important visual elements. Prefer zero or one short German label; never exceed two labels in a normal scene. Use at most two arrows and at most two panels. No large scene headline, no full-sentence text, no floating info boxes, no secondary mini-diagrams and no decorative technical clutter. Comparison/diagram/summary scenes may use at most four important visual elements and three short German labels, but still only one central message. Make the main idea legible in under two seconds and physically plausible.`;
 
+export const TECHNICAL_DENSITY_LOCK_HEADING = 'DENSITY LOCK — TECHNICAL EXPLANATION FIRST';
+
+// 6–7-Minuten-Profil: technische Erklärbilder dürfen mehr tragen (siehe gehirn/BILDWELT.md).
+export const TECHNICAL_DENSITY_LOCK = `${TECHNICAL_DENSITY_LOCK_HEADING}
+Keep one clear scientific idea per image. Normal scenes may use 1–3 short accurate German labels if helpful. In technical diagrams, schematics, cross-sections, comparisons and infographics, use up to 5 purposeful German labels, 3 panels and 4 arrows when needed. Use essential formulas, units, dimensions, legends and concise German callouts; every annotation must match the spoken explanation. Labels must be readable on a phone, not tiny decorative text. Prefer at least one third technical explanatory visuals across the whole video and vary views and illustration types; no repeated generic beauty shots of the same object. No unsupported numbers, incorrect physics, made-up facts, English words or production metadata inside images. Correct scientific content takes priority over sparse minimalism.`;
+
+export const densityLockFor = (profile) => profile === 'youtube-6to7min-v1' ? TECHNICAL_DENSITY_LOCK : DENSITY_LOCK;
+
 // Wörter, die nur Produktionsmetadaten sind und nie im Bild stehen dürfen.
 export const SECTION_WORDS = ['hook', 'context', 'foundation', 'mechanism', 'deepening', 'payoff'];
 
@@ -105,9 +113,9 @@ export const findFlowPromptLeaks = (masterText, plan = {}) => {
     if (voice.length >= 30 && text.includes(voice.slice(0, 60))) issues.push(`${id}: Sprechtext steht wörtlich im Flow-Prompt.`);
   }
   if (/OUTPUT\s*=\s*IMAGE|VISUAL\s*=|MOTIF\s*=|Scene ID\b/i.test(text)) issues.push('Technische Kopfzeilen (OUTPUT=, VISUAL=, MOTIF=, Scene ID) stehen im Flow-Prompt.');
-  const styleLocks = text.split(STYLE_LOCK_HEADING).length - 1;
+  const styleLocks = (text.match(/^STYLE LOCK —/gm) ?? []).length;
   if (styleLocks !== 1) issues.push(`Stilblock steht ${styleLocks}-mal im Flow-Prompt; erwartet genau einmal.`);
-  const densityLocks = text.split(DENSITY_LOCK_HEADING).length - 1;
+  const densityLocks = (text.match(/^DENSITY LOCK —/gm) ?? []).length;
   if (densityLocks !== 1) issues.push(`Density-Block steht ${densityLocks}-mal im Flow-Prompt; erwartet genau einmal.`);
   return issues;
 };

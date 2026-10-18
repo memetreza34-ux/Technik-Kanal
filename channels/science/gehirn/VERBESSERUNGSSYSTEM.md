@@ -1,3 +1,26 @@
+## Fehlervermeidung und verpflichtender Verbesserungszyklus – verbindlich ab der nächsten Videoproduktion
+
+**Keine Korrektur des bereits exportierten Schiffs-Videos.** Seine Fehler sind ein Negativbeispiel für die nächste Produktion.
+
+1. **Vor Phase 1:** `npm run science:learn -- start "<video-ordner>"` führt aktuelle Kanal-Lektionen, echte Messwerte und freigegebene qualitative Beobachtungen zusammen. In `06-projektdateien/learning-brief.json` müssen `thisVideoHypothesis`, `oneControlledChange`, `primarySuccessMetric` konkret ausgefüllt und `editorApproved` nach Prüfung auf `true` gesetzt sein. `science:preflight` stoppt sonst. Keine falschen Kausalversprechen.
+2. **Flow-Bilder:** Weiterhin nur **eine** Nutzer-Promptdatei plus Fließtext-Skript im `START-HIER`-Ordner. Alle Flow-Szenen dürfen technische deutsche Beschriftungen enthalten, aber **niemals** Szenen-/Beatnummern, Dateinamen, englische Produktionsphasen oder unsinnige Fake-Werte (Beispiel `35 | DEEPENING`). Remotion darf **keine eigenen Szenen-Headlines oder Kickers mehr einblenden**. Cover bleibt getrennt.
+3. **Nach Google Flow und vor Rendering:** `npm run science:asset-review -- init "<video-ordner>"` erstellt **intern** `06-projektdateien/asset-review.json`; alle Bilder tatsächlich ansehen, mit Sprechertext, Plausibilität, deutscher Beschriftung, Smartphone-Lesbarkeit, fehlenden Produktionsmetadaten und Bildvielfalt abgleichen. Für jedes geprüfte Bild die sechs Qualitätsfelder `true`, `status="approved"`, `reviewer` und `reviewedAt` nur **nach echter Sichtprüfung** setzen. Nicht blind freigeben. Datei-Hashes machen alte Freigaben nach Medienänderung ungültig. `science:ready`, `science:prepare` und `science:render` verweigern ungeprüfte Bilder. **Keine OCR- oder KI-Erkennung als garantiert behaupten:** die fachliche Text- und Bildprüfung benötigt eine echte Sichtung.
+4. **Nach dem fertig gerenderten Video:** Szenen und Ton vollständig überprüfen. `npm run science:learn -- review "<video-ordner>"` erstellt eine interne Retrospektive `editorial-decisions.json`. Nur mit belegter Beobachtung, konkreter Maßnahme, Messziel und expliziter Freigabe wird sie ins nächste Video übernommen.
+5. **Nach Veröffentlichung:** `06-projektdateien/youtube-analytics.json` mit echten YouTube-Studio-Zahlen bei 24h/72h/7d/28d füllen und `npm run science:learn -- report "<video-ordner>"` ausführen. Retention, CTR, Zuschauer und Abos vergleichbar beurteilen. Automatische Empfehlungen sind **Hypothesen**, keine nachgewiesenen Erfolge.
+6. **Nächste Phase 1:** Alle aktiven Kanal-Lektionen, den letzten freigegebenen Qualitätsbefund und ggf. datengestützte Testhypothesen einlesen. Ein geplantes Experiment konsequent dokumentieren. Keine doppelte Prompt- oder Ordnerflut für den Nutzer.
+
+## Verbindliche Ordnernamen und sauberer Export
+
+Das GitHub-Repository heißt **Technik-Kanal**. Unter `channels/science/` gibt es künftig **`YouTube/`** statt `reels/`; der alte Ordner `channels/elektrotechnik` ist im aktuellen Branch bereits entfernt. Ein lokaler Mac-Ordner mit dem Namen `Elektrotechnik-Kanal` muss am Mac selbst umbenannt und mit Git synchronisiert werden – GitHub ändert keinen Finder-Ordnernamen.
+
+**`05-export/` enthält sichtbar ausschließlich:** `video.mp4`, `cover.png` (oder Bilddatei im Originalformat) und `caption.txt`. Keine Unterordner, Metadaten, SRT, Analytics oder Kontaktbögen an dieser Stelle. Alle technischen Hilfsdateien gehören nach `06-projektdateien/`.
+
+**Nur zwei Kopierdateien:** `START-HIER/<slug>/01-SKRIPT.txt` und `02-GOOGLE-FLOW-PROMPT.txt`. Das Masterprompt enthält Cover und alle Bilder; alle fertigen Bilder und die Stimme werden unter `DATEIEN-HIER-REIN/` gesammelt.
+
+## Bildwelt – Verbesserung aus dem Schiffs-Video
+
+Premium **Technical Editorial Explainer 2.5D** mit technisch korrekten Querschnitten, Schnittmodellen, Funktionsschemas, Diagrammen, Vergleichstabellen und verständlichen Infografiken. Bei langen YouTube-Videos ungefähr **ein Drittel bis die Hälfte** der Bilder gezielt als technische Erklärung statt dekorative Außenansicht planen. **Beschriftungen sind ausdrücklich erwünscht**, wo sie echte Fragen beantworten: normale Szenen bis zu drei, komplexe technische Infografiken bis zu fünf kurze deutsche Labels sowie nötige Zahlen, Einheiten, Formeln, Legenden und Pfeile. Alles muss am Smartphone lesbar sein; niemals erfundene Werte, Fehler, englische Bildwörter oder winzige unlesbare Schriften. Kein starrer Pflichtmix: Illustration passend zum Sprechertext wählen. Die Kritik am letzten Video ist eine redaktionelle Beobachtung, noch kein Beweis für höhere Views.
+
 ## EIN Flow-Prompt – verbindliche Phase-1-Nutzerübergabe
 
 Jede Phase 1 erzeugt im `START-HIER/<video-slug>/` **exakt zwei Nutzer-Textdateien**: `01-SKRIPT.txt` (Fließtext) und `02-GOOGLE-FLOW-PROMPT.txt` (eine einzige vollständig kopierbare Flow-Anweisung mit 3 Coverkandidaten und *allen* Szenen). Plus `DATEIEN-HIER-REIN/` für fertige Medien. **Keine fünf Flow-Pakete, kein separater Coverprompt, kein zweiter Flow-Master für den Nutzer.** Interne technische Einzelprompts dürfen bestehen bleiben.
@@ -18,7 +41,7 @@ Jeder Agent (Claude, Codex, Antigravity, ChatGPT) liest diese Datei **vor der Pl
 2. **Thema und Verpackung**: konkreter Nutzen für die Zielgruppe, Neugierlücke ohne Täuschung, unterscheidbarer Titel, klares Thumbnail-Versprechen, Hook der dasselbe Versprechen einlöst. Keine künstlichen Versprechen oder Clickbait, den das Video nicht erfüllt.
 3. **Während der Produktion**: Script-/Beat-Logik, die ersten 30 Sekunden, fachlich korrekte leicht lesbare 2.5D-Bilder, Bildwechsel an Erkenntnisschritten, keine unnötigen Füllsätze und keine wiederholten Motive. Letztes Video als Maßstab für konkrete Schwächen benutzen.
 4. **NACH dem Rendern**: vollständige MP4 mit Ton ansehen, Kontaktbogen und Thumbnail visuell prüfen, Retrospektive POST-VIDEO-REVIEW.md mit Fehlern/Stärken ausfüllen. Renderer-QA alleine reicht nicht. Phase 3 darf weiterhin keine Google-Flow-Bilder selbst erzeugen.
-5. **NACH Veröffentlichung**: echte Studio-Zahlen nach ungefähr 24 h, 72 h, 7 d und 28 d in 05-export/youtube-analytics.json übernehmen. Mit npm run science:learn -- report VIDEO_ORDNER vergleichen. Messwerte nicht schätzen; fehlende Felder null lassen. Kennzahlen ändern sich mit der Zeit; capturedAt und publishedAt eintragen.
+5. **NACH Veröffentlichung**: echte Studio-Zahlen nach ungefähr 24 h, 72 h, 7 d und 28 d in 06-projektdateien/youtube-analytics.json übernehmen. Mit npm run science:learn -- report VIDEO_ORDNER vergleichen. Messwerte nicht schätzen; fehlende Felder null lassen. Kennzahlen ändern sich mit der Zeit; capturedAt und publishedAt eintragen.
 6. **LERNEN**: Einbrüche der Retentionskurve anhand der Zeitstempel prüfen. Ergebnisse mit gleichen Zeitfenstern und ähnlicher Videolänge vergleichen. Editoriale Beobachtung von Ursache-Hypothese unterscheiden. Maximal drei konkrete Verbesserungen für das nächste Video beschließen; jede hat Beobachtung, Hypothese, Änderung und Erfolgskriterium.
 7. **DAUERHAFT VERANKERN**: bestätigte redaktionelle/technische Fehler als Regel/Test in active-lessons.json und passenden QA-/Promptregeln verankern. Hypothesen bleiben ausdrücklich Hypothesen. Erfolgreiche Tests bei genügend Daten wiederholen, schwache Ansätze überarbeiten oder verwerfen. Die neue Videovorlage übernimmt aktive Regeln und die letzten datenbasierten Testideen automatisch.
 
@@ -46,7 +69,7 @@ Wichtig: Thema, Veröffentlichungszeit, Zielgruppe, Traffic-Quelle und Ausspielu
 - Globale Lernregeln: channels/science/learning/active-lessons.json
 - Neuer Videobrief: 06-projektdateien/learning-brief.json
 - Video-Retrospektive: 06-projektdateien/POST-VIDEO-REVIEW.md
-- Reale Studio-Messwerte: 05-export/youtube-analytics.json
+- Reale Studio-Messwerte: 06-projektdateien/youtube-analytics.json
 - Maschinenlesbare Auswertung: 06-projektdateien/learning-report.json
 
 Befehle:

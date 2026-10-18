@@ -13,5 +13,6 @@ run(process.execPath, ['scripts/science-preflight.mjs', project], {cwd: reposito
 run(process.execPath, ['scripts/science-required-media.mjs', project], {cwd: repositoryRoot});
 run(process.execPath, ['scripts/science-image-qa.mjs', project], {cwd: repositoryRoot});
 run(process.execPath, ['scripts/science-image-text-qa.mjs', project], {cwd: repositoryRoot});
+run(process.execPath, ['scripts/science-asset-review.mjs', 'check', project], {cwd: repositoryRoot});
 run(process.execPath, ['scripts/science-runtime-readiness.mjs', project], {cwd: repositoryRoot});
 console.log('✓ Science-Readiness bestanden: Preflight, Voice, alle finalen 16:9-Szenenbilder, separates Thumbnail, Bild-QA und OCR-Text-Gate sind bereit.');

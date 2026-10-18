@@ -56,12 +56,12 @@
     "thumbnailHeadlineMayLeakIntoScenes": false,
     "largeSceneHeadlineAllowed": false,
     "burnedInCaptions": false,
-    "normalScenePreferredLabelsMax": 1,
-    "normalSceneHardLabelsMax": 2,
+    "normalScenePreferredLabelsMax": 2,
+    "normalSceneHardLabelsMax": 3,
     "normalScenePrimaryObjectsMax": 3,
     "sameCompositionMaxConsecutive": 1,
     "minimumDistinctVisualTypesPerVideo": 7,
-    "coverExportDir": "05-export/cover",
+    "coverExportDir": "05-export",
     "coverInVideoForbidden": true,
     "scene01MustBeIndependent": true,
     "visualBeatPacingSeconds": {
@@ -69,7 +69,12 @@
       "preferredMax": 9,
       "reviewIfLongerThan": 10
     },
-    "extraBeatsWhenExplanationChanges": true
+    "extraBeatsWhenExplanationChanges": true,
+    "diagramComparisonSummaryLabelsMax": 5,
+    "panelsMax": 3,
+    "arrowsMax": 4,
+    "minimumTechnicalDiagramShare": 0.35,
+    "annotationRule": "Prefer purposeful German labels, simple formulas and units, clear arrows and engineering schematics. No fake data or decorative legends."
   },
   "phase3": {
     "mayGenerateVisualAssets": false,

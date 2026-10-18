@@ -9,10 +9,10 @@ describe('science project folder gate', () => {
     expect(ELECTRICAL_REEL_DIRECTORIES).not.toContain('03-caption');
     const root = fs.mkdtempSync(path.join(os.tmpdir(), 'science-folder-'));
     const paths = electricalProjectPaths(root);
-    expect(paths.socialCaption).toBe(path.join(root, '05-export/social-caption.md'));
-    expect(paths.wordTimestamps).toBe(path.join(root, '05-export/word-timestamps.json'));
-    expect(paths.captionsFinal).toBe(path.join(root, '05-export/voiceover-final.captions.json'));
-    expect(paths.captionsDir).toBe(path.join(root, '05-export'));
+    expect(paths.socialCaption).toBe(path.join(root, '06-projektdateien/social-caption.md'));
+    expect(paths.wordTimestamps).toBe(path.join(root, '06-projektdateien/word-timestamps.json'));
+    expect(paths.captionsFinal).toBe(path.join(root, '06-projektdateien/voiceover-final.captions.json'));
+    expect(paths.captionsDir).toBe(path.join(root, '06-projektdateien'));
     fs.rmSync(root, {recursive: true, force: true});
   });
 

@@ -4,7 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {electricalProjectPaths} from './lib/electrical-project-structure.mjs';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
-import {DENSITY_LOCK, FLOW_PROMPT_VERSION, STYLE_LOCK, findFlowPromptLeaks, flowSceneBlock} from './lib/science-flow-prompt.mjs';
+import {FLOW_PROMPT_VERSION, STYLE_LOCK, densityLockFor, findFlowPromptLeaks, flowSceneBlock} from './lib/science-flow-prompt.mjs';
 
 const normalize = (value) => String(value ?? '').trim().toLowerCase();
 
@@ -12,7 +12,7 @@ const normalize = (value) => String(value ?? '').trim().toLowerCase();
 // Stil- und Density-Block stehen genau einmal oben; jede Szene bekommt nur einen neutralen Bildauftrag
 // ohne Szenen-ID, Abschnittsnamen, Motiv-Slug oder Sprechtext (siehe scripts/lib/science-flow-prompt.mjs).
 export const buildGoogleFlowMasterPrompt = ({plan, flowPlan, config, thumbnailPrompt, scenePrompts}) => {
-  if(plan.productionProfile==='youtube-6to7min-v1' && (flowPlan.scene01IndependentFromCover!==true || flowPlan.coverNeverUsedAsVideoFrame!==true || flowPlan.coverExportDir!=='05-export/cover')) throw new Error('Cover ist nicht ausschließlich Exportasset oder Szene 01 keine eigene Illustration.');
+  if(plan.productionProfile==='youtube-6to7min-v1' && (flowPlan.scene01IndependentFromCover!==true || flowPlan.coverNeverUsedAsVideoFrame!==true || flowPlan.coverExportDir!=='05-export')) throw new Error('Cover ist nicht ausschließlich Exportasset oder Szene 01 keine eigene Illustration.');
   const scenes = Array.isArray(plan.scenes) ? plan.scenes : [];
   const flowScenes = Array.isArray(flowPlan.scenes) ? flowPlan.scenes : [];
   const stepCount = Number(config.visuals?.flow?.imageProductionSteps ?? 5);
@@ -103,6 +103,7 @@ export const buildGoogleFlowMasterPrompt = ({plan, flowPlan, config, thumbnailPr
   if (handOnObjectCount > Number(diversity.handOnObjectPrimaryMotifMaxPerVideo ?? 3)) throw new Error(`Hand-auf-Gegenstand-Motiv kommt ${handOnObjectCount}-mal vor; zu häufig.`);
 
   const total = scenes.length;
+  const coverDir = flowPlan.coverExportDir ?? '05-export';
   const lines = [];
   lines.push('GOOGLE FLOW MASTER PROMPT — WISSONAUT — NUR BILDER / IMAGE ONLY');
   lines.push('================================================================');
@@ -114,7 +115,7 @@ export const buildGoogleFlowMasterPrompt = ({plan, flowPlan, config, thumbnailPr
   lines.push('');
   lines.push(STYLE_LOCK);
   lines.push('');
-  lines.push(DENSITY_LOCK);
+  lines.push(densityLockFor(plan.productionProfile));
   lines.push('');
   lines.push('WAS INS BILD GEHÖRT');
   lines.push('-------------------');
@@ -124,7 +125,7 @@ export const buildGoogleFlowMasterPrompt = ({plan, flowPlan, config, thumbnailPr
   lines.push('');
   lines.push('VERBINDLICHE WORKFLOW-REGELN / BINDING WORKFLOW');
   lines.push('1. Zuerst genau DREI Thumbnail-Kandidaten gemäß dem Coverprompt erzeugen; dann STOPP und auf die ausdrückliche AUSWAHL des Nutzers warten.');
-  lines.push('2. Die ZWEI NICHT GEWÄHLTEN COVER entfernen. Gewinner als 00-thumbnail-final ausschließlich nach 05-export/cover exportieren; niemals als Videobild verwenden.');
+  lines.push(`2. Die ZWEI NICHT GEWÄHLTEN COVER entfernen. Gewinner als 00-thumbnail-final ausschließlich nach ${coverDir} exportieren; niemals als Videobild verwenden.`);
   lines.push('3. Bild 1 unabhängig vom Cover gestalten: KEINE Farbpalette, KEINE Layoutvorlage, keine Cover-Schlagzeile und keine wiederholte Cover-Komposition auf Videoszenen übertragen.');
   lines.push(`4. Danach genau ${stepCount} Bildschritte. Jeweils EIN finales Bild pro Bildauftrag erzeugen, sofort prüfen und wie angegeben speichern. KEINE WEITEREN STOPPS ODER RÜCKFRAGEN zwischen BILDSCHRITT 1 und ${stepCount}.`);
   lines.push('5. VISUELLE VIELFALT IST PFLICHT: Komposition, Darstellungsform und Perspektive wechseln, ohne den STYLE LOCK zu verlassen. Kein Bild darf das vorige praktisch wiederholen.');
@@ -160,7 +161,7 @@ export const buildGoogleFlowMasterPrompt = ({plan, flowPlan, config, thumbnailPr
   lines.push('PHASE 3 – FINALE ASSET-BEREINIGUNG');
   lines.push('-----------------------------------');
   lines.push(`1. Genau EINE finale Google-Flow-Sammlung namens „${flowPlan.finalCollectionName}“ verwenden.`);
-  lines.push('2. Dort nur die finalen Szenenbilder sammeln. 00-thumbnail-final getrennt nach 05-export/cover exportieren; niemals als Videobild verwenden.');
+  lines.push(`2. Dort nur die finalen Szenenbilder sammeln. 00-thumbnail-final getrennt nach ${coverDir} exportieren; niemals als Videobild verwenden.`);
   lines.push('3. Die zwei nicht gewählten Cover, Zwischenstände, Fehlversuche, Duplikate und verworfene Varianten entfernen.');
   lines.push(`4. Reihenfolge und Dateinamen 01.png bis ${String(total).padStart(2,'0')}.png prüfen.`);
   lines.push('5. Den Abschluss erst melden, wenn die Sammlung nur finale Assets enthält.');
