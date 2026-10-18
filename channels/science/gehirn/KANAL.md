@@ -74,18 +74,19 @@ Wissenschaft und Technik so erklären, dass Jugendliche und junge Erwachsene nac
 
 Aktuell produzieren wir **normale YouTube-Videos**, keine Reels.
 
-Verbindlich ist `youtube-2min-v1`:
+Verbindlich ist `youtube-6to7min-v1`:
 
+- normales YouTube-Video, kein Reel
 - 16:9 / 1920×1080 / 30 fps
-- ungefähr 2 Minuten
-- 90–150 Sekunden, 120 Sekunden ideal
-- ungefähr 230–370 Wörter, 300 ideal
-- ungefähr 12–28 visuelle Beats, 20 ideal
+- 360–420 Sekunden (6–7 Minuten), 390 Sekunden ideal
+- ungefähr 850–1075 Wörter, 975 ideal
+- 34–50 visuelle Beats, 46 ideal
+- Bildwechsel meist nach 5–9 Sekunden; über 10 Sekunden prüfen, ob ein weiteres Bild nötig ist
 - separates 1280×720-Thumbnail mit drei Kandidaten
 - deutsche Voice
 - statische Bildszenen und harte Schnitte
 
-Der spätere Ausbau auf ungefähr 8–12 Minuten bekommt ein eigenes Longform-Profil. Das 2-Minuten-Format wird zuerst sauber getestet und nicht künstlich gestreckt.
+Das 2-Minuten-Profil `youtube-2min-v1` (90–150 s, 230–370 Wörter, 12–28 Beats) ist **archiviert**. Es bleibt nur für die Testphasen-Videos vom 28.09.–04.10.2026 ladbar und wird für neue Videos nicht mehr verwendet. Längere Videos (8–12 Minuten) bekommen später ein eigenes Profil und entstehen nicht durch künstliches Strecken.
 
 ## Erzählstruktur
 

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
 import {evaluateScienceVisualPolicy} from './lib/science-visual-policy.mjs';
 
-const config=loadElectricalConfig();
+const config=loadElectricalConfig('youtube-2min-v1');
 const scenes=Array.from({length:12},(_,index)=>({
   id:`${String(index+1).padStart(2,'0')}-scene`,
   title:index===0?'Warum passiert das?':`Szene ${index+1}`,

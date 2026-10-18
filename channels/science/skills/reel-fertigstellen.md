@@ -1,6 +1,6 @@
 # Skill: Science-YouTube-Video vollständig fertigstellen
 
-Aktives Profil: **`youtube-2min-v1`**.
+Aktives Profil: **`youtube-6to7min-v1`** (6–7 Minuten). Das 2-Minuten-Profil ist archiviert.
 
 ## Phase 1 – Thema, Recherche und Story
 
@@ -18,7 +18,7 @@ Wichtig: **nicht automatisch ein Satz = ein Bild**. Ein komplizierter Satz darf 
 
 ## Phase 2 – Bildplanung
 
-Aktive Bildwelt: **Scientific Scene Explainer v1**.
+Aktive Bildwelt: **Technical Editorial Explainer 2.5D** (siehe `gehirn/BILDWELT.md`).
 
 Kernregel: Nicht einfach ein Bild vom Thema erzeugen. Eine visuelle Szene bauen, die genau die aktuelle visuelle Aussage erklärt.
 

@@ -1,6 +1,8 @@
 {
   "version": "science-v1",
-  "productionProfile": "youtube-2min-v1",
+  "productionProfile": "youtube-6to7min-v1",
+  "baseValuesProfile": "youtube-2min-v1",
+  "profileNote": "Aktiv ist youtube-6to7min-v1 (6–7 Minuten). Länge, Wörter und Beats dieser Datei sind die Basiswerte des archivierten 2-Minuten-Testprofils; das aktive Profil überschreibt sie aus youtube-6to7min-v1.json. Immer über loadElectricalConfig(plan.productionProfile) laden.",
   "format": {
     "width": 1920,
     "height": 1080,

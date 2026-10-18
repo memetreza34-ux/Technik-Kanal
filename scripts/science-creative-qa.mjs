@@ -5,6 +5,7 @@ import {ScenePlan} from './lib/electrical-contracts.mjs';
 import {electricalProjectPaths} from './lib/electrical-project-structure.mjs';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
 import {evaluateScienceVisualPolicy} from './lib/science-visual-policy.mjs';
+import {FLOW_PROMPT_VERSION,findFlowPromptLeaks,flowSceneBrief} from './lib/science-flow-prompt.mjs';
 
 const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
 if (!projectArg) throw new Error('Nutzung: npm run science:creative-qa -- <video-ordner>');
@@ -152,7 +153,9 @@ else {
   if (!/(ohne zwischenstopp|keine weiteren stopps|keine zwischenstopps|direkt mit bildschritt)/i.test(flowMaster)) errors.push('Flow-Masterprompt muss die automatische Fortsetzung zwischen allen fünf Bildschritten ausdrücklich verlangen.');
   if (!/(erst nach.*bildschritt 5|nach abschluss von bildschritt 5|gesamtabschluss)/i.test(flowMaster)) errors.push('Flow-Masterprompt muss den Gesamtabschluss erst nach Bildschritt 5 vorsehen.');
   if (thumbnailPrompt && !normalize(flowMaster).includes(normalize(thumbnailPrompt))) errors.push('Thumbnail-Prompt fehlt im Masterprompt.');
-  for (const scene of plan.scenes) if (promptFiles[scene.id] && !normalize(flowMaster).includes(normalize(promptFiles[scene.id]))) errors.push(`${scene.id}: Bildprompt fehlt im Masterprompt.`);
+  for (const scene of plan.scenes) if (promptFiles[scene.id] && !normalize(flowMaster).includes(normalize(flowSceneBrief(promptFiles[scene.id],scene)))) errors.push(`${scene.id}: Bildauftrag fehlt im Masterprompt oder ist veraltet.`);
+  if (flowMaster.includes(FLOW_PROMPT_VERSION)) for (const leak of findFlowPromptLeaks(flowMaster,plan)) errors.push(`Flow-Masterprompt: ${leak}`);
+  else warnings.push('Flow-Masterprompt ist noch im alten Format (Szenen-IDs und wiederholter Stilblock). Mit npm run science:flow-master neu erzeugen, bevor Bilder entstehen.');
 }
 
 if (!/(00-thumbnail-final)/i.test(cleanupText)) errors.push('Flow-Cleanup muss das ausgewählte Cover als 00-thumbnail-final benennen.');

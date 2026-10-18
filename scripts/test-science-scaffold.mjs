@@ -8,9 +8,9 @@ import {ELECTRICAL_REEL_DIRECTORIES, checkElectricalProjectStructure} from './li
 const root = fs.mkdtempSync(path.join(os.tmpdir(), 'science-scaffold-'));
 try {
   for (const relative of ELECTRICAL_REEL_DIRECTORIES) fs.mkdirSync(path.join(root, relative), {recursive: true});
-  const plan = createElectricalScenePlanTemplate({slug: 'science-scaffold-test', sceneCount: 20});
-  if (plan.scenes.length !== 20) throw new Error('Science-Template hat nicht zwanzig Standard-Beats.');
-  if (plan.productionProfile !== 'youtube-2min-v1') throw new Error('youtube-2min-v1 fehlt im Scaffold.');
+  const plan = createElectricalScenePlanTemplate({slug: 'science-scaffold-test'});
+  if (plan.scenes.length !== 46) throw new Error('Science-Template hat nicht 46 Standard-Beats.');
+  if (plan.productionProfile !== 'youtube-6to7min-v1') throw new Error('youtube-6to7min-v1 fehlt im Scaffold.');
   if (plan.width !== 1920 || plan.height !== 1080) throw new Error('Scaffold ist nicht 1920×1080.');
   if (plan.visualPolicyVersion !== 'science-static-v1') throw new Error('Science-Static-Policy fehlt im Scaffold.');
   if (plan.compositionId !== 'ScienceReel') throw new Error('ScienceReel fehlt im Scaffold.');
@@ -20,7 +20,7 @@ try {
   }
   const structure = checkElectricalProjectStructure(root, {requireContent: false});
   if (!structure.ok) throw new Error(`Scaffold-Struktur unvollständig: ${structure.missingDirectories.join(', ')}`);
-  console.log('✓ Science-Scaffold erzeugt 20 statische 16:9-Beats plus Thumbnail-Struktur.');
+  console.log('✓ Science-Scaffold erzeugt 46 statische 16:9-Beats (6–7 Minuten) plus Thumbnail-Struktur.');
 } finally {
   fs.rmSync(root, {recursive: true, force: true});
 }

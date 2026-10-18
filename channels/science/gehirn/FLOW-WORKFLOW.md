@@ -96,6 +96,16 @@ Jeder Beat in `flow-plan.json` braucht zusätzlich ein `informationBudget` mit:
 
 Ohne gültiges Informationsbudget darf der Flow-Masterprompt nicht gebaut werden.
 
+### Aufbau des Masterprompts (flow-master-v2, seit 18.10.2026)
+
+Der Masterprompt wird ausschließlich mit `npm run science:flow-master -- "<video-ordner>"` erzeugt, nie von Hand geschrieben. Grund: Im Stahlschiff-Video standen „27 — MECHANISM“, „28-mechanism“ und „36 • DEEPENING“ in fünf fertigen Bildern. Jede Szene begann im alten Prompt mit ihrer Szenen-ID, und der Stilblock stand 46-mal im Prompt (121.000 Zeichen).
+
+- STYLE LOCK, DENSITY LOCK und VISIBLE TEXT LOCK stehen **genau einmal** oben.
+- Pro Szene nur: `BILD n VON N`, `Bildauftrag:` (der Satz hinter `EXACT VISUAL BRIEF —` aus dem Einzelprompt), Darstellungsform, die verlangten Labels, das Budget und `Speichern als NN.png`.
+- **Nie im Masterprompt:** Szenen-IDs (`27-mechanism`), Abschnittsnamen (hook, context, foundation, mechanism, deepening, payoff), Motiv-Slugs, `OUTPUT=…`-Kopfzeilen und der deutsche Sprechtext.
+- Keine Beispielwörter für verbotene Metadaten in den Prompt schreiben – das Bildmodell schreibt sie sonst eher ab.
+- Builder, Übergabe und Creative-QA brechen ab, wenn eine dieser Regeln verletzt ist.
+
 ## Phase 1 – Cover-Auswahl, danach separater Export
 
 1. Zuerst genau drei Thumbnail-Kandidaten erzeugen.
@@ -238,6 +248,7 @@ Wenn Menschen vorkommen:
 - große Überschriften primär im Thumbnail
 - keine eingebrannten Untertitel
 - Labels direkt am erklärten Objekt platzieren
+- vor dem Rendern prüft das **OCR-Text-Gate** (`npm run science:image-text-qa -- "<video-ordner>"`, automatisch in `science:ready` und `science:render`) jedes finale Szenenbild
 
 ## Erlaubte Ausgabe
 

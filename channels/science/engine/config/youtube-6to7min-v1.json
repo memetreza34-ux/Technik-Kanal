@@ -1,7 +1,7 @@
 {
   "profile": "youtube-6to7min-v1",
-  "status": "next-production-profile",
-  "purpose": "Erster Schritt nach abgeschlossener 2-Minuten-Testphase",
+  "status": "active",
+  "purpose": "Aktives Standardprofil für alle neuen Wissonaut-Videos (6–7 Minuten).",
   "format": {
     "width": 1920,
     "height": 1080,
@@ -83,5 +83,5 @@
     "maySubstituteMissingAssets": false,
     "missingAssetPolicy": "stop-and-report"
   },
-  "transitionNote": "Dieses Profil wird für das erste 6–7-Minuten-Video aktiviert. Die 2-Minuten-Videos bleiben als Test-/Referenzphase erhalten."
+  "transitionNote": "Seit 18.10.2026 aktiv und Standard in science:new. Das 2-Minuten-Profil youtube-2min-v1 ist archiviert und nur noch für die Testphasen-Videos ladbar."
 }

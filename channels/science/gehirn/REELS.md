@@ -24,17 +24,19 @@ reels/YYYY-MM-DD_bis_YYYY-MM-DD/NN_Thema/
 
 ## Aktives Produktionsprofil
 
-`youtube-2min-v1`
+`youtube-6to7min-v1`
 
-- 1920×1080 / 16:9 / 30 fps
-- 90–150 Sekunden, 120 Sekunden ideal
-- 230–370 Wörter, 300 ideal
-- 12–28 visuelle Beats, 20 ideal
+- normales YouTube-Video, kein Reel
+- 16:9 / 1920×1080 / 30 fps
+- 360–420 Sekunden (6–7 Minuten), 390 Sekunden ideal
+- ungefähr 850–1075 Wörter, 975 ideal
+- 34–50 visuelle Beats, 46 ideal
+- Bildwechsel meist nach 5–9 Sekunden; über 10 Sekunden prüfen, ob ein weiteres Bild nötig ist
 - statische Bildszenen
 - separates 1280×720-Thumbnail
 - drei Thumbnail-Kandidaten
 
-Das spätere 8–12-Minuten-Format wird als eigenes Profil gebaut. Es darf nicht einfach durch Erhöhen der Wortzahl dieses Profils entstehen.
+Das 2-Minuten-Profil `youtube-2min-v1` (90–150 s, 230–370 Wörter, 12–28 Beats) ist **archiviert**. Es bleibt nur für die Testphasen-Videos vom 28.09.–04.10.2026 ladbar und wird für neue Videos nicht mehr verwendet. Das spätere 8–12-Minuten-Format wird als eigenes Profil gebaut. Es darf nicht einfach durch Erhöhen der Wortzahl entstehen.
 
 ## Themenrahmen
 

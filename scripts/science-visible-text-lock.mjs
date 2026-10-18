@@ -6,7 +6,7 @@ import {fileURLToPath} from 'node:url';
 export const VISIBLE_TEXT_LOCK_MARKER = 'VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT';
 
 export const VISIBLE_TEXT_LOCK = `${VISIBLE_TEXT_LOCK_MARKER}
-For SCENE IMAGES, production metadata is NEVER visual content. Never render scene numbers, beat numbers, scene IDs, section names, filenames, image-step labels, final asset names or production instructions inside the image. Forbidden examples include “Szene 10”, “Scene 10”, “Beat 10”, “10-MECHANISM”, “Bildschritt 3” and “01-hook-final”.
+For SCENE IMAGES, production metadata is NEVER visual content. Never render scene numbers, beat numbers, scene IDs, section names, filenames, image-step labels, final asset names or production instructions inside the image. Only the text after “Bildauftrag:” describes the picture; headings and saving instructions are workflow notes for you, not image content.
 
 Only render visible scene text that is explicitly requested inside the scene prompt. Do not invent extra titles, headings, labels or explanatory text. Never carry a thumbnail headline into a normal scene unless that exact text is explicitly requested for that scene. If a scene prompt requests no visible text, the image must contain zero text.
 

@@ -7,12 +7,17 @@ Ein Bild soll **etwas vermitteln, das der Zuschauer durch Zuhören allein schlec
 ## Ein konsistenter Stil, viele Darstellungsformen
 
 - **Technical Editorial Explainer 2.5D**: hochwertige ruhige redaktionelle Technikillustrationen, exakte Formen, matte Oberflächen, kontrollierte weiche Schatten und dezente Tiefe.
+- Interner Kompatibilitäts-Identifier: `scientific-scene-explainer-v1` (Scientific Scene Explainer). Inhaltlich gilt ausschließlich Technical Editorial Explainer 2.5D.
 - Farben je nach Thema: warmes Off-White, Graphit, neutrale Metalle; Blau für Wasser/Kälte, Kupfer/Orange für elektrische/thermische Vorgänge, weitere Signalfarben sparsam und semantisch.
 - Geeignete Formen: 2D-Schema, Infografik, Schaltplan, Querschnitt, Explosionszeichnung, technische Prozesskette, Druck-/Kraftdiagramm, Vergleich gleicher Maßstäbe, Laboraufbau, Makro, reale Umgebung und 2.5D-Schnittmodell.
 - Kein fester Hintergrund, kein dauernd wiederholtes Schiff/Objekt aus anderen Blickwinkeln. Kein identischer Bildaufbau für benachbarte Szenen. Keine leeren gesichtslosen Köpfe, Photoshop-Stock-Ästhetik, unnötige Stickmen oder wahllose Elemente.
+- Menschen nur bei fachlichem Nutzen; keine gesichtslosen sichtbaren Köpfe – ein sichtbarer Kopf hat vollständige natürliche Gesichtszüge.
 - **Das Cover ist nie Szene 01.** Video beginnt mit einer eigenen, normalen Illustration zum Sprechertext.
+- Mindestens **7 deutlich unterschiedliche Darstellungsformen** pro 6–7-Minuten-Video.
 
 ## Wie viel technische Erklärung?
+
+Leitsatz bleibt: **so wenig Information wie möglich, so viel wie nötig.** Bei technischen Erklärbildern ist „nötig“ oft mehr als ein Label – aber nie Dekoration.
 
 Bei langen Videos als redaktionelle Planung ca. **35–50 % sinnvolle technische Schaubilder, beschriftete Cutaways, Diagramme, Vergleiche oder Infografiken** anstreben. Es gibt keine harte starre Quote: Manche Sätze brauchen eine reale Situation; andere einen klaren Querschnitt oder einen präzisen 2D-Plan. Niemals rein dekorative Diagramme einbauen, nur um eine Quote zu erfüllen.
 
@@ -24,6 +29,7 @@ Bevor Bilder erstellt werden, pro Beat notieren: **Was genau soll der Zuschauer 
 - Technische Diagramme, Schaltpläne, Vergleiche, Querschnitte oder Infografiken: **bis zu 5 sinnvolle deutsche Labels**; dazu nötige Formeln, Einheiten, Dimensionslinien und Legenden. Bis zu 3 Panels und 4 fachlich korrekte Pfeile sind möglich, wenn sie zum Verständnisschritt gehören.
 - Lesbarkeit auf dem Handy: große, kontrastreiche Beschriftungen, eindeutige Ankerlinien und genügend Abstand. Schreibweise und Physik prüfen, insbesondere Pfeilrichtung, Proportionen, Wasserstand, Schaltverbindungen und Werte. **Nie Zahlen erfinden.**
 - Große Überschriften sind nur für echte erklärende Infografiken sinnvoll; keine künstlichen Titel auf allen Bildern. Sichtbare Sprache ausschließlich Deutsch, Produktionsmetadaten wie »Scene 14« oder Dateinamen niemals ins Bild.
+- Vor dem Rendern liest das **OCR-Text-Gate** (`npm run science:image-text-qa`) jedes Szenenbild und blockiert Szenen-IDs, Abschnittsnamen und nicht verlangte große Schrift (siehe `FINAL-IMAGE-QA.md`).
 
 ## Beispiele für bessere Szenen
 

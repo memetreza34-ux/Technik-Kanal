@@ -24,13 +24,14 @@ Deutschsprachiger Faceless-Kanal für verständlich erklärte Physik, Technik, E
 
 ## Aktives Format
 
-Das aktive Profil ist **`youtube-2min-v1`**:
+Das aktive Profil ist **`youtube-6to7min-v1`**:
 
 - normales YouTube-Video, kein Reel
-- 1920×1080 / 16:9 / 30 fps
-- 90–150 Sekunden, 120 Sekunden ideal
-- 230–370 Wörter, 300 ideal
-- 12–28 visuelle Beats, 20 ideal
+- 16:9 / 1920×1080 / 30 fps
+- 360–420 Sekunden (6–7 Minuten), 390 Sekunden ideal
+- ungefähr 850–1075 Wörter, 975 ideal
+- 34–50 visuelle Beats, 46 ideal
+- Bildwechsel meist nach 5–9 Sekunden; über 10 Sekunden prüfen, ob ein weiteres Bild nötig ist
 - separates 1280×720-Thumbnail mit drei Kandidaten
 - **nur statische Szenenbilder** aus Google Flow
 - harte Schnitte
@@ -121,4 +122,4 @@ Interne Namen wie `ScienceReel` und der Ordner `reels/` bleiben nur aus Rückwä
 
 ## Neuer Langvideo-Produktionspfad (6–7 Minuten)
 
-Das erste lange Video liegt unter `reels/2026-10-05_bis_2026-10-11/01_Wie-kommt-Strom-in-deine-Steckdose/` mit 41 statischen Bildbeats und vollständigem Sprechertext. Das Profil `youtube-6to7min-v1` nutzt dieselbe 2.5D-Bildwelt und dieselben Flow-/Handoff-Regeln. Es wird pro Videoprojekt dynamisch ausgewählt, ohne die 2-Minuten-Referenzen umzuschreiben. In `05-export/caption.txt` stehen Titel und Beschreibung gemeinsam; in `skript-mit-zeitstempeln.txt` das komplette Skript mit geschätzten Beat-Zeiten, die nach echtem Audio aktualisiert werden müssen.
+Das erste lange Video liegt unter `reels/2026-10-05_bis_2026-10-11/01_Wie-kommt-Strom-in-deine-Steckdose/` mit 41 statischen Bildbeats und vollständigem Sprechertext. Das Profil `youtube-6to7min-v1` nutzt dieselbe 2.5D-Bildwelt und dieselben Flow-/Handoff-Regeln. Es ist seit 18.10.2026 das Standardprofil für neue Videos; die archivierten 2-Minuten-Videos laden weiterhin ihr eigenes Profil. In `05-export/caption.txt` stehen Titel und Beschreibung gemeinsam; in `skript-mit-zeitstempeln.txt` das komplette Skript mit geschätzten Beat-Zeiten, die nach echtem Audio aktualisiert werden müssen.
