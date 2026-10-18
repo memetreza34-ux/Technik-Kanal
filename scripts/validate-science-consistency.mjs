@@ -58,7 +58,10 @@ if(config.captions?.enabled!==false||config.captions?.burnedIn!==false) errors.p
 if(config.captions?.internalTimingAllowed!==true) errors.push('Interne Wortzeiten müssen erlaubt bleiben.');
 if(scienceReel.includes('ScienceCaptions')) errors.push('ScienceReel darf keine eingebrannten Captions rendern.');
 if(config.visuals.policyVersion!=='science-static-v1'||config.visuals.productionMode!=='flow-image-only') errors.push('Visual-Policy/Produktionsmodus falsch.');
-if(config.visuals.animationAllowed!==false||config.visuals.cameraMotionAllowed!==false) errors.push('Animation/Kamerabewegung müssen deaktiviert sein.');
+if(config.visuals.animationAllowed!==false) errors.push('Prozessanimationen müssen deaktiviert bleiben.');
+if(config.visuals.cameraMotionAllowed===true&&(!(config.visuals.cameraMotion?.maxScale<=1.05)||!(config.visuals.cameraMotion?.panPercent<=2))) errors.push('Kamerabewegung muss dezent bleiben (Zoom ≤ 5 %, Schwenk ≤ 2 %).');
+if(config.sound?.musicBedAllowed===true&&(config.sound.musicBed?.sourceNoteRequired!==true||!(config.sound.musicBed?.targetLufs<=-28))) errors.push('Musikteppich braucht Quellenangabe und muss leise bleiben (≤ −28 LUFS).');
+if(!fs.readFileSync(path.join(root,'scripts/prepare_science_reel.mjs'),'utf8').includes('assertMusicSource')) errors.push('Vorbereitung muss die Musikquelle vor dem Rendern prüfen.');
 if(config.visuals.styleId!=='scientific-scene-explainer-v1') errors.push('Aktive Bildwelt falsch.');
 if(config.visuals.fixedBackgroundForbidden!==true) errors.push('Fixer Hintergrund darf nicht erzwungen werden.');
 

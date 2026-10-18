@@ -258,8 +258,7 @@ Nicht erlaubt:
 - KI-Videoclips
 - Image-to-Video
 - animierte Prozesse
-- Zoom/Pan/Ken-Burns
-- generierte Kamerafahrten
+- generierte Kamerafahrten in Flow (die dezente Kamerabewegung macht ausschließlich Remotion)
 
 ## Bildwelt
 
@@ -271,9 +270,9 @@ Leitregel:
 
 ## Remotion-Grenze
 
-Remotion darf statische Bilder anzeigen, harte Schnitte setzen, Voice-over abspielen, optionale SFX platzieren und rendern.
+Remotion darf statische Bilder mit dezenter virtueller Kamera (höchstens 4 % Zoom, 1,5 % Schwenk) anzeigen, harte Schnitte setzen, Voice-over und einen leisen Musikteppich mit Quellenangabe abspielen, optionale SFX platzieren und rendern.
 
-Remotion darf keine Untertitel/Captions ins finale Video rendern, keine Bewegung aus Standbildern erzeugen, nicht zoomen/schwenken, keine wissenschaftlichen Prozesse animieren und keine Videoclips erwarten.
+Remotion darf keine Untertitel/Captions ins finale Video rendern, keine wissenschaftlichen Prozesse animieren, keine Übergangseffekte erzeugen und keine Videoclips erwarten. Weil Remotion leicht zoomt, wichtige Labels nicht direkt an den Bildrand setzen (2 % Rand bleiben frei).
 
 Remotion darf in Phase 3 **nur vorhandene Phase-2-Assets** verwenden.
 

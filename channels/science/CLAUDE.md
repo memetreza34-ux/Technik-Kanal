@@ -235,9 +235,9 @@ Phase 3 darf ausschließlich die in Phase 2 vom Nutzer abgelegten Dateien lesen,
 
 ## Remotion
 
-Remotion darf finale statische Bilder anordnen, harte Schnitte setzen, Voice-over abspielen, optionale SFX platzieren und rendern.
+Remotion darf finale statische Bilder anordnen, eine dezente virtuelle Kamera (höchstens 4 % Zoom, 1,5 % Schwenk) über jedes Bild legen, harte Schnitte setzen, Voice-over und einen leisen Musikteppich mit Quellenangabe abspielen, optionale SFX platzieren und rendern. Details: `gehirn/KANAL.md` → Bewegung und Musik.
 
-Remotion darf keine Untertitel/Captions ins finale Video rendern, nicht zoomen, schwenken, rotieren, parallaxen oder Ken Burns erzeugen, keine wissenschaftlichen Prozesse animieren und keine Videoclips als Szenenquelle erwarten.
+Remotion darf keine Untertitel/Captions ins finale Video rendern, nicht rotieren oder parallaxen, keine Übergangseffekte erzeugen, keine wissenschaftlichen Prozesse animieren und keine Videoclips als Szenenquelle erwarten.
 
 Remotion/Phase 3 darf ausschließlich bereits vorhandene Phase-2-Bilder verwenden und keine Bildgenerierung oder Ersatzsuche auslösen.
 

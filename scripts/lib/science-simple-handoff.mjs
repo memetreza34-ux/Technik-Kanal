@@ -55,6 +55,7 @@ export function buildScienceSimpleHandoff({repoRoot,projectDir,repository='memet
     'Hier alle finalen Bilder und eine Sprachaufnahme ablegen.\n'+
     `Szenenbilder 01.png bis ${String(plan.scenes.length).padStart(2,'0')}.png oder die Szenen-IDs mit -final benennen.\n`+
     'Cover: 00-thumbnail-final.png; Sprache: voiceover-raw.wav.\n'+
+    'Optional Musik: musik.mp3 plus musik-quelle.txt (Titel, Künstler, Quelle, Lizenz – z. B. YouTube Audio Library).\n'+
     'Keine Unterordner. Die Originaldateien bleiben bei der Übernahme erhalten.\n');
   const projectIndex=file('PHASE-1-START-HIER.md');
   put(projectIndex,`# Einfache Produktionsmappe\n\n**Bitte nur diesen Ordner nutzen:** [START-HIER/${plan.slug}](../../../../../START-HIER/${plan.slug})\n\nEine Skriptdatei als Fließtext, **eine einzige Google-Flow-Datei** mit Cover und allen Bildern sowie ein Ordner für alle fertigen Dateien. Die technischen Originale bleiben für die Videomontage erhalten.\n`);
