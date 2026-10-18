@@ -119,6 +119,14 @@ if(flowBuilder.includes('STOPP NACH BILDSCHRITT')) errors.push('Flow-Master-Buil
 if(flowBuilder.includes('image-to-video')) errors.push('Flow-Master-Builder darf kein Image-to-Video enthalten.');
 if(!flowBuilder.includes('findFlowPromptLeaks')||!flowBuilder.includes('flowSceneBlock')) errors.push('Flow-Master-Builder muss Bildaufträge ohne Szenen-IDs bauen und auf Metadaten-Lecks prüfen.');
 if(/STYLE_LOCK\);[\s\S]*for \(const \{scene,entry,promptText,position\} of group\)[\s\S]*STYLE_LOCK/.test(flowBuilder)) errors.push('Stilblock darf im Flow-Masterprompt nur einmal stehen, nicht pro Szene.');
+// qualitaet-v2: Spannungs-, Titel- und Bild-zur-Szene-Regeln dürfen nicht stillschweigend verschwinden.
+if(!template.includes("qualityRulesVersion:'qualitaet-v2'")||!template.includes("hookAnchor:{type:'UNGEPLANT'")) errors.push('Neue Videos müssen qualityRulesVersion qualitaet-v2 und einen hookAnchor-Platzhalter erhalten.');
+if(!newVideo.includes("setting:'UNGEPLANT'")) errors.push('Neue Videos müssen pro Szene ein setting im Flow-Plan planen.');
+if(!fs.readFileSync(path.join(root,'scripts/science-script-qa.mjs'),'utf8').includes('analyzeScriptEngagement')) errors.push('science:script-qa muss die Spannungsregeln prüfen.');
+if(!fs.readFileSync(path.join(root,'scripts/science-creative-qa.mjs'),'utf8').includes('analyzeSceneImageRules')) errors.push('science:creative-qa muss die Bild-zur-Szene-Regeln prüfen.');
+if(!pkg.scripts?.['science:title-check']) errors.push('package.json fehlt science:title-check.');
+if(!/## Spannung – Pflicht für neue Videos/.test(longform)||!/## Titel – vor dem Skript prüfen/.test(longform)) errors.push('LONGFORM.md muss Spannungs- und Titelregeln dokumentieren.');
+if(!/## Bild passt zur Szene/.test(imageWorld)) errors.push('BILDWELT.md muss die Bild-zur-Szene-Regeln dokumentieren.');
 for(const [file,label] of [['scripts/science-readiness.mjs','science:ready'],['scripts/render_science_reel.mjs','science:render']]){
   if(!fs.readFileSync(path.join(root,file),'utf8').includes('science-image-text-qa.mjs')) errors.push(`${label} muss das OCR-Text-Gate vor dem Rendern ausführen.`);
 }

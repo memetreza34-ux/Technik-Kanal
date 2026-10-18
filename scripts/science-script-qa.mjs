@@ -4,6 +4,7 @@ import path from 'node:path';
 import {ScenePlan} from './lib/electrical-contracts.mjs';
 import {electricalProjectPaths} from './lib/electrical-project-structure.mjs';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
+import {QUALITY_RULES_VERSION,analyzeScriptEngagement} from './lib/science-script-engagement.mjs';
 
 const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
 if (!projectArg) {
@@ -13,7 +14,8 @@ if (!projectArg) {
 
 const paths = electricalProjectPaths(path.resolve(projectArg));
 const config = loadElectricalConfig(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')).productionProfile);
-const plan = ScenePlan.parse(JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8')));
+const rawPlan = JSON.parse(fs.readFileSync(paths.scenePlan, 'utf8'));
+const plan = ScenePlan.parse(rawPlan);
 const fullText = plan.scenes.map((scene) => scene.voiceText).join(' ');
 const words = fullText.trim().split(/\s+/).filter(Boolean);
 const lowerText = fullText.toLowerCase();
@@ -64,6 +66,18 @@ for (const phrase of config.script.hook.forbiddenMetaphors) {
 if (/(heute (schauen|gucken|sehen) wir|in diesem video zeige ich|willkommen zu)/i.test(fullText)) warnings.push('Einleitung beginnt möglicherweise mit unnötigem Vorgeplänkel statt direkt mit der Erklärung.');
 if (!/(deshalb|dadurch|weil|führt dazu|entsteht|bewirkt|sorgt dafür)/i.test(fullText)) warnings.push('Zu wenig erkennbare Ursache-Wirkung im Skript; Hauptteil auf Mechanismus prüfen.');
 if (!/(merke|merksatz|deshalb|also|entscheidend|darum)/i.test(plan.scenes.at(-1)?.voiceText ?? '')) warnings.push('Payoff beantwortet die Ausgangsfrage möglicherweise nicht klar genug.');
+// Spannung (qualitaet-v2): Pflicht für neue Videos, Hinweis für ältere Videos.
+const strictQuality = rawPlan.qualityRulesVersion === QUALITY_RULES_VERSION;
+const engagement = analyzeScriptEngagement({scenes: plan.scenes, hookAnchor: rawPlan.hookAnchor, title: rawPlan.title ?? ''});
+for (const problem of engagement.problems) (strictQuality ? errors : warnings).push(`Spannung: ${problem}`);
+for (const hint of engagement.hints) warnings.push(`Spannung: ${hint}`);
+const titleCheckFile = path.join(paths.projectDir, 'title-check.json');
+if (strictQuality && !fs.existsSync(titleCheckFile)) warnings.push('Titel-Check fehlt: npm run science:title-check -- "<video-ordner>" vor der Bildproduktion ausführen.');
+if (fs.existsSync(titleCheckFile)) {
+  const titleCheck = JSON.parse(fs.readFileSync(titleCheckFile, 'utf8'));
+  if (titleCheck.verdict === 'besetzt' && titleCheck.title === rawPlan.title) warnings.push(`Titel „${rawPlan.title}“ konkurriert laut Titel-Check direkt mit starken Videos (${(titleCheck.strongCompetitors ?? []).slice(0, 3).map((item) => item.channel).join(', ')}). Titel mit Zahl, Geschichte oder Paradox wählen.`);
+}
+
 if (/(din vde|dguv|norm|grenzwert|prüffrist|gesetz|aktuell|heute)/i.test(fullText)) {
   const sourceText = fs.existsSync(paths.sources) ? fs.readFileSync(paths.sources, 'utf8').trim() : '';
   if (!sourceText) errors.push('Zeit-, Norm- oder Grenzwertaussage ohne Quelleninhalt.');
@@ -80,6 +94,8 @@ const report = {
   sections: [...new Set(sections)],
   hookHeadline,
   hookVoiceWords,
+  qualityRulesVersion: rawPlan.qualityRulesVersion ?? null,
+  engagement: engagement.metrics,
   errors,
   warnings,
 };

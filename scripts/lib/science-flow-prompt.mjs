@@ -95,6 +95,7 @@ export const flowSceneBlock = ({position, total, scene, entry = {}, promptText})
     `BILD ${position} VON ${total}`,
     `Bildauftrag: ${brief}`,
     presentation ? `Presentation: ${presentation}.` : null,
+    entry.setting && !/^(ungeplant|tbd|todo)$/i.test(String(entry.setting).trim()) ? `Setting: ${collapse(entry.setting)} (the object stays in its real-world place).` : null,
     textRule,
     `Budget: max ${budget.maxPrimaryObjects ?? 3} important elements, max ${budget.maxLabels ?? labels.length} labels, max ${budget.maxPanels ?? 1} panels, max ${budget.maxArrows ?? 2} arrows, no headline.`,
     `Speichern als ${flowFileNumber(position, total)}.png (Dateiname und Nummer niemals ins Bild schreiben).`,

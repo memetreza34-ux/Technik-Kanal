@@ -90,6 +90,7 @@ const flowPlan={
     imageStep:imageStepById.get(scene.id),
     visualType:'UNGEPLANT',
     primaryMotif:'UNGEPLANT',
+    setting:'UNGEPLANT',
     informationBudget:{...defaultInformationBudget}
   }))
 };
