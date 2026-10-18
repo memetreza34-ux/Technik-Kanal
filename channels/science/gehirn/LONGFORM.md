@@ -62,7 +62,7 @@ So füllt man `hookAnchor` im Szenenplan:
 ```json
 "hookAnchor": {
   "type": "zahl",
-  "text": "220.000 Tonnen",
+  "text": "200.000 Tonnen",
   "firstImage": "steel block sinking next to a floating container ship"
 }
 ```
@@ -70,7 +70,7 @@ So füllt man `hookAnchor` im Szenenplan:
 `type`: `zahl`, `ereignis`, `ort`, `person` oder `paradox`. `firstImage` ist der englische Satzteil, der wörtlich im Bildauftrag von Bild 1 stehen muss (siehe `BILDWELT.md`).
 
 Gute Hook-Muster:
-- **Zahl + Widerspruch:** „Dieses Schiff wiegt 220.000 Tonnen – und ein Nagel geht unter. Warum schwimmt es?“
+- **Zahl + Widerspruch:** „Dieses Schiff trägt über 200.000 Tonnen Ladung – und ein Nagel geht unter. Warum schwimmt es?“ (jede Zahl vorher mit Quelle belegen)
 - **Ereignis:** „1912 galt die Titanic als unsinkbar. Drei Stunden später lag sie am Meeresgrund.“
 - **Irrtum:** „Fast alle glauben, der Motor hält ein Schiff oben. Er hat damit nichts zu tun.“
 

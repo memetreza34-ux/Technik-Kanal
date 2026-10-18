@@ -5,7 +5,7 @@ import path from 'node:path';
 import {analyzeScriptEngagement, countNumbers, QUALITY_RULES_VERSION} from './lib/science-script-engagement.mjs';
 import {assessTitle, parseViewCount, parseYouTubeSearchHtml, titleSimilarity} from './lib/science-title-check.mjs';
 import {analyzeSceneImageRules} from './lib/science-scene-image-rules.mjs';
-import {flowSceneBlock} from './lib/science-flow-prompt.mjs';
+import {findFlowPromptLeaks, flowSceneBlock, flowSceneBrief, flowSceneLabels} from './lib/science-flow-prompt.mjs';
 import {createElectricalScenePlanTemplate} from './lib/create-electrical-scene-plan-template.mjs';
 
 const has = (list, pattern) => list.some((item) => pattern.test(item));
@@ -91,9 +91,21 @@ assert.ok(has(noSetting, /setting fehlt/));
 
 assert.match(flowSceneBlock({position: 3, total: 10, scene: imageScenes[2], entry: goodFlow.scenes[2], promptText: goodPrompts['03-b']}), /Setting: open sea/);
 
-// ---------- 4. Neue Videos sind automatisch qualitaet-v2 ----------
-const template = createElectricalScenePlanTemplate({slug: 'neu'});
-assert.equal(template.qualityRulesVersion, QUALITY_RULES_VERSION);
-assert.deepEqual(Object.keys(template.hookAnchor), ['type', 'text', 'firstImage']);
+// ---------- 4. Die Video-Automatik-Anleitung erzeugt Prompts, die alle Prüfungen verstehen ----------
+const playbook = fs.readFileSync('channels/science/gehirn/VIDEO-AUTOMATIK.md', 'utf8');
+const template = playbook.match(/## Schritt 7[\s\S]*?```text\n([\s\S]*?)```/)?.[1];
+assert.ok(template, 'Prompt-Vorlage in VIDEO-AUTOMATIK.md (Schritt 7) fehlt');
+assert.match(flowSceneBrief(template), /^Flat-bottomed model hull/, 'Bildauftrag wird aus der Vorlage gelesen');
+assert.deepEqual(flowSceneLabels(template), ['Auftrieb', 'Gewicht'], 'Labels werden aus der Vorlage gelesen');
+for (const [pattern, label] of [[/16:9/, '16:9'], [/German/, 'Deutsch-only'], [/One main idea/i, 'eine Hauptaussage'], [/No large headline/i, 'keine große Überschrift'], [/faceless visible heads/i, 'Gesichter-Regel'], [/Technical Editorial Explainer 2\.5D/, 'Bildwelt']]) assert.match(template, pattern, `Vorlage erfüllt Creative-QA nicht: ${label}`);
+assert.deepEqual(findFlowPromptLeaks(`STYLE LOCK — x\nDENSITY LOCK — y\n${flowSceneBrief(template)}`, {scenes: [{id: '14-foundation', voiceText: 'Der Auftrieb ist genauso groß wie das Gewicht.'}]}), [], 'Vorlage enthält keine Metadaten');
+for (const command of ['science:new', 'science:title-check', 'science:script-qa', 'science:creative-qa', 'science:learn -- start', 'science:learn -- review', 'science:phase1']) assert.ok(playbook.includes(command), `Anleitung nennt ${command} nicht`);
+assert.ok(fs.readFileSync('.claude/skills/wissonaut-video/SKILL.md', 'utf8').includes('VIDEO-AUTOMATIK.md'), 'Claude-Skill verweist nicht auf die Anleitung');
+assert.ok(fs.readFileSync('AGENTS.md', 'utf8').includes('VIDEO-AUTOMATIK.md'), 'AGENTS.md verweist nicht auf die Anleitung');
 
-console.log('✓ qualitaet-v2: Spannung (Hook-Anker, Zahlen, Füllwörter, Rhythmus, offene Fragen), Titel-Check und Bild-zur-Szene-Regeln geprüft – inkl. echter Schiff- und Steckdosen-Skripte.');
+// ---------- 5. Neue Videos sind automatisch qualitaet-v2 ----------
+const scaffold = createElectricalScenePlanTemplate({slug: 'neu'});
+assert.equal(scaffold.qualityRulesVersion, QUALITY_RULES_VERSION);
+assert.deepEqual(Object.keys(scaffold.hookAnchor), ['type', 'text', 'firstImage']);
+
+console.log('✓ qualitaet-v2: Spannung (Hook-Anker, Zahlen, Füllwörter, Rhythmus, offene Fragen), Titel-Check, Bild-zur-Szene-Regeln und Video-Automatik-Vorlage geprüft – inkl. echter Schiff- und Steckdosen-Skripte.');

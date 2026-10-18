@@ -85,7 +85,7 @@ export const titleSuggestions = ({title, hookAnchor}) => {
   const nouns = String(title ?? '').split(/\s+/).slice(1).map((word) => word.replace(/[^\p{L}-]/gu, '')).filter((word) => /^\p{Lu}/u.test(word));
   const topic = nouns.length ? nouns.join(' und ') : '[Thema]';
   return [
-    {formula: 'Zahl + Widerspruch', example: `${anchor || '[Zahl + Einheit, z. B. „220.000 Tonnen Stahl“]'} – und trotzdem …`},
+    {formula: 'Zahl + Widerspruch', example: `${anchor || '[belegte Zahl + Einheit, z. B. „über 200.000 Tonnen Ladung“]'} – und trotzdem …`},
     {formula: 'Konkretes Ereignis', example: `[Bekanntes Ereignis oder Ort]: Was ${topic} damit zu tun hat`},
     {formula: 'Irrtum aufdecken', example: `Das glauben fast alle falsch über ${topic}`},
   ];
