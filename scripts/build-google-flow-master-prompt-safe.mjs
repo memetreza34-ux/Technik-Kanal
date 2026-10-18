@@ -1,7 +1,9 @@
 #!/usr/bin/env node
+import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {enforceScenePromptLocks, enforceMasterVisibleTextLock} from './science-visible-text-lock.mjs';
+import {findFlowPromptLeaks} from './lib/science-flow-prompt.mjs';
 
 const args = process.argv.slice(2);
 const projectArg = args.find((arg) => !arg.startsWith('--'));
@@ -9,7 +11,7 @@ if (!projectArg) throw new Error('Nutzung: npm run science:flow-master -- <video
 
 const root = path.resolve(projectArg);
 const promptCount = enforceScenePromptLocks(root);
-console.log(`✓ ${promptCount} Szenen-Prompts vor dem Masterprompt mit Visible-Text-Lock abgesichert.`);
+console.log(`✓ ${promptCount} interne Szenen-Prompts mit Visible-Text-Lock abgesichert.`);
 
 const result = spawnSync(process.execPath, ['scripts/build-google-flow-master-prompt.mjs', projectArg], {
   cwd: process.cwd(),
@@ -18,5 +20,8 @@ const result = spawnSync(process.execPath, ['scripts/build-google-flow-master-pr
 if (result.error) throw result.error;
 if (result.status !== 0) process.exit(result.status ?? 1);
 
-enforceMasterVisibleTextLock(root);
-console.log('✓ Google-Flow-Masterprompt zusätzlich global gegen sichtbare Szenen-/Beat-Metadaten abgesichert.');
+const masterFile = enforceMasterVisibleTextLock(root);
+const plan = JSON.parse(fs.readFileSync(path.join(root, '06-projektdateien', 'scene-plan.json'), 'utf8'));
+const leaks = findFlowPromptLeaks(fs.readFileSync(masterFile, 'utf8'), plan);
+if (leaks.length) throw new Error(`Flow-Masterprompt enthält nach dem Text-Lock Metadaten:\n- ${leaks.join('\n- ')}`);
+console.log('✓ Google-Flow-Masterprompt einmal global gegen sichtbare Szenen-/Beat-Metadaten abgesichert und geprüft.');

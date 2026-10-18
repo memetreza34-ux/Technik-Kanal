@@ -23,15 +23,16 @@ const renderQa=fs.readFileSync(path.join(root,'scripts/qa_science_render.mjs'),'
 const errors=[];
 
 if(config.version!=='science-v1') errors.push('Aktive Konfiguration muss science-v1 sein.');
-if(config.productionProfile!=='youtube-2min-v1') errors.push('Aktives Produktionsprofil muss youtube-2min-v1 sein.');
+if(config.productionProfile!=='youtube-6to7min-v1') errors.push('Aktives Produktionsprofil muss youtube-6to7min-v1 sein.');
+if(loadElectricalConfig('youtube-2min-v1').productionProfile!=='youtube-2min-v1') errors.push('Archiviertes 2-Minuten-Profil muss für alte Videos ladbar bleiben.');
 if(config.format?.width!==1920||config.format?.height!==1080||config.format?.aspectRatio!=='16:9') errors.push('Aktives Videoformat muss 1920×1080 / 16:9 sein.');
-if(config.format?.durationSeconds?.ideal!==120) errors.push('Ideale Videolänge muss 120 Sekunden sein.');
-if(config.script?.words?.ideal!==300) errors.push('Ideale Skriptlänge muss 300 Wörter sein.');
+if(config.format?.durationSeconds?.ideal!==390) errors.push('Ideale Videolänge muss 390 Sekunden sein.');
+if(config.script?.words?.ideal!==975) errors.push('Ideale Skriptlänge muss 975 Wörter sein.');
 if(JSON.stringify(config.script?.narrativeStructure)!==JSON.stringify(['hook','context','foundation','mechanism','deepening','payoff'])) errors.push('Longform-Dramaturgie ist falsch.');
 if(config.script?.rewriteWhenThreeAdjacentBeatsWouldLookSimilar!==true) errors.push('Skript muss bei drei ähnlichen Nachbarbeats umgeschrieben werden.');
-if(config.visuals?.beats?.min!==12||config.visuals?.beats?.ideal!==20||config.visuals?.beats?.max!==28) errors.push('Visuelle Beats müssen 12/20/28 konfiguriert sein.');
+if(config.visuals?.beats?.min!==34||config.visuals?.beats?.ideal!==46||config.visuals?.beats?.max!==50) errors.push('Visuelle Beats müssen 34/46/50 konfiguriert sein.');
 if(config.visuals?.thumbnail?.required!==true||config.visuals?.thumbnail?.candidateCount!==3) errors.push('Drei Thumbnail-Kandidaten müssen vorgeschrieben sein.');
-if(!/youtube-2min-v1/i.test(longform)||!/Hook.*Kontext.*Grundlage.*Mechanismus.*Vertiefung.*Payoff/is.test(longform)) errors.push('LONGFORM.md dokumentiert Profil/Dramaturgie nicht.');
+if(!/Aktiv ist \*\*`youtube-6to7min-v1`\*\*/i.test(longform)||!/Hook.*Kontext.*Grundlage.*Mechanismus.*Vertiefung.*Payoff/is.test(longform)) errors.push('LONGFORM.md dokumentiert Profil/Dramaturgie nicht.');
 if(!/visuell abwechslungsreich/i.test(longform)||!/keine eingebrannten Untertitel/i.test(longform)) errors.push('LONGFORM.md muss Bildvielfalt und subtitle-free festhalten.');
 
 if(config.topicScope?.identity!=='alltagswissenschaft-und-technik') errors.push('Themenprofil falsch.');
@@ -47,7 +48,7 @@ if(!claude.includes('whisper.cpp')) errors.push('CLAUDE.md enthält whisper.cpp 
 if(!imageWorld.includes('Scientific Scene Explainer')) errors.push('BILDWELT.md enthält die aktive Bildwelt nicht.');
 if(!imageWorld.includes('so wenig Information wie möglich, so viel wie nötig')) errors.push('BILDWELT.md enthält die Informationsdichte-Regel nicht.');
 if(!/gesichtslosen sichtbaren Köpfe/i.test(imageWorld)) errors.push('BILDWELT.md muss gesichtslose sichtbare Köpfe verbieten.');
-if(!/mindestens \*\*5 deutlich unterschiedliche Darstellungsformen\*\*/i.test(imageWorld)) errors.push('BILDWELT.md muss mindestens fünf Darstellungsformen verlangen.');
+if(!/mindestens \*\*7 deutlich unterschiedliche Darstellungsformen\*\* pro 6–7-Minuten-Video/i.test(imageWorld)) errors.push('BILDWELT.md muss mindestens sieben Darstellungsformen pro 6–7-Minuten-Video verlangen.');
 
 for(const command of ['science:new','science:flow-master','science:preflight','science:ready','science:prepare','science:render','science:finish','science:system-test']) if(!pkg.scripts?.[command]) errors.push(`package.json fehlt ${command}.`);
 if(Object.keys(pkg.scripts??{}).some((name)=>name.startsWith('electrical:')||name.startsWith('elektro:'))) errors.push('package.json enthält alte Elektro-Aliase.');
@@ -62,7 +63,8 @@ if(config.visuals.styleId!=='scientific-scene-explainer-v1') errors.push('Aktive
 if(config.visuals.fixedBackgroundForbidden!==true) errors.push('Fixer Hintergrund darf nicht erzwungen werden.');
 
 const d=config.visuals?.diversity;
-if(d?.minimumDistinctVisualTypesPerVideo!==5) errors.push('Mindestens fünf Visual-Typen müssen konfiguriert sein.');
+if(d?.minimumDistinctVisualTypesPerVideo!==7) errors.push('Mindestens sieben Visual-Typen müssen für 6–7-Minuten-Videos konfiguriert sein.');
+if(loadElectricalConfig('youtube-2min-v1').visuals?.diversity?.minimumDistinctVisualTypesPerVideo!==5) errors.push('Archiviertes 2-Minuten-Profil muss weiterhin fünf Visual-Typen verlangen.');
 if(d?.sameCompositionMaxConsecutive!==1) errors.push('Gleiche Komposition darf nicht direkt wiederholt werden.');
 if(d?.samePrimaryMotifMaxPerVideo!==3||d?.handOnObjectPrimaryMotifMaxPerVideo!==3) errors.push('Primärmotiv-/Handlimits falsch.');
 if(d?.largeGeneratedHeadlineInSceneImagesAllowed!==false) errors.push('Große generierte Szenenüberschriften müssen deaktiviert sein.');
@@ -115,10 +117,15 @@ if(!flowBuilder.includes('PHASE 3 – FINALE ASSET-BEREINIGUNG')) errors.push('F
 if(!flowBuilder.includes('finalCollectionName')) errors.push('Flow-Master-Builder muss eine finale Flow-Sammlung benennen.');
 if(flowBuilder.includes('STOPP NACH BILDSCHRITT')) errors.push('Flow-Master-Builder darf keine Zwischenstopps nach Bildschritten erzeugen.');
 if(flowBuilder.includes('image-to-video')) errors.push('Flow-Master-Builder darf kein Image-to-Video enthalten.');
+if(!flowBuilder.includes('findFlowPromptLeaks')||!flowBuilder.includes('flowSceneBlock')) errors.push('Flow-Master-Builder muss Bildaufträge ohne Szenen-IDs bauen und auf Metadaten-Lecks prüfen.');
+if(/STYLE_LOCK\);[\s\S]*for \(const \{scene,entry,promptText,position\} of group\)[\s\S]*STYLE_LOCK/.test(flowBuilder)) errors.push('Stilblock darf im Flow-Masterprompt nur einmal stehen, nicht pro Szene.');
+for(const [file,label] of [['scripts/science-readiness.mjs','science:ready'],['scripts/render_science_reel.mjs','science:render']]){
+  if(!fs.readFileSync(path.join(root,file),'utf8').includes('science-image-text-qa.mjs')) errors.push(`${label} muss das OCR-Text-Gate vor dem Rendern ausführen.`);
+}
 
 if(!scienceReel.includes("./generated/science-runtime.json")) errors.push('ScienceReel muss science-runtime.json laden.');
 if(scienceReel.includes('OffthreadVideo')||scienceReel.includes('videoPath')) errors.push('ScienceReel darf keine Videoszenen unterstützen.');
-if(!template.includes("runtimeFile:'science-runtime.json'")||!template.includes("productionProfile='youtube-2min-v1'")||!template.includes("productionProfile:scenePlan.productionProfile")) errors.push('Scene-Template muss beide Profiltypen dynamisch unterstützen.');
+if(!template.includes("runtimeFile:'science-runtime.json'")||!template.includes("productionProfile='youtube-6to7min-v1'")||!template.includes("productionProfile:scenePlan.productionProfile")) errors.push('Scene-Template muss beide Profiltypen dynamisch unterstützen.');
 if(!newVideo.includes("visualType:'UNGEPLANT'")||!newVideo.includes("primaryMotif:'UNGEPLANT'")) errors.push('Neue Videos müssen Visual-Diversity-Platzhalter anlegen.');
 if(!newVideo.includes('pauseAfterEachImageStep:false')||!newVideo.includes('continueAutomaticallyBetweenImageSteps:true')) errors.push('Neue Videos müssen fünf Bildschritte ohne Zwischenstopps anlegen.');
 if(!newVideo.includes('deleteUnselectedThumbnailCandidatesAfterSelection:true')||!newVideo.includes("selectedThumbnailFinalName:'00-thumbnail-final'")) errors.push('Neue Videos müssen Cover-Bereinigung anlegen.');
@@ -135,4 +142,4 @@ if(errors.length){
   errors.forEach((error)=>console.error(`- ${error}`));
   process.exit(1);
 }
-console.log('✓ youtube-2min-v1: Bildpipeline, Phase-2-Handoff, Phase-3-No-Generation, fünf Flow-Schritte, Cover-Bereinigung und subtitle-free Rendering sind konsistent.');
+console.log('✓ youtube-6to7min-v1: Bildpipeline, Phase-2-Handoff, Phase-3-No-Generation, fünf Flow-Schritte, Cover-Bereinigung und subtitle-free Rendering sind konsistent.');

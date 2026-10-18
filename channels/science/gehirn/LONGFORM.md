@@ -4,14 +4,17 @@
 
 ## Aktives Profil
 
-Aktiv ist **`youtube-2min-v1`**.
+Aktiv ist **`youtube-6to7min-v1`**.
 
 Ziel:
 - normales YouTube-Video, kein Reel
 - 16:9 / 1920×1080 / 30 fps
-- 90–150 Sekunden, 120 Sekunden ideal
-- ungefähr 230–370 Wörter, 300 ideal
-- ungefähr 12–28 visuelle Beats
+- 360–420 Sekunden (6–7 Minuten), 390 Sekunden ideal
+- ungefähr 850–1075 Wörter, 975 ideal
+- 34–50 visuelle Beats, 46 ideal
+- Bildwechsel meist nach 5–9 Sekunden; über 10 Sekunden prüfen, ob ein weiteres Bild nötig ist
+
+Das 2-Minuten-Profil `youtube-2min-v1` (90–150 s, 230–370 Wörter, 12–28 Beats) ist **archiviert**. Es bleibt nur für die Testphasen-Videos vom 28.09.–04.10.2026 ladbar und wird für neue Videos nicht mehr verwendet.
 
 ## Erzählstruktur
 
@@ -110,7 +113,7 @@ Wenn das nicht reicht: **Beat teilen statt Bild überladen.**
 
 ## Visuelle Vielfalt
 
-Mindestens 5 unterschiedliche Darstellungsformen im 2-Minuten-Video, z. B.:
+Mindestens 7 unterschiedliche Darstellungsformen pro 6–7-Minuten-Video, z. B.:
 - Umgebung
 - Querschnitt
 - Makro
@@ -187,11 +190,11 @@ Vor Produktion:
 - klarer Payoff?
 
 
-## Nach der Testphase: Profil youtube-6to7min-v1
+## Neues Video anlegen (Profil youtube-6to7min-v1)
 
-Ab dem ersten 6–7-Minuten-Video kann der neue Generator mit `--profile=youtube-6to7min-v1` aufgerufen werden. 16:9 / 30 fps, 360–420 Sekunden, ca. 850–1075 Wörter, 34–50 Beats (ideal 42). Nur echte Erklär-Tiefe, niemals Zeit mit Wiederholungen füllen. Die bestehenden Flow-Style-, Density-, Visible-Text- und Handoff-Regeln gelten unverändert.
+`science:new` verwendet `youtube-6to7min-v1` jetzt automatisch; `--profile` ist nur noch für das archivierte 2-Minuten-Profil nötig. 16:9 / 30 fps, 360–420 Sekunden, ca. 850–1075 Wörter, 34–50 Beats (ideal 46). Nur echte Erklär-Tiefe, niemals Zeit mit Wiederholungen füllen. Die bestehenden Flow-Style-, Density-, Visible-Text- und Handoff-Regeln gelten unverändert.
 
 Beispiel:
-`npm run science:new -- --week=2026-10-05_bis_2026-10-11 --slot=02 --title="Wie funktioniert ein Windrad?" --profile=youtube-6to7min-v1`
+`npm run science:new -- --week=2026-10-05_bis_2026-10-11 --slot=02 --title="Wie funktioniert ein Windrad?" --hook="Wie funktioniert ein Windrad?"`
 
 Im Export liegen YouTube-Titel + Beschreibung zusammen in `05-export/youtube-caption.txt` und das komplette Skript mit Zeitfenstern in `05-export/skript-mit-zeitstempeln.txt`. Vor der Sprachaufnahme sind nur geschätzte Zeitfenster möglich. Nach finalem Audio muss die Synchronisation anhand der echten Wort-/Szenenzeitdaten erfolgen.

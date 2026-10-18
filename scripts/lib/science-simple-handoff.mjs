@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {FLOW_PROMPT_VERSION,findFlowPromptLeaks,flowSceneBrief} from './science-flow-prompt.mjs';
 
 const read=file=>fs.readFileSync(file,'utf8').trim();
 const load=file=>JSON.parse(read(file));
@@ -31,10 +32,14 @@ export function buildScienceSimpleHandoff({repoRoot,projectDir,repository='memet
     throw Error('Flow-Masterprompt hat die verbindlichen Bildwelt-/Textregeln nicht.');
   for(let i=1;i<=5;i++)if(!master.includes('BILDSCHRITT '+i+'/5'))
     throw Error('Der eine Flow-Masterprompt enthält Bildschritt '+i+'/5 nicht.');
-  for(const id of ids){
-    const scenePrompt=read(file('02-bilder/prompts/'+id+'.txt'));
-    if(!scenePrompt||!master.includes(scenePrompt))
-      throw Error('Fehlender oder veralteter Szenenprompt im einen Masterprompt: '+id);
+  for(const scene of plan.scenes){
+    const scenePrompt=read(file('02-bilder/prompts/'+scene.id+'.txt'));
+    if(!scenePrompt||!master.includes(flowSceneBrief(scenePrompt,scene)))
+      throw Error('Fehlender oder veralteter Szenenprompt im einen Masterprompt: '+scene.id);
+  }
+  if(master.includes(FLOW_PROMPT_VERSION)){
+    const leaks=findFlowPromptLeaks(master,plan);
+    if(leaks.length)throw Error('Flow-Masterprompt würde Metadaten ins Bild tragen: '+leaks.join(' | '));
   }
   const pack=path.join(root,'START-HIER',plan.slug);
   put(path.join(pack,'01-SKRIPT.txt'),voice+'\n');

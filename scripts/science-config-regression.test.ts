@@ -14,8 +14,17 @@ describe('science config regression', () => {
     expect(() => loadElectricalConfig('unknown-profile')).toThrow();
   });
 
-  it('keeps the binding production rules', () => {
+  it('loads the 6–7-minute profile by default', () => {
     const config = loadElectricalConfig();
+    expect(config.productionProfile).toBe('youtube-6to7min-v1');
+    expect(config.format.durationSeconds).toEqual({min:360,ideal:390,max:420});
+    expect(config.script.words).toEqual({min:850,ideal:975,max:1075});
+    expect(config.visuals.beats).toEqual({min:34,ideal:46,max:50});
+    expect(config.visuals.diversity.minimumDistinctVisualTypesPerVideo).toBe(7);
+  });
+
+  it('keeps the binding production rules (base values of the archived 2-minute profile)', () => {
+    const config = loadElectricalConfig('youtube-2min-v1');
     expect(config.version).toBe('science-v1');
     expect(config.productionProfile).toBe('youtube-2min-v1');
     expect(config.voice.speed).toBe(1.1);

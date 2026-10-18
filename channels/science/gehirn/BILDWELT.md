@@ -141,7 +141,7 @@ Erlaubt und erwünscht:
 12. Vorher/Nachher
 13. reduzierte Prozesskette / Zusammenfassung
 
-Mindestens **5 deutlich unterschiedliche Darstellungsformen** pro 2-Minuten-Video.
+Mindestens **7 deutlich unterschiedliche Darstellungsformen** pro 6–7-Minuten-Video.
 
 ### Wiederholungsregel
 

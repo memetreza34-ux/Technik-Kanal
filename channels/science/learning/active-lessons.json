@@ -3,17 +3,23 @@
   "channel": "Wissonaut",
   "priority": 1,
   "method": "Evidence-first: qualitative Video-Reviews + YouTube Studio Kennzahlen + kontrollierte Tests",
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-10-18",
   "lessons": [
     {
       "id": "qa-001",
       "priority": 1,
       "status": "active",
       "area": "visual-consistency",
-      "evidenceLevel": "verified-production-issue",
+      "evidenceLevel": "verified-production-issue-automated-check",
       "source": "gehirn/TESTPHASE-ABSCHLUSS.md",
-      "observation": "Szenen-Metadaten, falsche Bildlabels und Thumbnail-Leaks traten in der Pilotphase auf.",
-      "action": "Jedes finale Szenenbild vor Freigabe gegen Voice, sichtbaren Text und Metadaten-/Cover-Leak prüfen; Szene 01 niemals als Thumbnail fortsetzen."
+      "observation": "Szenen-Metadaten, falsche Bildlabels und Thumbnail-Leaks traten in der Pilotphase auf – und trotz dieser Regel erneut im Stahlschiff-Video (5 von 45 Bildern: „27 — MECHANISM“, „28-mechanism“, „36 • DEEPENING“ u. a.). Ursache: Szenen-IDs und Beispielwörter standen direkt im Flow-Prompt.",
+      "action": "Flow-Masterprompt nur noch mit science:flow-master im Format flow-master-v2 bauen (keine Szenen-IDs, Abschnittsnamen oder Sprechtexte, Stilblock einmal). Vor dem Rendern prüft das OCR-Text-Gate jedes Szenenbild; Szene 01 niemals als Thumbnail fortsetzen.",
+      "enforcedBy": [
+        "scripts/build-google-flow-master-prompt.mjs",
+        "scripts/science-image-text-qa.mjs",
+        "scripts/test-science-flow-prompt.mjs",
+        "scripts/test-science-image-text-qa.mjs"
+      ]
     },
     {
       "id": "qa-002",

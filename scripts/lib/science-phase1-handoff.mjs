@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {flowSceneBrief} from './science-flow-prompt.mjs';
 
 export function buildSciencePhase1Handoff({projectDir,repoRoot,repository="memetreza34-ux/Technik-Kanal",ref="science-channel-v1"}){
   const read=file=>fs.readFileSync(file,"utf8").trim();
@@ -34,7 +35,7 @@ export function buildSciencePhase1Handoff({projectDir,repoRoot,repository="memet
     const file=inside("02-bilder/prompts/"+scene.id+".txt");
     if(!fs.existsSync(file))throw Error("Bildprompt fehlt: "+scene.id);
     const text=read(file);
-    if(!text||placeholder.test(text)||!master.includes(text))throw Error("Masterprompt nicht aktuell oder Szene unvollständig: "+scene.id);
+    if(!text||placeholder.test(text)||!master.includes(flowSceneBrief(text,scene)))throw Error("Masterprompt nicht aktuell oder Szene unvollständig: "+scene.id);
     prompts.push({scene,file});
   }
   const base=`https://github.com/${repository}/blob/${encodeURIComponent(ref)}`;

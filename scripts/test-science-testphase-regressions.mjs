@@ -29,9 +29,16 @@ for (const required of [
   if (!visibleLock.includes(required)) errors.push(`Visible-Text-Lock fehlt: ${required}`);
 }
 
+// Beispielwörter wie „10-MECHANISM“ im Lock haben das Bildmodell eher angestoßen als abgehalten
+// (Stahlschiff-Video: „27 — MECHANISM“, „36 • DEEPENING“). Sie dürfen nicht zurückkommen;
+// stattdessen prüft das OCR-Text-Gate die fertigen Bilder.
 for (const forbiddenExample of ['Szene 10', 'Scene 10', 'Beat 10', '10-MECHANISM', 'Bildschritt 3', '01-hook-final']) {
-  if (!visibleLock.includes(forbiddenExample)) errors.push(`Verbotenes Metadaten-Beispiel fehlt im Lock: ${forbiddenExample}`);
+  if (visibleLock.includes(forbiddenExample)) errors.push(`Metadaten-Beispielwort im Lock lädt zum Abschreiben ein: ${forbiddenExample}`);
 }
+const imageTextGate = read('scripts/science-image-text-qa.mjs');
+if (!imageTextGate.includes('ocrImageWords') || !imageTextGate.includes('analyzeSceneText')) errors.push('OCR-Text-Gate prüft die finalen Szenenbilder nicht.');
+if (!read('scripts/science-readiness.mjs').includes('science-image-text-qa.mjs')) errors.push('science:ready führt das OCR-Text-Gate nicht aus.');
+if (!read('scripts/render_science_reel.mjs').includes('science-image-text-qa.mjs')) errors.push('science:render führt das OCR-Text-Gate nicht aus.');
 
 if (!safeFlowBuilder.includes('enforceScenePromptLocks')) errors.push('Safe-Builder schützt Einzelprompts nicht.');
 if (!safeFlowBuilder.includes('enforceMasterVisibleTextLock')) errors.push('Safe-Builder schützt Masterprompt nicht.');

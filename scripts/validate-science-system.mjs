@@ -111,4 +111,4 @@ if (missing.length || legacy.length) {
   }
   process.exit(1);
 }
-console.log(`✓ Science-only-Systemstruktur vollständig (${required.length} Kernpfade); youtube-2min-v1, Scientific Scene Explainer und Google-Flow-Bildpipeline sind dokumentiert.`);
+console.log(`✓ Science-only-Systemstruktur vollständig (${required.length} Kernpfade); youtube-6to7min-v1, Scientific Scene Explainer und Google-Flow-Bildpipeline sind dokumentiert.`);
