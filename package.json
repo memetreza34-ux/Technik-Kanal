@@ -28,6 +28,7 @@
     "science:scaffold-test": "node scripts/test-science-scaffold.mjs",
     "science:e2e": "node scripts/test-science-e2e.mjs",
     "science:preflight": "node scripts/science-preflight.mjs",
+    "science:reference-qa": "node scripts/science-reference-qa.mjs",
     "science:ready": "node scripts/science-readiness.mjs",
     "science:prepare": "node scripts/prepare_science_reel.mjs",
     "science:render": "node scripts/render_science_reel.mjs",

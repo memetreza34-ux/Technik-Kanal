@@ -5,6 +5,7 @@ import path from 'node:path';
 import {electricalProjectPaths,assertElectricalProjectStructure} from './lib/electrical-project-structure.mjs';
 import {buildScienceSimpleHandoff} from './lib/science-simple-handoff.mjs';
 import {checkScienceLearningBrief} from './lib/science-quality-gates.mjs';
+import {SCIENCE_CONTENT_CHECKS} from './lib/science-content-checks.mjs';
 
 const [projectArg]=process.argv.slice(2).filter((arg)=>!arg.startsWith('--'));
 if(!projectArg){console.error('Nutzung: npm run science:preflight -- <reel-ordner>');process.exit(1);}
@@ -13,13 +14,7 @@ assertElectricalProjectStructure(root);
 const paths=electricalProjectPaths(root);
 const learning=checkScienceLearningBrief(root);
 if(!learning.passed){console.error('Verbesserungspflicht vor jeder Produktion nicht erfüllt:');learning.errors.forEach(e=>console.error('- '+e));process.exit(1);}
-const checks=[
-  ['script-qa','scripts/science-script-qa.mjs'],
-  ['creative-qa','scripts/science-creative-qa.mjs'],
-  ['static-quality','scripts/science-static-quality.mjs'],
-  ['overlay-qa','scripts/science-overlay-qa.mjs'],
-  ['content-package','scripts/science-content-package.mjs']
-];
+const checks=SCIENCE_CONTENT_CHECKS;
 const results=[];
 for(const [id,script] of checks){
   const result=spawnSync(process.execPath,[script,root],{cwd:process.cwd(),stdio:'inherit'});
