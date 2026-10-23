@@ -50,6 +50,22 @@ Gesehen in den ersten Langvideos: Bei der Steckdose stand dieselbe Hügellandsch
 3. **Pfeile, Messungen und Vergleiche beschriften:** Diagramme, Vergleiche, Messungen und jedes Bild mit Kraftpfeilen brauchen mindestens 1 kurzes deutsches Label („Auftrieb“, „Gewicht“, „verdrängtes Wasser“).
 4. **Bild 1 zeigt den Hook:** `hookAnchor.firstImage` steht wörtlich im Bildauftrag von Bild 1.
 
+## Bildarten erfolgreicher Kanäle (Konkurrenzanalyse 23.10.2026)
+
+Gesehen in Kontaktbögen von Kurzgesagt, Terra X, Simplicissimus, Stahl unter Wasser und Verlorene Schiffe (`KONKURRENZ-ANALYSE-2026-10-23.md`). Diese Bildarten gezielt einplanen, im eigenen Style-Lock:
+
+| Bildart (`visualType`) | Wann | Beispiel |
+|---|---|---|
+| **Mensch in Aktion** (`human-action`) | Geschichte, Herstellung, Alltag | Werftarbeiter nieten einen Rumpf, Hand legt den FI-Schalter um |
+| **Größenvergleich** (`comparison`) | jede große Zahl | Containerschiff neben einer Reihe Kleinwagen, gleicher Maßstab |
+| **Alltagsexperiment** (`experiment`) | Prinzip erklären | Holzklotz und Stahlwürfel im Wasserglas auf einem Küchentisch |
+| **Vorher/Nachher** (`before-after`) | Veränderung, Unfall, Verschleiß | Schiff intakt → Wrack am Meeresgrund |
+| **Beweisbild** (`evidence`) | Behauptung belegen | Messgerät mit Anzeige, Typenschild, Seite aus einem Prüfbericht |
+
+- Menschen zeigen vollständige, natürliche Gesichter. Sie handeln, statt nur dazustehen.
+- Ort und Jahr einer Geschichtsszene dürfen als kleines deutsches Label oben links stehen, mit Abstand zum Rand („1912 · Belfast“). Es zählt zum Label-Budget.
+- Pfeile direkt auf die echte Szene setzen, nicht auf einen abstrakten Würfel (Terra X zeichnet Auftrieb und Gewicht auf das echte Schiff).
+
 ## Verbindlicher Ablauf
 
 1. Erst prüfen, ob Fachinhalt und Hook stimmen, dann expliziten visuellen Erklärzweck pro Beat festhalten.

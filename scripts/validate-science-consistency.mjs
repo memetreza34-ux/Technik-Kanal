@@ -30,7 +30,7 @@ if(config.format?.durationSeconds?.ideal!==390) errors.push('Ideale Videolänge 
 if(config.script?.words?.ideal!==975) errors.push('Ideale Skriptlänge muss 975 Wörter sein.');
 if(JSON.stringify(config.script?.narrativeStructure)!==JSON.stringify(['hook','context','foundation','mechanism','deepening','payoff'])) errors.push('Longform-Dramaturgie ist falsch.');
 if(config.script?.rewriteWhenThreeAdjacentBeatsWouldLookSimilar!==true) errors.push('Skript muss bei drei ähnlichen Nachbarbeats umgeschrieben werden.');
-if(config.visuals?.beats?.min!==34||config.visuals?.beats?.ideal!==46||config.visuals?.beats?.max!==50) errors.push('Visuelle Beats müssen 34/46/50 konfiguriert sein.');
+if(config.visuals?.beats?.min!==44||config.visuals?.beats?.ideal!==56||config.visuals?.beats?.max!==64) errors.push('Visuelle Beats müssen 44/56/64 konfiguriert sein.');
 if(config.visuals?.thumbnail?.required!==true||config.visuals?.thumbnail?.candidateCount!==3) errors.push('Drei Thumbnail-Kandidaten müssen vorgeschrieben sein.');
 if(!/Aktiv ist \*\*`youtube-6to7min-v1`\*\*/i.test(longform)||!/Hook.*Kontext.*Grundlage.*Mechanismus.*Vertiefung.*Payoff/is.test(longform)) errors.push('LONGFORM.md dokumentiert Profil/Dramaturgie nicht.');
 if(!/visuell abwechslungsreich/i.test(longform)||!/keine eingebrannten Untertitel/i.test(longform)) errors.push('LONGFORM.md muss Bildvielfalt und subtitle-free festhalten.');

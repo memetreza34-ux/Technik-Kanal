@@ -19,9 +19,9 @@
     "max": 1075
   },
   "visualBeats": {
-    "min": 34,
-    "ideal": 46,
-    "max": 50
+    "min": 44,
+    "ideal": 56,
+    "max": 64
   },
   "narrativeStructure": [
     "hook",
@@ -65,9 +65,9 @@
     "coverInVideoForbidden": true,
     "scene01MustBeIndependent": true,
     "visualBeatPacingSeconds": {
-      "preferredMin": 5,
-      "preferredMax": 9,
-      "reviewIfLongerThan": 10
+      "preferredMin": 4,
+      "preferredMax": 7,
+      "reviewIfLongerThan": 8
     },
     "extraBeatsWhenExplanationChanges": true,
     "diagramComparisonSummaryLabelsMax": 5,

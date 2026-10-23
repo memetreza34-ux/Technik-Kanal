@@ -7,14 +7,18 @@
 //   (~3 Minuten) ohne Frage oder Ankündigung.
 // Konkurrenz: Physik-Erklärvideos zur selben Frage 66–308 Aufrufe, Videos mit Geschichte,
 // Zahl oder Drama 10.000–40.000 (siehe gehirn/ANALYSE-2026-10-18.md).
+// Konkurrenzanalyse 23.10.2026 (gehirn/KONKURRENZ-ANALYSE-2026-10-23.md): 10 von 11 messbaren
+// Videos haben 8–29 Zahlen pro 1000 Wörter; starke Hooks stapeln 4 Zahlen in den ersten 30 s;
+// Story-Kanäle halten Spannung mit Vorausdeutungen („Zu diesem Zeitpunkt ahnte niemand …“).
 
 export const QUALITY_RULES_VERSION = 'qualitaet-v2';
 
 export const ENGAGEMENT_LIMITS = {
   hookAnchorWithinWords: 80,
-  concreteNumbersPer1000WordsMin: 2,
+  concreteNumbersPer1000WordsMin: 6,
   hedgesPer100WordsMax: 0.8,
   numbersPer120WordsMax: 3,
+  hookNumbersMax: 6,
   twoSentenceSceneShareMax: 0.6,
   curiosityGapWordsMax: 240,
   shortSentenceShareMin: 0.15,
@@ -24,7 +28,7 @@ export const ENGAGEMENT_LIMITS = {
 export const HEDGE_WORDS = ['häufig', 'normalerweise', 'beispielsweise', 'typischerweise', 'gewöhnlich', 'in der regel', 'unter umständen', 'gewissermaßen', 'teilweise', 'meistens'];
 const HEDGE_PATTERN = new RegExp(`(?<![\\p{L}])(${HEDGE_WORDS.map((word) => word.replace(/ /g, '\\s+')).join('|')})(?![\\p{L}])`, 'giu');
 const NUMBER_PATTERN = /(?<![\p{L}\d])(\d[\d.,]*|[\p{L}]*(?:hundert|tausend|million|milliard)[\p{L}]*|zwanzig|dreißig|vierzig|fünfzig|sechzig|siebzig|achtzig|neunzig|zwölf|elf)(?![\p{L}\d])/giu;
-const TEASER_PATTERN = /(?<![\p{L}])(gleich|später|dazu kommen wir|das klären wir|bleib dran|noch nicht alles|doch dann|stell dir vor|überraschend|das eigentlich spannende|aber warum)(?![\p{L}])/iu;
+const TEASER_PATTERN = /(?<![\p{L}])(gleich|später|dazu kommen wir|das klären wir|bleib dran|noch nicht alles|doch dann|stell dir vor|überraschend|das eigentlich spannende|aber warum|zu diesem zeitpunkt|niemand ahnte|ahnt(?:e|en)?\s+(?:noch\s+)?niemand|was dann (?:passierte|geschah|kam)|doch das war erst|das sollte sich ändern|plötzlich)(?![\p{L}])/iu;
 const PLACEHOLDER = /^(ungeplant|tbd|todo|platzhalter|ergänzen)?$/i;
 
 const wordsOf = (text) => String(text ?? '').split(/\s+/).filter(Boolean);
@@ -57,9 +61,12 @@ export const analyzeScriptEngagement = ({scenes = [], hookAnchor, title = '', li
   const numbersMin = Math.max(1, Math.round((total / 1000) * limits.concreteNumbersPer1000WordsMin));
   if (numbers < numbersMin) problems.push(`Nur ${numbers} konkrete Zahl(en) im ganzen Skript; mindestens ${numbersMin} (z. B. Masse, Größe, Rekord, Jahreszahl – mit Quelle).`);
 
-  // 3. Keine Zahlenliste.
+  // 3. Keine Zahlenliste. Im Hook ist ein kurzer Zahlenstapel erlaubt („6000 Bäume, 40 km Tauwerk, 100 Kanonen …“).
+  const hookWords = limits.hookAnchorWithinWords;
+  const hookNumbers = countNumbers(words.slice(0, hookWords).join(' '));
+  if (hookNumbers > limits.hookNumbersMax) problems.push(`Hook mit ${hookNumbers} Zahlen in den ersten ${hookWords} Wörtern; maximal ${limits.hookNumbersMax}. Die stärksten Zahlen behalten, den Rest später verteilen.`);
   for (let start = 0; start < total; start += 20) {
-    const count = countNumbers(words.slice(start, start + 120).join(' '));
+    const count = countNumbers(words.slice(Math.max(start, hookWords), start + 120).join(' '));
     if (count > limits.numbersPer120WordsMax) {
       problems.push(`Zahlenliste ab ${sceneId(start)}: ${count} Zahlen in 120 Wörtern; maximal ${limits.numbersPer120WordsMax}. Zahlen auf mehrere Erkenntnisse verteilen.`);
       break;

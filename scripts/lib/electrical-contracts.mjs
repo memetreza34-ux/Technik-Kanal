@@ -95,7 +95,7 @@ export const ScenePlan = z.object({
   width: z.literal(1920),
   height: z.literal(1080),
   minimumWordMatchRatio: z.number().min(0.5).max(1).default(0.82),
-  scenes: z.array(ScienceScene).min(2).max(50),
+  scenes: z.array(ScienceScene).min(2).max(64),
   totalFrames: z.number().int().positive().optional(),
   plannedFrames: z.number().int().positive().optional(),
   durationSeconds: z.number().positive().optional(),

@@ -23,7 +23,7 @@ try {
   if (plan.runtimeFile !== 'science-runtime.json') throw new Error('Science-Video muss science-runtime.json verwenden.');
   if (plan.generatedImageTextPolicy !== 'controlled-german-only') throw new Error('Kontrollierte Deutsch-only-Bildtextregel fehlt.');
   if (plan.width !== 1920 || plan.height !== 1080) throw new Error('Neue Videos müssen 1920×1080 sein.');
-  if (plan.scenes.length !== 46) throw new Error('Standard-Scaffold muss 46 visuelle Beats (6–7 Minuten) erzeugen.');
+  if (plan.scenes.length !== 56) throw new Error('Standard-Scaffold muss 56 visuelle Beats (6–7 Minuten) erzeugen.');
   if (plan.scenes[0]?.section !== 'hook' || plan.scenes.at(-1)?.section !== 'payoff') throw new Error('Hook/Payoff-Dramaturgie fehlt.');
   if (plan.scenes.some((scene) => scene.renderMode !== 'image-only')) throw new Error('Jede neue Szene muss image-only sein.');
   if (plan.scenes.some((scene) => scene.motionLevel !== 'none')) throw new Error('Neue Szenen dürfen keine Bewegung enthalten.');
@@ -34,7 +34,7 @@ try {
   if (manifest.thumbnail?.candidateCount !== 3) throw new Error('Drei Thumbnail-Kandidaten fehlen.');
   if (manifest.thumbnail?.width !== 1280 || manifest.thumbnail?.height !== 720) throw new Error('Thumbnail muss 1280×720 sein.');
 
-  console.log('✓ E2E-Vertrag: 6–7-Minuten-Video → 16:9 → 46 Beats → separates Thumbnail → statische Runtime ist konsistent.');
+  console.log('✓ E2E-Vertrag: 6–7-Minuten-Video → 16:9 → 56 Beats → separates Thumbnail → statische Runtime ist konsistent.');
 } finally {
   fs.rmSync(root, {recursive: true, force: true});
 }

@@ -14,7 +14,7 @@ const hook=(opt('hook')??title??'').trim();
 const productionProfile=opt('profile')??'youtube-6to7min-v1';
 const isLong=productionProfile==='youtube-6to7min-v1';
 if(!['youtube-2min-v1','youtube-6to7min-v1'].includes(productionProfile)) throw new Error('Unbekanntes Profil.');
-const sceneCount=Number(opt('scenes')??(isLong?46:20));
+const sceneCount=Number(opt('scenes')??(isLong?56:20));
 const imageProductionSteps=5;
 
 if(!week||!slot||!title) throw new Error('Pflicht: --week --slot --title');
