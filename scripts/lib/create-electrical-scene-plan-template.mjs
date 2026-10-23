@@ -56,6 +56,9 @@ export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema'
     width:1920,
     height:1080,
     minimumWordMatchRatio:.82,
+    // qualitaet-v2: Spannungs-, Titel- und Bildregeln sind für neue Videos Pflicht (gehirn/LONGFORM.md, BILDWELT.md).
+    qualityRulesVersion:'qualitaet-v2',
+    hookAnchor:{type:'UNGEPLANT',text:'UNGEPLANT',firstImage:'UNGEPLANT'},
     scenes
   };
 };

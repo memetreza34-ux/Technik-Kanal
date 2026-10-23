@@ -32,8 +32,8 @@ jobs:
         run: npm run validate:science-visual-policy
       - name: Longform profile and export test
         run: npm run validate:science-longform
-      - name: First longform video preflight
-        run: npm run science:preflight -- "channels/science/reels/2026-10-05_bis_2026-10-11/01_Wie-kommt-Strom-in-deine-Steckdose"
+      - name: Reference longform video content QA
+        run: npm run science:reference-qa -- "channels/science/YouTube/2026-10-12_bis_2026-10-18/01_Warum-sinkt-ein-riesiges-Stahlschiff-nicht"
 
   types-and-unit:
     name: TypeScript and unit tests

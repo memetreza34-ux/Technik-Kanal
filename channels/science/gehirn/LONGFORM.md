@@ -42,6 +42,47 @@ Keine Begrüßung und kein Vorgeplänkel. Die Erklärung beginnt innerhalb der e
 - keine Wiederholung derselben Aussage nur zur Verlängerung
 - jeder Abschnitt bringt die zentrale Frage voran
 
+## Spannung – Pflicht für neue Videos (`qualitaet-v2`)
+
+Gemessen an den ersten Langvideos: Das Stahlschiff-Skript hatte **0 konkrete Zahlen** in 932 Wörtern, und 80 % der Szenen hatten genau 2 Sätze (Bildwechsel wie ein Metronom alle ~8 s). Das Steckdosen-Skript hatte 9 Absicherungswörter und **~5 Minuten ohne eine einzige Frage**. In der YouTube-Suche lagen reine Physik-Erklärvideos zur selben Frage bei 66–803 Aufrufen, Videos mit Geschichte, Zahl oder Drama bei 10.000–40.000 (`ANALYSE-2026-10-18.md`).
+
+`science:script-qa` prüft automatisch (Fehler bei `qualityRulesVersion: qualitaet-v2`, sonst Hinweis):
+
+| Regel | Grenze |
+|---|---|
+| **Hook-Anker**: konkrete Zahl, Ereignis, Ort, Person oder sichtbares Paradox in `hookAnchor.text` | muss in den ersten 80 Wörtern (~30 s) vorkommen |
+| **Konkrete Zahlen** (Masse, Größe, Rekord, Jahreszahl – mit Quelle) | mindestens 2 pro 1000 Wörter |
+| **Keine Zahlenliste** | höchstens 3 Zahlen in 120 Wörtern |
+| **Absicherungswörter** (häufig, normalerweise, beispielsweise, typischerweise, gewöhnlich, in der Regel …) | höchstens 0,8 pro 100 Wörter |
+| **Rhythmus**: Szenen mit genau 2 Sätzen | höchstens 60 %; kurze Schlagsätze, Szenen mit 1 oder 3 Sätzen mischen |
+| **Offene Fragen**: Frage oder Ankündigung („Gleich sehen wir, warum …“) | spätestens alle 240 Wörter (~96 s) |
+
+So füllt man `hookAnchor` im Szenenplan:
+
+```json
+"hookAnchor": {
+  "type": "zahl",
+  "text": "200.000 Tonnen",
+  "firstImage": "steel block sinking next to a floating container ship"
+}
+```
+
+`type`: `zahl`, `ereignis`, `ort`, `person` oder `paradox`. `firstImage` ist der englische Satzteil, der wörtlich im Bildauftrag von Bild 1 stehen muss (siehe `BILDWELT.md`).
+
+Gute Hook-Muster:
+- **Zahl + Widerspruch:** „Dieses Schiff trägt über 200.000 Tonnen Ladung – und ein Nagel geht unter. Warum schwimmt es?“ (jede Zahl vorher mit Quelle belegen)
+- **Ereignis:** „1912 galt die Titanic als unsinkbar. Drei Stunden später lag sie am Meeresgrund.“
+- **Irrtum:** „Fast alle glauben, der Motor hält ein Schiff oben. Er hat damit nichts zu tun.“
+
+## Titel – vor dem Skript prüfen
+
+```bash
+npm run science:title-check -- "<video-ordner>"
+npm run science:title-check -- "<video-ordner>" --titel="Alternativer Titel"
+```
+
+Holt die Top-15 der YouTube-Suche, markiert Videos mit fast derselben Frage und schreibt `06-projektdateien/title-check.json`. Ergebnis `besetzt` (große Kanäle mit derselben Frage) oder `umkämpft` (viele gleiche Videos) heißt: **Titel ändern**, nicht die gleiche Lexikonfrage stellen. Formeln: Zahl + Widerspruch, konkretes Ereignis, Irrtum aufdecken. Jede Zahl im Titel braucht eine Quelle in `sources.md`.
+
 ## Wichtigste Skriptregel: bildklar und bildleicht schreiben
 
 Jeder wichtige Satz bzw. Beat muss sich **einfach und eindeutig visualisieren lassen** und das Video muss insgesamt **visuell abwechslungsreich** bleiben.
