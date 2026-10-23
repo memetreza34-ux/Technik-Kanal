@@ -84,7 +84,7 @@ Danach `01-script-audio/voiceover.txt` (Fließtext, Szenen mit Leerzeile getrenn
 | `visualType` | z. B. environment, cutaway, diagram, comparison, macro, process, top-down, before-after, schematic. **Mindestens 7 verschiedene**, nie zweimal derselbe direkt hintereinander |
 | `primaryMotif` | kurzer Slug des Hauptmotivs; dasselbe höchstens 3-mal pro Video |
 | `setting` | **englisch, wo das Bild spielt**: „inside a home fuse box“, „harbor quay“, „school lab bench“. Geräte immer an ihrem echten Ort. Gleiches Setting höchstens 3-mal hintereinander und in höchstens 30 % der Bilder |
-| `informationBudget` | normal: ≤ 3 wichtige Elemente, ≤ 2 Labels; Diagramm/Vergleich: ≤ 4 Elemente, ≤ 3 Labels; immer `largeHeadlineAllowed: false`, `fullSentenceTextAllowed: false` |
+| `informationBudget` | normal: ≤ 3 wichtige Elemente, bevorzugt ≤ 2 und höchstens 3 Labels; Diagramm/Vergleich: ≤ 4 Elemente, ≤ 5 Labels (Werte aus `engine/config/youtube-6to7min-v1.json`); immer `largeHeadlineAllowed: false`, `fullSentenceTextAllowed: false` |
 
 Etwa ein Drittel bis die Hälfte der Bilder sollen **technische Erklärbilder** sein (Querschnitt, Kraftdiagramm, Vergleich mit gleichem Maßstab, Schaltplan, Prozesskette).
 
