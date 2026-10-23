@@ -53,7 +53,7 @@ export function buildScienceSimpleHandoff({repoRoot,projectDir,repository='memet
   const info=path.join(pack,'DATEIEN-HIER-REIN/HIER-ABLEGEN.txt');
   if(!fs.existsSync(info))put(info,
     'Hier alle finalen Bilder und eine Sprachaufnahme ablegen.\n'+
-    `Szenenbilder 01.png bis ${String(plan.scenes.length).padStart(2,'0')}.png oder die Szenen-IDs mit -final benennen.\n`+
+    `Szenenbilder ${'1'.padStart(Math.max(2,String(plan.scenes.length).length),'0')}.png bis ${String(plan.scenes.length).padStart(2,'0')}.png oder die Szenen-IDs mit -final benennen.\n`+
     'Cover: 00-thumbnail-final.png; Sprache: voiceover-raw.wav.\n'+
     'Optional Musik: musik.mp3 plus musik-quelle.txt (Titel, Künstler, Quelle, Lizenz – z. B. YouTube Audio Library).\n'+
     'Keine Unterordner. Die Originaldateien bleiben bei der Übernahme erhalten.\n');

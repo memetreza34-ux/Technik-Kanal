@@ -40,6 +40,11 @@ assert.ok(!has(stack.problems, /Zahlenliste|Hook mit/), stack.problems.join('\n'
 const overload = analyzeScriptEngagement({scenes: [{id: 'hook', voiceText: '1 Tonne, 2 Meter, 3 Masten, 4 Decks, 5 Anker, 6 Segel und 7 Kanonen. Warum?'}], hookAnchor: {type: 'zahl', text: '1 Tonne', firstImage: 'ship'}});
 assert.ok(has(overload.problems, /Hook mit 7 Zahlen/));
 
+// Bildtakt: lange Szenen werden als Hinweis gemeldet, eine feste Bildzahl gibt es nicht.
+const slowScene = analyzeScriptEngagement({scenes: [{id: '01-hook', voiceText: '6000 Bäume. Wie ging das?'}, {id: '02-lang', voiceText: 'Das Holz wurde gesägt, getrocknet, gebogen und dann Stück für Stück mit Eisennägeln und Holzdübeln an den Spanten befestigt, bis der Rumpf dicht war.'}], hookAnchor: {type: 'zahl', text: '6000 Bäume', firstImage: 'oak forest'}});
+assert.ok(has(slowScene.hints, /02-lang ~10 s/), slowScene.hints.join('\n'));
+assert.equal(slowScene.metrics.scenesOverReview, 1);
+
 // Vorausdeutung zählt als offene Schleife.
 const foreshadow = analyzeScriptEngagement({scenes: [{id: 'a', voiceText: `${'Das Schiff fährt ruhig durch die Nacht. '.repeat(25)}Zu diesem Zeitpunkt ahnte niemand etwas. ${'Das Schiff fährt ruhig durch die Nacht. '.repeat(25)}Und dann?`}], hookAnchor: {type: 'paradox', text: 'Das Schiff', firstImage: 'ship'}});
 assert.ok(!has(foreshadow.problems, /ohne Frage oder Ankündigung/), foreshadow.problems.join('\n'));

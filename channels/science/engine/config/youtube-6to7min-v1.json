@@ -19,9 +19,11 @@
     "max": 1075
   },
   "visualBeats": {
-    "min": 44,
-    "ideal": 56,
-    "max": 64
+    "individual": true,
+    "min": 7,
+    "max": 400,
+    "scaffoldStart": 56,
+    "note": "Keine feste Bildzahl: so viele Bilder, wie das Script sichtbare Aussagen hat. min/max sind nur technische Grenzen. Anpassen mit npm run science:scenes."
   },
   "narrativeStructure": [
     "hook",

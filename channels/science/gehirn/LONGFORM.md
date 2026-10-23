@@ -13,7 +13,7 @@ Ziel:
 - 16:9 / 1920×1080 / 30 fps
 - 360–420 Sekunden (6–7 Minuten), 390 Sekunden ideal
 - ungefähr 850–1075 Wörter, 975 ideal
-- 44–64 visuelle Beats, 56 ideal
+- **Bildzahl individuell pro Video:** so viele Bilder, wie das Script sichtbare Aussagen hat, auch über 100 oder deutlich weniger. Keine feste Zahl. Festlegen mit `npm run science:scenes -- "<video-ordner>" --anzahl=<N>`
 - Bildwechsel meist nach 4–7 Sekunden; über 8 Sekunden prüfen, ob ein weiteres Bild nötig ist (Konkurrenz mit Standbildern: Median 5,4–5,7 s, siehe `gehirn/KONKURRENZ-ANALYSE-2026-10-23.md`)
 
 Das 2-Minuten-Profil `youtube-2min-v1` (90–150 s, 230–370 Wörter, 12–28 Beats) ist **archiviert**. Es bleibt nur für die Testphasen-Videos vom 28.09.–04.10.2026 ladbar und wird für neue Videos nicht mehr verwendet.
@@ -138,7 +138,7 @@ Dann gilt: **Skript/Beat-Plan ändern, nicht nur den Prompt umformulieren.**
 
 Das Cover stellt dieselbe Frage wie der Hook, darf aber in **keinem einzigen Frame der MP4** vorkommen. Der eine gewählte Cover-Gewinner wird ausschließlich als Datei `05-export/cover/00-thumbnail-final.*` bereitgestellt. **Szene 01 ist eine unabhängige normale technische Illustration** des ersten gesprochenen Satzes. Kein Covermotiv, keine Cover-Grafik, kein Titel im Video.
 
-Bei 6–7 Minuten etwa 56 visuelle Beats anpeilen. Bildwechsel bevorzugt dort, wo der Text eine neue konkrete Aussage macht; bei Bildhaltezeit über 8 Sekunden eine Teilung prüfen. Zusätzliche Bilder vor der Bildgenerierung und vor Phase 3 im Beat-Plan festlegen; Phase 3 darf nichts selbst nachgenerieren.
+Die Bildzahl ergibt sich aus dem Script, nicht aus einer Vorgabe: Jede neue sichtbare Aussage bekommt ein eigenes Bild. Bildwechsel bevorzugt dort, wo der Text eine neue konkrete Aussage macht; bei Bildhaltezeit über 8 Sekunden eine Teilung prüfen. Zusätzliche Bilder vor der Bildgenerierung und vor Phase 3 im Beat-Plan festlegen; Phase 3 darf nichts selbst nachgenerieren.
 
 ## Visuelle Beat-Regel
 

@@ -22,7 +22,7 @@ Der Agent arbeitet die Schritte **der Reihe nach** ab und fragt den Nutzer nur a
 ## Schritt 2 – Titel gegen die Konkurrenz
 
 1. Drei Titel-Kandidaten aus verschiedenen Formeln formulieren: **Zahl + Widerspruch**, **konkretes Ereignis**, **Irrtum**, **bekannter Bezug** (Film, Marke, berühmtes Objekt) oder **Listen-Versprechen** („5 Dinge, die …“). Keine reine Lexikonfrage („Wie funktioniert …?“) und keine allgemeinen Wörter wie „faszinierende Technik“.
-2. Videoordner anlegen (vorläufiger Titel = bester Kandidat):
+2. Videoordner anlegen (vorläufiger Titel = bester Kandidat). Das legt nur ein Startgerüst an; die echte Szenenzahl kommt in Schritt 5 aus dem Script:
    ```bash
    npm run science:new -- --week=YYYY-MM-DD_bis_YYYY-MM-DD --slot=01 --title="<Titel>" --hook="<Hook-Frage>?"
    ```
@@ -53,7 +53,16 @@ Im Szenenplan:
 
 ## Schritt 5 – Script schreiben (`voiceText` jeder Szene)
 
-Profil `youtube-6to7min-v1`: 850–1075 Wörter, 44–64 Szenen (ideal 56, Bildwechsel meist nach 4–7 s).
+Profil `youtube-6to7min-v1`: 850–1075 Wörter. **Die Szenenzahl ist individuell:** Sie ergibt sich aus dem Script, nicht aus einer Vorgabe. Jede neue sichtbare Aussage bekommt ein eigenes Bild, das Bild wechselt meist nach 4–7 s. Je nach Thema sind das 30, 70 oder über 100 Szenen.
+
+So legst du sie fest:
+1. Script zuerst als Fließtext schreiben (`01-script-audio/script-fliesstext.txt`).
+2. In Beats teilen: eine sichtbare Aussage = ein Beat. Längere Beats (über ~20 Wörter ≈ 8 s) prüfen und bei neuer Aussage teilen.
+3. Beats zählen und das Gerüst anpassen: `npm run science:scenes -- "<video-ordner>" --anzahl=<N>`.
+4. Jede Szene mit ihrem `voiceText` füllen.
+5. Merkst du später, dass eine Szene fehlt oder zu viel ist: in `scene-plan.json` und `flow-plan.json` einfügen oder löschen, dann `npm run science:scenes -- "<video-ordner>" --neu-verteilen`. Das verteilt die Flow-Bildschritte und Manifeste neu.
+
+`science:script-qa` meldet Szenen über ~8 s als Hinweis.
 Aufbau: **Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff** (`section` jeder Szene).
 
 **Pflicht (prüft `science:script-qa`):**

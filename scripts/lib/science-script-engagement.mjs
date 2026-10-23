@@ -23,6 +23,8 @@ export const ENGAGEMENT_LIMITS = {
   curiosityGapWordsMax: 240,
   shortSentenceShareMin: 0.15,
   wordsPerSecond: 2.5,
+  // Keine feste Bildzahl: Stattdessen wird jede Szene am Takt gemessen (Konkurrenz mit Standbildern: Median 5,4–5,7 s).
+  sceneSecondsReview: 8,
 };
 
 export const HEDGE_WORDS = ['häufig', 'normalerweise', 'beispielsweise', 'typischerweise', 'gewöhnlich', 'in der regel', 'unter umständen', 'gewissermaßen', 'teilweise', 'meistens'];
@@ -99,12 +101,17 @@ export const analyzeScriptEngagement = ({scenes = [], hookAnchor, title = '', li
   if (total - lastMarker > longestGap.words) longestGap = {words: total - lastMarker, from: lastMarker};
   if (longestGap.words > limits.curiosityGapWordsMax) problems.push(`Ab ${sceneId(longestGap.from)} ${longestGap.words} Wörter (~${seconds(longestGap.words)} s) ohne Frage oder Ankündigung; spätestens alle ${limits.curiosityGapWordsMax} Wörter (~${seconds(limits.curiosityGapWordsMax)} s) eine offene Frage stellen („Gleich sehen wir, warum …“).`);
 
-  // 7. Titel mit Zahl, Geschichte oder Paradox (Hinweis).
+  // 7. Bildtakt pro Szene (Hinweis): lange Szenen teilen, statt eine feste Bildzahl vorzugeben.
+  const sceneSeconds = scenes.map((scene) => ({id: scene.id, seconds: wordsOf(scene.voiceText).length / limits.wordsPerSecond}));
+  const slow = sceneSeconds.filter((scene) => scene.seconds > limits.sceneSecondsReview);
+  if (slow.length) hints.push(`${slow.length} Szene(n) länger als ~${limits.sceneSecondsReview} s (${slow.slice(0, 5).map((scene) => `${scene.id} ~${Math.round(scene.seconds)} s`).join(', ')}${slow.length > 5 ? ' …' : ''}): prüfen, ob eine neue sichtbare Aussage ein eigenes Bild verdient (npm run science:scenes).`);
+
+  // 8. Titel mit Zahl, Geschichte oder Paradox (Hinweis).
   if (/^\s*(warum|wie|was|wieso|weshalb)\b/i.test(title) && countNumbers(title) === 0) hints.push(`Titel „${title}“ ist eine reine Lexikonfrage ohne Zahl oder Geschichte. Solche Titel lagen in der Konkurrenzsuche bei 66–308 Aufrufen; npm run science:title-check ausführen.`);
 
   return {
     problems,
     hints,
-    metrics: {words: total, concreteNumbers: numbers, hedges: hedges.length, hedgesPer100Words: Number(hedgeRate.toFixed(2)), twoSentenceSceneShare: Number(twoSentenceShare.toFixed(2)), shortSentenceShare: Number(shortShare.toFixed(2)), longestCuriosityGapWords: longestGap.words},
+    metrics: {words: total, concreteNumbers: numbers, hedges: hedges.length, hedgesPer100Words: Number(hedgeRate.toFixed(2)), twoSentenceSceneShare: Number(twoSentenceShare.toFixed(2)), shortSentenceShare: Number(shortShare.toFixed(2)), longestCuriosityGapWords: longestGap.words, scenes: scenes.length, sceneSecondsMedian: Number((sceneSeconds.map((scene) => scene.seconds).sort((a, b) => a - b)[Math.floor(sceneSeconds.length / 2)] ?? 0).toFixed(1)), scenesOverReview: slow.length},
   };
 };

@@ -47,13 +47,15 @@ export function importScienceDrop({repoRoot,packageDir,projectDir=null,dryRun=fa
         else cover={file,name,ext};
         continue;
       }
-      const m=name.match(/^(\d{1,2})(?:[-_][^.]*)?\.(?:png|jpe?g|webp|avif)$/i);
+      // Bis zu drei Stellen: Videos können über 100 Szenen haben (Flow speichert dann 001.png …).
+      const m=name.match(/^(\d{1,3})(?:[-_][^.]*)?\.(?:png|jpe?g|webp|avif)$/i);
       if(!m){unknown.push(name);continue;}
       const number=Number(m[1]),scene=numbered.get(number);
       if(!scene){errors.push('Unbekannte Bildnummer: '+name);continue;}
       const rest=name.slice(m[1].length,-ext.length).replace(/^[-_]/,'').toLowerCase();
-      if(rest&&rest!==scene.id.slice(m[1].length+1).toLowerCase()&&rest!==scene.id.slice(m[1].length+1).toLowerCase()+'-final'&&rest!=='final'){
-        errors.push('Falsche Zuordnung für '+name+' (erwartet: '+scene.id+'-final oder '+String(number).padStart(2,'0')+ext+').');
+      const sceneSuffix=scene.id.replace(/^\d+[-_]/,'').toLowerCase();
+      if(rest&&rest!==sceneSuffix&&rest!==sceneSuffix+'-final'&&rest!=='final'){
+        errors.push('Falsche Zuordnung für '+name+' (erwartet: '+scene.id+'-final oder '+String(number).padStart(Math.max(2,String(plan.scenes.length).length),'0')+ext+').');
         continue;
       }
       if(selected.has(scene.id)){errors.push('Mehrere Bilder für Szene '+scene.id);continue;}
