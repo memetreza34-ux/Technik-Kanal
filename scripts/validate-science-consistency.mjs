@@ -15,7 +15,8 @@ const longform=fs.readFileSync(path.join(root,'channels/science/gehirn/LONGFORM.
 const voice=JSON.parse(fs.readFileSync(path.join(root,'channels/science/engine/config/voice-v1.json'),'utf8'));
 const scienceReel=fs.readFileSync(path.join(root,'channels/science/src/ScienceReel.tsx'),'utf8');
 const template=fs.readFileSync(path.join(root,'scripts/lib/create-electrical-scene-plan-template.mjs'),'utf8');
-const newVideo=fs.readFileSync(path.join(root,'scripts/new-science-reel.mjs'),'utf8');
+// Das Gerüst neuer Videos entsteht in new-science-reel.mjs plus der gemeinsamen Vorlage (auch für science:scenes).
+const newVideo=['scripts/new-science-reel.mjs','scripts/lib/create-electrical-scene-plan-template.mjs'].map((file)=>fs.readFileSync(path.join(root,file),'utf8')).join('\n');
 const flowBuilder=fs.readFileSync(path.join(root,'scripts/build-google-flow-master-prompt.mjs'),'utf8');
 const prepareScience=fs.readFileSync(path.join(root,'scripts/prepare_science_reel.mjs'),'utf8');
 const processVoice=fs.readFileSync(path.join(root,'scripts/process_voiceover.mjs'),'utf8');
@@ -30,7 +31,7 @@ if(config.format?.durationSeconds?.ideal!==390) errors.push('Ideale Videolänge 
 if(config.script?.words?.ideal!==975) errors.push('Ideale Skriptlänge muss 975 Wörter sein.');
 if(JSON.stringify(config.script?.narrativeStructure)!==JSON.stringify(['hook','context','foundation','mechanism','deepening','payoff'])) errors.push('Longform-Dramaturgie ist falsch.');
 if(config.script?.rewriteWhenThreeAdjacentBeatsWouldLookSimilar!==true) errors.push('Skript muss bei drei ähnlichen Nachbarbeats umgeschrieben werden.');
-if(config.visuals?.beats?.min!==44||config.visuals?.beats?.ideal!==56||config.visuals?.beats?.max!==64) errors.push('Visuelle Beats müssen 44/56/64 konfiguriert sein.');
+if(config.visuals?.beats?.individual!==true||config.visuals?.beats?.min!==7||config.visuals?.beats?.max!==400||'ideal' in (config.visuals?.beats??{})) errors.push('Bildzahl muss individuell sein (individual: true, nur technische Grenzen 7–400, kein Idealwert).');
 if(config.visuals?.thumbnail?.required!==true||config.visuals?.thumbnail?.candidateCount!==3) errors.push('Drei Thumbnail-Kandidaten müssen vorgeschrieben sein.');
 if(!/Aktiv ist \*\*`youtube-6to7min-v1`\*\*/i.test(longform)||!/Hook.*Kontext.*Grundlage.*Mechanismus.*Vertiefung.*Payoff/is.test(longform)) errors.push('LONGFORM.md dokumentiert Profil/Dramaturgie nicht.');
 if(!/visuell abwechslungsreich/i.test(longform)||!/keine eingebrannten Untertitel/i.test(longform)) errors.push('LONGFORM.md muss Bildvielfalt und subtitle-free festhalten.');

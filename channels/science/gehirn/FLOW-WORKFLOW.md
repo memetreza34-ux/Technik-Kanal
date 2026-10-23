@@ -118,7 +118,7 @@ Der Masterprompt wird ausschließlich mit `npm run science:flow-master -- "<vide
 
 ### Visueller Rhythmus
 
-6–7 Minuten: ungefähr 56 Bildbeats. Wenn zwei Aussagen in einem Satz unterschiedliche Bilder erfordern, Skript/Beat vorab teilen. Bevorzugt 4–7 Sekunden pro Bild; über 8 Sekunden auf sinnvolle Teilung prüfen. Die fünf Bildschritte bleiben gleichmäßig verteilt, ohne Zwischenfreigabe.
+Bildzahl individuell: so viele Bildbeats, wie das Script sichtbare Aussagen hat (`npm run science:scenes`). Wenn zwei Aussagen in einem Satz unterschiedliche Bilder erfordern, Skript/Beat vorab teilen. Bevorzugt 4–7 Sekunden pro Bild; über 8 Sekunden auf sinnvolle Teilung prüfen. Die fünf Bildschritte bleiben gleichmäßig verteilt, ohne Zwischenfreigabe.
 
 ## Phase 2 – genau 5 Bildschritte, ohne Zwischenstopps
 

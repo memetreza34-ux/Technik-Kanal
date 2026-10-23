@@ -12,7 +12,7 @@ Folge **exakt** `channels/science/gehirn/VIDEO-AUTOMATIK.md`, Schritt 0 bis 10, 
 3. Drei Titel-Kandidaten → `science:new` → `science:title-check` je Kandidat → besten wählen.
 4. Recherche: ≥ 8 belegte Zahlen (je mit Größenvergleich), 1 Geschichte/Ereignis mit Datum und Ort, 1 Irrtum → `sources.md`.
 5. `hookAnchor` (text in den ersten 80 Wörtern, firstImage im Bildauftrag von Bild 1).
-6. Script in `voiceText` nach den Spannungsregeln, dazu voiceover.txt, script.md, script-fliesstext.txt.
+6. Script erst als Fließtext nach den Spannungsregeln, dann in Beats teilen (eine sichtbare Aussage = ein Bild). **Szenenzahl individuell, keine feste Zahl:** `npm run science:scenes -- "<video-ordner>" --anzahl=<N>`, danach `voiceText` je Szene füllen; dazu voiceover.txt, script.md, script-fliesstext.txt.
 7. Flow-Plan pro Szene: visualType (≥ 7 verschieden), primaryMotif, **setting** (Gerät am echten Ort), informationBudget.
 8. Bildprompt pro Szene im festen Format (`EXACT VISUAL BRIEF — …` / `Request visible German labels: …`), ohne Szenen-ID oder Sprechtext. Thumbnail-Prompt mit 3 Kandidaten (1–3 Wörter, großes Objekt, Pfeil/Kreis oder Vorher/Nachher). `chapterTitle` an der ersten Szene jedes Abschnitts.
 9. `science:script-qa` und `science:creative-qa` wiederholen, bis keine Fehler mehr kommen; Hinweise abarbeiten; Selbstprüfung (passt jedes Bild zu seinem Satz?).

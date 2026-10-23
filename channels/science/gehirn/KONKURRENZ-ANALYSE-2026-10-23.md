@@ -89,7 +89,7 @@ Bildwechsel in den ersten 7 Minuten:
 - Jeder Vergleichskanal wechselt das Bild schneller als wir. Am nächsten an unseren 8 s liegt das schwächste Video im Vergleich (Zumwalt, 6,7 s).
 - Innerhalb desselben Kanals ist der Treffer schneller geschnitten als das typische Video (Stahl unter Wasser 5,4 s gegenüber 6,0 s).
 - Gleichmäßiger Takt allein schadet offenbar nicht: Der Holz-Treffer wechselt fast exakt alle 5,7 s. Entscheidend ist eher das Tempo.
-- → **Neu: 56 statt 46 Bilder (44–64), bevorzugt 4–7 s pro Bild, ab 8 s Teilung prüfen.** Das ist ein bewusst mittlerer Schritt (Durchschnitt etwa 7 s), weil jedes Bild in Google Flow Arbeit kostet. Als Hypothese `hyp-003` im Lernsystem.
+- → **Neu: Bildzahl individuell pro Video statt fester Zahl.** Jede sichtbare Aussage bekommt ein eigenes Bild, bevorzugt 4–7 s pro Bild, ab 8 s Teilung prüfen. `science:script-qa` meldet lange Szenen, `npm run science:scenes` passt das Gerüst an. Als Hypothese `hyp-003` im Lernsystem.
 
 ## 3. Bilder
 

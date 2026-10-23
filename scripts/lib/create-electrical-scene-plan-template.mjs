@@ -108,3 +108,76 @@ export const createElectricalStatusTemplate=(scenePlan)=>({
   requiredVisibleSceneImages:scenePlan.scenes.length,
   nextCommand:'npm run science:preflight -- "<video-ordner>"'
 });
+
+// Bildschritte gleichmäßig über alle Szenen verteilen, egal wie viele Szenen ein Video hat.
+export const distributeScienceImageSteps=(sceneIds,imageProductionSteps=5)=>{
+  const stepSizes=Array(imageProductionSteps).fill(Math.floor(sceneIds.length/imageProductionSteps));
+  for(let i=0;i<sceneIds.length%imageProductionSteps;i+=1) stepSizes[i]+=1;
+  let cursor=0;
+  return stepSizes.map((size,index)=>{
+    const ids=sceneIds.slice(cursor,cursor+size);
+    cursor+=size;
+    return {step:index+1,sceneIds:ids};
+  });
+};
+
+export const createScienceFlowPlanTemplate=({plan,imageProductionSteps=5})=>{
+  const productionProfile=plan.productionProfile;
+  const slug=plan.slug;
+  const isLong=productionProfile==='youtube-6to7min-v1';
+  const imageSteps=distributeScienceImageSteps(plan.scenes.map((scene)=>scene.id),imageProductionSteps);
+  const imageStepById=new Map(imageSteps.flatMap((group)=>group.sceneIds.map((id)=>[id,group.step])));
+  const defaultInformationBudget={
+    densityClass:'normal',
+    oneDominantIdea:true,
+    maxLabels:isLong?3:1,
+    maxPrimaryObjects:3,
+    maxPanels:isLong?3:1,
+    maxArrows:isLong?4:2,
+    largeHeadlineAllowed:false,
+    fullSentenceTextAllowed:false
+  };
+
+  return {
+    version:'science-flow-image-v8-density-locked',
+    productionProfile,
+    workflow:'thumbnail-first-then-five-image-steps-no-intermediate-stops-final-cleanup',
+    imageOnly:true,
+    informationBudgetLocked:true,
+    imageProductionSteps,
+    pauseAfterEachImageStep:false,
+    continueAutomaticallyBetweenImageSteps:true,
+    finalReportAfterAllImageSteps:true,
+    deleteUnselectedThumbnailCandidatesAfterSelection:true,
+    selectedThumbnailFinalName:'00-thumbnail-final',
+    coverExportDir:'05-export',
+    coverNeverUsedAsVideoFrame:true,
+    scene01IndependentFromCover:true,
+    finalFlowCollectionRequired:true,
+    singleFinalFlowCollectionPerVideo:true,
+    finalCollectionName:`${slug}-assets-final`,
+    removeRejectedVariantsBeforeCompletion:true,
+    renameFinalAssetsBeforeCompletion:true,
+    finalCollectionContainsFinalAssetsOnly:true,
+    diversityRequired:true,
+    phase2SceneAssetRoot:'02-bilder/images',
+    phase2ThumbnailRoot:'02-bilder/thumbnail',
+    phase3AssetSource:'phase2-project-folders-only',
+    phase3MayGenerateVisualAssets:false,
+    phase3MayRegenerateVisualAssets:false,
+    phase3MaySearchExternalAssets:false,
+    phase3MaySubstituteMissingAssets:false,
+    phase3MaySkipMissingScenes:false,
+    phase3MissingAssetPolicy:'stop-and-report',
+    steps:imageSteps,
+    scenes:plan.scenes.map((scene)=>({
+      id:scene.id,
+      output:'image',
+      imageStep:imageStepById.get(scene.id),
+      visualType:'UNGEPLANT',
+      primaryMotif:'UNGEPLANT',
+      setting:'UNGEPLANT',
+      informationBudget:{...defaultInformationBudget}
+    }))
+    };
+};

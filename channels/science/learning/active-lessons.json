@@ -150,11 +150,12 @@
       "evidenceLevel": "untested-hypothesis",
       "source": "gehirn/KONKURRENZ-ANALYSE-2026-10-23.md",
       "observation": "Alle Vergleichsvideos wechseln das Bild schneller als Wissonaut (Median 1,6–6,7 s gegenüber 8,0 s); innerhalb von Stahl unter Wasser ist der Treffer schneller geschnitten (5,4 s) als das typische Video (6,0 s). Noch keine eigenen Studio-Daten.",
-      "action": "56 statt 46 Bilder pro 6–7-Minuten-Video (44–64), bevorzugt 4–7 s pro Bild. Primärmetrik: durchschnittlich angesehener Anteil und Retention-Dips gegenüber Stahlschiff/Steckdose im gleichen Messfenster.",
+      "action": "Bildzahl individuell aus dem Script: jede sichtbare Aussage ein eigenes Bild, bevorzugt 4–7 s pro Bild, Szenen über ~8 s prüfen (keine feste Zahl, auch über 100 Szenen möglich). Primärmetrik: durchschnittlich angesehener Anteil und Retention-Dips gegenüber Stahlschiff/Steckdose im gleichen Messfenster.",
       "enforcedBy": [
         "channels/science/engine/config/youtube-6to7min-v1.json",
-        "scripts/validate-science-consistency.mjs",
-        "scripts/new-science-reel.mjs"
+        "scripts/lib/science-scenes.mjs",
+        "scripts/science-scenes.mjs",
+        "scripts/lib/science-script-engagement.mjs"
       ]
     }
   ]
