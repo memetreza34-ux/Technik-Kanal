@@ -1,0 +1,7 @@
+Create the first 16:9 scene as the natural continuation of the user-selected thumbnail. Reuse the selected cover’s central visual idea and main motif, but adapt it into a clean video frame: remove the large thumbnail headline, remove unnecessary promotional text, keep only the visual information needed to explain the opening question.
+
+The viewer should immediately recognize: this is the same induction-cooktop idea from the cover, now shown as an explanation. Keep one pot, the induction surface and the key hidden technical element that made the selected cover understandable, such as the copper coil or the direct heating of the pot base. Do not add extra secondary concepts yet.
+
+The frame must explain the hook as simply as possible: a pot becomes hot even though there is no glowing heating coil directly under the glass. No person, no hand, no split screen, no large headline. Use zero labels unless one short German label is genuinely needed.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Not photorealistic, no real-photo aesthetic, no generic AI art, no white textbook infographic layout, no Pixar/cartoon, no sci-fi HUD, no neon-heavy effects. Use the full 1920×1080 frame. Visible text only in German when explicitly useful. No subtitles, logos or watermarks.

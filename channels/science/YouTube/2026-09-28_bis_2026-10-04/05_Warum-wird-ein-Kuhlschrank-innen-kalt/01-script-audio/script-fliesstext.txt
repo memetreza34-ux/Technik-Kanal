@@ -1,0 +1,29 @@
+Warum wird dein Kühlschrank innen kalt, obwohl er hinten Wärme in den Raum abgibt? Er erzeugt Kälte nicht einfach – er transportiert Wärme.
+
+Dafür zirkuliert ein Kältemittel ständig in einem geschlossenen Kreislauf. Es wechselt dabei zwischen gasförmig und flüssig und nimmt Wärme an einer Stelle auf, um sie an einer anderen wieder abzugeben.
+
+Der Kreislauf hat vier Stationen. Entscheidend ist nicht, sich alle Namen sofort zu merken, sondern zu verstehen, was mit Druck, Temperatur und Wärme passiert.
+
+Zuerst saugt der Kompressor gasförmiges Kältemittel an und presst es zusammen. Dadurch steigen Druck und Temperatur deutlich.
+
+Das heiße Kältemittel fließt anschließend durch Rohre an der Außenseite oder Rückseite des Kühlschranks. Dort gibt es Wärme an die Raumluft ab.
+
+Während es Wärme verliert, kühlt das Kältemittel ab und wird größtenteils flüssig.
+
+Danach muss es durch eine sehr enge Stelle, zum Beispiel ein Kapillarrohr. Hinter dieser Drossel fällt der Druck stark ab.
+
+Bei dem niedrigeren Druck kann das Kältemittel schon bei niedriger Temperatur verdampfen.
+
+Jetzt gelangt es in den Verdampfer im Inneren des Kühlschranks. Dort nimmt es Wärme aus der Luft, den Wänden und den Lebensmitteln auf.
+
+Durch diese aufgenommene Energie verdampft das Kältemittel. Die Wärme verschwindet also nicht – sie verlässt den Innenraum zusammen mit dem Kältemittel.
+
+Als Gas strömt es zurück zum Kompressor. Dann beginnt derselbe Kreislauf wieder von vorn.
+
+Deshalb kann sich die Rückseite warm anfühlen: Dort wird die aufgenommene Wärme wieder abgegeben. Zusätzlich landet auch ein Teil der elektrischen Energie des Kompressors als Wärme im Raum.
+
+Bleibt die Kühlschranktür lange offen, strömt ständig neue warme Raumluft hinein. Der Kompressor muss dann länger arbeiten.
+
+Ein Temperaturfühler überwacht den Innenraum und schaltet den Kompressor nur dann ein, wenn wieder gekühlt werden muss.
+
+Ein Kühlschrank produziert also keine Kälte. Er pumpt Wärme aus seinem Innenraum nach außen – immer wieder im selben Kreislauf.

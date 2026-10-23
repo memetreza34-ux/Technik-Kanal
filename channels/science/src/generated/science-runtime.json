@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "slug": "science-static-smoke",
+  "compositionId": "ScienceReel",
+  "visualPolicyVersion": "science-static-v1",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "totalFrames": 30,
+  "durationSeconds": 1,
+  "scenes": [
+    {
+      "id": "01-smoke",
+      "title": "Science Static Smoke",
+      "kicker": "Test",
+      "headline": "Science Static 16:9",
+      "fromFrame": 0,
+      "toFrame": 30,
+      "imagePath": "smoke/science-static-smoke.svg",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "hero",
+      "visualRecipe": {
+        "stage": "technical-exhibit",
+        "camera": "wide",
+        "subject": "wissenschaftliches Testmotiv",
+        "focus": "statisches 16:9-Bild ohne Kamera- oder Szenenbewegung",
+        "motion": "none",
+        "callouts": []
+      }
+    }
+  ],
+  "captions": [
+    {"fromFrame": 0, "toFrame": 30, "text": "Statischer Science-Render"}
+  ],
+  "sfx": []
+}

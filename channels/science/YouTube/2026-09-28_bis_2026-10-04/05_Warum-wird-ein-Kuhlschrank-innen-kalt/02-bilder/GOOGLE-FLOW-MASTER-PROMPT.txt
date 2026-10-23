@@ -1,0 +1,204 @@
+GOOGLE FLOW MASTER PROMPT — NUR BILDER / IMAGE ONLY
+===================================================
+
+Video: Warum wird ein Kühlschrank innen kalt?
+Format: 1920×1080 / 16:9
+Active visual world: Technical Editorial Explainer 2.5D
+Final Flow collection: kuehlschrank-video-assets-final
+
+BINDING WORKFLOW
+----------------
+1. First create exactly 3 thumbnail candidates.
+2. Danach STOPP und auf die ausdrückliche Nutzerauswahl warten.
+3. Nach Auswahl die zwei nicht gewählten Cover entfernen. Selected cover = 00-thumbnail-final.
+4. Das Thumbnail ist nur Stil-/Qualitätsreferenz: keine Farbpalette und keine Layoutvorlage für alle Szenen.
+5. Danach genau 5 Bildschritte mit je 3 Bildern. Keine weiteren Stopps oder Rückfragen zwischen Bildschritt 1–5.
+6. VISUELLE VIELFALT IST PFLICHT. Andere Kamerawinkel allein zählen nicht als neue Erklärform.
+7. DENSITY LOCK: ein Bild = eine Hauptaussage; überladene Ergebnisse verwerfen und vereinfachen.
+8. Keine gesichtslosen sichtbaren Köpfe; ein sichtbarer Kopf braucht vollständige natürliche Gesichtszüge. Für dieses Video werden keine Menschen benötigt.
+9. NUR BILDER: keine KI-Videoclips, kein Image-to-Video, keine Animation.
+10. Sichtbarer Text nur Deutsch; Prompt-Anweisungen Englisch.
+11. Erst nach Abschluss von Bildschritt 5 und der finalen Asset-Bereinigung Gesamtabschluss melden.
+
+THUMBNAIL — PHASE 1
+-------------------
+Create exactly three clearly different YouTube thumbnail candidates, 1280x720, 16:9, for the German science video “Warum wird ein Kühlschrank innen kalt?”.
+
+Candidate A: one large simplified refrigerator cutaway, blue/cool inside, orange heat leaving at the back. German headline only: “WOHIN GEHT DIE WÄRME?”
+Candidate B: one refrigerator with the back condenser area visibly warm and the inside visibly cool. German headline only: “WIE MACHT ER KALT?”
+Candidate C: a simple side cutaway showing a heat path from inside to outside. German headline only: “KÄLTE ODER WÄRME?”
+
+Keep each candidate extremely simple and readable in one glance: one dominant object, strong contrast, no small diagrams, no extra labels, no people, no English visible text, no logos or watermarks.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+
+STOPP NACH DEN 3 THUMBNAILS. AUF NUTZERAUSWAHL WARTEN.
+
+BILDSCHRITT 1/5
+================
+
+01-HOOK — max elements 3, labels 1, panels 1, arrows 0
+Continue the main motif of the USER-SELECTED thumbnail, but remove the large thumbnail headline and any decorative extras. Show one refrigerator with a cool blue interior and a restrained warm orange heat area at the back. The refrigerator is the single clear subject. Use at most one small German label: “Wärme”. The image should instantly communicate: cold inside, heat leaves at the back.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 01-hook-final.
+
+02-CONTEXT — max elements 3, labels 1, panels 1, arrows 1
+Create a very simple closed-loop view of refrigerant circulating through a refrigerator. Do not show detailed components yet. Use one clear loop line around a simplified refrigerator silhouette and one small German label: “Kältemittel”. The main message is only that refrigerant circulates in a closed loop.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 02-context-final.
+
+03-FOUNDATION — max elements 4, labels 3, panels 1, arrows 2
+Create a reduced four-station loop around a simplified refrigerator silhouette. Show exactly four large station markers as simple technical shapes connected by one loop. Do not add names yet. No labels. No mini diagrams. The only message is that the refrigeration cycle has four main stations.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Comparison, diagram or summary scenes may use at most four important visual elements and three short German labels. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 03-foundation-final.
+
+BILDSCHRITT 1 FERTIG → direkt mit Bildschritt 2 weiter, ohne Zwischenstopp.
+
+BILDSCHRITT 2/5
+================
+
+04-FOUNDATION — max elements 3, labels 2, panels 1, arrows 1
+Create a close technical cutaway of a refrigerator compressor only. Show refrigerant gas entering on one side and a smaller compressed hot-gas volume leaving on the other. Add only two short German labels: “Kompressor” and “hoher Druck”. Use at most one directional arrow. Keep the housing and gas path large and simple.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 04-foundation-final.
+
+05-MECHANISM — max elements 3, labels 1, panels 1, arrows 1
+Show the back side of a simplified refrigerator with one condenser tube path clearly visible. Use restrained orange heat leaving the condenser toward the room. Add only one German label: “Wärme”. No internal refrigerator diagram. The single message is that the hot refrigerant releases heat to the room at the outside coils.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 05-mechanism-final.
+
+06-MECHANISM — max elements 2, labels 1, panels 1, arrows 0
+Create a close-up of one condenser tube segment. On the left show refrigerant as hot vapor; on the right show it condensed into liquid after losing heat. Keep the tube large and uncluttered. Add only one German label on the liquid side: “flüssig”. No refrigerator body and no extra diagram.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 06-mechanism-final.
+
+BILDSCHRITT 2 FERTIG → direkt mit Bildschritt 3 weiter, ohne Zwischenstopp.
+
+BILDSCHRITT 3/5
+================
+
+07-MECHANISM — max elements 2, labels 1, panels 1, arrows 1
+Create a close technical detail of a capillary tube or narrow restriction. Show a wider high-pressure refrigerant line entering and a very narrow passage leading to a low-pressure side. Use one clear directional arrow and one German label: “Druck fällt”. No other components.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 07-mechanism-final.
+
+08-MECHANISM — max elements 2, labels 1, panels 1, arrows 0
+Create a simple material-style concept image of refrigerant at low pressure beginning to boil or evaporate at low temperature. Show one transparent technical chamber with a small liquid region and emerging vapor bubbles. Add one German label: “niedriger Druck”. No graph, no equation, no second panel.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 08-mechanism-final.
+
+09-MECHANISM — max elements 3, labels 1, panels 1, arrows 1
+Create a cutaway of the inside wall of a refrigerator showing one evaporator surface or coil. Show a small amount of heat moving from the refrigerator interior toward the evaporator. Add one German label: “Verdampfer”. Keep food and shelves minimal and secondary. Use at most one heat arrow.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 09-mechanism-final.
+
+BILDSCHRITT 3 FERTIG → direkt mit Bildschritt 4 weiter, ohne Zwischenstopp.
+
+BILDSCHRITT 4/5
+================
+
+10-MECHANISM — max elements 2, labels 1, panels 1, arrows 1
+Create a close-up energy-transfer illustration: on one side a cool refrigerator interior surface, on the other a single evaporator tube with refrigerant changing to vapor. Show one restrained heat arrow entering the refrigerant. Add one German label: “Wärme”. No full refrigerator, no other components.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 10-mechanism-final.
+
+11-MECHANISM — max elements 2, labels 1, panels 1, arrows 1
+Create a simple return-path scene. Show refrigerant vapor leaving the evaporator line and flowing through one pipe back toward a clearly recognizable compressor. Use one arrow and one short German label: “zurück”. No condenser, no expansion device and no full cycle.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 11-mechanism-final.
+
+12-DEEPENING — max elements 4, labels 2, panels 1, arrows 2
+Create a simple energy-balance illustration of one refrigerator viewed from the side. Show one heat arrow leaving the back of the refrigerator, with a small compressor visible near the bottom rear. The image should communicate that heat from the interior plus compressor work ends up as heat in the room. Add only one German label: “nach außen”. No formula and no split screen.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Comparison, diagram or summary scenes may use at most four important visual elements and three short German labels. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 12-deepening-final.
+
+BILDSCHRITT 4 FERTIG → direkt mit Bildschritt 5 weiter, ohne Zwischenstopp.
+
+BILDSCHRITT 5/5
+================
+
+13-DEEPENING — max elements 3, labels 1, panels 1, arrows 0
+Show one open refrigerator in a simplified kitchen environment. Warm room air enters through the open door as one restrained orange airflow shape. Add one German label: “warme Luft”. Do not show a person. Keep shelves and food minimal. The only message is that an open door lets warm air enter.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 13-deepening-final.
+
+14-DEEPENING — max elements 2, labels 2, panels 1, arrows 1
+Create a minimal control diagram with exactly two main components: a temperature sensor inside a refrigerator and the compressor below. Connect them with one simple control line. Add two German labels: “Temperaturfühler” and “Kompressor”. No thermostat screen, no extra electronics and no flowchart boxes.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 14-deepening-final.
+
+15-PAYOFF — max elements 2, labels 1, panels 1, arrows 1
+Create a final reduced payoff image of one refrigerator. Show one clear heat path from the cold interior to the back/outside of the refrigerator. Add only one German label: “Wärme nach außen”. No cycle components, no summary boxes and no extra text. The image should instantly communicate that the refrigerator pumps heat from inside to outside.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the scene visually sparse. One main idea only. Prefer one main object and no more than three important visual elements in a normal scene. Prefer zero or one short German label; never exceed two in a normal scene. Use no more than two arrows and no more than two panels. No large headline, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. Visible text only in German and only when explicitly requested. No logos or watermarks. No people. If any visible head appears accidentally, it must have complete natural stylized facial features; never show a faceless visible head.
+Final name: 15-payoff-final.
+
+BILDSCHRITT 5 FERTIG. Noch nicht melden; zuerst finale Sammlung bereinigen.
+
+FINALE GOOGLE-FLOW-SAMMLUNG
+---------------------------
+Genau eine finale Google-Flow-Sammlung namens `kuehlschrank-video-assets-final`.
+`00-thumbnail-final` und alle 15 finalen Szenenbilder behalten.
+Die zwei verworfenen Cover, Fehlversuche, Zwischenversionen, Zwischenstände, Duplikate und verworfene Varianten entfernen.
+Nur finale Assets dürfen in der finalen Sammlung enthalten sein.
+Erst danach Abschluss melden.

@@ -1,89 +1,21 @@
-# Elektrotechnik-Kanal
+# Technik-Kanal
 
-Eigenständiges Produktionssystem für den deutschsprachigen Elektrotechnik-Faceless-Kanal. Die Struktur folgt FinanzNeo, die Qualitäts-Gates sind auf Elektrotechnik und bildgeführte Reels angepasst.
+**Nur hier anfangen:** [START-HIER](START-HIER)
 
-## Root-Struktur
+Pro YouTube-Video brauchst du nur `01-SKRIPT.txt` (kompletter Fließtext), `02-GOOGLE-FLOW-PROMPT.txt` (ein einziger Prompt für Cover und sämtliche Szenen) und `DATEIEN-HIER-REIN/` (alle fertigen Bilder und Stimme).
 
-```text
-.claude/
-.github/
-channels/
-core/
-scripts/
-package.json
-package-lock.json
-tsconfig.base.json
-vitest.config.ts
-```
+**Aktuelles Video:** [Warum sinkt ein riesiges Stahlschiff nicht?](START-HIER/warum-sinkt-ein-riesiges-stahlschiff-nicht)
 
-## Verbindlicher Produktionsablauf
+Die intern benötigten Szenenpläne liegen unter `channels/science/YouTube/<wochenordner>/<video>`. Für den fertig gerenderten Film liegen im dortigen `05-export/` nur `video.mp4`, `cover.png` und `caption.txt` – keine zusätzlichen Unterordner.
 
-### 1. Neuen Reel erzeugen
+`npm run technik:import -- "START-HIER/warum-sinkt-ein-riesiges-stahlschiff-nicht"` übernimmt die vorhandenen Assets sicher; `npm run science:finish -- "channels/science/YouTube/2026-10-12_bis_2026-10-18/01_Warum-sinkt-ein-riesiges-Stahlschiff-nicht"` rendert nach bestandenem Medien- und Qualitätscheck.
 
-```bash
-npm run electrical:new -- \
-  --week=2026-08-10_bis_2026-08-16 \
-  --slot=01 \
-  --title="FI-Schalter" \
-  --hook="Was macht ein FI-Schalter?" \
-  --scenes=9
-```
+Alle internen Skripte, Quellen, technischen Bildprompts, Prüfberichte und Lernregeln bleiben erhalten. Nicht löschen. `main` ist der bisherige Elektrotechnik-Stand, gearbeitet wird im Branch `science-channel-v1`.
 
-Der direkte Frage-Hook ist Pflicht. Neue Reels erhalten automatisch:
+**Lokaler Altbestand:** Nach dem Aktualisieren des Branches `npm run technik:cleanup` ausführen. Der Befehl verschiebt alte, nicht von Git erfasste Medien aus `reels` nach `YouTube` und ordnet Video/Cover/Caption flach in `05-export` ein. Unterschiedliche vorhandene Dateien werden nicht überschrieben. Vor dem Ausführen kann `npm run technik:cleanup -- --check` die Migration prüfen.
 
-- `visual-v2`-Szenenvertrag
-- textfreie Prompt-Regel
-- maximal vier Vollanimationen
-- standardmäßig drei getrennte Mechanismus-Szenen
-- eindeutige `renderMode`- und `motionLevel`-Felder
+**Lokal am Mac:** Den Finder-Ordner `Elektrotechnik-Kanal` bei geschlossenem Codex in `Technik-Kanal` umbenennen; danach Projekt erneut öffnen und den Branch aktualisieren.
 
-### 2. Preflight vor Bildern und Audio
+## Dauerhafte Qualitätssicherung
 
-```bash
-npm run electrical:preflight -- "<reel-ordner>"
-```
-
-Vor `passed: true` dürfen keine Bilder oder Voice-Aufnahmen erzeugt werden. Das Gate blockiert schwache Hooks, zu lange Skripte, sichtbaren KI-Text, überladene Promptkonzepte, zu viele Animationen, doppelte Mechanismusdarstellungen und fehlende Quellen.
-
-### 3. Medien erstellen und einfügen
-
-- Voice-over deutsch und trocken aufnehmen
-- textfreie 9:16-Bilder erzeugen
-- optional wenige semantische SFX ergänzen
-
-### 4. Fertigstellen
-
-```bash
-npm run electrical:finish -- "<reel-ordner>"
-```
-
-Die Pipeline verarbeitet die Stimme auf 1,10×, erstellt lokale Wortzeiten, synchronisiert alle Szenen, rendert, prüft technisch und erzeugt Kontrollbilder.
-
-## Visuelles System
-
-- 8–10 Szenen
-- etwa 115–165 Wörter
-- Ziel ungefähr 42–62 Sekunden
-- ein klares Hauptmotiv pro Bild
-- keinerlei Schrift im KI-Bild
-- Bildszenen als Standard
-- normalerweise ein bis drei, maximal vier Vollanimationen
-- keine Vollanimation im Hook
-- keine zwei Vollanimationen direkt hintereinander
-- `mechanism-only` blendet das KI-Bild aus, damit keine doppelte Mechanismusdarstellung entsteht
-- alle deutschen Texte kommen aus Remotion
-
-## Wichtige Befehle
-
-```bash
-npm install
-npm test
-npm run studio
-npm run gallery
-npm run electrical:preflight -- "<reel-ordner>"
-npm run electrical:ready -- "<reel-ordner>"
-npm run electrical:finish -- "<reel-ordner>"
-npm run electrical:system-test
-```
-
-Das Audio bleibt lokal; `whisper.cpp` benötigt keinen Transkriptions-API-Key.
+Der Composer fügt keine eigenen Szenenüberschriften mehr ein. Vor jeder neuen Produktion ist der Lernplan verbindlich; vor jedem Render muss jedes finale Bild einzeln freigegeben sein. Ein Hash schützt die Freigabe vor späterem Bildaustausch. Nach dem Video wird eine redaktionelle Verbesserung mit konkreter Metrik vererbt. Siehe [Qualitätsregeln](channels/science/gehirn/FINAL-IMAGE-QA.md) und [Verbesserungssystem](channels/science/gehirn/VERBESSERUNGSSYSTEM.md).

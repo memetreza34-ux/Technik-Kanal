@@ -1,3 +1,0 @@
-A single modern DIN-rail miniature circuit breaker shown as a premium cutaway product render, centered and slightly angled toward the viewer, toggle in the tripped middle-to-down position, subtle red fault glow inside the mechanism, two clean empty visual zones on the lower left and lower right for later overlay cards representing two different causes, realistic molded plastic housing and metal terminals, controlled studio lighting, no visible brand and no printed text.
-
-Append the channel master style and negative prompt.

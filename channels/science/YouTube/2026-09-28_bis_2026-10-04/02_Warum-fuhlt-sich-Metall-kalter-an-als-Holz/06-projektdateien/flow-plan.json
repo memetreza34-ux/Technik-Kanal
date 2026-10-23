@@ -1,0 +1,33 @@
+{
+  "version":"science-flow-image-v1",
+  "productionProfile":"youtube-2min-v1",
+  "workflow":"thumbnail-first-then-five-image-steps",
+  "imageOnly":true,
+  "imageProductionSteps":5,
+  "pauseAfterEachImageStep":true,
+  "diversityRequired":true,
+  "steps":[
+    {"step":1,"sceneIds":["01-hook","02-context","03-foundation"]},
+    {"step":2,"sceneIds":["04-mechanism","05-mechanism","06-mechanism"]},
+    {"step":3,"sceneIds":["07-mechanism","08-deepening","09-deepening"]},
+    {"step":4,"sceneIds":["10-deepening","11-deepening","12-deepening"]},
+    {"step":5,"sceneIds":["13-deepening","14-deepening","15-payoff"]}
+  ],
+  "scenes":[
+    {"id":"01-hook","output":"image","imageStep":1,"visualType":"environment-comparison","primaryMotif":"metal-wood-table-context"},
+    {"id":"02-context","output":"image","imageStep":1,"visualType":"measurement-object","primaryMotif":"dual-thermometer-materials"},
+    {"id":"03-foundation","output":"image","imageStep":1,"visualType":"concept-heatflow","primaryMotif":"heatflow-hand-surface"},
+    {"id":"04-mechanism","output":"image","imageStep":2,"visualType":"kitchen-context","primaryMotif":"spoon-in-hot-tea"},
+    {"id":"05-mechanism","output":"image","imageStep":2,"visualType":"technical-cutaway","primaryMotif":"metal-conduction-cutaway"},
+    {"id":"06-mechanism","output":"image","imageStep":2,"visualType":"material-macro","primaryMotif":"wood-conduction-macro"},
+    {"id":"07-mechanism","output":"image","imageStep":3,"visualType":"thermal-comparison","primaryMotif":"finger-thermal-result"},
+    {"id":"08-deepening","output":"image","imageStep":3,"visualType":"bathroom-environment","primaryMotif":"tile-vs-rug-feet"},
+    {"id":"09-deepening","output":"image","imageStep":3,"visualType":"outdoor-application","primaryMotif":"bike-handlebar-winter"},
+    {"id":"10-deepening","output":"image","imageStep":4,"visualType":"instrument-concept","primaryMotif":"thermometer-vs-skin-response"},
+    {"id":"11-deepening","output":"image","imageStep":4,"visualType":"material-infographic","primaryMotif":"aluminium-vs-wood-samples"},
+    {"id":"12-deepening","output":"image","imageStep":4,"visualType":"warm-lab-comparison","primaryMotif":"warm-materials-reverse-flow"},
+    {"id":"13-deepening","output":"image","imageStep":5,"visualType":"misconception-comparison","primaryMotif":"same-temperature-different-transfer"},
+    {"id":"14-deepening","output":"image","imageStep":5,"visualType":"application-montage","primaryMotif":"three-everyday-examples"},
+    {"id":"15-payoff","output":"image","imageStep":5,"visualType":"payoff-concept","primaryMotif":"temperature-vs-heatflow-payoff"}
+  ]
+}

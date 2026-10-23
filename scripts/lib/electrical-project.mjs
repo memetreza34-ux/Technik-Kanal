@@ -5,19 +5,17 @@ import {fileURLToPath} from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export const repositoryRoot = path.resolve(__dirname, '../..');
-export const channelRoot = path.join(repositoryRoot, 'channels/elektrotechnik');
+export const channelRoot = path.join(repositoryRoot, 'channels/science');
 
 export const imageExtensions = new Set(['.png', '.jpg', '.jpeg', '.webp', '.avif']);
 export const audioExtensions = new Set(['.wav', '.mp3', '.m4a', '.aac', '.flac', '.ogg']);
 
 export const normalizePath = (value) => value.split(path.sep).join('/');
-
 export const readJson = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 export const writeJson = (file, value) => {
   fs.mkdirSync(path.dirname(file), {recursive: true});
   fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`);
 };
-
 export const ensureDirectory = (dir) => fs.mkdirSync(dir, {recursive: true});
 
 export const run = (command, args, options = {}) => {
@@ -27,9 +25,7 @@ export const run = (command, args, options = {}) => {
     encoding: 'utf8',
     env: {...process.env, ...options.env},
   });
-  if (result.error?.code === 'ENOENT') {
-    throw new Error(`Benötigtes Programm fehlt: ${command}`);
-  }
+  if (result.error?.code === 'ENOENT') throw new Error(`Benötigtes Programm fehlt: ${command}`);
   if (result.status !== 0) {
     const details = options.capture ? `\n${result.stderr || result.stdout || ''}` : '';
     throw new Error(`Befehl fehlgeschlagen (${command} ${args.join(' ')}).${details}`);
@@ -44,9 +40,7 @@ export const commandExists = (command) => {
 
 export const requireCommands = (commands) => {
   const missing = commands.filter((command) => !commandExists(command));
-  if (missing.length) {
-    throw new Error(`Fehlende lokale Programme: ${missing.join(', ')}`);
-  }
+  if (missing.length) throw new Error(`Fehlende lokale Programme: ${missing.join(', ')}`);
 };
 
 export const projectPaths = (projectArg) => {
@@ -57,36 +51,28 @@ export const projectPaths = (projectArg) => {
     audioDir: path.join(root, '01-script-audio/audio'),
     sfxDir: path.join(root, '01-script-audio/sfx'),
     imagesDir: path.join(root, '02-bilder/images'),
-    captionsDir: path.join(root, '03-caption'),
     pdfDir: path.join(root, '04-pdf'),
     exportDir: path.join(root, '05-export'),
+    // Kompatibilitätsalias: Caption-/Timing-Dateien liegen direkt in 05-export.
+    captionsDir: path.join(root, '06-projektdateien'),
     projectFilesDir: path.join(root, '06-projektdateien'),
     scenePlan: path.join(root, '06-projektdateien/scene-plan.json'),
     sfxEvents: path.join(root, '06-projektdateien/sfx-events.json'),
     assetManifest: path.join(root, '06-projektdateien/asset-manifest.json'),
     readinessReport: path.join(root, '06-projektdateien/readiness-report.json'),
-    wordTimestamps: path.join(root, '03-caption/word-timestamps.json'),
-    captionsJson: path.join(root, '03-caption/voiceover-final.captions.json'),
-    captionsSrt: path.join(root, '05-export/voiceover-final.srt'),
-    captionsVtt: path.join(root, '05-export/voiceover-final.vtt'),
+    wordTimestamps: path.join(root, '06-projektdateien/word-timestamps.json'),
+    captionsJson: path.join(root, '06-projektdateien/voiceover-final.captions.json'),
+    captionsSrt: path.join(root, '06-projektdateien/voiceover-final.srt'),
+    captionsVtt: path.join(root, '06-projektdateien/voiceover-final.vtt'),
     workDir: path.join(root, '06-projektdateien/.work'),
     renderDir: path.join(root, '06-projektdateien/render'),
   };
 };
 
 export const validateProjectStructure = (paths) => {
-  const requiredDirectories = [
-    paths.scriptAudio,
-    paths.audioDir,
-    paths.imagesDir,
-    paths.captionsDir,
-    paths.exportDir,
-    paths.projectFilesDir,
-  ];
+  const requiredDirectories = [paths.scriptAudio, paths.audioDir, paths.imagesDir, paths.exportDir, paths.projectFilesDir];
   const missing = requiredDirectories.filter((dir) => !fs.existsSync(dir) || !fs.statSync(dir).isDirectory());
-  if (missing.length) {
-    throw new Error(`Projektstruktur unvollständig:\n${missing.map((file) => `- ${file}`).join('\n')}`);
-  }
+  if (missing.length) throw new Error(`Projektstruktur unvollständig:\n${missing.map((file) => `- ${file}`).join('\n')}`);
   if (!fs.existsSync(paths.scenePlan)) throw new Error(`Szenenplan fehlt: ${paths.scenePlan}`);
 };
 
@@ -112,13 +98,7 @@ export const findVoiceFiles = (audioDir) => {
 };
 
 export const ffprobe = (file) => {
-  const raw = execFileSync('ffprobe', [
-    '-v', 'error',
-    '-show_streams',
-    '-show_format',
-    '-of', 'json',
-    file,
-  ], {encoding: 'utf8'});
+  const raw = execFileSync('ffprobe', ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', file], {encoding: 'utf8'});
   return JSON.parse(raw);
 };
 
@@ -144,10 +124,7 @@ export const normalizeWord = (value) => String(value)
   .replace(/[^a-z0-9äöü]+/gi, '')
   .trim();
 
-export const normalizeWords = (value) => String(value)
-  .split(/\s+/)
-  .map(normalizeWord)
-  .filter(Boolean);
+export const normalizeWords = (value) => String(value).split(/\s+/).map(normalizeWord).filter(Boolean);
 
 export const parseTimestampMs = (value) => {
   if (typeof value === 'number' && Number.isFinite(value)) return value;

@@ -1,0 +1,19 @@
+{
+  "version": "science-static-v1",
+  "productionProfile": "youtube-6to7min-v1",
+  "productionMode": "flow-image-only",
+  "brandVisualStyleDefined": true,
+  "styleId": "scientific-scene-explainer-v1",
+  "styleName": "Technical Editorial Explainer 2.5D",
+  "promptLanguage": "en",
+  "generatedImageTextPolicy": "controlled-german-only",
+  "visibleImageLanguage": "de",
+  "width": 1920,
+  "height": 1080,
+  "thumbnailRequired": true,
+  "thumbnailCandidateCount": 3,
+  "imageOnly": true,
+  "imageProductionSteps": 5,
+  "informationBudgetLocked": true,
+  "burnedInCaptions": false
+}

@@ -1,11 +1,183 @@
-const fullAnimationIndexes=(sceneCount)=>[...new Set([Math.max(2,Math.floor(sceneCount*.34)),Math.max(3,Math.floor(sceneCount*.55)),Math.max(4,Math.floor(sceneCount*.72))])].filter((index)=>index>0&&index<sceneCount-1).slice(0,3);
-const visualNames=['hero-technical-object','connection-detail','normal-current-flow','fault-cutaway','fault-current-path','protection-trip','technical-comparison','component-marking','safe-response'];
-const stages=['industrial-dark','workbench','diagram','warning','diagram','switchgear','comparison','workbench','warning'];
-const cameras=['hero','macro','side','cutaway','side','hero','comparison','macro','wide'];
-export const createElectricalScenePlanTemplate=({slug,title='Elektrotechnik-Thema',hook='Was macht dieses Bauteil?',compositionId='ElectricalReel',sceneCount=9})=>{
-  const fullIndexes=fullAnimationIndexes(sceneCount);
-  const scenes=Array.from({length:sceneCount},(_,index)=>{const number=String(index+1).padStart(2,'0');const isHook=index===0;const isPayoff=index===sceneCount-1;const id=isHook?`${number}-hook`:isPayoff?`${number}-payoff`:`${number}-erklaerung`;const subject=isHook?'Hauptbauteil groß und sofort verständlich':isPayoff?'sichere Endhandlung oder fachlicher Merksatz':`technischer Schwerpunkt der Szene ${index+1}`;return {id,title:isHook?hook:isPayoff?'Fachlicher Payoff':`Erklärung ${index}`,kicker:isHook?undefined:isPayoff?'Merksatz':'Erklärung',headline:isHook?hook:isPayoff?'Klarer Merksatz ergänzen':'Kurze deutsche Aussage ergänzen',backgroundFamily:`remotion-${stages[index]??'industrial-dark'}`,shotType:cameras[index]??'side',referenceGroup:'remotion-system',visualRecipe:{stage:stages[index]??'industrial-dark',camera:cameras[index]??'side',subject,focus:'eine technische Aussage ohne visuelles Beiwerk',motion:fullIndexes.includes(index)?'process':'subtle',callouts:[]},voiceText:isHook?`${hook} Direkte Antwort in einem kurzen Satz ergänzen.`:'Sprechtext für genau eine technische Aussage ergänzen.',imageDir:`02-bilder/images/${id}`,layout:'image-mechanism',renderMode:'mechanism-only',motionLevel:fullIndexes.includes(index)?'full':'subtle',imageRole:isPayoff?'payoff':'mechanism-plate',mechanism:visualNames[index]??`technical-scene-${number}`,factClaim:'Fachliche Kernaussage ergänzen.',sourceIds:[]};});
-  return {version:'electrical-v8',visualPolicyVersion:'remotion-first-v2',generatedImageTextPolicy:'none',slug,title,coverText:hook,compositionId,fps:30,width:1080,height:1920,minimumWordMatchRatio:.82,animationBudget:{maximum:4,fullMechanismScenes:scenes.filter((scene)=>scene.motionLevel==='full').map((scene)=>scene.id)},scenes};
+const sectionForIndex=(index,sceneCount)=>{
+  if(index===0) return 'hook';
+  if(index===sceneCount-1) return 'payoff';
+  const progress=index/(sceneCount-1);
+  if(progress<0.16) return 'context';
+  if(progress<0.32) return 'foundation';
+  if(progress<0.72) return 'mechanism';
+  return 'deepening';
 };
-export const createElectricalPromptManifestTemplate=(scenePlan)=>({version:'electrical-v8',visualPolicyVersion:'remotion-first-v2',slug:scenePlan.slug,generatedAt:new Date().toISOString(),generatedImageTextPolicy:'none',coverText:scenePlan.coverText,requiredVisibleSceneImages:0,cover:{imageRequired:false,renderMode:'mechanism-only',visualSource:'remotion'},scenes:scenePlan.scenes.map((scene)=>({id:scene.id,imageRequired:false,renderMode:scene.renderMode,motionLevel:scene.motionLevel,visualSource:'remotion',mechanism:scene.mechanism,approved:false}))});
-export const createElectricalStatusTemplate=(scenePlan)=>({status:'preproduction-blocked-until-gates-pass',slug:scenePlan.slug,completed:['folder-structure','remotion-first-v2-template'],open:['research','script','sources','preflight','remotion-visuals','voiceover','captions','render','qa'],requiredVisibleSceneImages:0,optionalPublicImageScenesMaximum:2,nextCommand:'npm run electrical:preflight -- "<reel-ordner>"'});
+
+export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema',hook='Warum passiert das?',compositionId='ScienceReel',sceneCount=56,productionProfile='youtube-6to7min-v1'})=>{
+  const scenes=Array.from({length:sceneCount},(_,index)=>{
+    const number=String(index+1).padStart(2,'0');
+    const section=sectionForIndex(index,sceneCount);
+    const isHook=section==='hook';
+    const isPayoff=section==='payoff';
+    const id=isHook?`${number}-hook`:isPayoff?`${number}-payoff`:`${number}-${section}`;
+    const subject=isHook?'Eigenständiges Erklärbild zur gesprochenen Hook-Aussage, keine Cover-Fortsetzung':isPayoff?'visuelle Kernerkenntnis':`fachliche Kernaussage des Beats ${index+1}`;
+    return {
+      id,
+      section,
+      title:isHook?hook:isPayoff?'Fachlicher Payoff':`${section} ${index+1}`,
+      // headline/kicker absichtlich nicht vorbelegen: Text im Bild oder als Remotion-Overlay ist optional.
+      backgroundFamily:'content-driven',
+      shotType:'beat-driven',
+      referenceGroup:'scientific-scene-explainer',
+      visualRecipe:{
+        stage:'passend zur konkreten visuellen Aussage wählen',
+        camera:'passend zur verständlichsten Darstellung wählen',
+        subject,
+        focus:'genau eine visuelle Hauptaussage',
+        motion:'none',
+        callouts:[]
+      },
+      voiceText:isHook?`${hook} Direkte Einordnung ohne langes Intro ergänzen.`:'Voice-Text für diesen inhaltlichen Abschnitt ergänzen; ein Beat kann mehrere Sätze tragen.',
+      imageDir:`02-bilder/images/${id}`,
+      layout:'image-full',
+      renderMode:'image-only',
+      motionLevel:'none',
+      imageRole:isHook?'hero':isPayoff?'payoff':'concept',
+      factClaim:'Fachliche Kernaussage ergänzen.',
+      sourceIds:[]
+    };
+  });
+
+  return {
+    version:'science-v1',
+    productionProfile,
+    visualPolicyVersion:'science-static-v1',
+    generatedImageTextPolicy:'controlled-german-only',
+    slug,
+    title,
+    compositionId,
+    runtimeFile:'science-runtime.json',
+    fps:30,
+    width:1920,
+    height:1080,
+    minimumWordMatchRatio:.82,
+    // qualitaet-v2: Spannungs-, Titel- und Bildregeln sind für neue Videos Pflicht (gehirn/LONGFORM.md, BILDWELT.md).
+    qualityRulesVersion:'qualitaet-v2',
+    hookAnchor:{type:'UNGEPLANT',text:'UNGEPLANT',firstImage:'UNGEPLANT'},
+    scenes
+  };
+};
+
+export const createElectricalPromptManifestTemplate=(scenePlan)=>({
+  version:'science-v1',
+  productionProfile:scenePlan.productionProfile,
+  visualPolicyVersion:'science-static-v1',
+  styleId:'scientific-scene-explainer-v1',
+  slug:scenePlan.slug,
+  generatedAt:new Date().toISOString(),
+  generatedImageTextPolicy:'controlled-german-only',
+  visibleImageLanguage:'de',
+  requiredVisibleSceneImages:scenePlan.scenes.length,
+  cover:{
+    imageRequired:false,
+    sourceSceneId:null,
+    candidateCount:0,
+    separateThumbnailForbidden:false,
+    exportDir:'05-export/cover',
+    neverUsedAsVideoFrame:true
+  },
+  thumbnail:{
+    required:true,
+    separateFromVideoScenes:true,
+    width:1280,
+    height:720,
+    candidateCount:3,
+    approved:false
+  },
+  scenes:scenePlan.scenes.map((scene)=>({
+    id:scene.id,
+    imageRequired:true,
+    renderMode:'image-only',
+    motionLevel:'none',
+    visualSource:'generated-image',
+    approved:false
+  }))
+});
+
+export const createElectricalStatusTemplate=(scenePlan)=>({
+  status:'preproduction-blocked-until-gates-pass',
+  slug:scenePlan.slug,
+  productionProfile:scenePlan.productionProfile,
+  completed:['folder-structure','science-static-v1-template','scientific-scene-explainer-v1'],
+  open:['research','story-structure','script','sources','image-plan','thumbnail-plan','preflight','images','thumbnail','voiceover','captions','render','qa'],
+  requiredVisibleSceneImages:scenePlan.scenes.length,
+  nextCommand:'npm run science:preflight -- "<video-ordner>"'
+});
+
+// Bildschritte gleichmäßig über alle Szenen verteilen, egal wie viele Szenen ein Video hat.
+export const distributeScienceImageSteps=(sceneIds,imageProductionSteps=5)=>{
+  const stepSizes=Array(imageProductionSteps).fill(Math.floor(sceneIds.length/imageProductionSteps));
+  for(let i=0;i<sceneIds.length%imageProductionSteps;i+=1) stepSizes[i]+=1;
+  let cursor=0;
+  return stepSizes.map((size,index)=>{
+    const ids=sceneIds.slice(cursor,cursor+size);
+    cursor+=size;
+    return {step:index+1,sceneIds:ids};
+  });
+};
+
+export const createScienceFlowPlanTemplate=({plan,imageProductionSteps=5})=>{
+  const productionProfile=plan.productionProfile;
+  const slug=plan.slug;
+  const isLong=productionProfile==='youtube-6to7min-v1';
+  const imageSteps=distributeScienceImageSteps(plan.scenes.map((scene)=>scene.id),imageProductionSteps);
+  const imageStepById=new Map(imageSteps.flatMap((group)=>group.sceneIds.map((id)=>[id,group.step])));
+  const defaultInformationBudget={
+    densityClass:'normal',
+    oneDominantIdea:true,
+    maxLabels:isLong?3:1,
+    maxPrimaryObjects:3,
+    maxPanels:isLong?3:1,
+    maxArrows:isLong?4:2,
+    largeHeadlineAllowed:false,
+    fullSentenceTextAllowed:false
+  };
+
+  return {
+    version:'science-flow-image-v8-density-locked',
+    productionProfile,
+    workflow:'thumbnail-first-then-five-image-steps-no-intermediate-stops-final-cleanup',
+    imageOnly:true,
+    informationBudgetLocked:true,
+    imageProductionSteps,
+    pauseAfterEachImageStep:false,
+    continueAutomaticallyBetweenImageSteps:true,
+    finalReportAfterAllImageSteps:true,
+    deleteUnselectedThumbnailCandidatesAfterSelection:true,
+    selectedThumbnailFinalName:'00-thumbnail-final',
+    coverExportDir:'05-export',
+    coverNeverUsedAsVideoFrame:true,
+    scene01IndependentFromCover:true,
+    finalFlowCollectionRequired:true,
+    singleFinalFlowCollectionPerVideo:true,
+    finalCollectionName:`${slug}-assets-final`,
+    removeRejectedVariantsBeforeCompletion:true,
+    renameFinalAssetsBeforeCompletion:true,
+    finalCollectionContainsFinalAssetsOnly:true,
+    diversityRequired:true,
+    phase2SceneAssetRoot:'02-bilder/images',
+    phase2ThumbnailRoot:'02-bilder/thumbnail',
+    phase3AssetSource:'phase2-project-folders-only',
+    phase3MayGenerateVisualAssets:false,
+    phase3MayRegenerateVisualAssets:false,
+    phase3MaySearchExternalAssets:false,
+    phase3MaySubstituteMissingAssets:false,
+    phase3MaySkipMissingScenes:false,
+    phase3MissingAssetPolicy:'stop-and-report',
+    steps:imageSteps,
+    scenes:plan.scenes.map((scene)=>({
+      id:scene.id,
+      output:'image',
+      imageStep:imageStepById.get(scene.id),
+      visualType:'UNGEPLANT',
+      primaryMotif:'UNGEPLANT',
+      setting:'UNGEPLANT',
+      informationBudget:{...defaultInformationBudget}
+    }))
+    };
+};

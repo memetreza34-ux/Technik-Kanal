@@ -1,0 +1,3 @@
+GOOGLE FLOW — VERBINDLICHE PRODUKTION
+
+Ausschließlich statische 16:9 Bilder. Zuerst DREI Thumbnail-Kandidaten erzeugen und STOPP für die Nutzerauswahl; zwei nicht gewählten Cover entfernen. Das finale 00-thumbnail-final separat unter 05-export/cover/ sichern. Szene 01 niemals Cover. Danach BILDSCHRITT 1 bis 5 ohne Zwischenstopps vollständig erzeugen, jede Szene einzeln prüfen, sofort -final benennen und nach Abschluss von Bildschritt 5 die finale Google-Flow-Sammlung nur mit 45 finalen Assets befüllen. Fehlversuche und Zwischenstände verwerfen. Nur korrekt benannte endgültige Bilder liefern. Keine KI-Videoclips, keine Kamerabewegung, kein Video-Thumbnail im MP4.

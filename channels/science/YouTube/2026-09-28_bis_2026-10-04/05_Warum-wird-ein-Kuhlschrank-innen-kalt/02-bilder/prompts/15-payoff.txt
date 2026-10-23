@@ -1,0 +1,8 @@
+Create a final reduced payoff image that does NOT repeat the opening full-refrigerator composition. Use a simplified side cutaway strip through the refrigerator wall instead: cool blue interior on the left, the refrigerator wall and refrigeration path in the middle, room/outside on the right. Show one clear orange heat path moving from inside to outside. No full refrigerator hero shot, no large exterior refrigerator silhouette, no repeated hook composition, no cycle component list, no summary boxes.
+
+Do not render any visible text, label, title, scene number, beat number, section name or production metadata. The final image should communicate the learned answer visually without words: the refrigerator moves heat from inside to outside.
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Use the same visual language across the whole video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook-page layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects.
+DENSITY LOCK — Keep the payoff extremely sparse. One central message, one cutaway composition and one heat path only. No large headline, no labels, no full-sentence text, no subtitles, no floating info boxes and no secondary mini-diagrams.
+16:9 landscape, 1920x1080. No visible text. No logos or watermarks. No people.

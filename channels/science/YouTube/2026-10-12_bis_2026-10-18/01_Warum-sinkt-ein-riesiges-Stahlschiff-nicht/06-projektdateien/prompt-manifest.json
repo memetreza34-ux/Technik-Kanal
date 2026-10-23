@@ -1,0 +1,389 @@
+{
+  "version": "science-v1",
+  "productionProfile": "youtube-6to7min-v1",
+  "visualPolicyVersion": "science-static-v1",
+  "styleId": "scientific-scene-explainer-v1",
+  "slug": "warum-sinkt-ein-riesiges-stahlschiff-nicht",
+  "generatedAt": "2026-10-15",
+  "generatedImageTextPolicy": "controlled-german-only",
+  "visibleImageLanguage": "de",
+  "requiredVisibleSceneImages": 45,
+  "cover": {
+    "imageRequired": false,
+    "sourceSceneId": null,
+    "candidateCount": 0,
+    "separateThumbnailForbidden": false,
+    "exportDir": "05-export/cover",
+    "neverUsedAsVideoFrame": true
+  },
+  "thumbnail": {
+    "required": true,
+    "separateFromVideoScenes": true,
+    "width": 1280,
+    "height": 720,
+    "candidateCount": 3,
+    "approved": false
+  },
+  "scenes": [
+    {
+      "id": "01-hook",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "02-context",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "03-context",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "04-context",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "05-context",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "06-context",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "07-context",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "08-context",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "09-foundation",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "10-foundation",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "11-foundation",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "12-foundation",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "13-foundation",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "14-foundation",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "15-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "16-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "17-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "18-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "19-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "20-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "21-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "22-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "23-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "24-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "25-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "26-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "27-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "28-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "29-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "30-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "31-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "32-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "33-mechanism",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "34-deepening",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "35-deepening",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "36-deepening",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "37-deepening",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "38-deepening",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "39-deepening",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "40-deepening",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "41-deepening",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "42-deepening",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "43-deepening",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "44-deepening",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    },
+    {
+      "id": "45-payoff",
+      "imageRequired": true,
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "visualSource": "generated-image",
+      "approved": false
+    }
+  ]
+}

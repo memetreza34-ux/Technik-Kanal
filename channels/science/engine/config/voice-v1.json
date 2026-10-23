@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "voice": "user-provided",
+  "speed": 1.10,
+  "pitch": "preserve",
+  "processing": {
+    "engine": "ffmpeg",
+    "filters": [
+      "atempo=1.10",
+      "loudnorm=I=-16:TP=-1.5:LRA=11"
+    ],
+    "sampleRateHz": 48000,
+    "channels": 1,
+    "codec": "pcm_s16le",
+    "loudness": {
+      "targetIntegratedLufs": -16,
+      "targetTruePeakDb": -1.5,
+      "targetLra": 11
+    }
+  },
+  "timingPolicy": {
+    "sourceOfTruth": "processed-final-audio",
+    "regenerateCaptionsAfterProcessing": true,
+    "resyncVisuals": true,
+    "resyncSoundEffects": true,
+    "adjustTotalDuration": true
+  },
+  "subtitleStyle": {
+    "color": "white",
+    "highlightColor": null,
+    "backgroundBox": false,
+    "maxLines": 2,
+    "verticalPositionPercent": 76,
+    "animated": false
+  }
+}

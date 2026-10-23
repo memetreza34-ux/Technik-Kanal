@@ -1,0 +1,12 @@
+{
+  "version": "science-static-v1",
+  "brandVisualStyleDefined": false,
+  "generatedImageTextPolicy": "none",
+  "animationAllowed": false,
+  "cameraMotionAllowed": false,
+  "transitionPolicy": "hard-cut",
+  "coverUsesFirstScene": true,
+  "separateThumbnailForbidden": true,
+  "adaptiveVisualBeatCount": true,
+  "requiredVisibleSceneImages": 9
+}

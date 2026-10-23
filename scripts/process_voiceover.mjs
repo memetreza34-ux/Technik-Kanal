@@ -1,9 +1,11 @@
 import {spawnSync} from 'node:child_process';
-import {existsSync} from 'node:fs';
+import {existsSync, mkdirSync} from 'node:fs';
 import {dirname, resolve} from 'node:path';
-import {mkdirSync} from 'node:fs';
 
 const VOICE_SPEED = 1.10;
+const TARGET_LUFS = -16;
+const TARGET_TRUE_PEAK_DB = -1.5;
+const TARGET_LRA = 11;
 const [inputArg, outputArg] = process.argv.slice(2);
 
 if (!inputArg || !outputArg) {
@@ -21,9 +23,24 @@ if (!existsSync(input)) {
 
 mkdirSync(dirname(output), {recursive: true});
 
+// atempo verändert die Geschwindigkeit ohne Pitch-Shift. Danach wird die Stimme
+// auf ein einheitliches Social-Video-Lautheitsziel normalisiert.
+const audioFilter = [
+  `atempo=${VOICE_SPEED.toFixed(2)}`,
+  `loudnorm=I=${TARGET_LUFS}:TP=${TARGET_TRUE_PEAK_DB}:LRA=${TARGET_LRA}`,
+].join(',');
+
 const result = spawnSync(
   'ffmpeg',
-  ['-y', '-i', input, '-filter:a', `atempo=${VOICE_SPEED.toFixed(2)}`, '-ar', '48000', output],
+  [
+    '-y',
+    '-i', input,
+    '-filter:a', audioFilter,
+    '-ar', '48000',
+    '-ac', '1',
+    '-c:a', 'pcm_s16le',
+    output,
+  ],
   {stdio: 'inherit'},
 );
 
@@ -36,4 +53,7 @@ if (result.status !== 0) {
   process.exit(result.status ?? 1);
 }
 
-console.log(`Voice-over processed at ${VOICE_SPEED.toFixed(2)}x without pitch shift: ${output}`);
+console.log(
+  `Voice-over processed: ${VOICE_SPEED.toFixed(2)}x, ${TARGET_LUFS} LUFS target, ` +
+  `${TARGET_TRUE_PEAK_DB} dBTP target, 48 kHz mono: ${output}`,
+);

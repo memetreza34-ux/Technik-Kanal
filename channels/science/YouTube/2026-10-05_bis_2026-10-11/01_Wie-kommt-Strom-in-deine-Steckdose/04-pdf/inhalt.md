@@ -1,0 +1,1 @@
+Stromversorgung: Erzeugung – Transformator – Übertragungsnetz – Umspannwerk – Mittelspannung – Ortsnetzstation – Niederspannung – Hausanschluss – Steckdose. Hochspannung reduziert Leitungsverluste bei gleicher Leistung. 230 V Außenleiter zu N, 400 V zwischen Außenleitern. Erzeugung und Verbrauch müssen zusammenpassen.

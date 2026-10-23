@@ -1,0 +1,8 @@
+Titel: Wie funktioniert ein Induktionsherd
+
+Beschreibung:
+Wie funktioniert ein Induktionsherd?
+
+Warum wird bei einem Induktionskochfeld der Topf heiß, obwohl keine klassische Heizspirale glüht? Das Video erklärt Kupferspule, wechselndes Magnetfeld, Wirbelströme und warum nur geeignetes Kochgeschirr funktioniert.
+
+Siehe 06-projektdateien/sources.md.

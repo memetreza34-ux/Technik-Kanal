@@ -1,0 +1,327 @@
+{
+  "version": 1,
+  "channel": "Wissonaut",
+  "title": "Warum sinkt ein riesiges Stahlschiff nicht?",
+  "week": "2026-10-12_bis_2026-10-18",
+  "slot": "01",
+  "profile": "youtube-6to7min-v1",
+  "slug": "warum-sinkt-ein-riesiges-stahlschiff-nicht",
+  "rows": [
+    {
+      "section": "hook",
+      "voiceText": "Warum sinkt ein riesiges Stahlschiff nicht? Ein massiver Stahlklotz geht unter, aber ein Frachter voller Container schwimmt. Was macht den Unterschied?",
+      "visualType": "environment",
+      "primaryMotif": "container-ship-at-waterline",
+      "visualBrief": "Wide cinematic yet restrained side view of an enormous loaded container ship floating calmly, natural visible waterline, understated port horizon, no enormous text or cover motifs."
+    },
+    {
+      "section": "context",
+      "voiceText": "Ein solches Schiff besteht aus vielen Tonnen Stahl. Dazu kommen Maschinen, Treibstoff und Ladung. Trotzdem hält es sich über der Wasseroberfläche.",
+      "visualType": "cutaway",
+      "primaryMotif": "ship-interior-cargo",
+      "visualBrief": "Clean technical cutaway through a ship's hull showing solid structural steel, engine area and stowed cargo, realistic scale, mostly dry internal spaces."
+    },
+    {
+      "section": "context",
+      "voiceText": "Es liegt nicht daran, dass Stahl plötzlich leichter wird, sobald man daraus ein Schiff baut. Das Material bleibt genauso dicht.",
+      "visualType": "macro",
+      "primaryMotif": "steel-material-closeup",
+      "visualBrief": "Macro illustration of a dense solid steel slab and a piece of ship plate with identical metallic grain and matte finish, no size-illusion."
+    },
+    {
+      "section": "context",
+      "voiceText": "Die überraschende Antwort steckt im Wasser selbst. Ein Schiff drückt Wasser zur Seite, und das Wasser übt eine Kraft nach oben aus.",
+      "visualType": "process",
+      "primaryMotif": "bow-water-displacement",
+      "visualBrief": "Underwater oblique cutaway around a broad ship hull, show the hull occupying part of the water volume, subtle teal displacement silhouette with no magical upward beams."
+    },
+    {
+      "section": "context",
+      "voiceText": "Diese Kraft nennt man Auftrieb. Ohne Auftrieb könnte kein Schiff schwimmen, egal wie stark sein Motor ist oder wie schnell es fährt.",
+      "visualType": "diagram",
+      "primaryMotif": "stationary-floating-hull",
+      "visualBrief": "Simple stationary ship cross-section with one quiet upward blue arrow at the underwater hull, horizontal still water and no movement effects."
+    },
+    {
+      "section": "context",
+      "voiceText": "Dafür brauchen wir nur drei Dinge zu verstehen: Gewicht, verdrängtes Wasser und die Form des Schiffsrumpfes. Dann wird das Rätsel logisch.",
+      "visualType": "object-comparison",
+      "primaryMotif": "three-physical-models",
+      "visualBrief": "Three separate restrained physical tabletop models: a small weight, a basin water level, and a hollow boat hull, one visual connection, no words."
+    },
+    {
+      "section": "context",
+      "voiceText": "Stell dir zunächst eine schwere Eisenkugel vor. Lässt du sie ins Wasser fallen, sinkt sie, bis sie auf dem Boden liegt.",
+      "visualType": "environment",
+      "primaryMotif": "iron-sphere-in-tank",
+      "visualBrief": "Transparent laboratory water tank with a single dense dark iron ball resting on the tank bottom; clear waterline and neutral background."
+    },
+    {
+      "section": "context",
+      "voiceText": "Formst du aus einer dünnen Metallplatte dagegen eine breite, wasserdichte Schale, kann dieselbe Art von Metall plötzlich oben bleiben.",
+      "visualType": "object-comparison",
+      "primaryMotif": "floating-metal-bowl",
+      "visualBrief": "Simple wide thin metal bowl afloat in a transparent water tank next to a small separate dense metal block, clearly different displaced volumes."
+    },
+    {
+      "section": "foundation",
+      "voiceText": "Warum? Wasser drückt auf alles, was in ihm steckt. Dieser Druck wirkt nicht nur seitlich, sondern auch auf Unterseiten nach oben.",
+      "visualType": "cutaway",
+      "primaryMotif": "submerged-box-pressure",
+      "visualBrief": "Water tank cutaway around a submerged rectangular object, clear blue pressure forces on underside and above using maximum two sparse arrows."
+    },
+    {
+      "section": "foundation",
+      "voiceText": "Je tiefer man unter die Wasseroberfläche kommt, desto größer wird der Wasserdruck. Dadurch kann insgesamt eine Kraft nach oben entstehen.",
+      "visualType": "diagram",
+      "primaryMotif": "pressure-with-depth",
+      "visualBrief": "Simple vertical water column with two clean measurement levels and subtly stronger pressure at the bottom; use one up arrow and one down arrow."
+    },
+    {
+      "section": "foundation",
+      "voiceText": "Schon vor sehr langer Zeit wurde dieser Zusammenhang beschrieben. Er heißt archimedisches Prinzip und lässt sich ohne komplizierte Formeln erklären.",
+      "visualType": "material-macro",
+      "primaryMotif": "water-in-graduated-vessel",
+      "visualBrief": "Close-up of a clear laboratory measuring vessel with an immersed smooth object and a subtle displaced-water meniscus, no historical human portraits."
+    },
+    {
+      "section": "foundation",
+      "voiceText": "Ein Gegenstand erhält genau so viel Auftriebskraft, wie das Wasser wiegt, das er verdrängt. Nicht die Stahlmenge ist dafür entscheidend.",
+      "visualType": "diagram",
+      "primaryMotif": "buoyancy-force-pair",
+      "visualBrief": "One simple isolated object partially immersed in water with balanced downward weight arrow and upward buoyancy arrow; separate subtle outlined displaced water volume."
+    },
+    {
+      "section": "foundation",
+      "voiceText": "Ein Kilogramm Wasser übt durch sein Gewicht ungefähr dieselbe Gewichtskraft aus wie ein Gegenstand mit einem Kilogramm Masse.",
+      "visualType": "object-comparison",
+      "primaryMotif": "equal-mass-weight-and-water",
+      "visualBrief": "Physical comparison of a sealed one-liter water bottle and a one-kilogram reference weight on balanced tabletop scales, simple consistent proportions."
+    },
+    {
+      "section": "foundation",
+      "voiceText": "Wenn ein schwimmender Körper gerade ruht, ist der Auftrieb genauso groß wie seine Gewichtskraft. Sonst würde er steigen oder weiter sinken.",
+      "visualType": "diagram",
+      "primaryMotif": "two-balanced-arrows",
+      "visualBrief": "Flat-bottomed floating model hull, identical-length upward and downward force arrows, neutral background and visible waterline."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Ein solider Stahlblock verdrängt beim Eintauchen nur sein eigenes kleines Volumen. Dieses Wasser wiegt viel weniger als der schwere Stahlblock.",
+      "visualType": "macro",
+      "primaryMotif": "solid-steel-block-volume",
+      "visualBrief": "Steel cube below a water surface beside a translucent outline of precisely its own displaced water volume, single compact scientific comparison."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Darum reicht die Auftriebskraft beim Stahlblock nicht aus, um sein Gewicht auszugleichen. Er sinkt, selbst wenn er ganz unter Wasser ist.",
+      "visualType": "diagram",
+      "primaryMotif": "steel-block-unbalanced-force",
+      "visualBrief": "Submerged metal cube with visibly longer downward weight arrow than blue upward buoyancy arrow, no pseudo-physics bubbles."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Ein Schiff ist völlig anders gebaut. Seine Hülle schließt einen großen Raum ein, der nicht komplett mit Stahl gefüllt ist.",
+      "visualType": "cutaway",
+      "primaryMotif": "hollow-ship-hull",
+      "visualBrief": "Wide precise ship cross-section with steel outer shell and large enclosed dry spaces including cargo bays; no giant continuous empty air bubble."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Zusammen mit Hohlräumen, Luft und Ladung verteilt sich die Masse über ein sehr großes äußeres Volumen. Das verändert die mittlere Dichte.",
+      "visualType": "diagram",
+      "primaryMotif": "ship-average-density",
+      "visualBrief": "Simplified side-by-side volumetric blocks, one solid steel and one outlined hollow hull volume, clear visibly different material fill fractions."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Mit mittlerer Dichte ist gemeint: Wie viel Masse steckt im gesamten betrachteten Volumen? Beim schwimmenden Schiff ist diese mittlere Dichte klein genug.",
+      "visualType": "object-comparison",
+      "primaryMotif": "filled-vs-hollow-volume",
+      "visualBrief": "Two equal-size transparent model boxes on neutral surface: one packed heavy dark steel and one mainly enclosed space with light structure, no numbers."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Der breite Rumpf kann schon beim teilweisen Eintauchen sehr viel Wasser verdrängen. Genau dieses verdrängte Wasser erzeugt den nötigen Auftrieb.",
+      "visualType": "cutaway",
+      "primaryMotif": "wide-hull-displaced-volume",
+      "visualBrief": "Underwater side cutaway showing transparent blue displaced-water shape matching the immersed portion of a broad cargo vessel hull, accurate waterline."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Sinkt das Schiff zunächst etwas tiefer ein, verdrängt es mehr Wasser. Dadurch wächst der Auftrieb, bis er das gesamte Gewicht trägt.",
+      "visualType": "process",
+      "primaryMotif": "draft-adjusting-model",
+      "visualBrief": "Single ship model shown with a faint earlier waterline and a lower equilibrium waterline, highlighted extra submerged hull volume, no motion streaks."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Es gibt also keine geheimnisvolle Kraft, die Stahl besonders behandelt. Entscheidend ist, wie viel Wasser der gesamte Schiffskörper zur Seite drückt.",
+      "visualType": "diagram",
+      "primaryMotif": "hydrostatic-hull-pressure",
+      "visualBrief": "Simple cross-section of a floating steel hull with restrained hydrostatic pressure shading along submerged plating, one upward net-force arrow."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Ein kleines Experiment macht das sichtbar. Aus derselben Alufolie formst du zuerst eine enge Kugel und legst sie ins Wasser.",
+      "visualType": "experiment",
+      "primaryMotif": "foil-ball-in-bowl",
+      "visualBrief": "Top-down educational experiment: compact crumpled aluminum foil ball placed in a clear water bowl, realistic foil geometry and matte background."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Jetzt formst du aus einem ähnlich großen Stück Folie ein offenes, breites Boot. Häufig bleibt dieses schwimmen, obwohl das Material gleich ist.",
+      "visualType": "object-comparison",
+      "primaryMotif": "foil-boat-in-bowl",
+      "visualBrief": "Three-quarter close view of broad bowl-shaped aluminum foil boat floating in a transparent vessel; no human hands or text."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Die Bootsform schiebt beim Eintauchen mehr Wasser weg, ohne sofort selbst vollzulaufen. Das ist die Grundidee hinter dem großen Schiffsrumpf.",
+      "visualType": "process",
+      "primaryMotif": "foil-boat-displacement-crosssection",
+      "visualBrief": "Cross-section of floating aluminum foil boat with a clean transparent outline of displaced water under its hull and dry interior."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Ein Frachter kann aber nicht beliebig viel tragen. Jeder zusätzliche Container erhöht seine Masse und damit die nötige verdrängte Wassermenge.",
+      "visualType": "environment",
+      "primaryMotif": "cargo-crane-loading",
+      "visualBrief": "Clean side view of port crane lowering one container onto cargo ship; focus on cargo, hull and waterline, restrained architecture."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Deshalb liegt ein beladenes Schiff tiefer im Wasser als ein leeres. Dieser Unterschied lässt sich direkt am sichtbaren Tiefgang erkennen.",
+      "visualType": "comparison",
+      "primaryMotif": "loaded-unloaded-waterlines",
+      "visualBrief": "Precise split-screen profile comparison of the same cargo ship unloaded versus loaded, consistent scale and water surface, different draft clearly visible."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Tiefgang nennt man den Abstand von der Wasseroberfläche bis zum tiefsten Teil des Schiffes unter Wasser. Er ist beim Beladen entscheidend.",
+      "visualType": "cutaway",
+      "primaryMotif": "draft-keel-section",
+      "visualBrief": "Clean profile section of floating ship with vertical measurement from waterline to keel, tiny short German label 'Tiefgang' only."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Wird zu viel Ladung aufgenommen, kann die sichere Reserve zu klein werden. Bei Wellen oder zusätzlichem Wasser wird das gefährlich.",
+      "visualType": "environment",
+      "primaryMotif": "overloaded-ship-low-freeboard",
+      "visualBrief": "Side view of heavily laden but still afloat cargo vessel with very low freeboard and gentle wave crest, correct scale, no disaster sensationalism."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Doch Auftrieb allein reicht nicht. Ein Schiff muss auch stabil bleiben, wenn Wind, Wellen oder eine ungleichmäßige Beladung es zur Seite neigen.",
+      "visualType": "wide-environment",
+      "primaryMotif": "ship-in-beam-sea",
+      "visualBrief": "Medium wide illustration of a cargo ship leaning moderately under a broad gentle lateral swell, waterline tilted relative to hull and realistic geometry."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Stabilität bedeutet: Nach einer kleinen Neigung soll ein geeignet beladenes Schiff wieder aufgerichtet werden, statt immer weiter zu kippen.",
+      "visualType": "diagram",
+      "primaryMotif": "righting-arm-diagram",
+      "visualBrief": "Two-panel clean hull cross-section: slight heel and returning upright position, one short curved righting arrow, no complicated metacenter construction."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Dabei spielen die Lage des Schwerpunkts und die Form des eingetauchten Rumpfes zusammen. Die Ladung muss deshalb sinnvoll verteilt werden.",
+      "visualType": "cutaway",
+      "primaryMotif": "cargo-center-of-mass",
+      "visualBrief": "Transverse ship cutaway with heavy cargo secured low and centered, highlight center of gravity as one subtle neutral dot, no exact misleading vectors."
+    },
+    {
+      "section": "mechanism",
+      "voiceText": "Schwere Gegenstände weit oben können die Stabilität verschlechtern. Darum ist nicht nur das Gesamtgewicht wichtig, sondern auch sein Ort.",
+      "visualType": "comparison",
+      "primaryMotif": "high-low-cargo-placement",
+      "visualBrief": "Two simplified identical hull cross-sections: heavy cargo low versus heavy cargo high, clean distinction without claiming every low load is automatically safe."
+    },
+    {
+      "section": "deepening",
+      "voiceText": "Manche Schiffe nutzen Ballastwasser. In dafür vorgesehenen Tanks wird Wasser aufgenommen oder abgegeben, um Tiefgang, Trimmung und Stabilität zu beeinflussen.",
+      "visualType": "cutaway",
+      "primaryMotif": "ballast-tank-section",
+      "visualBrief": "Longitudinal ship cutaway with two sealed low ballast tanks partially filled and separated from dry cargo spaces, realistic technical layout."
+    },
+    {
+      "section": "deepening",
+      "voiceText": "Auch das Wasser selbst macht einen kleinen Unterschied. Salzwasser ist bei vergleichbaren Bedingungen dichter als Süßwasser und liefert pro verdrängtem Liter mehr Auftrieb.",
+      "visualType": "macro",
+      "primaryMotif": "salt-and-fresh-samples",
+      "visualBrief": "Two simple transparent water sample beakers labeled only 'Süßwasser' and 'Salzwasser', subtle different dissolved salt symbols without fantasy effects."
+    },
+    {
+      "section": "deepening",
+      "voiceText": "Ein Schiff schwimmt deshalb im Süßwasser bei sonst gleichen Bedingungen etwas tiefer. Es muss mehr Volumen verdrängen, um dasselbe Gewicht zu tragen.",
+      "visualType": "comparison",
+      "primaryMotif": "ship-river-ocean-waterline",
+      "visualBrief": "Side-by-side same ship hull in lake and sea at matched scale, freshwater draft slightly deeper, clear small visual difference and unobtrusive labels."
+    },
+    {
+      "section": "deepening",
+      "voiceText": "Und warum sinken Schiffe manchmal trotzdem? Häufig liegt die Antwort darin, dass Wasser in Bereiche gelangt, die vorher nicht geflutet waren.",
+      "visualType": "cutaway",
+      "primaryMotif": "breached-hull-flooding",
+      "visualBrief": "Clear ship compartment cutaway with a small damaged below-waterline opening and blue water entering one formerly dry hold, realistic no gore."
+    },
+    {
+      "section": "deepening",
+      "voiceText": "Dringt Wasser ein, wird die gesamte schwimmende Konstruktion schwerer. Gleichzeitig gehen nutzbare Auftriebsreserven verloren. Ab einer Grenze kann sie untergehen.",
+      "visualType": "process",
+      "primaryMotif": "progressive-flooding-level",
+      "visualBrief": "Engineering cross-section showing rising water inside one compartment and lower external freeboard, a single clear flooded area, no unnecessary arrows."
+    },
+    {
+      "section": "deepening",
+      "voiceText": "Deshalb haben große Schiffe wasserdichte Abteilungen. Sie sollen verhindern, dass ein einzelnes Leck sofort den ganzen Rumpf überflutet.",
+      "visualType": "cutaway",
+      "primaryMotif": "watertight-bulkheads",
+      "visualBrief": "Exploded technical cutaway of a vessel with distinct sealed watertight bulkheads, just one flooded compartment isolated from adjacent dry compartments."
+    },
+    {
+      "section": "deepening",
+      "voiceText": "Solche Abteilungen machen ein Schiff nicht unverwundbar. Wie viel Wasser es verkraftet, hängt vom Entwurf, vom Schaden und von der Beladung ab.",
+      "visualType": "diagram",
+      "primaryMotif": "damage-stability-comparison",
+      "visualBrief": "Restrained two-panel hull damage cases with small isolated flooding versus extensive multi-compartment flooding, no dramatic explosions."
+    },
+    {
+      "section": "deepening",
+      "voiceText": "Auch ein U-Boot nutzt dasselbe Prinzip. Es kann Ballasttanks kontrolliert fluten und mit Luft ausblasen, um seine mittlere Dichte zu verändern.",
+      "visualType": "cutaway",
+      "primaryMotif": "submarine-ballast-tanks",
+      "visualBrief": "Technically plausible submarine transverse cutaway showing ballast tanks outside pressure hull, blue water entering through lower openings and air vents."
+    },
+    {
+      "section": "deepening",
+      "voiceText": "Beim Tauchen vergrößert der Wasserballast seine Masse. Zum Auftauchen verdrängt Druckluft Wasser aus den Tanks. Das ist kontrollierter Auftrieb.",
+      "visualType": "process",
+      "primaryMotif": "submarine-ballast-air",
+      "visualBrief": "Simple technical process comparison of a submarine ballast tank water-filled versus air-blown, accurate valves, pressure hull separate, two panels."
+    },
+    {
+      "section": "deepening",
+      "voiceText": "Damit wird auch ein Irrtum klar: Nicht die Fahrt oder der Propeller hält den Frachter oben. Er kann völlig still im Hafen schwimmen.",
+      "visualType": "environment",
+      "primaryMotif": "ship-stationary-in-harbor",
+      "visualBrief": "Calm modern cargo ship resting motionless alongside quay, propeller not visible, believable hull draft and no engine wash or motion."
+    },
+    {
+      "section": "deepening",
+      "voiceText": "Wenn du das nächste Mal ein Schiff siehst, achte auf die Wasserlinie. Unter ihr liegt genau so viel verdrängtes Wasser, wie sein Gesamtgewicht erfordert.",
+      "visualType": "diagram",
+      "primaryMotif": "ship-waterline-final-review",
+      "visualBrief": "Full side profile of floating cargo vessel with submerged hull volume cleanly tinted muted blue, only one short label 'Wasserlinie'."
+    },
+    {
+      "section": "payoff",
+      "voiceText": "Ein Stahlschiff schwimmt also nicht trotz, sondern wegen seiner durchdachten Form: Der große Rumpf verdrängt genug Wasser, damit der Auftrieb sein Gewicht trägt.",
+      "visualType": "payoff",
+      "primaryMotif": "hull-principle-finale",
+      "visualBrief": "Elegant simplified engineering cutaway of a large ship afloat, clear displaced-water region and perfectly balanced small force arrows, entirely independent from promotional cover."
+    }
+  ],
+  "wordCount": 932
+}

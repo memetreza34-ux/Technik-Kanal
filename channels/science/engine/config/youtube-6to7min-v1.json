@@ -1,0 +1,89 @@
+{
+  "profile": "youtube-6to7min-v1",
+  "status": "active",
+  "purpose": "Aktives Standardprofil für alle neuen Wissonaut-Videos (6–7 Minuten).",
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9"
+  },
+  "durationSeconds": {
+    "min": 360,
+    "ideal": 390,
+    "max": 420
+  },
+  "scriptWords": {
+    "min": 850,
+    "ideal": 975,
+    "max": 1075
+  },
+  "visualBeats": {
+    "individual": true,
+    "min": 7,
+    "max": 400,
+    "scaffoldStart": 56,
+    "note": "Keine feste Bildzahl: so viele Bilder, wie das Script sichtbare Aussagen hat. min/max sind nur technische Grenzen. Anpassen mit npm run science:scenes."
+  },
+  "narrativeStructure": [
+    "hook",
+    "context",
+    "foundation",
+    "mechanism",
+    "deepening",
+    "payoff"
+  ],
+  "storyRules": {
+    "oneCentralQuestion": true,
+    "explanationStartsEarly": true,
+    "noGreetingOrLongIntro": true,
+    "causeProcessResultPreferred": true,
+    "noFactListPadding": true,
+    "technicalTermsExplainedImmediately": true,
+    "longerRuntimeMustComeFromMoreDepthNotRepetition": true,
+    "rewriteWhenAdjacentBeatsWouldLookSimilar": true,
+    "splitBeatWhenImageBudgetWouldBeExceeded": true
+  },
+  "visualSystem": {
+    "styleName": "Technical Editorial Explainer 2.5D",
+    "imageOnly": true,
+    "oneFinalStaticImagePerBeat": true,
+    "thumbnailCandidates": 3,
+    "thumbnailSelectionIsOnlyManualStop": true,
+    "imageProductionSteps": 5,
+    "continueAutomaticallyAfterThumbnailSelection": true,
+    "visibleImageLanguage": "de",
+    "promptLanguage": "en",
+    "sceneMetadataVisible": false,
+    "thumbnailHeadlineMayLeakIntoScenes": false,
+    "largeSceneHeadlineAllowed": false,
+    "burnedInCaptions": false,
+    "normalScenePreferredLabelsMax": 2,
+    "normalSceneHardLabelsMax": 3,
+    "normalScenePrimaryObjectsMax": 3,
+    "sameCompositionMaxConsecutive": 1,
+    "minimumDistinctVisualTypesPerVideo": 7,
+    "coverExportDir": "05-export",
+    "coverInVideoForbidden": true,
+    "scene01MustBeIndependent": true,
+    "visualBeatPacingSeconds": {
+      "preferredMin": 4,
+      "preferredMax": 7,
+      "reviewIfLongerThan": 8
+    },
+    "extraBeatsWhenExplanationChanges": true,
+    "diagramComparisonSummaryLabelsMax": 5,
+    "panelsMax": 3,
+    "arrowsMax": 4,
+    "minimumTechnicalDiagramShare": 0.35,
+    "annotationRule": "Prefer purposeful German labels, simple formulas and units, clear arrows and engineering schematics. No fake data or decorative legends."
+  },
+  "phase3": {
+    "mayGenerateVisualAssets": false,
+    "mayRegenerateVisualAssets": false,
+    "maySearchExternalAssets": false,
+    "maySubstituteMissingAssets": false,
+    "missingAssetPolicy": "stop-and-report"
+  },
+  "transitionNote": "Seit 18.10.2026 aktiv und Standard in science:new. Das 2-Minuten-Profil youtube-2min-v1 ist archiviert und nur noch für die Testphasen-Videos ladbar."
+}

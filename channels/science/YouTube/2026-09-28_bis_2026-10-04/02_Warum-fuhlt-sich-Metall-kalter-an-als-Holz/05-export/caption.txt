@@ -1,0 +1,8 @@
+Titel: Warum fuhlt sich Metall kalter an als Holz
+
+Beschreibung:
+Warum fühlt sich Metall kälter an als Holz, obwohl beide im selben Raum dieselbe Temperatur haben können?
+
+Der Unterschied liegt nicht nur in der Temperatur, sondern darin, wie schnell Wärme zwischen deiner Hand und dem Material übertragen wird. Metall leitet Wärme deutlich besser als Holz und kühlt deine Haut deshalb schneller ab.
+
+Quellen und fachliche Nachweise sind im Projekt unter 06-projektdateien/sources.md dokumentiert.

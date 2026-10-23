@@ -1,3 +1,0 @@
-Two different DIN-rail protective devices displayed side by side as clean unbranded product renders: a standard miniature circuit breaker on the left and a residual-current protective device with a clearly different front design and test-button area on the right, equal visual scale, neutral front-facing angle, premium studio background, large empty lower half for a call-to-action card, no printed labels or brand markings.
-
-Append the channel master style and negative prompt.

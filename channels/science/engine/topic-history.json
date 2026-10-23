@@ -1,0 +1,14 @@
+{
+  "topics": [
+    {
+      "id": "warum-ist-der-himmel-blau",
+      "title": "Warum ist der Himmel blau?",
+      "domain": "physik",
+      "week": "2026-09-28_bis_2026-10-04",
+      "slot": 1,
+      "status": "preproduction-complete-assets-pending",
+      "compositionId": "ScienceReel",
+      "runtimeFile": "science-runtime.json"
+    }
+  ]
+}

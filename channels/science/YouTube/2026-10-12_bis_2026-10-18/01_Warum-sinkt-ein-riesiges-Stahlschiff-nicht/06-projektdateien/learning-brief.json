@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "channel": "Wissonaut",
+  "slug": "warum-sinkt-ein-riesiges-stahlschiff-nicht",
+  "productionProfile": "youtube-6to7min-v1",
+  "priority": 1,
+  "permanentLessons": [
+    {
+      "id": "qa-001",
+      "area": "visual-consistency",
+      "action": "No visible scene metadata or cover in scenes; inspect all generated German labels."
+    },
+    {
+      "id": "qa-002",
+      "area": "visual-variety",
+      "action": "Change explanatory representation instead of reskinning the same freighter composition."
+    }
+  ],
+  "inheritedTests": [],
+  "thisVideoHypothesis": "Ein direktes visuelles Stahlblock-gegen-Schiff-Paradox steigert die 30-Sekunden-Bindung, sofern das Cover-Versprechen sofort fachlich erfüllt wird.",
+  "oneControlledChange": "Hook und erstes eigenständiges Bild öffnen ohne Vorgeplänkel die Stahl-vs.-Schiff-Frage und zeigen einen klaren Widerspruch.",
+  "primarySuccessMetric": "retention30Percent",
+  "editorApproved": false,
+  "evidence": "Redaktionelle Testhypothese ohne bereits gemessenen YouTube-Erfolg",
+  "compareAfterHours": [
+    24,
+    72,
+    168,
+    672
+  ]
+}

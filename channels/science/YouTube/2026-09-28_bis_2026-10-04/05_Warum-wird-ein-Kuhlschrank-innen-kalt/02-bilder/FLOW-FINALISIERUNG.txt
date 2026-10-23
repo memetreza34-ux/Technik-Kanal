@@ -1,0 +1,10 @@
+FINALE GOOGLE-FLOW-SAMMLUNG
+===========================
+
+Nach Bildschritt 5 genau eine finale Google-Flow-Sammlung namens `kuehlschrank-video-assets-final` verwenden.
+
+- `00-thumbnail-final` behalten.
+- Die zwei nicht gewählten Cover entfernen.
+- Fehlversuche, Zwischenversionen, Zwischenstände, Duplikate und verworfene Varianten entfernen.
+- Nur finale Assets dürfen in der finalen Sammlung enthalten sein.
+- Finale Sammlung nur mit `00-thumbnail-final` und den 15 korrekt benannten Szenenbildern abschließen.

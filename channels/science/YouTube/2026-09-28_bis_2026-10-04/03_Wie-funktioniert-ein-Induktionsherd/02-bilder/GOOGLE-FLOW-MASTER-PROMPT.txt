@@ -1,0 +1,160 @@
+GOOGLE FLOW MASTER PROMPT — NUR BILDER / IMAGE ONLY
+===================================================
+
+Video: Wie funktioniert ein Induktionsherd?
+Scene format: 1920×1080 / 16:9
+Active visual world: Technical Editorial Explainer 2.5D
+Final Flow collection: induktionsherd-video-assets-final
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Keep the exact same visual language across the entire video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Do not use photorealism, real-photo aesthetics, generic AI art, white textbook infographic layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects. Scene type, perspective and environment may change, but rendering language, material simplification, line quality, typography and callout design must remain consistent. Visible text only in German.
+
+DIRECT EXPLANATION LOCK — HIGHEST PRIORITY
+------------------------------------------
+Every image must explain the current voice-over statement as simply and directly as possible.
+
+For every scene:
+- show ONE dominant idea only
+- use the minimum number of objects needed
+- choose the easiest visual form for understanding, not the most decorative one
+- use 0–3 short German labels only when they reduce confusion
+- no subtitles and no paragraph text
+- do not repeat the same cooktop/pot composition merely from another angle
+- a different camera angle alone does NOT count as a different visual idea
+- if the planned image looks too similar to the previous one, switch the explanation form: environment → cutaway → isolated component → macro → comparison → diagram → top-down → before/after
+- do not add technical details before the voice-over explains them
+- no repeated large headings inside normal scene images
+
+The viewer should understand the main idea of each image within about 1–2 seconds.
+
+BINDING WORKFLOW
+----------------
+1. First create exactly 3 thumbnail candidates and nothing else.
+2. Then STOP and wait for the user to choose one cover.
+3. The selected cover becomes 00-thumbnail-final.
+4. Remove the two unselected covers from the final Flow collection.
+5. Scene 01 should preferably continue the selected cover’s MAIN MOTIF and visual idea, but without the large thumbnail headline. It must feel like the natural first frame after clicking the cover.
+6. After the cover selection create all 15 scene images in exactly 5 image steps: 01–03, 04–06, 07–09, 10–12, 13–15.
+7. Generate every image individually, inspect it, keep the best result, name it correctly and then continue.
+8. No further stops or questions after the cover selection. Complete image steps 1–5 automatically.
+9. Before accepting each image, compare it with the previous final image. If the central composition or visual idea is too similar, regenerate it with a genuinely different explanation form while keeping the STYLE LOCK.
+10. No blank/faceless visible heads. Prefer no people unless they are needed for the explanation.
+11. Static images only. No AI video, no image-to-video, no animation.
+12. Visible image text only in German; prompt instructions remain English.
+13. After image step 5 remove failed attempts, duplicates, intermediate versions and rejected variants.
+14. Keep exactly one final Google Flow collection/folder named “induktionsherd-video-assets-final”.
+15. Final collection contains only 00-thumbnail-final plus 01-hook-final through 15-payoff-final.
+16. Report completion only after final cleanup.
+
+PHASE 1 — THUMBNAIL
+-------------------
+Create exactly three clearly different YouTube thumbnail candidates in 1280×720 / 16:9 for the video “Wie funktioniert ein Induktionsherd?”.
+
+Use the same Technical Editorial Explainer 2.5D visual language.
+
+Candidate A: one large induction pot above a simple cooktop cutaway, copper coil clearly visible below the glass, one restrained magnetic-field cue. German headline only: “WIE WIRD DER TOPF HEISS?”
+
+Candidate B: close side cutaway through pot base, glass-ceramic and copper coil, heat clearly appearing inside the pot base. German headline only: “WÄRME DIREKT IM TOPF”.
+
+Candidate C: reduced technical composition with a large copper coil below and pot base above, one clear field connection. German headline only: “KEINE HEIZSPIRALE?”
+
+The three covers must differ strongly in composition. No people, logos, watermarks or English visible text.
+
+STOP AFTER THE THREE THUMBNAILS. WAIT FOR USER SELECTION.
+After selection: selected cover = 00-thumbnail-final; remove the other two covers; then continue through all five image steps without another question.
+
+PHASE 2 — FIVE IMAGE STEPS · NO INTERMEDIATE STOPS
+==================================================
+
+IMAGE STEP 1/5 · 01–03
+----------------------
+
+01-HOOK
+Use the USER-SELECTED COVER as the visual starting point. Keep its main motif and central explanation, but turn it into a clean 16:9 video scene: remove the big thumbnail headline and any promotional typography. Keep only the few objects needed for the hook. The image must directly communicate: a pot becomes hot although there is no glowing heating element directly under the glass. Do not add later concepts yet. Prefer no labels; at most one short German label if needed.
+Final name: 01-hook-final
+
+02-CONTEXT
+Show a simple side cutaway of a conventional electric glass-ceramic cooktop, isolated from any kitchen. Use only three layers: heating element at the bottom, glass-ceramic in the middle, pot base at the top. A few orange arrows show heat moving upward through the glass into the pot. German labels only: “Heizelement” and “Wärmeweg”. No full kitchen, no decorative elements.
+Final name: 02-context-final
+
+03-CONTEXT
+Do NOT show another full cooktop scene. Create a clean technical comparison using two simplified energy paths. Left: small conventional-cooktop symbol with orange path “Heizelement → Glas → Topf”. Right: small induction symbol with blue/copper path “Spule → Topfboden”. German labels only: “klassisch” and “Induktion”. Keep it visually simple and clearly different from scene 02.
+Final name: 03-context-final
+
+IMAGE STEP 1 COMPLETE → continue directly to IMAGE STEP 2, no stop.
+
+IMAGE STEP 2/5 · 04–06
+----------------------
+
+04-FOUNDATION
+Show an isolated exploded technical view of the induction cooktop internals on a warm-neutral background. Separate only three parts vertically: glass-ceramic plate, large flat copper coil, compact power electronics. No pot and no kitchen. German labels: “Glaskeramik”, “Kupferspule”, “Leistungselektronik”. The copper coil is the main subject.
+Final name: 04-foundation-final
+
+05-FOUNDATION
+Show one large flat copper coil by itself on a calm neutral background. Add a few precise curved field lines around and above it. One German label only: “wechselndes Magnetfeld”. No pot, no cooktop housing, no kitchen, no extra boxes. This image explains only that alternating current in the coil creates a changing magnetic field.
+Final name: 05-foundation-final
+
+06-MECHANISM
+Show a very simple side cutaway with only three objects: pot base at top, thin glass strip in the middle, flat copper coil below. A few clean magnetic-field lines pass from the coil through the glass into the pot base. German labels: “Magnetfeld” and “Topfboden”. No heat colors yet. No full pot body and no kitchen.
+Final name: 06-mechanism-final
+
+IMAGE STEP 2 COMPLETE → continue directly to IMAGE STEP 3, no stop.
+
+IMAGE STEP 3/5 · 07–09
+----------------------
+
+07-MECHANISM
+Show an extreme macro cross-section of the metal pot base only. Inside the metal, draw several closed electrical current loops that stay inside the material. One German label: “Wirbelströme”. No coil, no cooktop, no kitchen, no pot body.
+Final name: 07-mechanism-final
+
+08-MECHANISM
+Keep the focus on a small section of metal, but change the visual idea from current loops to heat creation. Show the same type of metal cross-section with a restrained orange/red heat gradient developing inside it because current meets electrical resistance. German labels: “Widerstand” and “Wärme”. Do not show the cooktop or magnetic field.
+Final name: 08-mechanism-final
+
+09-MECHANISM
+Create a simplified thermal side view, not a kitchen scene. Show only the lower part of the pot, the glass surface and a neutral cooktop outline. The pot base is strongly warm; the glass is warm mainly at the contact area. German label: “Wärme entsteht im Topfboden”. No visible copper coil and no field lines. This scene must look clearly different from scenes 01, 02 and 06.
+Final name: 09-mechanism-final
+
+IMAGE STEP 3 COMPLETE → continue directly to IMAGE STEP 4, no stop.
+
+IMAGE STEP 4/5 · 10–12
+----------------------
+
+10-DEEPENING
+Show four cookware materials arranged on a clean workbench-like surface: cast iron, magnetic stainless steel, aluminum and glass. Use small German status labels “geeignet” or “nicht geeignet”. No cooktop, no magnetic field and no arrows. The image explains only that not every pot material works.
+Final name: 10-deepening-final
+
+11-DEEPENING
+Show a close-up of the underside of one pot with a small magnet visibly sticking to the base. If a hand is needed, show only the hand and crop the person out completely. One German label: “Magnet haftet”. No cooktop, no coil, no field lines.
+Final name: 11-deepening-final
+
+12-DEEPENING
+Create a clean before/after image with two simple states: left, suitable pot directly on the induction zone with a small active indicator; right, the same pot lifted above the zone and the indicator off. German labels: “Topf aufgesetzt” and “Topf weg”. Keep the two states simple; do not repeat the detailed coil/magnetic-field cutaway from earlier scenes.
+Final name: 12-deepening-final
+
+IMAGE STEP 4 COMPLETE → continue directly to IMAGE STEP 5, no stop.
+
+IMAGE STEP 5/5 · 13–15
+----------------------
+
+13-DEEPENING
+Show a top-down view of a modern induction cooktop with multiple zones. One zone contains a suitable pot and has a subtle green technical indicator around it. Another zone is empty and neutral. One German label: “Topf erkannt”. No field lines, no cutaway, no person.
+Final name: 13-deepening-final
+
+14-DEEPENING
+Explain residual heat with a simple side cross-section AFTER cooking. Show the hot pot slightly lifted or moved aside and the glass surface below still warm only near the former contact area. Use one small orange heat cue from the pot back toward the glass. German label: “Restwärme”. No copper coil and no magnetic-field lines. One clear message only: the glass can still be hot because the hot pot warmed it.
+Final name: 14-deepening-final
+
+15-PAYOFF
+Create a clean four-stage summary chain across the frame. Stage 1: copper coil with alternating current. Stage 2: changing magnetic field. Stage 3: eddy currents inside a simplified pot base. Stage 4: the pot base becomes warm. Use exactly four short German labels: “Wechselstrom”, “Magnetfeld”, “Wirbelströme”, “Wärme”. No kitchen, no decorative background objects, no large headline. This is the only deliberate process-summary graphic.
+Final name: 15-payoff-final
+
+IMAGE STEP 5 COMPLETE. Do not report completion yet.
+
+PHASE 3 — FINAL ASSET CLEANUP
+-----------------------------
+1. Use exactly one final Google Flow collection/folder named “induktionsherd-video-assets-final”.
+2. Keep 00-thumbnail-final and all 15 final scene images there.
+3. Remove the two rejected covers, failed attempts, intermediate versions, duplicate images and rejected variants.
+4. Verify final order and names: 00-thumbnail-final, 01-hook-final, 02-context-final, 03-context-final, 04-foundation-final, 05-foundation-final, 06-mechanism-final, 07-mechanism-final, 08-mechanism-final, 09-mechanism-final, 10-deepening-final, 11-deepening-final, 12-deepening-final, 13-deepening-final, 14-deepening-final, 15-payoff-final.
+5. Only after this cleanup report that the entire image production is complete.

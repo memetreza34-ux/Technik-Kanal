@@ -1,0 +1,1082 @@
+{
+  "version": "science-v1",
+  "productionProfile": "youtube-6to7min-v1",
+  "visualPolicyVersion": "science-static-v1",
+  "generatedImageTextPolicy": "controlled-german-only",
+  "slug": "wie-kommt-strom-in-deine-steckdose",
+  "title": "Wie kommt Strom in deine Steckdose?",
+  "compositionId": "ScienceReel",
+  "runtimeFile": "science-runtime.json",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "minimumWordMatchRatio": 0.82,
+  "scenes": [
+    {
+      "id": "01-hook",
+      "title": "Wie kommt Strom in deine Steckdose?",
+      "section": "hook",
+      "voiceText": "Wie kommt der Strom eigentlich in deine Steckdose? Zwischen einer Windkraftanlage und deiner Nachttischlampe liegt ein gewaltiges Netz. Wir verfolgen seinen Weg.",
+      "imageDir": "02-bilder/images/01-hook",
+      "backgroundFamily": "content-driven",
+      "shotType": "independent-hook-illustration",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "independent-hook-illustration",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Normal video illustration: one lit desk lamp plugged into a German outlet, no cover composition",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "hero",
+      "factClaim": "Wie kommt der Strom eigentlich in deine Steckdose? Zwischen einer Windkraftanlage und deiner Nachttischlampe liegt ein gewaltiges Netz. Wir verfolgen seinen Weg.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "02-context",
+      "title": "room-illustration",
+      "section": "context",
+      "voiceText": "Stell dir vor, du schaltest abends deine Lampe ein. Sie leuchtet sofort. Doch die elektrische Energie muss dafür genau jetzt im Stromnetz verfügbar sein.",
+      "imageDir": "02-bilder/images/02-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "room-illustration",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "room-illustration",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One illuminated desk lamp in calm bedroom with a visible plug, evening setting.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Stell dir vor, du schaltest abends deine Lampe ein. Sie leuchtet sofort. Doch die elektrische Energie muss dafür genau jetzt im Stromnetz verfügbar sein.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "03-context",
+      "title": "balance-concept",
+      "section": "context",
+      "voiceText": "Das Netz funktioniert nicht wie ein riesiger Akku, in dem beliebig viel Strom auf Vorrat liegt. Erzeugung und Verbrauch müssen ständig zusammenpassen.",
+      "imageDir": "02-bilder/images/03-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "balance-concept",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "balance-concept",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One simple beam balance with one generating station icon and one home icon, no other objects.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Das Netz funktioniert nicht wie ein riesiger Akku, in dem beliebig viel Strom auf Vorrat liegt. Erzeugung und Verbrauch müssen ständig zusammenpassen.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "04-context",
+      "title": "production-landscape",
+      "section": "context",
+      "voiceText": "Die Energie stammt nicht nur aus einem Kraftwerk. Windräder, Solaranlagen, Wasserkraftwerke und andere Erzeuger können gleichzeitig in verschiedene Teile des Netzes einspeisen.",
+      "imageDir": "02-bilder/images/04-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "production-landscape",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "production-landscape",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "A clean illustration of one wind turbine, one solar panel farm and a shared electricity route.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Die Energie stammt nicht nur aus einem Kraftwerk. Windräder, Solaranlagen, Wasserkraftwerke und andere Erzeuger können gleichzeitig in verschiedene Teile des Netzes einspeisen.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "05-context",
+      "title": "turbine-cutaway",
+      "section": "context",
+      "voiceText": "Bei einer Windkraftanlage bringt der Wind den Rotor zum Drehen. Im Inneren wandelt ein Generator diese Bewegung in elektrische Energie um.",
+      "imageDir": "02-bilder/images/05-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "turbine-cutaway",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "turbine-cutaway",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Technical cutaway of a wind turbine nacelle: rotor shaft and clear generator. One small label 'Generator'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Bei einer Windkraftanlage bringt der Wind den Rotor zum Drehen. Im Inneren wandelt ein Generator diese Bewegung in elektrische Energie um.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "06-context",
+      "title": "solar-detail",
+      "section": "context",
+      "voiceText": "Eine Solaranlage arbeitet anders: Ihre Solarzellen wandeln Licht direkt in elektrische Energie um. Für das öffentliche Wechselstromnetz wird der Strom anschließend passend umgewandelt.",
+      "imageDir": "02-bilder/images/06-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "solar-detail",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "solar-detail",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One tilted photovoltaic panel receiving sun rays and a small inverter connected next to it. Label 'Wechselrichter'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Eine Solaranlage arbeitet anders: Ihre Solarzellen wandeln Licht direkt in elektrische Energie um. Für das öffentliche Wechselstromnetz wird der Strom anschließend passend umgewandelt.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "07-foundation",
+      "title": "grid-isometric",
+      "section": "foundation",
+      "voiceText": "Viele dieser Erzeuger sind an ganz unterschiedlichen Stellen angeschlossen. Nicht jede Kilowattstunde nimmt deshalb denselben Weg. Das hängt davon ab, wo sie erzeugt und gebraucht wird.",
+      "imageDir": "02-bilder/images/07-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "grid-isometric",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "grid-isometric",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Isometric neighborhood view, rooftop solar and distant wind farm linked to separate grid points, minimal.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Viele dieser Erzeuger sind an ganz unterschiedlichen Stellen angeschlossen. Nicht jede Kilowattstunde nimmt deshalb denselben Weg. Das hängt davon ab, wo sie erzeugt und gebraucht wird.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "08-foundation",
+      "title": "travel-map",
+      "section": "foundation",
+      "voiceText": "Damit wir die Versorgung verstehen, verfolgen wir einen typischen Weg: von einem großen Erzeuger über hohe Spannung, regionale Leitungen und schließlich bis zum Haus.",
+      "imageDir": "02-bilder/images/08-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "travel-map",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "travel-map",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One simple four-stage route in landscape: power producer, pylon, transformer, home.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Damit wir die Versorgung verstehen, verfolgen wir einen typischen Weg: von einem großen Erzeuger über hohe Spannung, regionale Leitungen und schließlich bis zum Haus.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "09-foundation",
+      "title": "outlet-closeup",
+      "section": "foundation",
+      "voiceText": "An deiner Steckdose liegen in Deutschland normalerweise rund zweihundertdreißig Volt zwischen Außenleiter und Neutralleiter an. Über große Entfernungen wäre diese Spannung für hohe Leistungen jedoch unpraktisch.",
+      "imageDir": "02-bilder/images/09-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "outlet-closeup",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "outlet-closeup",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One closeup of German wall outlet, with exactly one readable label '230 V'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "An deiner Steckdose liegen in Deutschland normalerweise rund zweihundertdreißig Volt zwischen Außenleiter und Neutralleiter an. Über große Entfernungen wäre diese Spannung für hohe Leistungen jedoch unpraktisch.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "10-foundation",
+      "title": "current-comparison",
+      "section": "foundation",
+      "voiceText": "Denn wenn man bei gleicher Leistung die Spannung erhöht, kann der Strom kleiner werden. Ein kleinerer Strom verringert die Wärmeverluste in den Leitungen.",
+      "imageDir": "02-bilder/images/10-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "current-comparison",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "current-comparison",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Two parallel single cables as clean comparison: many tiny charge symbols versus few; label 'weniger Verluste' only.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Denn wenn man bei gleicher Leistung die Spannung erhöht, kann der Strom kleiner werden. Ein kleinerer Strom verringert die Wärmeverluste in den Leitungen.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "11-foundation",
+      "title": "copper-macro",
+      "section": "foundation",
+      "voiceText": "Ein Teil der elektrischen Energie wird sonst im Leitungswiderstand zu Wärme. Man würde also unnötig Energie entlang langer Strecken verlieren, statt sie zu nutzen.",
+      "imageDir": "02-bilder/images/11-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "copper-macro",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "copper-macro",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One copper conductor closeup with subtle orange heat halo, simple material study.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Ein Teil der elektrischen Energie wird sonst im Leitungswiderstand zu Wärme. Man würde also unnötig Energie entlang langer Strecken verlieren, statt sie zu nutzen.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "12-foundation",
+      "title": "transformer-cutaway",
+      "section": "foundation",
+      "voiceText": "Hier kommt der Transformator ins Spiel. Vereinfacht besteht er aus zwei Spulen und einem gemeinsamen magnetischen Kern. Damit lässt sich Wechselspannung erhöhen oder verringern.",
+      "imageDir": "02-bilder/images/12-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "transformer-cutaway",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "transformer-cutaway",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One transformer with two copper windings and shared rectangular magnetic core, label 'Transformator'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Hier kommt der Transformator ins Spiel. Vereinfacht besteht er aus zwei Spulen und einem gemeinsamen magnetischen Kern. Damit lässt sich Wechselspannung erhöhen oder verringern.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "13-foundation",
+      "title": "substation-illustration",
+      "section": "foundation",
+      "voiceText": "Beim Hochtransformieren steigt die Spannung. Für die gleiche übertragene Leistung genügt dann ein kleinerer Strom. Genau das macht längere Leitungen effizienter.",
+      "imageDir": "02-bilder/images/13-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "substation-illustration",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "substation-illustration",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One industrial step-up transformer and clearly taller outgoing power line, label 'hohe Spannung'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Beim Hochtransformieren steigt die Spannung. Für die gleiche übertragene Leistung genügt dann ein kleinerer Strom. Genau das macht längere Leitungen effizienter.",
+      "sourceIds": [
+        "SRC-01"
+      ]
+    },
+    {
+      "id": "14-mechanism",
+      "title": "transmission-landscape",
+      "section": "mechanism",
+      "voiceText": "Nun erreicht die elektrische Energie das Übertragungsnetz. Seine hohen Masten und Leitungen verbinden große Regionen und erlauben den Austausch über weite Entfernungen.",
+      "imageDir": "02-bilder/images/14-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "transmission-landscape",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "transmission-landscape",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Two high voltage towers spanning a valley with subdued countryside, full-frame illustration.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Nun erreicht die elektrische Energie das Übertragungsnetz. Seine hohen Masten und Leitungen verbinden große Regionen und erlauben den Austausch über weite Entfernungen.",
+      "sourceIds": [
+        "SRC-02"
+      ]
+    },
+    {
+      "id": "15-mechanism",
+      "title": "pylon-closeup",
+      "section": "mechanism",
+      "voiceText": "In Deutschland gibt es im Höchstspannungsnetz beispielsweise Leitungen mit zweihundertzwanzigtausend oder dreihundertachtzigtausend Volt. Das ist erheblich mehr als in einer Steckdose.",
+      "imageDir": "02-bilder/images/15-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "pylon-closeup",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "pylon-closeup",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One high-voltage lattice transmission tower from three-quarter angle, label '380 kV'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "In Deutschland gibt es im Höchstspannungsnetz beispielsweise Leitungen mit zweihundertzwanzigtausend oder dreihundertachtzigtausend Volt. Das ist erheblich mehr als in einer Steckdose.",
+      "sourceIds": [
+        "SRC-02"
+      ]
+    },
+    {
+      "id": "16-mechanism",
+      "title": "branched-network",
+      "section": "mechanism",
+      "voiceText": "Die elektrische Energie fließt nicht auf einer einzigen festen Strecke wie ein Paket durch ein Rohr. In einem verbundenen Wechselstromnetz verteilt sich die Leistung über vorhandene Leitungswege.",
+      "imageDir": "02-bilder/images/16-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "branched-network",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "branched-network",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Four connected network nodes, two subtle paths and small arrows, no boxes or extra labels.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Die elektrische Energie fließt nicht auf einer einzigen festen Strecke wie ein Paket durch ein Rohr. In einem verbundenen Wechselstromnetz verteilt sich die Leistung über vorhandene Leitungswege.",
+      "sourceIds": [
+        "SRC-02"
+      ]
+    },
+    {
+      "id": "17-mechanism",
+      "title": "regional-map",
+      "section": "mechanism",
+      "voiceText": "Diese Leitungswege enden auch nicht an Deutschlands Grenzen. Das Stromsystem ist mit Nachbarländern verbunden. So können Netze elektrische Energie austauschen und sich gegenseitig unterstützen.",
+      "imageDir": "02-bilder/images/17-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "regional-map",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "regional-map",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Minimal central Europe outline featuring only two electric interconnects, no labels or flags.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Diese Leitungswege enden auch nicht an Deutschlands Grenzen. Das Stromsystem ist mit Nachbarländern verbunden. So können Netze elektrische Energie austauschen und sich gegenseitig unterstützen.",
+      "sourceIds": [
+        "SRC-02"
+      ]
+    },
+    {
+      "id": "18-mechanism",
+      "title": "substation-aerial",
+      "section": "mechanism",
+      "voiceText": "Näher an Städten erreicht die Energie ein Umspannwerk. Dort stehen große Transformatoren zwischen den verschiedenen Spannungsebenen. Diese Anlage verbindet das überregionale Netz mit der regionalen Versorgung.",
+      "imageDir": "02-bilder/images/18-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "substation-aerial",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "substation-aerial",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Isometric aerial substation with one prominent transformer and simplified line connection, label 'Umspannwerk'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Näher an Städten erreicht die Energie ein Umspannwerk. Dort stehen große Transformatoren zwischen den verschiedenen Spannungsebenen. Diese Anlage verbindet das überregionale Netz mit der regionalen Versorgung.",
+      "sourceIds": [
+        "SRC-02"
+      ]
+    },
+    {
+      "id": "19-mechanism",
+      "title": "regional-industry",
+      "section": "mechanism",
+      "voiceText": "Ein typischer nächster Schritt kann das Netz mit einhundertzehntausend Volt sein. Darüber erhalten ganze Regionen, Gewerbegebiete und große Betriebe elektrische Energie.",
+      "imageDir": "02-bilder/images/19-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "regional-industry",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "regional-industry",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Regional power line next to a simplified industrial district, label '110 kV'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Ein typischer nächster Schritt kann das Netz mit einhundertzehntausend Volt sein. Darüber erhalten ganze Regionen, Gewerbegebiete und große Betriebe elektrische Energie.",
+      "sourceIds": [
+        "SRC-02"
+      ]
+    },
+    {
+      "id": "20-mechanism",
+      "title": "industry-home-comparison",
+      "section": "mechanism",
+      "voiceText": "An große Unternehmen wird Strom teilweise auf höheren Spannungsebenen geliefert. Ein Haushalt braucht dagegen weniger Leistung. Darum wird der Strom für Wohngebiete weiter heruntertransformiert.",
+      "imageDir": "02-bilder/images/20-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "industry-home-comparison",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "industry-home-comparison",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Two clear side-by-side simplified consumers: a large factory and two houses, distinct connection sizes.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "An große Unternehmen wird Strom teilweise auf höheren Spannungsebenen geliefert. Ein Haushalt braucht dagegen weniger Leistung. Darum wird der Strom für Wohngebiete weiter heruntertransformiert.",
+      "sourceIds": [
+        "SRC-02"
+      ]
+    },
+    {
+      "id": "21-mechanism",
+      "title": "urban-ground-cutaway",
+      "section": "mechanism",
+      "voiceText": "Jetzt gelangen wir ins Mittelspannungsnetz. Seine Leitungen liegen häufig unter der Erde. Sie versorgen Wohngebiete, Geschäfte und kleinere Industrieanlagen über eine ganze Stadt hinweg.",
+      "imageDir": "02-bilder/images/21-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "urban-ground-cutaway",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "urban-ground-cutaway",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One cross-section beneath a city street showing buried medium voltage cable, label 'Mittelspannung'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Jetzt gelangen wir ins Mittelspannungsnetz. Seine Leitungen liegen häufig unter der Erde. Sie versorgen Wohngebiete, Geschäfte und kleinere Industrieanlagen über eine ganze Stadt hinweg.",
+      "sourceIds": [
+        "SRC-03"
+      ]
+    },
+    {
+      "id": "22-mechanism",
+      "title": "cable-macro",
+      "section": "mechanism",
+      "voiceText": "Wie hoch die Spannung dort ist, unterscheidet sich je nach Netz. In Berlin wird für die Mittelspannung beispielsweise häufig eine Spannung von zehntausend Volt genutzt.",
+      "imageDir": "02-bilder/images/22-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "cable-macro",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "cable-macro",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Single insulated cable closeup on dark matte background, small label '10 kV'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Wie hoch die Spannung dort ist, unterscheidet sich je nach Netz. In Berlin wird für die Mittelspannung beispielsweise häufig eine Spannung von zehntausend Volt genutzt.",
+      "sourceIds": [
+        "SRC-03"
+      ]
+    },
+    {
+      "id": "23-mechanism",
+      "title": "neighborhood-environment",
+      "section": "mechanism",
+      "voiceText": "Ein solches Kabel führt zur Ortsnetzstation. Diese Station kann wie ein kleiner unscheinbarer Kasten zwischen Häusern stehen. Im Inneren steckt wieder ein Transformator.",
+      "imageDir": "02-bilder/images/23-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "neighborhood-environment",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "neighborhood-environment",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One compact electricity distribution kiosk between two buildings, label 'Ortsnetzstation'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Ein solches Kabel führt zur Ortsnetzstation. Diese Station kann wie ein kleiner unscheinbarer Kasten zwischen Häusern stehen. Im Inneren steckt wieder ein Transformator.",
+      "sourceIds": [
+        "SRC-03"
+      ]
+    },
+    {
+      "id": "24-mechanism",
+      "title": "kiosk-cutaway",
+      "section": "mechanism",
+      "voiceText": "Der Transformator reduziert hier die Mittelspannung auf Niederspannung. So entsteht eine Versorgung, die zum Beispiel Häuser, Straßenlampen und kleinere Geschäfte erreicht.",
+      "imageDir": "02-bilder/images/24-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "kiosk-cutaway",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "kiosk-cutaway",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One clean cutaway of street-side transformer kiosk containing one visible transformer, no text.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Der Transformator reduziert hier die Mittelspannung auf Niederspannung. So entsteht eine Versorgung, die zum Beispiel Häuser, Straßenlampen und kleinere Geschäfte erreicht.",
+      "sourceIds": [
+        "SRC-03"
+      ]
+    },
+    {
+      "id": "25-mechanism",
+      "title": "low-voltage-cable-section",
+      "section": "mechanism",
+      "voiceText": "Im Niederspannungsnetz werden gewöhnlich drei Außenleiter und ein Neutralleiter verteilt. Das macht es möglich, Haushalte und größere Geräte mit unterschiedlichen Spannungen zu versorgen.",
+      "imageDir": "02-bilder/images/25-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "low-voltage-cable-section",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "low-voltage-cable-section",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Single technical cable cross-section with four abstract conductor cores, label 'Niederspannung'; no color coding claims.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Im Niederspannungsnetz werden gewöhnlich drei Außenleiter und ein Neutralleiter verteilt. Das macht es möglich, Haushalte und größere Geräte mit unterschiedlichen Spannungen zu versorgen.",
+      "sourceIds": [
+        "SRC-03"
+      ]
+    },
+    {
+      "id": "26-mechanism",
+      "title": "voltage-terminal",
+      "section": "mechanism",
+      "voiceText": "Zwischen einem Außenleiter und dem Neutralleiter liegen normalerweise zweihundertdreißig Volt. Zwischen zwei verschiedenen Außenleitern des Drehstromnetzes sind es normalerweise vierhundert Volt.",
+      "imageDir": "02-bilder/images/26-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "voltage-terminal",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "voltage-terminal",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One simplified three-phase terminal block with two clear measuring indicators, labels '230 V' and '400 V' only.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Zwischen einem Außenleiter und dem Neutralleiter liegen normalerweise zweihundertdreißig Volt. Zwischen zwei verschiedenen Außenleitern des Drehstromnetzes sind es normalerweise vierhundert Volt.",
+      "sourceIds": [
+        "SRC-03"
+      ]
+    },
+    {
+      "id": "27-mechanism",
+      "title": "house-foundation-cutaway",
+      "section": "mechanism",
+      "voiceText": "Für die Versorgung deines Hauses laufen die Niederspannungskabel oft unter der Straße entlang. Von der Hauptleitung zweigt ein Anschluss zum Gebäude ab.",
+      "imageDir": "02-bilder/images/27-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "house-foundation-cutaway",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "house-foundation-cutaway",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Isometric ground cutaway with one street cable splitting once into a nearby house.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Für die Versorgung deines Hauses laufen die Niederspannungskabel oft unter der Straße entlang. Von der Hauptleitung zweigt ein Anschluss zum Gebäude ab.",
+      "sourceIds": [
+        "SRC-03"
+      ]
+    },
+    {
+      "id": "28-mechanism",
+      "title": "utility-room",
+      "section": "mechanism",
+      "voiceText": "Dieser Hausanschluss bringt die elektrische Energie ins Gebäude. Dort gibt es technische Einrichtungen, mit denen die Versorgung verteilt, gemessen und abgesichert wird.",
+      "imageDir": "02-bilder/images/28-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "utility-room",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "utility-room",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Small clean utility-room wall with service entry box and electricity meter cabinet, no text.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Dieser Hausanschluss bringt die elektrische Energie ins Gebäude. Dort gibt es technische Einrichtungen, mit denen die Versorgung verteilt, gemessen und abgesichert wird.",
+      "sourceIds": [
+        "SRC-03"
+      ]
+    },
+    {
+      "id": "29-mechanism",
+      "title": "meter-detail",
+      "section": "mechanism",
+      "voiceText": "Ein Stromzähler misst, wie viel elektrische Energie deine Wohnung verbraucht. Dafür verwendet man die Einheit Kilowattstunde. Der Zähler erzeugt den Strom also nicht selbst.",
+      "imageDir": "02-bilder/images/29-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "meter-detail",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "meter-detail",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Single big household power meter, neatly simplified with small label 'kWh', no invented readings.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Ein Stromzähler misst, wie viel elektrische Energie deine Wohnung verbraucht. Dafür verwendet man die Einheit Kilowattstunde. Der Zähler erzeugt den Strom also nicht selbst.",
+      "sourceIds": [
+        "SRC-03"
+      ]
+    },
+    {
+      "id": "30-mechanism",
+      "title": "apartment-circuits",
+      "section": "mechanism",
+      "voiceText": "Anschließend wird die Energie über Stromkreise verteilt. Licht, Steckdosen und andere Verbraucher erhalten so ihre Anschlüsse in unterschiedlichen Bereichen der Wohnung.",
+      "imageDir": "02-bilder/images/30-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "apartment-circuits",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "apartment-circuits",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Top-down schematic apartment illustration, one simple lamp circuit and one outlet circuit, no internal wiring.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Anschließend wird die Energie über Stromkreise verteilt. Licht, Steckdosen und andere Verbraucher erhalten so ihre Anschlüsse in unterschiedlichen Bereichen der Wohnung.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "31-mechanism",
+      "title": "breaker-closeup",
+      "section": "mechanism",
+      "voiceText": "Im Verteiler schützen Leitungsschutzschalter Leitungen vor zu großen Strömen, etwa bei Überlast oder Kurzschluss. Das ist wichtig, damit Leitungen nicht gefährlich heiß werden.",
+      "imageDir": "02-bilder/images/31-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "breaker-closeup",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "breaker-closeup",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One recognizable simplified miniature circuit breaker at large scale, label 'Leitungsschutzschalter'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Im Verteiler schützen Leitungsschutzschalter Leitungen vor zu großen Strömen, etwa bei Überlast oder Kurzschluss. Das ist wichtig, damit Leitungen nicht gefährlich heiß werden.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "32-mechanism",
+      "title": "rcd-concept",
+      "section": "mechanism",
+      "voiceText": "Ein Fehlerstromschutzschalter, oft FI oder RCD genannt, hat eine andere Aufgabe. Er erkennt bestimmte Fehlerströme und kann den Stromkreis dann sehr schnell abschalten.",
+      "imageDir": "02-bilder/images/32-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "rcd-concept",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "rcd-concept",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One stylized RCD device with two balanced conductor lines and small fault indicator, label 'FI/RCD'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Ein Fehlerstromschutzschalter, oft FI oder RCD genannt, hat eine andere Aufgabe. Er erkennt bestimmte Fehlerströme und kann den Stromkreis dann sehr schnell abschalten.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "33-mechanism",
+      "title": "closed-circuit",
+      "section": "mechanism",
+      "voiceText": "Am Ende steht deine Steckdose. Über den Außenleiter und Neutralleiter kann ein angeschlossenes Gerät Energie aufnehmen, sobald sein Stromkreis geschlossen ist.",
+      "imageDir": "02-bilder/images/33-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "closed-circuit",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "closed-circuit",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Minimal conceptual drawing of a plugged in lamp, closed loop safely illustrated, no exposed conductors.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Am Ende steht deine Steckdose. Über den Außenleiter und Neutralleiter kann ein angeschlossenes Gerät Energie aufnehmen, sobald sein Stromkreis geschlossen ist.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "34-deepening",
+      "title": "energy-vs-electron",
+      "section": "deepening",
+      "voiceText": "Warum geht dann das Licht sofort an? Die elektrische Wirkung breitet sich durch den verbundenen Stromkreis sehr schnell aus. Die Elektronen selbst wandern nicht blitzschnell vom Kraftwerk in deine Lampe.",
+      "imageDir": "02-bilder/images/34-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "energy-vs-electron",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "energy-vs-electron",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Simple stylized conductor with small charge dots and single electric effect path indication, no numeric speed.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Warum geht dann das Licht sofort an? Die elektrische Wirkung breitet sich durch den verbundenen Stromkreis sehr schnell aus. Die Elektronen selbst wandern nicht blitzschnell vom Kraftwerk in deine Lampe.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "35-deepening",
+      "title": "rooftop-feed",
+      "section": "deepening",
+      "voiceText": "Außerdem wird nicht nur Strom aus fernen Großkraftwerken geliefert. Eine Solaranlage auf einem Dach kann Energie direkt in das örtliche Verteilnetz einspeisen.",
+      "imageDir": "02-bilder/images/35-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "rooftop-feed",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "rooftop-feed",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Isometric house with rooftop solar connected to one local distribution cable.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Außerdem wird nicht nur Strom aus fernen Großkraftwerken geliefert. Eine Solaranlage auf einem Dach kann Energie direkt in das örtliche Verteilnetz einspeisen.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "36-deepening",
+      "title": "evening-neighborhood",
+      "section": "deepening",
+      "voiceText": "Was passiert, wenn viele Menschen gleichzeitig kochen oder ihre Autos laden? Dann steigt der Bedarf. Netzbetreiber beobachten deshalb Belastung und Spannungen in ihren Netzen.",
+      "imageDir": "02-bilder/images/36-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "evening-neighborhood",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "evening-neighborhood",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Three simple homes at dusk, one EV charging, one warmly lit kitchen, one connecting cable.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Was passiert, wenn viele Menschen gleichzeitig kochen oder ihre Autos laden? Dann steigt der Bedarf. Netzbetreiber beobachten deshalb Belastung und Spannungen in ihren Netzen.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "37-deepening",
+      "title": "sine-wave",
+      "section": "deepening",
+      "voiceText": "Im europäischen Wechselstromnetz liegt die Nennfrequenz bei fünfzig Hertz. Sie ist ein wichtiges Signal für das Gleichgewicht zwischen Erzeugung und Verbrauch.",
+      "imageDir": "02-bilder/images/37-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "sine-wave",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "sine-wave",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One clear sine wave drawn on warm neutral surface, single label '50 Hz'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Im europäischen Wechselstromnetz liegt die Nennfrequenz bei fünfzig Hertz. Sie ist ein wichtiges Signal für das Gleichgewicht zwischen Erzeugung und Verbrauch.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "38-deepening",
+      "title": "storage-scene",
+      "section": "deepening",
+      "voiceText": "Wind und Sonne schwanken. Darum braucht das Stromsystem flexible Erzeuger, Speicher, regelbare Verbraucher und Verbindungen zu anderen Regionen. Sie helfen, Angebot und Bedarf auszugleichen.",
+      "imageDir": "02-bilder/images/38-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "storage-scene",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "storage-scene",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Single clean battery storage cabinet connected to a modest solar area, label 'Speicher'.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Wind und Sonne schwanken. Darum braucht das Stromsystem flexible Erzeuger, Speicher, regelbare Verbraucher und Verbindungen zu anderen Regionen. Sie helfen, Angebot und Bedarf auszugleichen.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "39-deepening",
+      "title": "fault-isolation",
+      "section": "deepening",
+      "voiceText": "Bei einer Störung können Schutz- und Schaltgeräte betroffene Netzteile trennen. Netzbetreiber suchen dann die Fehlerstelle und stellen die Versorgung kontrolliert wieder her.",
+      "imageDir": "02-bilder/images/39-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "fault-isolation",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "fault-isolation",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "Minimal three-branch electricity network, one faulty section cleanly disconnected, no dramatic sparks.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Bei einer Störung können Schutz- und Schaltgeräte betroffene Netzteile trennen. Netzbetreiber suchen dann die Fehlerstelle und stellen die Versorgung kontrolliert wieder her.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "40-payoff",
+      "title": "route-summary",
+      "section": "payoff",
+      "voiceText": "Damit ist der Weg fast komplett: Energie wird erzeugt, über passende Spannungsebenen verteilt, mehrfach transformiert und am Ende im Haus genutzt. Nicht jede Anlage durchläuft exakt dieselbe Strecke.",
+      "imageDir": "02-bilder/images/40-payoff",
+      "backgroundFamily": "content-driven",
+      "shotType": "route-summary",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "route-summary",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "One left-to-right visual route with four large icons: producer, pylon, transformer, home, no text.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "concept",
+      "factClaim": "Damit ist der Weg fast komplett: Energie wird erzeugt, über passende Spannungsebenen verteilt, mehrfach transformiert und am Ende im Haus genutzt. Nicht jede Anlage durchläuft exakt dieselbe Strecke.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    },
+    {
+      "id": "41-payoff",
+      "title": "Zusammenfassung",
+      "section": "payoff",
+      "voiceText": "Die Steckdose ist also nur der letzte sichtbare Punkt eines viel größeren Systems. Wenn du das Licht einschaltest, arbeiten Erzeugung, Netz und Verteilung zusammen, damit es leuchtet.",
+      "imageDir": "02-bilder/images/41-payoff",
+      "backgroundFamily": "content-driven",
+      "shotType": "payoff-interior",
+      "referenceGroup": "technical-editorial-explainer-2.5d",
+      "visualRecipe": {
+        "stage": "payoff-interior",
+        "camera": "one simple decisive explanatory camera view",
+        "subject": "A quiet closing close-up of lit desk lamp and plugged in cord, soft evening light, NO grid elements; composition different from opening.",
+        "focus": "current single spoken explanation",
+        "motion": "none",
+        "callouts": []
+      },
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "layout": "image-full",
+      "imageRole": "payoff",
+      "factClaim": "Die Steckdose ist also nur der letzte sichtbare Punkt eines viel größeren Systems. Wenn du das Licht einschaltest, arbeiten Erzeugung, Netz und Verteilung zusammen, damit es leuchtet.",
+      "sourceIds": [
+        "SRC-04"
+      ]
+    }
+  ]
+}

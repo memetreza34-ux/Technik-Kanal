@@ -1,0 +1,8 @@
+{
+  "status":"preproduction-ready-for-local-gates",
+  "slug":"warum-ist-der-himmel-blau",
+  "completed":["research","script","sources","science-static-v1-scene-plan","image-prompts","storyboard"],
+  "open":["preflight","images","voiceover","captions","render","qa"],
+  "requiredVisibleSceneImages":9,
+  "nextCommand":"npm run science:preflight -- \"channels/elektrotechnik/reels/2026-09-28_bis_2026-10-04/01_Warum-ist-der-Himmel-blau\""
+}

@@ -4,8 +4,12 @@ outputs/
 .DS_Store
 *.log
 .tools/
-channels/elektrotechnik/public/reels/
+channels/science/public/reels/
 **/06-projektdateien/.work/
 **/06-projektdateien/render/
 **/05-export/*.mp4
-**/02-bilder/final-labeled/
+**/05-export/video/*.mp4
+
+# Einfache Nutzerablage: Originalmedien bleiben lokal und werden in die Renderer-Verzeichnisse importiert.
+START-HIER/**/DATEIEN-HIER-REIN/*
+!START-HIER/**/DATEIEN-HIER-REIN/HIER-ABLEGEN.txt

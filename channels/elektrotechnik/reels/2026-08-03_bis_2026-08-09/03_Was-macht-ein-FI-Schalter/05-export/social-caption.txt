@@ -1,9 +1,0 @@
-Was macht ein FI-Schalter wirklich?
-
-Ein FI beziehungsweise RCD vergleicht den hinaus- und zurückfließenden Strom. Fehlt ein Teil, liegt ein Fehlerstrom vor und der betroffene Stromkreis kann abgeschaltet werden.
-
-FI/RCD und LS haben unterschiedliche Aufgaben. Wiederholtes Auslösen niemals überbrücken oder blind zurücksetzen.
-
-Kommentiere FI für den Lernzettel.
-
-#Elektrotechnik #FISchalter #RCD #Elektroniker #Ausbildung #ElektroKlar

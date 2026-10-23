@@ -1,4 +1,4 @@
-name: Validate Elektrotechnik System
+name: Validate Science Channel
 
 on:
   pull_request:
@@ -7,31 +7,82 @@ on:
       - main
 
 jobs:
-  validate:
+  contracts:
+    name: Contracts and policy
     runs-on: ubuntu-latest
     timeout-minutes: 20
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-
       - name: Install dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
+      - name: Node script syntax
+        run: npm run validate:science-syntax
+      - name: Video folder contract
+        run: npm run validate:science-template
+      - name: System structure
+        run: npm run validate:science-system
+      - name: Science configuration consistency
+        run: npm run validate:science-consistency
+      - name: Science Static visual policy
+        run: npm run validate:science-visual-policy
+      - name: Longform profile and export test
+        run: npm run validate:science-longform
+      - name: Reference longform video content QA
+        run: npm run science:reference-qa -- "channels/science/YouTube/2026-10-12_bis_2026-10-18/01_Warum-sinkt-ein-riesiges-Stahlschiff-nicht"
 
-      - name: Full system validation
-        run: npm test
+  types-and-unit:
+    name: TypeScript and unit tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+      - name: TypeScript
+        run: npm run typecheck
+      - name: Vitest
+        run: npx vitest run
 
-      - name: Scaffold transaction
-        run: npm run electrical:scaffold-test
+  pipeline-contracts:
+    name: Science scaffold and E2E
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+      - name: Science scaffold transaction
+        run: npm run science:scaffold-test
+      - name: Science E2E contracts
+        run: npm run science:e2e
 
-      - name: E2E contracts
-        run: npm run electrical:e2e
-
-      - name: Remotion smoke still
+  remotion-smoke:
+    name: Science 16:9 smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+      - name: Static 16:9 Science smoke still
         run: npm run smoke
