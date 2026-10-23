@@ -42,7 +42,12 @@ describe('science config regression', () => {
     expect(config.visuals.policyVersion).toBe('science-static-v1');
     expect(config.visuals.productionMode).toBe('flow-image-only');
     expect(config.visuals.animationAllowed).toBe(false);
-    expect(config.visuals.cameraMotionAllowed).toBe(false);
+    expect(config.visuals.cameraMotionAllowed).toBe(true);
+    expect(config.visuals.cameraMotion.maxScale).toBeLessThanOrEqual(1.05);
+    expect(config.visuals.cameraMotion.panPercent).toBeLessThanOrEqual(2);
+    expect(config.sound.musicBedAllowed).toBe(true);
+    expect(config.sound.musicBed.targetLufs).toBeLessThanOrEqual(-28);
+    expect(config.sound.musicBed.sourceNoteRequired).toBe(true);
     expect(config.visuals.styleId).toBe('scientific-scene-explainer-v1');
     expect(config.visuals.generatedImageTextPolicy).toBe('controlled-german-only');
     expect(config.visuals.visibleImageLanguage).toBe('de');

@@ -94,6 +94,22 @@
         "scripts/science-creative-qa.mjs",
         "scripts/test-science-quality-v2.mjs"
       ]
+    },
+    {
+      "id": "hyp-002",
+      "priority": 2,
+      "status": "active",
+      "area": "pacing-and-sound",
+      "evidenceLevel": "untested-hypothesis",
+      "source": "gehirn/ANALYSE-2026-10-18.md",
+      "observation": "Die ersten Langvideos liefen 6 Minuten als Standbilder ohne Bewegung und ohne Musik; erfolgreiche Erklärkanäle arbeiten mit bewegten Bildern und Musik. Noch keine eigenen Studio-Daten.",
+      "action": "Dezente virtuelle Kamera (≤4 % Zoom, 1,5 % Schwenk) und leiser Musikteppich (−30 LUFS, mit Quellenangabe). Primärmetrik: durchschnittlich angesehener Anteil und Retention-Dips gegenüber Stahlschiff/Steckdose im gleichen Messfenster vergleichen.",
+      "enforcedBy": [
+        "scripts/lib/science-camera-motion.mjs",
+        "scripts/lib/science-music-bed.mjs",
+        "scripts/prepare_science_reel.mjs",
+        "channels/science/src/ScienceReel.tsx"
+      ]
     }
   ]
 }
