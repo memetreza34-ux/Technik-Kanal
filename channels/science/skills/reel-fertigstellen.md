@@ -81,13 +81,13 @@ Alle Szenenbilder bleiben statisch. Es werden keine späteren Remotion-Animation
 npm run science:finish -- "<video-ordner>"
 ```
 
-Die Pipeline verarbeitet Audio auf 1,10×, erstellt lokale Wort-Zeitstempel, gleicht Transkript und Szenenplan ab, synchronisiert Bilder/Untertitel/SFX, setzt harte Schnitte, rendert 1920×1080 und erzeugt Render-QA sowie Kontrollbilder.
+Die Pipeline verarbeitet Audio auf 1,10×, erstellt lokale Wort-Zeitstempel, gleicht Transkript und Szenenplan ab, synchronisiert Bilder, SFX und optionale Musik, legt die dezente virtuelle Kamera über jedes Bild, setzt harte Schnitte, rendert 1920×1080 und erzeugt Render-QA sowie Kontrollbilder.
 
 ## Harte Remotion-Grenze
 
-Remotion darf keine visuelle Kreativarbeit leisten. Verboten sind Zoom, Pan, Ken Burns, Parallax, Rotation, animierte Diagramme, Moleküle, Feldlinien, Strompfade, Partikel, Mechanismus-Animationen und Crossfades als Standard.
+Remotion darf keine visuelle Kreativarbeit leisten. Verboten sind starker Zoom, Ken Burns über 4 %, Parallax, Rotation, animierte Diagramme, Moleküle, Feldlinien, Strompfade, Partikel, Mechanismus-Animationen, Crossfades als Standard sowie eigene Szenenüberschriften oder Kicker.
 
-Zulässig sind statische Bilder, harte Schnitte, Voice-over, statische Titel/Overlays, Untertitel ohne Animation, optionale SFX und Export.
+Zulässig sind statische Bilder mit der dezenten virtuellen Kamera (≤4 % Zoom, 1,5 % Schwenk, pro Szene abschaltbar mit `cameraMove: none`, siehe `gehirn/KANAL.md`), harte Schnitte, Voice-over, optionaler Musikteppich mit Quellenangabe, optionale SFX und Export. Keine eingebrannten Untertitel.
 
 ## Endkontrolle
 
@@ -102,6 +102,6 @@ Prüfen:
 - sind Labels/Infos wirklich notwendig und nicht überladen?
 - gibt es keine Logos/Wasserzeichen oder fehlerhafte KI-Schrift?
 - bleiben alle Bilder statisch?
-- sind Untertitel vollständig?
+- ist die Kamerabewegung dezent und zeigt nie einen leeren Bildrand?
 - sind Titel, Thumbnail und Hook inhaltlich konsistent?
 - sind fachliche Aussagen durch Quellen gedeckt?

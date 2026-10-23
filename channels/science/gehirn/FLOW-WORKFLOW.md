@@ -59,8 +59,8 @@ Normale Szenen:
 - genau eine dominante Erkläridee
 - bevorzugt ein Hauptobjekt
 - höchstens 3 wichtige visuelle Elemente
-- bevorzugt 0–1 kurzes deutsches Label
-- absolut höchstens 2 Labels
+- bevorzugt 0–2 kurze deutsche Labels
+- absolut höchstens 3 Labels (Profil `youtube-6to7min-v1`)
 - höchstens 2 Pfeile
 - höchstens 2 Panels
 - keine große Szenenüberschrift
@@ -71,7 +71,7 @@ Normale Szenen:
 
 Vergleich/Diagramm/Zusammenfassung:
 - höchstens 4 wichtige visuelle Elemente
-- höchstens 3 kurze Labels
+- höchstens 5 kurze Labels
 - höchstens 2 Panels
 - weiterhin genau eine zentrale Aussage
 
