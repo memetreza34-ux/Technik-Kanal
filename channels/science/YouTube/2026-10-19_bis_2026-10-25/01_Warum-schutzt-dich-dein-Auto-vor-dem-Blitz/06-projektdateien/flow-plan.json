@@ -1,0 +1,1410 @@
+{
+  "version": "science-flow-image-v8-density-locked",
+  "productionProfile": "youtube-6to7min-v1",
+  "workflow": "thumbnail-first-then-five-image-steps-no-intermediate-stops-final-cleanup",
+  "imageOnly": true,
+  "informationBudgetLocked": true,
+  "imageProductionSteps": 5,
+  "pauseAfterEachImageStep": false,
+  "continueAutomaticallyBetweenImageSteps": true,
+  "finalReportAfterAllImageSteps": true,
+  "deleteUnselectedThumbnailCandidatesAfterSelection": true,
+  "selectedThumbnailFinalName": "00-thumbnail-final",
+  "coverExportDir": "05-export",
+  "coverNeverUsedAsVideoFrame": true,
+  "scene01IndependentFromCover": true,
+  "finalFlowCollectionRequired": true,
+  "singleFinalFlowCollectionPerVideo": true,
+  "finalCollectionName": "warum-schutzt-dich-dein-auto-vor-dem-blitz-assets-final",
+  "removeRejectedVariantsBeforeCompletion": true,
+  "renameFinalAssetsBeforeCompletion": true,
+  "finalCollectionContainsFinalAssetsOnly": true,
+  "diversityRequired": true,
+  "phase2SceneAssetRoot": "02-bilder/images",
+  "phase2ThumbnailRoot": "02-bilder/thumbnail",
+  "phase3AssetSource": "phase2-project-folders-only",
+  "phase3MayGenerateVisualAssets": false,
+  "phase3MayRegenerateVisualAssets": false,
+  "phase3MaySearchExternalAssets": false,
+  "phase3MaySubstituteMissingAssets": false,
+  "phase3MaySkipMissingScenes": false,
+  "phase3MissingAssetPolicy": "stop-and-report",
+  "steps": [
+    {
+      "step": 1,
+      "sceneIds": [
+        "01-hook",
+        "02-hook",
+        "03-hook",
+        "04-hook",
+        "05-hook",
+        "06-hook",
+        "07-hook",
+        "08-context",
+        "09-context",
+        "10-context",
+        "11-context",
+        "12-context",
+        "13-context",
+        "14-context",
+        "15-context"
+      ]
+    },
+    {
+      "step": 2,
+      "sceneIds": [
+        "16-context",
+        "17-foundation",
+        "18-foundation",
+        "19-foundation",
+        "20-foundation",
+        "21-foundation",
+        "22-foundation",
+        "23-foundation",
+        "24-foundation",
+        "25-foundation",
+        "26-foundation",
+        "27-foundation",
+        "28-foundation",
+        "29-foundation"
+      ]
+    },
+    {
+      "step": 3,
+      "sceneIds": [
+        "30-mechanism",
+        "31-mechanism",
+        "32-mechanism",
+        "33-mechanism",
+        "34-mechanism",
+        "35-mechanism",
+        "36-mechanism",
+        "37-mechanism",
+        "38-mechanism",
+        "39-mechanism",
+        "40-mechanism",
+        "41-mechanism",
+        "42-mechanism",
+        "43-mechanism"
+      ]
+    },
+    {
+      "step": 4,
+      "sceneIds": [
+        "44-mechanism",
+        "45-deepening",
+        "46-deepening",
+        "47-deepening",
+        "48-deepening",
+        "49-deepening",
+        "50-deepening",
+        "51-deepening",
+        "52-deepening",
+        "53-deepening",
+        "54-deepening",
+        "55-deepening",
+        "56-deepening",
+        "57-deepening"
+      ]
+    },
+    {
+      "step": 5,
+      "sceneIds": [
+        "58-deepening",
+        "59-deepening",
+        "60-deepening",
+        "61-deepening",
+        "62-deepening",
+        "63-deepening",
+        "64-deepening",
+        "65-deepening",
+        "66-payoff",
+        "67-payoff",
+        "68-payoff",
+        "69-payoff",
+        "70-payoff",
+        "71-payoff"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "environment",
+      "primaryMotif": "lightning-hits-car-night",
+      "setting": "rainy country road at night",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "02-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "comparison",
+      "primaryMotif": "boiling-pot-vs-lightning-heat",
+      "setting": "home kitchen stove next to a storm sky",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "03-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "macro",
+      "primaryMotif": "lightning-channel-macro",
+      "setting": "storm sky just above the ground",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "04-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "evidence",
+      "primaryMotif": "b16-breaker-closeup",
+      "setting": "inside a home fuse box",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "05-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "comparison",
+      "primaryMotif": "current-bars-scale",
+      "setting": "electrician workshop wall chart",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "06-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "human-action",
+      "primaryMotif": "driver-arm-length-from-door",
+      "setting": "inside a car cabin during a thunderstorm",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "07-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "macro",
+      "primaryMotif": "tire-on-wet-asphalt",
+      "setting": "wet asphalt road beside the front wheel",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "08-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "environment",
+      "primaryMotif": "towering-storm-cloud",
+      "setting": "open farmland under a thunderstorm",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "09-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "diagram",
+      "primaryMotif": "channel-length-scale",
+      "setting": "side-view cross-section of the atmosphere",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "10-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "experiment",
+      "primaryMotif": "spark-gap-air",
+      "setting": "high-voltage lab bench",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "11-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "macro",
+      "primaryMotif": "cable-insulation-cut",
+      "setting": "electrician workbench with a cut cable",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "12-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "comparison",
+      "primaryMotif": "rubber-vs-air-distance",
+      "setting": "roadside during a storm",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "13-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "human-action",
+      "primaryMotif": "engineers-impulse-generator",
+      "setting": "high-voltage test hall",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "14-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "evidence",
+      "primaryMotif": "scorched-tire-sidewall",
+      "setting": "test hall floor beside the test car",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "15-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "process",
+      "primaryMotif": "arc-over-tire-lab",
+      "setting": "metal floor plate of the test hall",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "16-context",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "top-down",
+      "primaryMotif": "car-topdown-tires-dimmed",
+      "setting": "parking lot seen from above",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "17-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "environment",
+      "primaryMotif": "royal-institution-facade-1836",
+      "setting": "London street in 1836",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "18-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "human-action",
+      "primaryMotif": "faraday-building-cube",
+      "setting": "Royal Institution lecture theatre in 1836",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "19-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "diagram",
+      "primaryMotif": "cube-dimension",
+      "setting": "Royal Institution lecture theatre in 1836",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "20-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "cutaway",
+      "primaryMotif": "cube-wall-layers",
+      "setting": "Royal Institution lecture theatre in 1836",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "21-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "process",
+      "primaryMotif": "electrostatic-machine-charging",
+      "setting": "beside the cube in the lecture hall",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "22-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "environment",
+      "primaryMotif": "sparking-cube-exterior",
+      "setting": "dim lecture hall at night",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "23-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "human-action",
+      "primaryMotif": "faraday-enters-cube",
+      "setting": "entrance of the foil-covered cube",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "24-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "macro",
+      "primaryMotif": "gold-leaf-electrometer",
+      "setting": "inside the dark foil cube",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "25-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "before-after",
+      "primaryMotif": "electrometer-spread-vs-flat",
+      "setting": "inside the dark foil cube",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "26-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "cutaway",
+      "primaryMotif": "cube-cross-section-calm",
+      "setting": "cross-section of the foil cube",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "27-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "evidence",
+      "primaryMotif": "faraday-lab-journal",
+      "setting": "Faraday's study desk",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "28-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "schematic",
+      "primaryMotif": "faraday-cage-schematic",
+      "setting": "school physics lab",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "29-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "comparison",
+      "primaryMotif": "cube-vs-car-shell",
+      "setting": "split view of a lecture hall and a modern street",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "30-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "diagram",
+      "primaryMotif": "repelling-charges",
+      "setting": "school physics lab",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "31-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "process",
+      "primaryMotif": "charges-spreading-on-metal",
+      "setting": "metal sheet on a lab bench",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "32-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "cutaway",
+      "primaryMotif": "hollow-sphere-charge-outside",
+      "setting": "physics lab demonstration stand",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "33-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "diagram",
+      "primaryMotif": "forces-cancel-inside",
+      "setting": "physics lab demonstration stand",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "34-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "schematic",
+      "primaryMotif": "field-lines-outside-only",
+      "setting": "school physics lab",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "35-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "human-action",
+      "primaryMotif": "workers-welding-body-shell",
+      "setting": "car factory body shop",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "36-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "diagram",
+      "primaryMotif": "final-jump-zone",
+      "setting": "open landscape with a motorway",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "37-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "environment",
+      "primaryMotif": "lightning-hits-roof-rest-area",
+      "setting": "motorway rest area in a storm",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "38-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "diagram",
+      "primaryMotif": "current-path-car-body",
+      "setting": "car side view on a road",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "39-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "comparison",
+      "primaryMotif": "steel-vs-arm-conductor",
+      "setting": "technical comparison board",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "40-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "top-down",
+      "primaryMotif": "current-around-cabin-topdown",
+      "setting": "car seen from above on a road",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "41-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "cutaway",
+      "primaryMotif": "wheel-cross-section-arc",
+      "setting": "wheel at road level in rain",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "42-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "human-action",
+      "primaryMotif": "driver-calm-current-around",
+      "setting": "inside a car cabin during a thunderstorm",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "43-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "macro",
+      "primaryMotif": "window-frame-detail",
+      "setting": "car door window frame",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "44-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "schematic",
+      "primaryMotif": "car-wireframe-cage",
+      "setting": "technical drawing of a car body",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "45-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "environment",
+      "primaryMotif": "night-strikes-countryside",
+      "setting": "hilly countryside at night in a storm",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "46-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "evidence",
+      "primaryMotif": "lightning-sensor-station",
+      "setting": "lightning detection station in a meadow",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "47-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "environment",
+      "primaryMotif": "allgaeu-town-storm",
+      "setting": "small Allgäu town under a storm",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "48-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "top-down",
+      "primaryMotif": "motorway-traffic-topdown",
+      "setting": "motorway seen from above",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "49-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "human-action",
+      "primaryMotif": "open-convertible-storm",
+      "setting": "country road with an approaching storm",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "50-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "cutaway",
+      "primaryMotif": "softtop-metal-bows",
+      "setting": "parked convertible in the rain",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "51-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "macro",
+      "primaryMotif": "softtop-scorch-mark",
+      "setting": "convertible soft top close-up",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "52-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "human-action",
+      "primaryMotif": "couple-closed-convertible-rain",
+      "setting": "parking bay with a closed convertible in the rain",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "53-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "before-after",
+      "primaryMotif": "softtop-with-vs-without-metal",
+      "setting": "two convertibles side by side in a garage",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "54-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "environment",
+      "primaryMotif": "plastic-caravan-campsite",
+      "setting": "campsite in a thunderstorm",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "55-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "cutaway",
+      "primaryMotif": "ev-battery-underbody",
+      "setting": "electric car at a charging bay",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "56-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "comparison",
+      "primaryMotif": "ev-vs-combustion-shell",
+      "setting": "parking lot in the rain",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "57-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "human-action",
+      "primaryMotif": "motorcyclist-pulling-over",
+      "setting": "country road shoulder in a storm",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "58-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "environment",
+      "primaryMotif": "village-building-shelter",
+      "setting": "doorway of a village building",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "59-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "diagram",
+      "primaryMotif": "crouch-distance-motorcycle",
+      "setting": "roadside asphalt",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "60-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "environment",
+      "primaryMotif": "car-after-strike-shoulder",
+      "setting": "motorway hard shoulder after the rain",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "61-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "cutaway",
+      "primaryMotif": "dashboard-electronics-failure",
+      "setting": "car dashboard",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "62-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "human-action",
+      "primaryMotif": "driver-startled-flash",
+      "setting": "inside a car cabin on a highway",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "63-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "environment",
+      "primaryMotif": "dark-traffic-lights-rain",
+      "setting": "city intersection in heavy rain",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "64-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "top-down",
+      "primaryMotif": "car-parked-rest-area-topdown",
+      "setting": "motorway rest area seen from above",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "65-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "macro",
+      "primaryMotif": "hand-away-from-door-frame",
+      "setting": "inside a car door panel",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "66-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "cutaway",
+      "primaryMotif": "car-strike-full-cutaway",
+      "setting": "rainy country road at night",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "67-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "human-action",
+      "primaryMotif": "driver-relaxed-watching-storm",
+      "setting": "inside a car cabin during a thunderstorm",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "68-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "comparison",
+      "primaryMotif": "tire-vs-body-shell",
+      "setting": "technical comparison board",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "69-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "before-after",
+      "primaryMotif": "inside-vs-outside-car",
+      "setting": "roadside in a thunderstorm",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 5,
+        "maxPrimaryObjects": 4,
+        "maxPanels": 2,
+        "maxArrows": 4,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "70-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "human-action",
+      "primaryMotif": "faraday-writing-in-cube",
+      "setting": "inside the dark foil cube",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "71-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "environment",
+      "primaryMotif": "car-after-storm-dusk",
+      "setting": "motorway rest area after the storm",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 3,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    }
+  ]
+}

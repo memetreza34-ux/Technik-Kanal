@@ -1,0 +1,38 @@
+{
+  "version": "science-v1",
+  "productionProfile": "youtube-6to7min-v1",
+  "generatedAt": "2026-10-23T18:14:15.909Z",
+  "passed": true,
+  "wordCount": 897,
+  "targetWords": {
+    "min": 850,
+    "ideal": 975,
+    "max": 1075
+  },
+  "sceneCount": 71,
+  "sections": [
+    "hook",
+    "context",
+    "foundation",
+    "mechanism",
+    "deepening",
+    "payoff"
+  ],
+  "hookHeadline": "Warum passiert dir im Auto beim Blitz nichts?",
+  "hookVoiceWords": 14,
+  "qualityRulesVersion": "qualitaet-v2",
+  "engagement": {
+    "words": 897,
+    "concreteNumbers": 17,
+    "hedges": 0,
+    "hedgesPer100Words": 0,
+    "twoSentenceSceneShare": 0.55,
+    "shortSentenceShare": 0.35,
+    "longestCuriosityGapWords": 201,
+    "scenes": 71,
+    "sceneSecondsMedian": 4.8,
+    "scenesOverReview": 0
+  },
+  "errors": [],
+  "warnings": []
+}

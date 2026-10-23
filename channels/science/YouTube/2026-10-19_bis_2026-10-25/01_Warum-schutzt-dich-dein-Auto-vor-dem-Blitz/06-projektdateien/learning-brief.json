@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "channel": "Wissonaut",
+  "slug": "warum-schutzt-dich-dein-auto-vor-dem-blitz",
+  "productionProfile": "youtube-6to7min-v1",
+  "priority": 1,
+  "inheritedTests": [],
+  "inheritedEditorialActions": [],
+  "permanentLessons": [
+    {
+      "id": "qa-003",
+      "priority": 1,
+      "status": "active",
+      "area": "label-quality-and-schematic-visuals",
+      "evidenceLevel": "verified-video-frame-review",
+      "source": "warum-sinkt-ein-riesiges-stahlschiff-nicht.mp4 (hochgeladen am 15.10.2026), Frame bei 04:36",
+      "observation": "Der Film ist visuell kohärent, aber viele 2.5D-Bilder erklären das technische Prinzip zu wenig; im Frame bei 04:36 steht die verbotene Produktionsbeschriftung '35 | DEEPENING'.",
+      "action": "Nach jedem Flow-Render Bildserie vollständig sichten; sichtbare Produktionsnummern/Kapitel-IDs strikt ablehnen und regenerieren. Mehr sinnvolle deutsch beschriftete technische Schemata, Kraftdiagramme, Formeln, Maß-/Wasserlinien, Querschnitte und direkte Vergleiche nutzen. Normal bis 3 Labels, Diagramme bis 5; gut lesbar, keine erfundenen Werte. Etwa 35–50 % sachlich erklärende Visuals anstreben, ohne unpassende Füllgrafiken."
+    },
+    {
+      "id": "qa-001",
+      "priority": 1,
+      "status": "active",
+      "area": "visual-consistency",
+      "evidenceLevel": "verified-production-issue-automated-check",
+      "source": "gehirn/TESTPHASE-ABSCHLUSS.md",
+      "observation": "Szenen-Metadaten, falsche Bildlabels und Thumbnail-Leaks traten in der Pilotphase auf – und trotz dieser Regel erneut im Stahlschiff-Video (5 von 45 Bildern: „27 — MECHANISM“, „28-mechanism“, „36 • DEEPENING“ u. a.). Ursache: Szenen-IDs und Beispielwörter standen direkt im Flow-Prompt.",
+      "action": "Flow-Masterprompt nur noch mit science:flow-master im Format flow-master-v2 bauen (keine Szenen-IDs, Abschnittsnamen oder Sprechtexte, Stilblock einmal). Vor dem Rendern prüft das OCR-Text-Gate jedes Szenenbild; Szene 01 niemals als Thumbnail fortsetzen. Zusätzlich das bestätigte Metadaten-Leak '35 | DEEPENING' als harte Fehlerkategorie behandeln.",
+      "enforcedBy": [
+        "scripts/build-google-flow-master-prompt.mjs",
+        "scripts/science-image-text-qa.mjs",
+        "scripts/test-science-flow-prompt.mjs",
+        "scripts/test-science-image-text-qa.mjs"
+      ]
+    },
+    {
+      "id": "qa-004",
+      "priority": 1,
+      "status": "active",
+      "area": "script-engagement",
+      "evidenceLevel": "verified-script-measurement-and-competitor-search",
+      "source": "gehirn/ANALYSE-2026-10-18.md",
+      "observation": "Stahlschiff-Skript: 0 konkrete Zahlen, 80 % der Szenen mit genau 2 Sätzen. Steckdose: 9 Absicherungswörter, ~5 Minuten ohne Frage. Reine Physik-Erklärer zur selben Frage 66–803 Aufrufe, Story-/Zahl-Videos 10.000–40.000.",
+      "action": "Hook-Anker (Zahl/Ereignis/Ort/Person/Paradox) in den ersten 80 Wörtern, ≥2 belegte Zahlen pro 1000 Wörter, ≤3 Zahlen pro 120 Wörter, ≤0,8 Absicherungswörter pro 100 Wörter, ≤60 % Szenen mit genau 2 Sätzen, spätestens alle 240 Wörter eine offene Frage.",
+      "enforcedBy": [
+        "scripts/lib/science-script-engagement.mjs",
+        "scripts/science-script-qa.mjs",
+        "scripts/test-science-quality-v2.mjs"
+      ]
+    },
+    {
+      "id": "qa-005",
+      "priority": 1,
+      "status": "active",
+      "area": "title-packaging",
+      "evidenceLevel": "verified-competitor-search",
+      "source": "gehirn/ANALYSE-2026-10-18.md",
+      "observation": "„Wie kommt Strom in deine Steckdose?“ konkurriert wortgleich mit Die Maus, simpleclub, Woozle Goozle und E.ON (138.000–318.000 Aufrufe); Wissonaut 106 Aufrufe nach 6 Tagen.",
+      "action": "Vor dem Skript npm run science:title-check; bei „besetzt“ oder „umkämpft“ Titel mit Zahl, Ereignis oder Irrtum statt Lexikonfrage.",
+      "enforcedBy": [
+        "scripts/science-title-check.mjs",
+        "scripts/lib/science-title-check.mjs"
+      ]
+    },
+    {
+      "id": "qa-006",
+      "priority": 1,
+      "status": "active",
+      "area": "scene-image-fit",
+      "evidenceLevel": "verified-video-frame-review",
+      "source": "gehirn/ANALYSE-2026-10-18.md",
+      "observation": "Steckdose: gleiche Landschaft in ~20 von 41 Bildern, Schutzgeräte auf einer Wiese. Schiff: Kraftpfeile und Vergleiche ohne Label; Bild 1 zeigte nicht den Hook-Widerspruch.",
+      "action": "setting pro Szene im Flow-Plan, gleiche Umgebung ≤3-mal hintereinander und ≤30 %, Pfeil-/Mess-/Vergleichsbilder mit ≥1 deutschem Label, hookAnchor.firstImage im Bildauftrag von Bild 1.",
+      "enforcedBy": [
+        "scripts/lib/science-scene-image-rules.mjs",
+        "scripts/science-creative-qa.mjs",
+        "scripts/test-science-quality-v2.mjs"
+      ]
+    },
+    {
+      "id": "qa-007",
+      "priority": 1,
+      "status": "active",
+      "area": "script-engagement",
+      "evidenceLevel": "verified-competitor-transcript-measurement",
+      "source": "gehirn/KONKURRENZ-ANALYSE-2026-10-23.md",
+      "observation": "10 von 11 messbaren erfolgreichen Videos (Kurzgesagt, Terra X, Simplicissimus, Stahl unter Wasser, Verlorene Schiffe, Stahl und Meer) haben 8–29 Zahlen pro 1000 Wörter; starke Hooks stapeln 4 Zahlen in 15–30 s; Story-Kanäle halten Spannung mit Vorausdeutungen statt Fragen. Wissonaut-Skripte: 0 Zahlen.",
+      "action": "Mindestens 6 belegte Zahlen pro 1000 Wörter, im Hook bis zu 6 Zahlen erlaubt, jede große Zahl mit Größenvergleich; Vorausdeutungen („Zu diesem Zeitpunkt ahnte niemand …“) zählen als offene Schleife.",
+      "enforcedBy": [
+        "scripts/lib/science-script-engagement.mjs",
+        "scripts/science-script-qa.mjs",
+        "scripts/test-science-quality-v2.mjs"
+      ]
+    },
+    {
+      "id": "qa-008",
+      "priority": 1,
+      "status": "active",
+      "area": "title-thumbnail-chapters",
+      "evidenceLevel": "verified-competitor-within-channel-comparison",
+      "source": "gehirn/KONKURRENZ-ANALYSE-2026-10-23.md",
+      "observation": "Innerhalb desselben Kanals holten Titel mit konkretem Widerspruch oder bekanntem Bezug 11- bis 287-mal mehr Aufrufe als allgemeine Titel. Erfolgreiche Thumbnails: 1–3 große Wörter, ein großes Objekt, roter Pfeil/Kreis oder Vorher/Nachher. Vergleichskanäle setzen 3–19 Kapitel; Wissonaut-Captions hatten keine.",
+      "action": "Titel-Formeln um „Bekannter Bezug“ und „Listen-Versprechen“ ergänzen; Thumbnail-Regeln in LONGFORM/VIDEO-AUTOMATIK befolgen; chapterTitle pro Abschnitt setzen, science:finish schreibt die Kapitel in caption.txt.",
+      "enforcedBy": [
+        "scripts/lib/science-title-check.mjs",
+        "scripts/lib/science-chapters.mjs",
+        "scripts/science-chapters.mjs",
+        "scripts/finish_science_reel.mjs"
+      ]
+    },
+    {
+      "id": "qa-002",
+      "priority": 2,
+      "status": "active",
+      "area": "pacing",
+      "evidenceLevel": "verified-production-issue",
+      "source": "gehirn/BILDWELT.md",
+      "observation": "Zu ähnliche und überladene Illustrationen waren ein Qualitätsproblem.",
+      "action": "Eine visuelle Erkläridee pro Beat; bei Wiederholungen Skript und Beat-Plan ändern, nicht nur Bildvarianten erzeugen."
+    },
+    {
+      "id": "hyp-002",
+      "priority": 2,
+      "status": "active",
+      "area": "pacing-and-sound",
+      "evidenceLevel": "untested-hypothesis",
+      "source": "gehirn/ANALYSE-2026-10-18.md",
+      "observation": "Die ersten Langvideos liefen 6 Minuten als Standbilder ohne Bewegung und ohne Musik; erfolgreiche Erklärkanäle arbeiten mit bewegten Bildern und Musik. Noch keine eigenen Studio-Daten.",
+      "action": "Dezente virtuelle Kamera (≤4 % Zoom, 1,5 % Schwenk) und leiser Musikteppich (−30 LUFS, mit Quellenangabe). Primärmetrik: durchschnittlich angesehener Anteil und Retention-Dips gegenüber Stahlschiff/Steckdose im gleichen Messfenster vergleichen.",
+      "enforcedBy": [
+        "scripts/lib/science-camera-motion.mjs",
+        "scripts/lib/science-music-bed.mjs",
+        "scripts/prepare_science_reel.mjs",
+        "channels/science/src/ScienceReel.tsx"
+      ]
+    },
+    {
+      "id": "hyp-003",
+      "priority": 2,
+      "status": "active",
+      "area": "pacing",
+      "evidenceLevel": "untested-hypothesis",
+      "source": "gehirn/KONKURRENZ-ANALYSE-2026-10-23.md",
+      "observation": "Alle Vergleichsvideos wechseln das Bild schneller als Wissonaut (Median 1,6–6,7 s gegenüber 8,0 s); innerhalb von Stahl unter Wasser ist der Treffer schneller geschnitten (5,4 s) als das typische Video (6,0 s). Noch keine eigenen Studio-Daten.",
+      "action": "Bildzahl individuell aus dem Script: jede sichtbare Aussage ein eigenes Bild, bevorzugt 4–7 s pro Bild, Szenen über ~8 s prüfen (keine feste Zahl, auch über 100 Szenen möglich). Primärmetrik: durchschnittlich angesehener Anteil und Retention-Dips gegenüber Stahlschiff/Steckdose im gleichen Messfenster.",
+      "enforcedBy": [
+        "channels/science/engine/config/youtube-6to7min-v1.json",
+        "scripts/lib/science-scenes.mjs",
+        "scripts/science-scenes.mjs",
+        "scripts/lib/science-script-engagement.mjs"
+      ]
+    },
+    {
+      "id": "hyp-001",
+      "priority": 3,
+      "status": "active",
+      "area": "growth",
+      "evidenceLevel": "untested-hypothesis",
+      "source": "gehirn/VERBESSERUNGSSYSTEM.md",
+      "observation": "Noch keine vergleichbaren YouTube-Studio-Daten im Repo als Wirkungsnachweis.",
+      "action": "Vor jedem Video ein klar überprüfbares Titel-Thumbnail-Hook-Versprechen und eine Hypothese mit Zielmetrik festlegen; nach Veröffentlichung messen."
+    }
+  ],
+  "thisVideoHypothesis": "Ein schnellerer Bildtakt (jede sichtbare Aussage ein eigenes Bild, 71 Bilder, Median ~4,8 s statt ~8 s beim Stahlschiff) hält Zuschauer länger, weil kein Bild mehr wie ein Metronom stehen bleibt. Hypothese, kein Wirkungsnachweis.",
+  "oneControlledChange": "Bildtakt: 71 Szenen mit Median ~4,8 s pro Bild (Stahlschiff: 45 Szenen, ~8 s). Titel-Formel (Irrtum), Zahlen-Hook und Kapitel kommen als feste Kanalregeln (qa-004/qa-005/qa-007/qa-008) hinzu und werden nicht als Test gewertet.",
+  "primarySuccessMetric": "Durchschnittlich angesehener Anteil und Zuschauerbindung nach 30 s im 7-Tage-Fenster, verglichen mit Stahlschiff und Steckdose im selben Fenster; Retention-Dips über 8 s Bildhaltezeit sollten verschwinden.",
+  "editorApproved": true,
+  "instruction": "Vor Skript, Titel und Thumbnail eine konkrete Verbesserung mit messbarem Erfolgskriterium festlegen.",
+  "approvedBy": "Arman (Chat-Freigabe)",
+  "approvedAt": "2026-10-23"
+}

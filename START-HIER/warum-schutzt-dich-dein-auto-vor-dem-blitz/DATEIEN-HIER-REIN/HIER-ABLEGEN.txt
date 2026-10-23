@@ -1,0 +1,5 @@
+Hier alle finalen Bilder und eine Sprachaufnahme ablegen.
+Szenenbilder 01.png bis 71.png oder die Szenen-IDs mit -final benennen.
+Cover: 00-thumbnail-final.png; Sprache: voiceover-raw.wav.
+Optional Musik: musik.mp3 plus musik-quelle.txt (Titel, Künstler, Quelle, Lizenz – z. B. YouTube Audio Library).
+Keine Unterordner. Die Originaldateien bleiben bei der Übernahme erhalten.

@@ -1,0 +1,1894 @@
+{
+  "version": "science-v1",
+  "productionProfile": "youtube-6to7min-v1",
+  "visualPolicyVersion": "science-static-v1",
+  "generatedImageTextPolicy": "controlled-german-only",
+  "slug": "warum-schutzt-dich-dein-auto-vor-dem-blitz",
+  "title": "Nicht die Gummireifen: Warum dich dein Auto vor dem Blitz schützt",
+  "compositionId": "ScienceReel",
+  "runtimeFile": "science-runtime.json",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "minimumWordMatchRatio": 0.82,
+  "qualityRulesVersion": "qualitaet-v2",
+  "hookAnchor": {
+    "type": "zahl",
+    "text": "30.000 Grad",
+    "firstImage": "lightning bolt striking the roof of a moving car at night"
+  },
+  "scenes": [
+    {
+      "id": "01-hook",
+      "section": "hook",
+      "title": "Warum passiert dir im Auto beim Blitz nichts?",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "rainy country road at night",
+        "camera": "environment",
+        "subject": "A bright lightning bolt striking the roof of a moving car at night on a rainy country road, the glowing channel touching the metal roof, the calm driver clearly visible through the windshield.",
+        "focus": "a lightning strike hits a car while the driver inside stays unharmed.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Ein Blitz trifft dein Auto. Über 30.000 Grad heiß. Warum passiert dir drinnen nichts?",
+      "imageDir": "02-bilder/images/01-hook",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "hero",
+      "factClaim": "a lightning strike hits a car while the driver inside stays unharmed.",
+      "sourceIds": [
+        "SRC-VDE"
+      ],
+      "chapterTitle": "Blitz trifft Auto"
+    },
+    {
+      "id": "02-hook",
+      "section": "hook",
+      "title": "Heißer als kochendes Wasser",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "home kitchen stove next to a storm sky",
+        "camera": "comparison",
+        "subject": "Split comparison in one frame: on the left a small pot of boiling water on a kitchen stove with a short temperature bar, on the right a lightning channel with a temperature bar that towers far above it, both bars on the same scale.",
+        "focus": "the lightning channel is vastly hotter than boiling water.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Die Luft im Blitzkanal wird dabei 300-mal heißer als kochendes Wasser.",
+      "imageDir": "02-bilder/images/02-hook",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "hero",
+      "factClaim": "the lightning channel is vastly hotter than boiling water.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "03-hook",
+      "section": "hook",
+      "title": "Enormer Strom in Sekundenbruchteilen",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "storm sky just above the ground",
+        "camera": "macro",
+        "subject": "Close macro view of a glowing white-violet lightning channel just above the ground, one bold arrow along the channel showing the direction of the current.",
+        "focus": "an enormous current rushes through the thin lightning channel in an instant.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Durch diesen dünnen Kanal jagen rund 20.000 Ampere. In wenigen Millionstel Sekunden.",
+      "imageDir": "02-bilder/images/03-hook",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "hero",
+      "factClaim": "an enormous current rushes through the thin lightning channel in an instant.",
+      "sourceIds": [
+        "SRC-SPEKTRUM"
+      ]
+    },
+    {
+      "id": "04-hook",
+      "section": "hook",
+      "title": "Die Sicherung im Haus",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "inside a home fuse box",
+        "camera": "evidence",
+        "subject": "Close view into an opened home fuse box: one white modular circuit breaker in focus with its toggle switched down, neighboring breakers softly blurred.",
+        "focus": "a normal household circuit breaker is rated for only 16 amperes.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Deine Haushaltssicherung schaltet schon bei 16 Ampere ab.",
+      "imageDir": "02-bilder/images/04-hook",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "hero",
+      "factClaim": "a normal household circuit breaker is rated for only 16 amperes.",
+      "sourceIds": [
+        "SRC-HAGER"
+      ]
+    },
+    {
+      "id": "05-hook",
+      "section": "hook",
+      "title": "Über tausendmal mehr Strom",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "electrician workshop wall chart",
+        "camera": "comparison",
+        "subject": "Two vertical bars drawn to exact scale on a workshop wall chart: a tiny bar with a small circuit breaker icon at its base and an enormous bar with a lightning symbol that reaches far beyond it.",
+        "focus": "lightning current dwarfs the current of a household breaker.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Der Blitzstrom ist über tausendmal stärker.",
+      "imageDir": "02-bilder/images/05-hook",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "hero",
+      "factClaim": "lightning current dwarfs the current of a household breaker.",
+      "sourceIds": [
+        "SRC-HAGER",
+        "SRC-SPEKTRUM"
+      ]
+    },
+    {
+      "id": "06-hook",
+      "section": "hook",
+      "title": "Eine Armlänge vom Blech",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "inside a car cabin during a thunderstorm",
+        "camera": "human-action",
+        "subject": "View from the passenger seat: a young driver with a natural face reaches out and almost touches the inner door panel, rain streaming down the side window, a faint lightning flash outside.",
+        "focus": "the driver sits only an arm's length away from the metal body.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Und du sitzt nur eine Armlänge vom Blech entfernt, mitten im Gewitter.",
+      "imageDir": "02-bilder/images/06-hook",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "hero",
+      "factClaim": "the driver sits only an arm's length away from the metal body.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "07-hook",
+      "section": "hook",
+      "title": "Der Irrtum mit den Reifen",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "wet asphalt road beside the front wheel",
+        "camera": "macro",
+        "subject": "Low close view of a car tire standing on wet asphalt, raindrops on the black rubber sidewall, one small question-mark-shaped highlight on the tire.",
+        "focus": "the rubber tire is widely believed to be the protection.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Fast jeder glaubt, die Gummireifen retten dich. Das ist falsch. Gleich siehst du die Spuren, die es beweisen.",
+      "imageDir": "02-bilder/images/07-hook",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "hero",
+      "factClaim": "the rubber tire is widely believed to be the protection.",
+      "sourceIds": [
+        "SRC-VDE",
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "08-context",
+      "section": "context",
+      "title": "Der lange Weg des Blitzes",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "open farmland under a thunderstorm",
+        "camera": "environment",
+        "subject": "Wide view of a towering anvil-shaped thunderstorm cloud above open farmland, a lightning bolt running from the cloud base down to a small car on a country road.",
+        "focus": "the lightning travels a very long way down from a towering storm cloud.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Schau dir an, welchen Weg der Blitz schon hinter sich hat. Die Gewitterwolke ragt oft über zehn Kilometer hoch.",
+      "imageDir": "02-bilder/images/08-context",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the lightning travels a very long way down from a towering storm cloud.",
+      "sourceIds": [
+        "SRC-VDE"
+      ],
+      "chapterTitle": "Der Irrtum mit den Gummireifen"
+    },
+    {
+      "id": "09-context",
+      "section": "context",
+      "title": "Kilometer lange Entladung",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "side-view cross-section of the atmosphere",
+        "camera": "diagram",
+        "subject": "Side-view atmospheric cross-section: storm cloud on top, a jagged lightning channel to the ground, and a vertical dimension line beside it running from cloud to ground.",
+        "focus": "the lightning channel is several kilometres long.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Sein Kanal ist 4 bis 10 Kilometer lang.",
+      "imageDir": "02-bilder/images/09-context",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the lightning channel is several kilometres long.",
+      "sourceIds": [
+        "SRC-SPEKTRUM"
+      ]
+    },
+    {
+      "id": "10-context",
+      "section": "context",
+      "title": "Luft als Isolator",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "high-voltage lab bench",
+        "camera": "experiment",
+        "subject": "Laboratory spark gap on a lab bench: two polished metal spheres facing each other with a clear air gap between them and no spark yet.",
+        "focus": "air normally insulates, yet lightning crosses kilometres of it.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Und diesen Weg legt er quer durch Luft zurück. Dabei ist Luft eigentlich ein guter Isolator.",
+      "imageDir": "02-bilder/images/10-context",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "air normally insulates, yet lightning crosses kilometres of it.",
+      "sourceIds": [
+        "SRC-SPEKTRUM"
+      ]
+    },
+    {
+      "id": "11-context",
+      "section": "context",
+      "title": "Warum der Irrtum logisch klingt",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "electrician workbench with a cut cable",
+        "camera": "macro",
+        "subject": "Macro view of a cut electrical cable on a workbench: shiny copper strands inside a thick plastic insulation sleeve.",
+        "focus": "the misconception comes from everyday cable insulation.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Der Gedanke mit dem Gummi klingt trotzdem logisch. Schließlich isoliert auch die Hülle um jedes Kabel.",
+      "imageDir": "02-bilder/images/11-context",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the misconception comes from everyday cable insulation.",
+      "sourceIds": [
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "12-context",
+      "section": "context",
+      "title": "Zentimeter gegen Kilometer",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "roadside during a storm",
+        "camera": "comparison",
+        "subject": "One frame comparison: a huge lightning channel descending from far above, ending at a car wheel where only a thin rubber tire separates the rim from the road.",
+        "focus": "a few centimetres of rubber are nothing compared with kilometres of air.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Was sollen da ein paar Zentimeter Gummi noch ausrichten? Für den Blitz sind sie nur ein winziger letzter Sprung.",
+      "imageDir": "02-bilder/images/12-context",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "a few centimetres of rubber are nothing compared with kilometres of air.",
+      "sourceIds": [
+        "SRC-SPEKTRUM",
+        "SRC-ADAC-2015"
+      ]
+    },
+    {
+      "id": "13-context",
+      "section": "context",
+      "title": "Künstliche Blitze im Labor",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "high-voltage test hall",
+        "camera": "human-action",
+        "subject": "Two engineers with natural faces stand behind a safety barrier in a large high-voltage test hall, watching a bright artificial discharge from a tall impulse generator strike the roof of a parked test car.",
+        "focus": "engineers test real cars with artificial lightning.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "In Hochspannungslaboren wurden echte Autos mit künstlichen Blitzen getroffen. Danach sah man genau hin.",
+      "imageDir": "02-bilder/images/13-context",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "engineers test real cars with artificial lightning.",
+      "sourceIds": [
+        "SRC-ADAC-2015"
+      ]
+    },
+    {
+      "id": "14-context",
+      "section": "context",
+      "title": "Brandspur am Reifen",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "test hall floor beside the test car",
+        "camera": "evidence",
+        "subject": "Close-up of a car tire sidewall with a thin dark scorched track running straight across the rubber from the rim down to the floor.",
+        "focus": "the scorch mark across the tire sidewall proves the current crossed the tire.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Das Ergebnis: Brandspuren, die quer über die Reifenflanken laufen.",
+      "imageDir": "02-bilder/images/14-context",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the scorch mark across the tire sidewall proves the current crossed the tire.",
+      "sourceIds": [
+        "SRC-ADAC-2015"
+      ]
+    },
+    {
+      "id": "15-context",
+      "section": "context",
+      "title": "Der Strom springt über",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "metal floor plate of the test hall",
+        "camera": "process",
+        "subject": "Side view of a test car wheel on a metal floor plate in a test hall: a bright short electric arc bridges from the steel wheel arch along the outside of the tire to the floor plate, one arrow showing the path.",
+        "focus": "the current simply jumps over the rubber tire.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Der Strom ist einfach über den Reifen gesprungen. Der Gummi war ihm egal.",
+      "imageDir": "02-bilder/images/15-context",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the current simply jumps over the rubber tire.",
+      "sourceIds": [
+        "SRC-ADAC-2015",
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "16-context",
+      "section": "context",
+      "title": "Was schützt dich dann?",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "parking lot seen from above",
+        "camera": "top-down",
+        "subject": "Top-down view of a car in a rain-wet parking lot: the four tires shown greyed out, the metal body shell softly highlighted in muted blue.",
+        "focus": "the tires are not the protection; something else must be.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Die Reifen sind also nicht dein Schutz. Aber was schützt dich dann wirklich?",
+      "imageDir": "02-bilder/images/16-context",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the tires are not the protection; something else must be.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "17-foundation",
+      "section": "foundation",
+      "title": "London im Jahr 1836",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "London street in 1836",
+        "camera": "environment",
+        "subject": "Historic London street scene in 1836: the columned facade of the Royal Institution building, horse carriages and pedestrians with natural faces in period clothing.",
+        "focus": "the story begins in London in 1836.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Die Antwort beginnt 1836 in London, lange bevor es das erste Auto gab.",
+      "imageDir": "02-bilder/images/17-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the story begins in London in 1836.",
+      "sourceIds": [
+        "SRC-RI",
+        "SRC-FARADAY"
+      ],
+      "chapterTitle": "1836: Ein Mann zieht in einen Metallwürfel"
+    },
+    {
+      "id": "18-foundation",
+      "section": "foundation",
+      "title": "Faraday baut einen Würfel",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "Royal Institution lecture theatre in 1836",
+        "camera": "human-action",
+        "subject": "Inside a curved wooden lecture theatre of the 1830s, Michael Faraday with a natural face points at a large wooden cube frame while two workers fit the beams together.",
+        "focus": "Michael Faraday has a huge cube built inside a lecture theatre.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Im Hörsaal der Royal Institution lässt der Forscher Michael Faraday einen riesigen Würfel bauen. Wozu, ahnt noch niemand.",
+      "imageDir": "02-bilder/images/18-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Michael Faraday has a huge cube built inside a lecture theatre.",
+      "sourceIds": [
+        "SRC-FARADAY",
+        "SRC-RI"
+      ]
+    },
+    {
+      "id": "19-foundation",
+      "section": "foundation",
+      "title": "Kantenlänge des Würfels",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "Royal Institution lecture theatre in 1836",
+        "camera": "diagram",
+        "subject": "Clean technical side view of the cube frame with a dimension line along one edge and a standing man beside it for scale, the cube more than twice his height.",
+        "focus": "the cube is taller than two people.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Jede Kante ist 3,7 Meter lang.",
+      "imageDir": "02-bilder/images/19-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the cube is taller than two people.",
+      "sourceIds": [
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "20-foundation",
+      "section": "foundation",
+      "title": "Aufbau der Würfelwand",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "Royal Institution lecture theatre in 1836",
+        "camera": "cutaway",
+        "subject": "Cutaway of one corner of the cube wall showing the layers: wooden frame, a net of copper wires, paper covering and bands of tin foil connecting everything.",
+        "focus": "the cube walls are a fully conductive metal net.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Holzrahmen, Kupferdraht, Papier und Zinnfolie. Alles ist überall leitend miteinander verbunden.",
+      "imageDir": "02-bilder/images/20-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the cube walls are a fully conductive metal net.",
+      "sourceIds": [
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "21-foundation",
+      "section": "foundation",
+      "title": "Die Elektrisiermaschine",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "beside the cube in the lecture hall",
+        "camera": "process",
+        "subject": "A large 1830s glass-plate electrostatic machine beside the foil-covered cube, a brass conductor leading to the outer wall, one arrow showing charge flowing onto the outside.",
+        "focus": "a large electrostatic machine charges the outside of the cube.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Eine große Elektrisiermaschine lädt dann die Außenwand des Würfels kräftig auf.",
+      "imageDir": "02-bilder/images/21-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "a large electrostatic machine charges the outside of the cube.",
+      "sourceIds": [
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "22-foundation",
+      "section": "foundation",
+      "title": "Funken an der Außenwand",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "dim lecture hall at night",
+        "camera": "environment",
+        "subject": "The foil-covered cube standing in a dim lecture hall, bright sparks and violet brush discharges darting off every part of its outer surface.",
+        "focus": "the outside of the cube is so strongly charged that sparks fly off it.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Funken und Lichtbüschel sprühen von der ganzen Oberfläche. Es knistert und blitzt.",
+      "imageDir": "02-bilder/images/22-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the outside of the cube is so strongly charged that sparks fly off it.",
+      "sourceIds": [
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "23-foundation",
+      "section": "foundation",
+      "title": "Faraday steigt hinein",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "entrance of the foil-covered cube",
+        "camera": "human-action",
+        "subject": "Michael Faraday with a natural, calm face steps through a small door into the foil-covered cube, faint sparks flickering on the outside wall.",
+        "focus": "Faraday walks into the charged cube.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Und dann tut Faraday etwas, das keiner erwartet. Er steigt hinein.",
+      "imageDir": "02-bilder/images/23-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Faraday walks into the charged cube.",
+      "sourceIds": [
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "24-foundation",
+      "section": "foundation",
+      "title": "Messgeräte im Würfel",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "inside the dark foil cube",
+        "camera": "macro",
+        "subject": "Close view of a glass gold-leaf electrometer on a small wooden table inside the dark cube, a lit candle beside it, the two thin gold leaves hanging straight down.",
+        "focus": "inside the cube Faraday tests for electricity with a gold-leaf electrometer.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Drinnen prüft er alles mit einem Goldblatt-Elektrometer und brennenden Kerzen.",
+      "imageDir": "02-bilder/images/24-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "inside the cube Faraday tests for electricity with a gold-leaf electrometer.",
+      "sourceIds": [
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "25-foundation",
+      "section": "foundation",
+      "title": "Die Goldblättchen bleiben schlaff",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "inside the dark foil cube",
+        "camera": "before-after",
+        "subject": "Two gold-leaf electrometers side by side: on the left the leaves spread apart in a V shape, on the right the leaves hang straight down.",
+        "focus": "the gold leaves would spread when charged, but stay flat inside the cube.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Bei Ladung würden sich die dünnen Goldblättchen spreizen. Sie bleiben schlaff.",
+      "imageDir": "02-bilder/images/25-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the gold leaves would spread when charged, but stay flat inside the cube.",
+      "sourceIds": [
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "26-foundation",
+      "section": "foundation",
+      "title": "Außen Funken, innen Ruhe",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "cross-section of the foil cube",
+        "camera": "cutaway",
+        "subject": "Cross-section through the cube: sparks crackling along the outer wall, inside Faraday with a natural face sits calmly reading his instruments by candlelight.",
+        "focus": "outside violent sparks, inside complete calm.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Draußen kracht es. Drinnen passiert nichts. Kein Funke, kein Zucken.",
+      "imageDir": "02-bilder/images/26-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "outside violent sparks, inside complete calm.",
+      "sourceIds": [
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "27-foundation",
+      "section": "foundation",
+      "title": "Faradays Notizen",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "Faraday's study desk",
+        "camera": "evidence",
+        "subject": "An old leather-bound laboratory journal open on a wooden desk with a quill pen, the page showing only a small hand-drawn sketch of a cube, no readable writing.",
+        "focus": "Faraday documented that he lived inside the cube without any effect.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Faraday notiert später, er habe in dem Würfel regelrecht gewohnt.",
+      "imageDir": "02-bilder/images/27-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Faraday documented that he lived inside the cube without any effect.",
+      "sourceIds": [
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "28-foundation",
+      "section": "foundation",
+      "title": "Der Faradaysche Käfig",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "school physics lab",
+        "camera": "schematic",
+        "subject": "Clean schematic of a wire-mesh cage drawn in perspective on a physics lab board, small charge symbols only on the outside of the mesh.",
+        "focus": "a closed conductive shell is called a Faraday cage.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "So eine leitende Hülle trägt seitdem seinen Namen: Faradayscher Käfig.",
+      "imageDir": "02-bilder/images/28-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "a closed conductive shell is called a Faraday cage.",
+      "sourceIds": [
+        "SRC-VDE",
+        "SRC-RI"
+      ]
+    },
+    {
+      "id": "29-foundation",
+      "section": "foundation",
+      "title": "Auto als Käfig",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "split view of a lecture hall and a modern street",
+        "camera": "comparison",
+        "subject": "Side-by-side comparison: Faraday's foil cube on the left and a modern hatchback on the right, both with their conductive outer shell highlighted in the same muted blue.",
+        "focus": "a modern car body works like Faraday's cube.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Und dein Auto ist genau so ein Käfig. Doch warum bleibt es innen still?",
+      "imageDir": "02-bilder/images/29-foundation",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "a modern car body works like Faraday's cube.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "30-mechanism",
+      "section": "mechanism",
+      "title": "Gleiche Ladungen stoßen sich ab",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "school physics lab",
+        "camera": "diagram",
+        "subject": "Simple diagram on a lab board: two negative charge spheres with arrows pointing away from each other.",
+        "focus": "like charges push each other apart.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Der Trick steckt in einer einfachen Regel. Gleiche Ladungen stoßen sich ab.",
+      "imageDir": "02-bilder/images/30-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "like charges push each other apart.",
+      "sourceIds": [
+        "SRC-VDE"
+      ],
+      "chapterTitle": "Was der Strom um dich herum macht"
+    },
+    {
+      "id": "31-mechanism",
+      "section": "mechanism",
+      "title": "Ladung verteilt sich",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "metal sheet on a lab bench",
+        "camera": "process",
+        "subject": "A flat metal plate on a lab bench with small charge symbols spreading from the centre towards the edges, short arrows showing the outward movement.",
+        "focus": "charge on metal spreads out as far as it can.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Landet Ladung auf Metall, rückt sie so weit auseinander wie möglich. Jedes Teilchen will Abstand.",
+      "imageDir": "02-bilder/images/31-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "charge on metal spreads out as far as it can.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "32-mechanism",
+      "section": "mechanism",
+      "title": "Ladung sitzt außen",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "physics lab demonstration stand",
+        "camera": "cutaway",
+        "subject": "Cutaway of a hollow metal sphere on a demonstration stand: charge symbols sit only on the outer surface, the inside is empty.",
+        "focus": "charge collects only on the outer surface of a metal body.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Weiter als bis zur Oberfläche kommt sie nicht. Also sammelt sie sich außen.",
+      "imageDir": "02-bilder/images/32-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "charge collects only on the outer surface of a metal body.",
+      "sourceIds": [
+        "SRC-VDE",
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "33-mechanism",
+      "section": "mechanism",
+      "title": "Kräfte heben sich auf",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "physics lab demonstration stand",
+        "camera": "diagram",
+        "subject": "Diagram of the hollow sphere interior: a small test charge in the centre with equal arrows from opposite sides pointing at it, cancelling out.",
+        "focus": "inside the shell the pushes from all sides cancel each other.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Im Inneren schieben die Ladungen von allen Seiten gleich stark. Ihre Kräfte heben sich genau auf.",
+      "imageDir": "02-bilder/images/33-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "inside the shell the pushes from all sides cancel each other.",
+      "sourceIds": [
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "34-mechanism",
+      "section": "mechanism",
+      "title": "Kein Feld im Inneren",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "school physics lab",
+        "camera": "schematic",
+        "subject": "Schematic of a closed metal shell with curved electric field lines all around the outside and a clean empty interior without any lines.",
+        "focus": "the electric field exists outside the shell but is zero inside.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Das elektrische Feld, also das, was Ladungen anschiebt, ist im Inneren null.",
+      "imageDir": "02-bilder/images/34-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the electric field exists outside the shell but is zero inside.",
+      "sourceIds": [
+        "SRC-FARADAY"
+      ]
+    },
+    {
+      "id": "35-mechanism",
+      "section": "mechanism",
+      "title": "Die Karosserie als Hülle",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "car factory body shop",
+        "camera": "human-action",
+        "subject": "In a car factory body shop, two workers with natural faces inspect a bare unpainted steel car body shell on an assembly line.",
+        "focus": "the car's sheet-metal body is the conductive shell.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Bei deinem Auto übernimmt die Karosserie aus Stahlblech genau diese Rolle.",
+      "imageDir": "02-bilder/images/35-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the car's sheet-metal body is the conductive shell.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "36-mechanism",
+      "section": "mechanism",
+      "title": "Entscheidung kurz vor dem Boden",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "open landscape with a motorway",
+        "camera": "diagram",
+        "subject": "Side-view diagram of an open landscape with a motorway: a lightning leader descending from the sky, and a highlighted zone just above the ground where it chooses its target.",
+        "focus": "where lightning strikes is decided only in the last stretch above the ground.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Wohin genau ein Blitz fällt, entscheidet sich erst auf den letzten 10 bis 100 Metern.",
+      "imageDir": "02-bilder/images/36-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "where lightning strikes is decided only in the last stretch above the ground.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "37-mechanism",
+      "section": "mechanism",
+      "title": "Treffer aufs Dach",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "motorway rest area in a storm",
+        "camera": "environment",
+        "subject": "A lightning bolt hits the roof of a parked car at a motorway rest area in heavy rain, bright point of impact on the roof.",
+        "focus": "the lightning hits the roof of a parked car.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Nehmen wir an, er trifft dein Dach. Ein greller Schlag, direkt über deinem Kopf.",
+      "imageDir": "02-bilder/images/37-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the lightning hits the roof of a parked car.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "38-mechanism",
+      "section": "mechanism",
+      "title": "Der Weg über das Blech",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "car side view on a road",
+        "camera": "diagram",
+        "subject": "Side-view technical drawing of a car with semi-transparent body: bold arrows run from the roof along the pillars and door sills down towards the wheels.",
+        "focus": "the current runs over the roof, pillars and sides down to the ground.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Der Strom verteilt sich und fließt über Dach, Säulen und Seitenwände nach unten.",
+      "imageDir": "02-bilder/images/38-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the current runs over the roof, pillars and sides down to the ground.",
+      "sourceIds": [
+        "SRC-VDE",
+        "SRC-ADAC-2015"
+      ]
+    },
+    {
+      "id": "39-mechanism",
+      "section": "mechanism",
+      "title": "Blech gegen Körper",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "technical comparison board",
+        "camera": "comparison",
+        "subject": "Comparison of two conductors: a thick steel strip with a wide bright current arrow and a human forearm silhouette with only a thin faint arrow.",
+        "focus": "metal conducts far better than the human body.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Blech leitet den Strom viel besser als dein Körper. Fast alles fließt deshalb durchs Metall.",
+      "imageDir": "02-bilder/images/39-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "metal conducts far better than the human body.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "40-mechanism",
+      "section": "mechanism",
+      "title": "Außen herum",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "car seen from above on a road",
+        "camera": "top-down",
+        "subject": "Top-down view of a car on a wet road: bright current arrows run around the outer edge of the roof and body, the seats in the middle stay dark and calm.",
+        "focus": "the current flows around the cabin, not through it.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Also nimmt der Strom den bequemsten Weg. Außen herum, an dir vorbei.",
+      "imageDir": "02-bilder/images/40-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the current flows around the cabin, not through it.",
+      "sourceIds": [
+        "SRC-VDE",
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "41-mechanism",
+      "section": "mechanism",
+      "title": "Sprung in den Boden",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "wheel at road level in rain",
+        "camera": "cutaway",
+        "subject": "Cross-section through a wheel on wet asphalt: steel rim, tire and road, with a bright arc running along the outside of the tire from the wheel arch into the asphalt.",
+        "focus": "at the bottom the current jumps past the tire into the ground.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Ganz unten springt er als Lichtbogen über den Reifen in den Boden. Daher die Brandspuren.",
+      "imageDir": "02-bilder/images/41-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "at the bottom the current jumps past the tire into the ground.",
+      "sourceIds": [
+        "SRC-ADAC-2015"
+      ]
+    },
+    {
+      "id": "42-mechanism",
+      "section": "mechanism",
+      "title": "Strom fließt um dich herum",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "inside a car cabin during a thunderstorm",
+        "camera": "human-action",
+        "subject": "Inside view of a car during a strike: a driver with a natural, calm face sits upright, thin bright current lines visible only along the roof frame and pillars outside the cabin.",
+        "focus": "the occupant sits safely while the current flows around.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Du sitzt mittendrin. Der Strom fließt um dich herum und ist nach einem Wimpernschlag vorbei.",
+      "imageDir": "02-bilder/images/42-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the occupant sits safely while the current flows around.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "43-mechanism",
+      "section": "mechanism",
+      "title": "Kein dichter Käfig nötig",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "car door window frame",
+        "camera": "macro",
+        "subject": "Close detail of a car side window with its metal door frame surrounding the glass, raindrops on the glass.",
+        "focus": "the cage does not need to be completely closed.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Wichtig: Der Käfig muss gar nicht völlig dicht sein.",
+      "imageDir": "02-bilder/images/43-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the cage does not need to be completely closed.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "44-mechanism",
+      "section": "mechanism",
+      "title": "Fenster als Lücken",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "technical drawing of a car body",
+        "camera": "schematic",
+        "subject": "Schematic wireframe of a car body drawn as a metal cage, the window openings left open, all frame members joined in one continuous conductive loop.",
+        "focus": "window openings are fine as long as the shell is connected all round.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Fenster sind kein Problem, solange die Hülle rundum leitend verbunden ist. Ein grobes Metallgitter reicht schon.",
+      "imageDir": "02-bilder/images/44-mechanism",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "window openings are fine as long as the shell is connected all round.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "45-deepening",
+      "section": "deepening",
+      "title": "Wie oft schlägt es ein?",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "hilly countryside at night in a storm",
+        "camera": "environment",
+        "subject": "Night view over hilly countryside with several lightning bolts hitting the ground at once in the distance, a lit village below.",
+        "focus": "lightning strikes the ground very often.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Und wie oft schlägt so ein Blitz überhaupt ein? Eine einzige Gewitterzelle erzeugt zwei bis vier Blitze pro Minute.",
+      "imageDir": "02-bilder/images/45-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "lightning strikes the ground very often.",
+      "sourceIds": [
+        "SRC-BLIDS"
+      ],
+      "chapterTitle": "Cabrio, E-Auto, Motorrad: Wer ist sicher?"
+    },
+    {
+      "id": "46-deepening",
+      "section": "deepening",
+      "title": "Blitze in Deutschland",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "lightning detection station in a meadow",
+        "camera": "evidence",
+        "subject": "A lightning detection antenna on a mast in a meadow, next to it a small shelter with an open door showing a monitor full of tiny strike dots.",
+        "focus": "hundreds of thousands of strikes are measured every year.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "2023 zählte der Blitzdienst BLIDS in Deutschland rund 316.000 Einschläge.",
+      "imageDir": "02-bilder/images/46-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "hundreds of thousands of strikes are measured every year.",
+      "sourceIds": [
+        "SRC-BLIDS"
+      ]
+    },
+    {
+      "id": "47-deepening",
+      "section": "deepening",
+      "title": "Spitzenreiter Memmingen",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "small Allgäu town under a storm",
+        "camera": "environment",
+        "subject": "A small Bavarian town with a church tower and gabled roofs under a heavy thunderstorm, one lightning bolt hitting the hills behind it.",
+        "focus": "the highest lightning density was measured in Memmingen in the Allgäu.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Am dichtesten traf es Memmingen im Allgäu. Nirgends schlug es auf gleicher Fläche öfter ein.",
+      "imageDir": "02-bilder/images/47-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the highest lightning density was measured in Memmingen in the Allgäu.",
+      "sourceIds": [
+        "SRC-BLIDS"
+      ]
+    },
+    {
+      "id": "48-deepening",
+      "section": "deepening",
+      "title": "Treffer ins Auto sind selten",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "motorway seen from above",
+        "camera": "top-down",
+        "subject": "Top-down view of a busy motorway in light rain with many cars, a single distant lightning bolt hitting an empty field beside the road.",
+        "focus": "a direct hit on a car is extremely rare.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Ein Treffer ins Auto ist trotzdem äußerst selten. Aber wenn, zählt nur die Hülle.",
+      "imageDir": "02-bilder/images/48-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "a direct hit on a car is extremely rare.",
+      "sourceIds": [
+        "SRC-ADAC-2015"
+      ]
+    },
+    {
+      "id": "49-deepening",
+      "section": "deepening",
+      "title": "Ohne Blech über dem Kopf?",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "country road with an approaching storm",
+        "camera": "human-action",
+        "subject": "An open convertible driving on a country road, a dark storm front approaching, the driver with a natural face looking up at the sky.",
+        "focus": "some vehicles have no metal roof above the occupants.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Doch was passiert, wenn über deinem Kopf gar kein Blech ist?",
+      "imageDir": "02-bilder/images/49-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "some vehicles have no metal roof above the occupants.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "50-deepening",
+      "section": "deepening",
+      "title": "Metallbügel im Verdeck",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "parked convertible in the rain",
+        "camera": "cutaway",
+        "subject": "Cutaway of a closed convertible soft top: the fabric partly peeled back to reveal the metal bows and the windscreen frame connected to the body.",
+        "focus": "a closed soft top contains metal bows that conduct the lightning.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Beim Cabrio kommt es auf das Verdeck an. Geschlossen leiten Metallbügel darin den Blitz ab.",
+      "imageDir": "02-bilder/images/50-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "a closed soft top contains metal bows that conduct the lightning.",
+      "sourceIds": [
+        "SRC-ADAC",
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "51-deepening",
+      "section": "deepening",
+      "title": "Brandfleck im Stoff",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "convertible soft top close-up",
+        "camera": "macro",
+        "subject": "Close-up of convertible roof fabric with a small dark scorch mark next to a seam, the metal bow faintly visible beneath.",
+        "focus": "in tests only the fabric got scorched.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "In Laborversuchen blieb das Innere geschützt. Nur der Stoff bekam Brandflecken.",
+      "imageDir": "02-bilder/images/51-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "in tests only the fabric got scorched.",
+      "sourceIds": [
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "52-deepening",
+      "section": "deepening",
+      "title": "Keine bekannten Verletzten",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "parking bay with a closed convertible in the rain",
+        "camera": "human-action",
+        "subject": "Two relaxed people with natural faces sit inside a convertible with the soft top fully closed, rain running down the windows, a distant lightning flash outside.",
+        "focus": "occupants of a closed convertible are protected.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Verletzte Cabrio-Insassen durch Blitze sind dem ADAC nicht bekannt.",
+      "imageDir": "02-bilder/images/52-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "occupants of a closed convertible are protected.",
+      "sourceIds": [
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "53-deepening",
+      "section": "deepening",
+      "title": "Dach ohne Metall",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "two convertibles side by side in a garage",
+        "camera": "before-after",
+        "subject": "Two convertibles side by side in cutaway: the left roof with metal bows forming a closed frame, the right roof with fabric only and no metal inside.",
+        "focus": "without metal in the roof there is no cage.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Manche Cabriodächer kommen aber ganz ohne Metall aus. Dann fehlt der Käfig.",
+      "imageDir": "02-bilder/images/53-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "without metal in the roof there is no cage.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "54-deepening",
+      "section": "deepening",
+      "title": "Kunststoff schützt nicht",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "campsite in a thunderstorm",
+        "camera": "environment",
+        "subject": "A white caravan made of glass-fibre plastic on a campsite under a dark thunderstorm sky, no metal frame visible.",
+        "focus": "caravans made of glass-fibre plastic offer no lightning protection.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Wohnwagen aus glasfaserverstärktem Kunststoff schützen gar nicht. Im Wohnmobil ist die Fahrerkabine der sicherste Platz.",
+      "imageDir": "02-bilder/images/54-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "caravans made of glass-fibre plastic offer no lightning protection.",
+      "sourceIds": [
+        "SRC-ADAC-2015",
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "55-deepening",
+      "section": "deepening",
+      "title": "Was ist mit dem E-Auto?",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "electric car at a charging bay",
+        "camera": "cutaway",
+        "subject": "Cutaway of an electric car parked at a charging bay, showing the flat high-voltage battery pack in the floor beneath the cabin.",
+        "focus": "an electric car carries a large high-voltage battery in its floor.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Und das Elektroauto mit seiner großen Batterie?",
+      "imageDir": "02-bilder/images/55-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "an electric car carries a large high-voltage battery in its floor.",
+      "sourceIds": [
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "56-deepening",
+      "section": "deepening",
+      "title": "Gleicher Schutz",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "parking lot in the rain",
+        "camera": "comparison",
+        "subject": "An electric car and a petrol car parked side by side in the rain, both with their metal body shell highlighted in the same muted blue.",
+        "focus": "electric and combustion cars are protected the same way by their metal body.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Laut ADAC bietet es den gleichen Schutz wie ein Verbrenner. Entscheidend ist die Metallhülle, nicht der Motor.",
+      "imageDir": "02-bilder/images/56-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "electric and combustion cars are protected the same way by their metal body.",
+      "sourceIds": [
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "57-deepening",
+      "section": "deepening",
+      "title": "Kein Käfig auf dem Motorrad",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "country road shoulder in a storm",
+        "camera": "human-action",
+        "subject": "A motorcyclist with open visor and a natural, alert face pulls over onto the shoulder of a country road as lightning flashes in the distance.",
+        "focus": "riders of motorcycles and bicycles have no protective cage.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Auf dem Motorrad oder Fahrrad hast du keinen Käfig um dich. Hier wird es wirklich gefährlich.",
+      "imageDir": "02-bilder/images/57-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "riders of motorcycles and bicycles have no protective cage.",
+      "sourceIds": [
+        "SRC-VDE",
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "58-deepening",
+      "section": "deepening",
+      "title": "Schutz im Gebäude",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "doorway of a village building",
+        "camera": "environment",
+        "subject": "A bicycle and a motorcycle parked in front of a village house, the open doorway of the building offering shelter from heavy rain.",
+        "focus": "riders should get off and seek shelter in a building.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Dann gilt: absteigen und ein Gebäude suchen.",
+      "imageDir": "02-bilder/images/58-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "riders should get off and seek shelter in a building.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "59-deepening",
+      "section": "deepening",
+      "title": "Abstand halten und hocken",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "roadside asphalt",
+        "camera": "diagram",
+        "subject": "Side-view diagram on a roadside: a person with a natural face crouching low on the asphalt, a parked motorcycle at a distance, a dimension line between them.",
+        "focus": "keep at least three metres from the vehicle and crouch down.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Geht das nicht, mindestens drei Meter Abstand zum Fahrzeug halten und auf dem Asphalt hinhocken.",
+      "imageDir": "02-bilder/images/59-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "keep at least three metres from the vehicle and crouch down.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "60-deepening",
+      "section": "deepening",
+      "title": "Folgen für das Auto",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "motorway hard shoulder after the rain",
+        "camera": "environment",
+        "subject": "A car stopped on a motorway hard shoulder after a strike, a thin wisp of smoke from a front tire, wet road reflecting the grey sky.",
+        "focus": "a lightning strike can still damage the car.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Und auch im Auto bleibt ein Einschlag nicht ohne Folgen.",
+      "imageDir": "02-bilder/images/60-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "a lightning strike can still damage the car.",
+      "sourceIds": [
+        "SRC-ADAC",
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "61-deepening",
+      "section": "deepening",
+      "title": "Schäden an der Elektronik",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "car dashboard",
+        "camera": "cutaway",
+        "subject": "Cutaway behind a car dashboard showing control units and wiring, one control unit glowing warning red, the infotainment display dark.",
+        "focus": "paint, tires and electronics can be damaged.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Lack und Reifen können Schäden abbekommen, die Elektronik kann ausfallen. Lass das Auto danach prüfen.",
+      "imageDir": "02-bilder/images/61-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "paint, tires and electronics can be damaged.",
+      "sourceIds": [
+        "SRC-VDE",
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "62-deepening",
+      "section": "deepening",
+      "title": "Gefahr Schreck",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "inside a car cabin on a highway",
+        "camera": "human-action",
+        "subject": "A startled driver with a natural face squints at a blinding flash ahead on a highway, both hands jerking the steering wheel.",
+        "focus": "the real danger is a startled driver making a mistake.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Die größte Gefahr ist aber der Schreck. Ein greller Blitz, ein Knall, und du verreißt das Lenkrad.",
+      "imageDir": "02-bilder/images/62-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "the real danger is a startled driver making a mistake.",
+      "sourceIds": [
+        "SRC-VDE",
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "63-deepening",
+      "section": "deepening",
+      "title": "Regen und dunkle Ampeln",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "city intersection in heavy rain",
+        "camera": "environment",
+        "subject": "A city intersection in heavy rain with switched-off dark traffic lights, cars waiting with headlights on.",
+        "focus": "heavy rain and failed traffic lights add to the danger.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Dazu kommen Starkregen und Ampeln, die im Gewitter ausfallen können.",
+      "imageDir": "02-bilder/images/63-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "heavy rain and failed traffic lights add to the danger.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "64-deepening",
+      "section": "deepening",
+      "title": "Anhalten und sitzen bleiben",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "motorway rest area seen from above",
+        "camera": "top-down",
+        "subject": "Top-down view of a car parked alone on an open rest area in heavy rain, away from trees and light poles.",
+        "focus": "stop during a heavy thunderstorm and stay inside.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Darum bei heftigem Gewitter anhalten. Und sitzen bleiben.",
+      "imageDir": "02-bilder/images/64-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "stop during a heavy thunderstorm and stay inside.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "65-deepening",
+      "section": "deepening",
+      "title": "Metall nicht anfassen",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "inside a car door panel",
+        "camera": "macro",
+        "subject": "Close view inside a car: a hand pulled back and resting on the lap, clearly away from the metal door frame and handle.",
+        "focus": "after a strike, do not touch metal parts connected to the body.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Nach einem Einschlag keine Metallteile anfassen, die mit der Karosserie verbunden sind.",
+      "imageDir": "02-bilder/images/65-deepening",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "after a strike, do not touch metal parts connected to the body.",
+      "sourceIds": [
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "66-payoff",
+      "section": "payoff",
+      "title": "Zurück zum Anfang",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "rainy country road at night",
+        "camera": "cutaway",
+        "subject": "Cutaway of a car being struck on a rainy night road: the lightning current running along the outside of the body, the cabin inside shown calm and dark.",
+        "focus": "the extreme heat and current flow over the outside of the car.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Zurück zu den 30.000 Grad und den 20.000 Ampere vom Anfang.",
+      "imageDir": "02-bilder/images/66-payoff",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "payoff",
+      "factClaim": "the extreme heat and current flow over the outside of the car.",
+      "sourceIds": [
+        "SRC-VDE",
+        "SRC-SPEKTRUM"
+      ],
+      "chapterTitle": "Die Antwort in einem Satz"
+    },
+    {
+      "id": "67-payoff",
+      "section": "payoff",
+      "title": "Sie erreichen dich nicht",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "inside a car cabin during a thunderstorm",
+        "camera": "human-action",
+        "subject": "A relaxed driver with a natural face sits with hands in the lap, watching a lightning flash through the rain-covered windshield.",
+        "focus": "the lightning reaches the car but not the person inside.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Sie treffen dein Auto. Aber sie erreichen dich nicht.",
+      "imageDir": "02-bilder/images/67-payoff",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "payoff",
+      "factClaim": "the lightning reaches the car but not the person inside.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "68-payoff",
+      "section": "payoff",
+      "title": "Blech statt Gummi",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "technical comparison board",
+        "camera": "comparison",
+        "subject": "Side view of a car: the tires shown greyed out, the metal body shell highlighted in muted blue with a check mark shape beside it.",
+        "focus": "the metal body protects you, not the rubber tires.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Nicht der Gummi schützt dich, sondern das Blech um dich herum.",
+      "imageDir": "02-bilder/images/68-payoff",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "payoff",
+      "factClaim": "the metal body protects you, not the rubber tires.",
+      "sourceIds": [
+        "SRC-VDE",
+        "SRC-ADAC"
+      ]
+    },
+    {
+      "id": "69-payoff",
+      "section": "payoff",
+      "title": "Drinnen bleiben",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "roadside in a thunderstorm",
+        "camera": "before-after",
+        "subject": "Two side-by-side panels on a stormy roadside: on the left a person with a natural face sits inside the car with the metal shell highlighted, on the right the same person stands outside in the rain without any shell around them.",
+        "focus": "inside the car you are protected, outside you are not.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Steig also nicht aus, um nachzusehen. Draußen hast du keinen Käfig mehr.",
+      "imageDir": "02-bilder/images/69-payoff",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "payoff",
+      "factClaim": "inside the car you are protected, outside you are not.",
+      "sourceIds": [
+        "SRC-VDE"
+      ]
+    },
+    {
+      "id": "70-payoff",
+      "section": "payoff",
+      "title": "Faradays Beweis",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "inside the dark foil cube",
+        "camera": "human-action",
+        "subject": "Michael Faraday with a natural face sits at a small table inside the foil cube writing notes by candlelight, faint sparks visible through a gap in the wall.",
+        "focus": "Faraday proved the principle in 1836.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Faraday hat das 1836 in seinem Würfel bewiesen, mit Kerzen und Goldblättchen.",
+      "imageDir": "02-bilder/images/70-payoff",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "payoff",
+      "factClaim": "Faraday proved the principle in 1836.",
+      "sourceIds": [
+        "SRC-FARADAY",
+        "SRC-RI"
+      ]
+    },
+    {
+      "id": "71-payoff",
+      "section": "payoff",
+      "title": "Um dich herum, nicht durch dich",
+      "backgroundFamily": "content-driven",
+      "shotType": "beat-driven",
+      "referenceGroup": "scientific-scene-explainer",
+      "visualRecipe": {
+        "stage": "motorway rest area after the storm",
+        "camera": "environment",
+        "subject": "A car parked on a rest area at dusk after a storm, the clouds breaking up, a last distant lightning flash on the horizon, the driver inside calm.",
+        "focus": "the car is your own Faraday cage in every thunderstorm.",
+        "motion": "none",
+        "callouts": []
+      },
+      "voiceText": "Darum gilt: Der Blitz fließt um dich herum, nicht durch dich. Bei jedem Gewitter sitzt du in Faradays Würfel.",
+      "imageDir": "02-bilder/images/71-payoff",
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "payoff",
+      "factClaim": "the car is your own Faraday cage in every thunderstorm.",
+      "sourceIds": [
+        "SRC-VDE",
+        "SRC-FARADAY"
+      ]
+    }
+  ]
+}

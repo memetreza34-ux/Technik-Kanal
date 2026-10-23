@@ -1,0 +1,120 @@
+{
+  "version": "science-title-check-v1",
+  "checkedAt": "2026-10-23T18:12:29.713Z",
+  "title": "Nicht die Gummireifen: Warum dich dein Auto vor dem Blitz schützt",
+  "query": "Nicht die Gummireifen: Warum dich dein Auto vor dem Blitz schützt",
+  "source": "https://www.youtube.com/results?search_query=Nicht%20die%20Gummireifen%3A%20Warum%20dich%20dein%20Auto%20vor%20dem%20Blitz%20sch%C3%BCtzt&hl=de&gl=DE",
+  "verdict": "offen",
+  "similarCount": 0,
+  "strongCompetitors": [],
+  "topByViews": [
+    {
+      "rank": 5,
+      "title": "Im Test: Sicherheit: Was passiert beim Blitzeinschlag? | Motor mobil",
+      "channel": "DW Deutsch",
+      "views": 105424
+    },
+    {
+      "rank": 2,
+      "title": "WIR KAUFEN NICHT MEHR!“ – Warum wir unsere alten Autos NIE mehr hergeben",
+      "channel": "Blitz Value",
+      "views": 35710
+    },
+    {
+      "rank": 4,
+      "title": "Warum du NIEMALS den Reifendruck vom Tankdeckel fahren solltest",
+      "channel": "Auto Flüsterer",
+      "views": 27110
+    },
+    {
+      "rank": 1,
+      "title": "Kfz-Meister warnt: Behalte dein altes Auto! Die Wahrheit über Neuwagen",
+      "channel": "Blitz Value",
+      "views": 17861
+    },
+    {
+      "rank": 3,
+      "title": "Ganzjahresreifen gegen Winterreifen — Die ehrliche Rechnung nach 6 Jahren",
+      "channel": "Deutsche Ingenieurskunst",
+      "views": 4456
+    }
+  ],
+  "suggestions": [
+    {
+      "formula": "Zahl + Widerspruch",
+      "example": "30.000 Grad – und trotzdem …"
+    },
+    {
+      "formula": "Konkretes Ereignis",
+      "example": "[Bekanntes Ereignis oder Ort]: Was Gummireifen und Warum und Auto und Blitz damit zu tun hat"
+    },
+    {
+      "formula": "Irrtum aufdecken",
+      "example": "Das glauben fast alle falsch über Gummireifen und Warum und Auto und Blitz"
+    },
+    {
+      "formula": "Bekannter Bezug",
+      "example": "[Film, Marke oder berühmtes Objekt]: Was über Gummireifen und Warum und Auto und Blitz kaum jemand weiß"
+    },
+    {
+      "formula": "Listen-Versprechen",
+      "example": "5 Dinge über Gummireifen und Warum und Auto und Blitz, die dir niemand erklärt"
+    }
+  ],
+  "results": [
+    {
+      "rank": 1,
+      "title": "Kfz-Meister warnt: Behalte dein altes Auto! Die Wahrheit über Neuwagen",
+      "channel": "Blitz Value",
+      "views": 17861,
+      "length": "23:23",
+      "published": "vor 3 Tagen",
+      "similarity": 0.17
+    },
+    {
+      "rank": 2,
+      "title": "WIR KAUFEN NICHT MEHR!“ – Warum wir unsere alten Autos NIE mehr hergeben",
+      "channel": "Blitz Value",
+      "views": 35710,
+      "length": "16:47",
+      "published": "vor 7 Tagen",
+      "similarity": 0.17
+    },
+    {
+      "rank": 3,
+      "title": "Ganzjahresreifen gegen Winterreifen — Die ehrliche Rechnung nach 6 Jahren",
+      "channel": "Deutsche Ingenieurskunst",
+      "views": 4456,
+      "length": "39:32",
+      "published": "vor 3 Tagen",
+      "similarity": 0
+    },
+    {
+      "rank": 4,
+      "title": "Warum du NIEMALS den Reifendruck vom Tankdeckel fahren solltest",
+      "channel": "Auto Flüsterer",
+      "views": 27110,
+      "length": "17:24",
+      "published": "vor 9 Tagen",
+      "similarity": 0
+    },
+    {
+      "rank": 5,
+      "title": "Im Test: Sicherheit: Was passiert beim Blitzeinschlag? | Motor mobil",
+      "channel": "DW Deutsch",
+      "views": 105424,
+      "length": "4:48",
+      "published": "vor 12 Jahren",
+      "similarity": 0.17
+    },
+    {
+      "rank": 6,
+      "title": "7 Fehler beim Reifenkauf, die dich Geld und Sicherheit kosten können",
+      "channel": "AutoKlartext und 2 weitere",
+      "views": 166,
+      "length": "19:55",
+      "published": "vor 2 Wochen",
+      "similarity": 0.17
+    }
+  ]
+}

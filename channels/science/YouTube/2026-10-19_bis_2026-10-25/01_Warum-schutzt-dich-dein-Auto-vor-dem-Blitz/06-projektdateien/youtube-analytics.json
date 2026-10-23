@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "channel": "Wissonaut",
+  "slug": "warum-schutzt-dich-dein-auto-vor-dem-blitz",
+  "productionProfile": "youtube-6to7min-v1",
+  "source": "YouTube Studio; echte Messwerte manuell eintragen, niemals schätzen",
+  "youtubeUrl": null,
+  "publishedAt": null,
+  "title": null,
+  "thumbnailVersion": null,
+  "snapshots": [
+    {
+      "afterHours": 24,
+      "capturedAt": null,
+      "impressions": null,
+      "views": null,
+      "ctrPercent": null,
+      "retention30Percent": null,
+      "averageViewDurationSeconds": null,
+      "averagePercentageViewed": null,
+      "subscribersGained": null
+    },
+    {
+      "afterHours": 72,
+      "capturedAt": null,
+      "impressions": null,
+      "views": null,
+      "ctrPercent": null,
+      "retention30Percent": null,
+      "averageViewDurationSeconds": null,
+      "averagePercentageViewed": null,
+      "subscribersGained": null
+    },
+    {
+      "afterHours": 168,
+      "capturedAt": null,
+      "impressions": null,
+      "views": null,
+      "ctrPercent": null,
+      "retention30Percent": null,
+      "averageViewDurationSeconds": null,
+      "averagePercentageViewed": null,
+      "subscribersGained": null
+    },
+    {
+      "afterHours": 672,
+      "capturedAt": null,
+      "impressions": null,
+      "views": null,
+      "ctrPercent": null,
+      "retention30Percent": null,
+      "averageViewDurationSeconds": null,
+      "averagePercentageViewed": null,
+      "subscribersGained": null
+    }
+  ]
+}

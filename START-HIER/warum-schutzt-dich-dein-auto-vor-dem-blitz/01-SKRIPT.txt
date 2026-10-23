@@ -1,0 +1,141 @@
+Ein Blitz trifft dein Auto. Über 30.000 Grad heiß. Warum passiert dir drinnen nichts?
+
+Die Luft im Blitzkanal wird dabei 300-mal heißer als kochendes Wasser.
+
+Durch diesen dünnen Kanal jagen rund 20.000 Ampere. In wenigen Millionstel Sekunden.
+
+Deine Haushaltssicherung schaltet schon bei 16 Ampere ab.
+
+Der Blitzstrom ist über tausendmal stärker.
+
+Und du sitzt nur eine Armlänge vom Blech entfernt, mitten im Gewitter.
+
+Fast jeder glaubt, die Gummireifen retten dich. Das ist falsch. Gleich siehst du die Spuren, die es beweisen.
+
+Schau dir an, welchen Weg der Blitz schon hinter sich hat. Die Gewitterwolke ragt oft über zehn Kilometer hoch.
+
+Sein Kanal ist 4 bis 10 Kilometer lang.
+
+Und diesen Weg legt er quer durch Luft zurück. Dabei ist Luft eigentlich ein guter Isolator.
+
+Der Gedanke mit dem Gummi klingt trotzdem logisch. Schließlich isoliert auch die Hülle um jedes Kabel.
+
+Was sollen da ein paar Zentimeter Gummi noch ausrichten? Für den Blitz sind sie nur ein winziger letzter Sprung.
+
+In Hochspannungslaboren wurden echte Autos mit künstlichen Blitzen getroffen. Danach sah man genau hin.
+
+Das Ergebnis: Brandspuren, die quer über die Reifenflanken laufen.
+
+Der Strom ist einfach über den Reifen gesprungen. Der Gummi war ihm egal.
+
+Die Reifen sind also nicht dein Schutz. Aber was schützt dich dann wirklich?
+
+Die Antwort beginnt 1836 in London, lange bevor es das erste Auto gab.
+
+Im Hörsaal der Royal Institution lässt der Forscher Michael Faraday einen riesigen Würfel bauen. Wozu, ahnt noch niemand.
+
+Jede Kante ist 3,7 Meter lang.
+
+Holzrahmen, Kupferdraht, Papier und Zinnfolie. Alles ist überall leitend miteinander verbunden.
+
+Eine große Elektrisiermaschine lädt dann die Außenwand des Würfels kräftig auf.
+
+Funken und Lichtbüschel sprühen von der ganzen Oberfläche. Es knistert und blitzt.
+
+Und dann tut Faraday etwas, das keiner erwartet. Er steigt hinein.
+
+Drinnen prüft er alles mit einem Goldblatt-Elektrometer und brennenden Kerzen.
+
+Bei Ladung würden sich die dünnen Goldblättchen spreizen. Sie bleiben schlaff.
+
+Draußen kracht es. Drinnen passiert nichts. Kein Funke, kein Zucken.
+
+Faraday notiert später, er habe in dem Würfel regelrecht gewohnt.
+
+So eine leitende Hülle trägt seitdem seinen Namen: Faradayscher Käfig.
+
+Und dein Auto ist genau so ein Käfig. Doch warum bleibt es innen still?
+
+Der Trick steckt in einer einfachen Regel. Gleiche Ladungen stoßen sich ab.
+
+Landet Ladung auf Metall, rückt sie so weit auseinander wie möglich. Jedes Teilchen will Abstand.
+
+Weiter als bis zur Oberfläche kommt sie nicht. Also sammelt sie sich außen.
+
+Im Inneren schieben die Ladungen von allen Seiten gleich stark. Ihre Kräfte heben sich genau auf.
+
+Das elektrische Feld, also das, was Ladungen anschiebt, ist im Inneren null.
+
+Bei deinem Auto übernimmt die Karosserie aus Stahlblech genau diese Rolle.
+
+Wohin genau ein Blitz fällt, entscheidet sich erst auf den letzten 10 bis 100 Metern.
+
+Nehmen wir an, er trifft dein Dach. Ein greller Schlag, direkt über deinem Kopf.
+
+Der Strom verteilt sich und fließt über Dach, Säulen und Seitenwände nach unten.
+
+Blech leitet den Strom viel besser als dein Körper. Fast alles fließt deshalb durchs Metall.
+
+Also nimmt der Strom den bequemsten Weg. Außen herum, an dir vorbei.
+
+Ganz unten springt er als Lichtbogen über den Reifen in den Boden. Daher die Brandspuren.
+
+Du sitzt mittendrin. Der Strom fließt um dich herum und ist nach einem Wimpernschlag vorbei.
+
+Wichtig: Der Käfig muss gar nicht völlig dicht sein.
+
+Fenster sind kein Problem, solange die Hülle rundum leitend verbunden ist. Ein grobes Metallgitter reicht schon.
+
+Und wie oft schlägt so ein Blitz überhaupt ein? Eine einzige Gewitterzelle erzeugt zwei bis vier Blitze pro Minute.
+
+2023 zählte der Blitzdienst BLIDS in Deutschland rund 316.000 Einschläge.
+
+Am dichtesten traf es Memmingen im Allgäu. Nirgends schlug es auf gleicher Fläche öfter ein.
+
+Ein Treffer ins Auto ist trotzdem äußerst selten. Aber wenn, zählt nur die Hülle.
+
+Doch was passiert, wenn über deinem Kopf gar kein Blech ist?
+
+Beim Cabrio kommt es auf das Verdeck an. Geschlossen leiten Metallbügel darin den Blitz ab.
+
+In Laborversuchen blieb das Innere geschützt. Nur der Stoff bekam Brandflecken.
+
+Verletzte Cabrio-Insassen durch Blitze sind dem ADAC nicht bekannt.
+
+Manche Cabriodächer kommen aber ganz ohne Metall aus. Dann fehlt der Käfig.
+
+Wohnwagen aus glasfaserverstärktem Kunststoff schützen gar nicht. Im Wohnmobil ist die Fahrerkabine der sicherste Platz.
+
+Und das Elektroauto mit seiner großen Batterie?
+
+Laut ADAC bietet es den gleichen Schutz wie ein Verbrenner. Entscheidend ist die Metallhülle, nicht der Motor.
+
+Auf dem Motorrad oder Fahrrad hast du keinen Käfig um dich. Hier wird es wirklich gefährlich.
+
+Dann gilt: absteigen und ein Gebäude suchen.
+
+Geht das nicht, mindestens drei Meter Abstand zum Fahrzeug halten und auf dem Asphalt hinhocken.
+
+Und auch im Auto bleibt ein Einschlag nicht ohne Folgen.
+
+Lack und Reifen können Schäden abbekommen, die Elektronik kann ausfallen. Lass das Auto danach prüfen.
+
+Die größte Gefahr ist aber der Schreck. Ein greller Blitz, ein Knall, und du verreißt das Lenkrad.
+
+Dazu kommen Starkregen und Ampeln, die im Gewitter ausfallen können.
+
+Darum bei heftigem Gewitter anhalten. Und sitzen bleiben.
+
+Nach einem Einschlag keine Metallteile anfassen, die mit der Karosserie verbunden sind.
+
+Zurück zu den 30.000 Grad und den 20.000 Ampere vom Anfang.
+
+Sie treffen dein Auto. Aber sie erreichen dich nicht.
+
+Nicht der Gummi schützt dich, sondern das Blech um dich herum.
+
+Steig also nicht aus, um nachzusehen. Draußen hast du keinen Käfig mehr.
+
+Faraday hat das 1836 in seinem Würfel bewiesen, mit Kerzen und Goldblättchen.
+
+Darum gilt: Der Blitz fließt um dich herum, nicht durch dich. Bei jedem Gewitter sitzt du in Faradays Würfel.

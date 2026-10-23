@@ -1,0 +1,34 @@
+{
+  "version": "science-v1",
+  "generatedAt": "2026-10-23T18:14:16.164Z",
+  "passed": true,
+  "phase": "assets-may-be-created",
+  "results": [
+    {
+      "id": "script-qa",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "id": "creative-qa",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "id": "static-quality",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "id": "overlay-qa",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "id": "content-package",
+      "passed": true,
+      "exitCode": 0
+    }
+  ],
+  "rule": "Keine Bilder oder Audio produzieren, bevor Skript, Quellen, statische Bilddramaturgie und Inhalt geprüft sind."
+}

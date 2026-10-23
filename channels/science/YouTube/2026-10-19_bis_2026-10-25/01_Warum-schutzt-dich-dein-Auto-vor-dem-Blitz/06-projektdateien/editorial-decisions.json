@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "slug": "warum-schutzt-dich-dein-auto-vor-dem-blitz",
+  "editorApproved": false,
+  "reviewer": null,
+  "reviewedAt": null,
+  "whatWorked": [],
+  "whatNeedsImprovement": [],
+  "improvements": [
+    {
+      "evidenceType": "visual-review",
+      "observation": "",
+      "nextVideoChange": "",
+      "testMetric": ""
+    }
+  ],
+  "note": "Vor der nächsten Video-Produktion nach Sichtung von Bildserie, Render und ggf. echten Studio-Daten ausfüllen. Kein automatischer Qualitäts- oder Erfolgsschein."
+}

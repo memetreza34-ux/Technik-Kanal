@@ -1,0 +1,22 @@
+# Static Image + Remotion Contract
+
+- 1920×1080 / 16:9
+- nur finale statische Bilder
+- Technical Editorial Explainer 2.5D als konstante Bildwelt
+- Style-Lock + Density-Lock in jedem Flow-Prompt
+- normale Szene: höchstens 3 wichtige visuelle Elemente, maximal 2 Labels, maximal 2 Pfeile
+- wenn das Bildbudget nicht reicht: Beat teilen statt Bild überladen
+- Google-Flow-Prompts Englisch, sichtbarer Text Deutsch
+- fünf Bildschritte nach Cover-Auswahl
+- keine Zwischenstopps zwischen Bildschritt 1–5
+- zwei verworfene Cover nach Auswahl entfernen
+- am Ende nur finale Assets in genau einer Flow-Sammlung
+- Phase 2: Nutzer legt finale Dateien in `02-bilder/images/<scene-id>/`, `02-bilder/thumbnail/` und `01-script-audio/audio/`
+- Phase 3: Agent liest ausschließlich diese Ordner; keine Bildgenerierung, keine Regenerierung, keine Web-Suche, keine Ersatzbilder
+- Caption-/Timing-Ausgaben liegen intern in `06-projektdateien/`; sichtbarer Export nur Video, Cover und Caption
+- fehlendes/mehrdeutiges Asset = STOPP und melden
+- visuelle Vielfalt ist Pflicht
+- keine KI-Videoclips / kein Image-to-Video
+- keine Kamerabewegung / Animation
+- keine eingebrannten Untertitel
+- harte Schnitte

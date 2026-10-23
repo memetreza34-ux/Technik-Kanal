@@ -1,0 +1,22 @@
+{
+  "version": "science-flow-images-v5-final-collection",
+  "productionProfile": "youtube-6to7min-v1",
+  "productionMode": "flow-image-only",
+  "imageProductionSteps": 5,
+  "pauseAfterEachImageStep": false,
+  "continueAutomaticallyBetweenImageSteps": true,
+  "finalFlowCollectionRequired": true,
+  "styleId": "scientific-scene-explainer-v1",
+  "generatedAt": "2026-10-23T18:14:15.991Z",
+  "passed": true,
+  "sceneCount": 71,
+  "staticImageCount": 71,
+  "flowVideoCount": 0,
+  "distinctVisualTypeCount": 12,
+  "handOnObjectCount": 0,
+  "layouts": [
+    "image-full"
+  ],
+  "errors": [],
+  "warnings": []
+}

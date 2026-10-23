@@ -1,0 +1,17 @@
+ONE STATIC IMAGE ONLY, 1920x1080, landscape 16:9. One main idea: the viewer instantly sees that the outside of the cube is so strongly charged that sparks fly off it.
+
+EXACT VISUAL BRIEF — The foil-covered cube standing in a dim lecture hall, bright sparks and violet brush discharges darting off every part of its outer surface.
+Request visible German labels: none. If no labels are requested, the image contains no text.
+
+Style: Technical Editorial Explainer 2.5D (see STYLE LOCK). Visible text only in German. No large headline, no full-sentence text. No faceless visible heads; every visible head shows a complete natural face.
+
+VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT
+For SCENE IMAGES, production metadata is NEVER visual content. Never render scene numbers, beat numbers, scene IDs, section names, filenames, image-step labels, final asset names or production instructions inside the image. Only the text after “Bildauftrag:” describes the picture; headings and saving instructions are workflow notes for you, not image content.
+
+Only render visible scene text that is explicitly requested inside the scene prompt. Do not invent extra titles, headings, labels or explanatory text. Never carry a thumbnail headline into a normal scene unless that exact text is explicitly requested for that scene. If a scene prompt requests no visible text, the image must contain zero text.
+
+Requested labels, concise explanatory callouts, formulas and legends may be prominent enough to read comfortably on a phone, while remaining subordinate to the actual technical illustration. Diagram annotations must be clear and scientifically correct, not decorative. Keep all requested text comfortably inside the 16:9 safe area; never crop it at the top, bottom or sides. Every requested label must be exact, complete and readable. If text is misspelled, blank, corrupted, cropped, substituted or turned into a large headline, REJECT that image and regenerate it before continuing.
+
+FINAL IMAGE SELECTION LOCK: compare every newly generated scene image with all already accepted final images from the same video. If it repeats essentially the same dominant composition, object angle, arrow pattern or full-scene layout without a genuinely different explanatory form, REJECT it and regenerate with a clearly different composition. A different camera angle alone is not enough. The payoff may return to the hook idea, but it must not simply duplicate the hook image.
+
+THUMBNAIL EXCEPTION: thumbnail prompts may use the explicitly requested thumbnail headline. This exception applies only to the thumbnail phase and never carries into scene images.

@@ -1,0 +1,660 @@
+VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT
+For SCENE IMAGES, production metadata is NEVER visual content. Never render scene numbers, beat numbers, scene IDs, section names, filenames, image-step labels, final asset names or production instructions inside the image. Only the text after “Bildauftrag:” describes the picture; headings and saving instructions are workflow notes for you, not image content.
+
+Only render visible scene text that is explicitly requested inside the scene prompt. Do not invent extra titles, headings, labels or explanatory text. Never carry a thumbnail headline into a normal scene unless that exact text is explicitly requested for that scene. If a scene prompt requests no visible text, the image must contain zero text.
+
+Requested labels, concise explanatory callouts, formulas and legends may be prominent enough to read comfortably on a phone, while remaining subordinate to the actual technical illustration. Diagram annotations must be clear and scientifically correct, not decorative. Keep all requested text comfortably inside the 16:9 safe area; never crop it at the top, bottom or sides. Every requested label must be exact, complete and readable. If text is misspelled, blank, corrupted, cropped, substituted or turned into a large headline, REJECT that image and regenerate it before continuing.
+
+FINAL IMAGE SELECTION LOCK: compare every newly generated scene image with all already accepted final images from the same video. If it repeats essentially the same dominant composition, object angle, arrow pattern or full-scene layout without a genuinely different explanatory form, REJECT it and regenerate with a clearly different composition. A different camera angle alone is not enough. The payoff may return to the hook idea, but it must not simply duplicate the hook image.
+
+THUMBNAIL EXCEPTION: thumbnail prompts may use the explicitly requested thumbnail headline. This exception applies only to the thumbnail phase and never carries into scene images.
+
+GOOGLE FLOW MASTER PROMPT — WISSONAUT — NUR BILDER / IMAGE ONLY
+================================================================
+Prompt-Version: flow-master-v2-ohne-szenen-ids
+TITLE: Nicht die Gummireifen: Warum dich dein Auto vor dem Blitz schützt
+VIDEO: 1920×1080 / 16:9, exactly 71 static scene images, 5 Bildschritte.
+VISUAL WORLD: Technical Editorial Explainer 2.5D.
+Finale Flow-Sammlung: warum-schutzt-dich-dein-auto-vor-dem-blitz-assets-final
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Keep the exact same visual language across the entire video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals as the base family; use copper, blue, orange/red, green or yellow only as meaningful technical accents. Do not use photorealism, real-photo aesthetics, hyperrealistic environments, generic AI art, white textbook infographic layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects. Scene type, perspective and environment may change, but rendering language, material simplification, line quality, typography and callout design must remain consistent. Visible text only in German and only when explicitly requested. Google Flow prompt instructions are written in English. This STYLE LOCK applies to every image below and overrides any older style wording.
+
+DENSITY LOCK — TECHNICAL EXPLANATION FIRST
+Keep one clear scientific idea per image. Normal scenes may use 1–3 short accurate German labels if helpful. In technical diagrams, schematics, cross-sections, comparisons and infographics, use up to 5 purposeful German labels, 3 panels and 4 arrows when needed. Use essential formulas, units, dimensions, legends and concise German callouts; every annotation must match the spoken explanation. Labels must be readable on a phone, not tiny decorative text. Prefer at least one third technical explanatory visuals across the whole video and vary views and illustration types; no repeated generic beauty shots of the same object. No unsupported numbers, incorrect physics, made-up facts, English words or production metadata inside images. Correct scientific content takes priority over sparse minimalism.
+
+WAS INS BILD GEHÖRT
+-------------------
+- Nur der Text hinter „Bildauftrag:“ beschreibt das Bild. Zeilen wie „BILD 7 VON 45“, „BILDSCHRITT“, „Budget“ und „Speichern als …“ sind Arbeitsanweisungen und erscheinen niemals im Bild.
+- Sichtbarer Text nur, wenn die Zeile „Visible German text“ ihn verlangt – exakt diese Wörter, klein, vollständig, richtig geschrieben. Steht dort „Visible text: none“, ist das Bild komplett textfrei.
+- Keine Überschriften, keine Nummern, keine Abschnitts- oder Dateinamen, keine englischen Wörter im Bild.
+
+VERBINDLICHE WORKFLOW-REGELN / BINDING WORKFLOW
+1. Zuerst genau DREI Thumbnail-Kandidaten gemäß dem Coverprompt erzeugen; dann STOPP und auf die ausdrückliche AUSWAHL des Nutzers warten.
+2. Die ZWEI NICHT GEWÄHLTEN COVER entfernen. Gewinner als 00-thumbnail-final ausschließlich nach 05-export exportieren; niemals als Videobild verwenden.
+3. Bild 1 unabhängig vom Cover gestalten: KEINE Farbpalette, KEINE Layoutvorlage, keine Cover-Schlagzeile und keine wiederholte Cover-Komposition auf Videoszenen übertragen.
+4. Danach genau 5 Bildschritte. Jeweils EIN finales Bild pro Bildauftrag erzeugen, sofort prüfen und wie angegeben speichern. KEINE WEITEREN STOPPS ODER RÜCKFRAGEN zwischen BILDSCHRITT 1 und 5.
+5. VISUELLE VIELFALT IST PFLICHT: Komposition, Darstellungsform und Perspektive wechseln, ohne den STYLE LOCK zu verlassen. Kein Bild darf das vorige praktisch wiederholen.
+6. INFORMATIONSDICHTE IST HART BEGRENZT: Budget jeder Szene einhalten; lieber vereinfachen als überladen.
+7. Keine gesichtslosen sichtbaren Köpfe. Wenn ein Kopf sichtbar ist, dann mit vollständigen natürlichen Gesichtszügen.
+8. NUR BILDER: ausschließlich statische 16:9-Illustrationen, keine KI-Videoclips, keine Animationen, keine Kamerafahrten.
+9. Vor jeder Freigabe den sichtbaren Text prüfen: falsch geschriebene, abgeschnittene, zusätzliche oder nicht verlangte Schrift → Bild verwerfen und neu erzeugen.
+10. Erst NACH ABSCHLUSS VON BILDSCHRITT 5 aufräumen und den GESAMTABSCHLUSS melden.
+
+THUMBNAIL — ERST DREI THUMBNAILS, DANACH STOPP
+==============================================
+THUMBNAIL ONLY — Create exactly THREE individually separate and distinctive 16:9 1280x720 YouTube thumbnail candidates for the German Wissonaut episode "Nicht die Gummireifen: Warum dich dein Auto vor dem Blitz schützt". Each candidate is ONE image, no collage. Technical Editorial Explainer 2.5D style: adult premium educational illustration, clean vector-like forms, matte car paint, deep graphite storm sky, bright white-violet lightning, warm off-white highlights. One large main object filling at least half of the frame, strong contrast, vivid colours, no dark muddy look. Bold mobile-readable German headline of 1–3 words. No photorealism, childish cartoon, glowing HUD or illegible writing.
+
+Candidate A: A large hatchback filling most of the frame, a bright lightning bolt hitting its roof, a thick red circle around the front tire where a thin scorched arc runs across the rubber sidewall. German headline exactly "NICHT DIE REIFEN".
+Candidate B: Before/after side by side with a red arrow between them: left a car on a dark road just before the strike, right the same car with lightning current glowing only along the outside of the body while the driver with a natural face sits calm inside. German headline exactly "30.000 GRAD".
+Candidate C: Large cutaway of a car with bright current lines running around the roof, pillars and sills, a red arrow pointing at the calm driver inside the untouched cabin. German headline exactly "STROM BLEIBT AUSSEN".
+
+Make these three candidates visually distinct, not three colourways of one composition. Keep the physics correct: current flows over the metal body, never through the occupant. Then STOP and wait for the user's explicit selection. Only the selected cover is exported as 05-export/00-thumbnail-final.png; reject and remove the other two. This thumbnail NEVER appears in the video. Scene 01 must be an independently composed normal explanatory image, no cover title or cover layout.
+
+STOPP NACH DREI THUMBNAILS; AUF AUSWAHL WARTEN. DANACH OHNE ZWISCHENSTOPP MIT BILDSCHRITT 1 WEITER.
+
+BILDSCHRITT 1/5 — BILDER 1 BIS 15
+====================================================
+Erzeuge genau 15 finale statische Bilder in dieser Reihenfolge. Pro Bildauftrag ein angenommenes Bild; Fehlversuche verwerfen.
+
+BILD 1 VON 71
+Bildauftrag: A bright lightning bolt striking the roof of a moving car at night on a rainy country road, the glowing channel touching the metal roof, the calm driver clearly visible through the windshield.
+Presentation: environment.
+Setting: rainy country road at night (the object stays in its real-world place).
+Visible German text: exactly "über 30.000 °C" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 01.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 2 VON 71
+Bildauftrag: Split comparison in one frame: on the left a small pot of boiling water on a kitchen stove with a short temperature bar, on the right a lightning channel with a temperature bar that towers far above it, both bars on the same scale.
+Presentation: comparison.
+Setting: home kitchen stove next to a storm sky (the object stays in its real-world place).
+Visible German text: exactly "100 °C" and "über 30.000 °C" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 02.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 3 VON 71
+Bildauftrag: Close macro view of a glowing white-violet lightning channel just above the ground, one bold arrow along the channel showing the direction of the current.
+Presentation: macro.
+Setting: storm sky just above the ground (the object stays in its real-world place).
+Visible German text: exactly "20.000 A" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 03.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 4 VON 71
+Bildauftrag: Close view into an opened home fuse box: one white modular circuit breaker in focus with its toggle switched down, neighboring breakers softly blurred.
+Presentation: evidence.
+Setting: inside a home fuse box (the object stays in its real-world place).
+Visible German text: exactly "16 A" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 04.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 5 VON 71
+Bildauftrag: Two vertical bars drawn to exact scale on a workshop wall chart: a tiny bar with a small circuit breaker icon at its base and an enormous bar with a lightning symbol that reaches far beyond it.
+Presentation: comparison.
+Setting: electrician workshop wall chart (the object stays in its real-world place).
+Visible German text: exactly "16 A" and "20.000 A" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 05.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 6 VON 71
+Bildauftrag: View from the passenger seat: a young driver with a natural face reaches out and almost touches the inner door panel, rain streaming down the side window, a faint lightning flash outside.
+Presentation: human-action.
+Setting: inside a car cabin during a thunderstorm (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 06.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 7 VON 71
+Bildauftrag: Low close view of a car tire standing on wet asphalt, raindrops on the black rubber sidewall, one small question-mark-shaped highlight on the tire.
+Presentation: macro.
+Setting: wet asphalt road beside the front wheel (the object stays in its real-world place).
+Visible German text: exactly "Gummireifen" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 07.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 8 VON 71
+Bildauftrag: Wide view of a towering anvil-shaped thunderstorm cloud above open farmland, a lightning bolt running from the cloud base down to a small car on a country road.
+Presentation: environment.
+Setting: open farmland under a thunderstorm (the object stays in its real-world place).
+Visible German text: exactly "über 10 km" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 08.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 9 VON 71
+Bildauftrag: Side-view atmospheric cross-section: storm cloud on top, a jagged lightning channel to the ground, and a vertical dimension line beside it running from cloud to ground.
+Presentation: diagram.
+Setting: side-view cross-section of the atmosphere (the object stays in its real-world place).
+Visible German text: exactly "4–10 km" and "Blitzkanal" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 09.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 10 VON 71
+Bildauftrag: Laboratory spark gap on a lab bench: two polished metal spheres facing each other with a clear air gap between them and no spark yet.
+Presentation: experiment.
+Setting: high-voltage lab bench (the object stays in its real-world place).
+Visible German text: exactly "Luft" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 10.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 11 VON 71
+Bildauftrag: Macro view of a cut electrical cable on a workbench: shiny copper strands inside a thick plastic insulation sleeve.
+Presentation: macro.
+Setting: electrician workbench with a cut cable (the object stays in its real-world place).
+Visible German text: exactly "Isolierung" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 11.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 12 VON 71
+Bildauftrag: One frame comparison: a huge lightning channel descending from far above, ending at a car wheel where only a thin rubber tire separates the rim from the road.
+Presentation: comparison.
+Setting: roadside during a storm (the object stays in its real-world place).
+Visible German text: exactly "Kilometer Luft" and "Zentimeter Gummi" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 12.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 13 VON 71
+Bildauftrag: Two engineers with natural faces stand behind a safety barrier in a large high-voltage test hall, watching a bright artificial discharge from a tall impulse generator strike the roof of a parked test car.
+Presentation: human-action.
+Setting: high-voltage test hall (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 13.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 14 VON 71
+Bildauftrag: Close-up of a car tire sidewall with a thin dark scorched track running straight across the rubber from the rim down to the floor.
+Presentation: evidence.
+Setting: test hall floor beside the test car (the object stays in its real-world place).
+Visible German text: exactly "Brandspur" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 14.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 15 VON 71
+Bildauftrag: Side view of a test car wheel on a metal floor plate in a test hall: a bright short electric arc bridges from the steel wheel arch along the outside of the tire to the floor plate, one arrow showing the path.
+Presentation: process.
+Setting: metal floor plate of the test hall (the object stays in its real-world place).
+Visible German text: exactly "Lichtbogen" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 15.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILDSCHRITT 1 ABGESCHLOSSEN. OHNE ZWISCHENSTOPP direkt mit BILDSCHRITT 2 fortfahren.
+
+BILDSCHRITT 2/5 — BILDER 16 BIS 29
+====================================================
+Erzeuge genau 14 finale statische Bilder in dieser Reihenfolge. Pro Bildauftrag ein angenommenes Bild; Fehlversuche verwerfen.
+
+BILD 16 VON 71
+Bildauftrag: Top-down view of a car in a rain-wet parking lot: the four tires shown greyed out, the metal body shell softly highlighted in muted blue.
+Presentation: top-down.
+Setting: parking lot seen from above (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 16.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 17 VON 71
+Bildauftrag: Historic London street scene in 1836: the columned facade of the Royal Institution building, horse carriages and pedestrians with natural faces in period clothing.
+Presentation: environment.
+Setting: London street in 1836 (the object stays in its real-world place).
+Visible German text: exactly "1836 · London" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 17.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 18 VON 71
+Bildauftrag: Inside a curved wooden lecture theatre of the 1830s, Michael Faraday with a natural face points at a large wooden cube frame while two workers fit the beams together.
+Presentation: human-action.
+Setting: Royal Institution lecture theatre in 1836 (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 18.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 19 VON 71
+Bildauftrag: Clean technical side view of the cube frame with a dimension line along one edge and a standing man beside it for scale, the cube more than twice his height.
+Presentation: diagram.
+Setting: Royal Institution lecture theatre in 1836 (the object stays in its real-world place).
+Visible German text: exactly "3,7 m" as one small supporting label, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 19.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 20 VON 71
+Bildauftrag: Cutaway of one corner of the cube wall showing the layers: wooden frame, a net of copper wires, paper covering and bands of tin foil connecting everything.
+Presentation: cutaway.
+Setting: Royal Institution lecture theatre in 1836 (the object stays in its real-world place).
+Visible German text: exactly "Kupferdraht" and "Zinnfolie" and "Holzrahmen" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 20.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 21 VON 71
+Bildauftrag: A large 1830s glass-plate electrostatic machine beside the foil-covered cube, a brass conductor leading to the outer wall, one arrow showing charge flowing onto the outside.
+Presentation: process.
+Setting: beside the cube in the lecture hall (the object stays in its real-world place).
+Visible German text: exactly "Ladung" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 21.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 22 VON 71
+Bildauftrag: The foil-covered cube standing in a dim lecture hall, bright sparks and violet brush discharges darting off every part of its outer surface.
+Presentation: environment.
+Setting: dim lecture hall at night (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 22.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 23 VON 71
+Bildauftrag: Michael Faraday with a natural, calm face steps through a small door into the foil-covered cube, faint sparks flickering on the outside wall.
+Presentation: human-action.
+Setting: entrance of the foil-covered cube (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 23.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 24 VON 71
+Bildauftrag: Close view of a glass gold-leaf electrometer on a small wooden table inside the dark cube, a lit candle beside it, the two thin gold leaves hanging straight down.
+Presentation: macro.
+Setting: inside the dark foil cube (the object stays in its real-world place).
+Visible German text: exactly "Goldblatt" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 24.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 25 VON 71
+Bildauftrag: Two gold-leaf electrometers side by side: on the left the leaves spread apart in a V shape, on the right the leaves hang straight down.
+Presentation: before-after.
+Setting: inside the dark foil cube (the object stays in its real-world place).
+Visible German text: exactly "geladen" and "im Würfel" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 25.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 26 VON 71
+Bildauftrag: Cross-section through the cube: sparks crackling along the outer wall, inside Faraday with a natural face sits calmly reading his instruments by candlelight.
+Presentation: cutaway.
+Setting: cross-section of the foil cube (the object stays in its real-world place).
+Visible German text: exactly "außen" and "innen" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 26.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 27 VON 71
+Bildauftrag: An old leather-bound laboratory journal open on a wooden desk with a quill pen, the page showing only a small hand-drawn sketch of a cube, no readable writing.
+Presentation: evidence.
+Setting: Faraday's study desk (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 27.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 28 VON 71
+Bildauftrag: Clean schematic of a wire-mesh cage drawn in perspective on a physics lab board, small charge symbols only on the outside of the mesh.
+Presentation: schematic.
+Setting: school physics lab (the object stays in its real-world place).
+Visible German text: exactly "Faradayscher Käfig" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 28.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 29 VON 71
+Bildauftrag: Side-by-side comparison: Faraday's foil cube on the left and a modern hatchback on the right, both with their conductive outer shell highlighted in the same muted blue.
+Presentation: comparison.
+Setting: split view of a lecture hall and a modern street (the object stays in its real-world place).
+Visible German text: exactly "Faradays Würfel" and "Karosserie" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 29.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILDSCHRITT 2 ABGESCHLOSSEN. OHNE ZWISCHENSTOPP direkt mit BILDSCHRITT 3 fortfahren.
+
+BILDSCHRITT 3/5 — BILDER 30 BIS 43
+====================================================
+Erzeuge genau 14 finale statische Bilder in dieser Reihenfolge. Pro Bildauftrag ein angenommenes Bild; Fehlversuche verwerfen.
+
+BILD 30 VON 71
+Bildauftrag: Simple diagram on a lab board: two negative charge spheres with arrows pointing away from each other.
+Presentation: diagram.
+Setting: school physics lab (the object stays in its real-world place).
+Visible German text: exactly "Abstoßung" as one small supporting label, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 30.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 31 VON 71
+Bildauftrag: A flat metal plate on a lab bench with small charge symbols spreading from the centre towards the edges, short arrows showing the outward movement.
+Presentation: process.
+Setting: metal sheet on a lab bench (the object stays in its real-world place).
+Visible German text: exactly "Ladung" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 31.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 32 VON 71
+Bildauftrag: Cutaway of a hollow metal sphere on a demonstration stand: charge symbols sit only on the outer surface, the inside is empty.
+Presentation: cutaway.
+Setting: physics lab demonstration stand (the object stays in its real-world place).
+Visible German text: exactly "Ladung außen" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 32.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 33 VON 71
+Bildauftrag: Diagram of the hollow sphere interior: a small test charge in the centre with equal arrows from opposite sides pointing at it, cancelling out.
+Presentation: diagram.
+Setting: physics lab demonstration stand (the object stays in its real-world place).
+Visible German text: exactly "Kräfte heben sich auf" as one small supporting label, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 33.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 34 VON 71
+Bildauftrag: Schematic of a closed metal shell with curved electric field lines all around the outside and a clean empty interior without any lines.
+Presentation: schematic.
+Setting: school physics lab (the object stays in its real-world place).
+Visible German text: exactly "Feld" and "innen: kein Feld" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 34.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 35 VON 71
+Bildauftrag: In a car factory body shop, two workers with natural faces inspect a bare unpainted steel car body shell on an assembly line.
+Presentation: human-action.
+Setting: car factory body shop (the object stays in its real-world place).
+Visible German text: exactly "Karosserie" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 35.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 36 VON 71
+Bildauftrag: Side-view diagram of an open landscape with a motorway: a lightning leader descending from the sky, and a highlighted zone just above the ground where it chooses its target.
+Presentation: diagram.
+Setting: open landscape with a motorway (the object stays in its real-world place).
+Visible German text: exactly "letzte 10–100 m" as one small supporting label, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 36.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 37 VON 71
+Bildauftrag: A lightning bolt hits the roof of a parked car at a motorway rest area in heavy rain, bright point of impact on the roof.
+Presentation: environment.
+Setting: motorway rest area in a storm (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 37.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 38 VON 71
+Bildauftrag: Side-view technical drawing of a car with semi-transparent body: bold arrows run from the roof along the pillars and door sills down towards the wheels.
+Presentation: diagram.
+Setting: car side view on a road (the object stays in its real-world place).
+Visible German text: exactly "Dach" and "Säule" and "Blitzstrom" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 38.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 39 VON 71
+Bildauftrag: Comparison of two conductors: a thick steel strip with a wide bright current arrow and a human forearm silhouette with only a thin faint arrow.
+Presentation: comparison.
+Setting: technical comparison board (the object stays in its real-world place).
+Visible German text: exactly "Blech" and "Körper" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 39.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 40 VON 71
+Bildauftrag: Top-down view of a car on a wet road: bright current arrows run around the outer edge of the roof and body, the seats in the middle stay dark and calm.
+Presentation: top-down.
+Setting: car seen from above on a road (the object stays in its real-world place).
+Visible German text: exactly "Strompfad" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 40.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 41 VON 71
+Bildauftrag: Cross-section through a wheel on wet asphalt: steel rim, tire and road, with a bright arc running along the outside of the tire from the wheel arch into the asphalt.
+Presentation: cutaway.
+Setting: wheel at road level in rain (the object stays in its real-world place).
+Visible German text: exactly "Lichtbogen" and "Boden" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 41.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 42 VON 71
+Bildauftrag: Inside view of a car during a strike: a driver with a natural, calm face sits upright, thin bright current lines visible only along the roof frame and pillars outside the cabin.
+Presentation: human-action.
+Setting: inside a car cabin during a thunderstorm (the object stays in its real-world place).
+Visible German text: exactly "Blitzstrom" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 42.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 43 VON 71
+Bildauftrag: Close detail of a car side window with its metal door frame surrounding the glass, raindrops on the glass.
+Presentation: macro.
+Setting: car door window frame (the object stays in its real-world place).
+Visible German text: exactly "Metallrahmen" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 43.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILDSCHRITT 3 ABGESCHLOSSEN. OHNE ZWISCHENSTOPP direkt mit BILDSCHRITT 4 fortfahren.
+
+BILDSCHRITT 4/5 — BILDER 44 BIS 57
+====================================================
+Erzeuge genau 14 finale statische Bilder in dieser Reihenfolge. Pro Bildauftrag ein angenommenes Bild; Fehlversuche verwerfen.
+
+BILD 44 VON 71
+Bildauftrag: Schematic wireframe of a car body drawn as a metal cage, the window openings left open, all frame members joined in one continuous conductive loop.
+Presentation: schematic.
+Setting: technical drawing of a car body (the object stays in its real-world place).
+Visible German text: exactly "leitende Hülle" and "Fenster" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 44.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 45 VON 71
+Bildauftrag: Night view over hilly countryside with several lightning bolts hitting the ground at once in the distance, a lit village below.
+Presentation: environment.
+Setting: hilly countryside at night in a storm (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 45.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 46 VON 71
+Bildauftrag: A lightning detection antenna on a mast in a meadow, next to it a small shelter with an open door showing a monitor full of tiny strike dots.
+Presentation: evidence.
+Setting: lightning detection station in a meadow (the object stays in its real-world place).
+Visible German text: exactly "316.000 Einschläge" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 46.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 47 VON 71
+Bildauftrag: A small Bavarian town with a church tower and gabled roofs under a heavy thunderstorm, one lightning bolt hitting the hills behind it.
+Presentation: environment.
+Setting: small Allgäu town under a storm (the object stays in its real-world place).
+Visible German text: exactly "Memmingen" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 47.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 48 VON 71
+Bildauftrag: Top-down view of a busy motorway in light rain with many cars, a single distant lightning bolt hitting an empty field beside the road.
+Presentation: top-down.
+Setting: motorway seen from above (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 48.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 49 VON 71
+Bildauftrag: An open convertible driving on a country road, a dark storm front approaching, the driver with a natural face looking up at the sky.
+Presentation: human-action.
+Setting: country road with an approaching storm (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 49.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 50 VON 71
+Bildauftrag: Cutaway of a closed convertible soft top: the fabric partly peeled back to reveal the metal bows and the windscreen frame connected to the body.
+Presentation: cutaway.
+Setting: parked convertible in the rain (the object stays in its real-world place).
+Visible German text: exactly "Spriegel" and "Scheibenrahmen" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 50.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 51 VON 71
+Bildauftrag: Close-up of convertible roof fabric with a small dark scorch mark next to a seam, the metal bow faintly visible beneath.
+Presentation: macro.
+Setting: convertible soft top close-up (the object stays in its real-world place).
+Visible German text: exactly "Brandfleck" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 51.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 52 VON 71
+Bildauftrag: Two relaxed people with natural faces sit inside a convertible with the soft top fully closed, rain running down the windows, a distant lightning flash outside.
+Presentation: human-action.
+Setting: parking bay with a closed convertible in the rain (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 52.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 53 VON 71
+Bildauftrag: Two convertibles side by side in cutaway: the left roof with metal bows forming a closed frame, the right roof with fabric only and no metal inside.
+Presentation: before-after.
+Setting: two convertibles side by side in a garage (the object stays in its real-world place).
+Visible German text: exactly "mit Metall" and "ohne Metall" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 53.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 54 VON 71
+Bildauftrag: A white caravan made of glass-fibre plastic on a campsite under a dark thunderstorm sky, no metal frame visible.
+Presentation: environment.
+Setting: campsite in a thunderstorm (the object stays in its real-world place).
+Visible German text: exactly "Kunststoff" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 54.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 55 VON 71
+Bildauftrag: Cutaway of an electric car parked at a charging bay, showing the flat high-voltage battery pack in the floor beneath the cabin.
+Presentation: cutaway.
+Setting: electric car at a charging bay (the object stays in its real-world place).
+Visible German text: exactly "Hochvolt-Batterie" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 55.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 56 VON 71
+Bildauftrag: An electric car and a petrol car parked side by side in the rain, both with their metal body shell highlighted in the same muted blue.
+Presentation: comparison.
+Setting: parking lot in the rain (the object stays in its real-world place).
+Visible German text: exactly "E-Auto" and "Verbrenner" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 56.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 57 VON 71
+Bildauftrag: A motorcyclist with open visor and a natural, alert face pulls over onto the shoulder of a country road as lightning flashes in the distance.
+Presentation: human-action.
+Setting: country road shoulder in a storm (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 57.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILDSCHRITT 4 ABGESCHLOSSEN. OHNE ZWISCHENSTOPP direkt mit BILDSCHRITT 5 fortfahren.
+
+BILDSCHRITT 5/5 — BILDER 58 BIS 71
+====================================================
+Erzeuge genau 14 finale statische Bilder in dieser Reihenfolge. Pro Bildauftrag ein angenommenes Bild; Fehlversuche verwerfen.
+
+BILD 58 VON 71
+Bildauftrag: A bicycle and a motorcycle parked in front of a village house, the open doorway of the building offering shelter from heavy rain.
+Presentation: environment.
+Setting: doorway of a village building (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 58.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 59 VON 71
+Bildauftrag: Side-view diagram on a roadside: a person with a natural face crouching low on the asphalt, a parked motorcycle at a distance, a dimension line between them.
+Presentation: diagram.
+Setting: roadside asphalt (the object stays in its real-world place).
+Visible German text: exactly "mind. 3 m" as one small supporting label, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 59.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 60 VON 71
+Bildauftrag: A car stopped on a motorway hard shoulder after a strike, a thin wisp of smoke from a front tire, wet road reflecting the grey sky.
+Presentation: environment.
+Setting: motorway hard shoulder after the rain (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 60.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 61 VON 71
+Bildauftrag: Cutaway behind a car dashboard showing control units and wiring, one control unit glowing warning red, the infotainment display dark.
+Presentation: cutaway.
+Setting: car dashboard (the object stays in its real-world place).
+Visible German text: exactly "Elektronik" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 61.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 62 VON 71
+Bildauftrag: A startled driver with a natural face squints at a blinding flash ahead on a highway, both hands jerking the steering wheel.
+Presentation: human-action.
+Setting: inside a car cabin on a highway (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 62.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 63 VON 71
+Bildauftrag: A city intersection in heavy rain with switched-off dark traffic lights, cars waiting with headlights on.
+Presentation: environment.
+Setting: city intersection in heavy rain (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 63.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 64 VON 71
+Bildauftrag: Top-down view of a car parked alone on an open rest area in heavy rain, away from trees and light poles.
+Presentation: top-down.
+Setting: motorway rest area seen from above (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 64.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 65 VON 71
+Bildauftrag: Close view inside a car: a hand pulled back and resting on the lap, clearly away from the metal door frame and handle.
+Presentation: macro.
+Setting: inside a car door panel (the object stays in its real-world place).
+Visible German text: exactly "Metallteile" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 65.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 66 VON 71
+Bildauftrag: Cutaway of a car being struck on a rainy night road: the lightning current running along the outside of the body, the cabin inside shown calm and dark.
+Presentation: cutaway.
+Setting: rainy country road at night (the object stays in its real-world place).
+Visible German text: exactly "30.000 °C" and "20.000 A" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 66.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 67 VON 71
+Bildauftrag: A relaxed driver with a natural face sits with hands in the lap, watching a lightning flash through the rain-covered windshield.
+Presentation: human-action.
+Setting: inside a car cabin during a thunderstorm (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 67.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 68 VON 71
+Bildauftrag: Side view of a car: the tires shown greyed out, the metal body shell highlighted in muted blue with a check mark shape beside it.
+Presentation: comparison.
+Setting: technical comparison board (the object stays in its real-world place).
+Visible German text: exactly "Reifen" and "Karosserie" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 68.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 69 VON 71
+Bildauftrag: Two side-by-side panels on a stormy roadside: on the left a person with a natural face sits inside the car with the metal shell highlighted, on the right the same person stands outside in the rain without any shell around them.
+Presentation: before-after.
+Setting: roadside in a thunderstorm (the object stays in its real-world place).
+Visible German text: exactly "im Auto" and "draußen" as small supporting labels, spelled exactly, nothing else.
+Budget: max 4 important elements, max 5 labels, max 2 panels, max 4 arrows, no headline.
+Speichern als 69.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 70 VON 71
+Bildauftrag: Michael Faraday with a natural face sits at a small table inside the foil cube writing notes by candlelight, faint sparks visible through a gap in the wall.
+Presentation: human-action.
+Setting: inside the dark foil cube (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 70.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 71 VON 71
+Bildauftrag: A car parked on a rest area at dusk after a storm, the clouds breaking up, a last distant lightning flash on the horizon, the driver inside calm.
+Presentation: environment.
+Setting: motorway rest area after the storm (the object stays in its real-world place).
+Visible text: none. The image contains no letters, words or numbers.
+Budget: max 3 important elements, max 3 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 71.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILDSCHRITT 5 ABGESCHLOSSEN. Erst jetzt aufräumen und danach den GESAMTABSCHLUSS melden.
+
+PHASE 3 – FINALE ASSET-BEREINIGUNG
+-----------------------------------
+1. Genau EINE finale Google-Flow-Sammlung namens „warum-schutzt-dich-dein-auto-vor-dem-blitz-assets-final“ verwenden.
+2. Dort nur die finalen Szenenbilder sammeln. 00-thumbnail-final getrennt nach 05-export exportieren; niemals als Videobild verwenden.
+3. Die zwei nicht gewählten Cover, Zwischenstände, Fehlversuche, Duplikate und verworfene Varianten entfernen.
+4. Reihenfolge und Dateinamen 01.png bis 71.png prüfen.
+5. Den Abschluss erst melden, wenn die Sammlung nur finale Assets enthält.
