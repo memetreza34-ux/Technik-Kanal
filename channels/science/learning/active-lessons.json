@@ -52,6 +52,50 @@
       "action": "Vor jedem Video ein klar überprüfbares Titel-Thumbnail-Hook-Versprechen und eine Hypothese mit Zielmetrik festlegen; nach Veröffentlichung messen."
     },
     {
+      "id": "qa-004",
+      "priority": 1,
+      "status": "active",
+      "area": "script-engagement",
+      "evidenceLevel": "verified-script-measurement-and-competitor-search",
+      "source": "gehirn/ANALYSE-2026-10-18.md",
+      "observation": "Stahlschiff-Skript: 0 konkrete Zahlen, 80 % der Szenen mit genau 2 Sätzen. Steckdose: 9 Absicherungswörter, ~5 Minuten ohne Frage. Reine Physik-Erklärer zur selben Frage 66–803 Aufrufe, Story-/Zahl-Videos 10.000–40.000.",
+      "action": "Hook-Anker (Zahl/Ereignis/Ort/Person/Paradox) in den ersten 80 Wörtern, ≥2 belegte Zahlen pro 1000 Wörter, ≤3 Zahlen pro 120 Wörter, ≤0,8 Absicherungswörter pro 100 Wörter, ≤60 % Szenen mit genau 2 Sätzen, spätestens alle 240 Wörter eine offene Frage.",
+      "enforcedBy": [
+        "scripts/lib/science-script-engagement.mjs",
+        "scripts/science-script-qa.mjs",
+        "scripts/test-science-quality-v2.mjs"
+      ]
+    },
+    {
+      "id": "qa-005",
+      "priority": 1,
+      "status": "active",
+      "area": "title-packaging",
+      "evidenceLevel": "verified-competitor-search",
+      "source": "gehirn/ANALYSE-2026-10-18.md",
+      "observation": "„Wie kommt Strom in deine Steckdose?“ konkurriert wortgleich mit Die Maus, simpleclub, Woozle Goozle und E.ON (138.000–318.000 Aufrufe); Wissonaut 106 Aufrufe nach 6 Tagen.",
+      "action": "Vor dem Skript npm run science:title-check; bei „besetzt“ oder „umkämpft“ Titel mit Zahl, Ereignis oder Irrtum statt Lexikonfrage.",
+      "enforcedBy": [
+        "scripts/science-title-check.mjs",
+        "scripts/lib/science-title-check.mjs"
+      ]
+    },
+    {
+      "id": "qa-006",
+      "priority": 1,
+      "status": "active",
+      "area": "scene-image-fit",
+      "evidenceLevel": "verified-video-frame-review",
+      "source": "gehirn/ANALYSE-2026-10-18.md",
+      "observation": "Steckdose: gleiche Landschaft in ~20 von 41 Bildern, Schutzgeräte auf einer Wiese. Schiff: Kraftpfeile und Vergleiche ohne Label; Bild 1 zeigte nicht den Hook-Widerspruch.",
+      "action": "setting pro Szene im Flow-Plan, gleiche Umgebung ≤3-mal hintereinander und ≤30 %, Pfeil-/Mess-/Vergleichsbilder mit ≥1 deutschem Label, hookAnchor.firstImage im Bildauftrag von Bild 1.",
+      "enforcedBy": [
+        "scripts/lib/science-scene-image-rules.mjs",
+        "scripts/science-creative-qa.mjs",
+        "scripts/test-science-quality-v2.mjs"
+      ]
+    },
+    {
       "id": "hyp-002",
       "priority": 2,
       "status": "active",

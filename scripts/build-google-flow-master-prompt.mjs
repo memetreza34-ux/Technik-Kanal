@@ -59,6 +59,7 @@ export const buildGoogleFlowMasterPrompt = ({plan, flowPlan, config, thumbnailPr
     const primaryMotif = normalize(entry.primaryMotif);
     if (!visualType || /ungeplant|tbd|placeholder/.test(visualType)) throw new Error(`${scene.id}: visualType ist noch nicht final geplant.`);
     if (!primaryMotif || /ungeplant|tbd|placeholder/.test(primaryMotif)) throw new Error(`${scene.id}: primaryMotif ist noch nicht final geplant.`);
+    if (plan.qualityRulesVersion && /^(|ungeplant|tbd|placeholder)$/i.test(String(entry.setting ?? '').trim())) throw new Error(`${scene.id}: setting (wo spielt das Bild?) ist noch nicht geplant.`);
     if (previousVisualType && previousVisualType === visualType) throw new Error(`${scene.id}: derselbe visualType darf nicht direkt hintereinander dominieren.`);
     previousVisualType = visualType;
     visualTypes.add(visualType);

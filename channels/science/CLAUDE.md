@@ -37,6 +37,8 @@ Beim Finish Bilder/Voice aus `DATEIEN-HIER-REIN` sicher importieren. Keine fehle
 
 # Wissenschaftskanal – Arbeitsregeln
 
+> **Neues Video:** Bei „Mach ein Video über …“ den Skill `wissonaut-video` nutzen bzw. `gehirn/VIDEO-AUTOMATIK.md` Schritt für Schritt abarbeiten.
+
 Vor Änderungen zuerst lesen:
 
 1. `gehirn/VERBESSERUNGSSYSTEM.md` (Priorität 1)

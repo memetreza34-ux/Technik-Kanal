@@ -100,6 +100,8 @@ export const ScenePlan = z.object({
   plannedFrames: z.number().int().positive().optional(),
   durationSeconds: z.number().positive().optional(),
   alignment: z.object({method:nonEmpty,matchRatio:z.number().min(0).max(1),generatedAt:nonEmpty}).optional(),
+  qualityRulesVersion: z.string().optional(),
+  hookAnchor: z.object({type: nonEmpty, text: nonEmpty, firstImage: nonEmpty}).optional(),
 });
 
 export const Asset = z.object({

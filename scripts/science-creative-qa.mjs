@@ -6,6 +6,8 @@ import {electricalProjectPaths} from './lib/electrical-project-structure.mjs';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
 import {evaluateScienceVisualPolicy} from './lib/science-visual-policy.mjs';
 import {FLOW_PROMPT_VERSION,findFlowPromptLeaks,flowSceneBrief} from './lib/science-flow-prompt.mjs';
+import {analyzeSceneImageRules} from './lib/science-scene-image-rules.mjs';
+import {QUALITY_RULES_VERSION} from './lib/science-script-engagement.mjs';
 
 const [projectArg] = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
 if (!projectArg) throw new Error('Nutzung: npm run science:creative-qa -- <video-ordner>');
@@ -67,6 +69,11 @@ else {
 }
 
 const flowEntries = Array.isArray(flowPlan?.scenes) ? flowPlan.scenes : [];
+
+// Bild passt zur Szene (qualitaet-v2): Pflicht für neue Videos, Hinweis für ältere Videos.
+const rawPlan = JSON.parse(fs.readFileSync(paths.scenePlan,'utf8'));
+const strictQuality = rawPlan.qualityRulesVersion === QUALITY_RULES_VERSION;
+if (flowPlan) for (const problem of analyzeSceneImageRules({plan:rawPlan,flowPlan,scenePrompts:promptFiles}).problems) (strictQuality ? errors : warnings).push(`Bild passt zur Szene: ${problem}`);
 const stepCount = Number(config.visuals?.flow?.imageProductionSteps ?? 5);
 const diversity = config.visuals?.diversity ?? {};
 let distinctVisualTypes = new Set();

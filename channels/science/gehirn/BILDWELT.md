@@ -39,6 +39,17 @@ Bevor Bilder erstellt werden, pro Beat notieren: **Was genau soll der Zuschauer 
 4. »Ein Stromkreis schließt sich«: übersichtlicher Schaltplan und passendes 2.5D-Bauteil, markierte Leitungsführung statt beliebiger Kabeldekoration.
 5. »Eine Kältemaschine transportiert Wärme«: vierstationiges Prozessschema mit passend gerichteten Pfeilen und verständlichen deutschen Kurzlabels.
 
+## Bild passt zur Szene – Pflicht für neue Videos (`qualitaet-v2`)
+
+Gesehen in den ersten Langvideos: Bei der Steckdose stand dieselbe Hügellandschaft in ~20 von 41 Bildern, und Stromzähler, LS- und FI-Schalter standen auf einer Wiese statt im Zählerschrank. Beim Schiff waren Auftrieb, Gewicht und verdrängtes Wasser graue Würfel und Pfeile ohne ein einziges Label. Bild 1 zeigte einen ruhigen Frachter statt des Widerspruchs aus dem Hook.
+
+`science:creative-qa` prüft automatisch (Fehler bei `qualityRulesVersion: qualitaet-v2`, sonst Hinweis):
+
+1. **Ort planen:** Jede Szene hat im Flow-Plan ein `setting` (englisch, z. B. „inside a home fuse box“, „harbor quay“, „school lab bench“). Geräte stehen an ihrem echten Ort. Der Flow-Prompt übernimmt das als `Setting:`-Zeile.
+2. **Umgebung nicht endlos wiederholen:** dieselbe Umgebung höchstens 3-mal hintereinander und in höchstens 30 % der Bilder.
+3. **Pfeile, Messungen und Vergleiche beschriften:** Diagramme, Vergleiche, Messungen und jedes Bild mit Kraftpfeilen brauchen mindestens 1 kurzes deutsches Label („Auftrieb“, „Gewicht“, „verdrängtes Wasser“).
+4. **Bild 1 zeigt den Hook:** `hookAnchor.firstImage` steht wörtlich im Bildauftrag von Bild 1.
+
 ## Verbindlicher Ablauf
 
 1. Erst prüfen, ob Fachinhalt und Hook stimmen, dann expliziten visuellen Erklärzweck pro Beat festhalten.

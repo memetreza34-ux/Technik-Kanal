@@ -101,7 +101,7 @@ Ohne gültiges Informationsbudget darf der Flow-Masterprompt nicht gebaut werden
 Der Masterprompt wird ausschließlich mit `npm run science:flow-master -- "<video-ordner>"` erzeugt, nie von Hand geschrieben. Grund: Im Stahlschiff-Video standen „27 — MECHANISM“, „28-mechanism“ und „36 • DEEPENING“ in fünf fertigen Bildern. Jede Szene begann im alten Prompt mit ihrer Szenen-ID, und der Stilblock stand 46-mal im Prompt (121.000 Zeichen).
 
 - STYLE LOCK, DENSITY LOCK und VISIBLE TEXT LOCK stehen **genau einmal** oben.
-- Pro Szene nur: `BILD n VON N`, `Bildauftrag:` (der Satz hinter `EXACT VISUAL BRIEF —` aus dem Einzelprompt), Darstellungsform, die verlangten Labels, das Budget und `Speichern als NN.png`.
+- Pro Szene nur: `BILD n VON N`, `Bildauftrag:` (der Satz hinter `EXACT VISUAL BRIEF —` aus dem Einzelprompt), Darstellungsform, `Setting:` (aus `setting` im Flow-Plan – wo das Bild spielt, Geräte an ihrem echten Ort), die verlangten Labels, das Budget und `Speichern als NN.png`.
 - **Nie im Masterprompt:** Szenen-IDs (`27-mechanism`), Abschnittsnamen (hook, context, foundation, mechanism, deepening, payoff), Motiv-Slugs, `OUTPUT=…`-Kopfzeilen und der deutsche Sprechtext.
 - Keine Beispielwörter für verbotene Metadaten in den Prompt schreiben – das Bildmodell schreibt sie sonst eher ab.
 - Builder, Übergabe und Creative-QA brechen ab, wenn eine dieser Regeln verletzt ist.

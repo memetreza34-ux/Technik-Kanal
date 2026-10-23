@@ -31,6 +31,10 @@ Premium **Technical Editorial Explainer 2.5D** mit technisch korrekten Querschni
 
 Beim Finish Bilder/Voice aus `DATEIEN-HIER-REIN` sicher importieren. Keine fehlenden Assets generieren oder überspringen, keine bestehenden abweichenden Medien überschreiben. Qualität und kontinuierliche Verbesserung bleiben Priorität 1.
 
+## Neues Video automatisch erstellen
+
+Sagt der Nutzer „Mach ein Video über …“ oder „Neues Video: …“, arbeitet der Agent **`channels/science/gehirn/VIDEO-AUTOMATIK.md`** Schritt für Schritt ab: Titel-Check gegen die YouTube-Konkurrenz, Recherche mit Quellen, spannendes Script mit Hook-Anker, Bildplan mit Ort pro Bild, ein passender Bildprompt pro Szene, alle Prüfungen bis grün, Freigabe des Lernbriefs durch den Nutzer, Phase 1 und GitHub-Link. Claude nutzt dafür den Skill `wissonaut-video`.
+
 # Wissonaut – Agentenregeln
 
 ## Priorität 1: Nach jedem Video messbar besser werden
