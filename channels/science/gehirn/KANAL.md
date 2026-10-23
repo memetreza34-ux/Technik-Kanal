@@ -80,8 +80,8 @@ Verbindlich ist `youtube-6to7min-v1`:
 - 16:9 / 1920×1080 / 30 fps
 - 360–420 Sekunden (6–7 Minuten), 390 Sekunden ideal
 - ungefähr 850–1075 Wörter, 975 ideal
-- 34–50 visuelle Beats, 46 ideal
-- Bildwechsel meist nach 5–9 Sekunden; über 10 Sekunden prüfen, ob ein weiteres Bild nötig ist
+- **Bildzahl individuell pro Video:** so viele Bilder, wie das Script sichtbare Aussagen hat, auch über 100 oder deutlich weniger. Keine feste Zahl. Festlegen mit `npm run science:scenes -- "<video-ordner>" --anzahl=<N>`
+- Bildwechsel meist nach 4–7 Sekunden; über 8 Sekunden prüfen, ob ein weiteres Bild nötig ist (Konkurrenz mit Standbildern: Median 5,4–5,7 s, siehe `gehirn/KONKURRENZ-ANALYSE-2026-10-23.md`)
 - separates 1280×720-Thumbnail mit drei Kandidaten
 - deutsche Voice
 - statische Bildszenen und harte Schnitte
@@ -102,13 +102,16 @@ Die Bildwelt trägt die Erklärung. Remotion ist nur technische Montage- und Ren
 
 Ein visueller Beat entspricht **einer verständlichen visuellen Aussage**, nicht automatisch einem Satz. Ein komplizierter Satz darf mehrere Bilder benötigen; mehrere Sätze dürfen auf einem Bild bleiben, wenn dieselbe Sache erklärt wird.
 
-Remotion darf keine eigenständigen visuellen Erklärungen, Kamerafahrten, Zooms, Prozessanimationen, Partikeleffekte, Parallaxen oder dekorative Bewegung erzeugen.
+Remotion darf keine eigenständigen visuellen Erklärungen, Prozessanimationen, Partikeleffekte, Parallaxen, Rotationen oder Übergangseffekte erzeugen.
+
+**Bewegung und Musik (seit 18.10.2026):** Remotion legt eine **dezente virtuelle Kamera** über jedes Standbild – im Wechsel Zoom rein, Schwenk, Zoom raus, Schwenk (höchstens 4 % Zoom, 1,5 % Schwenk, nie ein leerer Rand). Die Bilder selbst bleiben statisch, Schnitte bleiben hart. Pro Szene abschaltbar mit `"cameraMove": "none"` im Szenenplan (z. B. bei Labels direkt am Bildrand). Dazu optional ein **leiser Musikteppich**: genau eine Datei in `01-script-audio/musik/` plus `QUELLE.txt` (Titel, Künstler, Quelle, Lizenz – empfohlen YouTube Audio Library). Die Pipeline normalisiert sie auf −30 LUFS (Stimme −16 LUFS), schleift sie auf Videolänge und blendet sie ein und aus. Ohne Quellenangabe wird nicht gerendert (Content-ID-Risiko). Grund: 6 Minuten Standbilder ohne Bewegung und Musik waren laut `ANALYSE-2026-10-18.md` das größte Risiko für die Zuschauerbindung. Wirkung ist eine Hypothese (`hyp-002`) und wird mit YouTube-Studio-Daten geprüft.
 
 Zulässig sind nur:
 
-- statische 16:9-Szenenbilder
+- statische 16:9-Szenenbilder mit dezenter virtueller Kamera (Zoom/Schwenk)
 - harte Schnitte zwischen Bildern
 - Voice-over
+- leiser Musikteppich mit Quellenangabe
 - statische kontrollierte Text-Overlays, wenn fachlich notwendig
 - Untertitel ohne Ein-/Ausfluganimation
 - optionale semantische SFX

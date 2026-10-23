@@ -30,8 +30,24 @@ assert.ok(has(flat.problems, /Absicherungswörter/));
 assert.ok(has(flat.problems, /Metronom/));
 assert.ok(has(flat.hints, /Lexikonfrage/));
 
-const list = analyzeScriptEngagement({scenes: [{id: 'a', voiceText: 'Hier liegen 380.000 Volt an. Dann 220.000 Volt. Danach 110.000 Volt. Später 10.000 Volt. Am Ende 400 Volt?'}], hookAnchor: {type: 'zahl', text: '380.000 Volt', firstImage: 'pylon'}});
+const intro = {id: 'intro', voiceText: `Das Netz hat 380.000 Volt. ${'Strom fließt ruhig durch die Leitung im Land. '.repeat(10)}Warum?`};
+const list = analyzeScriptEngagement({scenes: [intro, {id: 'a', voiceText: 'Hier liegen 380.000 Volt an. Dann 220.000 Volt. Danach 110.000 Volt. Später 10.000 Volt. Am Ende 400 Volt?'}], hookAnchor: {type: 'zahl', text: '380.000 Volt', firstImage: 'pylon'}});
 assert.ok(has(list.problems, /Zahlenliste/));
+
+// Zahlenstapel im Hook ist erlaubt (Muster erfolgreicher Kanäle), aber nicht unbegrenzt.
+const stack = analyzeScriptEngagement({scenes: [{id: 'hook', voiceText: '6000 Bäume. 40 Kilometer Tauwerk. 100 Kanonen. Masten so hoch wie ein Hochhaus. Und alles aus Holz. Wie ging das?'}], hookAnchor: {type: 'zahl', text: '6000 Bäume', firstImage: 'oak forest'}});
+assert.ok(!has(stack.problems, /Zahlenliste|Hook mit/), stack.problems.join('\n'));
+const overload = analyzeScriptEngagement({scenes: [{id: 'hook', voiceText: '1 Tonne, 2 Meter, 3 Masten, 4 Decks, 5 Anker, 6 Segel und 7 Kanonen. Warum?'}], hookAnchor: {type: 'zahl', text: '1 Tonne', firstImage: 'ship'}});
+assert.ok(has(overload.problems, /Hook mit 7 Zahlen/));
+
+// Bildtakt: lange Szenen werden als Hinweis gemeldet, eine feste Bildzahl gibt es nicht.
+const slowScene = analyzeScriptEngagement({scenes: [{id: '01-hook', voiceText: '6000 Bäume. Wie ging das?'}, {id: '02-lang', voiceText: 'Das Holz wurde gesägt, getrocknet, gebogen und dann Stück für Stück mit Eisennägeln und Holzdübeln an den Spanten befestigt, bis der Rumpf dicht war.'}], hookAnchor: {type: 'zahl', text: '6000 Bäume', firstImage: 'oak forest'}});
+assert.ok(has(slowScene.hints, /02-lang ~10 s/), slowScene.hints.join('\n'));
+assert.equal(slowScene.metrics.scenesOverReview, 1);
+
+// Vorausdeutung zählt als offene Schleife.
+const foreshadow = analyzeScriptEngagement({scenes: [{id: 'a', voiceText: `${'Das Schiff fährt ruhig durch die Nacht. '.repeat(25)}Zu diesem Zeitpunkt ahnte niemand etwas. ${'Das Schiff fährt ruhig durch die Nacht. '.repeat(25)}Und dann?`}], hookAnchor: {type: 'paradox', text: 'Das Schiff', firstImage: 'ship'}});
+assert.ok(!has(foreshadow.problems, /ohne Frage oder Ankündigung/), foreshadow.problems.join('\n'));
 
 const silent = analyzeScriptEngagement({scenes: [{id: 'a', voiceText: `${'Das Netz verteilt Energie zuverlässig im Land. '.repeat(40)}Und warum?`}], hookAnchor: {type: 'paradox', text: 'Das Netz', firstImage: 'grid'}});
 assert.ok(has(silent.problems, /ohne Frage oder Ankündigung/));

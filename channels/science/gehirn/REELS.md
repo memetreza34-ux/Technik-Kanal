@@ -30,8 +30,8 @@ reels/YYYY-MM-DD_bis_YYYY-MM-DD/NN_Thema/
 - 16:9 / 1920×1080 / 30 fps
 - 360–420 Sekunden (6–7 Minuten), 390 Sekunden ideal
 - ungefähr 850–1075 Wörter, 975 ideal
-- 34–50 visuelle Beats, 46 ideal
-- Bildwechsel meist nach 5–9 Sekunden; über 10 Sekunden prüfen, ob ein weiteres Bild nötig ist
+- **Bildzahl individuell pro Video:** so viele Bilder, wie das Script sichtbare Aussagen hat, auch über 100 oder deutlich weniger. Keine feste Zahl. Festlegen mit `npm run science:scenes -- "<video-ordner>" --anzahl=<N>`
+- Bildwechsel meist nach 4–7 Sekunden; über 8 Sekunden prüfen, ob ein weiteres Bild nötig ist (Konkurrenz mit Standbildern: Median 5,4–5,7 s, siehe `gehirn/KONKURRENZ-ANALYSE-2026-10-23.md`)
 - statische Bildszenen
 - separates 1280×720-Thumbnail
 - drei Thumbnail-Kandidaten
@@ -118,9 +118,9 @@ Das Thumbnail ist **separat vom ersten Szenenbild**.
 
 ## Remotion-Vertrag
 
-Remotion erzeugt keine kreative Bildbewegung. Verboten sind Zoom, Pan, Ken Burns, Parallax, Rotation, Partikel, animierte Diagramme, animierte technische Prozesse und automatische Übergangseffekte.
+Remotion legt nur eine dezente virtuelle Kamera über jedes Standbild (höchstens 4 % Zoom, 1,5 % Schwenk, im Wechsel). Verboten bleiben Parallax, Rotation, Partikel, animierte Diagramme, animierte technische Prozesse und automatische Übergangseffekte.
 
-Zulässig sind statische Bilder, harte Schnitte, Voice-over, Untertitel ohne Bewegungsanimation, statische kontrollierte Overlays, optionale SFX und Export.
+Zulässig sind statische Bilder mit dieser Kamera, harte Schnitte, Voice-over, ein leiser Musikteppich mit Quellenangabe, Untertitel ohne Bewegungsanimation, statische kontrollierte Overlays, optionale SFX und Export.
 
 ## Produktionsreihenfolge
 

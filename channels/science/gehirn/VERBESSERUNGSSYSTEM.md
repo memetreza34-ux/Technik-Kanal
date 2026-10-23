@@ -74,7 +74,7 @@ Wichtig: Thema, Veröffentlichungszeit, Zielgruppe, Traffic-Quelle und Ausspielu
 
 Befehle:
 
-- npm run science:new -- --week=... --slot=01 --title="..." --hook="..." --profile=youtube-6to7min-v1 --scenes=46
+- npm run science:new -- --week=... --slot=01 --title="..." --hook="..." --profile=youtube-6to7min-v1
 - npm run science:learn -- start "VIDEO_ORDNER" (bestehende Dateien nie überschreiben)
 - npm run science:learn -- report "VIDEO_ORDNER" (nach Eintrag neuer Daten wiederholen)
 - npm run validate:science-learning (Regressionstest)

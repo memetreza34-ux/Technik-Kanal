@@ -11,6 +11,18 @@ export type ScienceRuntimeSfx = {
   volume?: number;
 };
 
+// Dezente virtuelle Kamera über dem Standbild (siehe scripts/lib/science-camera-motion.mjs).
+// x/y in Prozent der Bildgröße, scale als Faktor; Werte bleiben innerhalb des Zoom-Rands.
+export type ScienceCameraMove = {
+  type: 'zoom-in' | 'zoom-out' | 'pan-left' | 'pan-right' | 'none';
+  fromScale: number;
+  toScale: number;
+  fromX: number;
+  toX: number;
+  fromY: number;
+  toY: number;
+};
+
 export type ScienceRuntimeScene = {
   id: string;
   title: string;
@@ -19,6 +31,7 @@ export type ScienceRuntimeScene = {
   fromFrame: number;
   toFrame: number;
   imagePath?: string;
+  cameraMove?: ScienceCameraMove;
 };
 
 export type ScienceReelRuntime = {
@@ -31,6 +44,7 @@ export type ScienceReelRuntime = {
   totalFrames: number;
   durationSeconds: number;
   voiceoverPath?: string;
+  musicPath?: string;
   scenes: ScienceRuntimeScene[];
   captions: ScienceRuntimeCaption[];
   sfx: ScienceRuntimeSfx[];

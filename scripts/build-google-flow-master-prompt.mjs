@@ -4,7 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {electricalProjectPaths} from './lib/electrical-project-structure.mjs';
 import {loadElectricalConfig} from './lib/load-electrical-config.mjs';
-import {FLOW_PROMPT_VERSION, STYLE_LOCK, densityLockFor, findFlowPromptLeaks, flowSceneBlock} from './lib/science-flow-prompt.mjs';
+import {FLOW_PROMPT_VERSION, STYLE_LOCK, densityLockFor, findFlowPromptLeaks, flowFileNumber, flowSceneBlock} from './lib/science-flow-prompt.mjs';
 
 const normalize = (value) => String(value ?? '').trim().toLowerCase();
 
@@ -164,7 +164,7 @@ export const buildGoogleFlowMasterPrompt = ({plan, flowPlan, config, thumbnailPr
   lines.push(`1. Genau EINE finale Google-Flow-Sammlung namens „${flowPlan.finalCollectionName}“ verwenden.`);
   lines.push(`2. Dort nur die finalen Szenenbilder sammeln. 00-thumbnail-final getrennt nach ${coverDir} exportieren; niemals als Videobild verwenden.`);
   lines.push('3. Die zwei nicht gewählten Cover, Zwischenstände, Fehlversuche, Duplikate und verworfene Varianten entfernen.');
-  lines.push(`4. Reihenfolge und Dateinamen 01.png bis ${String(total).padStart(2,'0')}.png prüfen.`);
+  lines.push(`4. Reihenfolge und Dateinamen ${flowFileNumber(1, total)}.png bis ${flowFileNumber(total, total)}.png prüfen.`);
   lines.push('5. Den Abschluss erst melden, wenn die Sammlung nur finale Assets enthält.');
 
   const text = `${lines.join('\n')}\n`;

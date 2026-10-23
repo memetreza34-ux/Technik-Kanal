@@ -9,7 +9,7 @@ describe('science config regression', () => {
     expect(long.productionProfile).toBe('youtube-6to7min-v1');
     expect(long.format.durationSeconds).toEqual({min:360,ideal:390,max:420});
     expect(long.script.words).toEqual({min:850,ideal:975,max:1075});
-    expect(long.visuals.beats).toEqual({min:34,ideal:46,max:50});
+    expect(long.visuals.beats).toEqual({individual:true,min:7,max:400,scaffoldStart:56,note:expect.any(String)});
     expect(long.visuals.policyVersion).toBe('science-static-v1');
     expect(() => loadElectricalConfig('unknown-profile')).toThrow();
   });
@@ -19,7 +19,7 @@ describe('science config regression', () => {
     expect(config.productionProfile).toBe('youtube-6to7min-v1');
     expect(config.format.durationSeconds).toEqual({min:360,ideal:390,max:420});
     expect(config.script.words).toEqual({min:850,ideal:975,max:1075});
-    expect(config.visuals.beats).toEqual({min:34,ideal:46,max:50});
+    expect(config.visuals.beats).toEqual({individual:true,min:7,max:400,scaffoldStart:56,note:expect.any(String)});
     expect(config.visuals.diversity.minimumDistinctVisualTypesPerVideo).toBe(7);
   });
 
@@ -42,7 +42,12 @@ describe('science config regression', () => {
     expect(config.visuals.policyVersion).toBe('science-static-v1');
     expect(config.visuals.productionMode).toBe('flow-image-only');
     expect(config.visuals.animationAllowed).toBe(false);
-    expect(config.visuals.cameraMotionAllowed).toBe(false);
+    expect(config.visuals.cameraMotionAllowed).toBe(true);
+    expect(config.visuals.cameraMotion.maxScale).toBeLessThanOrEqual(1.05);
+    expect(config.visuals.cameraMotion.panPercent).toBeLessThanOrEqual(2);
+    expect(config.sound.musicBedAllowed).toBe(true);
+    expect(config.sound.musicBed.targetLufs).toBeLessThanOrEqual(-28);
+    expect(config.sound.musicBed.sourceNoteRequired).toBe(true);
     expect(config.visuals.styleId).toBe('scientific-scene-explainer-v1');
     expect(config.visuals.generatedImageTextPolicy).toBe('controlled-german-only');
     expect(config.visuals.visibleImageLanguage).toBe('de');

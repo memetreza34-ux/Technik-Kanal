@@ -3,7 +3,7 @@
   "channel": "Wissonaut",
   "priority": 1,
   "method": "Evidence-first: qualitative Video-Reviews + YouTube Studio Kennzahlen + kontrollierte Tests",
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-23",
   "lessons": [
     {
       "id": "qa-003",
@@ -93,6 +93,69 @@
         "scripts/lib/science-scene-image-rules.mjs",
         "scripts/science-creative-qa.mjs",
         "scripts/test-science-quality-v2.mjs"
+      ]
+    },
+    {
+      "id": "hyp-002",
+      "priority": 2,
+      "status": "active",
+      "area": "pacing-and-sound",
+      "evidenceLevel": "untested-hypothesis",
+      "source": "gehirn/ANALYSE-2026-10-18.md",
+      "observation": "Die ersten Langvideos liefen 6 Minuten als Standbilder ohne Bewegung und ohne Musik; erfolgreiche Erklärkanäle arbeiten mit bewegten Bildern und Musik. Noch keine eigenen Studio-Daten.",
+      "action": "Dezente virtuelle Kamera (≤4 % Zoom, 1,5 % Schwenk) und leiser Musikteppich (−30 LUFS, mit Quellenangabe). Primärmetrik: durchschnittlich angesehener Anteil und Retention-Dips gegenüber Stahlschiff/Steckdose im gleichen Messfenster vergleichen.",
+      "enforcedBy": [
+        "scripts/lib/science-camera-motion.mjs",
+        "scripts/lib/science-music-bed.mjs",
+        "scripts/prepare_science_reel.mjs",
+        "channels/science/src/ScienceReel.tsx"
+      ]
+    },
+    {
+      "id": "qa-007",
+      "priority": 1,
+      "status": "active",
+      "area": "script-engagement",
+      "evidenceLevel": "verified-competitor-transcript-measurement",
+      "source": "gehirn/KONKURRENZ-ANALYSE-2026-10-23.md",
+      "observation": "10 von 11 messbaren erfolgreichen Videos (Kurzgesagt, Terra X, Simplicissimus, Stahl unter Wasser, Verlorene Schiffe, Stahl und Meer) haben 8–29 Zahlen pro 1000 Wörter; starke Hooks stapeln 4 Zahlen in 15–30 s; Story-Kanäle halten Spannung mit Vorausdeutungen statt Fragen. Wissonaut-Skripte: 0 Zahlen.",
+      "action": "Mindestens 6 belegte Zahlen pro 1000 Wörter, im Hook bis zu 6 Zahlen erlaubt, jede große Zahl mit Größenvergleich; Vorausdeutungen („Zu diesem Zeitpunkt ahnte niemand …“) zählen als offene Schleife.",
+      "enforcedBy": [
+        "scripts/lib/science-script-engagement.mjs",
+        "scripts/science-script-qa.mjs",
+        "scripts/test-science-quality-v2.mjs"
+      ]
+    },
+    {
+      "id": "qa-008",
+      "priority": 1,
+      "status": "active",
+      "area": "title-thumbnail-chapters",
+      "evidenceLevel": "verified-competitor-within-channel-comparison",
+      "source": "gehirn/KONKURRENZ-ANALYSE-2026-10-23.md",
+      "observation": "Innerhalb desselben Kanals holten Titel mit konkretem Widerspruch oder bekanntem Bezug 11- bis 287-mal mehr Aufrufe als allgemeine Titel. Erfolgreiche Thumbnails: 1–3 große Wörter, ein großes Objekt, roter Pfeil/Kreis oder Vorher/Nachher. Vergleichskanäle setzen 3–19 Kapitel; Wissonaut-Captions hatten keine.",
+      "action": "Titel-Formeln um „Bekannter Bezug“ und „Listen-Versprechen“ ergänzen; Thumbnail-Regeln in LONGFORM/VIDEO-AUTOMATIK befolgen; chapterTitle pro Abschnitt setzen, science:finish schreibt die Kapitel in caption.txt.",
+      "enforcedBy": [
+        "scripts/lib/science-title-check.mjs",
+        "scripts/lib/science-chapters.mjs",
+        "scripts/science-chapters.mjs",
+        "scripts/finish_science_reel.mjs"
+      ]
+    },
+    {
+      "id": "hyp-003",
+      "priority": 2,
+      "status": "active",
+      "area": "pacing",
+      "evidenceLevel": "untested-hypothesis",
+      "source": "gehirn/KONKURRENZ-ANALYSE-2026-10-23.md",
+      "observation": "Alle Vergleichsvideos wechseln das Bild schneller als Wissonaut (Median 1,6–6,7 s gegenüber 8,0 s); innerhalb von Stahl unter Wasser ist der Treffer schneller geschnitten (5,4 s) als das typische Video (6,0 s). Noch keine eigenen Studio-Daten.",
+      "action": "Bildzahl individuell aus dem Script: jede sichtbare Aussage ein eigenes Bild, bevorzugt 4–7 s pro Bild, Szenen über ~8 s prüfen (keine feste Zahl, auch über 100 Szenen möglich). Primärmetrik: durchschnittlich angesehener Anteil und Retention-Dips gegenüber Stahlschiff/Steckdose im gleichen Messfenster.",
+      "enforcedBy": [
+        "channels/science/engine/config/youtube-6to7min-v1.json",
+        "scripts/lib/science-scenes.mjs",
+        "scripts/science-scenes.mjs",
+        "scripts/lib/science-script-engagement.mjs"
       ]
     }
   ]

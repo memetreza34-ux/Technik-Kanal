@@ -19,9 +19,11 @@
     "max": 1075
   },
   "visualBeats": {
-    "min": 34,
-    "ideal": 46,
-    "max": 50
+    "individual": true,
+    "min": 7,
+    "max": 400,
+    "scaffoldStart": 56,
+    "note": "Keine feste Bildzahl: so viele Bilder, wie das Script sichtbare Aussagen hat. min/max sind nur technische Grenzen. Anpassen mit npm run science:scenes."
   },
   "narrativeStructure": [
     "hook",
@@ -65,9 +67,9 @@
     "coverInVideoForbidden": true,
     "scene01MustBeIndependent": true,
     "visualBeatPacingSeconds": {
-      "preferredMin": 5,
-      "preferredMax": 9,
-      "reviewIfLongerThan": 10
+      "preferredMin": 4,
+      "preferredMax": 7,
+      "reviewIfLongerThan": 8
     },
     "extraBeatsWhenExplanationChanges": true,
     "diagramComparisonSummaryLabelsMax": 5,

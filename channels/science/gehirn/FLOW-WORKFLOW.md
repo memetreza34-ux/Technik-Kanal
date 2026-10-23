@@ -59,8 +59,8 @@ Normale Szenen:
 - genau eine dominante Erkläridee
 - bevorzugt ein Hauptobjekt
 - höchstens 3 wichtige visuelle Elemente
-- bevorzugt 0–1 kurzes deutsches Label
-- absolut höchstens 2 Labels
+- bevorzugt 0–2 kurze deutsche Labels
+- absolut höchstens 3 Labels (Profil `youtube-6to7min-v1`)
 - höchstens 2 Pfeile
 - höchstens 2 Panels
 - keine große Szenenüberschrift
@@ -71,7 +71,7 @@ Normale Szenen:
 
 Vergleich/Diagramm/Zusammenfassung:
 - höchstens 4 wichtige visuelle Elemente
-- höchstens 3 kurze Labels
+- höchstens 5 kurze Labels
 - höchstens 2 Panels
 - weiterhin genau eine zentrale Aussage
 
@@ -118,7 +118,7 @@ Der Masterprompt wird ausschließlich mit `npm run science:flow-master -- "<vide
 
 ### Visueller Rhythmus
 
-6–7 Minuten: ungefähr 46 Bildbeats statt starrer 41. Wenn zwei Aussagen in einem Satz unterschiedliche Bilder erfordern, Skript/Beat vorab teilen. Bevorzugt 5–9 Sekunden pro Bild; über 10 Sekunden auf sinnvolle Teilung prüfen. Die fünf Bildschritte bleiben gleichmäßig verteilt, ohne Zwischenfreigabe.
+Bildzahl individuell: so viele Bildbeats, wie das Script sichtbare Aussagen hat (`npm run science:scenes`). Wenn zwei Aussagen in einem Satz unterschiedliche Bilder erfordern, Skript/Beat vorab teilen. Bevorzugt 4–7 Sekunden pro Bild; über 8 Sekunden auf sinnvolle Teilung prüfen. Die fünf Bildschritte bleiben gleichmäßig verteilt, ohne Zwischenfreigabe.
 
 ## Phase 2 – genau 5 Bildschritte, ohne Zwischenstopps
 
@@ -258,8 +258,7 @@ Nicht erlaubt:
 - KI-Videoclips
 - Image-to-Video
 - animierte Prozesse
-- Zoom/Pan/Ken-Burns
-- generierte Kamerafahrten
+- generierte Kamerafahrten in Flow (die dezente Kamerabewegung macht ausschließlich Remotion)
 
 ## Bildwelt
 
@@ -271,9 +270,9 @@ Leitregel:
 
 ## Remotion-Grenze
 
-Remotion darf statische Bilder anzeigen, harte Schnitte setzen, Voice-over abspielen, optionale SFX platzieren und rendern.
+Remotion darf statische Bilder mit dezenter virtueller Kamera (höchstens 4 % Zoom, 1,5 % Schwenk) anzeigen, harte Schnitte setzen, Voice-over und einen leisen Musikteppich mit Quellenangabe abspielen, optionale SFX platzieren und rendern.
 
-Remotion darf keine Untertitel/Captions ins finale Video rendern, keine Bewegung aus Standbildern erzeugen, nicht zoomen/schwenken, keine wissenschaftlichen Prozesse animieren und keine Videoclips erwarten.
+Remotion darf keine Untertitel/Captions ins finale Video rendern, keine wissenschaftlichen Prozesse animieren, keine Übergangseffekte erzeugen und keine Videoclips erwarten. Weil Remotion leicht zoomt, wichtige Labels nicht direkt an den Bildrand setzen (2 % Rand bleiben frei).
 
 Remotion darf in Phase 3 **nur vorhandene Phase-2-Assets** verwenden.
 

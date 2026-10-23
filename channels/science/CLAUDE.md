@@ -69,8 +69,8 @@ Leitfrage:
 - 16:9 / 1920×1080 / 30 fps
 - 360–420 Sekunden (6–7 Minuten), 390 Sekunden ideal
 - ungefähr 850–1075 Wörter, 975 ideal
-- 34–50 visuelle Beats, 46 ideal
-- Bildwechsel meist nach 5–9 Sekunden; über 10 Sekunden prüfen, ob ein weiteres Bild nötig ist
+- **Bildzahl individuell pro Video:** so viele Bilder, wie das Script sichtbare Aussagen hat, auch über 100 oder deutlich weniger. Keine feste Zahl. Festlegen mit `npm run science:scenes -- "<video-ordner>" --anzahl=<N>`
+- Bildwechsel meist nach 4–7 Sekunden; über 8 Sekunden prüfen, ob ein weiteres Bild nötig ist (Konkurrenz mit Standbildern: Median 5,4–5,7 s, siehe `gehirn/KONKURRENZ-ANALYSE-2026-10-23.md`)
 - separates 1280×720-Thumbnail mit 3 Kandidaten
 - Google Flow erzeugt ausschließlich statische Bilder
 - keine KI-Videoclips, kein Image-to-Video
@@ -235,9 +235,9 @@ Phase 3 darf ausschließlich die in Phase 2 vom Nutzer abgelegten Dateien lesen,
 
 ## Remotion
 
-Remotion darf finale statische Bilder anordnen, harte Schnitte setzen, Voice-over abspielen, optionale SFX platzieren und rendern.
+Remotion darf finale statische Bilder anordnen, eine dezente virtuelle Kamera (höchstens 4 % Zoom, 1,5 % Schwenk) über jedes Bild legen, harte Schnitte setzen, Voice-over und einen leisen Musikteppich mit Quellenangabe abspielen, optionale SFX platzieren und rendern. Details: `gehirn/KANAL.md` → Bewegung und Musik.
 
-Remotion darf keine Untertitel/Captions ins finale Video rendern, nicht zoomen, schwenken, rotieren, parallaxen oder Ken Burns erzeugen, keine wissenschaftlichen Prozesse animieren und keine Videoclips als Szenenquelle erwarten.
+Remotion darf keine Untertitel/Captions ins finale Video rendern, nicht rotieren oder parallaxen, keine Übergangseffekte erzeugen, keine wissenschaftlichen Prozesse animieren und keine Videoclips als Szenenquelle erwarten.
 
 Remotion/Phase 3 darf ausschließlich bereits vorhandene Phase-2-Bilder verwenden und keine Bildgenerierung oder Ersatzsuche auslösen.
 

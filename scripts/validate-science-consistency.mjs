@@ -15,7 +15,8 @@ const longform=fs.readFileSync(path.join(root,'channels/science/gehirn/LONGFORM.
 const voice=JSON.parse(fs.readFileSync(path.join(root,'channels/science/engine/config/voice-v1.json'),'utf8'));
 const scienceReel=fs.readFileSync(path.join(root,'channels/science/src/ScienceReel.tsx'),'utf8');
 const template=fs.readFileSync(path.join(root,'scripts/lib/create-electrical-scene-plan-template.mjs'),'utf8');
-const newVideo=fs.readFileSync(path.join(root,'scripts/new-science-reel.mjs'),'utf8');
+// Das Gerüst neuer Videos entsteht in new-science-reel.mjs plus der gemeinsamen Vorlage (auch für science:scenes).
+const newVideo=['scripts/new-science-reel.mjs','scripts/lib/create-electrical-scene-plan-template.mjs'].map((file)=>fs.readFileSync(path.join(root,file),'utf8')).join('\n');
 const flowBuilder=fs.readFileSync(path.join(root,'scripts/build-google-flow-master-prompt.mjs'),'utf8');
 const prepareScience=fs.readFileSync(path.join(root,'scripts/prepare_science_reel.mjs'),'utf8');
 const processVoice=fs.readFileSync(path.join(root,'scripts/process_voiceover.mjs'),'utf8');
@@ -30,7 +31,7 @@ if(config.format?.durationSeconds?.ideal!==390) errors.push('Ideale Videolänge 
 if(config.script?.words?.ideal!==975) errors.push('Ideale Skriptlänge muss 975 Wörter sein.');
 if(JSON.stringify(config.script?.narrativeStructure)!==JSON.stringify(['hook','context','foundation','mechanism','deepening','payoff'])) errors.push('Longform-Dramaturgie ist falsch.');
 if(config.script?.rewriteWhenThreeAdjacentBeatsWouldLookSimilar!==true) errors.push('Skript muss bei drei ähnlichen Nachbarbeats umgeschrieben werden.');
-if(config.visuals?.beats?.min!==34||config.visuals?.beats?.ideal!==46||config.visuals?.beats?.max!==50) errors.push('Visuelle Beats müssen 34/46/50 konfiguriert sein.');
+if(config.visuals?.beats?.individual!==true||config.visuals?.beats?.min!==7||config.visuals?.beats?.max!==400||'ideal' in (config.visuals?.beats??{})) errors.push('Bildzahl muss individuell sein (individual: true, nur technische Grenzen 7–400, kein Idealwert).');
 if(config.visuals?.thumbnail?.required!==true||config.visuals?.thumbnail?.candidateCount!==3) errors.push('Drei Thumbnail-Kandidaten müssen vorgeschrieben sein.');
 if(!/Aktiv ist \*\*`youtube-6to7min-v1`\*\*/i.test(longform)||!/Hook.*Kontext.*Grundlage.*Mechanismus.*Vertiefung.*Payoff/is.test(longform)) errors.push('LONGFORM.md dokumentiert Profil/Dramaturgie nicht.');
 if(!/visuell abwechslungsreich/i.test(longform)||!/keine eingebrannten Untertitel/i.test(longform)) errors.push('LONGFORM.md muss Bildvielfalt und subtitle-free festhalten.');
@@ -58,7 +59,10 @@ if(config.captions?.enabled!==false||config.captions?.burnedIn!==false) errors.p
 if(config.captions?.internalTimingAllowed!==true) errors.push('Interne Wortzeiten müssen erlaubt bleiben.');
 if(scienceReel.includes('ScienceCaptions')) errors.push('ScienceReel darf keine eingebrannten Captions rendern.');
 if(config.visuals.policyVersion!=='science-static-v1'||config.visuals.productionMode!=='flow-image-only') errors.push('Visual-Policy/Produktionsmodus falsch.');
-if(config.visuals.animationAllowed!==false||config.visuals.cameraMotionAllowed!==false) errors.push('Animation/Kamerabewegung müssen deaktiviert sein.');
+if(config.visuals.animationAllowed!==false) errors.push('Prozessanimationen müssen deaktiviert bleiben.');
+if(config.visuals.cameraMotionAllowed===true&&(!(config.visuals.cameraMotion?.maxScale<=1.05)||!(config.visuals.cameraMotion?.panPercent<=2))) errors.push('Kamerabewegung muss dezent bleiben (Zoom ≤ 5 %, Schwenk ≤ 2 %).');
+if(config.sound?.musicBedAllowed===true&&(config.sound.musicBed?.sourceNoteRequired!==true||!(config.sound.musicBed?.targetLufs<=-28))) errors.push('Musikteppich braucht Quellenangabe und muss leise bleiben (≤ −28 LUFS).');
+if(!fs.readFileSync(path.join(root,'scripts/prepare_science_reel.mjs'),'utf8').includes('assertMusicSource')) errors.push('Vorbereitung muss die Musikquelle vor dem Rendern prüfen.');
 if(config.visuals.styleId!=='scientific-scene-explainer-v1') errors.push('Aktive Bildwelt falsch.');
 if(config.visuals.fixedBackgroundForbidden!==true) errors.push('Fixer Hintergrund darf nicht erzwungen werden.');
 
