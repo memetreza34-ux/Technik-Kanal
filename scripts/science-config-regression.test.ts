@@ -9,7 +9,7 @@ describe('science config regression', () => {
     expect(long.productionProfile).toBe('youtube-6to7min-v1');
     expect(long.format.durationSeconds).toEqual({min:360,ideal:390,max:420});
     expect(long.script.words).toEqual({min:850,ideal:975,max:1075});
-    expect(long.visuals.beats).toEqual({min:34,ideal:46,max:50});
+    expect(long.visuals.beats).toEqual({min:44,ideal:56,max:64});
     expect(long.visuals.policyVersion).toBe('science-static-v1');
     expect(() => loadElectricalConfig('unknown-profile')).toThrow();
   });
@@ -19,7 +19,7 @@ describe('science config regression', () => {
     expect(config.productionProfile).toBe('youtube-6to7min-v1');
     expect(config.format.durationSeconds).toEqual({min:360,ideal:390,max:420});
     expect(config.script.words).toEqual({min:850,ideal:975,max:1075});
-    expect(config.visuals.beats).toEqual({min:34,ideal:46,max:50});
+    expect(config.visuals.beats).toEqual({min:44,ideal:56,max:64});
     expect(config.visuals.diversity.minimumDistinctVisualTypesPerVideo).toBe(7);
   });
 

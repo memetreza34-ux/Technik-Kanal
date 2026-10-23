@@ -9,7 +9,7 @@ const root = fs.mkdtempSync(path.join(os.tmpdir(), 'science-scaffold-'));
 try {
   for (const relative of ELECTRICAL_REEL_DIRECTORIES) fs.mkdirSync(path.join(root, relative), {recursive: true});
   const plan = createElectricalScenePlanTemplate({slug: 'science-scaffold-test'});
-  if (plan.scenes.length !== 46) throw new Error('Science-Template hat nicht 46 Standard-Beats.');
+  if (plan.scenes.length !== 56) throw new Error('Science-Template hat nicht 56 Standard-Beats.');
   if (plan.productionProfile !== 'youtube-6to7min-v1') throw new Error('youtube-6to7min-v1 fehlt im Scaffold.');
   if (plan.width !== 1920 || plan.height !== 1080) throw new Error('Scaffold ist nicht 1920×1080.');
   if (plan.visualPolicyVersion !== 'science-static-v1') throw new Error('Science-Static-Policy fehlt im Scaffold.');
@@ -20,7 +20,7 @@ try {
   }
   const structure = checkElectricalProjectStructure(root, {requireContent: false});
   if (!structure.ok) throw new Error(`Scaffold-Struktur unvollständig: ${structure.missingDirectories.join(', ')}`);
-  console.log('✓ Science-Scaffold erzeugt 46 statische 16:9-Beats (6–7 Minuten) plus Thumbnail-Struktur.');
+  console.log('✓ Science-Scaffold erzeugt 56 statische 16:9-Beats (6–7 Minuten) plus Thumbnail-Struktur.');
 } finally {
   fs.rmSync(root, {recursive: true, force: true});
 }

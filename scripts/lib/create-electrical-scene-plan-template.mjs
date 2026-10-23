@@ -8,7 +8,7 @@ const sectionForIndex=(index,sceneCount)=>{
   return 'deepening';
 };
 
-export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema',hook='Warum passiert das?',compositionId='ScienceReel',sceneCount=46,productionProfile='youtube-6to7min-v1'})=>{
+export const createElectricalScenePlanTemplate=({slug,title='Wissenschaftsthema',hook='Warum passiert das?',compositionId='ScienceReel',sceneCount=56,productionProfile='youtube-6to7min-v1'})=>{
   const scenes=Array.from({length:sceneCount},(_,index)=>{
     const number=String(index+1).padStart(2,'0');
     const section=sectionForIndex(index,sceneCount);

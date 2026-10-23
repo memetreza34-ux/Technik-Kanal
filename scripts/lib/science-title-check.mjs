@@ -88,5 +88,9 @@ export const titleSuggestions = ({title, hookAnchor}) => {
     {formula: 'Zahl + Widerspruch', example: `${anchor || '[belegte Zahl + Einheit, z. B. „über 200.000 Tonnen Ladung“]'} – und trotzdem …`},
     {formula: 'Konkretes Ereignis', example: `[Bekanntes Ereignis oder Ort]: Was ${topic} damit zu tun hat`},
     {formula: 'Irrtum aufdecken', example: `Das glauben fast alle falsch über ${topic}`},
+    // Konkurrenzanalyse 23.10.2026: „Das echte U-Boot aus «Das Boot» – 5 Dinge, die der Film nicht erzählt“
+    // holte 70.805 Aufrufe bei 518 Abos; das Video desselben Kanals ohne Bezug 4.430.
+    {formula: 'Bekannter Bezug', example: `[Film, Marke oder berühmtes Objekt]: Was über ${topic} kaum jemand weiß`},
+    {formula: 'Listen-Versprechen', example: `5 Dinge über ${topic}, die dir niemand erklärt`},
   ];
 };

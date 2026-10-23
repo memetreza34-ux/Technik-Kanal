@@ -13,8 +13,8 @@ Ziel:
 - 16:9 / 1920×1080 / 30 fps
 - 360–420 Sekunden (6–7 Minuten), 390 Sekunden ideal
 - ungefähr 850–1075 Wörter, 975 ideal
-- 34–50 visuelle Beats, 46 ideal
-- Bildwechsel meist nach 5–9 Sekunden; über 10 Sekunden prüfen, ob ein weiteres Bild nötig ist
+- 44–64 visuelle Beats, 56 ideal
+- Bildwechsel meist nach 4–7 Sekunden; über 8 Sekunden prüfen, ob ein weiteres Bild nötig ist (Konkurrenz mit Standbildern: Median 5,4–5,7 s, siehe `gehirn/KONKURRENZ-ANALYSE-2026-10-23.md`)
 
 Das 2-Minuten-Profil `youtube-2min-v1` (90–150 s, 230–370 Wörter, 12–28 Beats) ist **archiviert**. Es bleibt nur für die Testphasen-Videos vom 28.09.–04.10.2026 ladbar und wird für neue Videos nicht mehr verwendet.
 
@@ -51,11 +51,12 @@ Gemessen an den ersten Langvideos: Das Stahlschiff-Skript hatte **0 konkrete Zah
 | Regel | Grenze |
 |---|---|
 | **Hook-Anker**: konkrete Zahl, Ereignis, Ort, Person oder sichtbares Paradox in `hookAnchor.text` | muss in den ersten 80 Wörtern (~30 s) vorkommen |
-| **Konkrete Zahlen** (Masse, Größe, Rekord, Jahreszahl – mit Quelle) | mindestens 2 pro 1000 Wörter |
-| **Keine Zahlenliste** | höchstens 3 Zahlen in 120 Wörtern |
+| **Konkrete Zahlen** (Masse, Größe, Rekord, Jahreszahl – mit Quelle) | mindestens 6 pro 1000 Wörter (Konkurrenz: 8–29) |
+| **Keine Zahlenliste** | höchstens 3 Zahlen in 120 Wörtern, außerhalb des Hooks |
+| **Zahlenstapel im Hook** | höchstens 6 Zahlen in den ersten 80 Wörtern |
 | **Absicherungswörter** (häufig, normalerweise, beispielsweise, typischerweise, gewöhnlich, in der Regel …) | höchstens 0,8 pro 100 Wörter |
 | **Rhythmus**: Szenen mit genau 2 Sätzen | höchstens 60 %; kurze Schlagsätze, Szenen mit 1 oder 3 Sätzen mischen |
-| **Offene Fragen**: Frage oder Ankündigung („Gleich sehen wir, warum …“) | spätestens alle 240 Wörter (~96 s) |
+| **Offene Fragen**: Frage, Ankündigung („Gleich sehen wir, warum …“) oder Vorausdeutung („Zu diesem Zeitpunkt ahnte niemand …“, „Doch dann …“) | spätestens alle 240 Wörter (~96 s) |
 
 So füllt man `hookAnchor` im Szenenplan:
 
@@ -73,6 +74,11 @@ Gute Hook-Muster:
 - **Zahl + Widerspruch:** „Dieses Schiff trägt über 200.000 Tonnen Ladung – und ein Nagel geht unter. Warum schwimmt es?“ (jede Zahl vorher mit Quelle belegen)
 - **Ereignis:** „1912 galt die Titanic als unsinkbar. Drei Stunden später lag sie am Meeresgrund.“
 - **Irrtum:** „Fast alle glauben, der Motor hält ein Schiff oben. Er hat damit nichts zu tun.“
+- **Szene mit Datum, Uhrzeit, Ort (Cold Open):** mitten in einen echten Moment springen, z. B. „14. April 1912, 23:40 Uhr, Nordatlantik.“ Häufigstes Muster in der Konkurrenzanalyse (5 von 12 Videos).
+- **Zahlenstapel + Kontrast:** drei bis vier belegte Zahlen hintereinander, dann der Bruch („… und alles aus Holz.“).
+- **Person mit Wendepunkt:** ein echter Mensch, an dem das Thema hängt (Erfinder, Ingenieur, Betroffener).
+
+**Größenvergleich:** Jede große Zahl wird sofort greifbar gemacht, mit einem Alltagsobjekt oder einem bekannten Bauwerk („so schwer wie 200.000 Kleinwagen“, „13-mal so hoch wie die Cheops-Pyramide“). Das passende Bild ist dann ein Vergleichsbild (`visualType: comparison`). Muster aus `KONKURRENZ-ANALYSE-2026-10-23.md`.
 
 ## Titel – vor dem Skript prüfen
 
@@ -81,7 +87,23 @@ npm run science:title-check -- "<video-ordner>"
 npm run science:title-check -- "<video-ordner>" --titel="Alternativer Titel"
 ```
 
-Holt die Top-15 der YouTube-Suche, markiert Videos mit fast derselben Frage und schreibt `06-projektdateien/title-check.json`. Ergebnis `besetzt` (große Kanäle mit derselben Frage) oder `umkämpft` (viele gleiche Videos) heißt: **Titel ändern**, nicht die gleiche Lexikonfrage stellen. Formeln: Zahl + Widerspruch, konkretes Ereignis, Irrtum aufdecken. Jede Zahl im Titel braucht eine Quelle in `sources.md`.
+Holt die Top-15 der YouTube-Suche, markiert Videos mit fast derselben Frage und schreibt `06-projektdateien/title-check.json`. Ergebnis `besetzt` (große Kanäle mit derselben Frage) oder `umkämpft` (viele gleiche Videos) heißt: **Titel ändern**, nicht die gleiche Lexikonfrage stellen. Formeln: Zahl + Widerspruch, konkretes Ereignis, Irrtum aufdecken, **bekannter Bezug** (Film, Marke, berühmtes Objekt) und **Listen-Versprechen** („5 Dinge, die …“). Jede Zahl im Titel braucht eine Quelle in `sources.md`.
+
+Belegt durch Vergleiche innerhalb desselben Kanals (`KONKURRENZ-ANALYSE-2026-10-23.md`): „Das echte U-Boot aus «Das Boot» – 5 Dinge, die der Film nicht erzählt“ hatte 16-mal so viele Aufrufe wie „Warum liegt die Bismarck immer noch dort?“, und „… sank in 13 Minuten“ 11-mal so viele wie ein Titel ohne Zahl. Allgemeine Wörter wie „faszinierende Technik“ oder „unglaubliche Ingenieursleistung“ vermeiden.
+
+## Thumbnail
+
+Drei klar verschiedene Kandidaten, danach wählt der Nutzer. Muster der erfolgreichen Thumbnails:
+
+- **1–3 große deutsche Wörter**, höchstens 4. Der Text **ergänzt** den Titel, statt ihn zu wiederholen (Titel „Wie der Auftrieb tonnenschwere Schiffe über Wasser hält“, Thumbnail „Stahl schwimmt“).
+- **Ein Hauptobjekt**, groß (mindestens die Hälfte des Bildes), kontrastreich und farbig. Keine dunkle, flaue Optik.
+- **Roter Pfeil oder Kreis** auf das überraschende Detail, **oder Vorher/Nachher** nebeneinander mit Pfeil.
+- Eine belegte Zahl im Thumbnail ist stark („4.790 METER TIEF“).
+- Schwach ist ein einzelnes Wort ohne Spannung („DAS U-BOOT“).
+
+## Kapitelmarken
+
+An der ersten Szene jedes Abschnitts steht im Szenenplan ein kurzer `chapterTitle` (höchstens 60 Zeichen, spricht den Zuschauer an, z. B. „Warum die Titanic trotzdem sank“). Die erste Szene braucht immer einen. `science:finish` schreibt nach dem Render die Kapitel mit echten Zeitstempeln in `05-export/caption.txt` (manuell: `npm run science:chapters -- "<video-ordner>"`). YouTube zeigt Kapitel nur ab 3 Stück, mit Start bei 0:00 und je mindestens 10 s.
 
 ## Wichtigste Skriptregel: bildklar und bildleicht schreiben
 
@@ -108,7 +130,7 @@ Verbindlich:
 
 **Warnsignal 1:** Drei benachbarte Beats würden dieselbe Hauptkomposition, dasselbe Hauptmotiv oder denselben Hintergrund benötigen.
 
-**Warnsignal 2:** Ein Beat bräuchte mehr als 3 wichtige visuelle Elemente oder mehr als 2 Labels in einer normalen Szene.
+**Warnsignal 2:** Ein Beat bräuchte mehr als 3 wichtige visuelle Elemente oder mehr als 3 Labels in einer normalen Szene.
 
 Dann gilt: **Skript/Beat-Plan ändern, nicht nur den Prompt umformulieren.**
 
@@ -116,7 +138,7 @@ Dann gilt: **Skript/Beat-Plan ändern, nicht nur den Prompt umformulieren.**
 
 Das Cover stellt dieselbe Frage wie der Hook, darf aber in **keinem einzigen Frame der MP4** vorkommen. Der eine gewählte Cover-Gewinner wird ausschließlich als Datei `05-export/cover/00-thumbnail-final.*` bereitgestellt. **Szene 01 ist eine unabhängige normale technische Illustration** des ersten gesprochenen Satzes. Kein Covermotiv, keine Cover-Grafik, kein Titel im Video.
 
-Bei 6–7 Minuten etwa 46 visuelle Beats anpeilen. Bildwechsel bevorzugt dort, wo der Text eine neue konkrete Aussage macht; bei Bildhaltezeit über 10 Sekunden eine Teilung prüfen. Zusätzliche Bilder vor der Bildgenerierung und vor Phase 3 im Beat-Plan festlegen; Phase 3 darf nichts selbst nachgenerieren.
+Bei 6–7 Minuten etwa 56 visuelle Beats anpeilen. Bildwechsel bevorzugt dort, wo der Text eine neue konkrete Aussage macht; bei Bildhaltezeit über 8 Sekunden eine Teilung prüfen. Zusätzliche Bilder vor der Bildgenerierung und vor Phase 3 im Beat-Plan festlegen; Phase 3 darf nichts selbst nachgenerieren.
 
 ## Visuelle Beat-Regel
 

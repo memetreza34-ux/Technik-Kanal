@@ -10,7 +10,7 @@ Der Agent arbeitet die Schritte **der Reihe nach** ab und fragt den Nutzer nur a
 
 ## Schritt 0 – Vorbereitung (immer)
 
-1. Lesen: `VERBESSERUNGSSYSTEM.md`, `../learning/active-lessons.json`, `ANALYSE-2026-10-18.md`, `LONGFORM.md` (Abschnitte **Spannung** und **Titel**), `BILDWELT.md` (Abschnitt **Bild passt zur Szene**).
+1. Lesen: `VERBESSERUNGSSYSTEM.md`, `../learning/active-lessons.json`, `ANALYSE-2026-10-18.md`, `KONKURRENZ-ANALYSE-2026-10-23.md`, `LONGFORM.md` (Abschnitte **Spannung**, **Titel**, **Thumbnail** und **Kapitelmarken**), `BILDWELT.md` (Abschnitt **Bild passt zur Szene**).
 2. Letztes fertiges Video finden (`channels/science/YouTube/<woche>/<video>/05-export/video.mp4`). Wurde es noch nicht ausgewertet: `npm run science:learn -- review "<letztes-video>"` ausführen und `06-projektdateien/editorial-decisions.json` aus `POST-VIDEO-REVIEW.md` bzw. der Analyse füllen (Beobachtung, Änderung fürs nächste Video, Testmetrik, `evidenceType`).
 3. Arbeitsbranch verwenden, nie `main`.
 
@@ -21,7 +21,7 @@ Der Agent arbeitet die Schritte **der Reihe nach** ab und fragt den Nutzer nur a
 
 ## Schritt 2 – Titel gegen die Konkurrenz
 
-1. Drei Titel-Kandidaten formulieren: einer mit **Zahl + Widerspruch**, einer mit **konkretem Ereignis**, einer als **Irrtum**. Keine reine Lexikonfrage („Wie funktioniert …?“).
+1. Drei Titel-Kandidaten aus verschiedenen Formeln formulieren: **Zahl + Widerspruch**, **konkretes Ereignis**, **Irrtum**, **bekannter Bezug** (Film, Marke, berühmtes Objekt) oder **Listen-Versprechen** („5 Dinge, die …“). Keine reine Lexikonfrage („Wie funktioniert …?“) und keine allgemeinen Wörter wie „faszinierende Technik“.
 2. Videoordner anlegen (vorläufiger Titel = bester Kandidat):
    ```bash
    npm run science:new -- --week=YYYY-MM-DD_bis_YYYY-MM-DD --slot=01 --title="<Titel>" --hook="<Hook-Frage>?"
@@ -32,7 +32,7 @@ Der Agent arbeitet die Schritte **der Reihe nach** ab und fragt den Nutzer nur a
 ## Schritt 3 – Recherche und Quellen
 
 - 3–6 belastbare Quellen (Behörden, Hersteller, Hochschulen, Fachverbände, Lehrbücher) in `06-projektdateien/sources.md` mit stabilen IDs (`SRC-…`).
-- Sammeln: **mindestens 4 konkrete Zahlen** (Masse, Größe, Rekord, Jahreszahl, Strom, Spannung …) mit Quelle, **1 echte Geschichte oder 1 Ereignis**, **1 verbreiteten Irrtum**.
+- Sammeln: **mindestens 8 konkrete Zahlen** (Masse, Größe, Rekord, Jahreszahl, Strom, Spannung …) mit Quelle, zu jeder großen Zahl einen **Größenvergleich** mit einem Alltagsobjekt, **1 echte Geschichte oder 1 Ereignis** (am besten mit Datum, Uhrzeit, Ort und einer Person), **1 verbreiteten Irrtum**.
 - Nichts erfinden. Was nicht belegt ist, kommt nicht ins Script.
 
 ## Schritt 4 – Hook-Anker festlegen
@@ -47,18 +47,19 @@ Im Szenenplan:
 }
 ```
 
+- Stärkste Muster laut Konkurrenzanalyse: **Szene mit Datum, Uhrzeit, Ort** (Cold Open), **Zahlenstapel + Kontrast**, **Rekordobjekt + Zahl + Frage**, **Person mit Wendepunkt**.
 - `text` kommt **wörtlich** in den ersten 80 Wörtern vor.
 - `firstImage` (englisch) kommt **wörtlich** in den Bildauftrag von Bild 1: Das erste Bild zeigt den Widerspruch, nicht nur das Thema.
 
 ## Schritt 5 – Script schreiben (`voiceText` jeder Szene)
 
-Profil `youtube-6to7min-v1`: 850–1075 Wörter, 34–50 Szenen (ideal 46).
+Profil `youtube-6to7min-v1`: 850–1075 Wörter, 44–64 Szenen (ideal 56, Bildwechsel meist nach 4–7 s).
 Aufbau: **Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payoff** (`section` jeder Szene).
 
 **Pflicht (prüft `science:script-qa`):**
 - Hook mit Anker in den ersten ~30 s, danach sofort die zentrale Frage.
-- ≥ 2 belegte Zahlen pro 1000 Wörter, aber höchstens 3 Zahlen in 120 Wörtern (keine Zahlenliste).
-- Spätestens alle ~240 Wörter eine **offene Frage oder Ankündigung**, die später eingelöst wird („Gleich sehen wir, warum die Titanic trotzdem sank.“).
+- ≥ 6 belegte Zahlen pro 1000 Wörter, aber höchstens 3 Zahlen in 120 Wörtern (keine Zahlenliste). Ausnahme Hook: bis zu 6 Zahlen in den ersten 80 Wörtern.
+- Spätestens alle ~240 Wörter eine **offene Frage, Ankündigung oder Vorausdeutung**, die später eingelöst wird („Gleich sehen wir, warum die Titanic trotzdem sank.“, „Zu diesem Zeitpunkt ahnte niemand, was der Riss bedeutete.“).
 - Höchstens 0,8 Absicherungswörter pro 100 Wörter (häufig, normalerweise, beispielsweise …).
 - Rhythmus: höchstens 60 % der Szenen mit genau 2 Sätzen. Kurze Schlagsätze (≤ 6 Wörter) einstreuen, Szenen mit 1 oder 3 Sätzen mischen.
 
@@ -68,7 +69,9 @@ Aufbau: **Hook → Kontext → Grundlage → Mechanismus → Vertiefung → Payo
 - Erst das Rätsel, dann die Erklärung, nicht umgekehrt.
 - Fachwort erst nennen, wenn das Bild es zeigt, und sofort erklären.
 - Keine zwei Szenen hintereinander, die dasselbe Bild bräuchten.
+- Jede große Zahl sofort greifbar machen: „so schwer wie 200.000 Kleinwagen“.
 - Payoff beantwortet die Hook-Frage in einem Satz, den man weitererzählt.
+- **Kapitel:** An der ersten Szene jedes Abschnitts `chapterTitle` setzen (kurz, neugierig, ≤ 60 Zeichen; die erste Szene immer). `science:finish` macht daraus YouTube-Kapitel.
 
 **Beispiel (Qualitätsmaßstab – Zahlen im echten Video immer mit Quelle belegen):**
 > 01-hook: „Dieses Schiff trägt über 200.000 Tonnen Ladung. Ein Nagel geht sofort unter. Warum schwimmt das Schiff?“
@@ -81,12 +84,12 @@ Danach `01-script-audio/voiceover.txt` (Fließtext, Szenen mit Leerzeile getrenn
 
 | Feld | Regel |
 |---|---|
-| `visualType` | z. B. environment, cutaway, diagram, comparison, macro, process, top-down, before-after, schematic. **Mindestens 7 verschiedene**, nie zweimal derselbe direkt hintereinander |
+| `visualType` | z. B. environment, cutaway, diagram, comparison, macro, process, top-down, before-after, schematic, human-action, experiment, evidence. **Mindestens 7 verschiedene**, nie zweimal derselbe direkt hintereinander |
 | `primaryMotif` | kurzer Slug des Hauptmotivs; dasselbe höchstens 3-mal pro Video |
 | `setting` | **englisch, wo das Bild spielt**: „inside a home fuse box“, „harbor quay“, „school lab bench“. Geräte immer an ihrem echten Ort. Gleiches Setting höchstens 3-mal hintereinander und in höchstens 30 % der Bilder |
 | `informationBudget` | normal: ≤ 3 wichtige Elemente, bevorzugt ≤ 2 und höchstens 3 Labels; Diagramm/Vergleich: ≤ 4 Elemente, ≤ 5 Labels (Werte aus `engine/config/youtube-6to7min-v1.json`); immer `largeHeadlineAllowed: false`, `fullSentenceTextAllowed: false` |
 
-Etwa ein Drittel bis die Hälfte der Bilder sollen **technische Erklärbilder** sein (Querschnitt, Kraftdiagramm, Vergleich mit gleichem Maßstab, Schaltplan, Prozesskette).
+Etwa ein Drittel bis die Hälfte der Bilder sollen **technische Erklärbilder** sein (Querschnitt, Kraftdiagramm, Vergleich mit gleichem Maßstab, Schaltplan, Prozesskette). Außerdem aus der Konkurrenzanalyse: In Geschichten- und Alltagsszenen **arbeitet oder handelt ein Mensch** (Ingenieur am Rumpf, Hand am Sicherungskasten); große Zahlen bekommen ein **Größenvergleichsbild**; wo es geht, ein **Alltagsexperiment** (Holzklotz im Wasserglas). Ort und Jahr einer Geschichtsszene dürfen als kleines deutsches Label oben links stehen, mit Abstand zum Rand („1912 · Belfast“).
 
 ## Schritt 7 – Bildprompt pro Szene (`02-bilder/prompts/<szenen-id>.txt`)
 
@@ -109,7 +112,7 @@ Style: Technical Editorial Explainer 2.5D (see STYLE LOCK). Visible text only in
 - Labels nicht direkt an den Bildrand (Remotion zoomt leicht).
 - Bild 1 enthält `hookAnchor.firstImage` wörtlich.
 
-**Thumbnail** (`02-bilder/prompts/00-thumbnail.txt`): drei klar verschiedene 1280×720-Kandidaten, je eine kurze deutsche Schlagzeile (≤ 4 Wörter), die das Titelversprechen zeigt, nicht wiederholt. Danach STOPP bis zur Auswahl. Vorlage: `00-thumbnail.txt` des Stahlschiff-Videos.
+**Thumbnail** (`02-bilder/prompts/00-thumbnail.txt`): drei klar verschiedene 1280×720-Kandidaten, je eine kurze deutsche Schlagzeile (1–3 Wörter, höchstens 4), die das Titelversprechen zeigt, nicht wiederholt. Ein großes Hauptobjekt (mindestens die halbe Bildfläche), starker Kontrast, kräftige Farben. Mindestens ein Kandidat mit rotem Pfeil oder Kreis auf dem überraschenden Detail, einer als Vorher/Nachher oder mit belegter Zahl. Danach STOPP bis zur Auswahl. Vorlage: `00-thumbnail.txt` des Stahlschiff-Videos; Muster in `LONGFORM.md` → **Thumbnail**.
 
 ## Schritt 8 – Prüfen und verbessern, bis alles grün ist
 
@@ -141,4 +144,4 @@ Baut den Flow-Masterprompt (v2, ohne Szenen-IDs) und den START-HIER-Ordner und f
 
 ## Danach (Nutzer)
 
-Google Flow mit `02-GOOGLE-FLOW-PROMPT.txt` → Bilder, Stimme und optional `musik.mp3` + `musik-quelle.txt` nach `DATEIEN-HIER-REIN` → `npm run science:finish -- "<video-ordner>"`. Das OCR-Text-Gate prüft die Bilder vor dem Rendern.
+Google Flow mit `02-GOOGLE-FLOW-PROMPT.txt` → Bilder, Stimme und optional `musik.mp3` + `musik-quelle.txt` nach `DATEIEN-HIER-REIN` → `npm run science:finish -- "<video-ordner>"`. Das OCR-Text-Gate prüft die Bilder vor dem Rendern. Nach dem Render schreibt `science:finish` die YouTube-Kapitel aus `chapterTitle` in `05-export/caption.txt`.

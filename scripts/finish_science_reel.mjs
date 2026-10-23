@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
+import {spawnSync} from 'node:child_process';
 import {projectPaths, repositoryRoot, run} from './lib/electrical-project.mjs';
 import {generateScienceLearningReport} from './lib/science-learning.mjs';
 import {importScienceDrop} from './lib/science-simple-import.mjs';
@@ -41,6 +42,9 @@ if (!whisperCandidates.some((candidate) => fs.existsSync(candidate)) || !fs.exis
 }
 
 run(process.execPath, ['scripts/render_science_reel.mjs', paths.root, '--force-transcribe', '--preflight-passed'], {cwd: repositoryRoot});
+// YouTube-Kapitel aus den echten Render-Zeiten; ohne chapterTitle nur Warnung, das Video bleibt fertig.
+const chapters = spawnSync(process.execPath, ['scripts/science-chapters.mjs', paths.root], {cwd: repositoryRoot, stdio: 'inherit'});
+if (chapters.status !== 0) console.warn('⚠ Keine YouTube-Kapitel geschrieben. chapterTitle im Szenenplan ergänzen und npm run science:chapters erneut ausführen.');
 // Technische QA ist erst der Anfang: redaktionelle und spätere datenbasierte Reviews bereitstellen.
 const learning = generateScienceLearningReport(paths.root);
 console.log('\n=== SCIENCE-YOUTUBE-PRODUKTION ABGESCHLOSSEN ===');
