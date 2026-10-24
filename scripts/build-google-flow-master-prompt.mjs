@@ -126,7 +126,7 @@ export const buildGoogleFlowMasterPrompt = ({plan, flowPlan, config, thumbnailPr
   lines.push('');
   lines.push('VERBINDLICHE WORKFLOW-REGELN / BINDING WORKFLOW');
   lines.push('1. Zuerst genau DREI Thumbnail-Kandidaten gemäß dem Coverprompt erzeugen; dann STOPP und auf die ausdrückliche AUSWAHL des Nutzers warten.');
-  lines.push(`2. Die ZWEI NICHT GEWÄHLTEN COVER entfernen. Gewinner als 00-thumbnail-final ausschließlich nach ${coverDir} exportieren; niemals als Videobild verwenden.`);
+  lines.push(`2. SOFORT NACH DER AUSWAHL die ZWEI NICHT GEWÄHLTEN COVER in Google Flow endgültig löschen, bevor Bild 1 entsteht – sie dürfen weder in der Sammlung noch im Download landen. Gewinner als 00-thumbnail-final ausschließlich nach ${coverDir} exportieren; niemals als Videobild verwenden.`);
   lines.push('3. Bild 1 unabhängig vom Cover gestalten: KEINE Farbpalette, KEINE Layoutvorlage, keine Cover-Schlagzeile und keine wiederholte Cover-Komposition auf Videoszenen übertragen.');
   lines.push(`4. Danach genau ${stepCount} Bildschritte. Jeweils EIN finales Bild pro Bildauftrag erzeugen, sofort prüfen und wie angegeben speichern. KEINE WEITEREN STOPPS ODER RÜCKFRAGEN zwischen BILDSCHRITT 1 und ${stepCount}.`);
   lines.push('5. VISUELLE VIELFALT IST PFLICHT: Komposition, Darstellungsform und Perspektive wechseln, ohne den STYLE LOCK zu verlassen. Kein Bild darf das vorige praktisch wiederholen.');
@@ -140,7 +140,7 @@ export const buildGoogleFlowMasterPrompt = ({plan, flowPlan, config, thumbnailPr
   lines.push('==============================================');
   lines.push(String(thumbnailPrompt).trim());
   lines.push('');
-  lines.push('STOPP NACH DREI THUMBNAILS; AUF AUSWAHL WARTEN. DANACH OHNE ZWISCHENSTOPP MIT BILDSCHRITT 1 WEITER.');
+  lines.push('STOPP NACH DREI THUMBNAILS; AUF AUSWAHL WARTEN. NACH DER AUSWAHL ZUERST DIE ZWEI NICHT GEWÄHLTEN COVER LÖSCHEN, DANACH OHNE ZWISCHENSTOPP MIT BILDSCHRITT 1 WEITER.');
 
   for (let stepIndex=0;stepIndex<groupedScenes.length;stepIndex+=1) {
     const stepNumber = stepIndex + 1;
