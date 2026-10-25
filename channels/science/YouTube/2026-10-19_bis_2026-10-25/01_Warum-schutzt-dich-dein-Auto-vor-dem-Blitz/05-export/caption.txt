@@ -1,4 +1,16 @@
-Titel: Warum schützt dich dein Auto vor dem Blitz?
+Titel: Nicht die Gummireifen: Warum dich dein Auto vor dem Blitz schützt
 
 Beschreibung:
-Warum schützt dich dein Auto vor dem Blitz?
+Über 30.000 Grad, rund 20.000 Ampere – und du sitzt eine Armlänge daneben. Fast jeder glaubt, die Gummireifen retten dich. Im Hochspannungslabor zeigen Brandspuren quer über die Reifenflanken das Gegenteil. In diesem Wissonaut-Video siehst du, wie Michael Faraday 1836 in einen geladenen Metallwürfel stieg, warum sich Ladung immer außen auf dem Blech sammelt und was das für Cabrio, E-Auto, Wohnwagen und Motorrad bedeutet.
+
+Quellen: VDE, ADAC, Spektrum Lexikon der Geowissenschaften, Siemens/BLIDS Blitzatlas 2023, Michael Faraday: Experimental Researches in Electricity (§1173–1174).
+
+Kapitel:
+0:00 Blitz trifft Auto
+0:32 Der Irrtum mit den Gummireifen
+1:15 1836: Ein Mann zieht in einen Metallwürfel
+2:14 Was der Strom um dich herum macht
+3:27 Cabrio, E-Auto, Motorrad: Wer ist sicher?
+5:07 Die Antwort in einem Satz
+
+#Wissonaut #Physik #Blitz #FaradayscherKäfig #Technik

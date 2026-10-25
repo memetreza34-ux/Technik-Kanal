@@ -1,0 +1,376 @@
+{
+  "version": "youtube-longform-media-v2",
+  "productionProfile": "youtube-6to7min-v1",
+  "generatedAt": "2026-10-24T12:15:38.631Z",
+  "passed": true,
+  "productionMode": "youtube-static-longform",
+  "requiredSceneImages": 71,
+  "selectedImages": [
+    {
+      "sceneId": "01-hook",
+      "file": "02-bilder/images/01-hook/01-hook-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "02-hook",
+      "file": "02-bilder/images/02-hook/02-hook-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "03-hook",
+      "file": "02-bilder/images/03-hook/03-hook-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "04-hook",
+      "file": "02-bilder/images/04-hook/04-hook-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "05-hook",
+      "file": "02-bilder/images/05-hook/05-hook-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "06-hook",
+      "file": "02-bilder/images/06-hook/06-hook-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "07-hook",
+      "file": "02-bilder/images/07-hook/07-hook-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "08-context",
+      "file": "02-bilder/images/08-context/08-context-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "09-context",
+      "file": "02-bilder/images/09-context/09-context-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "10-context",
+      "file": "02-bilder/images/10-context/10-context-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "11-context",
+      "file": "02-bilder/images/11-context/11-context-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "12-context",
+      "file": "02-bilder/images/12-context/12-context-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "13-context",
+      "file": "02-bilder/images/13-context/13-context-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "14-context",
+      "file": "02-bilder/images/14-context/14-context-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "15-context",
+      "file": "02-bilder/images/15-context/15-context-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "16-context",
+      "file": "02-bilder/images/16-context/16-context-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "17-foundation",
+      "file": "02-bilder/images/17-foundation/17-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "18-foundation",
+      "file": "02-bilder/images/18-foundation/18-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "19-foundation",
+      "file": "02-bilder/images/19-foundation/19-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "20-foundation",
+      "file": "02-bilder/images/20-foundation/20-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "21-foundation",
+      "file": "02-bilder/images/21-foundation/21-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "22-foundation",
+      "file": "02-bilder/images/22-foundation/22-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "23-foundation",
+      "file": "02-bilder/images/23-foundation/23-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "24-foundation",
+      "file": "02-bilder/images/24-foundation/24-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "25-foundation",
+      "file": "02-bilder/images/25-foundation/25-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "26-foundation",
+      "file": "02-bilder/images/26-foundation/26-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "27-foundation",
+      "file": "02-bilder/images/27-foundation/27-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "28-foundation",
+      "file": "02-bilder/images/28-foundation/28-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "29-foundation",
+      "file": "02-bilder/images/29-foundation/29-foundation-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "30-mechanism",
+      "file": "02-bilder/images/30-mechanism/30-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "31-mechanism",
+      "file": "02-bilder/images/31-mechanism/31-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "32-mechanism",
+      "file": "02-bilder/images/32-mechanism/32-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "33-mechanism",
+      "file": "02-bilder/images/33-mechanism/33-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "34-mechanism",
+      "file": "02-bilder/images/34-mechanism/34-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "35-mechanism",
+      "file": "02-bilder/images/35-mechanism/35-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "36-mechanism",
+      "file": "02-bilder/images/36-mechanism/36-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "37-mechanism",
+      "file": "02-bilder/images/37-mechanism/37-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "38-mechanism",
+      "file": "02-bilder/images/38-mechanism/38-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "39-mechanism",
+      "file": "02-bilder/images/39-mechanism/39-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "40-mechanism",
+      "file": "02-bilder/images/40-mechanism/40-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "41-mechanism",
+      "file": "02-bilder/images/41-mechanism/41-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "42-mechanism",
+      "file": "02-bilder/images/42-mechanism/42-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "43-mechanism",
+      "file": "02-bilder/images/43-mechanism/43-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "44-mechanism",
+      "file": "02-bilder/images/44-mechanism/44-mechanism-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "45-deepening",
+      "file": "02-bilder/images/45-deepening/45-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "46-deepening",
+      "file": "02-bilder/images/46-deepening/46-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "47-deepening",
+      "file": "02-bilder/images/47-deepening/47-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "48-deepening",
+      "file": "02-bilder/images/48-deepening/48-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "49-deepening",
+      "file": "02-bilder/images/49-deepening/49-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "50-deepening",
+      "file": "02-bilder/images/50-deepening/50-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "51-deepening",
+      "file": "02-bilder/images/51-deepening/51-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "52-deepening",
+      "file": "02-bilder/images/52-deepening/52-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "53-deepening",
+      "file": "02-bilder/images/53-deepening/53-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "54-deepening",
+      "file": "02-bilder/images/54-deepening/54-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "55-deepening",
+      "file": "02-bilder/images/55-deepening/55-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "56-deepening",
+      "file": "02-bilder/images/56-deepening/56-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "57-deepening",
+      "file": "02-bilder/images/57-deepening/57-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "58-deepening",
+      "file": "02-bilder/images/58-deepening/58-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "59-deepening",
+      "file": "02-bilder/images/59-deepening/59-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "60-deepening",
+      "file": "02-bilder/images/60-deepening/60-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "61-deepening",
+      "file": "02-bilder/images/61-deepening/61-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "62-deepening",
+      "file": "02-bilder/images/62-deepening/62-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "63-deepening",
+      "file": "02-bilder/images/63-deepening/63-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "64-deepening",
+      "file": "02-bilder/images/64-deepening/64-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "65-deepening",
+      "file": "02-bilder/images/65-deepening/65-deepening-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "66-payoff",
+      "file": "02-bilder/images/66-payoff/66-payoff-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "67-payoff",
+      "file": "02-bilder/images/67-payoff/67-payoff-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "68-payoff",
+      "file": "02-bilder/images/68-payoff/68-payoff-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "69-payoff",
+      "file": "02-bilder/images/69-payoff/69-payoff-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "70-payoff",
+      "file": "02-bilder/images/70-payoff/70-payoff-final.jpg",
+      "candidateCount": 1
+    },
+    {
+      "sceneId": "71-payoff",
+      "file": "02-bilder/images/71-payoff/71-payoff-final.jpg",
+      "candidateCount": 1
+    }
+  ],
+  "separateThumbnailRequired": true,
+  "selectedThumbnail": {
+    "file": "05-export/cover.jpg",
+    "candidateCount": 1,
+    "width": 1376,
+    "height": 768,
+    "exportOnly": true,
+    "neverUsedAsVideoFrame": true
+  },
+  "errors": [],
+  "warnings": []
+}

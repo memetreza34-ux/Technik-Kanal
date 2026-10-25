@@ -1,0 +1,1441 @@
+{
+  "version": "science-image-text-qa-v1",
+  "generatedAt": "2026-10-24T12:15:36.877Z",
+  "passed": true,
+  "ocrLanguage": "deu+eng",
+  "checkedImages": 71,
+  "manuallyAccepted": [
+    "28-foundation",
+    "41-mechanism",
+    "60-deepening"
+  ],
+  "rule": "Szenenbilder enthalten nur ausdrücklich verlangte deutsche Labels. Szenen-IDs, Abschnittsnamen, Dateinamen und nicht verlangte große Schrift blockieren das Rendern.",
+  "scenes": [
+    {
+      "id": "01-hook",
+      "file": "02-bilder/images/01-hook/01-hook-final.jpg",
+      "allowedLabels": [
+        "über 30.000 °C"
+      ],
+      "detectedText": [
+        "über",
+        "30.000",
+        "°C"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "02-hook",
+      "file": "02-bilder/images/02-hook/02-hook-final.jpg",
+      "allowedLabels": [
+        "100 °C",
+        "über 30.000 °C"
+      ],
+      "detectedText": [
+        "über",
+        "30.000",
+        "q",
+        "N)",
+        "100",
+        "°C"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "03-hook",
+      "file": "02-bilder/images/03-hook/03-hook-final.jpg",
+      "allowedLabels": [
+        "20.000 A"
+      ],
+      "detectedText": [
+        "A",
+        "l-",
+        "N",
+        "N",
+        "N",
+        "y\"",
+        "YY"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "04-hook",
+      "file": "02-bilder/images/04-hook/04-hook-final.jpg",
+      "allowedLabels": [
+        "16 A"
+      ],
+      "detectedText": [
+        "16A",
+        "un"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "05-hook",
+      "file": "02-bilder/images/05-hook/05-hook-final.jpg",
+      "allowedLabels": [
+        "16 A",
+        "20.000 A"
+      ],
+      "detectedText": [
+        "3",
+        "2",
+        "000",
+        "A",
+        "16A"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "06-hook",
+      "file": "02-bilder/images/06-hook/06-hook-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "N",
+        "Ä",
+        "Gm",
+        "N",
+        "N",
+        "Y"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "07-hook",
+      "file": "02-bilder/images/07-hook/07-hook-final.jpg",
+      "allowedLabels": [
+        "Gummireifen"
+      ],
+      "detectedText": [
+        "9",
+        "y",
+        "UM",
+        "ES"
+      ],
+      "errors": [],
+      "warnings": [
+        "Verlangtes Label „Gummireifen“ von OCR nicht gefunden – Schreibweise im Bild prüfen."
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "08-context",
+      "file": "02-bilder/images/08-context/08-context-final.jpg",
+      "allowedLabels": [
+        "über 10 km"
+      ],
+      "detectedText": [
+        "über",
+        "10",
+        "km",
+        "A",
+        "J",
+        "FL»"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "09-context",
+      "file": "02-bilder/images/09-context/09-context-final.jpg",
+      "allowedLabels": [
+        "4–10 km",
+        "Blitzkanal"
+      ],
+      "detectedText": [
+        "Blitzkanal",
+        "1",
+        "Okm",
+        "IN\\",
+        "LY)"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "10-context",
+      "file": "02-bilder/images/10-context/10-context-final.jpg",
+      "allowedLabels": [
+        "Luft"
+      ],
+      "detectedText": [
+        "a",
+        "Cl",
+        "Ü",
+        "A"
+      ],
+      "errors": [],
+      "warnings": [
+        "Verlangtes Label „Luft“ von OCR nicht gefunden – Schreibweise im Bild prüfen."
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "11-context",
+      "file": "02-bilder/images/11-context/11-context-final.jpg",
+      "allowedLabels": [
+        "Isolierung"
+      ],
+      "detectedText": [
+        "N,",
+        "Isolierung",
+        "Om",
+        "Dh",
+        "u"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "12-context",
+      "file": "02-bilder/images/12-context/12-context-final.jpg",
+      "allowedLabels": [
+        "Kilometer Luft",
+        "Zentimeter Gummi"
+      ],
+      "detectedText": [
+        "KILOMETER",
+        "LUFT",
+        "Gummi",
+        "I_",
+        "ZENTIMETER",
+        "Felge",
+        "UMMI"
+      ],
+      "errors": [],
+      "warnings": [
+        "Nicht verlangter kleiner Text (OCR, bitte prüfen): „Felge“, „UMMI“"
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "13-context",
+      "file": "02-bilder/images/13-context/13-context-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "N",
+        "7",
+        "a",
+        "me.",
+        "F",
+        "i",
+        "IE",
+        "IE",
+        "ke",
+        "5"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "14-context",
+      "file": "02-bilder/images/14-context/14-context-final.jpg",
+      "allowedLabels": [
+        "Brandspur"
+      ],
+      "detectedText": [
+        "Brandspur"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "15-context",
+      "file": "02-bilder/images/15-context/15-context-final.jpg",
+      "allowedLabels": [
+        "Lichtbogen"
+      ],
+      "detectedText": [
+        "n",
+        "VA"
+      ],
+      "errors": [],
+      "warnings": [
+        "Verlangtes Label „Lichtbogen“ von OCR nicht gefunden – Schreibweise im Bild prüfen."
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "16-context",
+      "file": "02-bilder/images/16-context/16-context-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "SS",
+        "cz",
+        "EI"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "17-foundation",
+      "file": "02-bilder/images/17-foundation/17-foundation-final.jpg",
+      "allowedLabels": [
+        "1836 · London"
+      ],
+      "detectedText": [
+        "N",
+        "London",
+        "1836",
+        "CL",
+        "In",
+        "Nie",
+        "4",
+        "17",
+        "f",
+        "i",
+        "A",
+        "4",
+        "AN",
+        "FH",
+        "j",
+        "il",
+        "UN",
+        "E",
+        "Im",
+        "i)",
+        "N",
+        "it)",
+        "Un",
+        "SS",
+        "u",
+        "IS",
+        "Ü",
+        "er"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "18-foundation",
+      "file": "02-bilder/images/18-foundation/18-foundation-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "rs",
+        "A",
+        "lz",
+        "N",
+        "i",
+        "3",
+        "N",
+        "Va",
+        "N",
+        "AA",
+        "VS",
+        "ZY",
+        "I",
+        "I)"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "19-foundation",
+      "file": "02-bilder/images/19-foundation/19-foundation-final.jpg",
+      "allowedLabels": [
+        "3,7 m"
+      ],
+      "detectedText": [
+        "Tg",
+        "—B"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "20-foundation",
+      "file": "02-bilder/images/20-foundation/20-foundation-final.jpg",
+      "allowedLabels": [
+        "Kupferdraht",
+        "Zinnfolie",
+        "Holzrahmen"
+      ],
+      "detectedText": [
+        "Zinnfolie",
+        "Kupferdraht",
+        "Holzrahmen",
+        "ET,",
+        "SS",
+        "ZS",
+        "SB",
+        "I.",
+        "N",
+        "N",
+        "IN",
+        "IN",
+        "ISN",
+        "ms",
+        "is",
+        "IN",
+        "R",
+        "7",
+        "NA"
+      ],
+      "errors": [],
+      "warnings": [
+        "Nicht verlangter kleiner Text (OCR, bitte prüfen): „ISN“"
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "21-foundation",
+      "file": "02-bilder/images/21-foundation/21-foundation-final.jpg",
+      "allowedLabels": [
+        "Ladung"
+      ],
+      "detectedText": [
+        "4",
+        "Vp.",
+        "Ar",
+        "SS",
+        "U",
+        "5",
+        "Ladung"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "22-foundation",
+      "file": "02-bilder/images/22-foundation/22-foundation-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "(4",
+        "N",
+        "N",
+        "a"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "23-foundation",
+      "file": "02-bilder/images/23-foundation/23-foundation-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "SH",
+        "x",
+        "B"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "24-foundation",
+      "file": "02-bilder/images/24-foundation/24-foundation-final.jpg",
+      "allowedLabels": [
+        "Goldblatt"
+      ],
+      "detectedText": [
+        "Goldblatt"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "25-foundation",
+      "file": "02-bilder/images/25-foundation/25-foundation-final.jpg",
+      "allowedLabels": [
+        "geladen",
+        "im Würfel"
+      ],
+      "detectedText": [
+        "X",
+        "X)",
+        "ww",
+        "Würfel",
+        "_im",
+        "geladen",
+        "AN",
+        "Y",
+        "N",
+        "ip",
+        "DA",
+        "we",
+        "ge",
+        "i",
+        "Q",
+        "+1)",
+        "N",
+        "7",
+        "INN",
+        "G"
+      ],
+      "errors": [],
+      "warnings": [
+        "Nicht verlangter kleiner Text (OCR, bitte prüfen): „INN“"
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "26-foundation",
+      "file": "02-bilder/images/26-foundation/26-foundation-final.jpg",
+      "allowedLabels": [
+        "außen",
+        "innen"
+      ],
+      "detectedText": [
+        "pr",
+        "HT",
+        "4",
+        "HR",
+        "N",
+        "HP",
+        "om",
+        "außen",
+        "4a",
+        "AN",
+        "A",
+        "(7",
+        "I",
+        "RN",
+        "#5",
+        "3",
+        "58",
+        "PA",
+        "N",
+        "Bp",
+        "OG",
+        "ay",
+        "7,",
+        "PA",
+        "Os",
+        "707,",
+        "AY",
+        "innen"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "27-foundation",
+      "file": "02-bilder/images/27-foundation/27-foundation-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "JA",
+        "Ga"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "28-foundation",
+      "file": "02-bilder/images/28-foundation/28-foundation-final.jpg",
+      "allowedLabels": [
+        "Faradayscher Käfig"
+      ],
+      "detectedText": [
+        "atig",
+        "Faradayscher",
+        "K",
+        "Käfig",
+        "eS",
+        "N",
+        "Ry",
+        "a",
+        "NN",
+        "ER",
+        "Erdung"
+      ],
+      "errors": [
+        "Große, nicht verlangte Schrift im Bild: „Erdung“"
+      ],
+      "warnings": [],
+      "acceptedManually": true
+    },
+    {
+      "id": "29-foundation",
+      "file": "02-bilder/images/29-foundation/29-foundation-final.jpg",
+      "allowedLabels": [
+        "Faradays Würfel",
+        "Karosserie"
+      ],
+      "detectedText": [
+        "FARADAYS",
+        "WÜRFEL",
+        "KAROSSERIE",
+        "I",
+        "I",
+        "I",
+        "An",
+        "ve",
+        "KX",
+        "xx",
+        "xx",
+        "R",
+        "of",
+        "Vu’"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "30-mechanism",
+      "file": "02-bilder/images/30-mechanism/30-mechanism-final.jpg",
+      "allowedLabels": [
+        "Abstoßung"
+      ],
+      "detectedText": [
+        "ZI",
+        "A,"
+      ],
+      "errors": [],
+      "warnings": [
+        "Verlangtes Label „Abstoßung“ von OCR nicht gefunden – Schreibweise im Bild prüfen."
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "31-mechanism",
+      "file": "02-bilder/images/31-mechanism/31-mechanism-final.jpg",
+      "allowedLabels": [
+        "Ladung"
+      ],
+      "detectedText": [
+        "Ladung",
+        "db",
+        "-ece",
+        "7"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "32-mechanism",
+      "file": "02-bilder/images/32-mechanism/32-mechanism-final.jpg",
+      "allowedLabels": [
+        "Ladung außen"
+      ],
+      "detectedText": [
+        "Ladung",
+        "außen"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "33-mechanism",
+      "file": "02-bilder/images/33-mechanism/33-mechanism-final.jpg",
+      "allowedLabels": [
+        "Kräfte heben sich auf"
+      ],
+      "detectedText": [
+        "Kräfte",
+        "heben",
+        "sich",
+        "auf",
+        "IN",
+        "F"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "34-mechanism",
+      "file": "02-bilder/images/34-mechanism/34-mechanism-final.jpg",
+      "allowedLabels": [
+        "Feld",
+        "innen: kein Feld"
+      ],
+      "detectedText": [
+        "innen:",
+        "kein",
+        "Feld",
+        "Feld"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "35-mechanism",
+      "file": "02-bilder/images/35-mechanism/35-mechanism-final.jpg",
+      "allowedLabels": [
+        "Karosserie"
+      ],
+      "detectedText": [
+        "AA",
+        "SS",
+        "eriE",
+        "AR",
+        "05°",
+        "a",
+        "G",
+        "I",
+        "y",
+        "AM",
+        "N",
+        "de",
+        "N",
+        "cA",
+        "SS",
+        "5",
+        "1"
+      ],
+      "errors": [],
+      "warnings": [
+        "Verlangtes Label „Karosserie“ von OCR nicht gefunden – Schreibweise im Bild prüfen."
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "36-mechanism",
+      "file": "02-bilder/images/36-mechanism/36-mechanism-final.jpg",
+      "allowedLabels": [
+        "letzte 10–100 m"
+      ],
+      "detectedText": [
+        "letzte",
+        "0-100",
+        "m",
+        "X",
+        "10-100"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "37-mechanism",
+      "file": "02-bilder/images/37-mechanism/37-mechanism-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "A",
+        "a",
+        "4",
+        "A",
+        "AA",
+        "Pr",
+        "LAA",
+        "mM",
+        "7."
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "38-mechanism",
+      "file": "02-bilder/images/38-mechanism/38-mechanism-final.jpg",
+      "allowedLabels": [
+        "Dach",
+        "Säule",
+        "Blitzstrom"
+      ],
+      "detectedText": [
+        "4",
+        "Blitzstrom",
+        "Dach",
+        "Säule",
+        "Ci",
+        "\\z"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "39-mechanism",
+      "file": "02-bilder/images/39-mechanism/39-mechanism-final.jpg",
+      "allowedLabels": [
+        "Blech",
+        "Körper"
+      ],
+      "detectedText": [
+        "Blech",
+        "27",
+        "Korper",
+        "or"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "40-mechanism",
+      "file": "02-bilder/images/40-mechanism/40-mechanism-final.jpg",
+      "allowedLabels": [
+        "Strompfad"
+      ],
+      "detectedText": [
+        "nen",
+        "Strompfad"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "41-mechanism",
+      "file": "02-bilder/images/41-mechanism/41-mechanism-final.jpg",
+      "allowedLabels": [
+        "Lichtbogen",
+        "Boden"
+      ],
+      "detectedText": [
+        "LA",
+        "Lichtbogen",
+        "Reifen",
+        "U",
+        "0",
+        "Boden",
+        "Stahlfelge",
+        "SS",
+        "SX",
+        "N",
+        "fi"
+      ],
+      "errors": [
+        "Große, nicht verlangte Schrift im Bild: „Stahlfelge“"
+      ],
+      "warnings": [
+        "Nicht verlangter kleiner Text (OCR, bitte prüfen): „Reifen“"
+      ],
+      "acceptedManually": true
+    },
+    {
+      "id": "42-mechanism",
+      "file": "02-bilder/images/42-mechanism/42-mechanism-final.jpg",
+      "allowedLabels": [
+        "Blitzstrom"
+      ],
+      "detectedText": [
+        "Blitzstrom",
+        "R"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "43-mechanism",
+      "file": "02-bilder/images/43-mechanism/43-mechanism-final.jpg",
+      "allowedLabels": [
+        "Metallrahmen"
+      ],
+      "detectedText": [
+        "Metallrahmen"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "44-mechanism",
+      "file": "02-bilder/images/44-mechanism/44-mechanism-final.jpg",
+      "allowedLabels": [
+        "leitende Hülle",
+        "Fenster"
+      ],
+      "detectedText": [
+        "leitende",
+        "Hülle",
+        "7",
+        "S",
+        "i",
+        "AX",
+        "NL",
+        "WN",
+        "N",
+        "zZ",
+        "T",
+        "Fenster",
+        "SYS"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "45-deepening",
+      "file": "02-bilder/images/45-deepening/45-deepening-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "Pr",
+        "ab"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "46-deepening",
+      "file": "02-bilder/images/46-deepening/46-deepening-final.jpg",
+      "allowedLabels": [
+        "316.000 Einschläge"
+      ],
+      "detectedText": [
+        "N",
+        "IN",
+        "N",
+        "N",
+        "IM",
+        "Ht",
+        "4",
+        "NZ",
+        "c>",
+        "N",
+        "5",
+        "th",
+        "NO",
+        "N",
+        "N",
+        "My",
+        "\\G",
+        "AN)",
+        "In",
+        "gins",
+        "Whe",
+        "Ir",
+        "7",
+        "31",
+        "Q",
+        "th",
+        "Il",
+        "ore",
+        "N",
+        "4",
+        "AN",
+        "u",
+        "ih",
+        "q",
+        "We",
+        "ee",
+        "ee",
+        "A"
+      ],
+      "errors": [],
+      "warnings": [
+        "Nicht verlangter kleiner Text (OCR, bitte prüfen): „Whe“",
+        "Verlangtes Label „316.000 Einschläge“ von OCR nicht gefunden – Schreibweise im Bild prüfen."
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "47-deepening",
+      "file": "02-bilder/images/47-deepening/47-deepening-final.jpg",
+      "allowedLabels": [
+        "Memmingen"
+      ],
+      "detectedText": [
+        "Altstadt",
+        "77",
+        "7",
+        "Gewitterfront",
+        "Stadtbach",
+        "MEMMINGEN",
+        "NN",
+        "NN",
+        "7",
+        "7",
+        "71",
+        "1.",
+        "ik",
+        "I",
+        "EN",
+        "a",
+        "f",
+        "fu",
+        "N",
+        "EN",
+        "4",
+        "“a",
+        "4",
+        "rae",
+        "I",
+        "N"
+      ],
+      "errors": [],
+      "warnings": [
+        "Nicht verlangter kleiner Text (OCR, bitte prüfen): „Gewitterfront“, „Stadtbach“"
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "48-deepening",
+      "file": "02-bilder/images/48-deepening/48-deepening-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "7",
+        "A",
+        "3",
+        "Ag",
+        "FE:",
+        "ow"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "49-deepening",
+      "file": "02-bilder/images/49-deepening/49-deepening-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "N",
+        "é",
+        "gs",
+        "119",
+        "40,"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "50-deepening",
+      "file": "02-bilder/images/50-deepening/50-deepening-final.jpg",
+      "allowedLabels": [
+        "Spriegel",
+        "Scheibenrahmen"
+      ],
+      "detectedText": [
+        "Spriegel",
+        "Scheibenrahmen",
+        "A",
+        "m,",
+        "Y"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "51-deepening",
+      "file": "02-bilder/images/51-deepening/51-deepening-final.jpg",
+      "allowedLabels": [
+        "Brandfleck"
+      ],
+      "detectedText": [
+        "Brandfleck"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "52-deepening",
+      "file": "02-bilder/images/52-deepening/52-deepening-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "U",
+        "N",
+        "P"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "53-deepening",
+      "file": "02-bilder/images/53-deepening/53-deepening-final.jpg",
+      "allowedLabels": [
+        "mit Metall",
+        "ohne Metall"
+      ],
+      "detectedText": [
+        "ohne",
+        "Metall",
+        "mit",
+        "Metall",
+        "ISS",
+        "WS",
+        "AIS",
+        "Is",
+        "N",
+        "N",
+        "IS",
+        "U",
+        "Ox",
+        "U",
+        "NZ",
+        "2",
+        "2",
+        "D"
+      ],
+      "errors": [],
+      "warnings": [
+        "Nicht verlangter kleiner Text (OCR, bitte prüfen): „ISS“"
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "54-deepening",
+      "file": "02-bilder/images/54-deepening/54-deepening-final.jpg",
+      "allowedLabels": [
+        "Kunststoff"
+      ],
+      "detectedText": [
+        "a",
+        "KUNSTSTOFF",
+        "A"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "55-deepening",
+      "file": "02-bilder/images/55-deepening/55-deepening-final.jpg",
+      "allowedLabels": [
+        "Hochvolt-Batterie"
+      ],
+      "detectedText": [
+        "Hochvolt-Batterie",
+        "RL",
+        "I",
+        "WS"
+      ],
+      "errors": [],
+      "warnings": [
+        "Nicht verlangter kleiner Text (OCR, bitte prüfen): „Hochvolt-Batterie“"
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "56-deepening",
+      "file": "02-bilder/images/56-deepening/56-deepening-final.jpg",
+      "allowedLabels": [
+        "E-Auto",
+        "Verbrenner"
+      ],
+      "detectedText": [
+        "Verbrenner",
+        "A",
+        "LS",
+        "A",
+        "1x",
+        "3",
+        "N",
+        "WL",
+        "LD"
+      ],
+      "errors": [],
+      "warnings": [
+        "Verlangtes Label „E-Auto“ von OCR nicht gefunden – Schreibweise im Bild prüfen."
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "57-deepening",
+      "file": "02-bilder/images/57-deepening/57-deepening-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "VG",
+        "a",
+        "we",
+        "i",
+        "q",
+        "7",
+        "2",
+        "y",
+        "2",
+        "SIND",
+        "Ss",
+        "AR",
+        "N",
+        "C",
+        "N",
+        "N",
+        "N",
+        "=o?"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "58-deepening",
+      "file": "02-bilder/images/58-deepening/58-deepening-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "M",
+        "A",
+        "if",
+        "N",
+        "z",
+        "IN.)",
+        "N",
+        "N",
+        "N",
+        "I",
+        "7",
+        "y",
+        "OCP",
+        "EA"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "59-deepening",
+      "file": "02-bilder/images/59-deepening/59-deepening-final.jpg",
+      "allowedLabels": [
+        "mind. 3 m"
+      ],
+      "detectedText": [
+        "64",
+        "4",
+        "“a",
+        "N",
+        "mind.",
+        "3m",
+        "m",
+        "SEN"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "60-deepening",
+      "file": "02-bilder/images/60-deepening/60-deepening-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "pe",
+        "ISS"
+      ],
+      "errors": [
+        "Große, nicht verlangte Schrift im Bild: „ISS“"
+      ],
+      "warnings": [],
+      "acceptedManually": true
+    },
+    {
+      "id": "61-deepening",
+      "file": "02-bilder/images/61-deepening/61-deepening-final.jpg",
+      "allowedLabels": [
+        "Elektronik"
+      ],
+      "detectedText": [
+        "ELEKTRONIK",
+        "DE",
+        "7.",
+        "SS"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "62-deepening",
+      "file": "02-bilder/images/62-deepening/62-deepening-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "N"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "63-deepening",
+      "file": "02-bilder/images/63-deepening/63-deepening-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "FIN",
+        "IR",
+        "Aa",
+        "an",
+        "1",
+        "Rn",
+        "L",
+        "LZ",
+        "SS",
+        "f",
+        "RE",
+        "7",
+        "sf"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "64-deepening",
+      "file": "02-bilder/images/64-deepening/64-deepening-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "NG",
+        "Th",
+        "N",
+        "7"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "65-deepening",
+      "file": "02-bilder/images/65-deepening/65-deepening-final.jpg",
+      "allowedLabels": [
+        "Metallteile"
+      ],
+      "detectedText": [
+        "y",
+        "7",
+        "Metallteile"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "66-payoff",
+      "file": "02-bilder/images/66-payoff/66-payoff-final.jpg",
+      "allowedLabels": [
+        "30.000 °C",
+        "20.000 A"
+      ],
+      "detectedText": [
+        "30.000",
+        "se!",
+        "20.000",
+        "A",
+        "4!",
+        "2",
+        "17"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "67-payoff",
+      "file": "02-bilder/images/67-payoff/67-payoff-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "N",
+        "0)"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "68-payoff",
+      "file": "02-bilder/images/68-payoff/68-payoff-final.jpg",
+      "allowedLabels": [
+        "Reifen",
+        "Karosserie"
+      ],
+      "detectedText": [
+        "r",
+        "Karosserie",
+        "A",
+        "zer",
+        "i>"
+      ],
+      "errors": [],
+      "warnings": [
+        "Verlangtes Label „Reifen“ von OCR nicht gefunden – Schreibweise im Bild prüfen."
+      ],
+      "acceptedManually": false
+    },
+    {
+      "id": "69-payoff",
+      "file": "02-bilder/images/69-payoff/69-payoff-final.jpg",
+      "allowedLabels": [
+        "im Auto",
+        "draußen"
+      ],
+      "detectedText": [
+        "im",
+        "Auto",
+        "‚draußen",
+        "3",
+        "mG,",
+        "7",
+        "N",
+        "F",
+        "lf»",
+        "wi"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "70-payoff",
+      "file": "02-bilder/images/70-payoff/70-payoff-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [
+        "Z",
+        "NS",
+        "V",
+        "Al",
+        "N",
+        "N",
+        "IN",
+        "A",
+        "Un"
+      ],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    },
+    {
+      "id": "71-payoff",
+      "file": "02-bilder/images/71-payoff/71-payoff-final.jpg",
+      "allowedLabels": [],
+      "detectedText": [],
+      "errors": [],
+      "warnings": [],
+      "acceptedManually": false
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "07-hook: Verlangtes Label „Gummireifen“ von OCR nicht gefunden – Schreibweise im Bild prüfen.",
+    "10-context: Verlangtes Label „Luft“ von OCR nicht gefunden – Schreibweise im Bild prüfen.",
+    "12-context: Nicht verlangter kleiner Text (OCR, bitte prüfen): „Felge“, „UMMI“",
+    "15-context: Verlangtes Label „Lichtbogen“ von OCR nicht gefunden – Schreibweise im Bild prüfen.",
+    "20-foundation: Nicht verlangter kleiner Text (OCR, bitte prüfen): „ISN“",
+    "25-foundation: Nicht verlangter kleiner Text (OCR, bitte prüfen): „INN“",
+    "28-foundation: Große, nicht verlangte Schrift im Bild: „Erdung“ (manuell freigegeben)",
+    "30-mechanism: Verlangtes Label „Abstoßung“ von OCR nicht gefunden – Schreibweise im Bild prüfen.",
+    "35-mechanism: Verlangtes Label „Karosserie“ von OCR nicht gefunden – Schreibweise im Bild prüfen.",
+    "41-mechanism: Große, nicht verlangte Schrift im Bild: „Stahlfelge“ (manuell freigegeben)",
+    "41-mechanism: Nicht verlangter kleiner Text (OCR, bitte prüfen): „Reifen“",
+    "46-deepening: Nicht verlangter kleiner Text (OCR, bitte prüfen): „Whe“",
+    "46-deepening: Verlangtes Label „316.000 Einschläge“ von OCR nicht gefunden – Schreibweise im Bild prüfen.",
+    "47-deepening: Nicht verlangter kleiner Text (OCR, bitte prüfen): „Gewitterfront“, „Stadtbach“",
+    "53-deepening: Nicht verlangter kleiner Text (OCR, bitte prüfen): „ISS“",
+    "55-deepening: Nicht verlangter kleiner Text (OCR, bitte prüfen): „Hochvolt-Batterie“",
+    "56-deepening: Verlangtes Label „E-Auto“ von OCR nicht gefunden – Schreibweise im Bild prüfen.",
+    "60-deepening: Große, nicht verlangte Schrift im Bild: „ISS“ (manuell freigegeben)",
+    "68-payoff: Verlangtes Label „Reifen“ von OCR nicht gefunden – Schreibweise im Bild prüfen."
+  ]
+}

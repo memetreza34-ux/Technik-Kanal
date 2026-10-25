@@ -1,0 +1,23 @@
+{
+  "28-foundation": {
+    "sha256": "c705e160b68057aadfdbe2e52b4d78a0eb872ed18f48fc6730f2051524fc4e21",
+    "acceptedAt": "2026-10-24T11:45:41.292Z",
+    "errorsAtAcceptance": [
+      "Große, nicht verlangte Schrift im Bild: „Erdung“"
+    ]
+  },
+  "41-mechanism": {
+    "sha256": "492fb2636ead608e4dce9ff3883287f152e3ff4f9e0ff6253169cbbeda2d266f",
+    "acceptedAt": "2026-10-24T11:52:32.154Z",
+    "errorsAtAcceptance": [
+      "Große, nicht verlangte Schrift im Bild: „Stahlfelge“"
+    ]
+  },
+  "60-deepening": {
+    "sha256": "6e2da06fbe7f2a03465cc42860e58babae9e2e07714ddf2feaa2182131f5bca4",
+    "acceptedAt": "2026-10-24T12:00:36.921Z",
+    "errorsAtAcceptance": [
+      "Große, nicht verlangte Schrift im Bild: „ISS“"
+    ]
+  }
+}

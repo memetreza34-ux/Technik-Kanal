@@ -1,0 +1,1214 @@
+{
+  "version": 1,
+  "slug": "warum-schutzt-dich-dein-auto-vor-dem-blitz",
+  "policy": "Review every final image visually. Approvals are not automated; only a reviewer who inspected it may set every check=true.",
+  "scenes": [
+    {
+      "sceneId": "01-hook",
+      "file": "02-bilder/images/01-hook/01-hook-final.jpg",
+      "sha256": "fc983836cdb8b99d890507f679cc3169351d6b7ed250585fa0ff78c03a6f0621",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "02-hook",
+      "file": "02-bilder/images/02-hook/02-hook-final.jpg",
+      "sha256": "cffd7f4a7031a1e0c618bb97257e4e3b22abf00f5285c344fe62cbc20e59d5c8",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "03-hook",
+      "file": "02-bilder/images/03-hook/03-hook-final.jpg",
+      "sha256": "ddd643c7b35e431534f55089a459cd93cc2b639bc7cf6d8567d8721ede8598aa",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "04-hook",
+      "file": "02-bilder/images/04-hook/04-hook-final.jpg",
+      "sha256": "6b4e82e9b2e4106f859e55bc39fb16460e419bb2e12527117458f1fded5f749f",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Kleine Zusatzlabels im Sicherungskasten (Küche, Steckdosen) – deutsch, passend.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "05-hook",
+      "file": "02-bilder/images/05-hook/05-hook-final.jpg",
+      "sha256": "c8f19dcc5608e700dd6c17aacadf989a25b96a28a2f3cfc9d818e5a3bce8ff5e",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "06-hook",
+      "file": "02-bilder/images/06-hook/06-hook-final.jpg",
+      "sha256": "7ad4350445eba501bebc02bd4f1c68d18f1bffafcc2da2ed678c24844c363415",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "07-hook",
+      "file": "02-bilder/images/07-hook/07-hook-final.jpg",
+      "sha256": "d592d5c0e2bbc76509729641dff0e48b5ab6cb4c3302a3556696680fca5a3d47",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "08-context",
+      "file": "02-bilder/images/08-context/08-context-final.jpg",
+      "sha256": "9949a4856862a57b936936fe6ef6c61b22fb1ef83c8a80aafd6f3cc4e3801bbb",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "09-context",
+      "file": "02-bilder/images/09-context/09-context-final.jpg",
+      "sha256": "33bc09e73cc8afd6ae847ebc9b2e81d2ad4d966150033fd2109e62f54dbc9d77",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "10-context",
+      "file": "02-bilder/images/10-context/10-context-final.jpg",
+      "sha256": "bd7316ec3e481106582e426bcb50549bbf4777462defe0d8abee9939ded94d32",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "11-context",
+      "file": "02-bilder/images/11-context/11-context-final.jpg",
+      "sha256": "200cb281478c1f50fdbc27477e87509dbe0c0f07d6174d4a4793e313751b8584",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "12-context",
+      "file": "02-bilder/images/12-context/12-context-final.jpg",
+      "sha256": "075d8abe90916067a4863944f58db6f91b557f74129b2fb094a6c04bb0424ef9",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "13-context",
+      "file": "02-bilder/images/13-context/13-context-final.jpg",
+      "sha256": "1d90467ca4b34712a816ea2e681b135bdb814aa468414e60f3db68a08e88dbf6",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "14-context",
+      "file": "02-bilder/images/14-context/14-context-final.jpg",
+      "sha256": "9e501490be5ebb202a6923aa2a4ba38813aed82c2a2ee52633b9fb97e554790f",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "15-context",
+      "file": "02-bilder/images/15-context/15-context-final.jpg",
+      "sha256": "6f669c0a9d2cf152eb8eb1e1d4b6512e3f396d8ae28f67bf8577547bd8fb8496",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "16-context",
+      "file": "02-bilder/images/16-context/16-context-final.jpg",
+      "sha256": "bd2e22c127e83bdbf648d268f762fd6a57c01acfb982f3d0b714d729439d87eb",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "17-foundation",
+      "file": "02-bilder/images/17-foundation/17-foundation-final.jpg",
+      "sha256": "9e4d1cb50a6f78e5720bf2fa143fa804aa6153ccf6bc27484652271a63463fdb",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "18-foundation",
+      "file": "02-bilder/images/18-foundation/18-foundation-final.jpg",
+      "sha256": "7af47b4aab4ac7c95f37cec01ce0fdd67599b7f6dd7afbdd23e2fd9ef59d1a69",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "19-foundation",
+      "file": "02-bilder/images/19-foundation/19-foundation-final.jpg",
+      "sha256": "67747a24c591fcad6ad097f678c85da5624b3f5b2f7435d3d3fce2b467d7a44b",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "20-foundation",
+      "file": "02-bilder/images/20-foundation/20-foundation-final.jpg",
+      "sha256": "bda98d1bf1e270480bb32846445639f572f0f0ccb10fbddf4fcc9f038e27429c",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "21-foundation",
+      "file": "02-bilder/images/21-foundation/21-foundation-final.jpg",
+      "sha256": "04a52232548212b655af6dd0b74ce24dae92d451850c570068420ed5fc234f35",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "22-foundation",
+      "file": "02-bilder/images/22-foundation/22-foundation-final.jpg",
+      "sha256": "91e46455061b698eeafb4896d98c792f9fca31862e0d4145582ea4485c8e403a",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "23-foundation",
+      "file": "02-bilder/images/23-foundation/23-foundation-final.jpg",
+      "sha256": "bcbcb11d6bc3116d6f9a9fdf916f55f670446f64ec709ca161e2bf2746fea5f4",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "24-foundation",
+      "file": "02-bilder/images/24-foundation/24-foundation-final.jpg",
+      "sha256": "e7f22d23fd3f0adada22066e84c3850863fca77da5b22f1a84f69543f3b5bbee",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "25-foundation",
+      "file": "02-bilder/images/25-foundation/25-foundation-final.jpg",
+      "sha256": "9373803e9b890ec82b309a88e59635908e2553ab6d06e523cd5a7c06ca2ee5e0",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "26-foundation",
+      "file": "02-bilder/images/26-foundation/26-foundation-final.jpg",
+      "sha256": "9a128d82f0b434b5c53f7f58f5a1496b9f8731524ab08ed9075e8c592db34fb7",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "27-foundation",
+      "file": "02-bilder/images/27-foundation/27-foundation-final.jpg",
+      "sha256": "385450e8b6b6ddce9e99c26768b4169d2f0fc81f51fa83f29ca0b68a1bafeb82",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "28-foundation",
+      "file": "02-bilder/images/28-foundation/28-foundation-final.jpg",
+      "sha256": "c705e160b68057aadfdbe2e52b4d78a0eb872ed18f48fc6730f2051524fc4e21",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "29-foundation",
+      "file": "02-bilder/images/29-foundation/29-foundation-final.jpg",
+      "sha256": "900b968f17f15dc24ad05f0ba5e3fe1a078890f486f41bbd832254dbbd9bcf79",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Labels als Panel-Überschriften, aber genau die angeforderten Wörter.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "30-mechanism",
+      "file": "02-bilder/images/30-mechanism/30-mechanism-final.jpg",
+      "sha256": "198db73daa82288ddd05af696358a2962009b2772871c7290fa794ef22204fb9",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "31-mechanism",
+      "file": "02-bilder/images/31-mechanism/31-mechanism-final.jpg",
+      "sha256": "06b68d46693741c03dde7b79d75b8623719f2089c909b4ac57b9b5905702ce8c",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "32-mechanism",
+      "file": "02-bilder/images/32-mechanism/32-mechanism-final.jpg",
+      "sha256": "05f50ffc91ae75c5e945ecddce9265a0223f04e0bbe0d4d65a5100ab65cf0a85",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "33-mechanism",
+      "file": "02-bilder/images/33-mechanism/33-mechanism-final.jpg",
+      "sha256": "c6e5b67fd9e234730851181c70879c206c954b83b7897469ba5f57d1cf680ec5",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "34-mechanism",
+      "file": "02-bilder/images/34-mechanism/34-mechanism-final.jpg",
+      "sha256": "3538f05bf37e43d57d6bab18a0795fd98203dad612acaa3f6100501eecb52cc2",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "35-mechanism",
+      "file": "02-bilder/images/35-mechanism/35-mechanism-final.jpg",
+      "sha256": "23aafed5671b4ce36252067c4b894f8325e97398c66783ebd37ffbb862ac7b1d",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Schild 'KAROSSERIE' im Bild = angefordertes Label.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "36-mechanism",
+      "file": "02-bilder/images/36-mechanism/36-mechanism-final.jpg",
+      "sha256": "8cab0f68544d9849a3293b1c47ab173ff4bedfc989944b598ed1ecd5617ff53d",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "37-mechanism",
+      "file": "02-bilder/images/37-mechanism/37-mechanism-final.jpg",
+      "sha256": "b8b16b20aca1b4bf21074fb2ec1f9bf571513a5cbfc34a3953f924c76d4df702",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "38-mechanism",
+      "file": "02-bilder/images/38-mechanism/38-mechanism-final.jpg",
+      "sha256": "d7bb35a46c92a9c420f8b071213b08ed5b1204cd48bff66cb85a24057feba759",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "39-mechanism",
+      "file": "02-bilder/images/39-mechanism/39-mechanism-final.jpg",
+      "sha256": "c245414064ca06350a606b6f5a74c5700841ccbd1b20fc1835138c3b02fc528a",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "40-mechanism",
+      "file": "02-bilder/images/40-mechanism/40-mechanism-final.jpg",
+      "sha256": "f8d34487e9303ef1f5f2b13e3e661f4d230a691ca53f306153ebf0b416c0b5a1",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "41-mechanism",
+      "file": "02-bilder/images/41-mechanism/41-mechanism-final.jpg",
+      "sha256": "492fb2636ead608e4dce9ff3883287f152e3ff4f9e0ff6253169cbbeda2d266f",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "42-mechanism",
+      "file": "02-bilder/images/42-mechanism/42-mechanism-final.jpg",
+      "sha256": "63e49e4528cc6d2b66ca4f42c30a5c49eb609da4b94c417201f77e2aa125f032",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "43-mechanism",
+      "file": "02-bilder/images/43-mechanism/43-mechanism-final.jpg",
+      "sha256": "2833383d514ac7a2cd3a875432462f1fc59edac725fadbec08be9ed2141fccd2",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "44-mechanism",
+      "file": "02-bilder/images/44-mechanism/44-mechanism-final.jpg",
+      "sha256": "e45f206b416566a7261f94f79f579f7fa472021d56ed1517b91a5fc55af537c8",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "45-deepening",
+      "file": "02-bilder/images/45-deepening/45-deepening-final.jpg",
+      "sha256": "47c8e1eb9825cbbb92fedfb32835f98e53b2734a9e8193890b8b386fd141facf",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "46-deepening",
+      "file": "02-bilder/images/46-deepening/46-deepening-final.jpg",
+      "sha256": "0fddb46d40d43107b727f191a52ed1dca8b8261fe3009d487f3a59d4d4f80541",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "47-deepening",
+      "file": "02-bilder/images/47-deepening/47-deepening-final.jpg",
+      "sha256": "95ad8ea3bc0e79f2df485c0c52750c944df2ec94a2081b9320d8dd2b6b5113dd",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Korrekturversion; winzige deutsche Zusatzlabels (Altstadt, Stadtbach), unkritisch.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "48-deepening",
+      "file": "02-bilder/images/48-deepening/48-deepening-final.jpg",
+      "sha256": "8ffa86266d23a58f02cf650e89fc1828fa75a6be8d01287bf0b5d607e901282f",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "49-deepening",
+      "file": "02-bilder/images/49-deepening/49-deepening-final.jpg",
+      "sha256": "7173825bd719dc7ad240534994be5cb60c7a6b1aa07fe087b68e4ae65ab60e63",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "50-deepening",
+      "file": "02-bilder/images/50-deepening/50-deepening-final.jpg",
+      "sha256": "45e98d6ad0bce561b0ecb2ad74c5950353a6aba233cc440c19d4ac41ec4907fc",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "51-deepening",
+      "file": "02-bilder/images/51-deepening/51-deepening-final.jpg",
+      "sha256": "80bb5be9f08f24eac4c5fd52e8d3deabbb84c66195288839591f1679ebe83190",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "52-deepening",
+      "file": "02-bilder/images/52-deepening/52-deepening-final.jpg",
+      "sha256": "4b18e2aa37204f0d3e5ad63ac02988ce092ffbf058cf0618f59386706179286d",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Neu geliefertes Cabrio mit geschlossenem Verdeck.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "53-deepening",
+      "file": "02-bilder/images/53-deepening/53-deepening-final.jpg",
+      "sha256": "b87d15cf7526be03b1aa11bf0c20877b64eb030536b413cd5c7056ad1f8afb28",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "54-deepening",
+      "file": "02-bilder/images/54-deepening/54-deepening-final.jpg",
+      "sha256": "87131752a5414b180335db4b774d3df754e8b8ffda69a3f4ffa9da9f7014998d",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "55-deepening",
+      "file": "02-bilder/images/55-deepening/55-deepening-final.jpg",
+      "sha256": "2320325b8626b8b40af10d85261b092c34e8af0f26188811a79a3e2d85f45e96",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "56-deepening",
+      "file": "02-bilder/images/56-deepening/56-deepening-final.jpg",
+      "sha256": "e3ebd0daf6ac8af0a76f5d9a45cd76f7da07bcccfeb66fea06999ef4329d7720",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "57-deepening",
+      "file": "02-bilder/images/57-deepening/57-deepening-final.jpg",
+      "sha256": "ec47bd24ae86b0259546f2a855e6254bab27ad4d7186c9105da86ffa28fe5bab",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "58-deepening",
+      "file": "02-bilder/images/58-deepening/58-deepening-final.jpg",
+      "sha256": "8ed78e940e446cbad50722144d8a5462119364f75859f9ab4cfe1d453ee76da0",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "59-deepening",
+      "file": "02-bilder/images/59-deepening/59-deepening-final.jpg",
+      "sha256": "276e411514cf07ad9c8c444d81101c4d5a3e315daadb4800256918bc3d3465e8",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "60-deepening",
+      "file": "02-bilder/images/60-deepening/60-deepening-final.jpg",
+      "sha256": "6e2da06fbe7f2a03465cc42860e58babae9e2e07714ddf2feaa2182131f5bca4",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "61-deepening",
+      "file": "02-bilder/images/61-deepening/61-deepening-final.jpg",
+      "sha256": "634b6108c85306d4bed6dfac9eec9c6514043171f11f7fcf6355a19ca820ae48",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "62-deepening",
+      "file": "02-bilder/images/62-deepening/62-deepening-final.jpg",
+      "sha256": "5319dbc2df22564f88839141d054d0f152bfabc4f01b41d322eef8f9cb5d86dd",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "63-deepening",
+      "file": "02-bilder/images/63-deepening/63-deepening-final.jpg",
+      "sha256": "6a6c6227b85f7bf8bc00400fc9259c59b18e242655c5383b9dc1d295253404a6",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "64-deepening",
+      "file": "02-bilder/images/64-deepening/64-deepening-final.jpg",
+      "sha256": "91b2d83f82e66b56c6bac64f5c601fa1c421acef87ebb0a4cbc7d87afd81229d",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "65-deepening",
+      "file": "02-bilder/images/65-deepening/65-deepening-final.jpg",
+      "sha256": "3f8fe8f8b47cc5fb73ea6acb889b61098c71d626099e19ebe0400f27b6ba8e10",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "66-payoff",
+      "file": "02-bilder/images/66-payoff/66-payoff-final.jpg",
+      "sha256": "94aae6b8fd5166b42167145e6fb6ab977e608ef748f02dc21974baa9a12205bb",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Neu erzeugt; nur '30.000 °C' und '20.000 A'.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "67-payoff",
+      "file": "02-bilder/images/67-payoff/67-payoff-final.jpg",
+      "sha256": "5cf323a8cd31edfc1a60dd7b860ea9cf35a2d230a7b54e1b6ab95330e9cff366",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "68-payoff",
+      "file": "02-bilder/images/68-payoff/68-payoff-final.jpg",
+      "sha256": "3da7d0a6b9dcc4c9f6c13c0f4aaec0e07d3bb38057fef9be6cb3a87e7c5220db",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "69-payoff",
+      "file": "02-bilder/images/69-payoff/69-payoff-final.jpg",
+      "sha256": "0505fd03a35c35396463641084cda326053cfac4ce327b4a17f73d1408efd72d",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "'im Auto'/'draußen' groß, aber angefordert.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "70-payoff",
+      "file": "02-bilder/images/70-payoff/70-payoff-final.jpg",
+      "sha256": "8ffaf39a181171f15f696bfe742dbec9bfa0cba4c186287419b11e64b81b59b6",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    },
+    {
+      "sceneId": "71-payoff",
+      "file": "02-bilder/images/71-payoff/71-payoff-final.jpg",
+      "sha256": "c462244b284e606d70883190d10399257dbb6fb8c6baf5e1602c27f6830da87f",
+      "checks": {
+        "metadataAbsent": true,
+        "visibleGermanTextCorrect": true,
+        "scientificAccuracy": true,
+        "matchesNarration": true,
+        "readableOnPhone": true,
+        "notDuplicate": true
+      },
+      "reviewer": "Claude (Sichtprüfung aller Bilder, Kontaktbögen + Zoom)",
+      "reviewedAt": "2026-10-24",
+      "notes": "Gesichtet: passt zum Sprechtext, Text korrekt, keine Metadaten.",
+      "status": "approved"
+    }
+  ]
+}

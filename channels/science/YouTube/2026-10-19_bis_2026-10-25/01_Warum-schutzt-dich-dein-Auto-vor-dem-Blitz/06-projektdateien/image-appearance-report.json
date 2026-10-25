@@ -1,0 +1,1346 @@
+{
+  "version": "science-static-image-appearance-v2",
+  "productionProfile": "youtube-6to7min-v1",
+  "generatedAt": "2026-10-24T12:14:29.721Z",
+  "passed": true,
+  "visualPolicyVersion": "science-static-v1",
+  "analyzedImages": 71,
+  "backgroundClusters": [
+    {
+      "items": [
+        "01-hook",
+        "02-hook",
+        "06-hook",
+        "12-context",
+        "16-context",
+        "22-foundation",
+        "28-foundation",
+        "36-mechanism",
+        "40-mechanism",
+        "42-mechanism",
+        "45-deepening",
+        "47-deepening",
+        "56-deepening",
+        "57-deepening",
+        "66-payoff",
+        "67-payoff",
+        "69-payoff",
+        "71-payoff"
+      ],
+      "center": {
+        "r": 34.3,
+        "g": 44.1,
+        "b": 65.2
+      }
+    },
+    {
+      "items": [
+        "03-hook",
+        "24-foundation",
+        "62-deepening"
+      ],
+      "center": {
+        "r": 30.2,
+        "g": 28.5,
+        "b": 38.4
+      }
+    },
+    {
+      "items": [
+        "04-hook",
+        "05-hook",
+        "10-context",
+        "14-context",
+        "50-deepening",
+        "51-deepening"
+      ],
+      "center": {
+        "r": 157.7,
+        "g": 169.1,
+        "b": 174.4
+      }
+    },
+    {
+      "items": [
+        "07-hook",
+        "09-context",
+        "13-context",
+        "30-mechanism",
+        "37-mechanism",
+        "48-deepening",
+        "49-deepening",
+        "52-deepening",
+        "58-deepening",
+        "63-deepening",
+        "64-deepening",
+        "70-payoff"
+      ],
+      "center": {
+        "r": 52.2,
+        "g": 69,
+        "b": 81.7
+      }
+    },
+    {
+      "items": [
+        "08-context"
+      ],
+      "center": {
+        "r": 49.7,
+        "g": 61.5,
+        "b": 56.2
+      }
+    },
+    {
+      "items": [
+        "11-context"
+      ],
+      "center": {
+        "r": 76.5,
+        "g": 119,
+        "b": 100.3
+      }
+    },
+    {
+      "items": [
+        "15-context",
+        "60-deepening",
+        "65-deepening"
+      ],
+      "center": {
+        "r": 111.5,
+        "g": 134.1,
+        "b": 141.9
+      }
+    },
+    {
+      "items": [
+        "17-foundation"
+      ],
+      "center": {
+        "r": 156.7,
+        "g": 140.7,
+        "b": 126.2
+      }
+    },
+    {
+      "items": [
+        "18-foundation"
+      ],
+      "center": {
+        "r": 118.3,
+        "g": 85,
+        "b": 67.8
+      }
+    },
+    {
+      "items": [
+        "19-foundation",
+        "20-foundation",
+        "25-foundation",
+        "26-foundation",
+        "29-foundation",
+        "32-mechanism",
+        "33-mechanism",
+        "34-mechanism",
+        "38-mechanism",
+        "39-mechanism",
+        "44-mechanism",
+        "53-deepening",
+        "55-deepening",
+        "61-deepening",
+        "68-payoff"
+      ],
+      "center": {
+        "r": 235.9,
+        "g": 237.8,
+        "b": 235.5
+      }
+    },
+    {
+      "items": [
+        "21-foundation",
+        "31-mechanism",
+        "43-mechanism"
+      ],
+      "center": {
+        "r": 197.9,
+        "g": 206.9,
+        "b": 214
+      }
+    },
+    {
+      "items": [
+        "23-foundation",
+        "54-deepening"
+      ],
+      "center": {
+        "r": 84.6,
+        "g": 79.1,
+        "b": 68.9
+      }
+    },
+    {
+      "items": [
+        "27-foundation"
+      ],
+      "center": {
+        "r": 82.9,
+        "g": 47.4,
+        "b": 40.2
+      }
+    },
+    {
+      "items": [
+        "35-mechanism",
+        "59-deepening"
+      ],
+      "center": {
+        "r": 136.1,
+        "g": 152.5,
+        "b": 150.3
+      }
+    },
+    {
+      "items": [
+        "41-mechanism"
+      ],
+      "center": {
+        "r": 224.8,
+        "g": 222.6,
+        "b": 213.4
+      }
+    },
+    {
+      "items": [
+        "46-deepening"
+      ],
+      "center": {
+        "r": 109.4,
+        "g": 143.8,
+        "b": 108.8
+      }
+    }
+  ],
+  "generatedImagesMustBeTextFree": false,
+  "visibleTextPolicy": "controlled-german-only",
+  "manualReview": "Prüfe fachliche Plausibilität, Anti-KI-Look, Serienkontinuität, klare Ein-Aussage-Komposition sowie sichtbaren Bildtext: nur Deutsch, korrekt geschrieben, fachlich richtig, keine Logos/Wasserzeichen.",
+  "analyses": [
+    {
+      "label": "01-hook",
+      "file": "02-bilder/images/01-hook/01-hook-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.015,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.005,
+      "edgeColor": {
+        "r": 34.733823529411765,
+        "g": 37.77107843137255,
+        "b": 68.67794117647058
+      }
+    },
+    {
+      "label": "02-hook",
+      "file": "02-bilder/images/02-hook/02-hook-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.004,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.001,
+      "edgeColor": {
+        "r": 43.476960784313725,
+        "g": 47.27826797385621,
+        "b": 62.428104575163395
+      }
+    },
+    {
+      "label": "03-hook",
+      "file": "02-bilder/images/03-hook/03-hook-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.024,
+      "edgeColor": {
+        "r": 29.08643790849673,
+        "g": 29.91797385620915,
+        "b": 37.64950980392157
+      }
+    },
+    {
+      "label": "04-hook",
+      "file": "02-bilder/images/04-hook/04-hook-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0.001,
+      "fullWhiteRatio": 0.018,
+      "edgeColor": {
+        "r": 161.521568627451,
+        "g": 173.1452614379085,
+        "b": 177.45490196078433
+      }
+    },
+    {
+      "label": "05-hook",
+      "file": "02-bilder/images/05-hook/05-hook-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.067,
+      "bottomWhiteRatio": 0.029,
+      "fullWhiteRatio": 0.133,
+      "edgeColor": {
+        "r": 163.3950980392157,
+        "g": 171.10212418300654,
+        "b": 169.61830065359476
+      }
+    },
+    {
+      "label": "06-hook",
+      "file": "02-bilder/images/06-hook/06-hook-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 21.904738562091502,
+        "g": 29.87450980392157,
+        "b": 61.03709150326797
+      }
+    },
+    {
+      "label": "07-hook",
+      "file": "02-bilder/images/07-hook/07-hook-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 52.54509803921569,
+        "g": 69.82450980392157,
+        "b": 83.43513071895426
+      }
+    },
+    {
+      "label": "08-context",
+      "file": "02-bilder/images/08-context/08-context-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.024,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.016,
+      "edgeColor": {
+        "r": 49.66062091503268,
+        "g": 61.53088235294118,
+        "b": 56.194607843137256
+      }
+    },
+    {
+      "label": "09-context",
+      "file": "02-bilder/images/09-context/09-context-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 58.10800653594771,
+        "g": 76.86993464052287,
+        "b": 98.55196078431372
+      }
+    },
+    {
+      "label": "10-context",
+      "file": "02-bilder/images/10-context/10-context-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.035,
+      "bottomWhiteRatio": 0.159,
+      "fullWhiteRatio": 0.101,
+      "edgeColor": {
+        "r": 150.32761437908496,
+        "g": 165.17107843137254,
+        "b": 172.89101307189543
+      }
+    },
+    {
+      "label": "11-context",
+      "file": "02-bilder/images/11-context/11-context-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 76.49264705882354,
+        "g": 118.97777777777777,
+        "b": 100.32532679738561
+      }
+    },
+    {
+      "label": "12-context",
+      "file": "02-bilder/images/12-context/12-context-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 33.06764705882353,
+        "g": 51.48447712418301,
+        "b": 64.68153594771242
+      }
+    },
+    {
+      "label": "13-context",
+      "file": "02-bilder/images/13-context/13-context-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.001,
+      "edgeColor": {
+        "r": 41.316830065359476,
+        "g": 67.49918300653594,
+        "b": 79.79117647058824
+      }
+    },
+    {
+      "label": "14-context",
+      "file": "02-bilder/images/14-context/14-context-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.001,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.002,
+      "edgeColor": {
+        "r": 156.31454248366012,
+        "g": 173.70882352941177,
+        "b": 182.7861111111111
+      }
+    },
+    {
+      "label": "15-context",
+      "file": "02-bilder/images/15-context/15-context-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.001,
+      "edgeColor": {
+        "r": 96.1562091503268,
+        "g": 133.72761437908497,
+        "b": 150.25816993464053
+      }
+    },
+    {
+      "label": "16-context",
+      "file": "02-bilder/images/16-context/16-context-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 36.3187908496732,
+        "g": 46.40604575163399,
+        "b": 56.71209150326797
+      }
+    },
+    {
+      "label": "17-foundation",
+      "file": "02-bilder/images/17-foundation/17-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.001,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 156.6892156862745,
+        "g": 140.67581699346405,
+        "b": 126.2171568627451
+      }
+    },
+    {
+      "label": "18-foundation",
+      "file": "02-bilder/images/18-foundation/18-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.016,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.006,
+      "edgeColor": {
+        "r": 118.27222222222223,
+        "g": 85.02712418300653,
+        "b": 67.82303921568628
+      }
+    },
+    {
+      "label": "19-foundation",
+      "file": "02-bilder/images/19-foundation/19-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.938,
+      "bottomWhiteRatio": 0.87,
+      "fullWhiteRatio": 0.764,
+      "edgeColor": {
+        "r": 240.94803921568626,
+        "g": 242.19003267973855,
+        "b": 234.76045751633987
+      }
+    },
+    {
+      "label": "20-foundation",
+      "file": "02-bilder/images/20-foundation/20-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.01,
+      "bottomWhiteRatio": 0.005,
+      "fullWhiteRatio": 0.012,
+      "edgeColor": {
+        "r": 226.4184640522876,
+        "g": 226.26928104575163,
+        "b": 225.88186274509803
+      }
+    },
+    {
+      "label": "21-foundation",
+      "file": "02-bilder/images/21-foundation/21-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.004,
+      "edgeColor": {
+        "r": 200.48954248366013,
+        "g": 212.19428104575164,
+        "b": 219.94575163398693
+      }
+    },
+    {
+      "label": "22-foundation",
+      "file": "02-bilder/images/22-foundation/22-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.004,
+      "edgeColor": {
+        "r": 40.09673202614379,
+        "g": 37.498366013071895,
+        "b": 73.29803921568627
+      }
+    },
+    {
+      "label": "23-foundation",
+      "file": "02-bilder/images/23-foundation/23-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.011,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.002,
+      "edgeColor": {
+        "r": 92.793954248366,
+        "g": 73.15359477124183,
+        "b": 66.38218954248366
+      }
+    },
+    {
+      "label": "24-foundation",
+      "file": "02-bilder/images/24-foundation/24-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 36.23856209150327,
+        "g": 31.334150326797385,
+        "b": 31.769607843137255
+      }
+    },
+    {
+      "label": "25-foundation",
+      "file": "02-bilder/images/25-foundation/25-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.924,
+      "bottomWhiteRatio": 0.866,
+      "fullWhiteRatio": 0.584,
+      "edgeColor": {
+        "r": 245.5859477124183,
+        "g": 246.62254901960785,
+        "b": 246.85882352941175
+      }
+    },
+    {
+      "label": "26-foundation",
+      "file": "02-bilder/images/26-foundation/26-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.729,
+      "bottomWhiteRatio": 0.869,
+      "fullWhiteRatio": 0.543,
+      "edgeColor": {
+        "r": 239.6122549019608,
+        "g": 240.21274509803922,
+        "b": 238.73676470588236
+      }
+    },
+    {
+      "label": "27-foundation",
+      "file": "02-bilder/images/27-foundation/27-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 82.90359477124183,
+        "g": 47.440522875816995,
+        "b": 40.22254901960784
+      }
+    },
+    {
+      "label": "28-foundation",
+      "file": "02-bilder/images/28-foundation/28-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 40.17434640522876,
+        "g": 40.20392156862745,
+        "b": 40.06519607843137
+      }
+    },
+    {
+      "label": "29-foundation",
+      "file": "02-bilder/images/29-foundation/29-foundation-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.038,
+      "bottomWhiteRatio": 0.001,
+      "fullWhiteRatio": 0.019,
+      "edgeColor": {
+        "r": 228.19281045751634,
+        "g": 229.2220588235294,
+        "b": 222.94444444444446
+      }
+    },
+    {
+      "label": "30-mechanism",
+      "file": "02-bilder/images/30-mechanism/30-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 53.08986928104575,
+        "g": 71.11029411764706,
+        "b": 75.00866013071895
+      }
+    },
+    {
+      "label": "31-mechanism",
+      "file": "02-bilder/images/31-mechanism/31-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.231,
+      "bottomWhiteRatio": 0.116,
+      "fullWhiteRatio": 0.146,
+      "edgeColor": {
+        "r": 188.07009803921568,
+        "g": 195.81470588235294,
+        "b": 203.4392156862745
+      }
+    },
+    {
+      "label": "32-mechanism",
+      "file": "02-bilder/images/32-mechanism/32-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.958,
+      "bottomWhiteRatio": 0.892,
+      "fullWhiteRatio": 0.799,
+      "edgeColor": {
+        "r": 232.71977124183007,
+        "g": 236.99003267973856,
+        "b": 239.88300653594771
+      }
+    },
+    {
+      "label": "33-mechanism",
+      "file": "02-bilder/images/33-mechanism/33-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.978,
+      "bottomWhiteRatio": 0.954,
+      "fullWhiteRatio": 0.717,
+      "edgeColor": {
+        "r": 246.72696078431372,
+        "g": 247.51846405228758,
+        "b": 240.27875816993463
+      }
+    },
+    {
+      "label": "34-mechanism",
+      "file": "02-bilder/images/34-mechanism/34-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.873,
+      "bottomWhiteRatio": 0.897,
+      "fullWhiteRatio": 0.726,
+      "edgeColor": {
+        "r": 244.93349673202616,
+        "g": 244.65277777777777,
+        "b": 237.6091503267974
+      }
+    },
+    {
+      "label": "35-mechanism",
+      "file": "02-bilder/images/35-mechanism/35-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.001,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.004,
+      "edgeColor": {
+        "r": 131.08382352941177,
+        "g": 147.69281045751634,
+        "b": 150.36339869281045
+      }
+    },
+    {
+      "label": "36-mechanism",
+      "file": "02-bilder/images/36-mechanism/36-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 35.08937908496732,
+        "g": 43.88137254901961,
+        "b": 54.074019607843134
+      }
+    },
+    {
+      "label": "37-mechanism",
+      "file": "02-bilder/images/37-mechanism/37-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.008,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.006,
+      "edgeColor": {
+        "r": 41.95800653594771,
+        "g": 55.719607843137254,
+        "b": 85.61209150326798
+      }
+    },
+    {
+      "label": "38-mechanism",
+      "file": "02-bilder/images/38-mechanism/38-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.088,
+      "bottomWhiteRatio": 0.073,
+      "fullWhiteRatio": 0.042,
+      "edgeColor": {
+        "r": 219.74003267973856,
+        "g": 225.41192810457517,
+        "b": 229.42761437908496
+      }
+    },
+    {
+      "label": "39-mechanism",
+      "file": "02-bilder/images/39-mechanism/39-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.645,
+      "bottomWhiteRatio": 0.145,
+      "fullWhiteRatio": 0.285,
+      "edgeColor": {
+        "r": 229.96503267973856,
+        "g": 233.51160130718955,
+        "b": 236.7517973856209
+      }
+    },
+    {
+      "label": "40-mechanism",
+      "file": "02-bilder/images/40-mechanism/40-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 32.08545751633987,
+        "g": 45.23529411764706,
+        "b": 62.264379084967324
+      }
+    },
+    {
+      "label": "41-mechanism",
+      "file": "02-bilder/images/41-mechanism/41-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.007,
+      "bottomWhiteRatio": 0.002,
+      "fullWhiteRatio": 0.004,
+      "edgeColor": {
+        "r": 224.83169934640523,
+        "g": 222.6295751633987,
+        "b": 213.3640522875817
+      }
+    },
+    {
+      "label": "42-mechanism",
+      "file": "02-bilder/images/42-mechanism/42-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 27.396568627450982,
+        "g": 47.56666666666667,
+        "b": 73.34084967320261
+      }
+    },
+    {
+      "label": "43-mechanism",
+      "file": "02-bilder/images/43-mechanism/43-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.726,
+      "bottomWhiteRatio": 0.02,
+      "fullWhiteRatio": 0.354,
+      "edgeColor": {
+        "r": 205.04591503267974,
+        "g": 212.8050653594771,
+        "b": 218.73104575163399
+      }
+    },
+    {
+      "label": "44-mechanism",
+      "file": "02-bilder/images/44-mechanism/44-mechanism-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.801,
+      "bottomWhiteRatio": 0.384,
+      "fullWhiteRatio": 0.387,
+      "edgeColor": {
+        "r": 232.58398692810457,
+        "g": 236.01372549019607,
+        "b": 235.3624183006536
+      }
+    },
+    {
+      "label": "45-deepening",
+      "file": "02-bilder/images/45-deepening/45-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 32.15588235294118,
+        "g": 37.2031045751634,
+        "b": 59.593790849673205
+      }
+    },
+    {
+      "label": "46-deepening",
+      "file": "02-bilder/images/46-deepening/46-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 109.41584967320262,
+        "g": 143.7517973856209,
+        "b": 108.77924836601308
+      }
+    },
+    {
+      "label": "47-deepening",
+      "file": "02-bilder/images/47-deepening/47-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.003,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.001,
+      "edgeColor": {
+        "r": 34.511601307189544,
+        "g": 38.51192810457516,
+        "b": 51.78937908496732
+      }
+    },
+    {
+      "label": "48-deepening",
+      "file": "02-bilder/images/48-deepening/48-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 53.757516339869284,
+        "g": 69.44003267973856,
+        "b": 78.63937908496732
+      }
+    },
+    {
+      "label": "49-deepening",
+      "file": "02-bilder/images/49-deepening/49-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 75.53986928104575,
+        "g": 75.00326797385621,
+        "b": 73.82581699346406
+      }
+    },
+    {
+      "label": "50-deepening",
+      "file": "02-bilder/images/50-deepening/50-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.464,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.164,
+      "edgeColor": {
+        "r": 158.91160130718956,
+        "g": 169.14558823529413,
+        "b": 177.07254901960783
+      }
+    },
+    {
+      "label": "51-deepening",
+      "file": "02-bilder/images/51-deepening/51-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.005,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.004,
+      "edgeColor": {
+        "r": 155.59313725490196,
+        "g": 162.3107843137255,
+        "b": 166.59346405228757
+      }
+    },
+    {
+      "label": "52-deepening",
+      "file": "02-bilder/images/52-deepening/52-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 48.61503267973856,
+        "g": 61.47549019607843,
+        "b": 83.11960784313726
+      }
+    },
+    {
+      "label": "53-deepening",
+      "file": "02-bilder/images/53-deepening/53-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 1,
+      "bottomWhiteRatio": 0.952,
+      "fullWhiteRatio": 0.569,
+      "edgeColor": {
+        "r": 239.95996732026143,
+        "g": 244.77058823529413,
+        "b": 246.50898692810458
+      }
+    },
+    {
+      "label": "54-deepening",
+      "file": "02-bilder/images/54-deepening/54-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.014,
+      "edgeColor": {
+        "r": 76.45555555555555,
+        "g": 85.07679738562092,
+        "b": 71.51192810457516
+      }
+    },
+    {
+      "label": "55-deepening",
+      "file": "02-bilder/images/55-deepening/55-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.038,
+      "bottomWhiteRatio": 0.045,
+      "fullWhiteRatio": 0.039,
+      "edgeColor": {
+        "r": 230.15702614379086,
+        "g": 230.80114379084966,
+        "b": 227.54019607843136
+      }
+    },
+    {
+      "label": "56-deepening",
+      "file": "02-bilder/images/56-deepening/56-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 40.01633986928105,
+        "g": 62.915359477124184,
+        "b": 74.38022875816993
+      }
+    },
+    {
+      "label": "57-deepening",
+      "file": "02-bilder/images/57-deepening/57-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.001,
+      "edgeColor": {
+        "r": 52.116503267973854,
+        "g": 54.63725490196079,
+        "b": 72.3578431372549
+      }
+    },
+    {
+      "label": "58-deepening",
+      "file": "02-bilder/images/58-deepening/58-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 39.330065359477125,
+        "g": 76.92614379084968,
+        "b": 89.6297385620915
+      }
+    },
+    {
+      "label": "59-deepening",
+      "file": "02-bilder/images/59-deepening/59-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.042,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.036,
+      "edgeColor": {
+        "r": 141.11748366013072,
+        "g": 157.38006535947713,
+        "b": 150.2357843137255
+      }
+    },
+    {
+      "label": "60-deepening",
+      "file": "02-bilder/images/60-deepening/60-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.004,
+      "bottomWhiteRatio": 0.011,
+      "fullWhiteRatio": 0.007,
+      "edgeColor": {
+        "r": 109.63823529411765,
+        "g": 129.7232026143791,
+        "b": 130.58643790849672
+      }
+    },
+    {
+      "label": "61-deepening",
+      "file": "02-bilder/images/61-deepening/61-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.794,
+      "bottomWhiteRatio": 0.924,
+      "fullWhiteRatio": 0.506,
+      "edgeColor": {
+        "r": 233.1718954248366,
+        "g": 234.24738562091503,
+        "b": 227.0186274509804
+      }
+    },
+    {
+      "label": "62-deepening",
+      "file": "02-bilder/images/62-deepening/62-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.012,
+      "edgeColor": {
+        "r": 25.201797385620914,
+        "g": 24.164869281045753,
+        "b": 45.930065359477126
+      }
+    },
+    {
+      "label": "63-deepening",
+      "file": "02-bilder/images/63-deepening/63-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 54.31928104575164,
+        "g": 73.16928104575163,
+        "b": 92.07679738562092
+      }
+    },
+    {
+      "label": "64-deepening",
+      "file": "02-bilder/images/64-deepening/64-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 46.25637254901961,
+        "g": 69.91846405228758,
+        "b": 80.5171568627451
+      }
+    },
+    {
+      "label": "65-deepening",
+      "file": "02-bilder/images/65-deepening/65-deepening-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 128.72450980392156,
+        "g": 138.72581699346406,
+        "b": 144.99918300653596
+      }
+    },
+    {
+      "label": "66-payoff",
+      "file": "02-bilder/images/66-payoff/66-payoff-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.001,
+      "edgeColor": {
+        "r": 16.383496732026146,
+        "g": 37.966503267973856,
+        "b": 61.952287581699345
+      }
+    },
+    {
+      "label": "67-payoff",
+      "file": "02-bilder/images/67-payoff/67-payoff-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 30.511111111111113,
+        "g": 36.29885620915033,
+        "b": 79.7279411764706
+      }
+    },
+    {
+      "label": "68-payoff",
+      "file": "02-bilder/images/68-payoff/68-payoff-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 1,
+      "bottomWhiteRatio": 1,
+      "fullWhiteRatio": 0.723,
+      "edgeColor": {
+        "r": 247.24313725490197,
+        "g": 248.03856209150328,
+        "b": 243.38986928104575
+      }
+    },
+    {
+      "label": "69-payoff",
+      "file": "02-bilder/images/69-payoff/69-payoff-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.044,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.009,
+      "edgeColor": {
+        "r": 41.120588235294115,
+        "g": 60.23349673202615,
+        "b": 79.36846405228758
+      }
+    },
+    {
+      "label": "70-payoff",
+      "file": "02-bilder/images/70-payoff/70-payoff-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0.003,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0.002,
+      "edgeColor": {
+        "r": 61.200980392156865,
+        "g": 61.083333333333336,
+        "b": 60.13464052287582
+      }
+    },
+    {
+      "label": "71-payoff",
+      "file": "02-bilder/images/71-payoff/71-payoff-final.jpg",
+      "width": 1376,
+      "height": 768,
+      "aspectRatio": 1.792,
+      "topWhiteRatio": 0,
+      "bottomWhiteRatio": 0,
+      "fullWhiteRatio": 0,
+      "edgeColor": {
+        "r": 26.869934640522875,
+        "g": 39.19803921568627,
+        "b": 78.66977124183006
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "19-foundation: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "19-foundation: großer heller Bereich unten; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "19-foundation: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "25-foundation: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "25-foundation: großer heller Bereich unten; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "25-foundation: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "26-foundation: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "26-foundation: großer heller Bereich unten; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "26-foundation: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "29-foundation: sehr ruhige helle Fläche unten erkannt.",
+    "32-mechanism: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "32-mechanism: großer heller Bereich unten; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "32-mechanism: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "32-mechanism: sehr ruhige helle Fläche oben erkannt.",
+    "33-mechanism: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "33-mechanism: großer heller Bereich unten; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "33-mechanism: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "33-mechanism: sehr ruhige helle Fläche oben erkannt.",
+    "34-mechanism: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "34-mechanism: großer heller Bereich unten; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "34-mechanism: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "34-mechanism: sehr ruhige helle Fläche oben erkannt.",
+    "34-mechanism: sehr ruhige helle Fläche unten erkannt.",
+    "39-mechanism: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "39-mechanism: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "39-mechanism: sehr ruhige helle Fläche oben erkannt.",
+    "43-mechanism: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "43-mechanism: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "44-mechanism: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "44-mechanism: großer heller Bereich unten; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "44-mechanism: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "50-deepening: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "50-deepening: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "50-deepening: sehr ruhige helle Fläche oben erkannt.",
+    "53-deepening: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "53-deepening: großer heller Bereich unten; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "53-deepening: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "53-deepening: sehr ruhige helle Fläche oben erkannt.",
+    "53-deepening: sehr ruhige helle Fläche unten erkannt.",
+    "55-deepening: sehr ruhige helle Fläche oben erkannt.",
+    "61-deepening: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "61-deepening: großer heller Bereich unten; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "61-deepening: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "68-payoff: großer heller Bereich oben; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "68-payoff: großer heller Bereich unten; prüfen, ob er fachlich/gestalterisch gewollt ist.",
+    "68-payoff: hoher weißer Flächenanteil; nur akzeptieren, wenn der helle Stil bewusst gewählt wurde.",
+    "68-payoff: sehr ruhige helle Fläche oben erkannt.",
+    "68-payoff: sehr ruhige helle Fläche unten erkannt."
+  ]
+}

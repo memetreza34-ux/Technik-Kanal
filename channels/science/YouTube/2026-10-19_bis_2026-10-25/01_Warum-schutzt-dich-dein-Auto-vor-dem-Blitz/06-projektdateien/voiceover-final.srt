@@ -1,0 +1,943 @@
+1
+00:00:00,250 --> 00:00:02,150
+Ein Blitz trifft ein Auto,
+
+2
+00:00:02,150 --> 00:00:03,830
+über 30.000 Grad heiß.
+
+3
+00:00:03,830 --> 00:00:05,640
+Warum passiert hier drinnen
+
+4
+00:00:05,640 --> 00:00:06,000
+nichts?
+
+5
+00:00:06,000 --> 00:00:07,330
+Die Luft im Blitzkanal wird
+
+6
+00:00:07,330 --> 00:00:09,380
+dabei 300-mal heißer als kochendes
+
+7
+00:00:09,380 --> 00:00:10,000
+Wasser.
+
+8
+00:00:10,000 --> 00:00:12,150
+Durch diesen dünnen Kanal jagen
+
+9
+00:00:12,150 --> 00:00:14,800
+rund 20.000 Ampere in wenigen
+
+10
+00:00:14,800 --> 00:00:16,000
+Millionstel Sekunden.
+
+11
+00:00:16,000 --> 00:00:17,610
+Deine Haushaltssicherung schaltet
+
+12
+00:00:17,610 --> 00:00:19,000
+schon bei 16 Ampere ab.
+
+13
+00:00:19,000 --> 00:00:21,260
+Der Blitzstrom ist über 1.000
+
+14
+00:00:21,260 --> 00:00:22,760
+Mal stärker und du sitzt
+
+15
+00:00:22,760 --> 00:00:24,450
+nur eine Armlänge vom Blech
+
+16
+00:00:24,450 --> 00:00:26,000
+entfernt mitten im Gewitter.
+
+17
+00:00:26,250 --> 00:00:27,670
+Fast jeder glaubt, die Gummi
+
+18
+00:00:27,670 --> 00:00:29,000
+reifen rettendich.
+
+19
+00:00:29,000 --> 00:00:29,840
+Das ist falsch.
+
+20
+00:00:29,840 --> 00:00:31,170
+Gleich siehst du die Spuren,
+
+21
+00:00:31,170 --> 00:00:32,000
+die es beweisen.
+
+22
+00:00:32,000 --> 00:00:33,240
+Schau dir an, welchen Weg
+
+23
+00:00:33,240 --> 00:00:34,560
+der Blitz schon hinter sich
+
+24
+00:00:34,560 --> 00:00:35,000
+hat.
+
+25
+00:00:35,000 --> 00:00:36,880
+Die Gewitterwolke ragt oft über
+
+26
+00:00:36,880 --> 00:00:38,000
+10 km hoch.
+
+27
+00:00:38,000 --> 00:00:39,630
+Sein Kanal ist 4 bis
+
+28
+00:00:39,630 --> 00:00:41,000
+10 km lang.
+
+29
+00:00:41,000 --> 00:00:42,570
+Und diesen Weg legt der
+
+30
+00:00:42,570 --> 00:00:44,000
+Quer durch Luft zurück.
+
+31
+00:00:44,000 --> 00:00:45,830
+Dabei ist Luft eigentlich ein
+
+32
+00:00:45,830 --> 00:00:47,000
+guter Isolator.
+
+33
+00:00:47,000 --> 00:00:47,930
+Der Gedanke mit dem Gummi
+
+34
+00:00:47,930 --> 00:00:49,000
+klingt trotzdem logisch.
+
+35
+00:00:49,000 --> 00:00:50,650
+Schließlich isoliert auch die
+
+36
+00:00:50,650 --> 00:00:52,000
+Hülle um jedes Kabel.
+
+37
+00:00:52,000 --> 00:00:52,700
+Was sollen da ein paar
+
+38
+00:00:52,700 --> 00:00:54,000
+Zentimeter Gummi noch ausrichten?
+
+39
+00:00:54,240 --> 00:00:55,140
+Für den Blitz sind sie
+
+40
+00:00:55,140 --> 00:00:57,000
+nur ein winziger letzter Sprung.
+
+41
+00:00:57,000 --> 00:00:58,530
+In Hochspannungslaboren wurden
+
+42
+00:00:58,530 --> 00:00:59,880
+echte Autos mit künstlichen
+
+43
+00:00:59,880 --> 00:01:01,000
+Blitzen getroffen.
+
+44
+00:01:01,000 --> 00:01:03,150
+Danach sah man genau hin.
+
+45
+00:01:03,150 --> 00:01:04,000
+Das Ergebnis?
+
+46
+00:01:04,000 --> 00:01:05,650
+Brandspuren, die quer über die
+
+47
+00:01:05,650 --> 00:01:07,000
+Reifen flanken laufen.
+
+48
+00:01:07,000 --> 00:01:08,120
+Der Strom ist einfach über
+
+49
+00:01:08,120 --> 00:01:09,150
+den Reifen gesprungen.
+
+50
+00:01:09,150 --> 00:01:11,000
+Der Gummi war ihm egal.
+
+51
+00:01:11,000 --> 00:01:12,260
+Die Reifen sind also nicht
+
+52
+00:01:12,260 --> 00:01:13,150
+ein Schutz.
+
+53
+00:01:13,150 --> 00:01:14,250
+Aber was schützt dich dann
+
+54
+00:01:14,250 --> 00:01:15,000
+wirklich?
+
+55
+00:01:15,000 --> 00:01:17,210
+Die Antwort beginnt 1836 in
+
+56
+00:01:17,210 --> 00:01:18,960
+London, lange bevor es das
+
+57
+00:01:18,960 --> 00:01:20,000
+erste Auto gab.
+
+58
+00:01:20,060 --> 00:01:21,280
+Im Hörsaal der Royal Institution
+
+59
+00:01:21,280 --> 00:01:22,660
+lässt der Forscher Michael Faraday
+
+60
+00:01:22,660 --> 00:01:24,000
+einen riesigen Würfel bauen.
+
+61
+00:01:24,000 --> 00:01:26,000
+Wozu ahnt noch niemand?
+
+62
+00:01:26,000 --> 00:01:27,500
+Jede Kante ist 3,7 Meter
+
+63
+00:01:27,500 --> 00:01:28,150
+lang.
+
+64
+00:01:28,150 --> 00:01:30,660
+Holzrahmen, Kupferdraht, Papier
+
+65
+00:01:30,660 --> 00:01:32,000
+und Zinfolie.
+
+66
+00:01:32,000 --> 00:01:32,970
+Alles ist überall leitend
+
+67
+00:01:32,970 --> 00:01:34,000
+miteinander verbunden.
+
+68
+00:01:34,000 --> 00:01:35,500
+Eine große Elektrisiermaschine
+
+69
+00:01:35,500 --> 00:01:37,170
+lädern die Außenwand des Würfels
+
+70
+00:01:37,170 --> 00:01:38,000
+kräftig auf.
+
+71
+00:01:38,000 --> 00:01:39,570
+Funken und Lichtbüschel sprühen
+
+72
+00:01:39,570 --> 00:01:41,000
+von der ganzen Oberfläche.
+
+73
+00:01:41,000 --> 00:01:43,000
+Es knistert und blitzt.
+
+74
+00:01:43,000 --> 00:01:44,120
+Und dann tut Faraday etwas,
+
+75
+00:01:44,120 --> 00:01:45,150
+das keiner erwartet.
+
+76
+00:01:45,150 --> 00:01:47,000
+Er steigt hinein.
+
+77
+00:01:47,060 --> 00:01:48,260
+Drinnen prüft er alles mit
+
+78
+00:01:48,260 --> 00:01:49,870
+einem Goldblatt Elektrometer und
+
+79
+00:01:49,870 --> 00:01:51,000
+brennenden Kerzen.
+
+80
+00:01:51,000 --> 00:01:52,230
+Bei Ladung würden sich die
+
+81
+00:01:52,230 --> 00:01:54,000
+dünnen Goldblättchen spreizen.
+
+82
+00:01:54,000 --> 00:01:55,000
+Sie bleiben schlaff.
+
+83
+00:01:55,000 --> 00:01:57,140
+Draußen kracht es, drinnen
+
+84
+00:01:57,140 --> 00:01:58,000
+passiert nichts.
+
+85
+00:01:58,000 --> 00:02:00,000
+Kein Funke, kein Zucken.
+
+86
+00:02:00,000 --> 00:02:01,880
+Faraday notiert später, er habe
+
+87
+00:02:01,880 --> 00:02:04,000
+in dem Würfel regelrecht gewohnt.
+
+88
+00:02:04,000 --> 00:02:05,590
+So eine leitende Hülle trägt
+
+89
+00:02:05,590 --> 00:02:07,000
+seitdem seinen Namen.
+
+90
+00:02:07,000 --> 00:02:09,000
+Faraday scherkäfig.
+
+91
+00:02:09,000 --> 00:02:10,710
+Und dein Auto ist genau
+
+92
+00:02:10,710 --> 00:02:12,000
+so ein Käfig.
+
+93
+00:02:12,250 --> 00:02:13,590
+Doch warum bleibt es innen
+
+94
+00:02:13,590 --> 00:02:14,170
+still?
+
+95
+00:02:14,170 --> 00:02:15,680
+Der Trick steckt in einer
+
+96
+00:02:15,680 --> 00:02:17,000
+einfachen Regel.
+
+97
+00:02:17,000 --> 00:02:19,150
+Gleiche Ladungen stoßen sich ab.
+
+98
+00:02:19,150 --> 00:02:21,250
+Landet Ladung auf Metall, rückt
+
+99
+00:02:21,250 --> 00:02:22,540
+sie soweit auseinander wie
+
+100
+00:02:22,540 --> 00:02:23,000
+möglich.
+
+101
+00:02:23,000 --> 00:02:25,150
+Jedes Teilchen will Abstand.
+
+102
+00:02:25,150 --> 00:02:26,960
+Weiter als bis zur Oberfläche
+
+103
+00:02:26,960 --> 00:02:28,000
+kommt sie nicht.
+
+104
+00:02:28,000 --> 00:02:30,090
+Also sammelt sie sich außen.
+
+105
+00:02:30,090 --> 00:02:31,290
+Im Inneren schieben die Ladungen
+
+106
+00:02:31,290 --> 00:02:33,000
+von allen Seiten gleich stark.
+
+107
+00:02:33,000 --> 00:02:35,430
+Ihre Kräfte heben sich genau
+
+108
+00:02:35,430 --> 00:02:36,000
+auf.
+
+109
+00:02:36,000 --> 00:02:37,590
+Das elektrische Feld, also das,
+
+110
+00:02:37,590 --> 00:02:39,230
+was Ladungen anschiebt, ist im
+
+111
+00:02:39,230 --> 00:02:40,000
+Inneren Null.
+
+112
+00:02:40,170 --> 00:02:41,480
+Bei deinem Auto übernimmt die
+
+113
+00:02:41,480 --> 00:02:43,070
+Karosserie aus Stahlblech genau
+
+114
+00:02:43,070 --> 00:02:44,000
+diese Rolle.
+
+115
+00:02:44,000 --> 00:02:45,320
+Wohin genau ein Blitzfeld
+
+116
+00:02:45,320 --> 00:02:46,870
+entscheidet sich erst auf den
+
+117
+00:02:46,870 --> 00:02:49,000
+letzten 10 bis 100 Metern.
+
+118
+00:02:49,000 --> 00:02:50,390
+Nehmen wir an, er trifft
+
+119
+00:02:50,390 --> 00:02:51,150
+dein Dach.
+
+120
+00:02:51,150 --> 00:02:52,840
+Ein Greller Schlag direkt über
+
+121
+00:02:52,840 --> 00:02:54,000
+deinem Kopf.
+
+122
+00:02:54,000 --> 00:02:55,200
+Der Strom verteilt sich und
+
+123
+00:02:55,200 --> 00:02:56,640
+fließt über Dach, Säulen und
+
+124
+00:02:56,640 --> 00:02:58,000
+Seitenwände nach unten.
+
+125
+00:02:58,000 --> 00:02:59,480
+Blech leitet den Strom viel
+
+126
+00:02:59,480 --> 00:03:01,000
+besser als dein Körper.
+
+127
+00:03:01,000 --> 00:03:02,580
+Fast alles fließt deshalb durchs
+
+128
+00:03:02,580 --> 00:03:03,000
+Metall.
+
+129
+00:03:03,000 --> 00:03:04,200
+Also nimmt der Strom den
+
+130
+00:03:04,200 --> 00:03:06,000
+bequemsten Weg, außen herum.
+
+131
+00:03:06,000 --> 00:03:07,000
+An dir vorbei.
+
+132
+00:03:07,250 --> 00:03:08,410
+Ganz unten springt er als
+
+133
+00:03:08,410 --> 00:03:10,150
+Lichtbogen über den Reifen in
+
+134
+00:03:10,150 --> 00:03:10,840
+den Boden.
+
+135
+00:03:10,840 --> 00:03:12,000
+Daher die Brandspuren.
+
+136
+00:03:12,000 --> 00:03:13,200
+Du sitzt mittendrin.
+
+137
+00:03:13,200 --> 00:03:14,460
+Der Strom fließt um dich
+
+138
+00:03:14,460 --> 00:03:15,650
+herum und ist nach einem
+
+139
+00:03:15,650 --> 00:03:17,000
+Wimpernschlag vorbei.
+
+140
+00:03:17,000 --> 00:03:19,150
+Wichtig, der Käfig muss gar
+
+141
+00:03:19,150 --> 00:03:21,000
+nicht völlig dicht sein.
+
+142
+00:03:21,000 --> 00:03:22,780
+Fenster sind kein Problem, solange
+
+143
+00:03:22,780 --> 00:03:24,540
+die Hölle rundum leitend verbunden
+
+144
+00:03:24,540 --> 00:03:25,000
+ist.
+
+145
+00:03:25,000 --> 00:03:26,500
+Ein grobes Metallgitter reicht
+
+146
+00:03:26,500 --> 00:03:27,000
+schon.
+
+147
+00:03:27,000 --> 00:03:28,260
+Und wie oft schlägt so
+
+148
+00:03:28,260 --> 00:03:30,000
+ein Blitz überhaupt ein?
+
+149
+00:03:30,000 --> 00:03:31,560
+Eine einzige Gewitterzelle erzeugt
+
+150
+00:03:31,560 --> 00:03:32,460
+2 bis 4 Blitze pro
+
+151
+00:03:32,460 --> 00:03:33,000
+Minute.
+
+152
+00:03:33,250 --> 00:03:35,460
+2023 zählte der Blitzdienst Blitz
+
+153
+00:03:35,460 --> 00:03:37,960
+in Deutschland rund 316.000
+
+154
+00:03:37,960 --> 00:03:39,000
+Einschläge.
+
+155
+00:03:39,000 --> 00:03:41,150
+Am dichtesten traf es Memmingen
+
+156
+00:03:41,150 --> 00:03:42,000
+im Allgäu.
+
+157
+00:03:42,000 --> 00:03:43,130
+Nirgends schlug es auf gleicher
+
+158
+00:03:43,130 --> 00:03:44,000
+Fläche öfter ein.
+
+159
+00:03:44,000 --> 00:03:45,280
+Ein Treffer ins Auto ist
+
+160
+00:03:45,280 --> 00:03:47,000
+trotzdem äußerst selten.
+
+161
+00:03:47,000 --> 00:03:48,330
+Aber wenn zählt nur die
+
+162
+00:03:48,330 --> 00:03:49,000
+Hülle.
+
+163
+00:03:49,000 --> 00:03:50,420
+Doch was passiert, wenn über
+
+164
+00:03:50,420 --> 00:03:51,620
+deinem Kopf gar kein Blech
+
+165
+00:03:51,620 --> 00:03:52,000
+ist?
+
+166
+00:03:52,000 --> 00:03:53,120
+Beim Cabrio kommt es auf
+
+167
+00:03:53,120 --> 00:03:54,150
+das Verdeck an.
+
+168
+00:03:54,150 --> 00:03:55,800
+Geschlossen leiten Metallbügel
+
+169
+00:03:55,800 --> 00:03:57,000
+darin den Blitz ab.
+
+170
+00:03:57,000 --> 00:03:58,610
+In Laborversuchen blieb das Innere
+
+171
+00:03:58,610 --> 00:03:59,320
+geschützt.
+
+172
+00:03:59,320 --> 00:04:01,000
+Nur der Stoff bekam ranflecken.
+
+173
+00:04:01,200 --> 00:04:02,830
+Verletzte Cabrioinsassen durch
+
+174
+00:04:02,830 --> 00:04:04,250
+Blitze sind dem ADAC nicht
+
+175
+00:04:04,250 --> 00:04:05,000
+bekannt.
+
+176
+00:04:05,000 --> 00:04:06,730
+Manche Cabrio-Dächer kommen aber
+
+177
+00:04:06,730 --> 00:04:08,000
+ganz ohne Metall aus.
+
+178
+00:04:08,000 --> 00:04:09,000
+Dann fehlt der Käfig.
+
+179
+00:04:09,000 --> 00:04:10,330
+Wohnwagen aus Glasfaser
+
+180
+00:04:10,330 --> 00:04:12,240
+verstärktem Kunststoff schützen
+
+181
+00:04:12,240 --> 00:04:13,000
+gar nicht.
+
+182
+00:04:13,000 --> 00:04:15,320
+Im Wohnmobil ist die Fahrerkabine
+
+183
+00:04:15,320 --> 00:04:17,000
+der sicherste Platz.
+
+184
+00:04:17,000 --> 00:04:19,140
+Und das Elektroauto mit seiner
+
+185
+00:04:19,140 --> 00:04:20,000
+großen Batterie?
+
+186
+00:04:20,000 --> 00:04:21,430
+Laut ADAC bietet es den
+
+187
+00:04:21,430 --> 00:04:22,960
+gleichen Schutz wie ein
+
+188
+00:04:22,960 --> 00:04:24,000
+Verbrenner.
+
+189
+00:04:24,000 --> 00:04:26,150
+Entscheidend ist die Metallhülle,
+
+190
+00:04:26,150 --> 00:04:27,000
+nicht der Motor.
+
+191
+00:04:27,230 --> 00:04:29,150
+Auf dem Motorrad oder Fahrrad
+
+192
+00:04:29,150 --> 00:04:30,420
+hast du keinen Käfig um
+
+193
+00:04:30,420 --> 00:04:30,840
+dich.
+
+194
+00:04:30,840 --> 00:04:32,000
+Hier wird es wirklich gefährlich.
+
+195
+00:04:32,000 --> 00:04:33,710
+Dann gilt Absteigen und ein
+
+196
+00:04:33,710 --> 00:04:35,000
+Gebäude suchen.
+
+197
+00:04:35,000 --> 00:04:36,410
+Geht das nicht, mindestens 3
+
+198
+00:04:36,410 --> 00:04:38,000
+Meter Abstand zum Fahrzeug halten
+
+199
+00:04:38,000 --> 00:04:40,000
+und auf dem Asphalt hinhocken.
+
+200
+00:04:40,000 --> 00:04:41,140
+Und auch im Auto bleibt
+
+201
+00:04:41,140 --> 00:04:43,000
+ein Einschlag nicht ohne Folgen.
+
+202
+00:04:43,000 --> 00:04:44,580
+Lack und Reifen können Schäden
+
+203
+00:04:44,580 --> 00:04:46,240
+abbekommen, die Elektronik kann
+
+204
+00:04:46,240 --> 00:04:47,000
+ausfallen.
+
+205
+00:04:47,000 --> 00:04:49,150
+Lass das Auto danach prüfen.
+
+206
+00:04:49,150 --> 00:04:50,270
+Die größte Gefahr ist aber
+
+207
+00:04:50,270 --> 00:04:51,000
+der Schreck.
+
+208
+00:04:51,000 --> 00:04:52,410
+Ein Greller Blitz, ein Knall
+
+209
+00:04:52,410 --> 00:04:54,000
+und du verreißt das Lenkrad.
+
+210
+00:04:54,250 --> 00:04:56,150
+kommen Starkregen und Ampeln, die
+
+211
+00:04:56,150 --> 00:04:58,000
+im Gewitter ausfallen können.
+
+212
+00:04:58,000 --> 00:04:59,830
+Darum bei heftigem Gewitter
+
+213
+00:04:59,830 --> 00:05:02,000
+anhalten und sitzen bleiben.
+
+214
+00:05:02,000 --> 00:05:03,500
+Nach einem Einschlag keine
+
+215
+00:05:03,500 --> 00:05:05,520
+Mitteilteile anfassen, die mit der
+
+216
+00:05:05,520 --> 00:05:07,000
+Karosserie verbunden sind.
+
+217
+00:05:07,000 --> 00:05:09,200
+Zurück zu den 30.000 Grad
+
+218
+00:05:09,200 --> 00:05:11,580
+und den 20.000 Ampere vom
+
+219
+00:05:11,580 --> 00:05:12,000
+Anfang.
+
+220
+00:05:12,000 --> 00:05:13,480
+Sie treffen dein Auto, aber
+
+221
+00:05:13,480 --> 00:05:15,000
+sie erreichen dich nicht.
+
+222
+00:05:15,000 --> 00:05:17,140
+Nicht der Gummi schützt dich,
+
+223
+00:05:17,140 --> 00:05:18,360
+sondern das Blech um dich
+
+224
+00:05:18,360 --> 00:05:19,000
+herum.
+
+225
+00:05:19,000 --> 00:05:20,170
+Steig also nicht aus, um
+
+226
+00:05:20,170 --> 00:05:21,150
+nachzusehen.
+
+227
+00:05:21,150 --> 00:05:22,560
+Draußen hast du keinen Käfig
+
+228
+00:05:22,560 --> 00:05:23,000
+mehr.
+
+229
+00:05:23,240 --> 00:05:25,160
+Faraday hat das 1836 in
+
+230
+00:05:25,160 --> 00:05:27,600
+seinem Wirfel bewiesen, mit Kerzen
+
+231
+00:05:27,600 --> 00:05:29,000
+und Goldblättchen.
+
+232
+00:05:29,000 --> 00:05:30,830
+Darum gilt, der Blitz fließt
+
+233
+00:05:30,830 --> 00:05:32,420
+um dich herum, nicht durch
+
+234
+00:05:32,420 --> 00:05:33,000
+dich.
+
+235
+00:05:33,000 --> 00:05:34,610
+Bei jedem Gewitter sitzt du
+
+236
+00:05:34,610 --> 00:05:36,000
+in Faradays Wirfel.

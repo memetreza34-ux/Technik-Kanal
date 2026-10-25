@@ -1,0 +1,15 @@
+{
+  "readyForRender": true,
+  "slug": "warum-schutzt-dich-dein-auto-vor-dem-blitz",
+  "generatedAt": "2026-10-24T12:16:00.447Z",
+  "checks": {
+    "finalVoice": true,
+    "localWordTranscript": true,
+    "wordMatchRatio": 0.9777,
+    "sceneCount": 71,
+    "imageCount": 71,
+    "captions": 236,
+    "stagedSfx": 0
+  },
+  "warnings": []
+}

@@ -43,7 +43,13 @@
       "sourceIds": [
         "SRC-VDE"
       ],
-      "chapterTitle": "Blitz trifft Auto"
+      "chapterTitle": "Blitz trifft Auto",
+      "fromMs": 0,
+      "toMs": 6000,
+      "fromFrame": 0,
+      "toFrame": 180,
+      "durationSeconds": 6,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/01-01-hook.jpg"
     },
     {
       "id": "02-hook",
@@ -69,7 +75,13 @@
       "factClaim": "the lightning channel is vastly hotter than boiling water.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 6000,
+      "toMs": 10000,
+      "fromFrame": 180,
+      "toFrame": 300,
+      "durationSeconds": 4,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/02-02-hook.jpg"
     },
     {
       "id": "03-hook",
@@ -95,7 +107,13 @@
       "factClaim": "an enormous current rushes through the thin lightning channel in an instant.",
       "sourceIds": [
         "SRC-SPEKTRUM"
-      ]
+      ],
+      "fromMs": 10000,
+      "toMs": 16000,
+      "fromFrame": 300,
+      "toFrame": 480,
+      "durationSeconds": 6,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/03-03-hook.jpg"
     },
     {
       "id": "04-hook",
@@ -121,7 +139,13 @@
       "factClaim": "a normal household circuit breaker is rated for only 16 amperes.",
       "sourceIds": [
         "SRC-HAGER"
-      ]
+      ],
+      "fromMs": 16000,
+      "toMs": 19000,
+      "fromFrame": 480,
+      "toFrame": 570,
+      "durationSeconds": 3,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/04-04-hook.jpg"
     },
     {
       "id": "05-hook",
@@ -148,7 +172,13 @@
       "sourceIds": [
         "SRC-HAGER",
         "SRC-SPEKTRUM"
-      ]
+      ],
+      "fromMs": 19000,
+      "toMs": 22000,
+      "fromFrame": 570,
+      "toFrame": 660,
+      "durationSeconds": 3,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/05-05-hook.jpg"
     },
     {
       "id": "06-hook",
@@ -174,7 +204,13 @@
       "factClaim": "the driver sits only an arm's length away from the metal body.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 22000,
+      "toMs": 26125,
+      "fromFrame": 660,
+      "toFrame": 784,
+      "durationSeconds": 4.125,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/06-06-hook.jpg"
     },
     {
       "id": "07-hook",
@@ -201,7 +237,13 @@
       "sourceIds": [
         "SRC-VDE",
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 26125,
+      "toMs": 32000,
+      "fromFrame": 784,
+      "toFrame": 960,
+      "durationSeconds": 5.875,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/07-07-hook.jpg"
     },
     {
       "id": "08-context",
@@ -228,7 +270,13 @@
       "sourceIds": [
         "SRC-VDE"
       ],
-      "chapterTitle": "Der Irrtum mit den Gummireifen"
+      "chapterTitle": "Der Irrtum mit den Gummireifen",
+      "fromMs": 32000,
+      "toMs": 38000,
+      "fromFrame": 960,
+      "toFrame": 1140,
+      "durationSeconds": 6,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/08-08-context.jpg"
     },
     {
       "id": "09-context",
@@ -254,7 +302,13 @@
       "factClaim": "the lightning channel is several kilometres long.",
       "sourceIds": [
         "SRC-SPEKTRUM"
-      ]
+      ],
+      "fromMs": 38000,
+      "toMs": 41000,
+      "fromFrame": 1140,
+      "toFrame": 1230,
+      "durationSeconds": 3,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/09-09-context.jpg"
     },
     {
       "id": "10-context",
@@ -280,7 +334,13 @@
       "factClaim": "air normally insulates, yet lightning crosses kilometres of it.",
       "sourceIds": [
         "SRC-SPEKTRUM"
-      ]
+      ],
+      "fromMs": 41000,
+      "toMs": 47000,
+      "fromFrame": 1230,
+      "toFrame": 1410,
+      "durationSeconds": 6,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/10-10-context.jpg"
     },
     {
       "id": "11-context",
@@ -306,7 +366,13 @@
       "factClaim": "the misconception comes from everyday cable insulation.",
       "sourceIds": [
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 47000,
+      "toMs": 52000,
+      "fromFrame": 1410,
+      "toFrame": 1560,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/11-11-context.jpg"
     },
     {
       "id": "12-context",
@@ -333,7 +399,13 @@
       "sourceIds": [
         "SRC-SPEKTRUM",
         "SRC-ADAC-2015"
-      ]
+      ],
+      "fromMs": 52000,
+      "toMs": 57000,
+      "fromFrame": 1560,
+      "toFrame": 1710,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/12-12-context.jpg"
     },
     {
       "id": "13-context",
@@ -359,7 +431,13 @@
       "factClaim": "engineers test real cars with artificial lightning.",
       "sourceIds": [
         "SRC-ADAC-2015"
-      ]
+      ],
+      "fromMs": 57000,
+      "toMs": 63150,
+      "fromFrame": 1710,
+      "toFrame": 1895,
+      "durationSeconds": 6.15,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/13-13-context.jpg"
     },
     {
       "id": "14-context",
@@ -385,7 +463,13 @@
       "factClaim": "the scorch mark across the tire sidewall proves the current crossed the tire.",
       "sourceIds": [
         "SRC-ADAC-2015"
-      ]
+      ],
+      "fromMs": 63150,
+      "toMs": 67000,
+      "fromFrame": 1895,
+      "toFrame": 2010,
+      "durationSeconds": 3.85,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/14-14-context.jpg"
     },
     {
       "id": "15-context",
@@ -412,7 +496,13 @@
       "sourceIds": [
         "SRC-ADAC-2015",
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 67000,
+      "toMs": 71000,
+      "fromFrame": 2010,
+      "toFrame": 2130,
+      "durationSeconds": 4,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/15-15-context.jpg"
     },
     {
       "id": "16-context",
@@ -438,7 +528,13 @@
       "factClaim": "the tires are not the protection; something else must be.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 71000,
+      "toMs": 75000,
+      "fromFrame": 2130,
+      "toFrame": 2250,
+      "durationSeconds": 4,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/16-16-context.jpg"
     },
     {
       "id": "17-foundation",
@@ -466,7 +562,13 @@
         "SRC-RI",
         "SRC-FARADAY"
       ],
-      "chapterTitle": "1836: Ein Mann zieht in einen Metallwürfel"
+      "chapterTitle": "1836: Ein Mann zieht in einen Metallwürfel",
+      "fromMs": 75000,
+      "toMs": 80030,
+      "fromFrame": 2250,
+      "toFrame": 2401,
+      "durationSeconds": 5.03,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/17-17-foundation.jpg"
     },
     {
       "id": "18-foundation",
@@ -493,7 +595,13 @@
       "sourceIds": [
         "SRC-FARADAY",
         "SRC-RI"
-      ]
+      ],
+      "fromMs": 80030,
+      "toMs": 86000,
+      "fromFrame": 2401,
+      "toFrame": 2580,
+      "durationSeconds": 5.97,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/18-18-foundation.jpg"
     },
     {
       "id": "19-foundation",
@@ -519,7 +627,13 @@
       "factClaim": "the cube is taller than two people.",
       "sourceIds": [
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 86000,
+      "toMs": 88150,
+      "fromFrame": 2580,
+      "toFrame": 2645,
+      "durationSeconds": 2.15,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/19-19-foundation.jpg"
     },
     {
       "id": "20-foundation",
@@ -545,7 +659,13 @@
       "factClaim": "the cube walls are a fully conductive metal net.",
       "sourceIds": [
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 88150,
+      "toMs": 94000,
+      "fromFrame": 2645,
+      "toFrame": 2820,
+      "durationSeconds": 5.85,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/20-20-foundation.jpg"
     },
     {
       "id": "21-foundation",
@@ -571,7 +691,13 @@
       "factClaim": "a large electrostatic machine charges the outside of the cube.",
       "sourceIds": [
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 94000,
+      "toMs": 98000,
+      "fromFrame": 2820,
+      "toFrame": 2940,
+      "durationSeconds": 4,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/21-21-foundation.jpg"
     },
     {
       "id": "22-foundation",
@@ -597,7 +723,13 @@
       "factClaim": "the outside of the cube is so strongly charged that sparks fly off it.",
       "sourceIds": [
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 98000,
+      "toMs": 103000,
+      "fromFrame": 2940,
+      "toFrame": 3090,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/22-22-foundation.jpg"
     },
     {
       "id": "23-foundation",
@@ -623,7 +755,13 @@
       "factClaim": "Faraday walks into the charged cube.",
       "sourceIds": [
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 103000,
+      "toMs": 107030,
+      "fromFrame": 3090,
+      "toFrame": 3211,
+      "durationSeconds": 4.03,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/23-23-foundation.jpg"
     },
     {
       "id": "24-foundation",
@@ -649,7 +787,13 @@
       "factClaim": "inside the cube Faraday tests for electricity with a gold-leaf electrometer.",
       "sourceIds": [
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 107030,
+      "toMs": 111000,
+      "fromFrame": 3211,
+      "toFrame": 3330,
+      "durationSeconds": 3.97,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/24-24-foundation.jpg"
     },
     {
       "id": "25-foundation",
@@ -675,7 +819,13 @@
       "factClaim": "the gold leaves would spread when charged, but stay flat inside the cube.",
       "sourceIds": [
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 111000,
+      "toMs": 115000,
+      "fromFrame": 3330,
+      "toFrame": 3450,
+      "durationSeconds": 4,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/25-25-foundation.jpg"
     },
     {
       "id": "26-foundation",
@@ -701,7 +851,13 @@
       "factClaim": "outside violent sparks, inside complete calm.",
       "sourceIds": [
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 115000,
+      "toMs": 120000,
+      "fromFrame": 3450,
+      "toFrame": 3600,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/26-26-foundation.jpg"
     },
     {
       "id": "27-foundation",
@@ -727,7 +883,13 @@
       "factClaim": "Faraday documented that he lived inside the cube without any effect.",
       "sourceIds": [
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 120000,
+      "toMs": 124000,
+      "fromFrame": 3600,
+      "toFrame": 3720,
+      "durationSeconds": 4,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/27-27-foundation.jpg"
     },
     {
       "id": "28-foundation",
@@ -754,7 +916,13 @@
       "sourceIds": [
         "SRC-VDE",
         "SRC-RI"
-      ]
+      ],
+      "fromMs": 124000,
+      "toMs": 129000,
+      "fromFrame": 3720,
+      "toFrame": 3870,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/28-28-foundation.jpg"
     },
     {
       "id": "29-foundation",
@@ -780,7 +948,13 @@
       "factClaim": "a modern car body works like Faraday's cube.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 129000,
+      "toMs": 134170,
+      "fromFrame": 3870,
+      "toFrame": 4025,
+      "durationSeconds": 5.17,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/29-29-foundation.jpg"
     },
     {
       "id": "30-mechanism",
@@ -807,7 +981,13 @@
       "sourceIds": [
         "SRC-VDE"
       ],
-      "chapterTitle": "Was der Strom um dich herum macht"
+      "chapterTitle": "Was der Strom um dich herum macht",
+      "fromMs": 134170,
+      "toMs": 139150,
+      "fromFrame": 4025,
+      "toFrame": 4175,
+      "durationSeconds": 4.98,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/30-30-mechanism.jpg"
     },
     {
       "id": "31-mechanism",
@@ -833,7 +1013,13 @@
       "factClaim": "charge on metal spreads out as far as it can.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 139150,
+      "toMs": 145150,
+      "fromFrame": 4175,
+      "toFrame": 4355,
+      "durationSeconds": 6,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/31-31-mechanism.jpg"
     },
     {
       "id": "32-mechanism",
@@ -860,7 +1046,13 @@
       "sourceIds": [
         "SRC-VDE",
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 145150,
+      "toMs": 150090,
+      "fromFrame": 4355,
+      "toFrame": 4503,
+      "durationSeconds": 4.94,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/32-32-mechanism.jpg"
     },
     {
       "id": "33-mechanism",
@@ -886,7 +1078,13 @@
       "factClaim": "inside the shell the pushes from all sides cancel each other.",
       "sourceIds": [
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 150090,
+      "toMs": 156000,
+      "fromFrame": 4503,
+      "toFrame": 4680,
+      "durationSeconds": 5.91,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/33-33-mechanism.jpg"
     },
     {
       "id": "34-mechanism",
@@ -912,7 +1110,13 @@
       "factClaim": "the electric field exists outside the shell but is zero inside.",
       "sourceIds": [
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 156000,
+      "toMs": 160085,
+      "fromFrame": 4680,
+      "toFrame": 4803,
+      "durationSeconds": 4.085,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/34-34-mechanism.jpg"
     },
     {
       "id": "35-mechanism",
@@ -938,7 +1142,13 @@
       "factClaim": "the car's sheet-metal body is the conductive shell.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 160085,
+      "toMs": 164000,
+      "fromFrame": 4803,
+      "toFrame": 4920,
+      "durationSeconds": 3.915,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/35-35-mechanism.jpg"
     },
     {
       "id": "36-mechanism",
@@ -964,7 +1174,13 @@
       "factClaim": "where lightning strikes is decided only in the last stretch above the ground.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 164000,
+      "toMs": 169000,
+      "fromFrame": 4920,
+      "toFrame": 5070,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/36-36-mechanism.jpg"
     },
     {
       "id": "37-mechanism",
@@ -990,7 +1206,13 @@
       "factClaim": "the lightning hits the roof of a parked car.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 169000,
+      "toMs": 174000,
+      "fromFrame": 5070,
+      "toFrame": 5220,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/37-37-mechanism.jpg"
     },
     {
       "id": "38-mechanism",
@@ -1017,7 +1239,13 @@
       "sourceIds": [
         "SRC-VDE",
         "SRC-ADAC-2015"
-      ]
+      ],
+      "fromMs": 174000,
+      "toMs": 178000,
+      "fromFrame": 5220,
+      "toFrame": 5340,
+      "durationSeconds": 4,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/38-38-mechanism.jpg"
     },
     {
       "id": "39-mechanism",
@@ -1043,7 +1271,13 @@
       "factClaim": "metal conducts far better than the human body.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 178000,
+      "toMs": 183000,
+      "fromFrame": 5340,
+      "toFrame": 5490,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/39-39-mechanism.jpg"
     },
     {
       "id": "40-mechanism",
@@ -1070,7 +1304,13 @@
       "sourceIds": [
         "SRC-VDE",
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 183000,
+      "toMs": 187125,
+      "fromFrame": 5490,
+      "toFrame": 5614,
+      "durationSeconds": 4.125,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/40-40-mechanism.jpg"
     },
     {
       "id": "41-mechanism",
@@ -1096,7 +1336,13 @@
       "factClaim": "at the bottom the current jumps past the tire into the ground.",
       "sourceIds": [
         "SRC-ADAC-2015"
-      ]
+      ],
+      "fromMs": 187125,
+      "toMs": 192000,
+      "fromFrame": 5614,
+      "toFrame": 5760,
+      "durationSeconds": 4.875,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/41-41-mechanism.jpg"
     },
     {
       "id": "42-mechanism",
@@ -1122,7 +1368,13 @@
       "factClaim": "the occupant sits safely while the current flows around.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 192000,
+      "toMs": 197000,
+      "fromFrame": 5760,
+      "toFrame": 5910,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/42-42-mechanism.jpg"
     },
     {
       "id": "43-mechanism",
@@ -1148,7 +1400,13 @@
       "factClaim": "the cage does not need to be completely closed.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 197000,
+      "toMs": 201000,
+      "fromFrame": 5910,
+      "toFrame": 6030,
+      "durationSeconds": 4,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/43-43-mechanism.jpg"
     },
     {
       "id": "44-mechanism",
@@ -1174,7 +1432,13 @@
       "factClaim": "window openings are fine as long as the shell is connected all round.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 201000,
+      "toMs": 207000,
+      "fromFrame": 6030,
+      "toFrame": 6210,
+      "durationSeconds": 6,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/44-44-mechanism.jpg"
     },
     {
       "id": "45-deepening",
@@ -1201,7 +1465,13 @@
       "sourceIds": [
         "SRC-BLIDS"
       ],
-      "chapterTitle": "Cabrio, E-Auto, Motorrad: Wer ist sicher?"
+      "chapterTitle": "Cabrio, E-Auto, Motorrad: Wer ist sicher?",
+      "fromMs": 207000,
+      "toMs": 213125,
+      "fromFrame": 6210,
+      "toFrame": 6394,
+      "durationSeconds": 6.125,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/45-45-deepening.jpg"
     },
     {
       "id": "46-deepening",
@@ -1227,7 +1497,13 @@
       "factClaim": "hundreds of thousands of strikes are measured every year.",
       "sourceIds": [
         "SRC-BLIDS"
-      ]
+      ],
+      "fromMs": 213125,
+      "toMs": 219000,
+      "fromFrame": 6394,
+      "toFrame": 6570,
+      "durationSeconds": 5.875,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/46-46-deepening.jpg"
     },
     {
       "id": "47-deepening",
@@ -1253,7 +1529,13 @@
       "factClaim": "the highest lightning density was measured in Memmingen in the Allgäu.",
       "sourceIds": [
         "SRC-BLIDS"
-      ]
+      ],
+      "fromMs": 219000,
+      "toMs": 224000,
+      "fromFrame": 6570,
+      "toFrame": 6720,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/47-47-deepening.jpg"
     },
     {
       "id": "48-deepening",
@@ -1279,7 +1561,13 @@
       "factClaim": "a direct hit on a car is extremely rare.",
       "sourceIds": [
         "SRC-ADAC-2015"
-      ]
+      ],
+      "fromMs": 224000,
+      "toMs": 229000,
+      "fromFrame": 6720,
+      "toFrame": 6870,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/48-48-deepening.jpg"
     },
     {
       "id": "49-deepening",
@@ -1305,7 +1593,13 @@
       "factClaim": "some vehicles have no metal roof above the occupants.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 229000,
+      "toMs": 232000,
+      "fromFrame": 6870,
+      "toFrame": 6960,
+      "durationSeconds": 3,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/49-49-deepening.jpg"
     },
     {
       "id": "50-deepening",
@@ -1332,7 +1626,13 @@
       "sourceIds": [
         "SRC-ADAC",
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 232000,
+      "toMs": 237000,
+      "fromFrame": 6960,
+      "toFrame": 7110,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/50-50-deepening.jpg"
     },
     {
       "id": "51-deepening",
@@ -1358,7 +1658,13 @@
       "factClaim": "in tests only the fabric got scorched.",
       "sourceIds": [
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 237000,
+      "toMs": 241100,
+      "fromFrame": 7110,
+      "toFrame": 7233,
+      "durationSeconds": 4.1,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/51-51-deepening.jpg"
     },
     {
       "id": "52-deepening",
@@ -1384,7 +1690,13 @@
       "factClaim": "occupants of a closed convertible are protected.",
       "sourceIds": [
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 241100,
+      "toMs": 245000,
+      "fromFrame": 7233,
+      "toFrame": 7350,
+      "durationSeconds": 3.9,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/52-52-deepening.jpg"
     },
     {
       "id": "53-deepening",
@@ -1410,7 +1722,13 @@
       "factClaim": "without metal in the roof there is no cage.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 245000,
+      "toMs": 249000,
+      "fromFrame": 7350,
+      "toFrame": 7470,
+      "durationSeconds": 4,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/53-53-deepening.jpg"
     },
     {
       "id": "54-deepening",
@@ -1437,7 +1755,13 @@
       "sourceIds": [
         "SRC-ADAC-2015",
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 249000,
+      "toMs": 257000,
+      "fromFrame": 7470,
+      "toFrame": 7710,
+      "durationSeconds": 8,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/54-54-deepening.jpg"
     },
     {
       "id": "55-deepening",
@@ -1463,7 +1787,13 @@
       "factClaim": "an electric car carries a large high-voltage battery in its floor.",
       "sourceIds": [
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 257000,
+      "toMs": 260000,
+      "fromFrame": 7710,
+      "toFrame": 7800,
+      "durationSeconds": 3,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/55-55-deepening.jpg"
     },
     {
       "id": "56-deepening",
@@ -1489,7 +1819,13 @@
       "factClaim": "electric and combustion cars are protected the same way by their metal body.",
       "sourceIds": [
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 260000,
+      "toMs": 267115,
+      "fromFrame": 7800,
+      "toFrame": 8013,
+      "durationSeconds": 7.115,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/56-56-deepening.jpg"
     },
     {
       "id": "57-deepening",
@@ -1516,7 +1852,13 @@
       "sourceIds": [
         "SRC-VDE",
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 267115,
+      "toMs": 272000,
+      "fromFrame": 8013,
+      "toFrame": 8160,
+      "durationSeconds": 4.885,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/57-57-deepening.jpg"
     },
     {
       "id": "58-deepening",
@@ -1542,7 +1884,13 @@
       "factClaim": "riders should get off and seek shelter in a building.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 272000,
+      "toMs": 275000,
+      "fromFrame": 8160,
+      "toFrame": 8250,
+      "durationSeconds": 3,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/58-58-deepening.jpg"
     },
     {
       "id": "59-deepening",
@@ -1568,7 +1916,13 @@
       "factClaim": "keep at least three metres from the vehicle and crouch down.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 275000,
+      "toMs": 280000,
+      "fromFrame": 8250,
+      "toFrame": 8400,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/59-59-deepening.jpg"
     },
     {
       "id": "60-deepening",
@@ -1595,7 +1949,13 @@
       "sourceIds": [
         "SRC-ADAC",
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 280000,
+      "toMs": 283000,
+      "fromFrame": 8400,
+      "toFrame": 8490,
+      "durationSeconds": 3,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/60-60-deepening.jpg"
     },
     {
       "id": "61-deepening",
@@ -1622,7 +1982,13 @@
       "sourceIds": [
         "SRC-VDE",
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 283000,
+      "toMs": 289150,
+      "fromFrame": 8490,
+      "toFrame": 8675,
+      "durationSeconds": 6.15,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/61-61-deepening.jpg"
     },
     {
       "id": "62-deepening",
@@ -1649,7 +2015,13 @@
       "sourceIds": [
         "SRC-VDE",
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 289150,
+      "toMs": 294125,
+      "fromFrame": 8675,
+      "toFrame": 8824,
+      "durationSeconds": 4.975,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/62-62-deepening.jpg"
     },
     {
       "id": "63-deepening",
@@ -1675,7 +2047,13 @@
       "factClaim": "heavy rain and failed traffic lights add to the danger.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 294125,
+      "toMs": 298000,
+      "fromFrame": 8824,
+      "toFrame": 8940,
+      "durationSeconds": 3.875,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/63-63-deepening.jpg"
     },
     {
       "id": "64-deepening",
@@ -1701,7 +2079,13 @@
       "factClaim": "stop during a heavy thunderstorm and stay inside.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 298000,
+      "toMs": 302000,
+      "fromFrame": 8940,
+      "toFrame": 9060,
+      "durationSeconds": 4,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/64-64-deepening.jpg"
     },
     {
       "id": "65-deepening",
@@ -1727,7 +2111,13 @@
       "factClaim": "after a strike, do not touch metal parts connected to the body.",
       "sourceIds": [
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 302000,
+      "toMs": 307000,
+      "fromFrame": 9060,
+      "toFrame": 9210,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/65-65-deepening.jpg"
     },
     {
       "id": "66-payoff",
@@ -1755,7 +2145,13 @@
         "SRC-VDE",
         "SRC-SPEKTRUM"
       ],
-      "chapterTitle": "Die Antwort in einem Satz"
+      "chapterTitle": "Die Antwort in einem Satz",
+      "fromMs": 307000,
+      "toMs": 312000,
+      "fromFrame": 9210,
+      "toFrame": 9360,
+      "durationSeconds": 5,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/66-66-payoff.jpg"
     },
     {
       "id": "67-payoff",
@@ -1781,7 +2177,13 @@
       "factClaim": "the lightning reaches the car but not the person inside.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 312000,
+      "toMs": 315000,
+      "fromFrame": 9360,
+      "toFrame": 9450,
+      "durationSeconds": 3,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/67-67-payoff.jpg"
     },
     {
       "id": "68-payoff",
@@ -1808,7 +2210,13 @@
       "sourceIds": [
         "SRC-VDE",
         "SRC-ADAC"
-      ]
+      ],
+      "fromMs": 315000,
+      "toMs": 319000,
+      "fromFrame": 9450,
+      "toFrame": 9570,
+      "durationSeconds": 4,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/68-68-payoff.jpg"
     },
     {
       "id": "69-payoff",
@@ -1834,7 +2242,13 @@
       "factClaim": "inside the car you are protected, outside you are not.",
       "sourceIds": [
         "SRC-VDE"
-      ]
+      ],
+      "fromMs": 319000,
+      "toMs": 323120,
+      "fromFrame": 9570,
+      "toFrame": 9694,
+      "durationSeconds": 4.12,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/69-69-payoff.jpg"
     },
     {
       "id": "70-payoff",
@@ -1861,7 +2275,13 @@
       "sourceIds": [
         "SRC-FARADAY",
         "SRC-RI"
-      ]
+      ],
+      "fromMs": 323120,
+      "toMs": 329000,
+      "fromFrame": 9694,
+      "toFrame": 9870,
+      "durationSeconds": 5.88,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/70-70-payoff.jpg"
     },
     {
       "id": "71-payoff",
@@ -1888,7 +2308,21 @@
       "sourceIds": [
         "SRC-VDE",
         "SRC-FARADAY"
-      ]
+      ],
+      "fromMs": 329000,
+      "toMs": 335740,
+      "fromFrame": 9870,
+      "toFrame": 10073,
+      "durationSeconds": 6.74,
+      "imagePath": "reels/warum-schutzt-dich-dein-auto-vor-dem-blitz/images/71-71-payoff.jpg"
     }
-  ]
+  ],
+  "alignment": {
+    "method": "local-whisper-word-alignment",
+    "matchRatio": 0.9777,
+    "minimumMatchRatio": 0.82,
+    "generatedAt": "2026-10-24T12:16:00.445Z"
+  },
+  "totalFrames": 10073,
+  "durationSeconds": 335.74
 }

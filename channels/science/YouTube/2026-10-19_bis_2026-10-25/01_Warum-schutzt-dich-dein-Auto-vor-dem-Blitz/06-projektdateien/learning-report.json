@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "channel": "Wissonaut",
+  "slug": "warum-schutzt-dich-dein-auto-vor-dem-blitz",
+  "productionProfile": "youtube-6to7min-v1",
+  "generatedAt": "2026-10-25T11:04:20.204Z",
+  "status": "not-published",
+  "latestWindowHours": null,
+  "editorialStatus": "pending-editorial-review",
+  "metrics": null,
+  "comparisons": {},
+  "recommendedTests": [],
+  "notes": [
+    "Redaktionelle Retrospektive noch nicht freigegeben: 06-projektdateien/editorial-decisions.json. Keine Verbesserungen automatisch als bewiesen markieren.",
+    "Veröffentlichungsdatum fehlt; Video möglicherweise noch nicht veröffentlicht.",
+    "Keine echten YouTube-Messwerte vorhanden. Bitte nach Veröffentlichung eintragen.",
+    "Metrikabweichungen beweisen keine Ursachen. Traffic-Quellen, Themen und Zielgruppen redaktionell prüfen."
+  ],
+  "nextStep": "Retrospektive dokumentieren, eine konkrete Verbesserung fürs nächste Video wählen und belastbare Regeln in active-lessons.json aktualisieren."
+}

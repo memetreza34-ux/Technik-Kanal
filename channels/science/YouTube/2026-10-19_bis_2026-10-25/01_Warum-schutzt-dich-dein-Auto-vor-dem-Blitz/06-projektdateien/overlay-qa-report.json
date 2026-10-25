@@ -1,6 +1,6 @@
 {
   "version": "science-static-overlay-v2",
-  "generatedAt": "2026-10-23T18:14:16.097Z",
+  "generatedAt": "2026-10-24T12:13:18.062Z",
   "passed": true,
   "rule": "Scientific Scene Explainer darf kontrollierten deutschen Text bereits im Bild enthalten. Remotion-Overlays sind nur zusätzliche kurze, statische und fachlich begründete Markierungen; Bewegung ist nicht erlaubt.",
   "errors": [],
