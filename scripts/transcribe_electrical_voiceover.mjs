@@ -62,6 +62,8 @@ run(whisperBinary, [
   '-f', inputWav,
   '-l', 'de',
   '-ml', '1',
+  // Ohne -sow trennt -ml 1 an Token-Grenzen („Bl“ + „itz“) und der Abgleich mit dem Script scheitert.
+  '-sow',
   '-ojf',
   '-of', outputBase,
   '-np',
