@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "events": [
-    {"id":"current-leak","sceneId":"04-fehlerweg","file":"current-leak.wav","anchorText":"zur Erde","offsetMs":-180,"relativeMs":2500,"volume":0.10},
-    {"id":"contact-open","sceneId":"07-kontakte-oeffnen","file":"contact-open.wav","anchorText":"Kontakte öffnen","offsetMs":0,"relativeMs":1400,"volume":0.16},
-    {"id":"warning-soft","sceneId":"10-sicher-reagieren","file":"warning-soft.wav","anchorText":"nicht überbrücken","offsetMs":0,"relativeMs":1200,"volume":0.09}
-  ]
-}

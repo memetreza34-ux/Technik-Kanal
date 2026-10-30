@@ -1,0 +1,3 @@
+HIER DEN FERTIGEN DEUTSCHEN SPRECHTEXT ALS EINEN DURCHGEHENDEN TEXT EINFÜGEN.
+
+Vor dem Render muss der Text mit den Kapiteln in video.json übereinstimmen.

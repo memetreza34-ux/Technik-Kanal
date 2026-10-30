@@ -1,9 +1,0 @@
-{
-  "reel": "Warum fliegt die Sicherung raus?",
-  "composition": "SicherungsReel",
-  "video": "sicherungs-reel.mp4",
-  "pdf": "lernzettel-sicherung.pdf",
-  "caption": "social-caption.txt",
-  "subtitles": ["voiceover-final.srt", "voiceover-final.vtt"],
-  "status": "audio-und-render-offen"
-}

@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import {execFileSync} from 'node:child_process';
+const [file,expected]=process.argv.slice(2);
+if(!file||!fs.existsSync(file))throw new Error('MP4-Datei fehlt');
+const info=JSON.parse(execFileSync('ffprobe',['-v','error','-show_streams','-show_format','-of','json',file],{encoding:'utf8'}));
+const video=info.streams?.find(s=>s.codec_type==='video'),audio=info.streams?.find(s=>s.codec_type==='audio');
+if(!video||video.width!==1920||video.height!==1080)throw new Error('Kein Full-HD-Querformat');
+if(!audio)throw new Error('Audiospur fehlt');
+const parts=(video.avg_frame_rate||'').split('/').map(Number);
+if(!parts[1]||Math.abs(parts[0]/parts[1]-30)>.05)throw new Error('Nicht 30 FPS');
+if(expected&&Math.abs(Number(info.format.duration)-Number(expected))>.5)throw new Error('Laufzeit weicht vom Plan ab');
+console.log('✓ 1920×1080, 30 FPS, Audio und Laufzeit bestätigt');

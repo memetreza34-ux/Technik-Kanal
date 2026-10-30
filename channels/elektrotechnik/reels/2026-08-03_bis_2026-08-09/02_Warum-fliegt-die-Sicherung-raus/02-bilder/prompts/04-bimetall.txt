@@ -1,3 +1,0 @@
-Macro cutaway view inside a miniature circuit breaker showing a simplified but technically credible curved bimetal strip, fixed at one end and positioned near a mechanical release latch, cool blue at the fixed end and gradually warmer orange toward the bending end, enough separation between parts to make the bending direction obvious, clean educational mechanism visualization, no text and no random extra components.
-
-Append the channel master style and negative prompt.

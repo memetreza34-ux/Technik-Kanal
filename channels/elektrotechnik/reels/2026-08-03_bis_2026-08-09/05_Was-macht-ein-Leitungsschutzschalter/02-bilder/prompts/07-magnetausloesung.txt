@@ -1,1 +1,0 @@
-REMOTION ONLY. Macro mechanism camera. Use the reusable MagneticInstantTripAnimation. Show Spule, Magnetfeld and Magnetauslöser as a fast causal chain that actuates the mechanism.

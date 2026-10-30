@@ -1,89 +1,44 @@
-# Elektrotechnik-Kanal
+# Technik-Kanal – YouTube-Videos
 
-Eigenständiges Produktionssystem für den deutschsprachigen Elektrotechnik-Faceless-Kanal. Die Struktur folgt FinanzNeo, die Qualitäts-Gates sind auf Elektrotechnik und bildgeführte Reels angepasst.
+Dieses Repository ist ausschließlich für **normale YouTube-Videos im 16:9-Querformat** bestimmt. Die früheren vertikalen Kurzvideo-Projekte und ihre Produktionspipeline sind entfernt.
 
-## Root-Struktur
+## Produktionsformat
+- Full HD: **1920 × 1080**, **30 FPS**
+- Deutschsprachige Technik-Erklärvideos (nicht nur Elektrotechnik)
+- Als Einstieg meist **6–12 Minuten**, abhängig von Thema und Informationsdichte
+- Erstes Videobild: echter Inhalt statt Cover oder Intro
+- Fachlich präzise Schaubilder, Infografiken, Geräte, Schnittdarstellungen und punktuelle Prozessanimationen
+- Skript, Bildaussage und Sprache müssen exakt zusammenpassen
 
-```text
-.claude/
-.github/
-channels/
-core/
-scripts/
-package.json
-package-lock.json
-tsconfig.base.json
-vitest.config.ts
-```
+## Struktur
+- `src/`: wiederverwendbare Remotion-Engine für 16:9
+- `videos/_vorlage/`: Vorlage für neue Video-Projekte
+- `videos/YYYY-MM-DD_thema/`: Recherche, Skript, Bildplanung, Audio und fertiger Export pro YouTube-Video
+- `scripts/`: neues Projekt, Vorabprüfung, Render und technische Exportprüfung
+- `PRODUKTION.md`: fachliche und visuelle Qualitätsstandards
 
-## Verbindlicher Produktionsablauf
-
-### 1. Neuen Reel erzeugen
-
-```bash
-npm run electrical:new -- \
-  --week=2026-08-10_bis_2026-08-16 \
-  --slot=01 \
-  --title="FI-Schalter" \
-  --hook="Was macht ein FI-Schalter?" \
-  --scenes=9
-```
-
-Der direkte Frage-Hook ist Pflicht. Neue Reels erhalten automatisch:
-
-- `visual-v2`-Szenenvertrag
-- textfreie Prompt-Regel
-- maximal vier Vollanimationen
-- standardmäßig drei getrennte Mechanismus-Szenen
-- eindeutige `renderMode`- und `motionLevel`-Felder
-
-### 2. Preflight vor Bildern und Audio
-
-```bash
-npm run electrical:preflight -- "<reel-ordner>"
-```
-
-Vor `passed: true` dürfen keine Bilder oder Voice-Aufnahmen erzeugt werden. Das Gate blockiert schwache Hooks, zu lange Skripte, sichtbaren KI-Text, überladene Promptkonzepte, zu viele Animationen, doppelte Mechanismusdarstellungen und fehlende Quellen.
-
-### 3. Medien erstellen und einfügen
-
-- Voice-over deutsch und trocken aufnehmen
-- textfreie 9:16-Bilder erzeugen
-- optional wenige semantische SFX ergänzen
-
-### 4. Fertigstellen
-
-```bash
-npm run electrical:finish -- "<reel-ordner>"
-```
-
-Die Pipeline verarbeitet die Stimme auf 1,10×, erstellt lokale Wortzeiten, synchronisiert alle Szenen, rendert, prüft technisch und erzeugt Kontrollbilder.
-
-## Visuelles System
-
-- 8–10 Szenen
-- etwa 115–165 Wörter
-- Ziel ungefähr 42–62 Sekunden
-- ein klares Hauptmotiv pro Bild
-- keinerlei Schrift im KI-Bild
-- Bildszenen als Standard
-- normalerweise ein bis drei, maximal vier Vollanimationen
-- keine Vollanimation im Hook
-- keine zwei Vollanimationen direkt hintereinander
-- `mechanism-only` blendet das KI-Bild aus, damit keine doppelte Mechanismusdarstellung entsteht
-- alle deutschen Texte kommen aus Remotion
-
-## Wichtige Befehle
-
+## Schnellstart
 ```bash
 npm install
+npm run check
 npm test
 npm run studio
-npm run gallery
-npm run electrical:preflight -- "<reel-ordner>"
-npm run electrical:ready -- "<reel-ordner>"
-npm run electrical:finish -- "<reel-ordner>"
-npm run electrical:system-test
+npm run smoke
 ```
 
-Das Audio bleibt lokal; `whisper.cpp` benötigt keinen Transkriptions-API-Key.
+`npm run smoke` rendert **nur ein Testbild der Layout-Vorschau**, keinen fertigen Film.
+
+Neues Video anlegen:
+```bash
+npm run youtube:new -- 2026-11-01_elektromotor "Warum dreht sich ein Elektromotor?"
+```
+
+`video.json` mit Sprechertext, Szenen und Visuals ausfüllen; Quellen prüfen; vollständigen deutschen Sprechertext in `script-fliesstext.txt` pflegen und die passende Aufnahme unter `audio/voiceover.wav` ablegen. Dann erst nach fachlicher Freigabe `status` auf `ready` setzen:
+```bash
+npm run youtube:check -- videos/2026-11-01_elektromotor
+npm run youtube:render -- videos/2026-11-01_elektromotor
+```
+
+Die Renderprüfung kontrolliert Bildformat, Bildrate, Laufzeit und Audiospur. Vor Veröffentlichung muss der **gesamte Film mit Ton** fachlich und visuell kontrolliert werden. Das neue System ist eine Grundlage; es ersetzt noch keine vollständige professionelle Videoredaktion.
+
+Die früheren Dateien bleiben über den Git-Verlauf vor der YouTube-Umstellung wiederherstellbar.

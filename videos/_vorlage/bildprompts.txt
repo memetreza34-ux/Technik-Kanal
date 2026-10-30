@@ -1,0 +1,5 @@
+BILDPROMPTS FÜR DAS 16:9-YOUTUBE-VIDEO
+
+Nur Bildprompts erstellen, die eine technische Aussage sichtbar machen. Konsistente Bildwelt, fachlich plausible Geräte, klare Perspektive, 1920×1080. Keine KI-Schrift im Bild; deutsche Beschriftungen werden kontrolliert im Editor gesetzt.
+
+Szene / technische Aussage / Referenz / Bildtyp / konkreter Prompt:

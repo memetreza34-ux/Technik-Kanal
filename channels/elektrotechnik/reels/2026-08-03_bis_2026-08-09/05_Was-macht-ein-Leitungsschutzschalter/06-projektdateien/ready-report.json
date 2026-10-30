@@ -1,6 +1,0 @@
-{
-  "version":"electrical-v8",
-  "ready":false,
-  "status":"raw-voiceover-fehlt",
-  "blocking":["01-script-audio/audio/voiceover-raw.wav","exact-word-transcript","render-qa"]
-}

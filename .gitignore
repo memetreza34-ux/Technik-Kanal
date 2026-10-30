@@ -1,11 +1,10 @@
 node_modules/
-.remotion/
 outputs/
+.remotion/
 .DS_Store
 *.log
-.tools/
-channels/elektrotechnik/public/reels/
-**/06-projektdateien/.work/
-**/06-projektdateien/render/
-**/05-export/*.mp4
-**/02-bilder/final-labeled/
+videos/**/audio/*.wav
+videos/**/audio/*.mp3
+videos/**/export/*.mp4
+videos/**/export/*.png
+public/render-input/

@@ -1,0 +1,55 @@
+{
+  "format": "youtube-16x9",
+  "status": "draft",
+  "title": "[Videotitel]",
+  "chapters": [
+    {
+      "id": "01",
+      "heading": "[Direkter Einstieg]",
+      "detail": "[Konkrete visuelle Umsetzung mit erkennbaren Bauteilen]",
+      "seconds": 60,
+      "visual": "hero",
+      "script": "[Vollständigen deutschen Sprechtext der Szene einfügen]"
+    },
+    {
+      "id": "02",
+      "heading": "[Kontext]",
+      "detail": "[Anwendungsfall mit konkreter technischer Illustration]",
+      "seconds": 60,
+      "visual": "diagram",
+      "script": "[Vollständigen deutschen Sprechtext einfügen]"
+    },
+    {
+      "id": "03",
+      "heading": "[Technischer Ablauf]",
+      "detail": "[Ursache und Wirkung physikalisch plausibel visualisieren]",
+      "seconds": 60,
+      "visual": "mechanism",
+      "script": "[Vollständigen deutschen Sprechtext einfügen]"
+    },
+    {
+      "id": "04",
+      "heading": "[Unterschied]",
+      "detail": "[Zwei technische Zustände direkt gegenüberstellen]",
+      "seconds": 60,
+      "visual": "comparison",
+      "script": "[Vollständigen deutschen Sprechtext einfügen]"
+    },
+    {
+      "id": "05",
+      "heading": "[Praxis]",
+      "detail": "[Passendes reales Beispiel und Grenzen der Erklärung]",
+      "seconds": 60,
+      "visual": "diagram",
+      "script": "[Vollständigen deutschen Sprechtext einfügen]"
+    },
+    {
+      "id": "06",
+      "heading": "[Ergebnis]",
+      "detail": "[Einprägsame fachliche Antwort auf die Eingangsfrage]",
+      "seconds": 60,
+      "visual": "conclusion",
+      "script": "[Vollständigen deutschen Sprechtext einfügen]"
+    }
+  ]
+}
