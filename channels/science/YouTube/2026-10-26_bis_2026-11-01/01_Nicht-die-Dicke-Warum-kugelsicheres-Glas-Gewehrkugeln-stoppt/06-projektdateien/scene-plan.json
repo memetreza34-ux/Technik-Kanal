@@ -1,0 +1,2117 @@
+{
+  "version": "science-v1",
+  "productionProfile": "youtube-6to7min-v1",
+  "visualPolicyVersion": "science-static-v1",
+  "generatedImageTextPolicy": "controlled-german-only",
+  "slug": "nicht-die-dicke-warum-kugelsicheres-glas-gewehrkugeln-stoppt",
+  "title": "Nicht die Dicke: Warum kugelsicheres Glas Gewehrkugeln stoppt",
+  "compositionId": "ScienceReel",
+  "runtimeFile": "science-runtime.json",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "minimumWordMatchRatio": 0.82,
+  "qualityRulesVersion": "qualitaet-v2",
+  "hookAnchor": {
+    "type": "zahl",
+    "text": "3.300 Joule",
+    "firstImage": "rifle bullet flattening against a multi-layered glass block with glowing stress fracture patterns"
+  },
+  "scenes": [
+    {
+      "id": "01-hook",
+      "section": "hook",
+      "title": "Warum stoppt Glas eine Gewehrkugel?",
+      "voiceText": "Warum stoppt Glas eine Gewehrkugel? Sie schlägt mit dreifacher Schallgeschwindigkeit und 3.300 Joule kinetischer Energie ein.",
+      "imageDir": "02-bilder/images/01-hook",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics test laboratory",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "High-speed macro capture of a rifle bullet flattening against a multi-layered glass block with glowing stress fracture patterns and shockwave ripples. Dark navy scientific studio background.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "3.300 J",
+          "830 m/s"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "hero",
+      "factClaim": "Warum stoppt Glas eine Gewehrkugel? Sie schlägt mit dreifacher Schallgeschwindigkeit und 3.300 Joule kinetischer Energie ein.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "chapterTitle": "Gewehrkugel trifft Glas"
+    },
+    {
+      "id": "02-hook",
+      "section": "hook",
+      "title": "Standardglas zerplatzt",
+      "voiceText": "Normales Glas zerplatzt bei einem Bruchteil dieser Wucht in tausend messerscharfe Splitter.",
+      "imageDir": "02-bilder/images/02-hook",
+      "backgroundFamily": "content-driven",
+      "shotType": "comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics test laboratory",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "High-speed macro capture of standard window glass violently shattering into sharp pointed fragments upon impact, cracks radiating outward in bright cyan lines against dark navy slate.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Standardglas",
+          "Bruch"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "comparison",
+      "factClaim": "Normales Glas zerplatzt bei einem Bruchteil dieser Wucht in tausend messerscharfe Splitter.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "03-hook",
+      "section": "hook",
+      "title": "Panzerglas stoppt Kugel",
+      "voiceText": "Warum bleibt eine Panzerglasscheibe stehen und stoppt die Kugel auf wenigen Zentimetern?",
+      "imageDir": "02-bilder/images/03-hook",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics test laboratory",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Side cross-section view of a transparent armored glass block stopping a deformed rifle bullet dead in its tracks inside the middle layer, visible internal compression web.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Panzerglas"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Warum bleibt eine Panzerglasscheibe stehen und stoppt die Kugel auf wenigen Zentimetern?",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "04-hook",
+      "section": "hook",
+      "title": "Der Irrtum mit der Dicke",
+      "voiceText": "Fast jeder glaubt, das Geheimnis sei einfach extrem dickes Glas.",
+      "imageDir": "02-bilder/images/04-hook",
+      "backgroundFamily": "content-driven",
+      "shotType": "object-comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "material test workshop",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "A heavy monolithic 100mm thick block of solid glass resting on an industrial steel workbench under focused spotlight, sleek technical editorial style.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Monolithglas"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "comparison",
+      "factClaim": "Fast jeder glaubt, das Geheimnis sei einfach extrem dickes Glas.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "05-hook",
+      "section": "hook",
+      "title": "Dicke Scheiben bersten",
+      "voiceText": "Doch selbst wenn du normales Fensterglas handbreit dick gießt, würde es beim ersten Treffer wie Porzellan zerspringen.",
+      "imageDir": "02-bilder/images/05-hook",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "material test workshop",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "The massive solid monolithic glass block cracking through completely from edge to edge under dynamic ballistic pressure, showing total structural failure.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Sprödbruch"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Doch selbst wenn du normales Fensterglas handbreit dick gießt, würde es beim ersten Treffer wie Porzellan zerspringen.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "06-hook",
+      "section": "hook",
+      "title": "Beweis durch Hochgeschwindigkeit",
+      "voiceText": "Gleich siehst du die Hochgeschwindigkeitsaufnahmen, die beweisen, warum nicht die Härte des Glases dein Leben rettet, sondern etwas völlig anderes.",
+      "imageDir": "02-bilder/images/06-hook",
+      "backgroundFamily": "content-driven",
+      "shotType": "schematic",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "high-speed camera station",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Technical diagram of a phantom ultra-high-speed recording setup with laser alignment targeting the transparent armor sample in a dark ballistics tunnel.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Hochgeschwindigkeitskamera"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Gleich siehst du die Hochgeschwindigkeitsaufnahmen, die beweisen, warum nicht die Härte des Glases dein Leben rettet, sondern etwas völlig anderes.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "07-context",
+      "section": "context",
+      "title": "Die Wucht des Geschosses",
+      "voiceText": "Um zu verstehen, was an einer Scheibe passiert, muss man sich die Wucht des Geschosses ansehen.",
+      "imageDir": "02-bilder/images/07-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics range shooting tunnel",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "A precision ballistic test rifle mounted on a rigid graphite test bench inside an underground firing tunnel, clear sightline down the range.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Prüfstand"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "real-context",
+      "factClaim": "Um zu verstehen, was an einer Scheibe passiert, muss man sich die Wucht des Geschosses ansehen.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "chapterTitle": "3.300 Joule vs. sprödes Glas"
+    },
+    {
+      "id": "08-context",
+      "section": "context",
+      "title": "830 Meter pro Sekunde",
+      "voiceText": "Aus dem Lauf eines Sturmgewehrs schießt das Geschoss mit 830 Metern pro Sekunde.",
+      "imageDir": "02-bilder/images/08-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics range shooting tunnel",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Macro side view of a copper-jacketed bullet exiting a rifled barrel with expanding supersonic gas cone and precise muzzle velocity telemetry.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "830 m/s"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Aus dem Lauf eines Sturmgewehrs schießt das Geschoss mit 830 Metern pro Sekunde.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "09-context",
+      "section": "context",
+      "title": "Schneller als ein Flugzeug",
+      "voiceText": "Das ist mehr als dreimal schneller als ein startendes Passagierflugzeug.",
+      "imageDir": "02-bilder/images/09-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "airfield runway compare",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Technical velocity comparison infographic showing the Mach 2.5 bullet vector alongside a commercial passenger jet at takeoff speed, clean scale indicators.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Überschall",
+          "Jet"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "comparison",
+      "factClaim": "Das ist mehr als dreimal schneller als ein startendes Passagierflugzeug.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "10-context",
+      "section": "context",
+      "title": "Energie in 15 Mikrosekunden",
+      "voiceText": "Trifft diese Bleispitze auf ein Hindernis, entlädt sich die gesamte Wucht in nur wenigen Mikrosekunden.",
+      "imageDir": "02-bilder/images/10-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "physics laboratory",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Scientific energy dissipation diagram with a steep blue power spike curve labeled Energie-Entladung over a microsecond timeline, dark technical background.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Energie-Entladung"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Trifft diese Bleispitze auf ein Hindernis, entlädt sich die gesamte Wucht in nur wenigen Mikrosekunden.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "11-context",
+      "section": "context",
+      "title": "Vergleich Motorrad auf Cent-Münze",
+      "voiceText": "Das entspricht der Wucht eines 330 Kilogramm schweren Motorrads, das aus einem Meter Höhe auf die Kante einer Münze stürzt.",
+      "imageDir": "02-bilder/images/11-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "object-comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "physics laboratory",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Conceptual physics comparison illustration showing a heavy 330kg touring motorcycle suspended one meter high above the exact surface area of a 1-cent coin.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "330 kg · 1 m",
+          "Münzfläche"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "comparison",
+      "factClaim": "Das entspricht der Wucht eines 330 Kilogramm schweren Motorrads, das aus einem Meter Höhe auf die Kante einer Münze stürzt.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "12-context",
+      "section": "context",
+      "title": "Druckfestigkeit von Glas",
+      "voiceText": "Glas ist extrem hart gegen Druck. Du kannst einen tonnenschweren Lkw auf vier Glasblöcke stellen, ohne dass sie nachgeben.",
+      "imageDir": "02-bilder/images/12-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "structural engineering hall",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Heavy commercial truck wheels parked directly on four transparent precision glass compression cylinders without cracking, showcasing extreme compressive strength.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Druckfestigkeit"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "real-context",
+      "factClaim": "Glas ist extrem hart gegen Druck. Du kannst einen tonnenschweren Lkw auf vier Glasblöcke stellen, ohne dass sie nachgeben.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "13-context",
+      "section": "context",
+      "title": "Die fatale Zugschwäche",
+      "voiceText": "Aber Glas hat eine fatale Schwachstelle: Es ist extrem spröde und verträgt fast keine Zugspannung.",
+      "imageDir": "02-bilder/images/13-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "material testing machine",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Engineering stress-strain diagram contrasting glass compressive resistance versus tensile vulnerability with diverging cyan and red force vectors.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Druck: hoch",
+          "Zug: minimal"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Aber Glas hat eine fatale Schwachstelle: Es ist extrem spröde und verträgt fast keine Zugspannung.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "14-context",
+      "section": "context",
+      "title": "Schockwelle im Glas",
+      "voiceText": "Trifft die Kugel auf eine gewöhnliche Scheibe, rast eine Schockwelle mit 5.000 Metern pro Sekunde durch das Material.",
+      "imageDir": "02-bilder/images/14-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "transparent target enclosure",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Cross-section showing concentric supersonic stress shockwave rings expanding at 5000 m/s through a glass plate immediately following point impact.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "5.000 m/s Schockwelle"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Trifft die Kugel auf eine gewöhnliche Scheibe, rast eine Schockwelle mit 5.000 Metern pro Sekunde durch das Material.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "15-context",
+      "section": "context",
+      "title": "Reißen der Rückseite",
+      "voiceText": "An der Rückseite wölbt sich das Glas winzige Bruchteile eines Millimeters nach außen – und reißt explosionsartig auf.",
+      "imageDir": "02-bilder/images/15-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "transparent target enclosure",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Extreme close-up cross section of the rear surface of ordinary glass flexing slightly outward under stress and tearing into catastrophic radial spiderweb cracks.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Zugspannung Rückseite"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "An der Rückseite wölbt sich das Glas winzige Bruchteile eines Millimeters nach außen – und reißt explosionsartig auf.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "16-context",
+      "section": "context",
+      "title": "Die Kernfrage",
+      "voiceText": "Wie kann man ein Material, das so leicht splittert, zur unüberwindbaren Festung machen?",
+      "imageDir": "02-bilder/images/16-context",
+      "backgroundFamily": "content-driven",
+      "shotType": "schematic",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "materials research lab",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "An engineering blueprint schematic presenting a glowing layered shield archetype, posing the material science challenge against a deep navy canvas.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Verbund-Struktur"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Wie kann man ein Material, das so leicht splittert, zur unüberwindbaren Festung machen?",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "17-foundation",
+      "section": "foundation",
+      "title": "Paris 1903",
+      "voiceText": "Die Lösung für dieses Rätsel verdanken wir einem Zufall im Jahr 1903 in einem Pariser Chemielabor.",
+      "imageDir": "02-bilder/images/17-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "historical",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "historical paris laboratory 1903",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Historical turn-of-the-century Parisian chemistry lab with vintage glassware, brass retorts, and wooden workbenches in authentic restrained warm tones.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Paris · 1903"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Die Lösung für dieses Rätsel verdanken wir einem Zufall im Jahr 1903 in einem Pariser Chemielabor.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "chapterTitle": "1903: Der zerbrochene Kolben von Paris"
+    },
+    {
+      "id": "18-foundation",
+      "section": "foundation",
+      "title": "Édouard Bénédictus auf der Leiter",
+      "voiceText": "Der französische Wissenschaftler und Künstler Édouard Bénédictus klettert auf eine Leiter, um ein Regal zu ordnen.",
+      "imageDir": "02-bilder/images/18-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "historical paris laboratory 1903",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "French chemist Edouard Benedictus climbing a tall wooden library ladder to reach glassware on high shelves in his sunlit Paris laboratory.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Édouard Bénédictus"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "real-context",
+      "factClaim": "Der französische Wissenschaftler und Künstler Édouard Bénédictus klettert auf eine Leiter, um ein Regal zu ordnen.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "19-foundation",
+      "section": "foundation",
+      "title": "Der Kolben fällt",
+      "voiceText": "Dabei stößt sein Ärmel versehentlich einen gläsernen Erlenmeyerkolben von der Kante.",
+      "imageDir": "02-bilder/images/19-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "historical paris laboratory 1903",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "A vintage glass Erlenmeyer flask slipping off the wooden shelf edge mid-air, caught in frozen motion against dark wood paneled walls.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Erlenmeyerkolben"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Dabei stößt sein Ärmel versehentlich einen gläsernen Erlenmeyerkolben von der Kante.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "20-foundation",
+      "section": "foundation",
+      "title": "Zwei Meter Sturz",
+      "voiceText": "Der Kolben fällt aus fast zwei Metern Höhe auf den harten Steinboden.",
+      "imageDir": "02-bilder/images/20-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "historical",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "vintage laboratory flagstones",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "The glass flask striking the hard flagstone laboratory floor from a two-meter drop, dust kicking up at the point of contact.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "2 m Fallhöhe"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Der Kolben fällt aus fast zwei Metern Höhe auf den harten Steinboden.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "21-foundation",
+      "section": "foundation",
+      "title": "Das unerwartete Ergebnis",
+      "voiceText": "Bénédictus rechnet mit einem lauten Knall und Splittern im ganzen Raum. Doch es passiert etwas Unerwartetes.",
+      "imageDir": "02-bilder/images/21-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "vintage laboratory flagstones",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Edouard Benedictus looking down from the ladder at the floor in genuine astonishment, hands paused, laboratory tools surrounding the scene.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Keine Splitter"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "real-context",
+      "factClaim": "Bénédictus rechnet mit einem lauten Knall und Splittern im ganzen Raum. Doch es passiert etwas Unerwartetes.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "22-foundation",
+      "section": "foundation",
+      "title": "Netz aus Rissen",
+      "voiceText": "Das Glas zersplittert zwar in ein enges Netz aus tausend Rissen – aber der Kolben behält exakt seine Form.",
+      "imageDir": "02-bilder/images/22-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "vintage laboratory table",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Detailed close-up of the antique glass flask lying on flagstones, completely covered in fine fractured cracks yet retaining its 3D vessel shape perfectly.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Form stabil"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Das Glas zersplittert zwar in ein enges Netz aus tausend Rissen – aber der Kolben behält exakt seine Form.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "23-foundation",
+      "section": "foundation",
+      "title": "Vollständige Haftung",
+      "voiceText": "Kein einziger Splitter löst sich.",
+      "imageDir": "02-bilder/images/23-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "vintage laboratory table",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Macro view showing the surface of the fractured glass with zero detached shards or sharp fragments on the stone floor around it.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Haftung 100 %"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Kein einziger Splitter löst sich.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "24-foundation",
+      "section": "foundation",
+      "title": "Inspektion des Kolbens",
+      "voiceText": "Verblüfft hebt der Chemiker den zerbrochenen Kolben auf und untersucht das Innere.",
+      "imageDir": "02-bilder/images/24-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "historical",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "historical paris laboratory 1903",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Benedictus sitting at his wooden laboratory table holding the shattered glass flask up toward the light, carefully examining the interior wall.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Inspektion"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Verblüfft hebt der Chemiker den zerbrochenen Kolben auf und untersucht das Innere.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "25-foundation",
+      "section": "foundation",
+      "title": "Cellulosenitrat-Rückstand",
+      "voiceText": "Wochen zuvor hatte er darin eine flüssige Cellulosenitrat-Mischung aufbewahrt.",
+      "imageDir": "02-bilder/images/25-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "chemical reagent corner",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Vintage laboratory beaker pouring a viscous liquid collodion cellulose nitrate solution, coating inner glass surfaces with an amber sheen.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Cellulosenitrat"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Wochen zuvor hatte er darin eine flüssige Cellulosenitrat-Mischung aufbewahrt.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "26-foundation",
+      "section": "foundation",
+      "title": "Der unsichtbare Film",
+      "voiceText": "Das Lösemittel war verdunstet, und zurück blieb ein hauchdünner, völlig unsichtbarer Kunststofffilm an der Innenwand.",
+      "imageDir": "02-bilder/images/26-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "chemical reagent corner",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Cutaway graphic of the flask wall revealing the microscopic, clear, elastomeric film bonded tenaciously to the internal glass contour.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Polymerfilm"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Das Lösemittel war verdunstet, und zurück blieb ein hauchdünner, völlig unsichtbarer Kunststofffilm an der Innenwand.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "27-foundation",
+      "section": "foundation",
+      "title": "Das elastische Fangnetz",
+      "voiceText": "Dieser Film war so elastisch und klebte so fest am Glas, dass er die berstenden Scherben wie ein Netz zusammenhielt.",
+      "imageDir": "02-bilder/images/27-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "materials research lab",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Technical diagram illustrating how elastic polymer tensile bonds tether sharp broken glass shards together like a flexible micro-net.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Elastisches Fangnetz"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Dieser Film war so elastisch und klebte so fest am Glas, dass er die berstenden Scherben wie ein Netz zusammenhielt.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "28-foundation",
+      "section": "foundation",
+      "title": "Das Patent von 1909",
+      "voiceText": "Bénédictus erkennt sofort das Potenzial: Er erfindet das Verbund-Sicherheitsglas.",
+      "imageDir": "02-bilder/images/28-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "historical",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "historical patent office desk",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Original 1909 patent drawing sheet showing the layered glass-celluloid-glass sandwich invention on a draughtsman's table in vintage sepia tone.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Patent 1909 · Triplex"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Bénédictus erkennt sofort das Potenzial: Er erfindet das Verbund-Sicherheitsglas.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "29-foundation",
+      "section": "foundation",
+      "title": "Einsatz im Hochschutz",
+      "voiceText": "Aus diesem einen zerbrochenen Kolben entsteht die Technologie, die heute Staatschefs, Banken und Militärfahrzeuge schützt.",
+      "imageDir": "02-bilder/images/29-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "security motorcade avenue",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "A heavy armored head-of-state limousine with thick tinted security glazing driving in an official security motorcade through dusk.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Hochschutz"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "real-context",
+      "factClaim": "Aus diesem einen zerbrochenen Kolben entsteht die Technologie, die heute Staatschefs, Banken und Militärfahrzeuge schützt.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "30-foundation",
+      "section": "foundation",
+      "title": "Brücke zum Panzerglas",
+      "voiceText": "Doch wie wird aus einer Autoscheibe echtes Panzerglas?",
+      "imageDir": "02-bilder/images/30-foundation",
+      "backgroundFamily": "content-driven",
+      "shotType": "schematic",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "industrial glass laminating plant",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Exploded isometric blueprint diagram contrasting simple three-layer car windshield glass with an advanced multi-layered ballistic armor sandwich.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Sicherheitsglas → Panzerglas"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Doch wie wird aus einer Autoscheibe echtes Panzerglas?",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "31-mechanism",
+      "section": "mechanism",
+      "title": "Ein Sandwich aus Gegensätzen",
+      "voiceText": "Echtes Panzerglas ist in Wahrheit gar kein Glas. Es ist ein hochkomplexes Sandwich aus völlig gegensätzlichen Werkstoffen.",
+      "imageDir": "02-bilder/images/31-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics laboratory cleanroom",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Clean perspective cutaway of an architectural transparent armor block showing the alternating stack of glass and polymer layers on a dark stand.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Verbundaufbau"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Echtes Panzerglas ist in Wahrheit gar kein Glas. Es ist ein hochkomplexes Sandwich aus völlig gegensätzlichen Werkstoffen.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "chapterTitle": "Die Schichten des Panzerglases"
+    },
+    {
+      "id": "32-mechanism",
+      "section": "mechanism",
+      "title": "75 mm vs. 4 mm",
+      "voiceText": "Eine moderne Sicherheitsverglasung der höchsten Schutzklasse ist bis zu 75 Millimeter dick. Normales Fensterglas misst gerade einmal vier Millimeter.",
+      "imageDir": "02-bilder/images/32-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics laboratory cleanroom",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Direct side-by-side scale comparison between a slender 4mm domestic window pane and a massive 75mm BR7 ballistic armor slab with clear dimension rulers.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "75 mm",
+          "4 mm"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "comparison",
+      "factClaim": "Eine moderne Sicherheitsverglasung der höchsten Schutzklasse ist bis zu 75 Millimeter dick. Normales Fensterglas misst gerade einmal vier Millimeter.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "33-mechanism",
+      "section": "mechanism",
+      "title": "Sieben Lagen im Verbund",
+      "voiceText": "In diesem massiven Block arbeiten mehrere spezialisierte Schichten im Team zusammen.",
+      "imageDir": "02-bilder/images/33-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics laboratory cleanroom",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Exploded technical diagram separating the 7 individual transparent sheets of glass, polyurethane, and polycarbonate with cyan connecting guide lines.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Schichtverbund"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "In diesem massiven Block arbeiten mehrere spezialisierte Schichten im Team zusammen.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "34-mechanism",
+      "section": "mechanism",
+      "title": "Die harte Opferschicht",
+      "voiceText": "Ganz außen sitzt die sogenannte Opferschicht. Sie besteht aus extrem hartem, thermisch vorgespanntem Borosilikatglas.",
+      "imageDir": "02-bilder/images/34-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "high-speed ballistics tank",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Highlighted front outer layer (strike face) of hardened borosilicate glass glowing in vivid cyan, ready to receive projectile impact.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Opferschicht (Glas)"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Ganz außen sitzt die sogenannte Opferschicht. Sie besteht aus extrem hartem, thermisch vorgespanntem Borosilikatglas.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "35-mechanism",
+      "section": "mechanism",
+      "title": "Gezieltes Zersplittern",
+      "voiceText": "Ihre Aufgabe ist es nicht, unbeschädigt zu bleiben. Sie soll zersplittern! Das Glas bricht gezielt.",
+      "imageDir": "02-bilder/images/35-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "high-speed ballistics tank",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Front glass sacrificial layer pulverizing into dense localized micro-powder under bullet impact, absorbing primary kinetic shock energy.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Gezielter Bruch"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Ihre Aufgabe ist es nicht, unbeschädigt zu bleiben. Sie soll zersplittern! Das Glas bricht gezielt.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "36-mechanism",
+      "section": "mechanism",
+      "title": "Zermalmen der Kugelspitze",
+      "voiceText": "Wenn das Geschoss mit 830 Metern pro Sekunde aufschlägt, zermalmt die harte Glasoberfläche die spitze Bleikappe des Projektils.",
+      "imageDir": "02-bilder/images/36-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "high-speed ballistics tank",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Ultra-close high-speed capture of the conical copper-jacketed rifle bullet tip blunting and crushing into a flat mushroom shape against the glass strike face.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Geschossspitze zermalmt"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Wenn das Geschoss mit 830 Metern pro Sekunde aufschlägt, zermalmt die harte Glasoberfläche die spitze Bleikappe des Projektils.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "37-mechanism",
+      "section": "mechanism",
+      "title": "Das Aufpilzen",
+      "voiceText": "Die Kugel pilzt auf – ihr Durchmesser verdoppelt sich in Millionstel Sekunden.",
+      "imageDir": "02-bilder/images/37-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "physics modeling software display",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Macro profile comparison of a pointed 7.62mm bullet transforming into an expanded flattened mushroom disc with measurement caliper callout.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Aufpilzung: 2x"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "comparison",
+      "factClaim": "Die Kugel pilzt auf – ihr Durchmesser verdoppelt sich in Millionstel Sekunden.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "38-mechanism",
+      "section": "mechanism",
+      "title": "Vierfache Fläche",
+      "voiceText": "Dadurch verteilt sich die zerstörerische Kraft schlagartig auf eine viermal größere Fläche.",
+      "imageDir": "02-bilder/images/38-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "physics modeling software display",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Color-graded pressure distribution heatmap showing how doubling bullet diameter quadruples contact area and drastically lowers localized penetration psi.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Fläche 4x größer",
+          "Druck sinkt 75 %"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Dadurch verteilt sich die zerstörerische Kraft schlagartig auf eine viermal größere Fläche.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "39-mechanism",
+      "section": "mechanism",
+      "title": "Die zähe Polymerfolie",
+      "voiceText": "Direkt hinter der Opferschicht liegt eine zähe Folie aus Polyvinylbutyral, kurz PVB, oder thermoplastischem Polyurethan.",
+      "imageDir": "02-bilder/images/39-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "materials cleanroom",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Cutaway view highlighting the clear, flexible PVB/TPU adhesive interlayer situated directly behind the fractured front glass pane.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "PVB / TPU Folie"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Direkt hinter der Opferschicht liegt eine zähe Folie aus Polyvinylbutyral, kurz PVB, oder thermoplastischem Polyurethan.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "40-mechanism",
+      "section": "mechanism",
+      "title": "500 Prozent Dehnung",
+      "voiceText": "Doch was hält diese enormen Kräfte zusammen? Die Folie kann sich um bis zu 500 Prozent dehnen, bevor sie reißt.",
+      "imageDir": "02-bilder/images/40-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "tensile testing apparatus",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Engineering tensile test graphic showing a strip of transparent TPU polymer stretching elastically to five times its original length without tearing.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "500 % Dehnung"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Doch was hält diese enormen Kräfte zusammen? Die Folie kann sich um bis zu 500 Prozent dehnen, bevor sie reißt.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "41-mechanism",
+      "section": "mechanism",
+      "title": "Das kinetische Fangnetz",
+      "voiceText": "Während das Glas zerbricht, fängt die Folie die kinetische Restenergie elastisch auf – genau wie das Fangnetz eines Trapezkünstlers.",
+      "imageDir": "02-bilder/images/41-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "high-speed ballistics tank",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Cross-section showing the flexible polymer layer deforming into a bulging elastic web that cradles shattered glass shards and decelerates the projectile.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Fangnetz-Effekt"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Während das Glas zerbricht, fängt die Folie die kinetische Restenergie elastisch auf – genau wie das Fangnetz eines Trapezkünstlers.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "42-mechanism",
+      "section": "mechanism",
+      "title": "Stufenweises Abbremsen",
+      "voiceText": "Dahinter wiederholt sich dieses Prinzip. Harte Glasschichten bremsen den Kern, elastische Polymere schlucken die Schockwellen.",
+      "imageDir": "02-bilder/images/42-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics laboratory cleanroom",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Multi-stage energy dissipation graphic with velocity arrows stepping down progressively from 830 m/s to 400 m/s, 100 m/s and finally 0 m/s.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Schicht 1–5: Bremsstufen"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Dahinter wiederholt sich dieses Prinzip. Harte Glasschichten bremsen den Kern, elastische Polymere schlucken die Schockwellen.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "43-mechanism",
+      "section": "mechanism",
+      "title": "Der Polycarbonat-Spall-Liner",
+      "voiceText": "Ganz am Ende sitzt die wichtigste Lebensversicherung: eine Schicht aus zähem Polycarbonat auf der Innenseite.",
+      "imageDir": "02-bilder/images/43-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics laboratory cleanroom",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Clean cutaway highlighting the tough rear polycarbonate liner layer facing the passenger cabin, resilient and completely crack-free.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Polycarbonat (Spall-Liner)"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Ganz am Ende sitzt die wichtigste Lebensversicherung: eine Schicht aus zähem Polycarbonat auf der Innenseite.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "44-mechanism",
+      "section": "mechanism",
+      "title": "Schutz vor Splitterflug",
+      "voiceText": "Sie verhindert gefährliche Splitter im Innenraum. Das rettet Leben.",
+      "imageDir": "02-bilder/images/44-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "vehicle interior test cabin",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Interior view of an armored vehicle cabin behind the struck windshield, pristine passenger seat and dashboard with zero inward spall fragments.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Splitterfrei (NS)"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "real-context",
+      "factClaim": "Sie verhindert gefährliche Splitter im Innenraum. Das rettet Leben.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "45-mechanism",
+      "section": "mechanism",
+      "title": "Vollkommen gestoppt",
+      "voiceText": "Die Kugel bleibt stecken. Sie ist vollkommen gestoppt.",
+      "imageDir": "02-bilder/images/45-mechanism",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics test laboratory",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Macro view through clear armor showing the flattened, heat-discolored rifle bullet suspended motionless inside the internal laminate matrix.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "V = 0 m/s"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Die Kugel bleibt stecken. Sie ist vollkommen gestoppt.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "46-deepening",
+      "section": "deepening",
+      "title": "Der Preis: Das Gewicht",
+      "voiceText": "Doch die enorme Schutzwirkung hat ihren Preis: das gigantische Gewicht.",
+      "imageDir": "02-bilder/images/46-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "automotive engineering workshop",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "An armored vehicle door suspended from a workshop crane hoist, heavy steel frame and multi-layer ballistic window assembly.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Zusatzgewicht"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "real-context",
+      "factClaim": "Doch die enorme Schutzwirkung hat ihren Preis: das gigantische Gewicht.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "chapterTitle": "180 Kilo & Einweg-Panzerglas"
+    },
+    {
+      "id": "47-deepening",
+      "section": "deepening",
+      "title": "180 Kilo pro Quadratmeter",
+      "voiceText": "Ein einziger Quadratmeter dieses Panzerglases wiegt rund 180 Kilogramm.",
+      "imageDir": "02-bilder/images/47-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "object-comparison",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "industrial weighing station",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "A one-square-meter slab of 75mm transparent armor resting on an industrial digital scale platform showing a bold 180.0 kg readout.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "180 kg / m²"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "comparison",
+      "factClaim": "Ein einziger Quadratmeter dieses Panzerglases wiegt rund 180 Kilogramm.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "48-deepening",
+      "section": "deepening",
+      "title": "35 Kilo pro Seitenscheibe",
+      "voiceText": "Gepanzerten Limousinen verpasst das Glas extremes Zusatzgewicht – allein eine vordere Seitenscheibe wiegt oft über 35 Kilo.",
+      "imageDir": "02-bilder/images/48-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "automotive engineering workshop",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "A single curved door window pane for an armored executive sedan mounted on a sturdy testing fixture with a 35kg mass indicator.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Türscheibe: 35 kg"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Gepanzerten Limousinen verpasst das Glas extremes Zusatzgewicht – allein eine vordere Seitenscheibe wiegt oft über 35 Kilo.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "49-deepening",
+      "section": "deepening",
+      "title": "Hydraulische Fensterheber",
+      "voiceText": "Normale Fensterhebermotoren würden daran sofort verbrennen. Spezialfahrzeuge nutzen dafür hydraulische Heber.",
+      "imageDir": "02-bilder/images/49-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "automotive engineering workshop",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Cutaway of the inner door cavity revealing heavy-duty hydraulic pistons and steel reinforced hinges designed to lift the 35kg ballistic glass.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Hydraulik-Heber"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Normale Fensterhebermotoren würden daran sofort verbrennen. Spezialfahrzeuge nutzen dafür hydraulische Heber.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "50-deepening",
+      "section": "deepening",
+      "title": "Das Phänomen Einweg-Glas",
+      "voiceText": "Und dann gibt es ein Phänomen, das wie Science-Fiction klingt: Einweg-Panzerglas.",
+      "imageDir": "02-bilder/images/50-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "schematic",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "special weapons testing facility",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Concept schematic with two opposing arrows labeled 'Außen' and 'Innen', introducing the asymmetric one-way ballistic barrier mechanism.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Einweg-Panzerglas"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Und dann gibt es ein Phänomen, das wie Science-Fiction klingt: Einweg-Panzerglas.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "51-deepening",
+      "section": "deepening",
+      "title": "Schuss von innen nach außen",
+      "voiceText": "Kann man durch eine Scheibe von innen nach außen schießen, während Kugeln von außen abprallen?",
+      "imageDir": "02-bilder/images/51-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "special weapons testing facility",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Diagrammatic cross-section showing incoming fire blocked from the left while outgoing defensive fire penetrates through from the right.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Außen ✗ · Innen ✓"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Kann man durch eine Scheibe von innen nach außen schießen, während Kugeln von außen abprallen?",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "52-deepening",
+      "section": "deepening",
+      "title": "Die verblüffende Physik",
+      "voiceText": "Die Physik dahinter ist verblüffend einfach.",
+      "imageDir": "02-bilder/images/52-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "schematic",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "materials laboratory",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Clear schematic illustrating the asymmetric layering: brittle sacrificial glass on the exterior side and ductile polycarbonate on the interior side.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Asymmetrischer Aufbau"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "concept",
+      "factClaim": "Die Physik dahinter ist verblüffend einfach.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "53-deepening",
+      "section": "deepening",
+      "title": "Spröde außen, zäh innen",
+      "voiceText": "Hier werden sprödes Glas außen und elastisches Polycarbonat innen asymmetrisch kombiniert.",
+      "imageDir": "02-bilder/images/53-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "materials laboratory",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Side-by-side material property comparison showing brittle glass on the outside and high-ductility polycarbonate on the inside of the armor.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Außen: spröde",
+          "Innen: zäh"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Hier werden sprödes Glas außen und elastisches Polycarbonat innen asymmetrisch kombiniert.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "54-deepening",
+      "section": "deepening",
+      "title": "Treffer von außen geblockt",
+      "voiceText": "Trifft eine Kugel von außen ein, knallt sie auf das harte Glas, pilzt auf und wird vom Polycarbonat aufgefangen.",
+      "imageDir": "02-bilder/images/54-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics test range",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "High-speed sequence showing an incoming bullet from outside impacting hard outer glass, flattening out, and being arrested by the flexible backing.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Schuss von außen: Stop"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Trifft eine Kugel von außen ein, knallt sie auf das harte Glas, pilzt auf und wird vom Polycarbonat aufgefangen.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "55-deepening",
+      "section": "deepening",
+      "title": "Verteidigung von innen",
+      "voiceText": "Schießt ein Personenschützer jedoch von innen, trifft das Projektil zuerst auf das biegsame Polycarbonat.",
+      "imageDir": "02-bilder/images/55-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "vehicle interior ballistics test",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Close-up of a defensive handgun bullet fired from inside striking the inner polycarbonate face, pushing a small localized cone of deformation.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Schuss von innen"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Schießt ein Personenschützer jedoch von innen, trifft das Projektil zuerst auf das biegsame Polycarbonat.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "56-deepening",
+      "section": "deepening",
+      "title": "Ausbrechen nach außen",
+      "voiceText": "Es drückt das Polymer lokal ein, schlägt ein kleines Loch hinein und bricht das spröde Außenglas mühelos nach außen weg.",
+      "imageDir": "02-bilder/images/56-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "vehicle interior ballistics test",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Bullet punching through the localized polymer hole and easily blowing the brittle exterior glass outwards away from the vehicle.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Bruch nach außen"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Es drückt das Polymer lokal ein, schlägt ein kleines Loch hinein und bricht das spröde Außenglas mühelos nach außen weg.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "57-deepening",
+      "section": "deepening",
+      "title": "Schutz bleibt intakt",
+      "voiceText": "Die Energie geht nach draußen verloren, während die Insassen geschützt bleiben.",
+      "imageDir": "02-bilder/images/57-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "tactical testing arena",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "External view showing glass debris ejected safely outward into the open field while the vehicle interior remains sealed and intact.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Schutz bleibt aktiv"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "real-context",
+      "factClaim": "Die Energie geht nach draußen verloren, während die Insassen geschützt bleiben.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "58-deepening",
+      "section": "deepening",
+      "title": "Die Grenze: Dauerfeuer",
+      "voiceText": "Allerdings hält auch das beste Panzerglas keinem Dauerfeuer stand.",
+      "imageDir": "02-bilder/images/58-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "process",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics test laboratory",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "High-speed capture of multiple sequential ballistic impacts closely clustered on a single glass armor plate, showing intersecting crack networks.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Mehrfachtreffer"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Allerdings hält auch das beste Panzerglas keinem Dauerfeuer stand.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "59-deepening",
+      "section": "deepening",
+      "title": "Spannungsverlust der Matrix",
+      "voiceText": "Nach mehreren Treffern auf dieselbe Stelle verliert das Schichtpaket seine Spannung.",
+      "imageDir": "02-bilder/images/59-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics test laboratory",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Macro cross-section showing localized delamination where repeated impacts weaken the polymer-glass adhesive matrix, losing tension.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Strukturverlust"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Nach mehreren Treffern auf dieselbe Stelle verliert das Schichtpaket seine Spannung.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "60-deepening",
+      "section": "deepening",
+      "title": "Sofort Gas geben",
+      "voiceText": "Darum gilt im Ernstfall: niemals stehen bleiben, sondern sofort Gas geben.",
+      "imageDir": "02-bilder/images/60-deepening",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "armored vehicle evasive course",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Armored security sedan accelerating dynamically away from a simulated ambush point on an asphalt tactical driving course.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Flucht · Gas geben"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "real-context",
+      "factClaim": "Darum gilt im Ernstfall: niemals stehen bleiben, sondern sofort Gas geben.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "61-payoff",
+      "section": "payoff",
+      "title": "Rückkehr zu 3.300 Joule",
+      "voiceText": "Zurück zu den 3.300 Joule und den 830 Metern pro Sekunde vom Anfang.",
+      "imageDir": "02-bilder/images/61-payoff",
+      "backgroundFamily": "content-driven",
+      "shotType": "macro",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics laboratory cleanroom",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Cinematic close-up of the arrested rifle bullet embedded harmlessly within the laminated transparent armor, illuminated by clean technical rim light.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "3.300 J · 830 m/s"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Zurück zu den 3.300 Joule und den 830 Metern pro Sekunde vom Anfang.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "chapterTitle": "Das Geheimnis des Nachgebens"
+    },
+    {
+      "id": "62-payoff",
+      "section": "payoff",
+      "title": "Brechen und Nachgeben",
+      "voiceText": "Nicht massive Dicke stoppt das Geschoss, sondern das perfekte Zusammenspiel von Zerbrechen und Nachgeben.",
+      "imageDir": "02-bilder/images/62-payoff",
+      "backgroundFamily": "content-driven",
+      "shotType": "diagram",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics laboratory cleanroom",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Stylized technical duality diagram showing hard brittle fracture on one side and flexible elastic absorption on the other, uniting into complete protection.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Brechen + Nachgeben"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "diagram",
+      "factClaim": "Nicht massive Dicke stoppt das Geschoss, sondern das perfekte Zusammenspiel von Zerbrechen und Nachgeben.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "63-payoff",
+      "section": "payoff",
+      "title": "Glas bricht, Folie fängt",
+      "voiceText": "Das spröde Glas bricht die Spitze der Kugel, der elastische Kunststoff nimmt ihr die Kraft.",
+      "imageDir": "02-bilder/images/63-payoff",
+      "backgroundFamily": "content-driven",
+      "shotType": "cutaway",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "ballistics laboratory cleanroom",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Precise cutaway illustration contrasting the pulverized front strike face against the stretched elastic backing layer holding the projectile firm.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Glas bricht",
+          "Folie fängt"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "material",
+      "factClaim": "Das spröde Glas bricht die Spitze der Kugel, der elastische Kunststoff nimmt ihr die Kraft.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "64-payoff",
+      "section": "payoff",
+      "title": "Das Erbe von 1903",
+      "voiceText": "Dass Menschen heute hinter einer Glasscheibe schwere Beschüsse unverletzt überstehen, verdanken wir einem ungeschickten Griff im Jahr 1903 in Paris.",
+      "imageDir": "02-bilder/images/64-payoff",
+      "backgroundFamily": "content-driven",
+      "shotType": "historical",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "historical paris laboratory 1903",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Poetic historical shot of the cracked Erlenmeyer flask resting on Benedictus's wooden workbench with subtle modern armored vehicle silhouettes reflected in the glass.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Paris 1903 → Heute"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "experiment",
+      "factClaim": "Dass Menschen heute hinter einer Glasscheibe schwere Beschüsse unverletzt überstehen, verdanken wir einem ungeschickten Griff im Jahr 1903 in Paris.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    },
+    {
+      "id": "65-payoff",
+      "section": "payoff",
+      "title": "Sicherheit durch Nachgeben",
+      "voiceText": "Darum gilt: Wahre Sicherheit entsteht nicht durch Starrheit, sondern durch die Kunst, im richtigen Moment nachzugeben.",
+      "imageDir": "02-bilder/images/65-payoff",
+      "backgroundFamily": "content-driven",
+      "shotType": "environment",
+      "referenceGroup": "technical-editorial-2point5d",
+      "visualRecipe": {
+        "stage": "modern architectural glass facade",
+        "camera": "Composition best suited to explaining this exact statement",
+        "subject": "Hero shot of a pristine modern bullet-resistant security glass installation overlooking a city skyline at sunrise, clean, inspiring, and technically sophisticated.",
+        "focus": "One precise visible science explanation matching the spoken beat",
+        "motion": "none",
+        "callouts": [
+          "Wissonaut"
+        ]
+      },
+      "layout": "image-full",
+      "renderMode": "image-only",
+      "motionLevel": "none",
+      "imageRole": "payoff",
+      "factClaim": "Darum gilt: Wahre Sicherheit entsteht nicht durch Starrheit, sondern durch die Kunst, im richtigen Moment nachzugeben.",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03",
+        "SRC-04",
+        "SRC-05"
+      ]
+    }
+  ]
+}

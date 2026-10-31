@@ -1,0 +1,1296 @@
+{
+  "version": "science-flow-image-v8-density-locked",
+  "productionProfile": "youtube-6to7min-v1",
+  "workflow": "thumbnail-first-then-five-image-steps-no-intermediate-stops-final-cleanup",
+  "imageOnly": true,
+  "informationBudgetLocked": true,
+  "imageProductionSteps": 5,
+  "pauseAfterEachImageStep": false,
+  "continueAutomaticallyBetweenImageSteps": true,
+  "finalReportAfterAllImageSteps": true,
+  "deleteUnselectedThumbnailCandidatesAfterSelection": true,
+  "selectedThumbnailFinalName": "00-thumbnail-final",
+  "coverExportDir": "05-export",
+  "coverNeverUsedAsVideoFrame": true,
+  "scene01IndependentFromCover": true,
+  "finalFlowCollectionRequired": true,
+  "singleFinalFlowCollectionPerVideo": true,
+  "finalCollectionName": "nicht-die-dicke-warum-kugelsicheres-glas-gewehrkugeln-stoppt-assets-final",
+  "removeRejectedVariantsBeforeCompletion": true,
+  "renameFinalAssetsBeforeCompletion": true,
+  "finalCollectionContainsFinalAssetsOnly": true,
+  "diversityRequired": true,
+  "phase2SceneAssetRoot": "02-bilder/images",
+  "phase2ThumbnailRoot": "02-bilder/thumbnail",
+  "phase3AssetSource": "phase2-project-folders-only",
+  "phase3MayGenerateVisualAssets": false,
+  "phase3MayRegenerateVisualAssets": false,
+  "phase3MaySearchExternalAssets": false,
+  "phase3MaySubstituteMissingAssets": false,
+  "phase3MaySkipMissingScenes": false,
+  "phase3MissingAssetPolicy": "stop-and-report",
+  "steps": [
+    {
+      "step": 1,
+      "sceneIds": [
+        "01-hook",
+        "02-hook",
+        "03-hook",
+        "04-hook",
+        "05-hook",
+        "06-hook",
+        "07-context",
+        "08-context",
+        "09-context",
+        "10-context",
+        "11-context",
+        "12-context",
+        "13-context"
+      ]
+    },
+    {
+      "step": 2,
+      "sceneIds": [
+        "14-context",
+        "15-context",
+        "16-context",
+        "17-foundation",
+        "18-foundation",
+        "19-foundation",
+        "20-foundation",
+        "21-foundation",
+        "22-foundation",
+        "23-foundation",
+        "24-foundation",
+        "25-foundation",
+        "26-foundation"
+      ]
+    },
+    {
+      "step": 3,
+      "sceneIds": [
+        "27-foundation",
+        "28-foundation",
+        "29-foundation",
+        "30-foundation",
+        "31-mechanism",
+        "32-mechanism",
+        "33-mechanism",
+        "34-mechanism",
+        "35-mechanism",
+        "36-mechanism",
+        "37-mechanism",
+        "38-mechanism",
+        "39-mechanism"
+      ]
+    },
+    {
+      "step": 4,
+      "sceneIds": [
+        "40-mechanism",
+        "41-mechanism",
+        "42-mechanism",
+        "43-mechanism",
+        "44-mechanism",
+        "45-mechanism",
+        "46-deepening",
+        "47-deepening",
+        "48-deepening",
+        "49-deepening",
+        "50-deepening",
+        "51-deepening",
+        "52-deepening"
+      ]
+    },
+    {
+      "step": 5,
+      "sceneIds": [
+        "53-deepening",
+        "54-deepening",
+        "55-deepening",
+        "56-deepening",
+        "57-deepening",
+        "58-deepening",
+        "59-deepening",
+        "60-deepening",
+        "61-payoff",
+        "62-payoff",
+        "63-payoff",
+        "64-payoff",
+        "65-payoff"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "01-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "macro",
+      "primaryMotif": "01-hook-macro",
+      "setting": "ballistics test laboratory",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "02-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "comparison",
+      "primaryMotif": "02-hook-comparison",
+      "setting": "ballistics test laboratory",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "03-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "cutaway",
+      "primaryMotif": "03-hook-cutaway",
+      "setting": "ballistics test laboratory",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "04-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "object-comparison",
+      "primaryMotif": "04-hook-object-comparison",
+      "setting": "material test workshop",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "05-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "process",
+      "primaryMotif": "05-hook-process",
+      "setting": "material test workshop",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "06-hook",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "schematic",
+      "primaryMotif": "06-hook-schematic",
+      "setting": "high-speed camera station",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "07-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "environment",
+      "primaryMotif": "07-context-environment",
+      "setting": "ballistics range shooting tunnel",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "08-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "macro",
+      "primaryMotif": "08-context-macro",
+      "setting": "ballistics range shooting tunnel",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "09-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "comparison",
+      "primaryMotif": "09-context-comparison",
+      "setting": "airfield runway compare",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "10-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "diagram",
+      "primaryMotif": "10-context-diagram",
+      "setting": "physics laboratory",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "11-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "object-comparison",
+      "primaryMotif": "11-context-object-comparison",
+      "setting": "physics laboratory",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "12-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "environment",
+      "primaryMotif": "12-context-environment",
+      "setting": "structural engineering hall",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "13-context",
+      "output": "image",
+      "imageStep": 1,
+      "visualType": "diagram",
+      "primaryMotif": "13-context-diagram",
+      "setting": "material testing machine",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "14-context",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "process",
+      "primaryMotif": "14-context-process",
+      "setting": "transparent target enclosure",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "15-context",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "cutaway",
+      "primaryMotif": "15-context-cutaway",
+      "setting": "transparent target enclosure",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "16-context",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "schematic",
+      "primaryMotif": "16-context-schematic",
+      "setting": "materials research lab",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "17-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "historical",
+      "primaryMotif": "17-foundation-historical",
+      "setting": "historical paris laboratory 1903",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "18-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "environment",
+      "primaryMotif": "18-foundation-environment",
+      "setting": "historical paris laboratory 1903",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "19-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "process",
+      "primaryMotif": "19-foundation-process",
+      "setting": "historical paris laboratory 1903",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "20-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "historical",
+      "primaryMotif": "20-foundation-historical",
+      "setting": "vintage laboratory flagstones",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "21-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "environment",
+      "primaryMotif": "21-foundation-environment",
+      "setting": "vintage laboratory flagstones",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "22-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "macro",
+      "primaryMotif": "22-foundation-macro",
+      "setting": "vintage laboratory table",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "23-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "cutaway",
+      "primaryMotif": "23-foundation-cutaway",
+      "setting": "vintage laboratory table",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "24-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "historical",
+      "primaryMotif": "24-foundation-historical",
+      "setting": "historical paris laboratory 1903",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "25-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "process",
+      "primaryMotif": "25-foundation-process",
+      "setting": "chemical reagent corner",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "26-foundation",
+      "output": "image",
+      "imageStep": 2,
+      "visualType": "macro",
+      "primaryMotif": "26-foundation-macro",
+      "setting": "chemical reagent corner",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "27-foundation",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "diagram",
+      "primaryMotif": "27-foundation-diagram",
+      "setting": "materials research lab",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "28-foundation",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "historical",
+      "primaryMotif": "28-foundation-historical",
+      "setting": "historical patent office desk",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "29-foundation",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "environment",
+      "primaryMotif": "29-foundation-environment",
+      "setting": "security motorcade avenue",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "30-foundation",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "schematic",
+      "primaryMotif": "30-foundation-schematic",
+      "setting": "industrial glass laminating plant",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "31-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "cutaway",
+      "primaryMotif": "31-mechanism-cutaway",
+      "setting": "ballistics laboratory cleanroom",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "32-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "comparison",
+      "primaryMotif": "32-mechanism-comparison",
+      "setting": "ballistics laboratory cleanroom",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "33-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "diagram",
+      "primaryMotif": "33-mechanism-diagram",
+      "setting": "ballistics laboratory cleanroom",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "34-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "cutaway",
+      "primaryMotif": "34-mechanism-cutaway",
+      "setting": "high-speed ballistics tank",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "35-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "process",
+      "primaryMotif": "35-mechanism-process",
+      "setting": "high-speed ballistics tank",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "36-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "macro",
+      "primaryMotif": "36-mechanism-macro",
+      "setting": "high-speed ballistics tank",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "37-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "comparison",
+      "primaryMotif": "37-mechanism-comparison",
+      "setting": "physics modeling software display",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "38-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "diagram",
+      "primaryMotif": "38-mechanism-diagram",
+      "setting": "physics modeling software display",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "39-mechanism",
+      "output": "image",
+      "imageStep": 3,
+      "visualType": "cutaway",
+      "primaryMotif": "39-mechanism-cutaway",
+      "setting": "materials cleanroom",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "40-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "diagram",
+      "primaryMotif": "40-mechanism-diagram",
+      "setting": "tensile testing apparatus",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "41-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "process",
+      "primaryMotif": "41-mechanism-process",
+      "setting": "high-speed ballistics tank",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "42-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "diagram",
+      "primaryMotif": "42-mechanism-diagram",
+      "setting": "ballistics laboratory cleanroom",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "43-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "cutaway",
+      "primaryMotif": "43-mechanism-cutaway",
+      "setting": "ballistics laboratory cleanroom",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "44-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "environment",
+      "primaryMotif": "44-mechanism-environment",
+      "setting": "vehicle interior test cabin",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "45-mechanism",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "macro",
+      "primaryMotif": "45-mechanism-macro",
+      "setting": "ballistics test laboratory",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "46-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "environment",
+      "primaryMotif": "46-deepening-environment",
+      "setting": "automotive engineering workshop",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "47-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "object-comparison",
+      "primaryMotif": "47-deepening-object-comparison",
+      "setting": "industrial weighing station",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "48-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "macro",
+      "primaryMotif": "48-deepening-macro",
+      "setting": "automotive engineering workshop",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "49-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "cutaway",
+      "primaryMotif": "49-deepening-cutaway",
+      "setting": "automotive engineering workshop",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "50-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "schematic",
+      "primaryMotif": "50-deepening-schematic",
+      "setting": "special weapons testing facility",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "51-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "diagram",
+      "primaryMotif": "51-deepening-diagram",
+      "setting": "special weapons testing facility",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "52-deepening",
+      "output": "image",
+      "imageStep": 4,
+      "visualType": "schematic",
+      "primaryMotif": "52-deepening-schematic",
+      "setting": "materials laboratory",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "53-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "cutaway",
+      "primaryMotif": "53-deepening-cutaway",
+      "setting": "materials laboratory",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "54-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "process",
+      "primaryMotif": "54-deepening-process",
+      "setting": "ballistics test range",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "55-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "macro",
+      "primaryMotif": "55-deepening-macro",
+      "setting": "vehicle interior ballistics test",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "56-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "process",
+      "primaryMotif": "56-deepening-process",
+      "setting": "vehicle interior ballistics test",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "57-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "environment",
+      "primaryMotif": "57-deepening-environment",
+      "setting": "tactical testing arena",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "58-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "process",
+      "primaryMotif": "58-deepening-process",
+      "setting": "ballistics test laboratory",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "59-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "macro",
+      "primaryMotif": "59-deepening-macro",
+      "setting": "ballistics test laboratory",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "60-deepening",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "environment",
+      "primaryMotif": "60-deepening-environment",
+      "setting": "armored vehicle evasive course",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "61-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "macro",
+      "primaryMotif": "61-payoff-macro",
+      "setting": "ballistics laboratory cleanroom",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "62-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "diagram",
+      "primaryMotif": "62-payoff-diagram",
+      "setting": "ballistics laboratory cleanroom",
+      "informationBudget": {
+        "densityClass": "complex",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 2,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "63-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "cutaway",
+      "primaryMotif": "63-payoff-cutaway",
+      "setting": "ballistics laboratory cleanroom",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 2,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "64-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "historical",
+      "primaryMotif": "64-payoff-historical",
+      "setting": "historical paris laboratory 1903",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    },
+    {
+      "id": "65-payoff",
+      "output": "image",
+      "imageStep": 5,
+      "visualType": "environment",
+      "primaryMotif": "65-payoff-environment",
+      "setting": "modern architectural glass facade",
+      "informationBudget": {
+        "densityClass": "normal",
+        "oneDominantIdea": true,
+        "maxLabels": 1,
+        "maxPrimaryObjects": 3,
+        "maxPanels": 1,
+        "maxArrows": 0,
+        "largeHeadlineAllowed": false,
+        "fullSentenceTextAllowed": false
+      }
+    }
+  ]
+}

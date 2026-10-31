@@ -1,0 +1,38 @@
+{
+  "version": "science-v1",
+  "productionProfile": "youtube-6to7min-v1",
+  "generatedAt": "2026-10-31T06:07:14.577Z",
+  "passed": true,
+  "wordCount": 909,
+  "targetWords": {
+    "min": 850,
+    "ideal": 975,
+    "max": 1075
+  },
+  "sceneCount": 65,
+  "sections": [
+    "hook",
+    "context",
+    "foundation",
+    "mechanism",
+    "deepening",
+    "payoff"
+  ],
+  "hookHeadline": "Warum stoppt Glas eine Gewehrkugel?",
+  "hookVoiceWords": 16,
+  "qualityRulesVersion": "qualitaet-v2",
+  "engagement": {
+    "words": 909,
+    "concreteNumbers": 16,
+    "hedges": 0,
+    "hedgesPer100Words": 0,
+    "twoSentenceSceneShare": 0.17,
+    "shortSentenceShare": 0.19,
+    "longestCuriosityGapWords": 190,
+    "scenes": 65,
+    "sceneSecondsMedian": 6,
+    "scenesOverReview": 0
+  },
+  "errors": [],
+  "warnings": []
+}

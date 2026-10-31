@@ -1,0 +1,27 @@
+{
+  "status": "preproduction-blocked-until-gates-pass",
+  "slug": "nicht-die-dicke-warum-kugelsicheres-glas-gewehrkugeln-stoppt",
+  "productionProfile": "youtube-6to7min-v1",
+  "completed": [
+    "folder-structure",
+    "science-static-v1-template",
+    "scientific-scene-explainer-v1"
+  ],
+  "open": [
+    "research",
+    "story-structure",
+    "script",
+    "sources",
+    "image-plan",
+    "thumbnail-plan",
+    "preflight",
+    "images",
+    "thumbnail",
+    "voiceover",
+    "captions",
+    "render",
+    "qa"
+  ],
+  "requiredVisibleSceneImages": 65,
+  "nextCommand": "npm run science:preflight -- \"<video-ordner>\""
+}

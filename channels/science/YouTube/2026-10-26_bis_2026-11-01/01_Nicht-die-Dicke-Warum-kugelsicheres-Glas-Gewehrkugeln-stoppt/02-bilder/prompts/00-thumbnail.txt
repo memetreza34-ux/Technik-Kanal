@@ -1,0 +1,17 @@
+ONE STATIC IMAGE ONLY, 1280x720, landscape 16:9.
+Drei Kandidaten zur Auswahl (drei Varianten):
+Stil: Technical Editorial Explainer 2.5D, plakativ, kontrastreich, sofort auf Smartphones lesbar.
+Großes dominantes Hauptmotiv auf mindestens halber Bildfläche, sattes Dunkelblau (#0a192f) als Kontrastgrundlage, gezielte Akzentfarben Cyan und Signalorange.
+Maximal 1 bis 3 kurze deutsche Wörter als Schlagzeile. Kein Buchstabensalat.
+
+KANDIDAT A (Zahl + Widerspruch):
+EXACT VISUAL BRIEF — Macro side cross-section of a 75mm ballistic armor glass slab stopping a flattened high-velocity 7.62mm rifle bullet right in the center layer with glowing turquoise stress fissures radiating outward. Bold red circled callout arrow pointing directly at the stopped flattened bullet core.
+Request visible German label: "3.300 JOULE".
+
+KANDIDAT B (Irrtum vs. Realität / Vorher-Nachher):
+EXACT VISUAL BRIEF — Split contrast composition on an industrial steel ballistic test bench. Left side shows an ordinary thick glass block shattering violently into jagged pieces under a hammer strike. Right side shows an equal-sized multi-layer armored glass block easily absorbing a supersonic rifle bullet with only localized concentric micro-fractures.
+Request visible German label: "NICHT DIE DICKE".
+
+KANDIDAT C (Schicht-Explosion / Mechanismus):
+EXACT VISUAL BRIEF — Isometric technical cutaway of an armored vehicle door window pane exploding into its constituent layers: hardened glass outer strike face, flexible clear polyurethane web stretching elastically, and tough polycarbonate inner backing. Bold red precision target indicator over the deforming polymer layer.
+Request visible German label: "7 SCHICHTEN".

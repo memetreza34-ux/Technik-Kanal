@@ -1,0 +1,13 @@
+{
+  "version": "science-static-quality-v2",
+  "productionProfile": "youtube-6to7min-v1",
+  "generatedAt": "2026-10-31T06:07:14.692Z",
+  "passed": true,
+  "sceneCount": 65,
+  "imageSceneCount": 65,
+  "animatedSceneCount": 0,
+  "brandVisualStyleChecked": true,
+  "styleId": "scientific-scene-explainer-v1",
+  "errors": [],
+  "warnings": []
+}

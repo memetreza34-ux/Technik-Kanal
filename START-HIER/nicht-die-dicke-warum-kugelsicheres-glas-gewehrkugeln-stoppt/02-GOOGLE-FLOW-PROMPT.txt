@@ -1,0 +1,622 @@
+VISIBLE TEXT LOCK — SCENE METADATA IS NEVER IMAGE CONTENT
+For SCENE IMAGES, production metadata is NEVER visual content. Never render scene numbers, beat numbers, scene IDs, section names, filenames, image-step labels, final asset names or production instructions inside the image. Only the text after “Bildauftrag:” describes the picture; headings and saving instructions are workflow notes for you, not image content.
+
+Only render visible scene text that is explicitly requested inside the scene prompt. Do not invent extra titles, headings, labels or explanatory text. Never carry a thumbnail headline into a normal scene unless that exact text is explicitly requested for that scene. If a scene prompt requests no visible text, the image must contain zero text.
+
+Requested labels, concise explanatory callouts, formulas and legends may be prominent enough to read comfortably on a phone, while remaining subordinate to the actual technical illustration. Diagram annotations must be clear and scientifically correct, not decorative. Keep all requested text comfortably inside the 16:9 safe area; never crop it at the top, bottom or sides. Every requested label must be exact, complete and readable. If text is misspelled, blank, corrupted, cropped, substituted or turned into a large headline, REJECT that image and regenerate it before continuing.
+
+FINAL IMAGE SELECTION LOCK: compare every newly generated scene image with all already accepted final images from the same video. If it repeats essentially the same dominant composition, object angle, arrow pattern or full-scene layout without a genuinely different explanatory form, REJECT it and regenerate with a clearly different composition. A different camera angle alone is not enough. The payoff may return to the hook idea, but it must not simply duplicate the hook image.
+
+THUMBNAIL EXCEPTION: thumbnail prompts may use the explicitly requested thumbnail headline. This exception applies only to the thumbnail phase and never carries into scene images.
+
+GOOGLE FLOW MASTER PROMPT — WISSONAUT — NUR BILDER / IMAGE ONLY
+================================================================
+Prompt-Version: flow-master-v2-ohne-szenen-ids
+TITLE: Nicht die Dicke: Warum kugelsicheres Glas Gewehrkugeln stoppt
+VIDEO: 1920×1080 / 16:9, exactly 65 static scene images, 5 Bildschritte.
+VISUAL WORLD: Technical Editorial Explainer 2.5D.
+Finale Flow-Sammlung: nicht-die-dicke-warum-kugelsicheres-glas-gewehrkugeln-stoppt-assets-final
+
+STYLE LOCK — Technical Editorial Explainer 2.5D
+Keep the exact same visual language across the entire video: clean modern 2D/2.5D vector-like technical editorial illustration, simplified but believable proportions, matte materials, clean edges, subtle gradients, soft controlled shadows, consistent line weight, moderate depth, adult professional educational design. Use warm off-white, graphite and muted industrial neutrals as the base family; use copper, blue, orange/red, green or yellow only as meaningful technical accents. Do not use photorealism, real-photo aesthetics, hyperrealistic environments, generic AI art, white textbook infographic layouts, Pixar/cartoon styling, sci-fi HUDs or neon-heavy effects. Scene type, perspective and environment may change, but rendering language, material simplification, line quality, typography and callout design must remain consistent. Visible text only in German and only when explicitly requested. Google Flow prompt instructions are written in English. This STYLE LOCK applies to every image below and overrides any older style wording.
+
+DENSITY LOCK — TECHNICAL EXPLANATION FIRST
+Keep one clear scientific idea per image. Normal scenes may use 1–3 short accurate German labels if helpful. In technical diagrams, schematics, cross-sections, comparisons and infographics, use up to 5 purposeful German labels, 3 panels and 4 arrows when needed. Use essential formulas, units, dimensions, legends and concise German callouts; every annotation must match the spoken explanation. Labels must be readable on a phone, not tiny decorative text. Prefer at least one third technical explanatory visuals across the whole video and vary views and illustration types; no repeated generic beauty shots of the same object. No unsupported numbers, incorrect physics, made-up facts, English words or production metadata inside images. Correct scientific content takes priority over sparse minimalism.
+
+WAS INS BILD GEHÖRT
+-------------------
+- Nur der Text hinter „Bildauftrag:“ beschreibt das Bild. Zeilen wie „BILD 7 VON 45“, „BILDSCHRITT“, „Budget“ und „Speichern als …“ sind Arbeitsanweisungen und erscheinen niemals im Bild.
+- Sichtbarer Text nur, wenn die Zeile „Visible German text“ ihn verlangt – exakt diese Wörter, klein, vollständig, richtig geschrieben. Steht dort „Visible text: none“, ist das Bild komplett textfrei.
+- Keine Überschriften, keine Nummern, keine Abschnitts- oder Dateinamen, keine englischen Wörter im Bild.
+
+VERBINDLICHE WORKFLOW-REGELN / BINDING WORKFLOW
+1. Zuerst genau DREI Thumbnail-Kandidaten gemäß dem Coverprompt erzeugen; dann STOPP und auf die ausdrückliche AUSWAHL des Nutzers warten.
+2. Die ZWEI NICHT GEWÄHLTEN COVER entfernen. Gewinner als 00-thumbnail-final ausschließlich nach 05-export exportieren; niemals als Videobild verwenden.
+3. Bild 1 unabhängig vom Cover gestalten: KEINE Farbpalette, KEINE Layoutvorlage, keine Cover-Schlagzeile und keine wiederholte Cover-Komposition auf Videoszenen übertragen.
+4. Danach genau 5 Bildschritte. Jeweils EIN finales Bild pro Bildauftrag erzeugen, sofort prüfen und wie angegeben speichern. KEINE WEITEREN STOPPS ODER RÜCKFRAGEN zwischen BILDSCHRITT 1 und 5.
+5. VISUELLE VIELFALT IST PFLICHT: Komposition, Darstellungsform und Perspektive wechseln, ohne den STYLE LOCK zu verlassen. Kein Bild darf das vorige praktisch wiederholen.
+6. INFORMATIONSDICHTE IST HART BEGRENZT: Budget jeder Szene einhalten; lieber vereinfachen als überladen.
+7. Keine gesichtslosen sichtbaren Köpfe. Wenn ein Kopf sichtbar ist, dann mit vollständigen natürlichen Gesichtszügen.
+8. NUR BILDER: ausschließlich statische 16:9-Illustrationen, keine KI-Videoclips, keine Animationen, keine Kamerafahrten.
+9. Vor jeder Freigabe den sichtbaren Text prüfen: falsch geschriebene, abgeschnittene, zusätzliche oder nicht verlangte Schrift → Bild verwerfen und neu erzeugen.
+10. Erst NACH ABSCHLUSS VON BILDSCHRITT 5 aufräumen und den GESAMTABSCHLUSS melden.
+
+THUMBNAIL — ERST DREI THUMBNAILS, DANACH STOPP
+==============================================
+ONE STATIC IMAGE ONLY, 1280x720, landscape 16:9.
+Drei Kandidaten zur Auswahl (drei Varianten):
+Stil: Technical Editorial Explainer 2.5D, plakativ, kontrastreich, sofort auf Smartphones lesbar.
+Großes dominantes Hauptmotiv auf mindestens halber Bildfläche, sattes Dunkelblau (#0a192f) als Kontrastgrundlage, gezielte Akzentfarben Cyan und Signalorange.
+Maximal 1 bis 3 kurze deutsche Wörter als Schlagzeile. Kein Buchstabensalat.
+
+KANDIDAT A (Zahl + Widerspruch):
+EXACT VISUAL BRIEF — Macro side cross-section of a 75mm ballistic armor glass slab stopping a flattened high-velocity 7.62mm rifle bullet right in the center layer with glowing turquoise stress fissures radiating outward. Bold red circled callout arrow pointing directly at the stopped flattened bullet core.
+Request visible German label: "3.300 JOULE".
+
+KANDIDAT B (Irrtum vs. Realität / Vorher-Nachher):
+EXACT VISUAL BRIEF — Split contrast composition on an industrial steel ballistic test bench. Left side shows an ordinary thick glass block shattering violently into jagged pieces under a hammer strike. Right side shows an equal-sized multi-layer armored glass block easily absorbing a supersonic rifle bullet with only localized concentric micro-fractures.
+Request visible German label: "NICHT DIE DICKE".
+
+KANDIDAT C (Schicht-Explosion / Mechanismus):
+EXACT VISUAL BRIEF — Isometric technical cutaway of an armored vehicle door window pane exploding into its constituent layers: hardened glass outer strike face, flexible clear polyurethane web stretching elastically, and tough polycarbonate inner backing. Bold red precision target indicator over the deforming polymer layer.
+Request visible German label: "7 SCHICHTEN".
+
+STOPP NACH DREI THUMBNAILS; AUF AUSWAHL WARTEN. DANACH OHNE ZWISCHENSTOPP MIT BILDSCHRITT 1 WEITER.
+
+BILDSCHRITT 1/5 — BILDER 1 BIS 13
+====================================================
+Erzeuge genau 13 finale statische Bilder in dieser Reihenfolge. Pro Bildauftrag ein angenommenes Bild; Fehlversuche verwerfen.
+
+BILD 1 VON 65
+Bildauftrag: High-speed macro capture of a rifle bullet flattening against a multi-layered glass block with glowing stress fracture patterns and shockwave ripples. Dark navy scientific studio background.
+Presentation: macro.
+Setting: ballistics test laboratory (the object stays in its real-world place).
+Visible German text: exactly "3.300 J" and "830 m/s" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 2 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 01.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 2 VON 65
+Bildauftrag: High-speed macro capture of standard window glass violently shattering into sharp pointed fragments upon impact, cracks radiating outward in bright cyan lines against dark navy slate.
+Presentation: comparison.
+Setting: ballistics test laboratory (the object stays in its real-world place).
+Visible German text: exactly "Standardglas" and "Bruch" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 2 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 02.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 3 VON 65
+Bildauftrag: Side cross-section view of a transparent armored glass block stopping a deformed rifle bullet dead in its tracks inside the middle layer, visible internal compression web.
+Presentation: cutaway.
+Setting: ballistics test laboratory (the object stays in its real-world place).
+Visible German text: exactly "Panzerglas" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 03.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 4 VON 65
+Bildauftrag: A heavy monolithic 100mm thick block of solid glass resting on an industrial steel workbench under focused spotlight, sleek technical editorial style.
+Presentation: object-comparison.
+Setting: material test workshop (the object stays in its real-world place).
+Visible German text: exactly "Monolithglas" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 04.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 5 VON 65
+Bildauftrag: The massive solid monolithic glass block cracking through completely from edge to edge under dynamic ballistic pressure, showing total structural failure.
+Presentation: process.
+Setting: material test workshop (the object stays in its real-world place).
+Visible German text: exactly "Sprödbruch" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 05.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 6 VON 65
+Bildauftrag: Technical diagram of a phantom ultra-high-speed recording setup with laser alignment targeting the transparent armor sample in a dark ballistics tunnel.
+Presentation: schematic.
+Setting: high-speed camera station (the object stays in its real-world place).
+Visible German text: exactly "Hochgeschwindigkeitskamera" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 06.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 7 VON 65
+Bildauftrag: A precision ballistic test rifle mounted on a rigid graphite test bench inside an underground firing tunnel, clear sightline down the range.
+Presentation: environment.
+Setting: ballistics range shooting tunnel (the object stays in its real-world place).
+Visible German text: exactly "Prüfstand" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 07.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 8 VON 65
+Bildauftrag: Macro side view of a copper-jacketed bullet exiting a rifled barrel with expanding supersonic gas cone and precise muzzle velocity telemetry.
+Presentation: macro.
+Setting: ballistics range shooting tunnel (the object stays in its real-world place).
+Visible German text: exactly "830 m/s" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 08.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 9 VON 65
+Bildauftrag: Technical velocity comparison infographic showing the Mach 2.5 bullet vector alongside a commercial passenger jet at takeoff speed, clean scale indicators.
+Presentation: comparison.
+Setting: airfield runway compare (the object stays in its real-world place).
+Visible German text: exactly "Überschall" and "Jet" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 2 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 09.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 10 VON 65
+Bildauftrag: Scientific energy dissipation diagram with a steep blue power spike curve labeled Energie-Entladung over a microsecond timeline, dark technical background.
+Presentation: diagram.
+Setting: physics laboratory (the object stays in its real-world place).
+Visible German text: exactly "Energie-Entladung" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 10.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 11 VON 65
+Bildauftrag: Conceptual physics comparison illustration showing a heavy 330kg touring motorcycle suspended one meter high above the exact surface area of a 1-cent coin.
+Presentation: object-comparison.
+Setting: physics laboratory (the object stays in its real-world place).
+Visible German text: exactly "330 kg · 1 m" and "Münzfläche" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 2 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 11.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 12 VON 65
+Bildauftrag: Heavy commercial truck wheels parked directly on four transparent precision glass compression cylinders without cracking, showcasing extreme compressive strength.
+Presentation: environment.
+Setting: structural engineering hall (the object stays in its real-world place).
+Visible German text: exactly "Druckfestigkeit" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 12.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 13 VON 65
+Bildauftrag: Engineering stress-strain diagram contrasting glass compressive resistance versus tensile vulnerability with diverging cyan and red force vectors.
+Presentation: diagram.
+Setting: material testing machine (the object stays in its real-world place).
+Visible German text: exactly "Druck: hoch" and "Zug: minimal" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 2 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 13.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILDSCHRITT 1 ABGESCHLOSSEN. OHNE ZWISCHENSTOPP direkt mit BILDSCHRITT 2 fortfahren.
+
+BILDSCHRITT 2/5 — BILDER 14 BIS 26
+====================================================
+Erzeuge genau 13 finale statische Bilder in dieser Reihenfolge. Pro Bildauftrag ein angenommenes Bild; Fehlversuche verwerfen.
+
+BILD 14 VON 65
+Bildauftrag: Cross-section showing concentric supersonic stress shockwave rings expanding at 5000 m/s through a glass plate immediately following point impact.
+Presentation: process.
+Setting: transparent target enclosure (the object stays in its real-world place).
+Visible German text: exactly "5.000 m/s Schockwelle" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 14.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 15 VON 65
+Bildauftrag: Extreme close-up cross section of the rear surface of ordinary glass flexing slightly outward under stress and tearing into catastrophic radial spiderweb cracks.
+Presentation: cutaway.
+Setting: transparent target enclosure (the object stays in its real-world place).
+Visible German text: exactly "Zugspannung Rückseite" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 15.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 16 VON 65
+Bildauftrag: An engineering blueprint schematic presenting a glowing layered shield archetype, posing the material science challenge against a deep navy canvas.
+Presentation: schematic.
+Setting: materials research lab (the object stays in its real-world place).
+Visible German text: exactly "Verbund-Struktur" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 16.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 17 VON 65
+Bildauftrag: Historical turn-of-the-century Parisian chemistry lab with vintage glassware, brass retorts, and wooden workbenches in authentic restrained warm tones.
+Presentation: historical.
+Setting: historical paris laboratory 1903 (the object stays in its real-world place).
+Visible German text: exactly "Paris · 1903" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 17.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 18 VON 65
+Bildauftrag: French chemist Edouard Benedictus climbing a tall wooden library ladder to reach glassware on high shelves in his sunlit Paris laboratory.
+Presentation: environment.
+Setting: historical paris laboratory 1903 (the object stays in its real-world place).
+Visible German text: exactly "Édouard Bénédictus" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 18.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 19 VON 65
+Bildauftrag: A vintage glass Erlenmeyer flask slipping off the wooden shelf edge mid-air, caught in frozen motion against dark wood paneled walls.
+Presentation: process.
+Setting: historical paris laboratory 1903 (the object stays in its real-world place).
+Visible German text: exactly "Erlenmeyerkolben" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 19.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 20 VON 65
+Bildauftrag: The glass flask striking the hard flagstone laboratory floor from a two-meter drop, dust kicking up at the point of contact.
+Presentation: historical.
+Setting: vintage laboratory flagstones (the object stays in its real-world place).
+Visible German text: exactly "2 m Fallhöhe" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 20.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 21 VON 65
+Bildauftrag: Edouard Benedictus looking down from the ladder at the floor in genuine astonishment, hands paused, laboratory tools surrounding the scene.
+Presentation: environment.
+Setting: vintage laboratory flagstones (the object stays in its real-world place).
+Visible German text: exactly "Keine Splitter" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 21.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 22 VON 65
+Bildauftrag: Detailed close-up of the antique glass flask lying on flagstones, completely covered in fine fractured cracks yet retaining its 3D vessel shape perfectly.
+Presentation: macro.
+Setting: vintage laboratory table (the object stays in its real-world place).
+Visible German text: exactly "Form stabil" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 22.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 23 VON 65
+Bildauftrag: Macro view showing the surface of the fractured glass with zero detached shards or sharp fragments on the stone floor around it.
+Presentation: cutaway.
+Setting: vintage laboratory table (the object stays in its real-world place).
+Visible German text: exactly "Haftung 100 %" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 23.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 24 VON 65
+Bildauftrag: Benedictus sitting at his wooden laboratory table holding the shattered glass flask up toward the light, carefully examining the interior wall.
+Presentation: historical.
+Setting: historical paris laboratory 1903 (the object stays in its real-world place).
+Visible German text: exactly "Inspektion" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 24.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 25 VON 65
+Bildauftrag: Vintage laboratory beaker pouring a viscous liquid collodion cellulose nitrate solution, coating inner glass surfaces with an amber sheen.
+Presentation: process.
+Setting: chemical reagent corner (the object stays in its real-world place).
+Visible German text: exactly "Cellulosenitrat" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 25.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 26 VON 65
+Bildauftrag: Cutaway graphic of the flask wall revealing the microscopic, clear, elastomeric film bonded tenaciously to the internal glass contour.
+Presentation: macro.
+Setting: chemical reagent corner (the object stays in its real-world place).
+Visible German text: exactly "Polymerfilm" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 26.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILDSCHRITT 2 ABGESCHLOSSEN. OHNE ZWISCHENSTOPP direkt mit BILDSCHRITT 3 fortfahren.
+
+BILDSCHRITT 3/5 — BILDER 27 BIS 39
+====================================================
+Erzeuge genau 13 finale statische Bilder in dieser Reihenfolge. Pro Bildauftrag ein angenommenes Bild; Fehlversuche verwerfen.
+
+BILD 27 VON 65
+Bildauftrag: Technical diagram illustrating how elastic polymer tensile bonds tether sharp broken glass shards together like a flexible micro-net.
+Presentation: diagram.
+Setting: materials research lab (the object stays in its real-world place).
+Visible German text: exactly "Elastisches Fangnetz" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 27.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 28 VON 65
+Bildauftrag: Original 1909 patent drawing sheet showing the layered glass-celluloid-glass sandwich invention on a draughtsman's table in vintage sepia tone.
+Presentation: historical.
+Setting: historical patent office desk (the object stays in its real-world place).
+Visible German text: exactly "Patent 1909 · Triplex" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 28.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 29 VON 65
+Bildauftrag: A heavy armored head-of-state limousine with thick tinted security glazing driving in an official security motorcade through dusk.
+Presentation: environment.
+Setting: security motorcade avenue (the object stays in its real-world place).
+Visible German text: exactly "Hochschutz" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 29.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 30 VON 65
+Bildauftrag: Exploded isometric blueprint diagram contrasting simple three-layer car windshield glass with an advanced multi-layered ballistic armor sandwich.
+Presentation: schematic.
+Setting: industrial glass laminating plant (the object stays in its real-world place).
+Visible German text: exactly "Sicherheitsglas → Panzerglas" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 30.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 31 VON 65
+Bildauftrag: Clean perspective cutaway of an architectural transparent armor block showing the alternating stack of glass and polymer layers on a dark stand.
+Presentation: cutaway.
+Setting: ballistics laboratory cleanroom (the object stays in its real-world place).
+Visible German text: exactly "Verbundaufbau" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 31.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 32 VON 65
+Bildauftrag: Direct side-by-side scale comparison between a slender 4mm domestic window pane and a massive 75mm BR7 ballistic armor slab with clear dimension rulers.
+Presentation: comparison.
+Setting: ballistics laboratory cleanroom (the object stays in its real-world place).
+Visible German text: exactly "75 mm" and "4 mm" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 2 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 32.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 33 VON 65
+Bildauftrag: Exploded technical diagram separating the 7 individual transparent sheets of glass, polyurethane, and polycarbonate with cyan connecting guide lines.
+Presentation: diagram.
+Setting: ballistics laboratory cleanroom (the object stays in its real-world place).
+Visible German text: exactly "Schichtverbund" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 33.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 34 VON 65
+Bildauftrag: Highlighted front outer layer (strike face) of hardened borosilicate glass glowing in vivid cyan, ready to receive projectile impact.
+Presentation: cutaway.
+Setting: high-speed ballistics tank (the object stays in its real-world place).
+Visible German text: exactly "Opferschicht (Glas)" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 34.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 35 VON 65
+Bildauftrag: Front glass sacrificial layer pulverizing into dense localized micro-powder under bullet impact, absorbing primary kinetic shock energy.
+Presentation: process.
+Setting: high-speed ballistics tank (the object stays in its real-world place).
+Visible German text: exactly "Gezielter Bruch" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 35.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 36 VON 65
+Bildauftrag: Ultra-close high-speed capture of the conical copper-jacketed rifle bullet tip blunting and crushing into a flat mushroom shape against the glass strike face.
+Presentation: macro.
+Setting: high-speed ballistics tank (the object stays in its real-world place).
+Visible German text: exactly "Geschossspitze zermalmt" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 36.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 37 VON 65
+Bildauftrag: Macro profile comparison of a pointed 7.62mm bullet transforming into an expanded flattened mushroom disc with measurement caliper callout.
+Presentation: comparison.
+Setting: physics modeling software display (the object stays in its real-world place).
+Visible German text: exactly "Aufpilzung: 2x" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 37.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 38 VON 65
+Bildauftrag: Color-graded pressure distribution heatmap showing how doubling bullet diameter quadruples contact area and drastically lowers localized penetration psi.
+Presentation: diagram.
+Setting: physics modeling software display (the object stays in its real-world place).
+Visible German text: exactly "Fläche 4x größer" and "Druck sinkt 75 %" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 2 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 38.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 39 VON 65
+Bildauftrag: Cutaway view highlighting the clear, flexible PVB/TPU adhesive interlayer situated directly behind the fractured front glass pane.
+Presentation: cutaway.
+Setting: materials cleanroom (the object stays in its real-world place).
+Visible German text: exactly "PVB / TPU Folie" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 39.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILDSCHRITT 3 ABGESCHLOSSEN. OHNE ZWISCHENSTOPP direkt mit BILDSCHRITT 4 fortfahren.
+
+BILDSCHRITT 4/5 — BILDER 40 BIS 52
+====================================================
+Erzeuge genau 13 finale statische Bilder in dieser Reihenfolge. Pro Bildauftrag ein angenommenes Bild; Fehlversuche verwerfen.
+
+BILD 40 VON 65
+Bildauftrag: Engineering tensile test graphic showing a strip of transparent TPU polymer stretching elastically to five times its original length without tearing.
+Presentation: diagram.
+Setting: tensile testing apparatus (the object stays in its real-world place).
+Visible German text: exactly "500 % Dehnung" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 40.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 41 VON 65
+Bildauftrag: Cross-section showing the flexible polymer layer deforming into a bulging elastic web that cradles shattered glass shards and decelerates the projectile.
+Presentation: process.
+Setting: high-speed ballistics tank (the object stays in its real-world place).
+Visible German text: exactly "Fangnetz-Effekt" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 41.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 42 VON 65
+Bildauftrag: Multi-stage energy dissipation graphic with velocity arrows stepping down progressively from 830 m/s to 400 m/s, 100 m/s and finally 0 m/s.
+Presentation: diagram.
+Setting: ballistics laboratory cleanroom (the object stays in its real-world place).
+Visible German text: exactly "Schicht 1–5: Bremsstufen" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 42.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 43 VON 65
+Bildauftrag: Clean cutaway highlighting the tough rear polycarbonate liner layer facing the passenger cabin, resilient and completely crack-free.
+Presentation: cutaway.
+Setting: ballistics laboratory cleanroom (the object stays in its real-world place).
+Visible German text: exactly "Polycarbonat (Spall-Liner)" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 43.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 44 VON 65
+Bildauftrag: Interior view of an armored vehicle cabin behind the struck windshield, pristine passenger seat and dashboard with zero inward spall fragments.
+Presentation: environment.
+Setting: vehicle interior test cabin (the object stays in its real-world place).
+Visible German text: exactly "Splitterfrei (NS)" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 44.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 45 VON 65
+Bildauftrag: Macro view through clear armor showing the flattened, heat-discolored rifle bullet suspended motionless inside the internal laminate matrix.
+Presentation: macro.
+Setting: ballistics test laboratory (the object stays in its real-world place).
+Visible German text: exactly "V = 0 m/s" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 45.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 46 VON 65
+Bildauftrag: An armored vehicle door suspended from a workshop crane hoist, heavy steel frame and multi-layer ballistic window assembly.
+Presentation: environment.
+Setting: automotive engineering workshop (the object stays in its real-world place).
+Visible German text: exactly "Zusatzgewicht" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 46.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 47 VON 65
+Bildauftrag: A one-square-meter slab of 75mm transparent armor resting on an industrial digital scale platform showing a bold 180.0 kg readout.
+Presentation: object-comparison.
+Setting: industrial weighing station (the object stays in its real-world place).
+Visible German text: exactly "180 kg / m²" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 47.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 48 VON 65
+Bildauftrag: A single curved door window pane for an armored executive sedan mounted on a sturdy testing fixture with a 35kg mass indicator.
+Presentation: macro.
+Setting: automotive engineering workshop (the object stays in its real-world place).
+Visible German text: exactly "Türscheibe: 35 kg" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 48.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 49 VON 65
+Bildauftrag: Cutaway of the inner door cavity revealing heavy-duty hydraulic pistons and steel reinforced hinges designed to lift the 35kg ballistic glass.
+Presentation: cutaway.
+Setting: automotive engineering workshop (the object stays in its real-world place).
+Visible German text: exactly "Hydraulik-Heber" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 49.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 50 VON 65
+Bildauftrag: Concept schematic with two opposing arrows labeled 'Außen' and 'Innen', introducing the asymmetric one-way ballistic barrier mechanism.
+Presentation: schematic.
+Setting: special weapons testing facility (the object stays in its real-world place).
+Visible German text: exactly "Einweg-Panzerglas" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 50.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 51 VON 65
+Bildauftrag: Diagrammatic cross-section showing incoming fire blocked from the left while outgoing defensive fire penetrates through from the right.
+Presentation: diagram.
+Setting: special weapons testing facility (the object stays in its real-world place).
+Visible German text: exactly "Außen ✗ · Innen ✓" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 51.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 52 VON 65
+Bildauftrag: Clear schematic illustrating the asymmetric layering: brittle sacrificial glass on the exterior side and ductile polycarbonate on the interior side.
+Presentation: schematic.
+Setting: materials laboratory (the object stays in its real-world place).
+Visible German text: exactly "Asymmetrischer Aufbau" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 52.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILDSCHRITT 4 ABGESCHLOSSEN. OHNE ZWISCHENSTOPP direkt mit BILDSCHRITT 5 fortfahren.
+
+BILDSCHRITT 5/5 — BILDER 53 BIS 65
+====================================================
+Erzeuge genau 13 finale statische Bilder in dieser Reihenfolge. Pro Bildauftrag ein angenommenes Bild; Fehlversuche verwerfen.
+
+BILD 53 VON 65
+Bildauftrag: Side-by-side material property comparison showing brittle glass on the outside and high-ductility polycarbonate on the inside of the armor.
+Presentation: cutaway.
+Setting: materials laboratory (the object stays in its real-world place).
+Visible German text: exactly "Außen: spröde" and "Innen: zäh" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 2 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 53.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 54 VON 65
+Bildauftrag: High-speed sequence showing an incoming bullet from outside impacting hard outer glass, flattening out, and being arrested by the flexible backing.
+Presentation: process.
+Setting: ballistics test range (the object stays in its real-world place).
+Visible German text: exactly "Schuss von außen: Stop" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 54.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 55 VON 65
+Bildauftrag: Close-up of a defensive handgun bullet fired from inside striking the inner polycarbonate face, pushing a small localized cone of deformation.
+Presentation: macro.
+Setting: vehicle interior ballistics test (the object stays in its real-world place).
+Visible German text: exactly "Schuss von innen" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 55.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 56 VON 65
+Bildauftrag: Bullet punching through the localized polymer hole and easily blowing the brittle exterior glass outwards away from the vehicle.
+Presentation: process.
+Setting: vehicle interior ballistics test (the object stays in its real-world place).
+Visible German text: exactly "Bruch nach außen" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 56.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 57 VON 65
+Bildauftrag: External view showing glass debris ejected safely outward into the open field while the vehicle interior remains sealed and intact.
+Presentation: environment.
+Setting: tactical testing arena (the object stays in its real-world place).
+Visible German text: exactly "Schutz bleibt aktiv" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 57.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 58 VON 65
+Bildauftrag: High-speed capture of multiple sequential ballistic impacts closely clustered on a single glass armor plate, showing intersecting crack networks.
+Presentation: process.
+Setting: ballistics test laboratory (the object stays in its real-world place).
+Visible German text: exactly "Mehrfachtreffer" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 58.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 59 VON 65
+Bildauftrag: Macro cross-section showing localized delamination where repeated impacts weaken the polymer-glass adhesive matrix, losing tension.
+Presentation: macro.
+Setting: ballistics test laboratory (the object stays in its real-world place).
+Visible German text: exactly "Strukturverlust" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 59.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 60 VON 65
+Bildauftrag: Armored security sedan accelerating dynamically away from a simulated ambush point on an asphalt tactical driving course.
+Presentation: environment.
+Setting: armored vehicle evasive course (the object stays in its real-world place).
+Visible German text: exactly "Flucht · Gas geben" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 60.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 61 VON 65
+Bildauftrag: Cinematic close-up of the arrested rifle bullet embedded harmlessly within the laminated transparent armor, illuminated by clean technical rim light.
+Presentation: macro.
+Setting: ballistics laboratory cleanroom (the object stays in its real-world place).
+Visible German text: exactly "3.300 J · 830 m/s" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 61.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 62 VON 65
+Bildauftrag: Stylized technical duality diagram showing hard brittle fracture on one side and flexible elastic absorption on the other, uniting into complete protection.
+Presentation: diagram.
+Setting: ballistics laboratory cleanroom (the object stays in its real-world place).
+Visible German text: exactly "Brechen + Nachgeben" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 2 arrows, no headline.
+Speichern als 62.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 63 VON 65
+Bildauftrag: Precise cutaway illustration contrasting the pulverized front strike face against the stretched elastic backing layer holding the projectile firm.
+Presentation: cutaway.
+Setting: ballistics laboratory cleanroom (the object stays in its real-world place).
+Visible German text: exactly "Glas bricht" and "Folie fängt" as small supporting labels, spelled exactly, nothing else.
+Budget: max 3 important elements, max 2 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 63.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 64 VON 65
+Bildauftrag: Poetic historical shot of the cracked Erlenmeyer flask resting on Benedictus's wooden workbench with subtle modern armored vehicle silhouettes reflected in the glass.
+Presentation: historical.
+Setting: historical paris laboratory 1903 (the object stays in its real-world place).
+Visible German text: exactly "Paris 1903 → Heute" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 64.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILD 65 VON 65
+Bildauftrag: Hero shot of a pristine modern bullet-resistant security glass installation overlooking a city skyline at sunrise, clean, inspiring, and technically sophisticated.
+Presentation: environment.
+Setting: modern architectural glass facade (the object stays in its real-world place).
+Visible German text: exactly "Wissonaut" as one small supporting label, spelled exactly, nothing else.
+Budget: max 3 important elements, max 1 labels, max 1 panels, max 0 arrows, no headline.
+Speichern als 65.png (Dateiname und Nummer niemals ins Bild schreiben).
+
+BILDSCHRITT 5 ABGESCHLOSSEN. Erst jetzt aufräumen und danach den GESAMTABSCHLUSS melden.
+
+PHASE 3 – FINALE ASSET-BEREINIGUNG
+-----------------------------------
+1. Genau EINE finale Google-Flow-Sammlung namens „nicht-die-dicke-warum-kugelsicheres-glas-gewehrkugeln-stoppt-assets-final“ verwenden.
+2. Dort nur die finalen Szenenbilder sammeln. 00-thumbnail-final getrennt nach 05-export exportieren; niemals als Videobild verwenden.
+3. Die zwei nicht gewählten Cover, Zwischenstände, Fehlversuche, Duplikate und verworfene Varianten entfernen.
+4. Reihenfolge und Dateinamen 01.png bis 65.png prüfen.
+5. Den Abschluss erst melden, wenn die Sammlung nur finale Assets enthält.

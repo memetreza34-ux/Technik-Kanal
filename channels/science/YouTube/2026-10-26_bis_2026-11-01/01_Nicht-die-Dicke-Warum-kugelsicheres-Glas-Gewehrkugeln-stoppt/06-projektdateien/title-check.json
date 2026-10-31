@@ -1,0 +1,96 @@
+{
+  "version": "science-title-check-v1",
+  "checkedAt": "2026-10-31T05:51:22.173Z",
+  "title": "Nicht die Dicke: Warum kugelsicheres Glas Gewehrkugeln stoppt",
+  "query": "Nicht die Dicke: Warum kugelsicheres Glas Gewehrkugeln stoppt",
+  "source": "https://www.youtube.com/results?search_query=Nicht%20die%20Dicke%3A%20Warum%20kugelsicheres%20Glas%20Gewehrkugeln%20stoppt&hl=de&gl=DE",
+  "verdict": "offen",
+  "similarCount": 0,
+  "strongCompetitors": [],
+  "topByViews": [
+    {
+      "rank": 3,
+      "title": "Nadelwaffen: Der erste ERFAHRUNGSBERICHT!",
+      "channel": "GoGun GmbH",
+      "views": 103713
+    },
+    {
+      "rank": 4,
+      "title": "Schusssicheres Glas im EXTREM-Test! Wie lange hält das Glas?",
+      "channel": "SILATEC Deine Sicherheit. Unsere Mission.",
+      "views": 42264
+    },
+    {
+      "rank": 1,
+      "title": "Warum kugelsicheres Glas NICHT kugelsicher ist",
+      "channel": "Doktor Whatson",
+      "views": 42130
+    },
+    {
+      "rank": 2,
+      "title": "Das Weltweit Erste Kugelsichere Whiskey Glas",
+      "channel": "SILATEC Deine Sicherheit. Unsere Mission.",
+      "views": 2608
+    }
+  ],
+  "suggestions": [
+    {
+      "formula": "Zahl + Widerspruch",
+      "example": "UNGEPLANT – und trotzdem …"
+    },
+    {
+      "formula": "Konkretes Ereignis",
+      "example": "[Bekanntes Ereignis oder Ort]: Was Dicke und Warum und Glas und Gewehrkugeln damit zu tun hat"
+    },
+    {
+      "formula": "Irrtum aufdecken",
+      "example": "Das glauben fast alle falsch über Dicke und Warum und Glas und Gewehrkugeln"
+    },
+    {
+      "formula": "Bekannter Bezug",
+      "example": "[Film, Marke oder berühmtes Objekt]: Was über Dicke und Warum und Glas und Gewehrkugeln kaum jemand weiß"
+    },
+    {
+      "formula": "Listen-Versprechen",
+      "example": "5 Dinge über Dicke und Warum und Glas und Gewehrkugeln, die dir niemand erklärt"
+    }
+  ],
+  "results": [
+    {
+      "rank": 1,
+      "title": "Warum kugelsicheres Glas NICHT kugelsicher ist",
+      "channel": "Doktor Whatson",
+      "views": 42130,
+      "length": "11:36",
+      "published": "vor 5 Jahren",
+      "similarity": 0.4
+    },
+    {
+      "rank": 2,
+      "title": "Das Weltweit Erste Kugelsichere Whiskey Glas",
+      "channel": "SILATEC Deine Sicherheit. Unsere Mission.",
+      "views": 2608,
+      "length": "0:31",
+      "published": "vor 2 Jahren",
+      "similarity": 0.4
+    },
+    {
+      "rank": 3,
+      "title": "Nadelwaffen: Der erste ERFAHRUNGSBERICHT!",
+      "channel": "GoGun GmbH",
+      "views": 103713,
+      "length": "2:09",
+      "published": "vor 3 Tagen",
+      "similarity": 0
+    },
+    {
+      "rank": 4,
+      "title": "Schusssicheres Glas im EXTREM-Test! Wie lange hält das Glas?",
+      "channel": "SILATEC Deine Sicherheit. Unsere Mission.",
+      "views": 42264,
+      "length": "17:59",
+      "published": "vor 3 Jahren",
+      "similarity": 0.2
+    }
+  ]
+}
