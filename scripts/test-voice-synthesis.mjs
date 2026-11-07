@@ -53,6 +53,7 @@ test('config/voice-policy.json, Reference-Audio und voice-v1.json sind kalibrier
   assert.equal(voiceV1.voice, 'stickman-user-clone');
   assert.equal(voiceV1.provider, 'qwen-mlx');
   assert.equal(voiceV1.cloneTempo, 0.95);
+  assert.equal(voiceV1.speed, 0.95);
   assert.equal(voiceV1.maxPauseSeconds, 0.30);
 
   // Alter STIMMEN-VERGLEICH Ordner muss gelöscht sein

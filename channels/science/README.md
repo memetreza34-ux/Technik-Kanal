@@ -35,7 +35,7 @@ Das aktive Profil ist **`youtube-6to7min-v1`**:
 - separates 1280×720-Thumbnail mit drei Kandidaten
 - **nur statische Szenenbilder** aus Google Flow
 - harte Schnitte
-- Voice 1,10× mit Loudness-Normalisierung
+- Voice 0,95× (`stickman-user-clone`, max. 0,30 s Pausen) mit Loudness-Normalisierung
 - finale Videos ohne eingebrannte Untertitel
 
 ## Google Flow

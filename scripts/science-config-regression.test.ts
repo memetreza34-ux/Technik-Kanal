@@ -27,7 +27,7 @@ describe('science config regression', () => {
     const config = loadElectricalConfig('youtube-2min-v1');
     expect(config.version).toBe('science-v1');
     expect(config.productionProfile).toBe('youtube-2min-v1');
-    expect(config.voice.speed).toBe(1.1);
+    expect(config.voice.speed).toBe(0.95);
     expect(config.format).toMatchObject({width:1920,height:1080,fps:30,aspectRatio:'16:9'});
     expect(config.format.durationSeconds).toEqual({min:90,ideal:120,max:150});
     expect(config.script.words).toEqual({min:230,ideal:300,max:370});

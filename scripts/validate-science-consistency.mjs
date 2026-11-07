@@ -42,9 +42,9 @@ if(config.topicScope?.biologyAllowed!==false||config.topicScope?.medicineAllowed
 if(config.topicScope?.highlyAbstractScienceAllowed!==false) errors.push('Stark abstrakte Themen dürfen nicht regulär erlaubt sein.');
 if(!/Alltagswissenschaft und Technik/i.test(channel)) errors.push('KANAL.md dokumentiert den Themenrahmen nicht.');
 
-if(config.voice.speed!==1.1||voice.speed!==1.1) errors.push('Voice-Geschwindigkeit muss exakt 1.10 sein.');
+if(config.voice.speed!==0.95||voice.speed!==0.95) errors.push('Voice-Geschwindigkeit muss exakt 0.95 sein.');
 if(voice.processing?.loudness?.targetIntegratedLufs!==-16||voice.processing?.loudness?.targetTruePeakDb!==-1.5) errors.push('Voice-Konfiguration muss -16 LUFS und -1.5 dBTP dokumentieren.');
-if(!/1[,.]10[×x]/i.test(claude)) errors.push('CLAUDE.md enthält 1,10× nicht.');
+if(!/0[,.]95[×x]/i.test(claude)) errors.push('CLAUDE.md enthält 0,95× nicht.');
 if(!claude.includes('whisper.cpp')) errors.push('CLAUDE.md enthält whisper.cpp nicht.');
 if(!imageWorld.includes('Scientific Scene Explainer')) errors.push('BILDWELT.md enthält die aktive Bildwelt nicht.');
 if(!imageWorld.includes('so wenig Information wie möglich, so viel wie nötig')) errors.push('BILDWELT.md enthält die Informationsdichte-Regel nicht.');

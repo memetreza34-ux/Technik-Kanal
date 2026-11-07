@@ -2,14 +2,14 @@ import {spawnSync} from 'node:child_process';
 import {existsSync, mkdirSync} from 'node:fs';
 import {dirname, resolve} from 'node:path';
 
-const VOICE_SPEED = 1.10;
+const VOICE_SPEED = 0.95;
 const TARGET_LUFS = -16;
 const TARGET_TRUE_PEAK_DB = -1.5;
 const TARGET_LRA = 11;
 const [inputArg, outputArg] = process.argv.slice(2);
 
 if (!inputArg || !outputArg) {
-  console.error('Usage: npm run voice:1.10 -- <input.wav> <output.wav>');
+  console.error('Usage: npm run voice:youtube -- --dir <ordner> (oder node scripts/process_voiceover.mjs <input.wav> <output.wav>)');
   process.exit(1);
 }
 

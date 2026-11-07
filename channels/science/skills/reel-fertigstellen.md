@@ -81,7 +81,7 @@ Alle Szenenbilder bleiben statisch. Es werden keine späteren Remotion-Animation
 npm run science:finish -- "<video-ordner>"
 ```
 
-Die Pipeline verarbeitet Audio auf 1,10×, erstellt lokale Wort-Zeitstempel, gleicht Transkript und Szenenplan ab, synchronisiert Bilder, SFX und optionale Musik, legt die dezente virtuelle Kamera über jedes Bild, setzt harte Schnitte, rendert 1920×1080 und erzeugt Render-QA sowie Kontrollbilder.
+Die Pipeline verarbeitet Audio auf 0,95× (`stickman-user-clone`, max. 0,30 s Pausen), erstellt lokale Wort-Zeitstempel, gleicht Transkript und Szenenplan ab, synchronisiert Bilder, SFX und optionale Musik, legt die dezente virtuelle Kamera über jedes Bild, setzt harte Schnitte, rendert 1920×1080 und erzeugt Render-QA sowie Kontrollbilder.
 
 ## Harte Remotion-Grenze
 
