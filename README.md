@@ -14,7 +14,9 @@ Dieses Repository ist ausschließlich für **normale YouTube-Videos im 16:9-Quer
 - `src/`: wiederverwendbare Remotion-Engine für 16:9
 - `videos/_vorlage/`: Vorlage für neue Video-Projekte
 - `videos/YYYY-MM-DD_thema/`: Recherche, Skript, Bildplanung, Audio und fertiger Export pro YouTube-Video
-- `scripts/`: neues Projekt, Vorabprüfung, Render und technische Exportprüfung
+- `channel/audio/reference/`: kalibrierte Master-Referenzstimme (`stickman-user-clone`, 0,95× Tempo, max. 0,30 s Pausen)
+- `config/voice-policy.json`: zentrale Voice-Policy (`qwen-mlx` / `Qwen3-TTS-12Hz-1.7B-Base-bf16`)
+- `scripts/`: neues Projekt, automatisches Voice-Cloning (`voice:youtube`), Vorabprüfung, Render und technische Exportprüfung
 - `PRODUKTION.md`: fachliche und visuelle Qualitätsstandards
 
 ## Schnellstart
@@ -33,7 +35,11 @@ Neues Video anlegen:
 npm run youtube:new -- 2026-11-01_elektromotor "Warum dreht sich ein Elektromotor?"
 ```
 
-`video.json` mit Sprechertext, Szenen und Visuals ausfüllen; Quellen prüfen; vollständigen deutschen Sprechertext in `script-fliesstext.txt` pflegen und die passende Aufnahme unter `audio/voiceover.wav` ablegen. Dann erst nach fachlicher Freigabe `status` auf `ready` setzen:
+`video.json` mit Sprechertext, Szenen und Visuals ausfüllen; Quellen prüfen; vollständigen deutschen Sprechertext in `script-fliesstext.txt` pflegen und die geklonte Kanalstimme (`stickman-user-clone`, 0,95× Tempo, max. 0,30 s Pausen) unter `audio/voiceover.wav` erzeugen:
+```bash
+npm run voice:youtube -- --dir videos/2026-11-01_elektromotor --force
+```
+Dann erst nach fachlicher Freigabe `status` auf `ready` setzen:
 ```bash
 npm run youtube:check -- videos/2026-11-01_elektromotor
 npm run youtube:render -- videos/2026-11-01_elektromotor
