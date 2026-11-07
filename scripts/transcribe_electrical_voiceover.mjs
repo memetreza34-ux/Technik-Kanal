@@ -62,6 +62,7 @@ run(whisperBinary, [
   '-f', inputWav,
   '-l', 'de',
   '-ml', '1',
+  '-sow',
   '-ojf',
   '-of', outputBase,
   '-np',

@@ -1,12 +1,22 @@
 {
   "version": 2,
-  "voice": "user-provided",
+  "voice": "stickman-user-clone",
+  "provider": "qwen-mlx",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16",
+  "refAudio": "channel/audio/reference/user_voice_reference.wav",
+  "refMetadata": "channel/audio/reference/user_voice_reference.json",
+  "cloneTempo": 0.95,
+  "cloneRate": "-5%",
+  "maxPauseSeconds": 0.30,
+  "preStretchMaxPauseSeconds": 0.285,
+  "maxWordsPerChunk": 32,
+  "temperature": 0.7,
   "speed": 1.10,
   "pitch": "preserve",
   "processing": {
     "engine": "ffmpeg",
     "filters": [
-      "atempo=1.10",
+      "atempo=0.95",
       "loudnorm=I=-16:TP=-1.5:LRA=11"
     ],
     "sampleRateHz": 48000,
