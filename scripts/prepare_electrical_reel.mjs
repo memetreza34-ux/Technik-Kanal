@@ -54,13 +54,13 @@ if (!finalVoice || rawIsNewer) {
   finalVoice = path.join(paths.audioDir, `${finalStem}.wav`);
   run('ffmpeg', [
     '-y', '-i', voicesBefore.raw,
-    '-filter:a', 'atempo=1.10',
+    '-filter:a', 'atempo=0.95',
     '-ar', '48000',
     '-ac', '1',
     '-c:a', 'pcm_s16le',
     finalVoice,
   ]);
-  console.log(`✓ Voice-over auf 1,10× verarbeitet: ${finalVoice}`);
+  console.log(`✓ Voice-over auf 0,95× verarbeitet: ${finalVoice}`);
 }
 
 const transcriptMissing = !fs.existsSync(paths.wordTimestamps);
@@ -318,7 +318,7 @@ writeJson(paths.captionsJson, {
   version: 2,
   language: 'de',
   source: 'local-whisper.cpp-word-timestamps',
-  voiceSpeed: 1.10,
+  voiceSpeed: 0.95,
   durationSeconds: Number(durationSeconds.toFixed(3)),
   style: {color: 'white', highlightColor: null, backgroundBox: false, maxLines: 2, verticalPositionPercent: 90},
   captions,
@@ -415,7 +415,7 @@ writeJson(paths.readinessReport, {
 });
 
 console.log('✓ YouTube-Science-Video vollständig vorbereitet.');
-console.log(`  Voice: ${durationSeconds.toFixed(3)} s bei 1,10×`);
+console.log(`  Voice: ${durationSeconds.toFixed(3)} s bei 0,95×`);
 console.log(`  Worttreffer: ${(matchRatio * 100).toFixed(1)} %`);
 console.log(`  Visuelle Beats: ${alignedScenes.length}`);
 console.log(`  Bilder: ${alignedScenes.length}`);

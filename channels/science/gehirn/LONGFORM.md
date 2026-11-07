@@ -230,7 +230,7 @@ Wortzeiten dürfen intern weiterhin für Bildwechsel, Timing und Synchronisation
 14. drei Cover erzeugen und eines auswählen
 15. Szene 01 normal und unabhängig vom Cover planen
 16. Bilder in fünf Flow-Schritten erzeugen
-17. Voice erzeugen/aufnehmen und auf 1,10× verarbeiten
+17. Voice erzeugen/aufnehmen und auf 0,95× (`stickman-user-clone`, max. 0,30 s Pausen) verarbeiten
 18. Wortzeiten intern erzeugen und Beats synchronisieren
 19. statische 16:9-Montage in Remotion — ohne eingebrannte Untertitel
 20. optionale sparsame SFX

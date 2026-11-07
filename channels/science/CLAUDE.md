@@ -243,7 +243,7 @@ Remotion/Phase 3 darf ausschließlich bereits vorhandene Phase-2-Bilder verwende
 
 ## Audio
 
-- Voice exakt 1,10×, Tonhöhe erhalten
+- Voice exakt 0,95× (`stickman-user-clone`, max. 0,30 s Pausen), Tonhöhe erhalten
 - finale Voice ist Zeitquelle
 - lokale Wortzeiten mit `whisper.cpp`
 - Wortzeiten dienen Bildwechseln/Timing, nicht eingebrannten Untertiteln

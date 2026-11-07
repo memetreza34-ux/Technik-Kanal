@@ -36,11 +36,11 @@
     "hook": {"type":"direct-question","headlineWordsMax":10,"voiceWordsMax":24,"mustContainQuestionMark":true,"firstFrameAnimationAllowed":false,"forbiddenMetaphors":["unsichtbarer held","geheime kraft"]}
   },
   "voice": {
-    "speed": 1.1,
-    "speedRange": {"min":1.1,"max":1.1},
-    "silenceThresholdMs": 400,
-    "keptPauseMs": 160,
-    "silenceThresholdDb": -45,
+    "speed": 0.95,
+    "speedRange": {"min":0.95,"max":0.95},
+    "silenceThresholdMs": 300,
+    "keptPauseMs": 300,
+    "silenceThresholdDb": -38,
     "loudness": {"integratedLufs":-16,"truePeakDb":-1.5,"loudnessRange":11}
   },
   "visuals": {
