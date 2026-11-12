@@ -8,3 +8,6 @@ videos/**/audio/*.mp3
 videos/**/export/*.mp4
 videos/**/export/*.png
 public/render-input/
+shorts/**/audio/*.wav
+shorts/**/export/
+public/shorts/

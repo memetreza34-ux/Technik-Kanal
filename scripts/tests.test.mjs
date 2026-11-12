@@ -81,3 +81,15 @@ test('Voice-Normalisierung, 32-Wort-Chunking und script-fliesstext.txt Dry-Run f
   await rm(tmpDir,{recursive:true,force:true});
  }
 });
+
+test('Short-Untertitel: Skriptwörter bekommen Whisper-Zeiten, Lücken werden interpoliert',async()=>{
+ const {alignScriptToTimestamps}=await import('./lib/align-words.mjs');
+ const timed=[{text:'Dein',startMs:0,endMs:200},{text:'Handy',startMs:250,endMs:500},{text:'ladet',startMs:550,endMs:800},{text:'ohne',startMs:850,endMs:1000},{text:'Kabel',startMs:1050,endMs:1400}];
+ const {words,matchRatio}=alignScriptToTimestamps(['Dein','Handy','lädt','ohne','Kabel.'],timed);
+ assert.equal(words.length,5);
+ assert.equal(words[0].text,'Dein');assert.equal(words[4].text,' Kabel.');
+ assert.equal(words[1].startMs,250);
+ assert.ok(words[2].startMs>=500&&words[2].endMs<=850,'Lücke liegt zwischen den Nachbarn');
+ assert.equal(matchRatio,0.8);
+ assert.ok(words.every((w,i)=>i===0||w.startMs>=words[i-1].startMs),'Zeiten steigen monoton');
+});

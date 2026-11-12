@@ -1,0 +1,695 @@
+[
+ {
+  "text": "Dieses",
+  "startMs": 60,
+  "endMs": 270,
+  "timestampMs": 165,
+  "confidence": 1
+ },
+ {
+  "text": " Handy",
+  "startMs": 350,
+  "endMs": 570,
+  "timestampMs": 460,
+  "confidence": 1
+ },
+ {
+  "text": " lädt,",
+  "startMs": 570,
+  "endMs": 870,
+  "timestampMs": 720,
+  "confidence": 1
+ },
+ {
+  "text": " obwohl",
+  "startMs": 970,
+  "endMs": 1230,
+  "timestampMs": 1100,
+  "confidence": 1
+ },
+ {
+  "text": " es",
+  "startMs": 1230,
+  "endMs": 1260,
+  "timestampMs": 1245,
+  "confidence": 1
+ },
+ {
+  "text": " nirgends",
+  "startMs": 1350,
+  "endMs": 1740,
+  "timestampMs": 1545,
+  "confidence": 1
+ },
+ {
+  "text": " ein",
+  "startMs": 1740,
+  "endMs": 1870,
+  "timestampMs": 1805,
+  "confidence": 1
+ },
+ {
+  "text": " Kabel",
+  "startMs": 1900,
+  "endMs": 2150,
+  "timestampMs": 2025,
+  "confidence": 1
+ },
+ {
+  "text": " berührt.",
+  "startMs": 2150,
+  "endMs": 2820,
+  "timestampMs": 2485,
+  "confidence": 1
+ },
+ {
+  "text": " Heben",
+  "startMs": 2870,
+  "endMs": 3090,
+  "timestampMs": 2980,
+  "confidence": 1
+ },
+ {
+  "text": " wir",
+  "startMs": 3090,
+  "endMs": 3150,
+  "timestampMs": 3120,
+  "confidence": 1
+ },
+ {
+  "text": " es",
+  "startMs": 3250,
+  "endMs": 3360,
+  "timestampMs": 3305,
+  "confidence": 1
+ },
+ {
+  "text": " mal",
+  "startMs": 3360,
+  "endMs": 3510,
+  "timestampMs": 3435,
+  "confidence": 1
+ },
+ {
+  "text": " an.",
+  "startMs": 3510,
+  "endMs": 3820,
+  "timestampMs": 3665,
+  "confidence": 1
+ },
+ {
+  "text": " Im",
+  "startMs": 3850,
+  "endMs": 3930,
+  "timestampMs": 3890,
+  "confidence": 1
+ },
+ {
+  "text": " Ladepad",
+  "startMs": 3930,
+  "endMs": 4330,
+  "timestampMs": 4130,
+  "confidence": 0
+ },
+ {
+  "text": " liegt",
+  "startMs": 4330,
+  "endMs": 4560,
+  "timestampMs": 4445,
+  "confidence": 1
+ },
+ {
+  "text": " eine",
+  "startMs": 4630,
+  "endMs": 4850,
+  "timestampMs": 4740,
+  "confidence": 1
+ },
+ {
+  "text": " Spule",
+  "startMs": 4850,
+  "endMs": 5130,
+  "timestampMs": 4990,
+  "confidence": 1
+ },
+ {
+  "text": " aus",
+  "startMs": 5130,
+  "endMs": 5290,
+  "timestampMs": 5210,
+  "confidence": 1
+ },
+ {
+  "text": " Kupferdraht.",
+  "startMs": 5290,
+  "endMs": 5960,
+  "timestampMs": 5625,
+  "confidence": 1
+ },
+ {
+  "text": " Schickt",
+  "startMs": 6210,
+  "endMs": 6560,
+  "timestampMs": 6385,
+  "confidence": 1
+ },
+ {
+  "text": " man",
+  "startMs": 6560,
+  "endMs": 6730,
+  "timestampMs": 6645,
+  "confidence": 1
+ },
+ {
+  "text": " Wechselstrom",
+  "startMs": 6730,
+  "endMs": 7390,
+  "timestampMs": 7060,
+  "confidence": 1
+ },
+ {
+  "text": " hindurch,",
+  "startMs": 7460,
+  "endMs": 8040,
+  "timestampMs": 7750,
+  "confidence": 1
+ },
+ {
+  "text": " baut",
+  "startMs": 8040,
+  "endMs": 8210,
+  "timestampMs": 8125,
+  "confidence": 1
+ },
+ {
+  "text": " sich",
+  "startMs": 8300,
+  "endMs": 8490,
+  "timestampMs": 8395,
+  "confidence": 1
+ },
+ {
+  "text": " darüber",
+  "startMs": 8490,
+  "endMs": 8960,
+  "timestampMs": 8725,
+  "confidence": 1
+ },
+ {
+  "text": " ein",
+  "startMs": 8960,
+  "endMs": 9130,
+  "timestampMs": 9045,
+  "confidence": 1
+ },
+ {
+  "text": " Magnetfeld",
+  "startMs": 9130,
+  "endMs": 9690,
+  "timestampMs": 9410,
+  "confidence": 1
+ },
+ {
+  "text": " auf,",
+  "startMs": 9690,
+  "endMs": 9950,
+  "timestampMs": 9820,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 10100,
+  "endMs": 10210,
+  "timestampMs": 10155,
+  "confidence": 1
+ },
+ {
+  "text": " ständig",
+  "startMs": 10210,
+  "endMs": 10620,
+  "timestampMs": 10415,
+  "confidence": 1
+ },
+ {
+  "text": " seine",
+  "startMs": 10730,
+  "endMs": 10890,
+  "timestampMs": 10810,
+  "confidence": 1
+ },
+ {
+  "text": " Richtung",
+  "startMs": 10890,
+  "endMs": 11300,
+  "timestampMs": 11095,
+  "confidence": 1
+ },
+ {
+  "text": " wechselt.",
+  "startMs": 11300,
+  "endMs": 11880,
+  "timestampMs": 11590,
+  "confidence": 1
+ },
+ {
+  "text": " Und",
+  "startMs": 11940,
+  "endMs": 12010,
+  "timestampMs": 11975,
+  "confidence": 1
+ },
+ {
+  "text": " hinten",
+  "startMs": 12090,
+  "endMs": 12420,
+  "timestampMs": 12255,
+  "confidence": 1
+ },
+ {
+  "text": " im",
+  "startMs": 12420,
+  "endMs": 12540,
+  "timestampMs": 12480,
+  "confidence": 1
+ },
+ {
+  "text": " Handy?",
+  "startMs": 12540,
+  "endMs": 12960,
+  "timestampMs": 12750,
+  "confidence": 1
+ },
+ {
+  "text": " Da",
+  "startMs": 13030,
+  "endMs": 13080,
+  "timestampMs": 13055,
+  "confidence": 1
+ },
+ {
+  "text": " sitzt",
+  "startMs": 13080,
+  "endMs": 13270,
+  "timestampMs": 13175,
+  "confidence": 1
+ },
+ {
+  "text": " eine",
+  "startMs": 13380,
+  "endMs": 13600,
+  "timestampMs": 13490,
+  "confidence": 1
+ },
+ {
+  "text": " zweite",
+  "startMs": 13650,
+  "endMs": 13980,
+  "timestampMs": 13815,
+  "confidence": 1
+ },
+ {
+  "text": " Spule.",
+  "startMs": 13980,
+  "endMs": 14480,
+  "timestampMs": 14230,
+  "confidence": 1
+ },
+ {
+  "text": " Das",
+  "startMs": 14530,
+  "endMs": 14680,
+  "timestampMs": 14605,
+  "confidence": 1
+ },
+ {
+  "text": " wechselnde",
+  "startMs": 14680,
+  "endMs": 15340,
+  "timestampMs": 15010,
+  "confidence": 1
+ },
+ {
+  "text": " Feld",
+  "startMs": 15340,
+  "endMs": 15490,
+  "timestampMs": 15415,
+  "confidence": 1
+ },
+ {
+  "text": " treibt",
+  "startMs": 15630,
+  "endMs": 16000,
+  "timestampMs": 15815,
+  "confidence": 1
+ },
+ {
+  "text": " in",
+  "startMs": 16000,
+  "endMs": 16130,
+  "timestampMs": 16065,
+  "confidence": 1
+ },
+ {
+  "text": " ihr",
+  "startMs": 16130,
+  "endMs": 16270,
+  "timestampMs": 16200,
+  "confidence": 1
+ },
+ {
+  "text": " einen",
+  "startMs": 16340,
+  "endMs": 16660,
+  "timestampMs": 16500,
+  "confidence": 1
+ },
+ {
+  "text": " Strom",
+  "startMs": 16660,
+  "endMs": 16990,
+  "timestampMs": 16825,
+  "confidence": 1
+ },
+ {
+  "text": " an.",
+  "startMs": 16990,
+  "endMs": 17150,
+  "timestampMs": 17070,
+  "confidence": 1
+ },
+ {
+  "text": " Das",
+  "startMs": 17370,
+  "endMs": 17580,
+  "timestampMs": 17475,
+  "confidence": 1
+ },
+ {
+  "text": " ist",
+  "startMs": 17580,
+  "endMs": 17780,
+  "timestampMs": 17680,
+  "confidence": 1
+ },
+ {
+  "text": " Induktion.",
+  "startMs": 17910,
+  "endMs": 18450,
+  "timestampMs": 18180,
+  "confidence": 1
+ },
+ {
+  "text": " Das",
+  "startMs": 18750,
+  "endMs": 18850,
+  "timestampMs": 18800,
+  "confidence": 1
+ },
+ {
+  "text": " Problem:",
+  "startMs": 18910,
+  "endMs": 19680,
+  "timestampMs": 19295,
+  "confidence": 1
+ },
+ {
+  "text": " Liegt",
+  "startMs": 19680,
+  "endMs": 19870,
+  "timestampMs": 19775,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 19970,
+  "endMs": 20130,
+  "timestampMs": 20050,
+  "confidence": 1
+ },
+ {
+  "text": " Handy",
+  "startMs": 20130,
+  "endMs": 20420,
+  "timestampMs": 20275,
+  "confidence": 1
+ },
+ {
+  "text": " nur",
+  "startMs": 20420,
+  "endMs": 20590,
+  "timestampMs": 20505,
+  "confidence": 1
+ },
+ {
+  "text": " ein",
+  "startMs": 20590,
+  "endMs": 20760,
+  "timestampMs": 20675,
+  "confidence": 1
+ },
+ {
+  "text": " bisschen",
+  "startMs": 20760,
+  "endMs": 21220,
+  "timestampMs": 20990,
+  "confidence": 1
+ },
+ {
+  "text": " schief,",
+  "startMs": 21220,
+  "endMs": 21670,
+  "timestampMs": 21445,
+  "confidence": 1
+ },
+ {
+  "text": " geht",
+  "startMs": 21710,
+  "endMs": 21850,
+  "timestampMs": 21780,
+  "confidence": 1
+ },
+ {
+  "text": " ein",
+  "startMs": 21900,
+  "endMs": 22040,
+  "timestampMs": 21970,
+  "confidence": 1
+ },
+ {
+  "text": " Teil",
+  "startMs": 22130,
+  "endMs": 22300,
+  "timestampMs": 22215,
+  "confidence": 1
+ },
+ {
+  "text": " der",
+  "startMs": 22300,
+  "endMs": 22470,
+  "timestampMs": 22385,
+  "confidence": 1
+ },
+ {
+  "text": " Energie",
+  "startMs": 22470,
+  "endMs": 22870,
+  "timestampMs": 22670,
+  "confidence": 1
+ },
+ {
+  "text": " als",
+  "startMs": 22870,
+  "endMs": 23040,
+  "timestampMs": 22955,
+  "confidence": 1
+ },
+ {
+  "text": " Wärme",
+  "startMs": 23040,
+  "endMs": 23360,
+  "timestampMs": 23200,
+  "confidence": 1
+ },
+ {
+  "text": " verloren.",
+  "startMs": 23360,
+  "endMs": 23860,
+  "timestampMs": 23610,
+  "confidence": 1
+ },
+ {
+  "text": " Deshalb",
+  "startMs": 24160,
+  "endMs": 24580,
+  "timestampMs": 24370,
+  "confidence": 1
+ },
+ {
+  "text": " haben",
+  "startMs": 24580,
+  "endMs": 24910,
+  "timestampMs": 24745,
+  "confidence": 1
+ },
+ {
+  "text": " neue",
+  "startMs": 24910,
+  "endMs": 25160,
+  "timestampMs": 25035,
+  "confidence": 1
+ },
+ {
+  "text": " Ladegeräte",
+  "startMs": 25170,
+  "endMs": 25870,
+  "timestampMs": 25520,
+  "confidence": 1
+ },
+ {
+  "text": " mit",
+  "startMs": 25870,
+  "endMs": 25990,
+  "timestampMs": 25930,
+  "confidence": 1
+ },
+ {
+  "text": " Qi2",
+  "startMs": 26080,
+  "endMs": 26380,
+  "timestampMs": 26230,
+  "confidence": 1
+ },
+ {
+  "text": " einen",
+  "startMs": 26380,
+  "endMs": 26700,
+  "timestampMs": 26540,
+  "confidence": 1
+ },
+ {
+  "text": " Ring",
+  "startMs": 26710,
+  "endMs": 26970,
+  "timestampMs": 26840,
+  "confidence": 1
+ },
+ {
+  "text": " aus",
+  "startMs": 26970,
+  "endMs": 27160,
+  "timestampMs": 27065,
+  "confidence": 1
+ },
+ {
+  "text": " Magneten.",
+  "startMs": 27160,
+  "endMs": 27910,
+  "timestampMs": 27535,
+  "confidence": 1
+ },
+ {
+  "text": " Das",
+  "startMs": 28030,
+  "endMs": 28110,
+  "timestampMs": 28070,
+  "confidence": 1
+ },
+ {
+  "text": " Handy",
+  "startMs": 28110,
+  "endMs": 28360,
+  "timestampMs": 28235,
+  "confidence": 1
+ },
+ {
+  "text": " schnappt",
+  "startMs": 28360,
+  "endMs": 28650,
+  "timestampMs": 28505,
+  "confidence": 1
+ },
+ {
+  "text": " von",
+  "startMs": 28810,
+  "endMs": 28910,
+  "timestampMs": 28860,
+  "confidence": 1
+ },
+ {
+  "text": " selbst",
+  "startMs": 28910,
+  "endMs": 29120,
+  "timestampMs": 29015,
+  "confidence": 1
+ },
+ {
+  "text": " an",
+  "startMs": 29240,
+  "endMs": 29320,
+  "timestampMs": 29280,
+  "confidence": 1
+ },
+ {
+  "text": " die",
+  "startMs": 29320,
+  "endMs": 29470,
+  "timestampMs": 29395,
+  "confidence": 1
+ },
+ {
+  "text": " richtige",
+  "startMs": 29470,
+  "endMs": 29860,
+  "timestampMs": 29665,
+  "confidence": 1
+ },
+ {
+  "text": " Stelle.",
+  "startMs": 29900,
+  "endMs": 30280,
+  "timestampMs": 30090,
+  "confidence": 1
+ },
+ {
+  "text": " Kein",
+  "startMs": 30370,
+  "endMs": 30600,
+  "timestampMs": 30485,
+  "confidence": 1
+ },
+ {
+  "text": " Kabel.",
+  "startMs": 30600,
+  "endMs": 31120,
+  "timestampMs": 30860,
+  "confidence": 1
+ },
+ {
+  "text": " Aber",
+  "startMs": 31190,
+  "endMs": 31340,
+  "timestampMs": 31265,
+  "confidence": 1
+ },
+ {
+  "text": " ganz",
+  "startMs": 31340,
+  "endMs": 31520,
+  "timestampMs": 31430,
+  "confidence": 1
+ },
+ {
+  "text": " viel",
+  "startMs": 31660,
+  "endMs": 31760,
+  "timestampMs": 31710,
+  "confidence": 1
+ },
+ {
+  "text": " Physik.",
+  "startMs": 31860,
+  "endMs": 32240,
+  "timestampMs": 32050,
+  "confidence": 1
+ }
+]

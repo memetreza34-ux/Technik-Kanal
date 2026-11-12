@@ -1,6 +1,6 @@
 # Technik-Kanal – YouTube-Videos
 
-Dieses Repository ist ausschließlich für **normale YouTube-Videos im 16:9-Querformat** bestimmt. Die früheren vertikalen Kurzvideo-Projekte und ihre Produktionspipeline sind entfernt.
+Dieses Repository enthält **YouTube-Videos im 16:9-Querformat** und **Shorts im 9:16-Hochformat** (Remotion-Composition `TechnikShort`).
 
 ## Produktionsformat
 - Full HD: **1920 × 1080**, **30 FPS**
@@ -48,3 +48,15 @@ npm run youtube:render -- videos/2026-11-01_elektromotor
 Die Renderprüfung kontrolliert Bildformat, Bildrate, Laufzeit und Audiospur. Vor Veröffentlichung muss der **gesamte Film mit Ton** fachlich und visuell kontrolliert werden. Das neue System ist eine Grundlage; es ersetzt noch keine vollständige professionelle Videoredaktion.
 
 Die früheren Dateien bleiben über den Git-Verlauf vor der YouTube-Umstellung wiederherstellbar.
+
+## Shorts (9:16, 30–60 s)
+Pro Short ein Ordner `shorts/YYYY-MM-DD_thema/` mit `short.json` (Szenen, eine Zeile Sprechtext pro Szene), `script-fliesstext.txt` (dieselben Zeilen) und `quellen.md`.
+
+```bash
+npm run voice:youtube -- --dir shorts/2026-11-12_kabellos-laden --force   # Kanalstimme
+npm run short:captions -- shorts/2026-11-12_kabellos-laden                # Wortgenaue Untertitel (Whisper.cpp, lokal)
+npm run short:stage -- shorts/2026-11-12_kabellos-laden && npm run studio # Vorschau in Remotion Studio
+npm run short:render -- shorts/2026-11-12_kabellos-laden                  # export/short.mp4 (1080×1920)
+```
+
+Shorts sind **3D-Szenen** (Three.js über `@remotion/three`) in `src/short/scenes/` – ein Thema = eine Szene, gewählt über `"scene"` in `short.json`. Die Beats (Szenen-IDs) steuern Kamera und Animation; ihre Startzeit ergibt sich automatisch aus dem ersten gesprochenen Wort. Untertitel: 1–2 Wörter, Schlüsselwörter aus `"highlight"` gelb. Kein Fortschrittsbalken, keine Labels, kein Raster. Whisper wird einmalig nach `~/.cache/remotion-whisper` geladen.
