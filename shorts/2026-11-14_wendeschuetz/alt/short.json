@@ -1,0 +1,81 @@
+{
+  "format": "short-9x16",
+  "title": "Wendeschützschaltung: Motor rechts und links",
+  "status": "draft",
+  "scene": "wendeschuetz",
+  "style": "frame",
+  "theme": "dark",
+  "overlays": true,
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Wie dreht man einen Motor andersrum? Mit der Wendeschützschaltung.",
+      "heading": "Motor [andersrum?]"
+    },
+    {
+      "id": "k1",
+      "text": "Drückst du S1, zieht K1 an. Der Motor läuft rechts herum.",
+      "heading": "K1 an: [Rechtslauf]",
+      "overlay": {
+        "type": "facts",
+        "label": "K1 schaltet durch",
+        "value": {
+          "text": "L1→U · L2→V · L3→W",
+          "word": "rechts"
+        },
+        "colors": {
+          "L1": "#FF8A3D",
+          "L2": "#E6EAF0",
+          "L3": "#4FB6FF"
+        }
+      }
+    },
+    {
+      "id": "halt",
+      "text": "Lässt du los, bleibt K1 trotzdem an. Das ist die Selbsthaltung.",
+      "heading": "[Selbsthaltung]"
+    },
+    {
+      "id": "verr",
+      "text": "Jetzt S2 drücken? Geht nicht. K1 sperrt K2, sonst gäbe es einen Kurzschluss.",
+      "heading": "[Verriegelung]",
+      "overlay": {
+        "type": "facts",
+        "label": "Verriegelung",
+        "value": {
+          "text": "K1 sperrt K2",
+          "word": "sperrt"
+        },
+        "tone": "bad"
+      }
+    },
+    {
+      "id": "aus",
+      "text": "Also erst S0: alles aus.",
+      "heading": "S0: alles [aus]"
+    },
+    {
+      "id": "k2",
+      "text": "Dann S2. K2 zieht an und tauscht zwei Phasen: L1 und L3.",
+      "heading": "K2 an: [Linkslauf]",
+      "overlay": {
+        "type": "facts",
+        "label": "K2 tauscht zwei Phasen",
+        "value": {
+          "text": "L3→U · L2→V · L1→W",
+          "word": "Phasen"
+        },
+        "colors": {
+          "L1": "#FF8A3D",
+          "L2": "#E6EAF0",
+          "L3": "#4FB6FF"
+        }
+      }
+    },
+    {
+      "id": "ende",
+      "text": "Und genau deshalb dreht der Motor jetzt links herum.",
+      "heading": "Der [Trick]"
+    }
+  ]
+}

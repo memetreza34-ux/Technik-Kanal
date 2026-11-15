@@ -1,0 +1,625 @@
+[
+ {
+  "text": "Dein",
+  "startMs": 40,
+  "endMs": 220,
+  "timestampMs": 130,
+  "confidence": 1
+ },
+ {
+  "text": " Solardach",
+  "startMs": 290,
+  "endMs": 710,
+  "timestampMs": 500,
+  "confidence": 1
+ },
+ {
+  "text": " liefert",
+  "startMs": 750,
+  "endMs": 1130,
+  "timestampMs": 940,
+  "confidence": 1
+ },
+ {
+  "text": " Gleichstrom.",
+  "startMs": 1130,
+  "endMs": 2000,
+  "timestampMs": 1565,
+  "confidence": 1
+ },
+ {
+  "text": " Deine",
+  "startMs": 2000,
+  "endMs": 2190,
+  "timestampMs": 2095,
+  "confidence": 1
+ },
+ {
+  "text": " Steckdose",
+  "startMs": 2240,
+  "endMs": 2590,
+  "timestampMs": 2415,
+  "confidence": 1
+ },
+ {
+  "text": " braucht",
+  "startMs": 2620,
+  "endMs": 2910,
+  "timestampMs": 2765,
+  "confidence": 1
+ },
+ {
+  "text": " aber",
+  "startMs": 3010,
+  "endMs": 3110,
+  "timestampMs": 3060,
+  "confidence": 1
+ },
+ {
+  "text": " Wechselstrom.",
+  "startMs": 3110,
+  "endMs": 3790,
+  "timestampMs": 3450,
+  "confidence": 1
+ },
+ {
+  "text": " Wie",
+  "startMs": 3980,
+  "endMs": 4000,
+  "timestampMs": 3990,
+  "confidence": 1
+ },
+ {
+  "text": " passt",
+  "startMs": 4000,
+  "endMs": 4240,
+  "timestampMs": 4120,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 4330,
+  "endMs": 4400,
+  "timestampMs": 4365,
+  "confidence": 1
+ },
+ {
+  "text": " zusammen?",
+  "startMs": 4500,
+  "endMs": 4750,
+  "timestampMs": 4625,
+  "confidence": 1
+ },
+ {
+  "text": " Gleichstrom",
+  "startMs": 5050,
+  "endMs": 5410,
+  "timestampMs": 5230,
+  "confidence": 1
+ },
+ {
+  "text": " fließt",
+  "startMs": 5410,
+  "endMs": 5710,
+  "timestampMs": 5560,
+  "confidence": 1
+ },
+ {
+  "text": " immer",
+  "startMs": 5840,
+  "endMs": 5990,
+  "timestampMs": 5915,
+  "confidence": 1
+ },
+ {
+  "text": " in",
+  "startMs": 6100,
+  "endMs": 6110,
+  "timestampMs": 6105,
+  "confidence": 1
+ },
+ {
+  "text": " eine",
+  "startMs": 6110,
+  "endMs": 6310,
+  "timestampMs": 6210,
+  "confidence": 1
+ },
+ {
+  "text": " Richtung.",
+  "startMs": 6310,
+  "endMs": 6890,
+  "timestampMs": 6600,
+  "confidence": 1
+ },
+ {
+  "text": " Wechselstrom",
+  "startMs": 6970,
+  "endMs": 7660,
+  "timestampMs": 7315,
+  "confidence": 1
+ },
+ {
+  "text": " pendelt",
+  "startMs": 7660,
+  "endMs": 8060,
+  "timestampMs": 7860,
+  "confidence": 1
+ },
+ {
+  "text": " fünfzigmal",
+  "startMs": 8060,
+  "endMs": 8640,
+  "timestampMs": 8350,
+  "confidence": 0
+ },
+ {
+  "text": " pro",
+  "startMs": 8640,
+  "endMs": 8820,
+  "timestampMs": 8730,
+  "confidence": 1
+ },
+ {
+  "text": " Sekunde",
+  "startMs": 8820,
+  "endMs": 9240,
+  "timestampMs": 9030,
+  "confidence": 1
+ },
+ {
+  "text": " hin",
+  "startMs": 9240,
+  "endMs": 9380,
+  "timestampMs": 9310,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 9380,
+  "endMs": 9520,
+  "timestampMs": 9450,
+  "confidence": 1
+ },
+ {
+  "text": " zurück.",
+  "startMs": 9550,
+  "endMs": 9940,
+  "timestampMs": 9745,
+  "confidence": 1
+ },
+ {
+  "text": " Im",
+  "startMs": 10030,
+  "endMs": 10031,
+  "timestampMs": 10030,
+  "confidence": 1
+ },
+ {
+  "text": " Wechselrichter",
+  "startMs": 10070,
+  "endMs": 10690,
+  "timestampMs": 10380,
+  "confidence": 1
+ },
+ {
+  "text": " sitzen",
+  "startMs": 10690,
+  "endMs": 10980,
+  "timestampMs": 10835,
+  "confidence": 1
+ },
+ {
+  "text": " dafür",
+  "startMs": 10980,
+  "endMs": 11230,
+  "timestampMs": 11105,
+  "confidence": 1
+ },
+ {
+  "text": " vier",
+  "startMs": 11380,
+  "endMs": 11460,
+  "timestampMs": 11420,
+  "confidence": 1
+ },
+ {
+  "text": " elektronische",
+  "startMs": 11460,
+  "endMs": 12080,
+  "timestampMs": 11770,
+  "confidence": 1
+ },
+ {
+  "text": " Schalter,",
+  "startMs": 12080,
+  "endMs": 12560,
+  "timestampMs": 12320,
+  "confidence": 1
+ },
+ {
+  "text": " die",
+  "startMs": 12760,
+  "endMs": 12780,
+  "timestampMs": 12770,
+  "confidence": 1
+ },
+ {
+  "text": " sogenannte",
+  "startMs": 12780,
+  "endMs": 13360,
+  "timestampMs": 13070,
+  "confidence": 1
+ },
+ {
+  "text": " H-Brücke.",
+  "startMs": 13400,
+  "endMs": 13960,
+  "timestampMs": 13680,
+  "confidence": 1
+ },
+ {
+  "text": " Schalten",
+  "startMs": 14160,
+  "endMs": 14610,
+  "timestampMs": 14385,
+  "confidence": 1
+ },
+ {
+  "text": " sie",
+  "startMs": 14610,
+  "endMs": 14780,
+  "timestampMs": 14695,
+  "confidence": 1
+ },
+ {
+  "text": " über",
+  "startMs": 14780,
+  "endMs": 15040,
+  "timestampMs": 14910,
+  "confidence": 1
+ },
+ {
+  "text": " Kreuz",
+  "startMs": 15080,
+  "endMs": 15280,
+  "timestampMs": 15180,
+  "confidence": 1
+ },
+ {
+  "text": " um,",
+  "startMs": 15360,
+  "endMs": 15570,
+  "timestampMs": 15465,
+  "confidence": 1
+ },
+ {
+  "text": " fließt",
+  "startMs": 15570,
+  "endMs": 15960,
+  "timestampMs": 15765,
+  "confidence": 1
+ },
+ {
+  "text": " der",
+  "startMs": 15960,
+  "endMs": 16040,
+  "timestampMs": 16000,
+  "confidence": 1
+ },
+ {
+  "text": " Strom",
+  "startMs": 16140,
+  "endMs": 16420,
+  "timestampMs": 16280,
+  "confidence": 1
+ },
+ {
+  "text": " mal",
+  "startMs": 16420,
+  "endMs": 16590,
+  "timestampMs": 16505,
+  "confidence": 1
+ },
+ {
+  "text": " hin,",
+  "startMs": 16590,
+  "endMs": 16860,
+  "timestampMs": 16725,
+  "confidence": 1
+ },
+ {
+  "text": " mal",
+  "startMs": 17040,
+  "endMs": 17041,
+  "timestampMs": 17040,
+  "confidence": 1
+ },
+ {
+  "text": " zurück.",
+  "startMs": 17060,
+  "endMs": 17610,
+  "timestampMs": 17335,
+  "confidence": 1
+ },
+ {
+  "text": " Das",
+  "startMs": 17850,
+  "endMs": 17851,
+  "timestampMs": 17850,
+  "confidence": 1
+ },
+ {
+  "text": " ergibt",
+  "startMs": 17860,
+  "endMs": 18120,
+  "timestampMs": 17990,
+  "confidence": 1
+ },
+ {
+  "text": " aber",
+  "startMs": 18150,
+  "endMs": 18350,
+  "timestampMs": 18250,
+  "confidence": 1
+ },
+ {
+  "text": " nur",
+  "startMs": 18350,
+  "endMs": 18520,
+  "timestampMs": 18435,
+  "confidence": 1
+ },
+ {
+  "text": " ein",
+  "startMs": 18520,
+  "endMs": 18690,
+  "timestampMs": 18605,
+  "confidence": 1
+ },
+ {
+  "text": " grobes",
+  "startMs": 18700,
+  "endMs": 18960,
+  "timestampMs": 18830,
+  "confidence": 1
+ },
+ {
+  "text": " Rechteck.",
+  "startMs": 18960,
+  "endMs": 19420,
+  "timestampMs": 19190,
+  "confidence": 1
+ },
+ {
+  "text": " Deshalb",
+  "startMs": 19570,
+  "endMs": 19790,
+  "timestampMs": 19680,
+  "confidence": 1
+ },
+ {
+  "text": " schalten",
+  "startMs": 19830,
+  "endMs": 20180,
+  "timestampMs": 20005,
+  "confidence": 1
+ },
+ {
+  "text": " sie",
+  "startMs": 20180,
+  "endMs": 20270,
+  "timestampMs": 20225,
+  "confidence": 1
+ },
+ {
+  "text": " tausende",
+  "startMs": 20330,
+  "endMs": 20690,
+  "timestampMs": 20510,
+  "confidence": 1
+ },
+ {
+  "text": " Male",
+  "startMs": 20690,
+  "endMs": 20880,
+  "timestampMs": 20785,
+  "confidence": 1
+ },
+ {
+  "text": " pro",
+  "startMs": 20880,
+  "endMs": 21020,
+  "timestampMs": 20950,
+  "confidence": 1
+ },
+ {
+  "text": " Sekunde",
+  "startMs": 21020,
+  "endMs": 21350,
+  "timestampMs": 21185,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 21350,
+  "endMs": 21490,
+  "timestampMs": 21420,
+  "confidence": 1
+ },
+ {
+  "text": " machen",
+  "startMs": 21490,
+  "endMs": 21780,
+  "timestampMs": 21635,
+  "confidence": 1
+ },
+ {
+  "text": " die",
+  "startMs": 21780,
+  "endMs": 21900,
+  "timestampMs": 21840,
+  "confidence": 1
+ },
+ {
+  "text": " Pulse",
+  "startMs": 21940,
+  "endMs": 22150,
+  "timestampMs": 22045,
+  "confidence": 1
+ },
+ {
+  "text": " mal",
+  "startMs": 22150,
+  "endMs": 22260,
+  "timestampMs": 22205,
+  "confidence": 1
+ },
+ {
+  "text": " breit,",
+  "startMs": 22300,
+  "endMs": 22560,
+  "timestampMs": 22430,
+  "confidence": 1
+ },
+ {
+  "text": " mal",
+  "startMs": 22720,
+  "endMs": 22750,
+  "timestampMs": 22735,
+  "confidence": 1
+ },
+ {
+  "text": " schmal.",
+  "startMs": 22750,
+  "endMs": 23300,
+  "timestampMs": 23025,
+  "confidence": 1
+ },
+ {
+  "text": " Spule",
+  "startMs": 23440,
+  "endMs": 23540,
+  "timestampMs": 23490,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 23630,
+  "endMs": 23790,
+  "timestampMs": 23710,
+  "confidence": 1
+ },
+ {
+  "text": " Kondensator",
+  "startMs": 23790,
+  "endMs": 24410,
+  "timestampMs": 24100,
+  "confidence": 1
+ },
+ {
+  "text": " glätten",
+  "startMs": 24410,
+  "endMs": 24860,
+  "timestampMs": 24635,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 24860,
+  "endMs": 25030,
+  "timestampMs": 24945,
+  "confidence": 1
+ },
+ {
+  "text": " Ganze.",
+  "startMs": 25030,
+  "endMs": 25560,
+  "timestampMs": 25295,
+  "confidence": 1
+ },
+ {
+  "text": " Heraus",
+  "startMs": 25710,
+  "endMs": 25920,
+  "timestampMs": 25815,
+  "confidence": 1
+ },
+ {
+  "text": " kommt",
+  "startMs": 25920,
+  "endMs": 26220,
+  "timestampMs": 26070,
+  "confidence": 1
+ },
+ {
+  "text": " ein",
+  "startMs": 26220,
+  "endMs": 26400,
+  "timestampMs": 26310,
+  "confidence": 1
+ },
+ {
+  "text": " sauberer",
+  "startMs": 26400,
+  "endMs": 26880,
+  "timestampMs": 26640,
+  "confidence": 1
+ },
+ {
+  "text": " Sinus",
+  "startMs": 26880,
+  "endMs": 27180,
+  "timestampMs": 27030,
+  "confidence": 1
+ },
+ {
+  "text": " mit",
+  "startMs": 27190,
+  "endMs": 27360,
+  "timestampMs": 27275,
+  "confidence": 1
+ },
+ {
+  "text": " 230",
+  "startMs": 27360,
+  "endMs": 27840,
+  "timestampMs": 27600,
+  "confidence": 1
+ },
+ {
+  "text": " Volt,",
+  "startMs": 27890,
+  "endMs": 28280,
+  "timestampMs": 28085,
+  "confidence": 1
+ },
+ {
+  "text": " bereit",
+  "startMs": 28330,
+  "endMs": 28540,
+  "timestampMs": 28435,
+  "confidence": 1
+ },
+ {
+  "text": " für",
+  "startMs": 28540,
+  "endMs": 28710,
+  "timestampMs": 28625,
+  "confidence": 1
+ },
+ {
+  "text": " die",
+  "startMs": 28710,
+  "endMs": 28840,
+  "timestampMs": 28775,
+  "confidence": 1
+ },
+ {
+  "text": " Steckdose.",
+  "startMs": 28840,
+  "endMs": 29270,
+  "timestampMs": 29055,
+  "confidence": 1
+ }
+]

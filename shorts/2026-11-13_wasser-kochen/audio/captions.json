@@ -1,0 +1,793 @@
+[
+ {
+  "text": "Rate",
+  "startMs": 280,
+  "endMs": 320,
+  "timestampMs": 300,
+  "confidence": 1
+ },
+ {
+  "text": " mal:",
+  "startMs": 340,
+  "endMs": 530,
+  "timestampMs": 435,
+  "confidence": 1
+ },
+ {
+  "text": " Wasserkocher,",
+  "startMs": 590,
+  "endMs": 1670,
+  "timestampMs": 1130,
+  "confidence": 1
+ },
+ {
+  "text": " Herd",
+  "startMs": 1700,
+  "endMs": 2010,
+  "timestampMs": 1855,
+  "confidence": 1
+ },
+ {
+  "text": " oder",
+  "startMs": 2010,
+  "endMs": 2330,
+  "timestampMs": 2170,
+  "confidence": 1
+ },
+ {
+  "text": " Mikrowelle.",
+  "startMs": 2330,
+  "endMs": 3230,
+  "timestampMs": 2780,
+  "confidence": 1
+ },
+ {
+  "text": " Was",
+  "startMs": 3480,
+  "endMs": 3481,
+  "timestampMs": 3480,
+  "confidence": 1
+ },
+ {
+  "text": " kocht",
+  "startMs": 3520,
+  "endMs": 3750,
+  "timestampMs": 3635,
+  "confidence": 1
+ },
+ {
+  "text": " einen",
+  "startMs": 3750,
+  "endMs": 4060,
+  "timestampMs": 3905,
+  "confidence": 0
+ },
+ {
+  "text": " Liter",
+  "startMs": 4060,
+  "endMs": 4340,
+  "timestampMs": 4200,
+  "confidence": 1
+ },
+ {
+  "text": " Wasser",
+  "startMs": 4340,
+  "endMs": 4720,
+  "timestampMs": 4530,
+  "confidence": 1
+ },
+ {
+  "text": " am",
+  "startMs": 4780,
+  "endMs": 4980,
+  "timestampMs": 4880,
+  "confidence": 1
+ },
+ {
+  "text": " billigsten?",
+  "startMs": 4980,
+  "endMs": 5520,
+  "timestampMs": 5250,
+  "confidence": 1
+ },
+ {
+  "text": " Wir",
+  "startMs": 5520,
+  "endMs": 5620,
+  "timestampMs": 5570,
+  "confidence": 1
+ },
+ {
+  "text": " lassen",
+  "startMs": 5940,
+  "endMs": 6060,
+  "timestampMs": 6000,
+  "confidence": 1
+ },
+ {
+  "text": " alle",
+  "startMs": 6060,
+  "endMs": 6300,
+  "timestampMs": 6180,
+  "confidence": 1
+ },
+ {
+  "text": " drei",
+  "startMs": 6300,
+  "endMs": 6540,
+  "timestampMs": 6420,
+  "confidence": 1
+ },
+ {
+  "text": " gleichzeitig",
+  "startMs": 6540,
+  "endMs": 7270,
+  "timestampMs": 6905,
+  "confidence": 1
+ },
+ {
+  "text": " laufen.",
+  "startMs": 7270,
+  "endMs": 7800,
+  "timestampMs": 7535,
+  "confidence": 1
+ },
+ {
+  "text": " Ein",
+  "startMs": 8060,
+  "endMs": 8061,
+  "timestampMs": 8060,
+  "confidence": 1
+ },
+ {
+  "text": " Liter,",
+  "startMs": 8100,
+  "endMs": 8390,
+  "timestampMs": 8245,
+  "confidence": 1
+ },
+ {
+  "text": " bis",
+  "startMs": 8390,
+  "endMs": 8580,
+  "timestampMs": 8485,
+  "confidence": 1
+ },
+ {
+  "text": " er",
+  "startMs": 8590,
+  "endMs": 8650,
+  "timestampMs": 8620,
+  "confidence": 1
+ },
+ {
+  "text": " sprudelt,",
+  "startMs": 8720,
+  "endMs": 9470,
+  "timestampMs": 9095,
+  "confidence": 1
+ },
+ {
+  "text": " Strom",
+  "startMs": 9500,
+  "endMs": 9800,
+  "timestampMs": 9650,
+  "confidence": 1
+ },
+ {
+  "text": " zu",
+  "startMs": 9800,
+  "endMs": 9820,
+  "timestampMs": 9810,
+  "confidence": 1
+ },
+ {
+  "text": " siebenunddreißig",
+  "startMs": 9820,
+  "endMs": 10680,
+  "timestampMs": 10250,
+  "confidence": 0
+ },
+ {
+  "text": " Cent.",
+  "startMs": 10680,
+  "endMs": 10940,
+  "timestampMs": 10810,
+  "confidence": 1
+ },
+ {
+  "text": " Der",
+  "startMs": 11120,
+  "endMs": 11121,
+  "timestampMs": 11120,
+  "confidence": 1
+ },
+ {
+  "text": " Wasserkocher",
+  "startMs": 11160,
+  "endMs": 11670,
+  "timestampMs": 11415,
+  "confidence": 1
+ },
+ {
+  "text": " ist",
+  "startMs": 11740,
+  "endMs": 11860,
+  "timestampMs": 11800,
+  "confidence": 1
+ },
+ {
+  "text": " nach",
+  "startMs": 11920,
+  "endMs": 12050,
+  "timestampMs": 11985,
+  "confidence": 1
+ },
+ {
+  "text": " gut",
+  "startMs": 12130,
+  "endMs": 12250,
+  "timestampMs": 12190,
+  "confidence": 1
+ },
+ {
+  "text": " drei",
+  "startMs": 12340,
+  "endMs": 12480,
+  "timestampMs": 12410,
+  "confidence": 1
+ },
+ {
+  "text": " Minuten",
+  "startMs": 12480,
+  "endMs": 12850,
+  "timestampMs": 12665,
+  "confidence": 1
+ },
+ {
+  "text": " fertig.",
+  "startMs": 12850,
+  "endMs": 13340,
+  "timestampMs": 13095,
+  "confidence": 1
+ },
+ {
+  "text": " Blick",
+  "startMs": 13580,
+  "endMs": 13610,
+  "timestampMs": 13595,
+  "confidence": 1
+ },
+ {
+  "text": " ins",
+  "startMs": 13610,
+  "endMs": 13710,
+  "timestampMs": 13660,
+  "confidence": 1
+ },
+ {
+  "text": " Innere:",
+  "startMs": 13770,
+  "endMs": 14230,
+  "timestampMs": 14000,
+  "confidence": 1
+ },
+ {
+  "text": " Das",
+  "startMs": 14230,
+  "endMs": 14640,
+  "timestampMs": 14435,
+  "confidence": 1
+ },
+ {
+  "text": " Heizelement",
+  "startMs": 14670,
+  "endMs": 14940,
+  "timestampMs": 14805,
+  "confidence": 1
+ },
+ {
+  "text": " sitzt",
+  "startMs": 14940,
+  "endMs": 15190,
+  "timestampMs": 15065,
+  "confidence": 1
+ },
+ {
+  "text": " direkt",
+  "startMs": 15250,
+  "endMs": 15570,
+  "timestampMs": 15410,
+  "confidence": 1
+ },
+ {
+  "text": " unter",
+  "startMs": 15570,
+  "endMs": 15840,
+  "timestampMs": 15705,
+  "confidence": 1
+ },
+ {
+  "text": " dem",
+  "startMs": 15860,
+  "endMs": 16030,
+  "timestampMs": 15945,
+  "confidence": 1
+ },
+ {
+  "text": " Wasser.",
+  "startMs": 16030,
+  "endMs": 16540,
+  "timestampMs": 16285,
+  "confidence": 1
+ },
+ {
+  "text": " Kosten:",
+  "startMs": 16590,
+  "endMs": 17010,
+  "timestampMs": 16800,
+  "confidence": 1
+ },
+ {
+  "text": " rund",
+  "startMs": 17100,
+  "endMs": 17270,
+  "timestampMs": 17185,
+  "confidence": 1
+ },
+ {
+  "text": " vier",
+  "startMs": 17300,
+  "endMs": 17430,
+  "timestampMs": 17365,
+  "confidence": 1
+ },
+ {
+  "text": " Cent.",
+  "startMs": 17500,
+  "endMs": 17860,
+  "timestampMs": 17680,
+  "confidence": 1
+ },
+ {
+  "text": " Die",
+  "startMs": 18170,
+  "endMs": 18240,
+  "timestampMs": 18205,
+  "confidence": 1
+ },
+ {
+  "text": " Herdplatte",
+  "startMs": 18240,
+  "endMs": 18620,
+  "timestampMs": 18430,
+  "confidence": 1
+ },
+ {
+  "text": " heizt",
+  "startMs": 18670,
+  "endMs": 18970,
+  "timestampMs": 18820,
+  "confidence": 1
+ },
+ {
+  "text": " erst",
+  "startMs": 18970,
+  "endMs": 19080,
+  "timestampMs": 19025,
+  "confidence": 1
+ },
+ {
+  "text": " sich",
+  "startMs": 19080,
+  "endMs": 19320,
+  "timestampMs": 19200,
+  "confidence": 1
+ },
+ {
+  "text": " selbst,",
+  "startMs": 19320,
+  "endMs": 19680,
+  "timestampMs": 19500,
+  "confidence": 1
+ },
+ {
+  "text": " dann",
+  "startMs": 19690,
+  "endMs": 19691,
+  "timestampMs": 19690,
+  "confidence": 1
+ },
+ {
+  "text": " den",
+  "startMs": 19950,
+  "endMs": 20100,
+  "timestampMs": 20025,
+  "confidence": 1
+ },
+ {
+  "text": " Topf.",
+  "startMs": 20100,
+  "endMs": 20420,
+  "timestampMs": 20260,
+  "confidence": 1
+ },
+ {
+  "text": " Viel",
+  "startMs": 20740,
+  "endMs": 20760,
+  "timestampMs": 20750,
+  "confidence": 1
+ },
+ {
+  "text": " Wärme",
+  "startMs": 20770,
+  "endMs": 21120,
+  "timestampMs": 20945,
+  "confidence": 1
+ },
+ {
+  "text": " geht",
+  "startMs": 21120,
+  "endMs": 21360,
+  "timestampMs": 21240,
+  "confidence": 1
+ },
+ {
+  "text": " in",
+  "startMs": 21360,
+  "endMs": 21480,
+  "timestampMs": 21420,
+  "confidence": 1
+ },
+ {
+  "text": " die",
+  "startMs": 21480,
+  "endMs": 21570,
+  "timestampMs": 21525,
+  "confidence": 1
+ },
+ {
+  "text": " Küche.",
+  "startMs": 21650,
+  "endMs": 22200,
+  "timestampMs": 21925,
+  "confidence": 1
+ },
+ {
+  "text": " Nach",
+  "startMs": 22200,
+  "endMs": 22440,
+  "timestampMs": 22320,
+  "confidence": 1
+ },
+ {
+  "text": " gut",
+  "startMs": 22440,
+  "endMs": 22620,
+  "timestampMs": 22530,
+  "confidence": 1
+ },
+ {
+  "text": " sechs",
+  "startMs": 22620,
+  "endMs": 22920,
+  "timestampMs": 22770,
+  "confidence": 1
+ },
+ {
+  "text": " Minuten:",
+  "startMs": 22920,
+  "endMs": 23190,
+  "timestampMs": 23055,
+  "confidence": 1
+ },
+ {
+  "text": " knapp",
+  "startMs": 23440,
+  "endMs": 23670,
+  "timestampMs": 23555,
+  "confidence": 1
+ },
+ {
+  "text": " acht",
+  "startMs": 23710,
+  "endMs": 23910,
+  "timestampMs": 23810,
+  "confidence": 1
+ },
+ {
+  "text": " Cent.",
+  "startMs": 23980,
+  "endMs": 24230,
+  "timestampMs": 24105,
+  "confidence": 1
+ },
+ {
+  "text": " Die",
+  "startMs": 24460,
+  "endMs": 24480,
+  "timestampMs": 24470,
+  "confidence": 1
+ },
+ {
+  "text": " Mikrowelle",
+  "startMs": 24480,
+  "endMs": 25030,
+  "timestampMs": 24755,
+  "confidence": 1
+ },
+ {
+  "text": " wird",
+  "startMs": 25030,
+  "endMs": 25250,
+  "timestampMs": 25140,
+  "confidence": 1
+ },
+ {
+  "text": " Letzte:",
+  "startMs": 25250,
+  "endMs": 25660,
+  "timestampMs": 25455,
+  "confidence": 1
+ },
+ {
+  "text": " zwölf",
+  "startMs": 25850,
+  "endMs": 26070,
+  "timestampMs": 25960,
+  "confidence": 1
+ },
+ {
+  "text": " Minuten",
+  "startMs": 26070,
+  "endMs": 26430,
+  "timestampMs": 26250,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 26510,
+  "endMs": 26620,
+  "timestampMs": 26565,
+  "confidence": 1
+ },
+ {
+  "text": " über",
+  "startMs": 26780,
+  "endMs": 26870,
+  "timestampMs": 26825,
+  "confidence": 1
+ },
+ {
+  "text": " acht",
+  "startMs": 26940,
+  "endMs": 27120,
+  "timestampMs": 27030,
+  "confidence": 1
+ },
+ {
+  "text": " Cent.",
+  "startMs": 27120,
+  "endMs": 27600,
+  "timestampMs": 27360,
+  "confidence": 1
+ },
+ {
+  "text": " Ein",
+  "startMs": 27780,
+  "endMs": 27781,
+  "timestampMs": 27780,
+  "confidence": 1
+ },
+ {
+  "text": " Liter",
+  "startMs": 27800,
+  "endMs": 28080,
+  "timestampMs": 27940,
+  "confidence": 1
+ },
+ {
+  "text": " am",
+  "startMs": 28140,
+  "endMs": 28200,
+  "timestampMs": 28170,
+  "confidence": 1
+ },
+ {
+  "text": " Tag",
+  "startMs": 28200,
+  "endMs": 28340,
+  "timestampMs": 28270,
+  "confidence": 1
+ },
+ {
+  "text": " in",
+  "startMs": 28420,
+  "endMs": 28720,
+  "timestampMs": 28570,
+  "confidence": 1
+ },
+ {
+  "text": " der",
+  "startMs": 28720,
+  "endMs": 28840,
+  "timestampMs": 28780,
+  "confidence": 1
+ },
+ {
+  "text": " Mikrowelle",
+  "startMs": 28840,
+  "endMs": 29360,
+  "timestampMs": 29100,
+  "confidence": 1
+ },
+ {
+  "text": " statt",
+  "startMs": 29360,
+  "endMs": 29740,
+  "timestampMs": 29550,
+  "confidence": 1
+ },
+ {
+  "text": " im",
+  "startMs": 29740,
+  "endMs": 29880,
+  "timestampMs": 29810,
+  "confidence": 1
+ },
+ {
+  "text": " Wasserkocher:",
+  "startMs": 29880,
+  "endMs": 30850,
+  "timestampMs": 30365,
+  "confidence": 1
+ },
+ {
+  "text": " rund",
+  "startMs": 31040,
+  "endMs": 31230,
+  "timestampMs": 31135,
+  "confidence": 1
+ },
+ {
+  "text": " sechzehn",
+  "startMs": 31230,
+  "endMs": 31750,
+  "timestampMs": 31490,
+  "confidence": 0
+ },
+ {
+  "text": " Euro",
+  "startMs": 31750,
+  "endMs": 32050,
+  "timestampMs": 31900,
+  "confidence": 1
+ },
+ {
+  "text": " im",
+  "startMs": 32050,
+  "endMs": 32190,
+  "timestampMs": 32120,
+  "confidence": 1
+ },
+ {
+  "text": " Jahr.",
+  "startMs": 32210,
+  "endMs": 32720,
+  "timestampMs": 32465,
+  "confidence": 1
+ },
+ {
+  "text": " Also:",
+  "startMs": 32720,
+  "endMs": 32800,
+  "timestampMs": 32760,
+  "confidence": 1
+ },
+ {
+  "text": " Wasserkocher,",
+  "startMs": 33070,
+  "endMs": 33880,
+  "timestampMs": 33475,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 34140,
+  "endMs": 34141,
+  "timestampMs": 34140,
+  "confidence": 1
+ },
+ {
+  "text": " nur",
+  "startMs": 34180,
+  "endMs": 34360,
+  "timestampMs": 34270,
+  "confidence": 1
+ },
+ {
+  "text": " so",
+  "startMs": 34360,
+  "endMs": 34640,
+  "timestampMs": 34500,
+  "confidence": 1
+ },
+ {
+  "text": " viel",
+  "startMs": 34640,
+  "endMs": 34960,
+  "timestampMs": 34800,
+  "confidence": 1
+ },
+ {
+  "text": " Wasser,",
+  "startMs": 34960,
+  "endMs": 35280,
+  "timestampMs": 35120,
+  "confidence": 1
+ },
+ {
+  "text": " wie",
+  "startMs": 35300,
+  "endMs": 35430,
+  "timestampMs": 35365,
+  "confidence": 1
+ },
+ {
+  "text": " du",
+  "startMs": 35450,
+  "endMs": 35550,
+  "timestampMs": 35500,
+  "confidence": 1
+ },
+ {
+  "text": " brauchst.",
+  "startMs": 35560,
+  "endMs": 36110,
+  "timestampMs": 35835,
+  "confidence": 1
+ },
+ {
+  "text": " Richtig",
+  "startMs": 36230,
+  "endMs": 36570,
+  "timestampMs": 36400,
+  "confidence": 1
+ },
+ {
+  "text": " geraten?",
+  "startMs": 36570,
+  "endMs": 37060,
+  "timestampMs": 36815,
+  "confidence": 1
+ },
+ {
+  "text": " Schreib's",
+  "startMs": 37310,
+  "endMs": 37650,
+  "timestampMs": 37480,
+  "confidence": 1
+ },
+ {
+  "text": " in",
+  "startMs": 37650,
+  "endMs": 37720,
+  "timestampMs": 37685,
+  "confidence": 1
+ },
+ {
+  "text": " die",
+  "startMs": 37890,
+  "endMs": 37930,
+  "timestampMs": 37910,
+  "confidence": 1
+ },
+ {
+  "text": " Kommentare.",
+  "startMs": 37930,
+  "endMs": 38600,
+  "timestampMs": 38265,
+  "confidence": 1
+ }
+]

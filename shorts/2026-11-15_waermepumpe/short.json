@@ -1,0 +1,18 @@
+{
+  "format": "short-9x16",
+  "title": "Wie heizt eine Wärmepumpe mit kalter Luft?",
+  "status": "draft",
+  "scene": "waermepumpe",
+  "style": "frame",
+  "theme": "dark",
+  "overlays": true,
+  "scenes": [
+    {"id": "frage", "text": "Eine Wärmepumpe heizt mit Außenluft, sogar bei minus zehn Grad. Wie soll das gehen?"},
+    {"id": "kaeltemittel", "text": "Im Inneren kreist ein Kältemittel. Es siedet schon bei rund minus vierzig Grad."},
+    {"id": "verdampfer", "text": "Der Ventilator bläst Außenluft über den Verdampfer. Die Luft ist immer noch wärmer als das Kältemittel, also nimmt es Wärme auf und verdampft."},
+    {"id": "verdichter", "text": "Dann presst der Verdichter das Gas zusammen. Dadurch wird es richtig heiß, über siebzig Grad."},
+    {"id": "verfluessiger", "text": "Im Haus gibt es diese Wärme an das Heizungswasser ab und wird wieder flüssig."},
+    {"id": "ventil", "text": "Das Expansionsventil senkt den Druck, das Kältemittel wird eiskalt, und alles beginnt von vorn."},
+    {"id": "ende", "text": "So macht eine Kilowattstunde Strom rund drei Kilowattstunden Wärme."}
+  ]
+}

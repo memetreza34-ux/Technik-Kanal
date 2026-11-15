@@ -14,19 +14,27 @@ export const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 export const mix3 = (a: V3, b: V3, t: number): V3 => [lerp(a[0], b[0], t), lerp(a[1], b[1], t), lerp(a[2], b[2], t)];
 export type V3 = [number, number, number];
 
-export type Shot = {pos: V3; target: V3; fov: number};
+/** Kameraposition; `dur` = Dauer der Fahrt dorthin in Sekunden (Standard 1,2 s). */
+export type Shot = {pos: V3; target: V3; fov: number; dur?: number};
+
+/** Rechnet einen Shot aus einem lokalen Koordinatensystem (z. B. cm auf einem Tisch) in Weltkoordinaten um. */
+export const placeShot = (s: Shot, anchor: V3, scale: number): Shot => ({
+  ...s,
+  pos: [anchor[0] + s.pos[0] * scale, anchor[1] + s.pos[1] * scale, anchor[2] + s.pos[2] * scale],
+  target: [anchor[0] + s.target[0] * scale, anchor[1] + s.target[1] * scale, anchor[2] + s.target[2] * scale],
+});
 
 /** Blendet nacheinander von Shot zu Shot; jeder Wechsel beginnt kurz vor dem Beat. */
 export function cameraAt(f: number, fps: number, beats: Beats, shots: Record<string, Shot>, order: string[]) {
   let pos = shots[order[0]].pos, target = shots[order[0]].target, fov = shots[order[0]].fov;
   for (const id of order.slice(1)) {
-    const t = ramp(f, beats[id] - Math.round(0.2 * fps), Math.round(1.2 * fps));
+    const t = ramp(f, beats[id] - Math.round(0.2 * fps), Math.round((shots[id].dur ?? 1.2) * fps));
     pos = mix3(pos, shots[id].pos, t);
     target = mix3(target, shots[id].target, t);
     fov = lerp(fov, shots[id].fov, t);
   }
-  // langsamer Orbit, damit das Bild nie stillsteht
-  const a = (f / fps) * 0.035;
+  // leichtes Pendeln um das Ziel (±3,4°), damit das Bild nie stillsteht – summiert sich nicht auf
+  const a = Math.sin((f / fps) * 0.3) * 0.06;
   const dx = pos[0] - target[0], dz = pos[2] - target[2];
   pos = [target[0] + dx * Math.cos(a) - dz * Math.sin(a), pos[1], target[2] + dx * Math.sin(a) + dz * Math.cos(a)];
   return {pos, target, fov};

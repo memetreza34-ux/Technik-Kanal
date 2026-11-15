@@ -1,0 +1,7 @@
+Wie dreht man einen Motor andersrum? Mit der Wendeschützschaltung.
+Drückst du S1, zieht K1 an. Der Motor läuft rechts herum.
+Lässt du los, bleibt K1 trotzdem an. Das ist die Selbsthaltung.
+Jetzt S2 drücken? Geht nicht. K1 sperrt K2, sonst gäbe es einen Kurzschluss.
+Also erst S0: alles aus.
+Dann S2. K2 zieht an und tauscht zwei Phasen: L1 und L3.
+Und genau deshalb dreht der Motor jetzt links herum.

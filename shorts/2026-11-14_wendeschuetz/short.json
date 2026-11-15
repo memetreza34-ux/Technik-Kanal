@@ -1,0 +1,89 @@
+{
+  "format": "short-9x16",
+  "title": "Wie funktioniert eine Wendeschützschaltung?",
+  "status": "draft",
+  "scene": "wendeschuetz",
+  "style": "frame",
+  "theme": "dark",
+  "overlays": true,
+  "scenes": [
+    {
+      "id": "frage",
+      "text": "Wie funktioniert eigentlich eine Wendeschützschaltung?",
+      "heading": "[Wendeschützschaltung]"
+    },
+    {
+      "id": "wozu",
+      "text": "Sie lässt einen Drehstrommotor in beide Richtungen laufen, zum Beispiel beim Rolltor: einmal hoch, einmal runter.",
+      "heading": "Wozu? Zum Beispiel [Rolltor]"
+    },
+    {
+      "id": "trick",
+      "text": "Der Trick ist simpel: Tauscht man zwei Phasen, dreht der Motor andersrum.",
+      "heading": "Der [Trick]",
+      "overlay": {
+        "type": "facts",
+        "label": "Zwei Phasen tauschen",
+        "value": {
+          "text": "L1 ↔ L3 = andersrum",
+          "word": "Phasen"
+        },
+        "colors": {
+          "L1": "#FF8A3D",
+          "L2": "#E6EAF0",
+          "L3": "#4FB6FF"
+        }
+      }
+    },
+    {
+      "id": "rechts",
+      "text": "Dafür gibt es zwei Schütze. Drückst du S1, schaltet K1 die Phasen ganz normal durch, und der Motor läuft rechts. K1 hält sich dabei selbst.",
+      "heading": "K1 an: [Rechtslauf]",
+      "overlay": {
+        "type": "facts",
+        "label": "K1 schaltet durch",
+        "value": {
+          "text": "L1→U · L2→V · L3→W",
+          "word": "rechts"
+        },
+        "colors": {
+          "L1": "#FF8A3D",
+          "L2": "#E6EAF0",
+          "L3": "#4FB6FF"
+        }
+      }
+    },
+    {
+      "id": "links",
+      "text": "Erst S0, alles aus. Dann S2: K2 tauscht L1 und L3, und der Motor läuft links.",
+      "heading": "K2 an: [Linkslauf]",
+      "overlay": {
+        "type": "facts",
+        "label": "K2 tauscht zwei Phasen",
+        "value": {
+          "text": "L3→U · L2→V · L1→W",
+          "word": "links"
+        },
+        "colors": {
+          "L1": "#FF8A3D",
+          "L2": "#E6EAF0",
+          "L3": "#4FB6FF"
+        }
+      }
+    },
+    {
+      "id": "sicher",
+      "text": "Wichtig: Beide Schütze dürfen nie gleichzeitig an sein, sonst gibt es einen Kurzschluss. Deshalb sperrt jedes Schütz das andere. Das nennt man Verriegelung.",
+      "heading": "[Verriegelung]",
+      "overlay": {
+        "type": "facts",
+        "label": "Jedes Schütz sperrt das andere",
+        "value": {
+          "text": "K1 sperrt K2 · K2 sperrt K1",
+          "word": "sperrt"
+        },
+        "tone": "bad"
+      }
+    }
+  ]
+}

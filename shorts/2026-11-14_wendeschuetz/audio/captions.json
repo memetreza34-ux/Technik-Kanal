@@ -1,0 +1,681 @@
+[
+ {
+  "text": "Wie",
+  "startMs": 140,
+  "endMs": 141,
+  "timestampMs": 140,
+  "confidence": 1
+ },
+ {
+  "text": " funktioniert",
+  "startMs": 300,
+  "endMs": 690,
+  "timestampMs": 495,
+  "confidence": 1
+ },
+ {
+  "text": " eigentlich",
+  "startMs": 710,
+  "endMs": 1170,
+  "timestampMs": 940,
+  "confidence": 1
+ },
+ {
+  "text": " eine",
+  "startMs": 1180,
+  "endMs": 1360,
+  "timestampMs": 1270,
+  "confidence": 1
+ },
+ {
+  "text": " Wendeschützschaltung?",
+  "startMs": 1370,
+  "endMs": 2420,
+  "timestampMs": 1895,
+  "confidence": 1
+ },
+ {
+  "text": " Sie",
+  "startMs": 2700,
+  "endMs": 2701,
+  "timestampMs": 2700,
+  "confidence": 1
+ },
+ {
+  "text": " lässt",
+  "startMs": 2770,
+  "endMs": 2970,
+  "timestampMs": 2870,
+  "confidence": 1
+ },
+ {
+  "text": " einen",
+  "startMs": 3060,
+  "endMs": 3280,
+  "timestampMs": 3170,
+  "confidence": 1
+ },
+ {
+  "text": " Drehstrommotor",
+  "startMs": 3280,
+  "endMs": 4040,
+  "timestampMs": 3660,
+  "confidence": 1
+ },
+ {
+  "text": " in",
+  "startMs": 4040,
+  "endMs": 4140,
+  "timestampMs": 4090,
+  "confidence": 1
+ },
+ {
+  "text": " beide",
+  "startMs": 4140,
+  "endMs": 4410,
+  "timestampMs": 4275,
+  "confidence": 1
+ },
+ {
+  "text": " Richtungen",
+  "startMs": 4410,
+  "endMs": 4940,
+  "timestampMs": 4675,
+  "confidence": 1
+ },
+ {
+  "text": " laufen,",
+  "startMs": 4940,
+  "endMs": 5360,
+  "timestampMs": 5150,
+  "confidence": 1
+ },
+ {
+  "text": " zum",
+  "startMs": 5430,
+  "endMs": 5450,
+  "timestampMs": 5440,
+  "confidence": 1
+ },
+ {
+  "text": " Beispiel",
+  "startMs": 5450,
+  "endMs": 5700,
+  "timestampMs": 5575,
+  "confidence": 1
+ },
+ {
+  "text": " beim",
+  "startMs": 5710,
+  "endMs": 5860,
+  "timestampMs": 5785,
+  "confidence": 1
+ },
+ {
+  "text": " Rolltor:",
+  "startMs": 5860,
+  "endMs": 6850,
+  "timestampMs": 6355,
+  "confidence": 1
+ },
+ {
+  "text": " einmal",
+  "startMs": 6850,
+  "endMs": 7190,
+  "timestampMs": 7020,
+  "confidence": 1
+ },
+ {
+  "text": " hoch,",
+  "startMs": 7190,
+  "endMs": 7580,
+  "timestampMs": 7385,
+  "confidence": 1
+ },
+ {
+  "text": " einmal",
+  "startMs": 7640,
+  "endMs": 7970,
+  "timestampMs": 7805,
+  "confidence": 1
+ },
+ {
+  "text": " runter.",
+  "startMs": 7970,
+  "endMs": 8570,
+  "timestampMs": 8270,
+  "confidence": 1
+ },
+ {
+  "text": " Der",
+  "startMs": 8630,
+  "endMs": 8730,
+  "timestampMs": 8680,
+  "confidence": 1
+ },
+ {
+  "text": " Trick",
+  "startMs": 8730,
+  "endMs": 8850,
+  "timestampMs": 8790,
+  "confidence": 1
+ },
+ {
+  "text": " ist",
+  "startMs": 8980,
+  "endMs": 9110,
+  "timestampMs": 9045,
+  "confidence": 1
+ },
+ {
+  "text": " simpel:",
+  "startMs": 9150,
+  "endMs": 9580,
+  "timestampMs": 9365,
+  "confidence": 1
+ },
+ {
+  "text": " Tauscht",
+  "startMs": 9590,
+  "endMs": 9990,
+  "timestampMs": 9790,
+  "confidence": 1
+ },
+ {
+  "text": " man",
+  "startMs": 10000,
+  "endMs": 10180,
+  "timestampMs": 10090,
+  "confidence": 1
+ },
+ {
+  "text": " zwei",
+  "startMs": 10180,
+  "endMs": 10350,
+  "timestampMs": 10265,
+  "confidence": 1
+ },
+ {
+  "text": " Phasen,",
+  "startMs": 10450,
+  "endMs": 10810,
+  "timestampMs": 10630,
+  "confidence": 1
+ },
+ {
+  "text": " dreht",
+  "startMs": 11080,
+  "endMs": 11200,
+  "timestampMs": 11140,
+  "confidence": 1
+ },
+ {
+  "text": " der",
+  "startMs": 11200,
+  "endMs": 11380,
+  "timestampMs": 11290,
+  "confidence": 1
+ },
+ {
+  "text": " Motor",
+  "startMs": 11380,
+  "endMs": 11680,
+  "timestampMs": 11530,
+  "confidence": 1
+ },
+ {
+  "text": " andersrum.",
+  "startMs": 11680,
+  "endMs": 12240,
+  "timestampMs": 11960,
+  "confidence": 1
+ },
+ {
+  "text": " Dafür",
+  "startMs": 12520,
+  "endMs": 12840,
+  "timestampMs": 12680,
+  "confidence": 1
+ },
+ {
+  "text": " gibt",
+  "startMs": 12840,
+  "endMs": 13080,
+  "timestampMs": 12960,
+  "confidence": 1
+ },
+ {
+  "text": " es",
+  "startMs": 13080,
+  "endMs": 13170,
+  "timestampMs": 13125,
+  "confidence": 1
+ },
+ {
+  "text": " zwei",
+  "startMs": 13250,
+  "endMs": 13440,
+  "timestampMs": 13345,
+  "confidence": 1
+ },
+ {
+  "text": " Schütze.",
+  "startMs": 13440,
+  "endMs": 14120,
+  "timestampMs": 13780,
+  "confidence": 1
+ },
+ {
+  "text": " Drückst",
+  "startMs": 14160,
+  "endMs": 14650,
+  "timestampMs": 14405,
+  "confidence": 1
+ },
+ {
+  "text": " du",
+  "startMs": 14650,
+  "endMs": 14770,
+  "timestampMs": 14710,
+  "confidence": 1
+ },
+ {
+  "text": " S1,",
+  "startMs": 14830,
+  "endMs": 15100,
+  "timestampMs": 14965,
+  "confidence": 1
+ },
+ {
+  "text": " schaltet",
+  "startMs": 15110,
+  "endMs": 15710,
+  "timestampMs": 15410,
+  "confidence": 1
+ },
+ {
+  "text": " K1",
+  "startMs": 15710,
+  "endMs": 15960,
+  "timestampMs": 15835,
+  "confidence": 1
+ },
+ {
+  "text": " die",
+  "startMs": 15960,
+  "endMs": 16160,
+  "timestampMs": 16060,
+  "confidence": 1
+ },
+ {
+  "text": " Phasen",
+  "startMs": 16170,
+  "endMs": 16510,
+  "timestampMs": 16340,
+  "confidence": 1
+ },
+ {
+  "text": " ganz",
+  "startMs": 16590,
+  "endMs": 16830,
+  "timestampMs": 16710,
+  "confidence": 1
+ },
+ {
+  "text": " normal",
+  "startMs": 16830,
+  "endMs": 17240,
+  "timestampMs": 17035,
+  "confidence": 1
+ },
+ {
+  "text": " durch,",
+  "startMs": 17240,
+  "endMs": 17580,
+  "timestampMs": 17410,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 17580,
+  "endMs": 17620,
+  "timestampMs": 17600,
+  "confidence": 1
+ },
+ {
+  "text": " der",
+  "startMs": 17980,
+  "endMs": 17981,
+  "timestampMs": 17980,
+  "confidence": 1
+ },
+ {
+  "text": " Motor",
+  "startMs": 18000,
+  "endMs": 18320,
+  "timestampMs": 18160,
+  "confidence": 1
+ },
+ {
+  "text": " läuft",
+  "startMs": 18320,
+  "endMs": 18720,
+  "timestampMs": 18520,
+  "confidence": 1
+ },
+ {
+  "text": " rechts.",
+  "startMs": 18720,
+  "endMs": 19190,
+  "timestampMs": 18955,
+  "confidence": 1
+ },
+ {
+  "text": " K1",
+  "startMs": 19490,
+  "endMs": 19720,
+  "timestampMs": 19605,
+  "confidence": 1
+ },
+ {
+  "text": " hält",
+  "startMs": 19720,
+  "endMs": 20020,
+  "timestampMs": 19870,
+  "confidence": 1
+ },
+ {
+  "text": " sich",
+  "startMs": 20020,
+  "endMs": 20240,
+  "timestampMs": 20130,
+  "confidence": 1
+ },
+ {
+  "text": " dabei",
+  "startMs": 20310,
+  "endMs": 20530,
+  "timestampMs": 20420,
+  "confidence": 1
+ },
+ {
+  "text": " selbst.",
+  "startMs": 20530,
+  "endMs": 21120,
+  "timestampMs": 20825,
+  "confidence": 1
+ },
+ {
+  "text": " Erst",
+  "startMs": 21140,
+  "endMs": 21300,
+  "timestampMs": 21220,
+  "confidence": 1
+ },
+ {
+  "text": " S0,",
+  "startMs": 21480,
+  "endMs": 21980,
+  "timestampMs": 21730,
+  "confidence": 1
+ },
+ {
+  "text": " alles",
+  "startMs": 21980,
+  "endMs": 22410,
+  "timestampMs": 22195,
+  "confidence": 1
+ },
+ {
+  "text": " aus.",
+  "startMs": 22410,
+  "endMs": 22760,
+  "timestampMs": 22585,
+  "confidence": 1
+ },
+ {
+  "text": " Dann",
+  "startMs": 23060,
+  "endMs": 23200,
+  "timestampMs": 23130,
+  "confidence": 1
+ },
+ {
+  "text": " S2:",
+  "startMs": 23200,
+  "endMs": 23710,
+  "timestampMs": 23455,
+  "confidence": 1
+ },
+ {
+  "text": " K2",
+  "startMs": 23710,
+  "endMs": 23900,
+  "timestampMs": 23805,
+  "confidence": 1
+ },
+ {
+  "text": " tauscht",
+  "startMs": 24190,
+  "endMs": 24650,
+  "timestampMs": 24420,
+  "confidence": 1
+ },
+ {
+  "text": " L1",
+  "startMs": 24650,
+  "endMs": 24970,
+  "timestampMs": 24810,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 25090,
+  "endMs": 25240,
+  "timestampMs": 25165,
+  "confidence": 1
+ },
+ {
+  "text": " L3,",
+  "startMs": 25280,
+  "endMs": 25590,
+  "timestampMs": 25435,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 25590,
+  "endMs": 25820,
+  "timestampMs": 25705,
+  "confidence": 1
+ },
+ {
+  "text": " der",
+  "startMs": 25860,
+  "endMs": 26110,
+  "timestampMs": 25985,
+  "confidence": 1
+ },
+ {
+  "text": " Motor",
+  "startMs": 26110,
+  "endMs": 26550,
+  "timestampMs": 26330,
+  "confidence": 1
+ },
+ {
+  "text": " läuft",
+  "startMs": 26550,
+  "endMs": 27070,
+  "timestampMs": 26810,
+  "confidence": 1
+ },
+ {
+  "text": " links.",
+  "startMs": 27070,
+  "endMs": 27610,
+  "timestampMs": 27340,
+  "confidence": 1
+ },
+ {
+  "text": " Wichtig:",
+  "startMs": 27940,
+  "endMs": 28390,
+  "timestampMs": 28165,
+  "confidence": 1
+ },
+ {
+  "text": " Beide",
+  "startMs": 28560,
+  "endMs": 28650,
+  "timestampMs": 28605,
+  "confidence": 1
+ },
+ {
+  "text": " Schütze",
+  "startMs": 28650,
+  "endMs": 28990,
+  "timestampMs": 28820,
+  "confidence": 1
+ },
+ {
+  "text": " dürfen",
+  "startMs": 29100,
+  "endMs": 29440,
+  "timestampMs": 29270,
+  "confidence": 1
+ },
+ {
+  "text": " nie",
+  "startMs": 29440,
+  "endMs": 29600,
+  "timestampMs": 29520,
+  "confidence": 1
+ },
+ {
+  "text": " gleichzeitig",
+  "startMs": 29600,
+  "endMs": 30230,
+  "timestampMs": 29915,
+  "confidence": 1
+ },
+ {
+  "text": " an",
+  "startMs": 30230,
+  "endMs": 30340,
+  "timestampMs": 30285,
+  "confidence": 1
+ },
+ {
+  "text": " sein,",
+  "startMs": 30340,
+  "endMs": 30590,
+  "timestampMs": 30465,
+  "confidence": 1
+ },
+ {
+  "text": " sonst",
+  "startMs": 30880,
+  "endMs": 30910,
+  "timestampMs": 30895,
+  "confidence": 1
+ },
+ {
+  "text": " gibt",
+  "startMs": 30910,
+  "endMs": 31110,
+  "timestampMs": 31010,
+  "confidence": 1
+ },
+ {
+  "text": " es",
+  "startMs": 31120,
+  "endMs": 31180,
+  "timestampMs": 31150,
+  "confidence": 1
+ },
+ {
+  "text": " einen",
+  "startMs": 31260,
+  "endMs": 31480,
+  "timestampMs": 31370,
+  "confidence": 1
+ },
+ {
+  "text": " Kurzschluss.",
+  "startMs": 31480,
+  "endMs": 32070,
+  "timestampMs": 31775,
+  "confidence": 1
+ },
+ {
+  "text": " Deshalb",
+  "startMs": 32370,
+  "endMs": 32680,
+  "timestampMs": 32525,
+  "confidence": 1
+ },
+ {
+  "text": " sperrt",
+  "startMs": 32680,
+  "endMs": 32950,
+  "timestampMs": 32815,
+  "confidence": 1
+ },
+ {
+  "text": " jedes",
+  "startMs": 33040,
+  "endMs": 33240,
+  "timestampMs": 33140,
+  "confidence": 1
+ },
+ {
+  "text": " Schütz",
+  "startMs": 33240,
+  "endMs": 33560,
+  "timestampMs": 33400,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 33650,
+  "endMs": 33740,
+  "timestampMs": 33695,
+  "confidence": 1
+ },
+ {
+  "text": " andere.",
+  "startMs": 33740,
+  "endMs": 34140,
+  "timestampMs": 33940,
+  "confidence": 1
+ },
+ {
+  "text": " Das",
+  "startMs": 34150,
+  "endMs": 34210,
+  "timestampMs": 34180,
+  "confidence": 1
+ },
+ {
+  "text": " nennt",
+  "startMs": 34450,
+  "endMs": 34550,
+  "timestampMs": 34500,
+  "confidence": 1
+ },
+ {
+  "text": " man",
+  "startMs": 34550,
+  "endMs": 34700,
+  "timestampMs": 34625,
+  "confidence": 1
+ },
+ {
+  "text": " Verriegelung.",
+  "startMs": 34700,
+  "endMs": 35520,
+  "timestampMs": 35110,
+  "confidence": 1
+ }
+]
