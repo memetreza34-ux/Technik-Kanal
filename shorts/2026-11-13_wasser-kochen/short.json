@@ -1,0 +1,216 @@
+{
+  "format": "short-9x16",
+  "title": "1 Liter Wasser: Wasserkocher, Herd oder Mikrowelle?",
+  "status": "draft",
+  "scene": "water-night",
+  "style": "night",
+  "overlays": true,
+  "scenes": [
+    {
+      "id": "frage",
+      "text": "Rate mal: Wasserkocher, Herd oder Mikrowelle. Was kocht einen Liter Wasser am billigsten?",
+      "heading": "Rate mal: [A, B oder C?]",
+      "overlay": {
+        "type": "facts",
+        "label": "Was kocht 1 Liter am billigsten?",
+        "chips": [
+          {
+            "text": "A  Wasserkocher",
+            "word": "Wasserkocher"
+          },
+          {
+            "text": "B  Herd",
+            "word": "Herd"
+          },
+          {
+            "text": "C  Mikrowelle",
+            "word": "Mikrowelle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rechnen",
+      "text": "Wir lassen alle drei gleichzeitig laufen. Ein Liter, bis er sprudelt, Strom zu siebenunddreißig Cent.",
+      "heading": "Alle drei [gleichzeitig]",
+      "overlay": {
+        "type": "facts",
+        "label": "Beispiel",
+        "chips": [
+          {
+            "text": "1 Liter",
+            "word": "Liter"
+          },
+          {
+            "text": "bis 100 °C",
+            "word": "sprudelt"
+          },
+          {
+            "text": "37 ct/kWh",
+            "word": "Cent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kettle",
+      "text": "Der Wasserkocher ist nach gut drei Minuten fertig. Blick ins Innere: Das Heizelement sitzt direkt unter dem Wasser. Kosten: rund vier Cent.",
+      "heading": "1 · [Wasserkocher]",
+      "overlay": {
+        "type": "facts",
+        "label": "Wasserkocher · 1 Liter",
+        "value": {
+          "text": "0,115 kWh",
+          "word": "Kosten"
+        },
+        "sub": "3:18 min",
+        "result": {
+          "text": "≈ 4,3 ct",
+          "word": "vier",
+          "tone": "good"
+        },
+        "source": "Messung: Stiftung Warentest"
+      }
+    },
+    {
+      "id": "herd",
+      "text": "Die Herdplatte heizt erst sich selbst, dann den Topf. Viel Wärme geht in die Küche. Nach gut sechs Minuten: knapp acht Cent.",
+      "heading": "2 · [Herdplatte]",
+      "overlay": {
+        "type": "facts",
+        "label": "Herdplatte · 1 Liter",
+        "value": {
+          "text": "0,208 kWh",
+          "word": "Küche"
+        },
+        "sub": "6:18 min",
+        "result": {
+          "text": "≈ 7,7 ct",
+          "word": "acht"
+        },
+        "source": "Messung: Stiftung Warentest"
+      }
+    },
+    {
+      "id": "mikro",
+      "text": "Die Mikrowelle wird Letzte: zwölf Minuten und über acht Cent.",
+      "heading": "3 · [Mikrowelle]",
+      "overlay": {
+        "type": "facts",
+        "label": "Mikrowelle · 1 Liter",
+        "value": {
+          "text": "0,231 kWh",
+          "word": "zwölf"
+        },
+        "sub": "12:18 min",
+        "result": {
+          "text": "≈ 8,5 ct",
+          "word": "acht",
+          "tone": "bad"
+        },
+        "source": "Messung: Stiftung Warentest"
+      }
+    },
+    {
+      "id": "jahr",
+      "text": "Ein Liter am Tag in der Mikrowelle statt im Wasserkocher: rund sechzehn Euro im Jahr.",
+      "heading": "Aufs Jahr [gerechnet]",
+      "overlay": {
+        "type": "facts",
+        "label": "Mehrkosten Mikrowelle · 1 Liter/Tag",
+        "value": {
+          "text": "365 × 4,3 ct",
+          "word": "Wasserkocher"
+        },
+        "result": {
+          "text": "≈ 16 €/Jahr",
+          "word": "Euro",
+          "tone": "bad"
+        }
+      }
+    },
+    {
+      "id": "tipp",
+      "text": "Also: Wasserkocher, und nur so viel Wasser, wie du brauchst.",
+      "heading": "Kurz [gesagt]",
+      "overlay": {
+        "type": "checklist",
+        "items": [
+          {
+            "text": "Wasser in der Mikrowelle",
+            "ok": false,
+            "word": "Also"
+          },
+          {
+            "text": "Wasserkocher nehmen",
+            "ok": true,
+            "word": "Wasserkocher"
+          },
+          {
+            "text": "Nur so viel wie nötig",
+            "ok": true,
+            "word": "brauchst"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ende",
+      "text": "Richtig geraten? Schreib's in die Kommentare.",
+      "overlay": {
+        "type": "end",
+        "line": "Richtig geraten? Ab in die Kommentare."
+      }
+    }
+  ],
+  "scan": {
+    "scene": "kettle",
+    "word": "Blick"
+  },
+  "race": {
+    "title": "Zeitraffer",
+    "from": 15,
+    "to": 100,
+    "unit": "°C",
+    "lanes": [
+      {
+        "label": "Wasserkocher",
+        "finish": 198,
+        "tone": "good"
+      },
+      {
+        "label": "Herdplatte",
+        "finish": 378
+      },
+      {
+        "label": "Mikrowelle",
+        "finish": 738,
+        "tone": "bad"
+      }
+    ],
+    "keys": [
+      {
+        "scene": "rechnen",
+        "word": "laufen",
+        "seconds": 0
+      },
+      {
+        "scene": "kettle",
+        "word": "Minuten",
+        "seconds": 198
+      },
+      {
+        "scene": "herd",
+        "word": "Minuten",
+        "seconds": 378
+      },
+      {
+        "scene": "mikro",
+        "word": "Minuten",
+        "seconds": 738
+      }
+    ],
+    "dockAfter": "rechnen",
+    "until": "jahr"
+  }
+}

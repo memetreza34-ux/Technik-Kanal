@@ -1,0 +1,7 @@
+Eine Wärmepumpe heizt mit Außenluft, sogar bei minus zehn Grad. Wie soll das gehen?
+Im Inneren kreist ein Kältemittel. Es siedet schon bei rund minus vierzig Grad.
+Der Ventilator bläst Außenluft über den Verdampfer. Die Luft ist immer noch wärmer als das Kältemittel, also nimmt es Wärme auf und verdampft.
+Dann presst der Verdichter das Gas zusammen. Dadurch wird es richtig heiß, über siebzig Grad.
+Im Haus gibt es diese Wärme an das Heizungswasser ab und wird wieder flüssig.
+Das Expansionsventil senkt den Druck, das Kältemittel wird eiskalt, und alles beginnt von vorn.
+So macht eine Kilowattstunde Strom rund drei Kilowattstunden Wärme.

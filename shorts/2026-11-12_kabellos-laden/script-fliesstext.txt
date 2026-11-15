@@ -1,0 +1,8 @@
+Dieses Handy lädt, obwohl es nirgends ein Kabel berührt.
+Heben wir es mal an. Im Ladepad liegt eine Spule aus Kupferdraht.
+Schickt man Wechselstrom hindurch, baut sich darüber ein Magnetfeld auf, das ständig seine Richtung wechselt.
+Und hinten im Handy? Da sitzt eine zweite Spule.
+Das wechselnde Feld treibt in ihr einen Strom an. Das ist Induktion.
+Das Problem: Liegt das Handy nur ein bisschen schief, geht ein Teil der Energie als Wärme verloren.
+Deshalb haben neue Ladegeräte mit Qi2 einen Ring aus Magneten. Das Handy schnappt von selbst an die richtige Stelle.
+Kein Kabel. Aber ganz viel Physik.

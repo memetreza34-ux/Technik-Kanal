@@ -1,0 +1,28 @@
+{
+  "_hinweis": "Alle Assets: Poly Haven (polyhaven.com), Lizenz CC0. Laden mit: npm run assets:fetch. Credit in Videobeschreibung: 3D-Modelle & HDRIs: Poly Haven (CC0).",
+  "resolution": "1k",
+  "models": {
+    "sofa_02": "Wohnzimmer",
+    "modern_coffee_table_01": "Wohnzimmer",
+    "Television_01": "Wohnzimmer",
+    "Shelf_01": "Wohnzimmer",
+    "modern_ceiling_lamp_01": "Wohnzimmer",
+    "potted_plant_01": "Wohnzimmer",
+    "desk_lamp_arm_01": "Wohnzimmer",
+    "electric_stove": "Küche",
+    "vintage_microwave": "Küche",
+    "vintage_electric_kettle": "Küche",
+    "dining_table": "Küche",
+    "dining_chair_02": "Küche",
+    "steel_frame_shelves_01": "Keller",
+    "metal_toolbox": "Keller",
+    "power_box_01": "Keller / Hausanschluss",
+    "retro_multimeter": "Keller",
+    "lightbulb_led": "Keller",
+    "exterior_aircon_unit": "Außen / Wärmepumpe"
+  },
+  "hdris": {
+    "brown_photostudio_02": "Studio-Licht für Nahaufnahmen",
+    "aristea_wreck_puresky": "Tageslicht außen"
+  }
+}

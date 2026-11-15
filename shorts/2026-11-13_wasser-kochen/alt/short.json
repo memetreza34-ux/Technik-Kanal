@@ -1,0 +1,183 @@
+{
+  "format": "short-9x16",
+  "title": "1 Liter Wasser: Wasserkocher, Herd oder Mikrowelle?",
+  "status": "draft",
+  "scene": "water-boiling",
+  "overlays": true,
+  "highlight": [
+    "Heizelement",
+    "Herd",
+    "Herdplatte",
+    "Induktion",
+    "Mikrowelle",
+    "Sieger",
+    "Wasserkocher",
+    "Welches",
+    "acht",
+    "billigsten",
+    "doppelt",
+    "sechzehn",
+    "vier",
+    "zwölf"
+  ],
+  "scenes": [
+    {
+      "id": "frage",
+      "text": "Ein Liter Wasser, drei Geräte. Eins davon braucht doppelt so viel Strom wie der Sieger. Welches?",
+      "overlay": {
+        "type": "title",
+        "line1": "1 Liter Wasser, 3 Geräte:",
+        "line2": "Wer braucht doppelt so viel?",
+        "options": [
+          "Wasserkocher",
+          "Herdplatte",
+          "Mikrowelle"
+        ]
+      }
+    },
+    {
+      "id": "kettle",
+      "text": "Der Wasserkocher braucht laut Stiftung Warentest gut eine Zehntel Kilowattstunde. Das sind rund vier Cent, und nach gut drei Minuten kocht es.",
+      "chapter": "1 · Wasserkocher"
+    },
+    {
+      "id": "herd",
+      "text": "Die klassische Herdplatte braucht fast doppelt so viel, knapp acht Cent. Sie heizt erst sich selbst, dann den Topf, dann das Wasser. Nur Induktion kommt fast an den Wasserkocher heran.",
+      "chapter": "2 · Herdplatte"
+    },
+    {
+      "id": "mikro",
+      "text": "Und die Mikrowelle? Über acht Cent, doppelt so viel wie der Wasserkocher. Und sie braucht zwölf Minuten.",
+      "chapter": "3 · Mikrowelle"
+    },
+    {
+      "id": "ergebnis",
+      "text": "Bei einem Liter am Tag sind das rund sechzehn Euro im Jahr Unterschied.",
+      "chapter": "Ergebnis",
+      "overlay": {
+        "type": "bars",
+        "title": "Kosten pro Liter",
+        "rows": [
+          {
+            "label": "Wasserkocher",
+            "value": 4.3,
+            "decimals": 1,
+            "unit": "ct",
+            "tone": "good"
+          },
+          {
+            "label": "Induktion",
+            "value": 4.6,
+            "decimals": 1,
+            "unit": "ct",
+            "tone": "good"
+          },
+          {
+            "label": "Ceranfeld",
+            "value": 6.3,
+            "decimals": 1,
+            "unit": "ct"
+          },
+          {
+            "label": "Herdplatte",
+            "value": 7.7,
+            "decimals": 1,
+            "unit": "ct",
+            "tone": "bad"
+          },
+          {
+            "label": "Mikrowelle",
+            "value": 8.5,
+            "decimals": 1,
+            "unit": "ct",
+            "tone": "bad"
+          }
+        ],
+        "highlight": {
+          "text": "+16 € im Jahr",
+          "sub": "1 Liter am Tag: Mikrowelle statt Wasserkocher"
+        },
+        "note": "Strom 37,0 ct/kWh (BDEW 2026) · Messwerte: Stiftung Warentest"
+      }
+    },
+    {
+      "id": "warum",
+      "text": "Der Wasserkocher gewinnt, weil sein Heizelement direkt am Wasser sitzt. Da geht kaum Wärme daneben.",
+      "chapter": "Warum?",
+      "overlay": {
+        "type": "chip",
+        "chip": {
+          "icon": "plus",
+          "text": "Heizelement direkt am Wasser",
+          "top": 570,
+          "delay": 25
+        }
+      }
+    },
+    {
+      "id": "ende",
+      "text": "Also: Wasser in den Wasserkocher, und nur so viel, wie ihr braucht.",
+      "overlay": {
+        "type": "end",
+        "line": "Haustechnik, nachgerechnet."
+      }
+    }
+  ],
+  "style": "clean",
+  "scoreboard": {
+    "title": "1 Liter Wasser kochen · Strom 37 ct/kWh",
+    "from": "frage",
+    "until": "ergebnis",
+    "columns": [
+      {
+        "label": "Wasserkocher",
+        "color": "#2DE1C2",
+        "value": 4.3,
+        "unit": "ct",
+        "decimals": 1,
+        "sub": "3:18 min",
+        "reveal": {
+          "scene": "kettle",
+          "word": "vier"
+        }
+      },
+      {
+        "label": "Herdplatte",
+        "color": "#FFD23F",
+        "value": 7.7,
+        "unit": "ct",
+        "decimals": 1,
+        "sub": "6:18 min",
+        "reveal": {
+          "scene": "herd",
+          "word": "acht"
+        }
+      },
+      {
+        "label": "Mikrowelle",
+        "color": "#FF5C7A",
+        "value": 8.5,
+        "unit": "ct",
+        "decimals": 1,
+        "sub": "12:18 min",
+        "reveal": {
+          "scene": "mikro",
+          "word": "acht"
+        }
+      }
+    ],
+    "notes": [
+      {
+        "scene": "herd",
+        "text": "Induktion: 4,6 ct – fast so gut",
+        "word": "Induktion"
+      },
+      {
+        "scene": "mikro",
+        "text": "doppelt so viel wie der Wasserkocher",
+        "tone": "bad",
+        "word": "doppelt"
+      }
+    ]
+  }
+}

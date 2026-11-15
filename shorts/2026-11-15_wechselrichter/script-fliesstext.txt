@@ -1,0 +1,6 @@
+Dein Solardach liefert Gleichstrom. Deine Steckdose braucht aber Wechselstrom. Wie passt das zusammen?
+Gleichstrom fließt immer in eine Richtung. Wechselstrom pendelt fünfzigmal pro Sekunde hin und zurück.
+Im Wechselrichter sitzen dafür vier elektronische Schalter, die sogenannte H-Brücke.
+Schalten sie über Kreuz um, fließt der Strom mal hin, mal zurück. Das ergibt aber nur ein grobes Rechteck.
+Deshalb schalten sie tausende Male pro Sekunde und machen die Pulse mal breit, mal schmal.
+Spule und Kondensator glätten das Ganze. Heraus kommt ein sauberer Sinus mit 230 Volt, bereit für die Steckdose.

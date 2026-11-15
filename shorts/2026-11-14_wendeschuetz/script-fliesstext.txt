@@ -1,0 +1,6 @@
+Wie funktioniert eigentlich eine Wendeschützschaltung?
+Sie lässt einen Drehstrommotor in beide Richtungen laufen, zum Beispiel beim Rolltor: einmal hoch, einmal runter.
+Der Trick ist simpel: Tauscht man zwei Phasen, dreht der Motor andersrum.
+Dafür gibt es zwei Schütze. Drückst du S1, schaltet K1 die Phasen ganz normal durch, und der Motor läuft rechts. K1 hält sich dabei selbst.
+Erst S0, alles aus. Dann S2: K2 tauscht L1 und L3, und der Motor läuft links.
+Wichtig: Beide Schütze dürfen nie gleichzeitig an sein, sonst gibt es einen Kurzschluss. Deshalb sperrt jedes Schütz das andere. Das nennt man Verriegelung.

@@ -1,0 +1,17 @@
+{
+  "format": "short-9x16",
+  "title": "Wie wird aus Solarstrom Steckdosenstrom?",
+  "status": "draft",
+  "scene": "wechselrichter",
+  "style": "frame",
+  "theme": "light",
+  "overlays": true,
+  "scenes": [
+    {"id": "frage", "text": "Dein Solardach liefert Gleichstrom. Deine Steckdose braucht aber Wechselstrom. Wie passt das zusammen?"},
+    {"id": "arten", "text": "Gleichstrom fließt immer in eine Richtung. Wechselstrom pendelt fünfzigmal pro Sekunde hin und zurück."},
+    {"id": "bruecke", "text": "Im Wechselrichter sitzen dafür vier elektronische Schalter, die sogenannte H-Brücke."},
+    {"id": "kreuz", "text": "Schalten sie über Kreuz um, fließt der Strom mal hin, mal zurück. Das ergibt aber nur ein grobes Rechteck."},
+    {"id": "pwm", "text": "Deshalb schalten sie tausende Male pro Sekunde und machen die Pulse mal breit, mal schmal."},
+    {"id": "filter", "text": "Spule und Kondensator glätten das Ganze. Heraus kommt ein sauberer Sinus mit 230 Volt, bereit für die Steckdose."}
+  ]
+}

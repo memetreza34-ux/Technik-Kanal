@@ -12,13 +12,27 @@
     "voice:youtube": "node scripts/generate-youtube-voice.mjs",
     "youtube:check": "node scripts/check-video.mjs",
     "youtube:render": "node scripts/render-video.mjs",
-    "youtube:verify": "node scripts/verify-render.mjs"
+    "youtube:verify": "node scripts/verify-render.mjs",
+    "short:captions": "node scripts/short-captions.mjs",
+    "short:stage": "node scripts/short-stage.mjs",
+    "short:render": "node scripts/render-short.mjs",
+    "assets:fetch": "node scripts/fetch-assets.mjs"
   },
   "dependencies": {
+    "@react-three/drei": "10.7.6",
+    "@react-three/fiber": "9.3.0",
+    "@react-three/postprocessing": "3.0.4",
+    "@remotion/captions": "4.0.490",
     "@remotion/cli": "4.0.490",
-    "remotion": "4.0.490",
+    "@remotion/google-fonts": "4.0.490",
+    "@remotion/install-whisper-cpp": "4.0.490",
+    "@remotion/three": "4.0.490",
+    "@types/three": "0.180.0",
+    "postprocessing": "6.37.8",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "remotion": "4.0.490",
+    "three": "0.180.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.0",

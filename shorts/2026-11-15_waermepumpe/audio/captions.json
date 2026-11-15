@@ -1,0 +1,716 @@
+[
+ {
+  "text": "Eine",
+  "startMs": 250,
+  "endMs": 251,
+  "timestampMs": 250,
+  "confidence": 1
+ },
+ {
+  "text": " Wärmepumpe",
+  "startMs": 270,
+  "endMs": 910,
+  "timestampMs": 590,
+  "confidence": 1
+ },
+ {
+  "text": " heizt",
+  "startMs": 910,
+  "endMs": 1210,
+  "timestampMs": 1060,
+  "confidence": 1
+ },
+ {
+  "text": " mit",
+  "startMs": 1210,
+  "endMs": 1390,
+  "timestampMs": 1300,
+  "confidence": 1
+ },
+ {
+  "text": " Außenluft,",
+  "startMs": 1390,
+  "endMs": 1950,
+  "timestampMs": 1670,
+  "confidence": 1
+ },
+ {
+  "text": " sogar",
+  "startMs": 2100,
+  "endMs": 2300,
+  "timestampMs": 2200,
+  "confidence": 1
+ },
+ {
+  "text": " bei",
+  "startMs": 2360,
+  "endMs": 2490,
+  "timestampMs": 2425,
+  "confidence": 1
+ },
+ {
+  "text": " minus",
+  "startMs": 2490,
+  "endMs": 2705,
+  "timestampMs": 2598,
+  "confidence": 0
+ },
+ {
+  "text": " zehn",
+  "startMs": 2705,
+  "endMs": 2920,
+  "timestampMs": 2813,
+  "confidence": 0
+ },
+ {
+  "text": " Grad.",
+  "startMs": 2920,
+  "endMs": 3460,
+  "timestampMs": 3190,
+  "confidence": 1
+ },
+ {
+  "text": " Wie",
+  "startMs": 3600,
+  "endMs": 3640,
+  "timestampMs": 3620,
+  "confidence": 1
+ },
+ {
+  "text": " soll",
+  "startMs": 3640,
+  "endMs": 3860,
+  "timestampMs": 3750,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 3860,
+  "endMs": 4000,
+  "timestampMs": 3930,
+  "confidence": 1
+ },
+ {
+  "text": " gehen?",
+  "startMs": 4050,
+  "endMs": 4480,
+  "timestampMs": 4265,
+  "confidence": 1
+ },
+ {
+  "text": " Im",
+  "startMs": 4480,
+  "endMs": 4560,
+  "timestampMs": 4520,
+  "confidence": 1
+ },
+ {
+  "text": " Inneren",
+  "startMs": 4600,
+  "endMs": 4890,
+  "timestampMs": 4745,
+  "confidence": 1
+ },
+ {
+  "text": " kreist",
+  "startMs": 4890,
+  "endMs": 5150,
+  "timestampMs": 5020,
+  "confidence": 1
+ },
+ {
+  "text": " ein",
+  "startMs": 5150,
+  "endMs": 5280,
+  "timestampMs": 5215,
+  "confidence": 1
+ },
+ {
+  "text": " Kältemittel.",
+  "startMs": 5280,
+  "endMs": 5920,
+  "timestampMs": 5600,
+  "confidence": 1
+ },
+ {
+  "text": " Es",
+  "startMs": 6130,
+  "endMs": 6131,
+  "timestampMs": 6130,
+  "confidence": 1
+ },
+ {
+  "text": " siedet",
+  "startMs": 6160,
+  "endMs": 6460,
+  "timestampMs": 6310,
+  "confidence": 1
+ },
+ {
+  "text": " schon",
+  "startMs": 6460,
+  "endMs": 6750,
+  "timestampMs": 6605,
+  "confidence": 1
+ },
+ {
+  "text": " bei",
+  "startMs": 6750,
+  "endMs": 6920,
+  "timestampMs": 6835,
+  "confidence": 1
+ },
+ {
+  "text": " rund",
+  "startMs": 6920,
+  "endMs": 7150,
+  "timestampMs": 7035,
+  "confidence": 1
+ },
+ {
+  "text": " minus",
+  "startMs": 7150,
+  "endMs": 7350,
+  "timestampMs": 7250,
+  "confidence": 0
+ },
+ {
+  "text": " vierzig",
+  "startMs": 7350,
+  "endMs": 7550,
+  "timestampMs": 7450,
+  "confidence": 0
+ },
+ {
+  "text": " Grad.",
+  "startMs": 7550,
+  "endMs": 7850,
+  "timestampMs": 7700,
+  "confidence": 1
+ },
+ {
+  "text": " Der",
+  "startMs": 8110,
+  "endMs": 8160,
+  "timestampMs": 8135,
+  "confidence": 1
+ },
+ {
+  "text": " Ventilator",
+  "startMs": 8160,
+  "endMs": 8630,
+  "timestampMs": 8395,
+  "confidence": 1
+ },
+ {
+  "text": " bläst",
+  "startMs": 8630,
+  "endMs": 8900,
+  "timestampMs": 8765,
+  "confidence": 1
+ },
+ {
+  "text": " Außenluft",
+  "startMs": 8900,
+  "endMs": 9300,
+  "timestampMs": 9100,
+  "confidence": 1
+ },
+ {
+  "text": " über",
+  "startMs": 9390,
+  "endMs": 9550,
+  "timestampMs": 9470,
+  "confidence": 1
+ },
+ {
+  "text": " den",
+  "startMs": 9650,
+  "endMs": 9740,
+  "timestampMs": 9695,
+  "confidence": 1
+ },
+ {
+  "text": " Verdampfer.",
+  "startMs": 9740,
+  "endMs": 10380,
+  "timestampMs": 10060,
+  "confidence": 1
+ },
+ {
+  "text": " Die",
+  "startMs": 10630,
+  "endMs": 10631,
+  "timestampMs": 10630,
+  "confidence": 1
+ },
+ {
+  "text": " Luft",
+  "startMs": 10650,
+  "endMs": 10840,
+  "timestampMs": 10745,
+  "confidence": 1
+ },
+ {
+  "text": " ist",
+  "startMs": 10840,
+  "endMs": 10841,
+  "timestampMs": 10840,
+  "confidence": 1
+ },
+ {
+  "text": " immer",
+  "startMs": 11010,
+  "endMs": 11250,
+  "timestampMs": 11130,
+  "confidence": 1
+ },
+ {
+  "text": " noch",
+  "startMs": 11250,
+  "endMs": 11450,
+  "timestampMs": 11350,
+  "confidence": 1
+ },
+ {
+  "text": " wärmer",
+  "startMs": 11550,
+  "endMs": 11820,
+  "timestampMs": 11685,
+  "confidence": 1
+ },
+ {
+  "text": " als",
+  "startMs": 11820,
+  "endMs": 11970,
+  "timestampMs": 11895,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 11970,
+  "endMs": 12120,
+  "timestampMs": 12045,
+  "confidence": 1
+ },
+ {
+  "text": " Kältemittel,",
+  "startMs": 12120,
+  "endMs": 12840,
+  "timestampMs": 12480,
+  "confidence": 1
+ },
+ {
+  "text": " also",
+  "startMs": 12980,
+  "endMs": 13080,
+  "timestampMs": 13030,
+  "confidence": 1
+ },
+ {
+  "text": " nimmt",
+  "startMs": 13080,
+  "endMs": 13350,
+  "timestampMs": 13215,
+  "confidence": 1
+ },
+ {
+  "text": " es",
+  "startMs": 13380,
+  "endMs": 13500,
+  "timestampMs": 13440,
+  "confidence": 1
+ },
+ {
+  "text": " Wärme",
+  "startMs": 13500,
+  "endMs": 13850,
+  "timestampMs": 13675,
+  "confidence": 1
+ },
+ {
+  "text": " auf",
+  "startMs": 13850,
+  "endMs": 13940,
+  "timestampMs": 13895,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 14220,
+  "endMs": 14221,
+  "timestampMs": 14220,
+  "confidence": 1
+ },
+ {
+  "text": " verdampft.",
+  "startMs": 14230,
+  "endMs": 14760,
+  "timestampMs": 14495,
+  "confidence": 1
+ },
+ {
+  "text": " Dann",
+  "startMs": 14970,
+  "endMs": 14990,
+  "timestampMs": 14980,
+  "confidence": 1
+ },
+ {
+  "text": " presst",
+  "startMs": 14990,
+  "endMs": 15270,
+  "timestampMs": 15130,
+  "confidence": 1
+ },
+ {
+  "text": " der",
+  "startMs": 15270,
+  "endMs": 15320,
+  "timestampMs": 15295,
+  "confidence": 1
+ },
+ {
+  "text": " Verdichter",
+  "startMs": 15410,
+  "endMs": 15870,
+  "timestampMs": 15640,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 15870,
+  "endMs": 16010,
+  "timestampMs": 15940,
+  "confidence": 1
+ },
+ {
+  "text": " Gas",
+  "startMs": 16010,
+  "endMs": 16150,
+  "timestampMs": 16080,
+  "confidence": 1
+ },
+ {
+  "text": " zusammen.",
+  "startMs": 16150,
+  "endMs": 16570,
+  "timestampMs": 16360,
+  "confidence": 1
+ },
+ {
+  "text": " Dadurch",
+  "startMs": 16770,
+  "endMs": 17000,
+  "timestampMs": 16885,
+  "confidence": 1
+ },
+ {
+  "text": " wird",
+  "startMs": 17000,
+  "endMs": 17170,
+  "timestampMs": 17085,
+  "confidence": 1
+ },
+ {
+  "text": " es",
+  "startMs": 17170,
+  "endMs": 17250,
+  "timestampMs": 17210,
+  "confidence": 1
+ },
+ {
+  "text": " richtig",
+  "startMs": 17250,
+  "endMs": 17550,
+  "timestampMs": 17400,
+  "confidence": 1
+ },
+ {
+  "text": " heiß,",
+  "startMs": 17550,
+  "endMs": 17860,
+  "timestampMs": 17705,
+  "confidence": 1
+ },
+ {
+  "text": " über",
+  "startMs": 17860,
+  "endMs": 18080,
+  "timestampMs": 17970,
+  "confidence": 1
+ },
+ {
+  "text": " siebzig",
+  "startMs": 18080,
+  "endMs": 18340,
+  "timestampMs": 18210,
+  "confidence": 0
+ },
+ {
+  "text": " Grad.",
+  "startMs": 18340,
+  "endMs": 18570,
+  "timestampMs": 18455,
+  "confidence": 1
+ },
+ {
+  "text": " Im",
+  "startMs": 18790,
+  "endMs": 18810,
+  "timestampMs": 18800,
+  "confidence": 1
+ },
+ {
+  "text": " Haus",
+  "startMs": 18810,
+  "endMs": 19030,
+  "timestampMs": 18920,
+  "confidence": 1
+ },
+ {
+  "text": " gibt",
+  "startMs": 19030,
+  "endMs": 19240,
+  "timestampMs": 19135,
+  "confidence": 1
+ },
+ {
+  "text": " es",
+  "startMs": 19300,
+  "endMs": 19360,
+  "timestampMs": 19330,
+  "confidence": 1
+ },
+ {
+  "text": " diese",
+  "startMs": 19460,
+  "endMs": 19630,
+  "timestampMs": 19545,
+  "confidence": 1
+ },
+ {
+  "text": " Wärme",
+  "startMs": 19630,
+  "endMs": 19940,
+  "timestampMs": 19785,
+  "confidence": 1
+ },
+ {
+  "text": " an",
+  "startMs": 19940,
+  "endMs": 20050,
+  "timestampMs": 19995,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 20050,
+  "endMs": 20210,
+  "timestampMs": 20130,
+  "confidence": 1
+ },
+ {
+  "text": " Heizungswasser",
+  "startMs": 20210,
+  "endMs": 20940,
+  "timestampMs": 20575,
+  "confidence": 1
+ },
+ {
+  "text": " ab",
+  "startMs": 20940,
+  "endMs": 20990,
+  "timestampMs": 20965,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 21220,
+  "endMs": 21240,
+  "timestampMs": 21230,
+  "confidence": 1
+ },
+ {
+  "text": " wird",
+  "startMs": 21240,
+  "endMs": 21400,
+  "timestampMs": 21320,
+  "confidence": 1
+ },
+ {
+  "text": " wieder",
+  "startMs": 21400,
+  "endMs": 21630,
+  "timestampMs": 21515,
+  "confidence": 1
+ },
+ {
+  "text": " flüssig.",
+  "startMs": 21720,
+  "endMs": 22070,
+  "timestampMs": 21895,
+  "confidence": 1
+ },
+ {
+  "text": " Das",
+  "startMs": 22210,
+  "endMs": 22260,
+  "timestampMs": 22235,
+  "confidence": 1
+ },
+ {
+  "text": " Expansionsventil",
+  "startMs": 22260,
+  "endMs": 23170,
+  "timestampMs": 22715,
+  "confidence": 1
+ },
+ {
+  "text": " senkt",
+  "startMs": 23270,
+  "endMs": 23420,
+  "timestampMs": 23345,
+  "confidence": 1
+ },
+ {
+  "text": " den",
+  "startMs": 23520,
+  "endMs": 23680,
+  "timestampMs": 23600,
+  "confidence": 1
+ },
+ {
+  "text": " Druck,",
+  "startMs": 23760,
+  "endMs": 24110,
+  "timestampMs": 23935,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 24170,
+  "endMs": 24280,
+  "timestampMs": 24225,
+  "confidence": 1
+ },
+ {
+  "text": " Kältemittel",
+  "startMs": 24380,
+  "endMs": 24960,
+  "timestampMs": 24670,
+  "confidence": 1
+ },
+ {
+  "text": " wird",
+  "startMs": 25090,
+  "endMs": 25240,
+  "timestampMs": 25165,
+  "confidence": 1
+ },
+ {
+  "text": " eiskalt,",
+  "startMs": 25240,
+  "endMs": 25500,
+  "timestampMs": 25370,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 25680,
+  "endMs": 25830,
+  "timestampMs": 25755,
+  "confidence": 1
+ },
+ {
+  "text": " alles",
+  "startMs": 25830,
+  "endMs": 26090,
+  "timestampMs": 25960,
+  "confidence": 1
+ },
+ {
+  "text": " beginnt",
+  "startMs": 26090,
+  "endMs": 26430,
+  "timestampMs": 26260,
+  "confidence": 1
+ },
+ {
+  "text": " von",
+  "startMs": 26510,
+  "endMs": 26600,
+  "timestampMs": 26555,
+  "confidence": 1
+ },
+ {
+  "text": " vorn.",
+  "startMs": 26600,
+  "endMs": 26890,
+  "timestampMs": 26745,
+  "confidence": 1
+ },
+ {
+  "text": " So",
+  "startMs": 27090,
+  "endMs": 27091,
+  "timestampMs": 27090,
+  "confidence": 1
+ },
+ {
+  "text": " macht",
+  "startMs": 27120,
+  "endMs": 27320,
+  "timestampMs": 27220,
+  "confidence": 1
+ },
+ {
+  "text": " eine",
+  "startMs": 27370,
+  "endMs": 27520,
+  "timestampMs": 27445,
+  "confidence": 1
+ },
+ {
+  "text": " Kilowattstunde",
+  "startMs": 27520,
+  "endMs": 28170,
+  "timestampMs": 27845,
+  "confidence": 1
+ },
+ {
+  "text": " Strom",
+  "startMs": 28170,
+  "endMs": 28410,
+  "timestampMs": 28290,
+  "confidence": 1
+ },
+ {
+  "text": " rund",
+  "startMs": 28410,
+  "endMs": 28600,
+  "timestampMs": 28505,
+  "confidence": 1
+ },
+ {
+  "text": " drei",
+  "startMs": 28600,
+  "endMs": 28780,
+  "timestampMs": 28690,
+  "confidence": 1
+ },
+ {
+  "text": " Kilowattstunden",
+  "startMs": 28790,
+  "endMs": 29490,
+  "timestampMs": 29140,
+  "confidence": 1
+ },
+ {
+  "text": " Wärme.",
+  "startMs": 29490,
+  "endMs": 29840,
+  "timestampMs": 29665,
+  "confidence": 1
+ }
+]

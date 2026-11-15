@@ -1,0 +1,69 @@
+{
+  "format": "short-9x16",
+  "title": "1 Liter Wasser: Wasserkocher, Herd oder Mikrowelle?",
+  "status": "draft",
+  "scene": "water-night",
+  "style": "night",
+  "overlays": true,
+  "scenes": [
+    {
+      "id": "frage",
+      "text": "Ihr wollt einen Liter Wasser kochen. Wasserkocher, Herd oder Mikrowelle: Was ist am billigsten?",
+      "heading": "1 Liter kochen = [? ct]",
+      "overlay": {"type": "facts", "label": "Wer gewinnt?", "chips": [
+        {"text": "Wasserkocher", "word": "Wasserkocher"},
+        {"text": "Herd", "word": "Herd"},
+        {"text": "Mikrowelle", "word": "Mikrowelle"}
+      ]}
+    },
+    {
+      "id": "rechnen",
+      "text": "Rechnen wir nach. Ein Liter, bis er sprudelt, Strom zu siebenunddreißig Cent.",
+      "heading": "Rechnen wir [nach]",
+      "overlay": {"type": "facts", "label": "Beispiel", "chips": [
+        {"text": "1 Liter", "word": "Liter"},
+        {"text": "bis 100 °C", "word": "sprudelt"},
+        {"text": "37 ct/kWh", "word": "Cent"}
+      ]}
+    },
+    {
+      "id": "kettle",
+      "text": "Der Wasserkocher: Sein Heizelement sitzt direkt unter dem Wasser. Gut drei Minuten, rund vier Cent.",
+      "heading": "1 · [Wasserkocher]",
+      "overlay": {"type": "facts", "label": "Wasserkocher · 1 Liter", "value": {"text": "0,115 kWh", "word": "Minuten"}, "sub": "3:18 min", "result": {"text": "≈ 4,3 ct", "word": "vier", "tone": "good"}, "source": "Messung: Stiftung Warentest"}
+    },
+    {
+      "id": "herd",
+      "text": "Die Herdplatte heizt erst sich selbst, dann den Topf. Viel Wärme geht in die Küche. Knapp acht Cent.",
+      "heading": "2 · [Herdplatte]",
+      "overlay": {"type": "facts", "label": "Herdplatte · 1 Liter", "value": {"text": "0,208 kWh", "word": "Küche"}, "sub": "6:18 min", "result": {"text": "≈ 7,7 ct", "word": "acht"}, "source": "Messung: Stiftung Warentest"}
+    },
+    {
+      "id": "mikro",
+      "text": "Die Mikrowelle ist noch schlechter: über acht Cent, und sie braucht zwölf Minuten.",
+      "heading": "3 · [Mikrowelle]",
+      "overlay": {"type": "facts", "label": "Mikrowelle · 1 Liter", "value": {"text": "0,231 kWh", "word": "schlechter"}, "sub": "12:18 min", "result": {"text": "≈ 8,5 ct", "word": "acht", "tone": "bad"}, "source": "Messung: Stiftung Warentest"}
+    },
+    {
+      "id": "jahr",
+      "text": "Ein Liter am Tag in der Mikrowelle statt im Wasserkocher: rund sechzehn Euro im Jahr.",
+      "heading": "Aufs Jahr [gerechnet]",
+      "overlay": {"type": "facts", "label": "Mehrkosten Mikrowelle · 1 Liter/Tag", "value": {"text": "365 × 4,3 ct", "word": "Wasserkocher"}, "result": {"text": "≈ 16 €/Jahr", "word": "Euro", "tone": "bad"}}
+    },
+    {
+      "id": "tipp",
+      "text": "Also: Wasserkocher, und nur so viel Wasser, wie ihr braucht.",
+      "heading": "Kurz [gesagt]",
+      "overlay": {"type": "checklist", "items": [
+        {"text": "Wasser in der Mikrowelle", "ok": false, "word": "Also"},
+        {"text": "Wasserkocher nehmen", "ok": true, "word": "Wasserkocher"},
+        {"text": "Nur so viel wie nötig", "ok": true, "word": "braucht"}
+      ]}
+    },
+    {
+      "id": "ende",
+      "text": "Folgt für mehr Technik, einfach erklärt.",
+      "overlay": {"type": "end", "line": "Technik, einfach erklärt."}
+    }
+  ]
+}

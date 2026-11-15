@@ -81,3 +81,27 @@ test('Voice-Normalisierung, 32-Wort-Chunking und script-fliesstext.txt Dry-Run f
   await rm(tmpDir,{recursive:true,force:true});
  }
 });
+
+test('Short-Untertitel: Skriptwörter bekommen Whisper-Zeiten, Lücken werden interpoliert',async()=>{
+ const {alignScriptToTimestamps}=await import('./lib/align-words.mjs');
+ const timed=[{text:'Dein',startMs:0,endMs:200},{text:'Handy',startMs:250,endMs:500},{text:'ladet',startMs:550,endMs:800},{text:'ohne',startMs:850,endMs:1000},{text:'Kabel',startMs:1050,endMs:1400}];
+ const {words,matchRatio}=alignScriptToTimestamps(['Dein','Handy','lädt','ohne','Kabel.'],timed);
+ assert.equal(words.length,5);
+ assert.equal(words[0].text,'Dein');assert.equal(words[4].text,' Kabel.');
+ assert.equal(words[1].startMs,250);
+ assert.ok(words[2].startMs>=500&&words[2].endMs<=850,'Lücke liegt zwischen den Nachbarn');
+ assert.equal(matchRatio,0.8);
+ assert.ok(words.every((w,i)=>i===0||w.startMs>=words[i-1].startMs),'Zeiten steigen monoton');
+});
+
+test('3D-Asset-Manifest: nur Poly-Haven-IDs, Download-Skript und Ignorieren vorhanden',()=>{
+ const m=JSON.parse(fs.readFileSync('assets/3d-manifest.json','utf8'));
+ assert.ok(Object.keys(m.models).length>=10);assert.ok(Object.keys(m.hdris).length>=1);
+ for(const id of [...Object.keys(m.models),...Object.keys(m.hdris)]) assert.match(id,/^[A-Za-z0-9_]+$/);
+ assert.match(fs.readFileSync('.gitignore','utf8'),/public\/3d\//);
+ const pkg=JSON.parse(fs.readFileSync('package.json','utf8'));assert.ok(pkg.scripts['assets:fetch']);
+});
+test('Technik-Welt: jeder Short-Szene-Anker existiert im Haus',()=>{
+ const haus=fs.readFileSync('src/world/TechnikHaus.tsx','utf8');
+ for(const used of fs.readFileSync('src/short/scenes/WirelessCharging.tsx','utf8').matchAll(/HAUS_ANCHORS\.(\w+)/g)) assert.match(haus,new RegExp('\\b'+used[1]+':'));
+});
