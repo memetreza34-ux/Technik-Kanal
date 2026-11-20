@@ -1,0 +1,6 @@
+{"image":"illustration/04.jpeg","theme":"light","title":"Fliehkraftregler",
+ "labels":[{"at":[400,300],"text":"Fliehgewicht","to":[770,395],"tone":"main"},
+           {"at":[470,820],"text":"Feder","to":[740,533],"tone":"plain"},
+           {"at":[1600,300],"text":"Sperrklinke","to":[1308,372],"tone":"signal"}],
+ "arrows":[{"from":[640,300],"to":[930,130],"tone":"signal","curve":-0.18}],
+ "cards":[{"at":[1290,650],"title":"Fliehkraft","lines":[{"text":"F = m · ω² · r","big":true},{"text":"schneller → weiter nach außen","tone":"main"}]}]}

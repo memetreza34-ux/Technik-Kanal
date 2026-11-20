@@ -1,0 +1,3 @@
+{"image":"illustration/waermepumpe/B04.jpeg","theme":"light",
+ "labels":[{"at":[1280,330],"text":"siedet schon bei ca. −40 °C","sub":"Kältemittel R290","to":[680,520],"tone":"signal"},
+           {"at":[1280,760],"text":"Luft ist wärmer","sub":"−10 °C gibt Wärme ab","to":[860,700],"tone":"main"}]}

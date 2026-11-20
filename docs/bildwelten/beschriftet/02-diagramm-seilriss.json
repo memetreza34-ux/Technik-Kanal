@@ -1,0 +1,5 @@
+{"image":"illustration/07.jpeg","theme":"light",
+ "chart":{"box":[700,160,1140,780],"x":"Zeit","y":"Geschwindigkeit",
+   "series":[{"points":[[0,0.6],[0.4,0.6],[0.55,0.72],[0.68,0],[1,0]],"tone":"signal"}],
+   "marks":[{"at":0.4,"text":"Seil reißt","tone":"danger"},{"at":0.55,"text":"Regler löst aus","tone":"main"}]},
+ "cards":[{"at":[800,580],"lines":[{"text":"Auslösung bei ca. 115 %"},{"text":"der Nenngeschwindigkeit","tone":"main"}]}]}

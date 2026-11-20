@@ -1,0 +1,5 @@
+Draußen sind minus zehn Grad, und trotzdem ist es im Haus warm. Geheizt wird mit genau dieser kalten Luft. Schauen wir uns das Außengerät genauer an.
+Von außen sieht man nur ein Gehäuse mit einem großen Ventilator. Nehmen wir die Front ab.
+Direkt hinter dem Ventilator sitzt der Verdampfer: dünne Aluminium-Lamellen, durchzogen von Kupferrohren. Darin fließt ein Kältemittel, das schon bei rund minus vierzig Grad siedet. Die Außenluft ist also immer noch wärmer. Sie gibt Wärme ab, und das Kältemittel verdampft.
+Daneben steht der Verdichter. Er presst das Gas zusammen, und dabei steigt die Temperatur auf über siebzig Grad.
+Zusammen ergibt das einen Kreislauf: verdampfen, verdichten, Wärme abgeben, Druck absenken. Und dann alles von vorn.

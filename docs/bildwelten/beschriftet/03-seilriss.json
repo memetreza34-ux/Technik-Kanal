@@ -1,0 +1,5 @@
+{"image":"illustration/06.jpeg","theme":"dark",
+ "labels":[{"at":[330,820],"text":"Bremskeil","to":[708,650],"tone":"main"},
+           {"at":[1600,820],"text":"Bremskeil","to":[1212,650],"tone":"main"},
+           {"at":[1560,170],"text":"Tragseil gerissen","to":[1000,110],"tone":"danger"}],
+ "cards":[{"at":[80,80],"lines":[{"text":"Die Kabine bleibt"},{"text":"an den Schienen hängen","tone":"main"}]}]}

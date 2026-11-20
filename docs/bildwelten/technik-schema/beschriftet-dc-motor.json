@@ -1,0 +1,5 @@
+{"image":"illustration/b-01.jpeg","theme":"dark","title":"Gleichstrommotor",
+ "labels":[{"at":[420,180],"text":"Permanentmagnet","to":[690,300],"tone":"danger"},
+           {"at":[1560,840],"text":"Permanentmagnet","to":[1290,700],"tone":"signal"},
+           {"at":[1500,330],"text":"Leiterschleife","to":[1010,440],"tone":"main"},
+           {"at":[330,820],"text":"Kommutator","to":[680,650],"tone":"plain"}]}
