@@ -59,7 +59,8 @@ Bilder (Nano Banana, 0 Credits) und Videoclips (Veo/Omni, kosten Credits) kommen
 - Fehlerbild „Timeout … waiting for getByRole('button', …)“ = Google hat die Flow-Oberfläche geändert → Knopfnamen in `~/flow-mcp/src/flow.ts` anpassen, neu bauen, **Studio neu starten**.
 
 ## Feste Regeln
-- Bildwelt Langvideo: „Technik + Schema“, Geräte in echter Umgebung, sauberer CG-Look (Render-Stufe 2). Verworfen: Fotorealismus, Spielzeug-/Knet-3D, 2D-Cartoon, Neon, graue Isometrie.
+- **Alle Dateien auf der externen SSD** (`/Volumes/T7`), nie auf dem internen Mac-Speicher – auch Renders, Downloads und Flow-Ausgabe.
+- Bildwelt Langvideo: „Technik + Schema“, Geräte in echter Umgebung, Look eines 3D-Animationsfilms (Render-Stufe 2+, Prompt-Vorlage im Handbuch), Technik korrekt. Verworfen: Fotorealismus, Spielzeug-/Knet-3D, 2D-Cartoon, Neon, graue Isometrie.
 - Text kommt nie aus der KI – alle Beschriftungen setzt Remotion.
 - Eigener Name „Technik verstehen“, Blitz, Gelb – keine fremden Marken.
 - Bestehende Videos nur auf ausdrücklichen Wunsch umbauen.

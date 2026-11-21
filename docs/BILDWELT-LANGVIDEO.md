@@ -1,10 +1,10 @@
 # Bildwelt für Langvideos (16:9) – Handbuch
 
-Stand 20.11.2026. Langvideos bestehen aus **Standbildern** (keine Animation wie bei den Shorts). Jedes Bild muss deshalb allein die Aussage tragen: sofort verständlich, unterhaltsam, sauber – kein KI-Slop.
+Stand 21.11.2026. Langvideos bestehen aus **Standbildern** (keine Animation wie bei den Shorts). Jedes Bild muss deshalb allein die Aussage tragen: sofort verständlich, unterhaltsam, sauber – kein KI-Slop.
 
 ## 1. Fester Kern (gleich in jedem Video)
 Entscheidung 16.11.2026 nach Moodboard echter Kanäle: **„Technik + Schema“** (Richtung The Engineering Mindset – eigene Version, keine Kopie).
-- **Render-Stufe 2 – „leicht animiert“** (Entscheidung Arman 16.11.2026): Aufbau wie echt, aber glatte saubere CG-Oberflächen, wärmere klare Farben, kein Staub/Schmutz, wenig Tiefenunschärfe. Nicht fotoreal (Stufe 1), nicht spielzeughaft (Stufe 3). Vergleich: `docs/bildwelt-animations-stufen.jpg`, Beispiele: `docs/bildwelten/technik-animiert/`.
+- **Render-Stufe 2+ – „animiert“** (Entscheidung Arman 21.11.2026, ersetzt Stufe 2): Look eines 3D-Animationsfilms – weich abgerundete Kanten, vereinfachte saubere Formen, kräftige warme Farben, stilisiertes weiches Licht mit Randlicht, Atmosphäre (z. B. fallender Schnee). Technik bleibt korrekt in Aufbau und Proportionen. Nicht fotoreal, nicht spielzeughaft/Plastik, keine Cartoon-Gesichter. Vergleich alt/neu: `docs/bildwelt-technik-animiert-plus.jpg`, Beispiele: `docs/bildwelten/technik-animiert-plus/`.
 - **Echte Umgebung als Standard:** Das Gerät steht dort, wo es wirklich ist (LS-Schalter im Sicherungskasten im Flur, Motor im Akkuschrauber auf der Werkbank, Induktionsspule unter dem Topf in der Küche) – sauber gerendert, Gehäuse aufgeschnitten, Strom/Feld/Wärme als farbige Leucht-Ebene darüber. Beispiele: `docs/bildwelten/technik-umgebung/`.
 - **Blaupausen-Blau mit Raster** nur für reine Prinzip-/Schema-Momente.
 - **Lokal passend:** deutsche Steckdosen (Schuko), deutsche Straßen/Häuser, deutsche Normfarben.
@@ -43,7 +43,7 @@ Verworfen (nicht wieder vorschlagen): Fotorealismus/Doku-Foto, Spielzeug-/Knet-3
 Faustregel für 10 Minuten: ca. 40–70 Bilder, alle 8–15 s ein neues Bild, nie zwei gleiche Bildtypen hintereinander.
 
 ## 4. Ablauf pro Video
-**Vorlage:** `videos/2026-11-15_test-studio-look/` (Wärmepumpe, 40 s) – von Arman am 20.11.2026 als Maßstab abgenommen: Bildwelt, Beschriftung und Animation passen. Für jedes neue Video genauso aufbauen (`bildplan.md`, `bilder/`, `beschriftung/`, `video.json`, `export/`).
+**Vorlage:** `videos/2026-11-15_test-studio-look/` (Wärmepumpe, 40 s) – von Arman am 20.11.2026 als Maßstab abgenommen: Aufbau, Beschriftung und Animation passen. Die Bilder darin sind noch Stufe 2 – neue Videos im Look Stufe 2+. Für jedes neue Video genauso aufbauen (`bildplan.md`, `bilder/`, `beschriftung/`, `video.json`, `export/`).
 
 1. **Skript in Szenen zerlegen:** pro Aussage eine Zeile in `bildplan.md`: Zeit (aus `audio/captions.json`) → Satz → Bildtyp → Licht/Umgebung → was MUSS zu sehen sein → Labels.
 2. **Prompt bauen** (Vorlage unten), **ohne jeden Text im Bild**, mit Freiraum dort, wo später Labels hinkommen.
@@ -54,7 +54,8 @@ Faustregel für 10 Minuten: ca. 40–70 Bilder, alle 8–15 s ein neues Bild, ni
 
 ## 5. Prompt-Vorlage (Englisch)
 ```
-Still from a high-quality 3D explainer ANIMATION (clean CG look, smooth simplified surfaces, no dirt, no photographic noise, saturated tasteful colours, soft clean lighting), the device in its REAL ENVIRONMENT, housing cut open, current as bold dashed glowing yellow line, magnetic field cyan, heat orange,
+Still from a polished 3D ANIMATED FEATURE FILM style explainer: stylised but technically accurate, softly rounded bevelled edges, simplified clean shapes, rich saturated warm colours, soft stylised lighting with gentle rim light; not photorealistic, not toy-like or plastic.
+The device in its REAL ENVIRONMENT, housing cut open, current as bold dashed glowing yellow line, magnetic field cyan, heat orange, air as soft semi-transparent wisps (never a pipe),
 [LICHT/TAGESZEIT], [UMGEBUNG].
 [WAS GENAU ZU SEHEN IST – ein Hauptobjekt, Zustand, Personen, Handlung].
 [KAMERA: Totale / Halbnah / Nah / Untersicht].
@@ -78,7 +79,8 @@ Absolutely no text, no letters, no numbers, no signs, no arrows.
 - [ ] Bei Hauptbildern 2 Varianten erzeugen und die genauere nehmen.
 
 ## 7. Referenzbilder
-- `docs/bildwelten/technik-animiert/`, `technik-umgebung/` – **aktueller Stil** (Render-Stufe 2, echte Umgebung)
+- `docs/bildwelten/technik-animiert-plus/` – **aktueller Stil** (Render-Stufe 2+, seit 21.11.2026)
+- `docs/bildwelten/technik-animiert/`, `technik-umgebung/` – vorherige Stufe 2 (Aufbau/Umgebung weiter gültig, Look jetzt animierter)
 - `docs/bildwelten/technik-schema/` – Blaupausen-Schema für Prinzip-Momente
 - `docs/bildwelten/2d-stil/`, `2d-elektrotechnik/`, `wie-shorts/`, `szenen-variiert/`, `technik-stark-animiert/` – verworfene Versuche (nur zum Vergleich)
 - `docs/bildwelten/erklaergrafiken/` – Look-Ideen für Grafiken (Text darin nur als Beispiel, nicht übernehmen)
