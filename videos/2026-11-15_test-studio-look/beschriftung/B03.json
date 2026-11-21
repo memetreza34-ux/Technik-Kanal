@@ -1,0 +1,4 @@
+{"image":"illustration/waermepumpe/B03.jpeg",
+ "labels":[{"at":[1480,250],"text":"Verdampfer","sub":"direkt hinter dem Ventilator","to":[1250,360],"tone":"signal"},
+           {"at":[1360,960],"text":"Aluminium-Lamellen","to":[1220,790],"tone":"plain"},
+           {"at":[520,420],"text":"Kupferrohre","to":[930,560],"tone":"main"}]}

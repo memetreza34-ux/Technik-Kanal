@@ -1,0 +1,4 @@
+{"image":"illustration/waermepumpe/B06.jpeg","theme":"light",
+ "labels":[{"at":[560,430],"text":"Verdichter","sub":"presst das Gas zusammen","to":[1250,620],"tone":"plain"},
+           {"at":[560,200],"text":"über 70 °C","sub":"heißes Gas","to":[1546,200],"tone":"main"},
+           {"at":[560,830],"text":"kaltes Gas","sub":"aus dem Verdampfer","to":[760,850],"tone":"signal"}]}

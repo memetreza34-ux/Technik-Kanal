@@ -1,0 +1,10 @@
+{
+  "title": "Test: Studio-Look für Langvideos (Wärmepumpe)",
+  "scenes": [
+    {"id": "welt", "text": "Draußen sind minus zehn Grad, und trotzdem ist es im Haus warm. Geheizt wird mit genau dieser kalten Luft. Schauen wir uns das Außengerät genauer an."},
+    {"id": "geraet", "text": "Von außen sieht man nur ein Gehäuse mit einem großen Ventilator. Nehmen wir die Front ab."},
+    {"id": "verdampfer", "text": "Direkt hinter dem Ventilator sitzt der Verdampfer: dünne Aluminium-Lamellen, durchzogen von Kupferrohren. Darin fließt ein Kältemittel, das schon bei rund minus vierzig Grad siedet. Die Außenluft ist also immer noch wärmer. Sie gibt Wärme ab, und das Kältemittel verdampft."},
+    {"id": "verdichter", "text": "Daneben steht der Verdichter. Er presst das Gas zusammen, und dabei steigt die Temperatur auf über siebzig Grad."},
+    {"id": "kreis", "text": "Zusammen ergibt das einen Kreislauf: verdampfen, verdichten, Wärme abgeben, Druck absenken. Und dann alles von vorn."}
+  ]
+}

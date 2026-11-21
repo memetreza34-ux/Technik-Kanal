@@ -1,0 +1,5 @@
+{"image":"illustration/waermepumpe/B05.jpeg","theme":"light",
+ "labels":[{"at":[1100,360],"text":"Außenluft −10 °C","sub":"wärmer"},
+           {"at":[1100,830],"text":"Kältemittel −40 °C","sub":"kälter"},
+           {"at":[1700,610],"text":"Wärme fließt","sub":"von warm nach kalt","tone":"main"}],
+ "arrows":[{"from":[1250,330],"to":[1250,770],"tone":"main"}]}

@@ -1,0 +1,5 @@
+{"image":"illustration/u-06.jpeg","title":"Induktionsherd","focus":{"at":[880,640],"r":380},
+ "labels":[{"at":[400,940],"text":"Kupferspule","sub":"hochfrequenter Wechselstrom","to":[696,804]},
+           {"at":[1540,330],"text":"Magnetfeld","sub":"geht durch das Glas","to":[1104,504],"tone":"signal"},
+           {"at":[420,470],"text":"Topfboden wird heiß","sub":"Wirbelströme im Stahl","to":[672,564],"tone":"main"},
+           {"at":[1520,840],"text":"Glas bleibt kühl","to":[1600,650]}]}

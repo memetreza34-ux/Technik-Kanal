@@ -1,0 +1,807 @@
+[
+ {
+  "text": "Draußen",
+  "startMs": 190,
+  "endMs": 510,
+  "timestampMs": 350,
+  "confidence": 1
+ },
+ {
+  "text": " sind",
+  "startMs": 510,
+  "endMs": 770,
+  "timestampMs": 640,
+  "confidence": 1
+ },
+ {
+  "text": " minus",
+  "startMs": 770,
+  "endMs": 990,
+  "timestampMs": 880,
+  "confidence": 0
+ },
+ {
+  "text": " zehn",
+  "startMs": 990,
+  "endMs": 1210,
+  "timestampMs": 1100,
+  "confidence": 0
+ },
+ {
+  "text": " Grad,",
+  "startMs": 1210,
+  "endMs": 1480,
+  "timestampMs": 1345,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 1480,
+  "endMs": 1670,
+  "timestampMs": 1575,
+  "confidence": 1
+ },
+ {
+  "text": " trotzdem",
+  "startMs": 1670,
+  "endMs": 2090,
+  "timestampMs": 1880,
+  "confidence": 1
+ },
+ {
+  "text": " ist",
+  "startMs": 2200,
+  "endMs": 2380,
+  "timestampMs": 2290,
+  "confidence": 1
+ },
+ {
+  "text": " es",
+  "startMs": 2380,
+  "endMs": 2510,
+  "timestampMs": 2445,
+  "confidence": 1
+ },
+ {
+  "text": " im",
+  "startMs": 2510,
+  "endMs": 2640,
+  "timestampMs": 2575,
+  "confidence": 1
+ },
+ {
+  "text": " Haus",
+  "startMs": 2640,
+  "endMs": 2860,
+  "timestampMs": 2750,
+  "confidence": 1
+ },
+ {
+  "text": " warm.",
+  "startMs": 2880,
+  "endMs": 3380,
+  "timestampMs": 3130,
+  "confidence": 1
+ },
+ {
+  "text": " Geheizt",
+  "startMs": 3420,
+  "endMs": 3690,
+  "timestampMs": 3555,
+  "confidence": 1
+ },
+ {
+  "text": " wird",
+  "startMs": 3690,
+  "endMs": 3880,
+  "timestampMs": 3785,
+  "confidence": 1
+ },
+ {
+  "text": " mit",
+  "startMs": 3880,
+  "endMs": 4080,
+  "timestampMs": 3980,
+  "confidence": 1
+ },
+ {
+  "text": " genau",
+  "startMs": 4080,
+  "endMs": 4340,
+  "timestampMs": 4210,
+  "confidence": 1
+ },
+ {
+  "text": " dieser",
+  "startMs": 4340,
+  "endMs": 4710,
+  "timestampMs": 4525,
+  "confidence": 1
+ },
+ {
+  "text": " kalten",
+  "startMs": 4710,
+  "endMs": 5040,
+  "timestampMs": 4875,
+  "confidence": 1
+ },
+ {
+  "text": " Luft.",
+  "startMs": 5130,
+  "endMs": 5460,
+  "timestampMs": 5295,
+  "confidence": 1
+ },
+ {
+  "text": " Schauen",
+  "startMs": 5670,
+  "endMs": 5870,
+  "timestampMs": 5770,
+  "confidence": 1
+ },
+ {
+  "text": " wir",
+  "startMs": 5870,
+  "endMs": 5990,
+  "timestampMs": 5930,
+  "confidence": 1
+ },
+ {
+  "text": " uns",
+  "startMs": 6020,
+  "endMs": 6160,
+  "timestampMs": 6090,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 6250,
+  "endMs": 6310,
+  "timestampMs": 6280,
+  "confidence": 1
+ },
+ {
+  "text": " Außengerät",
+  "startMs": 6310,
+  "endMs": 6940,
+  "timestampMs": 6625,
+  "confidence": 1
+ },
+ {
+  "text": " genauer",
+  "startMs": 7040,
+  "endMs": 7280,
+  "timestampMs": 7160,
+  "confidence": 1
+ },
+ {
+  "text": " an.",
+  "startMs": 7280,
+  "endMs": 7530,
+  "timestampMs": 7405,
+  "confidence": 1
+ },
+ {
+  "text": " Von",
+  "startMs": 7810,
+  "endMs": 7880,
+  "timestampMs": 7845,
+  "confidence": 1
+ },
+ {
+  "text": " außen",
+  "startMs": 7880,
+  "endMs": 8300,
+  "timestampMs": 8090,
+  "confidence": 1
+ },
+ {
+  "text": " sieht",
+  "startMs": 8300,
+  "endMs": 8450,
+  "timestampMs": 8375,
+  "confidence": 1
+ },
+ {
+  "text": " man",
+  "startMs": 8510,
+  "endMs": 8650,
+  "timestampMs": 8580,
+  "confidence": 1
+ },
+ {
+  "text": " nur",
+  "startMs": 8650,
+  "endMs": 8790,
+  "timestampMs": 8720,
+  "confidence": 1
+ },
+ {
+  "text": " ein",
+  "startMs": 8800,
+  "endMs": 8950,
+  "timestampMs": 8875,
+  "confidence": 1
+ },
+ {
+  "text": " Gehäuse",
+  "startMs": 8950,
+  "endMs": 9350,
+  "timestampMs": 9150,
+  "confidence": 1
+ },
+ {
+  "text": " mit",
+  "startMs": 9350,
+  "endMs": 9490,
+  "timestampMs": 9420,
+  "confidence": 1
+ },
+ {
+  "text": " einem",
+  "startMs": 9500,
+  "endMs": 9750,
+  "timestampMs": 9625,
+  "confidence": 1
+ },
+ {
+  "text": " großen",
+  "startMs": 9770,
+  "endMs": 10120,
+  "timestampMs": 9945,
+  "confidence": 1
+ },
+ {
+  "text": " Ventilator.",
+  "startMs": 10120,
+  "endMs": 10780,
+  "timestampMs": 10450,
+  "confidence": 1
+ },
+ {
+  "text": " Nehmen",
+  "startMs": 10940,
+  "endMs": 11140,
+  "timestampMs": 11040,
+  "confidence": 1
+ },
+ {
+  "text": " wir",
+  "startMs": 11140,
+  "endMs": 11290,
+  "timestampMs": 11215,
+  "confidence": 1
+ },
+ {
+  "text": " die",
+  "startMs": 11290,
+  "endMs": 11460,
+  "timestampMs": 11375,
+  "confidence": 1
+ },
+ {
+  "text": " Front",
+  "startMs": 11460,
+  "endMs": 11720,
+  "timestampMs": 11590,
+  "confidence": 1
+ },
+ {
+  "text": " ab.",
+  "startMs": 11720,
+  "endMs": 11930,
+  "timestampMs": 11825,
+  "confidence": 1
+ },
+ {
+  "text": " Direkt",
+  "startMs": 11990,
+  "endMs": 12320,
+  "timestampMs": 12155,
+  "confidence": 1
+ },
+ {
+  "text": " hinter",
+  "startMs": 12320,
+  "endMs": 12660,
+  "timestampMs": 12490,
+  "confidence": 1
+ },
+ {
+  "text": " dem",
+  "startMs": 12660,
+  "endMs": 12820,
+  "timestampMs": 12740,
+  "confidence": 1
+ },
+ {
+  "text": " Ventilator",
+  "startMs": 12830,
+  "endMs": 13400,
+  "timestampMs": 13115,
+  "confidence": 1
+ },
+ {
+  "text": " sitzt",
+  "startMs": 13400,
+  "endMs": 13660,
+  "timestampMs": 13530,
+  "confidence": 1
+ },
+ {
+  "text": " der",
+  "startMs": 13690,
+  "endMs": 13770,
+  "timestampMs": 13730,
+  "confidence": 1
+ },
+ {
+  "text": " Verdampfer:",
+  "startMs": 13920,
+  "endMs": 14590,
+  "timestampMs": 14255,
+  "confidence": 1
+ },
+ {
+  "text": " dünne",
+  "startMs": 14660,
+  "endMs": 15030,
+  "timestampMs": 14845,
+  "confidence": 1
+ },
+ {
+  "text": " Aluminium-Lamellen,",
+  "startMs": 15030,
+  "endMs": 16130,
+  "timestampMs": 15580,
+  "confidence": 1
+ },
+ {
+  "text": " durchzogen",
+  "startMs": 16140,
+  "endMs": 16680,
+  "timestampMs": 16410,
+  "confidence": 1
+ },
+ {
+  "text": " von",
+  "startMs": 16700,
+  "endMs": 16870,
+  "timestampMs": 16785,
+  "confidence": 1
+ },
+ {
+  "text": " Kupferrohren.",
+  "startMs": 16870,
+  "endMs": 17640,
+  "timestampMs": 17255,
+  "confidence": 1
+ },
+ {
+  "text": " Darin",
+  "startMs": 17870,
+  "endMs": 17980,
+  "timestampMs": 17925,
+  "confidence": 1
+ },
+ {
+  "text": " fließt",
+  "startMs": 17980,
+  "endMs": 18360,
+  "timestampMs": 18170,
+  "confidence": 1
+ },
+ {
+  "text": " ein",
+  "startMs": 18360,
+  "endMs": 18480,
+  "timestampMs": 18420,
+  "confidence": 1
+ },
+ {
+  "text": " Kältemittel,",
+  "startMs": 18540,
+  "endMs": 19310,
+  "timestampMs": 18925,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 19630,
+  "endMs": 19740,
+  "timestampMs": 19685,
+  "confidence": 1
+ },
+ {
+  "text": " schon",
+  "startMs": 19740,
+  "endMs": 19860,
+  "timestampMs": 19800,
+  "confidence": 1
+ },
+ {
+  "text": " bei",
+  "startMs": 19860,
+  "endMs": 20020,
+  "timestampMs": 19940,
+  "confidence": 1
+ },
+ {
+  "text": " rund",
+  "startMs": 20020,
+  "endMs": 20270,
+  "timestampMs": 20145,
+  "confidence": 1
+ },
+ {
+  "text": " minus",
+  "startMs": 20270,
+  "endMs": 20665,
+  "timestampMs": 20468,
+  "confidence": 0
+ },
+ {
+  "text": " vierzig",
+  "startMs": 20665,
+  "endMs": 21060,
+  "timestampMs": 20863,
+  "confidence": 0
+ },
+ {
+  "text": " Grad",
+  "startMs": 21060,
+  "endMs": 21220,
+  "timestampMs": 21140,
+  "confidence": 1
+ },
+ {
+  "text": " siedet.",
+  "startMs": 21220,
+  "endMs": 21640,
+  "timestampMs": 21430,
+  "confidence": 1
+ },
+ {
+  "text": " Die",
+  "startMs": 21640,
+  "endMs": 21670,
+  "timestampMs": 21655,
+  "confidence": 1
+ },
+ {
+  "text": " Außenluft",
+  "startMs": 21920,
+  "endMs": 22320,
+  "timestampMs": 22120,
+  "confidence": 1
+ },
+ {
+  "text": " ist",
+  "startMs": 22320,
+  "endMs": 22380,
+  "timestampMs": 22350,
+  "confidence": 1
+ },
+ {
+  "text": " also",
+  "startMs": 22470,
+  "endMs": 22670,
+  "timestampMs": 22570,
+  "confidence": 1
+ },
+ {
+  "text": " immer",
+  "startMs": 22670,
+  "endMs": 22930,
+  "timestampMs": 22800,
+  "confidence": 1
+ },
+ {
+  "text": " noch",
+  "startMs": 22930,
+  "endMs": 23160,
+  "timestampMs": 23045,
+  "confidence": 1
+ },
+ {
+  "text": " wärmer.",
+  "startMs": 23260,
+  "endMs": 23590,
+  "timestampMs": 23425,
+  "confidence": 1
+ },
+ {
+  "text": " Sie",
+  "startMs": 23840,
+  "endMs": 23841,
+  "timestampMs": 23840,
+  "confidence": 1
+ },
+ {
+  "text": " gibt",
+  "startMs": 23890,
+  "endMs": 24090,
+  "timestampMs": 23990,
+  "confidence": 1
+ },
+ {
+  "text": " Wärme",
+  "startMs": 24090,
+  "endMs": 24480,
+  "timestampMs": 24285,
+  "confidence": 1
+ },
+ {
+  "text": " ab,",
+  "startMs": 24480,
+  "endMs": 24610,
+  "timestampMs": 24545,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 24930,
+  "endMs": 25030,
+  "timestampMs": 24980,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 25070,
+  "endMs": 25140,
+  "timestampMs": 25105,
+  "confidence": 1
+ },
+ {
+  "text": " Kältemittel",
+  "startMs": 25270,
+  "endMs": 25870,
+  "timestampMs": 25570,
+  "confidence": 1
+ },
+ {
+  "text": " verdampft.",
+  "startMs": 25870,
+  "endMs": 26520,
+  "timestampMs": 26195,
+  "confidence": 1
+ },
+ {
+  "text": " Daneben",
+  "startMs": 26570,
+  "endMs": 26890,
+  "timestampMs": 26730,
+  "confidence": 1
+ },
+ {
+  "text": " steht",
+  "startMs": 26890,
+  "endMs": 27020,
+  "timestampMs": 26955,
+  "confidence": 1
+ },
+ {
+  "text": " der",
+  "startMs": 27220,
+  "endMs": 27330,
+  "timestampMs": 27275,
+  "confidence": 1
+ },
+ {
+  "text": " Verdichter.",
+  "startMs": 27330,
+  "endMs": 28020,
+  "timestampMs": 27675,
+  "confidence": 1
+ },
+ {
+  "text": " Er",
+  "startMs": 28270,
+  "endMs": 28340,
+  "timestampMs": 28305,
+  "confidence": 1
+ },
+ {
+  "text": " presst",
+  "startMs": 28340,
+  "endMs": 28590,
+  "timestampMs": 28465,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 28660,
+  "endMs": 28780,
+  "timestampMs": 28720,
+  "confidence": 1
+ },
+ {
+  "text": " Gas",
+  "startMs": 28780,
+  "endMs": 29010,
+  "timestampMs": 28895,
+  "confidence": 1
+ },
+ {
+  "text": " zusammen,",
+  "startMs": 29090,
+  "endMs": 29470,
+  "timestampMs": 29280,
+  "confidence": 1
+ },
+ {
+  "text": " und",
+  "startMs": 29470,
+  "endMs": 29471,
+  "timestampMs": 29470,
+  "confidence": 1
+ },
+ {
+  "text": " dabei",
+  "startMs": 29700,
+  "endMs": 29920,
+  "timestampMs": 29810,
+  "confidence": 1
+ },
+ {
+  "text": " steigt",
+  "startMs": 29920,
+  "endMs": 30260,
+  "timestampMs": 30090,
+  "confidence": 1
+ },
+ {
+  "text": " die",
+  "startMs": 30260,
+  "endMs": 30350,
+  "timestampMs": 30305,
+  "confidence": 1
+ },
+ {
+  "text": " Temperatur",
+  "startMs": 30430,
+  "endMs": 30990,
+  "timestampMs": 30710,
+  "confidence": 1
+ },
+ {
+  "text": " auf",
+  "startMs": 30990,
+  "endMs": 31130,
+  "timestampMs": 31060,
+  "confidence": 1
+ },
+ {
+  "text": " über",
+  "startMs": 31270,
+  "endMs": 31450,
+  "timestampMs": 31360,
+  "confidence": 1
+ },
+ {
+  "text": " siebzig",
+  "startMs": 31450,
+  "endMs": 31780,
+  "timestampMs": 31615,
+  "confidence": 0
+ },
+ {
+  "text": " Grad.",
+  "startMs": 31780,
+  "endMs": 32170,
+  "timestampMs": 31975,
+  "confidence": 1
+ },
+ {
+  "text": " Zusammen",
+  "startMs": 32490,
+  "endMs": 32980,
+  "timestampMs": 32735,
+  "confidence": 1
+ },
+ {
+  "text": " ergibt",
+  "startMs": 32980,
+  "endMs": 33280,
+  "timestampMs": 33130,
+  "confidence": 1
+ },
+ {
+  "text": " das",
+  "startMs": 33340,
+  "endMs": 33430,
+  "timestampMs": 33385,
+  "confidence": 1
+ },
+ {
+  "text": " einen",
+  "startMs": 33470,
+  "endMs": 33730,
+  "timestampMs": 33600,
+  "confidence": 1
+ },
+ {
+  "text": " Kreislauf:",
+  "startMs": 33730,
+  "endMs": 34360,
+  "timestampMs": 34045,
+  "confidence": 1
+ },
+ {
+  "text": " verdampfen,",
+  "startMs": 34440,
+  "endMs": 34990,
+  "timestampMs": 34715,
+  "confidence": 1
+ },
+ {
+  "text": " verdichten,",
+  "startMs": 34990,
+  "endMs": 35620,
+  "timestampMs": 35305,
+  "confidence": 1
+ },
+ {
+  "text": " Wärme",
+  "startMs": 35620,
+  "endMs": 35930,
+  "timestampMs": 35775,
+  "confidence": 1
+ },
+ {
+  "text": " abgeben,",
+  "startMs": 35930,
+  "endMs": 36520,
+  "timestampMs": 36225,
+  "confidence": 1
+ },
+ {
+  "text": " Druck",
+  "startMs": 36620,
+  "endMs": 36890,
+  "timestampMs": 36755,
+  "confidence": 1
+ },
+ {
+  "text": " absenken.",
+  "startMs": 37160,
+  "endMs": 37680,
+  "timestampMs": 37420,
+  "confidence": 1
+ },
+ {
+  "text": " Und",
+  "startMs": 37940,
+  "endMs": 38060,
+  "timestampMs": 38000,
+  "confidence": 1
+ },
+ {
+  "text": " dann",
+  "startMs": 38110,
+  "endMs": 38220,
+  "timestampMs": 38165,
+  "confidence": 1
+ },
+ {
+  "text": " alles",
+  "startMs": 38220,
+  "endMs": 39040,
+  "timestampMs": 38630,
+  "confidence": 1
+ },
+ {
+  "text": " von",
+  "startMs": 39280,
+  "endMs": 39281,
+  "timestampMs": 39280,
+  "confidence": 1
+ },
+ {
+  "text": " vorn.",
+  "startMs": 39280,
+  "endMs": 39281,
+  "timestampMs": 39280,
+  "confidence": 1
+ }
+]

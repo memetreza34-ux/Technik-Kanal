@@ -1,0 +1,5 @@
+{"image":"illustration/b-05.jpeg","theme":"dark","title":"Leitungsschutzschalter",
+ "labels":[{"at":[1480,330],"text":"Magnetspule","to":[1010,470],"tone":"main"},
+           {"at":[1480,700],"text":"Löschkammer","to":[1060,650],"tone":"plain"},
+           {"at":[400,230],"text":"Schalthebel","to":[830,190],"tone":"plain"},
+           {"at":[1650,170],"text":"Strompfad","to":[1440,310],"tone":"signal"}]}

@@ -1,0 +1,5 @@
+{"image":"illustration/u-02.jpeg","title":"Akkuschrauber","focus":{"at":[940,330],"r":300},
+ "labels":[{"at":[600,360],"text":"Elektromotor","sub":"Magnete + Kupferspulen","to":[1060,300],"tone":"signal"},
+           {"at":[400,920],"text":"Akku","sub":"Lithium-Ionen-Zellen","to":[600,770]},
+           {"at":[1500,880],"text":"Bohrfutter","to":[1416,636]},
+           {"at":[1520,330],"text":"Strompfad","sub":"vom Akku zum Motor","to":[1095,485],"tone":"main"}]}
